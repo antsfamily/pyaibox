@@ -1,0 +1,1003 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>pyaibox.base package &mdash; pyaibox 1.0 documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
+  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
+
+  
+  
+  
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/katex_autorenderer.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="pyaibox.compression package" href="pyaibox.compression.html" />
+    <link rel="prev" title="pyaibox package" href="pyaibox.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyaibox
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyaibox</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pyaibox.html">pyaibox package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="pyaibox.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">pyaibox.base package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.compression.html">pyaibox.compression package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.dsp.html">pyaibox.dsp package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.evaluation.html">pyaibox.evaluation package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.misc.html">pyaibox.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.summary.html">pyaibox.summary package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.utils.html">pyaibox.utils package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pyaibox.html#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyaibox.html#module-pyaibox.version">pyaibox.version module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pyaibox.html#module-pyaibox">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="setup.html">setup module</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">pyaibox</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="modules.html">pyaibox</a> &raquo;</li>
+        
+          <li><a href="pyaibox.html">pyaibox package</a> &raquo;</li>
+        
+      <li>pyaibox.base package</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/pyaibox.base.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="pyaibox-base-package">
+<h1>pyaibox.base package<a class="headerlink" href="#pyaibox-base-package" title="Permalink to this headline">¶</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="module-pyaibox.base.arrayops">
+<span id="pyaibox-base-arrayops-module"></span><h2>pyaibox.base.arrayops module<a class="headerlink" href="#module-pyaibox.base.arrayops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.arrayops.arraycomb">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">arraycomb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arrays</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.arrayops.arraycomb" title="Permalink to this definition">¶</a></dt>
+<dd><p>compute the elemnts combination of several lists.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>arrays</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em> or </em><em>numpy array</em>) – The lists or arrays.</p></li>
+<li><p><strong>out</strong> (<em>numpy array</em><em>, </em><em>optional</em>) – The combination results (defaults is <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The combination results.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+<p>Examples:</p>
+<p>Compute the combination of three lists: <span class="math">\([1,2,3]\)</span>, <span class="math">\([4, 5]\)</span>, <span class="math">\([6,7]\)</span>,
+this will produce a <span class="math">\(12\times 3\)</span> array.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="n">arraycomb</span><span class="p">(([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">]))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="c1"># output:</span>
+<span class="p">[[</span><span class="mi">1</span> <span class="mi">4</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span> <span class="mi">4</span> <span class="mi">7</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">1</span> <span class="mi">5</span> <span class="mi">7</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">2</span> <span class="mi">4</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">2</span> <span class="mi">4</span> <span class="mi">7</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">2</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">2</span> <span class="mi">5</span> <span class="mi">7</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">3</span> <span class="mi">4</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">3</span> <span class="mi">4</span> <span class="mi">7</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">3</span> <span class="mi">5</span> <span class="mi">6</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">3</span> <span class="mi">5</span> <span class="mi">7</span><span class="p">]]</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.arrayops.cat">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">cat</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">arrays</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.arrayops.cat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.arrayops.cut">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">cut</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pos</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.arrayops.cut" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cut array at given position.</p>
+<p>Cut array at given position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>numpy array</em>) – an array to be cutted.</p></li>
+<li><p><strong>pos</strong> (<em>tulpe</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – cut positions: ((cpstart, cpend), (cpstart, cpend), …)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>tulpe</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em>, </em><em>optional</em>) – cut axis (the default is None, which means nothing)</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.arrayops.sl">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.arrayops.</span></span><span class="sig-name descname"><span class="pre">sl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">dims</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">idx</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.arrayops.sl" title="Permalink to this definition">¶</a></dt>
+<dd><p>slice any axis</p>
+<p>generates slice of specified axis.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>dims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – total dimensions</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – select axis list.</p></li>
+<li><p><strong>idx</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – slice lists of the specified <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code>, if None, does nothing (the default)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>slice for specified axis elements.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tuple of slice</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="s1">&#39;X)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="n">sl</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">])],</span> <span class="s1">&#39;Xsl&#39;</span><span class="p">)</span>
+
+<span class="c1"># output:</span>
+
+<span class="p">[[</span><span class="mi">96</span>  <span class="mi">8</span> <span class="mi">67</span> <span class="mi">67</span> <span class="mi">91</span>  <span class="mi">3</span> <span class="mi">71</span> <span class="mi">56</span> <span class="mi">29</span> <span class="mi">48</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">32</span> <span class="mi">24</span> <span class="mi">74</span>  <span class="mi">9</span> <span class="mi">51</span> <span class="mi">11</span> <span class="mi">55</span> <span class="mi">62</span> <span class="mi">67</span> <span class="mi">69</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">48</span> <span class="mi">28</span> <span class="mi">20</span>  <span class="mi">8</span> <span class="mi">38</span> <span class="mi">84</span> <span class="mi">65</span>  <span class="mi">1</span> <span class="mi">79</span> <span class="mi">69</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">74</span> <span class="mi">73</span> <span class="mi">62</span> <span class="mi">21</span> <span class="mi">29</span> <span class="mi">90</span>  <span class="mi">6</span> <span class="mi">38</span> <span class="mi">22</span> <span class="mi">63</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">21</span> <span class="mi">68</span>  <span class="mi">6</span> <span class="mi">98</span>  <span class="mi">3</span> <span class="mi">20</span> <span class="mi">55</span>  <span class="mi">1</span> <span class="mi">52</span>  <span class="mi">9</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">83</span> <span class="mi">82</span> <span class="mi">65</span> <span class="mi">42</span> <span class="mi">66</span> <span class="mi">55</span> <span class="mi">33</span> <span class="mi">80</span> <span class="mi">82</span> <span class="mi">72</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">94</span> <span class="mi">91</span> <span class="mi">14</span> <span class="mi">14</span> <span class="mi">75</span>  <span class="mi">5</span> <span class="mi">38</span> <span class="mi">83</span> <span class="mi">99</span> <span class="mi">10</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">80</span> <span class="mi">64</span> <span class="mi">79</span> <span class="mi">30</span> <span class="mi">84</span> <span class="mi">22</span> <span class="mi">46</span> <span class="mi">26</span> <span class="mi">60</span> <span class="mi">13</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">24</span> <span class="mi">63</span> <span class="mi">25</span> <span class="mi">89</span>  <span class="mi">9</span> <span class="mi">69</span> <span class="mi">47</span> <span class="mi">89</span> <span class="mi">55</span> <span class="mi">75</span><span class="p">]]</span> <span class="n">X</span>
+<span class="p">[[</span><span class="mi">96</span>  <span class="mi">8</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">32</span> <span class="mi">24</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">48</span> <span class="mi">28</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">74</span> <span class="mi">73</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">21</span> <span class="mi">68</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">83</span> <span class="mi">82</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">94</span> <span class="mi">91</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">80</span> <span class="mi">64</span><span class="p">]</span>
+<span class="p">[</span><span class="mi">24</span> <span class="mi">63</span><span class="p">]]</span> <span class="n">Xsl</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pyaibox.base.baseops">
+<span id="pyaibox-base-baseops-module"></span><h2>pyaibox.base.baseops module<a class="headerlink" href="#module-pyaibox.base.baseops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.baseops.dmka">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.baseops.</span></span><span class="sig-name descname"><span class="pre">dmka</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.baseops.dmka" title="Permalink to this definition">¶</a></dt>
+<dd><p>Multi-key value assign</p>
+<p>Multi-key value assign</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – main dict.</p></li>
+<li><p><strong>Ds</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – sub dict</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.baseops.dreplace">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.baseops.</span></span><span class="sig-name descname"><span class="pre">dreplace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.baseops.dreplace" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</section>
+<section id="module-pyaibox.base.mathops">
+<span id="pyaibox-base-mathops-module"></span><h2>pyaibox.base.mathops module<a class="headerlink" href="#module-pyaibox.base.mathops" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.abs">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">abs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.abs" title="Permalink to this definition">¶</a></dt>
+<dd><p>obtain amplitude of a array</p>
+<p>Both complex and real representation are supported.</p>
+<div class="math">
+\[{\rm abs}({\bf X}) = |{\bf x}| = \sqrt{u^2 + v^2}, x\in {\bf X}
+
+\]</div>
+<p>where, <span class="math">\(u, v\)</span> are the real and imaginary part of x, respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>array</em>) – input</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
+then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
+otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
+<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the inputs’s amplitude.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---abs&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="c1"># ---output</span>
+<span class="o">---</span><span class="nb">abs</span>
+<span class="p">[[</span><span class="mf">0.99864747</span> <span class="mf">0.88468226</span> <span class="mf">0.91269439</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.78490066</span> <span class="mf">0.48990863</span> <span class="mf">0.40424448</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.72184896</span> <span class="mf">0.40619981</span> <span class="mf">1.02884318</span><span class="p">]]</span>
+<span class="p">[[</span><span class="mf">0.99864747</span> <span class="mf">0.88468226</span> <span class="mf">0.91269439</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.78490066</span> <span class="mf">0.48990863</span> <span class="mf">0.40424448</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.72184896</span> <span class="mf">0.40619981</span> <span class="mf">1.02884318</span><span class="p">]]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.c2r">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">c2r</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.c2r" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert complex-valued array to real-valued array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – complex-valued array</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – complex axis for real-valued array. Defaults to -1.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>real-valued array</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+
+<span class="n">Xreal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">Xcplx</span> <span class="o">=</span> <span class="n">r2c</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">Xreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xreal&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xcplx&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Yreal</span><span class="p">,</span> <span class="n">Yreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Yreal&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Yreal</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">real</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Yreal</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">imag</span><span class="p">),</span> <span class="s1">&#39;Error&#39;</span><span class="p">)</span>
+
+<span class="c1"># output</span>
+<span class="p">[[[</span> <span class="mi">0</span>  <span class="mi">8</span>  <span class="mi">3</span> <span class="mi">22</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">3</span> <span class="mi">27</span> <span class="mi">29</span>  <span class="mi">3</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mi">7</span> <span class="mi">24</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">0</span> <span class="mi">24</span> <span class="mi">10</span>  <span class="mi">9</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mi">19</span> <span class="mi">11</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">5</span> <span class="mi">16</span><span class="p">]]]</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Xreal</span>
+
+<span class="p">[[[</span> <span class="mf">0.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span>  <span class="mf">8.</span><span class="o">+</span><span class="mf">27.</span><span class="n">j</span>  <span class="mf">3.</span><span class="o">+</span><span class="mf">29.</span><span class="n">j</span> <span class="mf">22.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">7.</span> <span class="o">+</span><span class="mf">0.</span><span class="n">j</span> <span class="mf">24.</span><span class="o">+</span><span class="mf">24.</span><span class="n">j</span> <span class="mf">29.</span><span class="o">+</span><span class="mf">10.</span><span class="n">j</span> <span class="mf">16.</span> <span class="o">+</span><span class="mf">9.</span><span class="n">j</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mf">19.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span> <span class="mf">11.</span> <span class="o">+</span><span class="mf">6.</span><span class="n">j</span> <span class="mf">23.</span> <span class="o">+</span><span class="mf">5.</span><span class="n">j</span> <span class="mf">18.</span><span class="o">+</span><span class="mf">16.</span><span class="n">j</span><span class="p">]]]</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Xcplx</span>
+
+<span class="p">[[[[</span> <span class="mf">0.</span>  <span class="mf">8.</span>  <span class="mf">3.</span> <span class="mf">22.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">7.</span> <span class="mf">24.</span> <span class="mf">29.</span> <span class="mf">16.</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mf">19.</span> <span class="mf">11.</span> <span class="mf">23.</span> <span class="mf">18.</span><span class="p">]]]</span>
+
+
+<span class="p">[[[</span> <span class="mf">3.</span> <span class="mf">27.</span> <span class="mf">29.</span>  <span class="mf">3.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">0.</span> <span class="mf">24.</span> <span class="mf">10.</span>  <span class="mf">9.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">3.</span>  <span class="mf">6.</span>  <span class="mf">5.</span> <span class="mf">16.</span><span class="p">]]]]</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Yreal</span>
+
+<span class="mf">0.0</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Error</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.conj">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">conj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.conj" title="Permalink to this definition">¶</a></dt>
+<dd><p>conjugates a array</p>
+<p>Both complex and real representation are supported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>array</em>) – input</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
+then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
+otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the inputs’s conjugate matrix.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---conj&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">conj</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">conj</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="c1"># ---output</span>
+<span class="o">---</span><span class="n">conj</span>
+<span class="p">[[[</span> <span class="mf">0.98627683</span>  <span class="mf">0.87339195</span>  <span class="mf">0.50974552</span><span class="p">]</span>
+<span class="p">[</span> <span class="mf">0.27183571</span>  <span class="mf">0.33691873</span>  <span class="mf">0.21695427</span><span class="p">]</span>
+<span class="p">[</span> <span class="mf">0.27647714</span>  <span class="mf">0.34331559</span>  <span class="mf">0.86215894</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="o">-</span><span class="mf">0.15669967</span> <span class="o">-</span><span class="mf">0.14088724</span> <span class="o">-</span><span class="mf">0.75708028</span><span class="p">]</span>
+<span class="p">[</span><span class="o">-</span><span class="mf">0.73632492</span> <span class="o">-</span><span class="mf">0.35566309</span> <span class="o">-</span><span class="mf">0.34109302</span><span class="p">]</span>
+<span class="p">[</span><span class="o">-</span><span class="mf">0.66680305</span> <span class="o">-</span><span class="mf">0.21710064</span> <span class="o">-</span><span class="mf">0.56142698</span><span class="p">]]]</span>
+<span class="p">[[</span><span class="mf">0.98627683</span><span class="o">-</span><span class="mf">0.15669967</span><span class="n">j</span> <span class="mf">0.87339195</span><span class="o">-</span><span class="mf">0.14088724</span><span class="n">j</span> <span class="mf">0.50974552</span><span class="o">-</span><span class="mf">0.75708028</span><span class="n">j</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27183571</span><span class="o">-</span><span class="mf">0.73632492</span><span class="n">j</span> <span class="mf">0.33691873</span><span class="o">-</span><span class="mf">0.35566309</span><span class="n">j</span> <span class="mf">0.21695427</span><span class="o">-</span><span class="mf">0.34109302</span><span class="n">j</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27647714</span><span class="o">-</span><span class="mf">0.66680305</span><span class="n">j</span> <span class="mf">0.34331559</span><span class="o">-</span><span class="mf">0.21710064</span><span class="n">j</span> <span class="mf">0.86215894</span><span class="o">-</span><span class="mf">0.56142698</span><span class="n">j</span><span class="p">]]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.ebeo">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">ebeo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">op</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'+'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.ebeo" title="Permalink to this definition">¶</a></dt>
+<dd><p>element by element operation</p>
+<p>Element by element operation.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>a</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em> or </em><em>ndarray</em>) – The first list/tuple/ndarray.</p></li>
+<li><p><strong>b</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em> or </em><em>ndarray</em>) – The second list/tuple/ndarray.</p></li>
+<li><p><strong>op</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – Supported operations are:
+- <code class="docutils literal notranslate"><span class="pre">'+'</span></code> or <code class="docutils literal notranslate"><span class="pre">'add'</span></code> for addition (default)
+- <code class="docutils literal notranslate"><span class="pre">'-'</span></code> or <code class="docutils literal notranslate"><span class="pre">'sub'</span></code> for substraction
+- <code class="docutils literal notranslate"><span class="pre">'*'</span></code> or <code class="docutils literal notranslate"><span class="pre">'mul'</span></code> for multiplication
+- <code class="docutils literal notranslate"><span class="pre">'/'</span></code> or <code class="docutils literal notranslate"><span class="pre">'div'</span></code> for division
+- <code class="docutils literal notranslate"><span class="pre">'**'</span></code> or <code class="docutils literal notranslate"><span class="pre">pow</span></code> for power
+- <code class="docutils literal notranslate"><span class="pre">'&lt;'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'lt'</span></code> for less than
+- <code class="docutils literal notranslate"><span class="pre">'&lt;='</span></code>, or <code class="docutils literal notranslate"><span class="pre">'le'</span></code> for less than or equal to
+- <code class="docutils literal notranslate"><span class="pre">'&gt;'</span></code>, or <code class="docutils literal notranslate"><span class="pre">'gt'</span></code> for greater than
+- <code class="docutils literal notranslate"><span class="pre">'&gt;='</span></code>, or <code class="docutils literal notranslate"><span class="pre">'ge'</span></code> for greater than or equal to
+- <code class="docutils literal notranslate"><span class="pre">'&amp;'</span></code> for bitwise and
+- <code class="docutils literal notranslate"><span class="pre">'|'</span></code> for bitwise or
+- <code class="docutils literal notranslate"><span class="pre">'^'</span></code> for bitwise xor
+- function for custom operation.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – If the specified operator not in the above list, raise a TypeError.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.imag">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">imag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.imag" title="Permalink to this definition">¶</a></dt>
+<dd><p>obtain imaginary part of a array</p>
+<p>Both complex and real representation are supported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>array</em>) – input</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
+then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
+otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
+<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the inputs’s imaginary part array.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---imag&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imag</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">imag</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="c1"># ---output</span>
+<span class="o">---</span><span class="n">imag</span>
+<span class="p">[[</span><span class="mf">0.15669967</span> <span class="mf">0.14088724</span> <span class="mf">0.75708028</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.73632492</span> <span class="mf">0.35566309</span> <span class="mf">0.34109302</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.66680305</span> <span class="mf">0.21710064</span> <span class="mf">0.56142698</span><span class="p">]]</span>
+<span class="p">[[</span><span class="mf">0.15669967</span> <span class="mf">0.14088724</span> <span class="mf">0.75708028</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.73632492</span> <span class="mf">0.35566309</span> <span class="mf">0.34109302</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.66680305</span> <span class="mf">0.21710064</span> <span class="mf">0.56142698</span><span class="p">]]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.nextpow2">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">nextpow2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.nextpow2" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the next higher power of 2.</p>
+<p>Given an number <span class="math">\(x\)</span>, returns the first p such that <span class="math">\(2^p &gt;=|x|\)</span>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – an number.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Next higher power of 2.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mf">0.3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mf">7.3</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mf">7.3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">))</span>
+
+<span class="c1"># output</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="o">-</span><span class="mi">2</span> <span class="o">-</span><span class="mi">1</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.pow">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">pow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.pow" title="Permalink to this definition">¶</a></dt>
+<dd><p>obtain power of a array</p>
+<p>Both complex and real representation are supported.</p>
+<div class="math">
+\[{\rm pow}({\bf X}) = |{\bf x}| = u^2 + v^2, x\in {\bf X}
+
+\]</div>
+<p>where, <span class="math">\(u, v\)</span> are the real and imaginary part of x, respectively.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>array</em>) – input</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
+then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
+otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
+<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the inputs’s power.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---pow&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">pow</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="c1"># ---output</span>
+<span class="o">---</span><span class="nb">pow</span>
+<span class="p">[[</span><span class="mf">0.99729677</span> <span class="mf">0.78266271</span> <span class="mf">0.83301105</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.61606904</span> <span class="mf">0.24001046</span> <span class="mf">0.1634136</span> <span class="p">]</span>
+<span class="p">[</span><span class="mf">0.52106592</span> <span class="mf">0.16499828</span> <span class="mf">1.05851829</span><span class="p">]]</span>
+<span class="p">[[</span><span class="mf">0.99729677</span> <span class="mf">0.78266271</span> <span class="mf">0.83301105</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.61606904</span> <span class="mf">0.24001046</span> <span class="mf">0.1634136</span> <span class="p">]</span>
+<span class="p">[</span><span class="mf">0.52106592</span> <span class="mf">0.16499828</span> <span class="mf">1.05851829</span><span class="p">]]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.prevpow2">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">prevpow2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.prevpow2" title="Permalink to this definition">¶</a></dt>
+<dd><p>get the previous lower power of 2.</p>
+<p>Given an number <span class="math">\(x\)</span>, returns the first p such that <span class="math">\(2^p &lt;=|x|\)</span>.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – an number.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Next higher power of 2.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)">int</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mi">5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mf">0.3</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mf">0.3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="mf">7.3</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="mf">7.3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">prevpow2</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">),</span> <span class="n">nextpow2</span><span class="p">(</span><span class="o">-</span><span class="mf">3.5</span><span class="p">))</span>
+
+<span class="c1"># output</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="o">-</span><span class="mi">2</span> <span class="o">-</span><span class="mi">1</span>
+<span class="mi">2</span> <span class="mi">3</span>
+<span class="mi">1</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.r2c">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">r2c</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.r2c" title="Permalink to this definition">¶</a></dt>
+<dd><p>convert real-valued array to complex-valued array</p>
+<p>Convert real-valued array (the size of <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> -th dimension is 2) to complex-valued array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>numpy array</em>) – real-valued array.</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – the complex axis. Defaults to -1.</p></li>
+<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keepdims? default is False.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>complex-valued array</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>numpy array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+
+<span class="n">Xreal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
+<span class="n">Xcplx</span> <span class="o">=</span> <span class="n">r2c</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">Xreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xreal&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xcplx&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Yreal</span><span class="p">,</span> <span class="n">Yreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Yreal&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Yreal</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">real</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">Yreal</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">-</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">imag</span><span class="p">),</span> <span class="s1">&#39;Error&#39;</span><span class="p">)</span>
+
+<span class="c1"># output</span>
+<span class="p">[[[</span> <span class="mi">0</span>  <span class="mi">8</span>  <span class="mi">3</span> <span class="mi">22</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">3</span> <span class="mi">27</span> <span class="mi">29</span>  <span class="mi">3</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mi">7</span> <span class="mi">24</span> <span class="mi">29</span> <span class="mi">16</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">0</span> <span class="mi">24</span> <span class="mi">10</span>  <span class="mi">9</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mi">19</span> <span class="mi">11</span> <span class="mi">23</span> <span class="mi">18</span><span class="p">]</span>
+<span class="p">[</span> <span class="mi">3</span>  <span class="mi">6</span>  <span class="mi">5</span> <span class="mi">16</span><span class="p">]]]</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Xreal</span>
+
+<span class="p">[[[</span> <span class="mf">0.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span>  <span class="mf">8.</span><span class="o">+</span><span class="mf">27.</span><span class="n">j</span>  <span class="mf">3.</span><span class="o">+</span><span class="mf">29.</span><span class="n">j</span> <span class="mf">22.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">7.</span> <span class="o">+</span><span class="mf">0.</span><span class="n">j</span> <span class="mf">24.</span><span class="o">+</span><span class="mf">24.</span><span class="n">j</span> <span class="mf">29.</span><span class="o">+</span><span class="mf">10.</span><span class="n">j</span> <span class="mf">16.</span> <span class="o">+</span><span class="mf">9.</span><span class="n">j</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mf">19.</span> <span class="o">+</span><span class="mf">3.</span><span class="n">j</span> <span class="mf">11.</span> <span class="o">+</span><span class="mf">6.</span><span class="n">j</span> <span class="mf">23.</span> <span class="o">+</span><span class="mf">5.</span><span class="n">j</span> <span class="mf">18.</span><span class="o">+</span><span class="mf">16.</span><span class="n">j</span><span class="p">]]]</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Xcplx</span>
+
+<span class="p">[[[[</span> <span class="mf">0.</span>  <span class="mf">8.</span>  <span class="mf">3.</span> <span class="mf">22.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">7.</span> <span class="mf">24.</span> <span class="mf">29.</span> <span class="mf">16.</span><span class="p">]]</span>
+
+<span class="p">[[</span><span class="mf">19.</span> <span class="mf">11.</span> <span class="mf">23.</span> <span class="mf">18.</span><span class="p">]]]</span>
+
+
+<span class="p">[[[</span> <span class="mf">3.</span> <span class="mf">27.</span> <span class="mf">29.</span>  <span class="mf">3.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">0.</span> <span class="mf">24.</span> <span class="mf">10.</span>  <span class="mf">9.</span><span class="p">]]</span>
+
+<span class="p">[[</span> <span class="mf">3.</span>  <span class="mf">6.</span>  <span class="mf">5.</span> <span class="mf">16.</span><span class="p">]]]]</span> <span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span> <span class="n">Yreal</span>
+
+<span class="mf">0.0</span> <span class="mf">0.0</span><span class="p">,</span> <span class="n">Error</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.real">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">real</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.real" title="Permalink to this definition">¶</a></dt>
+<dd><p>obtain real part of a array</p>
+<p>Both complex and real representation are supported.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>X</strong> (<em>array</em>) – input</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
+then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
+otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
+<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the inputs’s real part array.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>array</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;---real&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">real</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">real</span><span class="p">(</span><span class="n">X</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">X</span><span class="p">[</span><span class="mi">1</span><span class="p">]))</span>
+
+<span class="c1"># ---output</span>
+<span class="o">---</span><span class="n">real</span>
+<span class="p">[[</span><span class="mf">0.98627683</span> <span class="mf">0.87339195</span> <span class="mf">0.50974552</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27183571</span> <span class="mf">0.33691873</span> <span class="mf">0.21695427</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27647714</span> <span class="mf">0.34331559</span> <span class="mf">0.86215894</span><span class="p">]]</span>
+<span class="p">[[</span><span class="mf">0.98627683</span> <span class="mf">0.87339195</span> <span class="mf">0.50974552</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27183571</span> <span class="mf">0.33691873</span> <span class="mf">0.21695427</span><span class="p">]</span>
+<span class="p">[</span><span class="mf">0.27647714</span> <span class="mf">0.34331559</span> <span class="mf">0.86215894</span><span class="p">]]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pyaibox.base.randomfunc">
+<span id="pyaibox-base-randomfunc-module"></span><h2>pyaibox.base.randomfunc module<a class="headerlink" href="#module-pyaibox.base.randomfunc" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.randomfunc.randgrid">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randgrid</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shake</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.randomfunc.randgrid" title="Permalink to this definition">¶</a></dt>
+<dd><p>generates non-repeated uniform stepped random integers</p>
+<p>Generates <code class="xref py py-attr docutils literal notranslate"><span class="pre">n</span></code> non-repeated random integers from <code class="xref py py-attr docutils literal notranslate"><span class="pre">start</span></code> to <code class="xref py py-attr docutils literal notranslate"><span class="pre">stop</span></code>
+with step size <code class="xref py py-attr docutils literal notranslate"><span class="pre">step</span></code>.</p>
+<p>When step is 1 and shake is 0, it works similar to randperm,</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – stop sampling point</p></li>
+<li><p><strong>step</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – sampling stepsize</p></li>
+<li><p><strong>shake</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – the shake rate, if <code class="xref py py-attr docutils literal notranslate"><span class="pre">shake</span></code> is 0, no shake, (default),
+if positive, add a positive shake, if negative, add a negative.</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – the number of samples (default None, int((stop0 - start0) / step0) * int((stop1 - start1) / step1)…).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p></p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>for multi-dimension, return a list of lists, for 1-dimension, return a list of numbers.</p>
+</dd>
+</dl>
+<p>see <a class="reference internal" href="#pyaibox.base.randomfunc.randperm" title="pyaibox.base.randomfunc.randperm"><code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code></a>.</p>
+<p class="rubric">Example</p>
+<p>Plot sampled randperm and randgrid point.</p>
+<a class="reference internal image-reference" href="_images/demo_randgrid.png"><img alt="_images/demo_randgrid.png" class="align-center" src="_images/demo_randgrid.png" style="width: 578.0px; height: 426.0px;" /></a>
+<p>The results shown in the above figure can be obtained by the following codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="n">setseed</span><span class="p">(</span><span class="mi">2021</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randperm</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randperm(2, 40, 8)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 1, 8, -1.)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 8)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">8</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 8, 0.5)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 12)&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="mi">12</span><span class="p">),</span> <span class="s2">&quot;, randgrid(2, 40, 6, 12, 0.5)&quot;</span><span class="p">)</span>
+
+<span class="n">mask</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">mask</span><span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">mask</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">5</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">Rh</span><span class="p">,</span> <span class="n">Rw</span> <span class="o">=</span> <span class="n">randperm2d</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">mask</span><span class="o">=</span><span class="n">mask</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">Rh</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">Rw</span><span class="p">)</span>
+
+<span class="n">N</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">W</span> <span class="o">=</span> <span class="mi">32</span><span class="p">,</span> <span class="mi">512</span><span class="p">,</span> <span class="mi">512</span>
+
+<span class="n">y1</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randperm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="n">x1</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randperm</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y1</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x1</span><span class="p">))</span>
+
+<span class="n">y2</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">H</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randgrid</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">W</span><span class="p">,</span> <span class="mi">32</span><span class="p">,</span> <span class="mf">0.</span><span class="p">,</span> <span class="n">N</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y2</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y2</span><span class="p">,</span> <span class="n">x2</span><span class="p">)</span>
+
+<span class="n">y3</span><span class="p">,</span> <span class="n">x3</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randperm</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">],</span> <span class="n">N</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y3</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x3</span><span class="p">))</span>
+
+<span class="n">y4</span><span class="p">,</span> <span class="n">x4</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">randgrid</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="n">H</span><span class="p">,</span> <span class="n">W</span><span class="p">],</span> <span class="p">[</span><span class="mi">32</span><span class="p">,</span> <span class="mi">32</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">],</span> <span class="n">N</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">y4</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">x4</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">221</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="n">y1</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">222</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="n">y2</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">223</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x3</span><span class="p">,</span> <span class="n">y3</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplot</span><span class="p">(</span><span class="mi">224</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="n">y4</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.randomfunc.randperm">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randperm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stop</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.randomfunc.randperm" title="Permalink to this definition">¶</a></dt>
+<dd><p>randperm function like matlab</p>
+<p>genarates diffrent random interges in range [start, stop)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – start sampling point</p></li>
+<li><p><strong>stop</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a>) – stop sampling point</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – the number of samples (default None, (stop - start))</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>P</strong> (<em>list</em>) – the randomly permuted intergers.</p></li>
+<li><p>see <a class="reference internal" href="#pyaibox.base.randomfunc.randgrid" title="pyaibox.base.randomfunc.randgrid"><code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code></a>, <a class="reference internal" href="#pyaibox.base.randomfunc.randperm2d" title="pyaibox.base.randomfunc.randperm2d"><code class="xref py py-func docutils literal notranslate"><span class="pre">randperm2d()</span></code></a>.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.randomfunc.randperm2d">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">randperm2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">H</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">W</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">population</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mask</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.randomfunc.randperm2d" title="Permalink to this definition">¶</a></dt>
+<dd><p>randperm 2d function</p>
+<p>genarates diffrent random interges in range [start, end)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>H</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – height</p></li>
+<li><p><strong>W</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – width</p></li>
+<li><p><strong>number</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – random numbers</p></li>
+<li><p><strong>population</strong> (<em>{list</em><em> or </em><em>numpy array</em><em>(</em><em>1d</em><em> or </em><em>2d</em><em>)</em><em>}</em>) – part of population in range(0, H*W)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>Ph</strong> (<em>list</em>) – the randomly permuted intergers in height direction.</p></li>
+<li><p><strong>Pw</strong> (<em>list</em>) – the randomly permuted intergers in width direction.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p>see <a class="reference internal" href="#pyaibox.base.randomfunc.randgrid" title="pyaibox.base.randomfunc.randgrid"><code class="xref py py-func docutils literal notranslate"><span class="pre">randgrid()</span></code></a>, <a class="reference internal" href="#pyaibox.base.randomfunc.randperm" title="pyaibox.base.randomfunc.randperm"><code class="xref py py-func docutils literal notranslate"><span class="pre">randperm()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.randomfunc.setseed">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.randomfunc.</span></span><span class="sig-name descname"><span class="pre">setseed</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'numpy'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.randomfunc.setseed" title="Permalink to this definition">¶</a></dt>
+<dd><p>set seed</p>
+<p>Set numpy / random seed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – seed for random number generator (the default is None)</p></li>
+<li><p><strong>target</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">'numpy'</span></code>: <code class="docutils literal notranslate"><span class="pre">np.random.seed(seed)</span></code> (the default)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">'random'</span></code>: <code class="docutils literal notranslate"><span class="pre">random(seed)</span></code></p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pyaibox.base">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyaibox.base" title="Permalink to this headline">¶</a></h2>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="pyaibox.compression.html" class="btn btn-neutral float-right" title="pyaibox.compression package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="pyaibox.html" class="btn btn-neutral float-left" title="pyaibox package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        
+        &copy; Copyright 2018-2020, Zhi Liu
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

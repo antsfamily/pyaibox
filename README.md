@@ -1,2 +1,0 @@
-# pyaibox
-A Python toolbox
