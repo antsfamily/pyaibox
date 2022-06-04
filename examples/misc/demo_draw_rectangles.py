@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 
 print(pb.__version__)
 
-x = pb.imread('../../data/images/LenaRGB512.tif')
+x = pb.imread('../../data/images/oi/LenaRGB512.tif')
 print(x.shape)
 
 # rects, edgecolors, fillcolors, linewidths = [[0, 0, 511, 511]], [None], [[0, 255, 0]], [1]

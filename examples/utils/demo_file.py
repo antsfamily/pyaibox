@@ -8,7 +8,7 @@
 
 import pyaibox as pb
 
-files = pb.listxfile(listdir='../../data/images/', exts='.png', recursive=False, filelist=[])
+files = pb.listxfile(listdir='../../data/images/oi/', exts='.png', recursive=False, filelist=[])
 print(files)
 
 filepath = pb.pathjoin('a', 'b', 'c', '.d')

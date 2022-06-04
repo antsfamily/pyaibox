@@ -13,9 +13,9 @@ from .utils.const import *
 from .utils.colors import rgb2gray, gray2rgb, DISTINCT_COLORS_HEX, DISTINCT_COLORS_RGB, DISTINCT_COLORS_CMYK, DISTINCT_COLORS_RGB_NORM, BASE_COLORS, TABLEAU_COLORS, CSS4_COLORS
 from .utils.colormaps import cmaps, viridis, parula
 from .utils.convert import str2list, str2num, str2sec
-from .utils.ios import loadyaml, loadjson, loadmat, savemat, loadh5, saveh5, mvkeyh5
+from .utils.ios import loadyaml, loadjson, loadmat, savemat, loadh5, saveh5, mvkeyh5, loadbin, savebin
 from .utils.image import imread, imsave, histeq, imresize
-from .utils.file import listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec
+from .utils.file import data_path, pkg_path, copyfile, copyfiles, listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec
 from .utils.plot_show import cplot, plots, Plots
 from .utils.typevalue import bin2int, peakvalue
 
@@ -43,3 +43,7 @@ from .misc.mapping_operation import mapping
 from .misc.sampling import slidegrid, dnsampling, sample_tensor, shuffle_tensor, split_tensor, tensor2patch, patch2tensor, read_samples
 from .misc.bounding_box import plot_bbox, fmt_bbox
 from .misc.draw_shapes import draw_rectangle
+
+from .datasets.mnist import read_mnist
+from .datasets.mstar import mstar_header, mstar_raw
+from .nn.activations import linear, sigmoid, tanh, softplus, softsign, elu, relu, relu6, selu, crelu, leaky_relu

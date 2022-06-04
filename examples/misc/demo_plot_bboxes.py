@@ -22,7 +22,7 @@ fontdict = {'family': 'Times New Roman',
             'size': 12,
             }
 
-x = pb.imread('../../data/images/LenaRGB512.tif')
+x = pb.imread('../../data/images/oi/LenaRGB512.tif')
 fig = plt.figure()
 ax = fig.add_subplot(1, 1, 1)
 ax.imshow(x)

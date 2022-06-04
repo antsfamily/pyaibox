@@ -11,9 +11,9 @@ import numpy as np
 import pyaibox as pb
 import matplotlib.pyplot as plt
 
-filename = '../../data/images/Lotus512.png'
-filename = '../../data/images/LenaRGB512.tif'
-# filename = '../../data/images/LenaGRAY512.tif'
+filename = '../../data/images/oi/Lotus512.png'
+filename = '../../data/images/oi/LenaRGB512.tif'
+# filename = '../../data/images/oi/LenaGRAY512.tif'
 
 x = pb.imread(filename)
 xshape = x.shape

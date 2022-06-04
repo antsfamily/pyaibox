@@ -9,13 +9,14 @@ from __future__ import division, print_function, absolute_import
 import h5py
 import json
 import yaml
+import struct
 import numpy as np
 import scipy.io as scio
 from pyaibox.base.baseops import dreplace
 
 
 def loadyaml(filepath, field=None):
-    """Load a yaml file.
+    r"""Load a yaml file.
 
     Parameters
     ----------
@@ -40,7 +41,7 @@ def loadyaml(filepath, field=None):
 
 
 def loadjson(filepath, field=None):
-    """load a json file
+    r"""load a json file
 
     Parameters
     ----------
@@ -84,7 +85,7 @@ def _todict(matobj):
 
 
 def loadmat(filepath):
-    """load data from an ``.mat`` file
+    r"""load data from an ``.mat`` file
 
     load data from an ``.mat`` file (:obj:`None` will be replaced by :obj:`None`)
 
@@ -105,7 +106,7 @@ def loadmat(filepath):
 
 
 def savemat(filepath, mdict, fmt='5'):
-    """save data to an ``.mat`` file
+    r"""save data to an ``.mat`` file
 
     save data to ``.mat`` file (:obj:`None` will be replaced by :obj:`None`)
 
@@ -162,7 +163,7 @@ def _read_group_dataset(group, mdict, keys=None):
 
 
 def loadh5(filename, keys=None):
-    """load h5 file
+    r"""load h5 file
 
     load data from a h5 file. (:obj:`None` will be replaced by :obj:`None`)
 
@@ -192,7 +193,7 @@ def loadh5(filename, keys=None):
 
 
 def saveh5(filename, mdict, mode='w'):
-    """save data to h5 file
+    r"""save data to h5 file
 
     save data to h5 file (:obj:`None` will be replaced by :obj:`None`)
 
@@ -224,7 +225,7 @@ def saveh5(filename, mdict, mode='w'):
 
 
 def mvkeyh5(filepath, ksf, kst, sep='.'):
-    """rename keys in ``.h5`` file
+    r"""rename keys in ``.h5`` file
 
     Parameters
     ----------
@@ -253,6 +254,162 @@ def mvkeyh5(filepath, ksf, kst, sep='.'):
             grp = grp[kf]
         grp.create_dataset(keyt[-1], data=grp[keyf[-1]][()])
         del grp[keyf[-1]]
+    f.close()
+    return 0
+
+
+def loadbin(file, dbsize=4, dtype='i', endian='little', offsets=0, nshots=None):
+    r"""load binary file
+
+    load data from binary file
+
+    Parameters
+    ----------
+    file : str
+        the binary file path
+    dbsize : int, optional
+        number pf bits of each number, by default 4
+    dtype : str, optional
+        the type of data. 
+        - ``'c'``:char, ``'b'``:schar, ``'B'``:uchar, ``'s'``:char[], ``'p'``:char[], ``'P'``:void* 
+        - ``'h'``:short, ``'H'``:ushort, ``'i'``:int, ``'I'``:uint, ``'l'``:long, ``'L'``:ulong, ``'q'``:longlong, ``'Q'``:ulonglong
+        - ``'f'``:float, ``'d'``:double, by default ``'i'``
+    endian : str, optional
+        byte order ``'little'`` / ``'l'``, ``'big'`` / ``'b'``, by default 'little'
+    offsets : int, optional
+        start reading offsets index, by default 0
+    nshots : int, optional
+        the number of data points to be read.
+
+    Returns
+    -------
+    list
+        loaded data.
+
+    Examples
+    ----------
+
+    ::
+
+        import pyaibox as pb
+
+        datafile = 'data/data.bin'
+
+        x = [1, 3, 6, 111]
+        pb.savebin('./data.bin', x, dtype='i', endian='L', mode='o')
+
+        y = pb.loadbin('./data.bin', dbsize=4, dtype='i', endian='L')
+
+        print(y)
+
+        x = (1.3, 3.6)
+        pb.savebin('./data.bin', x, dtype='f', endian='B', offsets=16, mode='a')
+
+        y = pb.loadbin('./data.bin', dbsize=4, dtype='f', endian='B', offsets=16)
+
+        print(y)
+    
+    """
+
+    if file is None:
+        ValueError(" Not a valid file!")
+    nums = []
+    if endian.lower() in ['l', 'little']:
+        dtype = '<' + dtype
+        # dtype = '@' + dtype
+    if endian.lower() in ['b', 'big']:
+        dtype = '>' + dtype
+        # dtype = '!' + dtype
+    
+    maxline = float('Inf') if nshots is None else nshots
+    cnt = 0
+    f = open(file, 'rb')
+    f.seek(offsets)
+    try:
+        while True:
+            cnt += 1
+            if cnt > maxline:
+                break
+            data = f.read(dbsize)
+            value = struct.unpack(dtype, data)[0]
+            nums.append(value)
+    except:
+        pass
+    f.close()
+    return nums
+
+
+def savebin(file, x, dtype='i', endian='little', offsets=0, mode='o'):
+    r"""load binary file
+
+    load data from binary file
+
+    Parameters
+    ----------
+    file : str
+        the binary file path
+    x : any
+        data to be written (iterable)
+    dtype : str, optional
+        the type of data. 
+        - ``'c'``:char, ``'b'``:schar, ``'B'``:uchar, ``'s'``:char[], ``'p'``:char[], ``'P'``:void* 
+        - ``'h'``:short, ``'H'``:ushort, ``'i'``:int, ``'I'``:uint, ``'l'``:long, ``'L'``:ulong, ``'q'``:longlong, ``'Q'``:ulonglong
+        - ``'f'``:float, ``'d'``:double, by default ``'i'``
+    endian : str, optional
+        byte order ``'little'`` / ``'l'``, ``'big'`` / ``'b'``, by default 'little'
+    offsets : int, optional
+        start reading offsets index, by default 0
+    mode : int, optional
+        - ``'append'`` / ``'a'`` --> append data to the end of the file
+        - ``'overwrite'`` / ``'o'`` --> overwrite the file. (default)
+
+    Examples
+    ----------
+
+    ::
+
+        import pyaibox as pb
+
+        datafile = 'data/data.bin'
+
+        x = [1, 3, 6, 111]
+        pb.savebin('./data.bin', x, dtype='i', endian='L', mode='o')
+
+        y = pb.loadbin('./data.bin', dbsize=4, dtype='i', endian='L')
+
+        print(y)
+
+        x = (1.3, 3.6)
+        pb.savebin('./data.bin', x, dtype='f', endian='B', offsets=16, mode='a')
+
+        y = pb.loadbin('./data.bin', dbsize=4, dtype='f', endian='B', offsets=16)
+
+        print(y)
+
+    """
+
+    if file is None:
+        ValueError(" Not a valid file!")
+
+    if endian.lower() in ['l', 'little']:
+        dtype = '<' + dtype
+        # dtype = '@' + dtype
+    if endian.lower() in ['b', 'big']:
+        dtype = '>' + dtype
+        # dtype = '!' + dtype
+    
+    if mode in ['append', 'a']:
+        f = open(file, "ab")
+    if mode in ['overwrite', 'o']:
+        f = open(file, "wb")
+
+    f.seek(offsets)
+    try:
+        for value in x:
+            data = struct.pack(dtype, value)
+            f.write(data)
+    except:
+        pass
     f.close()
     return 0
 

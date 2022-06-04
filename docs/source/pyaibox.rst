@@ -9,9 +9,11 @@ Subpackages
 
    pyaibox.base
    pyaibox.compression
+   pyaibox.datasets
    pyaibox.dsp
    pyaibox.evaluation
    pyaibox.misc
+   pyaibox.nn
    pyaibox.summary
    pyaibox.utils
 
