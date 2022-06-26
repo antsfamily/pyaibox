@@ -10,6 +10,8 @@ from .utils.ios import loadyaml, loadjson, loadmat, savemat, loadh5, saveh5, mvk
 from .utils.image import imread, imsave, histeq, imresize
 from .utils.file import data_path, pkg_path, copyfile, copyfiles, listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec
 from .utils.plot_show import cplot, plots, Plots, imshow
+from .utils.docstr import gpyi
+
 
 from .base import baseops, arrayops, mathops, randomfunc
 from .base.baseops import dreplace, dmka
