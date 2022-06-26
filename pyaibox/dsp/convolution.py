@@ -8,7 +8,7 @@ from __future__ import division, print_function, absolute_import
 
 import numpy as np
 from pyaibox.dsp.ffts import fft, ifft, padfft
-from pyaibox.base.mathops import nextpow2
+from pyaibox.base.mathops import nextpow2, c2r, r2c
 from pyaibox.base.arrayops import cut
 
 
@@ -138,7 +138,7 @@ def cutfftconv1(y, nfft, Nx, Nh, shape='same', axis=0, ftshift=False):
     return y
 
 
-def fftconv1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
+def fftconv1(x, h, shape='same', caxis=None, axis=0, keepcaxis=False, nfft=None, ftshift=False, eps=None):
     """Convolution using Fast Fourier Transformation
 
     Convolution using Fast Fourier Transformation.
@@ -148,15 +148,22 @@ def fftconv1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
     x : numpy array
         data to be convolved.
     h : numpy array
-        filter array
+        filter array, it will be expanded to the same dimensions of :attr:`x` first.
     shape : str, optional
         output shape:
         1. ``'same'`` --> same size as input x, :math:`N_x`
         2. ``'valid'`` --> valid convolution output
         3. ``'full'`` --> full convolution output, :math:`N_x+N_h-1`
         (the default is 'same')
+    caxis : int or None
+        If :attr:`X` is complex-valued, :attr:`caxis` is ignored. If :attr:`X` is real-valued and :attr:`caxis` is integer
+        then :attr:`X` will be treated as complex-valued, in this case, :attr:`caxis` specifies the complex axis;
+        otherwise (None), :attr:`X` will be treated as real-valued.
     axis : int, optional
-        convolution axis (the default is 0)
+        axis of convolution operation (the default is 0, which means the first dimension)
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued array 
+        and :attr:`axis` is not :obj:`None` but represents in real format. Default is :obj:`False`.
     nfft : int, optional
         number of fft points (the default is :math:`2^{nextpow2(N_x+N_h-1)}`),
         note that :attr:`nfft` can not be smaller than :math:`N_x+N_h-1`.
@@ -172,8 +179,18 @@ def fftconv1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
 
     """
 
+    CplxRealflag = False
+    if np.iscomplex(x).any():  # complex in complex
+        pass
+    else:
+        if caxis is None:  # real
+            pass
+        else:  # complex in real
+            CplxRealflag = True
+            x = r2c(x, caxis=caxis, keepcaxis=keepcaxis)
+            h = r2c(h, caxis=caxis, keepcaxis=keepcaxis)
+
     if np.ndim(h) == 1 and axis > 0:
-        print(h, axis, list(range(axis)))
         h = np.expand_dims(h, list(range(axis)))
     Nh = np.size(h, axis)
     Nx = np.size(x, axis)
@@ -187,14 +204,17 @@ def fftconv1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
 
     x = padfft(x, nfft, axis, ftshift)
     h = padfft(h, nfft, axis, ftshift)
-    X = fft(x, nfft, axis, norm=None, shift=ftshift)
-    H = fft(h, nfft, axis, norm=None, shift=ftshift)
+    X = fft(x, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
+    H = fft(h, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
     Y = X * H
-    y = ifft(Y, nfft, axis, norm=None, shift=ftshift)
+    y = ifft(Y, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
     y = cutfftconv1(y, nfft, Nx, Nh, shape, axis, ftshift)
 
     if eps is not None:
         y[abs(y) < eps] = 0.
+
+    if CplxRealflag:
+        y = c2r(y, caxis=caxis, keepcaxis=not keepcaxis)
 
     return y
 
@@ -203,7 +223,7 @@ if __name__ == '__main__':
 
     ftshift = False
     ftshift = True
-    x = np.array([1, 2, 3, 4, 5])
+    x = np.array([1, 2, 3 + 6j, 4, 5])
     h = np.array([1 + 2j, 2, 3, 4, 5, 6, 7])
 
     y1 = conv1(x, h, shape='same')

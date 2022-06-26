@@ -77,6 +77,9 @@ def fnorm(X, caxis=None, axis=None, reduction='mean'):
 
     """
 
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
+
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
             F = np.sqrt(np.sum((X.conj() * X).real))
@@ -172,6 +175,9 @@ def pnorm(X, caxis=None, axis=None, p=2, reduction='mean'):
         [4.57517398 4.93756225 4.46664844 4.67936684 4.35297889] 23.011730410021634 4.602346082004327
         [4.57517398 4.93756225 4.46664844 4.67936684 4.35297889] 23.011730410021634 4.602346082004327
     """
+
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
 
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:

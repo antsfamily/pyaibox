@@ -36,6 +36,14 @@ pyaibox.base.randomfunc module
    :undoc-members:
    :show-inheritance:
 
+pyaibox.base.typevalue module
+-----------------------------
+
+.. automodule:: pyaibox.base.typevalue
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 Module contents
 ---------------
 

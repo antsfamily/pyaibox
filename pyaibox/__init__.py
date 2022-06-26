@@ -2,22 +2,22 @@ from __future__ import division, print_function, absolute_import
 from .version import __version__
 
 
-from .base import baseops, arrayops, mathops, randomfunc
-from .base.baseops import dreplace, dmka
-from .base.arrayops import sl, cut, cat, arraycomb
-from .base.mathops import nextpow2, prevpow2, ebeo, r2c, c2r, conj, real, imag, abs, pow
-from .base.randomfunc import setseed, randgrid, randperm, randperm2d
-
-
 from .utils.const import *
 from .utils.colors import rgb2gray, gray2rgb, DISTINCT_COLORS_HEX, DISTINCT_COLORS_RGB, DISTINCT_COLORS_CMYK, DISTINCT_COLORS_RGB_NORM, BASE_COLORS, TABLEAU_COLORS, CSS4_COLORS
 from .utils.colormaps import cmaps, viridis, parula
-from .utils.convert import str2list, str2num, str2sec
+from .utils.convert import str2list, str2num, str2sec, int2bstr, bstr2int
 from .utils.ios import loadyaml, loadjson, loadmat, savemat, loadh5, saveh5, mvkeyh5, loadbin, savebin
 from .utils.image import imread, imsave, histeq, imresize
 from .utils.file import data_path, pkg_path, copyfile, copyfiles, listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec
-from .utils.plot_show import cplot, plots, Plots
-from .utils.typevalue import bin2int, peakvalue
+from .utils.plot_show import cplot, plots, Plots, imshow
+
+from .base import baseops, arrayops, mathops, randomfunc
+from .base.baseops import dreplace, dmka
+from .base.arrayops import sl, cut, cat, arraycomb
+from .base.mathops import fnab, ebeo, nextpow2, prevpow2, r2c, c2r, conj, real, imag, abs, pow
+from .base.randomfunc import setseed, randgrid, randperm, randperm2d
+from .base.typevalue import peakvalue, dtypes
+
 
 from .summary.loss_log import LossLog
 
@@ -25,7 +25,7 @@ from .evaluation.contrast import contrast
 from .evaluation.entropy import entropy
 from .evaluation.norm import fnorm, pnorm
 from .evaluation.error import mse, sse, mae, sae
-from .evaluation.snr import snr, psnr
+from .evaluation.snrs import snr, psnr
 from .evaluation.detection_voc import bbox_iou, calc_detection_voc_ap, calc_detection_voc_prec_rec, eval_detection_voc
 
 from .compression.huffman_coding import HuffmanCoding
@@ -43,6 +43,8 @@ from .misc.mapping_operation import mapping
 from .misc.sampling import slidegrid, dnsampling, sample_tensor, shuffle_tensor, split_tensor, tensor2patch, patch2tensor, read_samples
 from .misc.bounding_box import plot_bbox, fmt_bbox
 from .misc.draw_shapes import draw_rectangle
+from .misc.noising import awgns, awgns2, imnoise, awgn, wgn
+
 
 from .datasets.mnist import read_mnist
 from .datasets.mstar import mstar_header, mstar_raw

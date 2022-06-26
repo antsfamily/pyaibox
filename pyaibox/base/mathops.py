@@ -10,6 +10,95 @@ import numpy as np
 import pyaibox as pb
 
 
+def fnab(n):
+    """gives the closest two integer number factor of a number
+
+    Parameters
+    ----------
+    n : int or float
+        the number
+
+    Returns
+    -------
+    a : int
+    b : int
+        the factor number
+
+    Examples
+    --------
+
+    ::
+
+        print(fnab(5))
+        print(fnab(6))
+        print(fnab(7))
+        print(fnab(8))
+        print(fnab(9))
+
+        # ---output
+        (2, 3)
+        (2, 3)
+        (2, 4)
+        (2, 4)
+        (3, 3)
+
+    """    
+
+    a = int(np.sqrt(n))
+    b = a
+    while (b * a) < n:
+        b += 1
+    return a, b
+
+
+def ebeo(a, b, op='+'):
+    r"""element by element operation
+
+    Element by element operation.
+
+    Parameters
+    ----------
+    a : list, tuple or ndarray
+        The first list/tuple/ndarray.
+    b : list, tuple or ndarray
+        The second list/tuple/ndarray.
+    op : str, optional
+        Supported operations are:
+        - ``'+'`` or ``'add'`` for addition (default)
+        - ``'-'`` or ``'sub'`` for substraction
+        - ``'*'`` or ``'mul'`` for multiplication
+        - ``'/'`` or ``'div'`` for division
+        - ``'**'`` or ``pow`` for power
+        - ``'<'``, or ``'lt'`` for less than
+        - ``'<='``, or ``'le'`` for less than or equal to
+        - ``'>'``, or ``'gt'`` for greater than
+        - ``'>='``, or ``'ge'`` for greater than or equal to
+        - ``'&'`` for bitwise and
+        - ``'|'`` for bitwise or
+        - ``'^'`` for bitwise xor
+        - function for custom operation.
+
+    Raises
+    ------
+    TypeError
+        If the specified operator not in the above list, raise a TypeError.
+    """
+    if op in ['+', 'add']:
+        return [i + j for i, j in zip(a, b)]
+    if op in ['-', 'sub']:
+        return [i - j for i, j in zip(a, b)]
+    if op in ['*', 'mul']:
+        return [i * j for i, j in zip(a, b)]
+    if op in ['/', 'div']:
+        return [i / j for i, j in zip(a, b)]
+    if op in ['**', '^', 'pow']:
+        return [i ** j for i, j in zip(a, b)]
+    if isinstance(op, str):
+        raise TypeError("Not supported operation: " + op + "!")
+    else:
+        return [op(i, j) for i, j in zip(a, b)]
+
+
 def nextpow2(x):
     r"""get the next higher power of 2.
 
@@ -76,55 +165,7 @@ def prevpow2(x):
     return int(np.floor(np.log2(np.abs(x) + 1e-32)))
 
 
-def ebeo(a, b, op='+'):
-    r"""element by element operation
-
-    Element by element operation.
-
-    Parameters
-    ----------
-    a : list, tuple or ndarray
-        The first list/tuple/ndarray.
-    b : list, tuple or ndarray
-        The second list/tuple/ndarray.
-    op : str, optional
-        Supported operations are:
-        - ``'+'`` or ``'add'`` for addition (default)
-        - ``'-'`` or ``'sub'`` for substraction
-        - ``'*'`` or ``'mul'`` for multiplication
-        - ``'/'`` or ``'div'`` for division
-        - ``'**'`` or ``pow`` for power
-        - ``'<'``, or ``'lt'`` for less than
-        - ``'<='``, or ``'le'`` for less than or equal to
-        - ``'>'``, or ``'gt'`` for greater than
-        - ``'>='``, or ``'ge'`` for greater than or equal to
-        - ``'&'`` for bitwise and
-        - ``'|'`` for bitwise or
-        - ``'^'`` for bitwise xor
-        - function for custom operation.
-
-    Raises
-    ------
-    TypeError
-        If the specified operator not in the above list, raise a TypeError.
-    """
-    if op in ['+', 'add']:
-        return [i + j for i, j in zip(a, b)]
-    if op in ['-', 'sub']:
-        return [i - j for i, j in zip(a, b)]
-    if op in ['*', 'mul']:
-        return [i * j for i, j in zip(a, b)]
-    if op in ['/', 'div']:
-        return [i / j for i, j in zip(a, b)]
-    if op in ['**', '^', 'pow']:
-        return [i ** j for i, j in zip(a, b)]
-    if isinstance(op, str):
-        raise TypeError("Not supported operation: " + op + "!")
-    else:
-        return [op(i, j) for i, j in zip(a, b)]
-
-
-def r2c(X, caxis=-1, keepdims=False):
+def r2c(X, caxis=-1, keepcaxis=False):
     r"""convert real-valued array to complex-valued array
 
     Convert real-valued array (the size of :attr:`axis` -th dimension is 2) to complex-valued array
@@ -132,7 +173,7 @@ def r2c(X, caxis=-1, keepdims=False):
     Args:
         X (numpy array): real-valued array.
         caxis (int, optional): the complex axis. Defaults to -1.
-        keepdims (bool, optional): keepdims? default is False.
+        keepcaxis (bool, optional): keepcaxis? default is False.
 
     Returns:
         numpy array: complex-valued array
@@ -147,7 +188,7 @@ def r2c(X, caxis=-1, keepdims=False):
 
             Xreal = np.random.randint(0, 30, (3, 2, 4))
             Xcplx = r2c(Xreal, caxis=1)
-            Yreal = c2r(Xcplx, caxis=0, keepdims=True)
+            Yreal = c2r(Xcplx, caxis=0, keepcaxis=True)
 
             print(Xreal, Xreal.shape, 'Xreal')
             print(Xcplx, Xcplx.shape, 'Xcplx')
@@ -186,7 +227,7 @@ def r2c(X, caxis=-1, keepdims=False):
             0.0 0.0, Error
     """
 
-    if keepdims:
+    if keepcaxis:
         idxreal = pb.sl(np.ndim(X), axis=caxis, idx=[[0]])
         idximag = pb.sl(np.ndim(X), axis=caxis, idx=[[1]])
     else:
@@ -196,12 +237,13 @@ def r2c(X, caxis=-1, keepdims=False):
     return X[idxreal] + 1j * X[idximag]
 
 
-def c2r(X, caxis=-1):
+def c2r(X, caxis=-1, keepcaxis=True):
     r"""convert complex-valued array to real-valued array
 
     Args:
         X (numpy array): complex-valued array
         caxis (int, optional): complex axis for real-valued array. Defaults to -1.
+        keepcaxis (bool, optional): keepcaxis? default is True.
 
     Returns:
         numpy array: real-valued array
@@ -216,7 +258,7 @@ def c2r(X, caxis=-1):
 
             Xreal = np.random.randint(0, 30, (3, 2, 4))
             Xcplx = r2c(Xreal, caxis=1)
-            Yreal = c2r(Xcplx, caxis=0, keepdims=True)
+            Yreal = c2r(Xcplx, caxis=0, keepcaxis=True)
 
             print(Xreal, Xreal.shape, 'Xreal')
             print(Xcplx, Xcplx.shape, 'Xcplx')
@@ -255,7 +297,10 @@ def c2r(X, caxis=-1):
             0.0 0.0, Error
     """
 
-    return np.stack((X.real, X.imag), axis=caxis)
+    if keepcaxis:
+        return np.stack((X.real, X.imag), axis=caxis)
+    else:
+        return np.concatenate((X.real, X.imag), axis=caxis)
 
 
 def conj(X, caxis=None):
@@ -314,7 +359,7 @@ def conj(X, caxis=None):
             return np.concatenate((X[pb.sl(d, axis=caxis, idx=[[0]])], -X[pb.sl(d, axis=caxis, idx=[[1]])]), axis=caxis)
 
 
-def real(X, caxis=None, keepdims=False):
+def real(X, caxis=None, keepcaxis=False):
     r"""obtain real part of a array
 
     Both complex and real representation are supported.
@@ -327,8 +372,8 @@ def real(X, caxis=None, keepdims=False):
         If :attr:`X` is complex-valued, :attr:`cdim` is ignored. If :attr:`X` is real-valued and :attr:`cdim` is integer
         then :attr:`X` will be treated as complex-valued, in this case, :attr:`cdim` specifies the complex axis;
         otherwise (None), :attr:`X` will be treated as real-valued
-    keepdims : bool, optional
-        keep dimensions?
+    keepcaxis : bool, optional
+        keep complex-dimension?
 
     Returns
     -------
@@ -364,11 +409,11 @@ def real(X, caxis=None, keepdims=False):
             return X
         else:  # complex in real
             d = np.ndim(X)
-            idx = [[0]] if keepdims else [0]
+            idx = [[0]] if keepcaxis else [0]
             return X[pb.sl(d, axis=caxis, idx=idx)]
 
 
-def imag(X, caxis=None, keepdims=False):
+def imag(X, caxis=None, keepcaxis=False):
     r"""obtain imaginary part of a array
 
     Both complex and real representation are supported.
@@ -381,8 +426,8 @@ def imag(X, caxis=None, keepdims=False):
         If :attr:`X` is complex-valued, :attr:`cdim` is ignored. If :attr:`X` is real-valued and :attr:`cdim` is integer
         then :attr:`X` will be treated as complex-valued, in this case, :attr:`cdim` specifies the complex axis;
         otherwise (None), :attr:`X` will be treated as real-valued
-    keepdims : bool, optional
-        keep dimensions?
+    keepcaxis : bool, optional
+        keep complex-dimension?
 
     Returns
     -------
@@ -419,11 +464,11 @@ def imag(X, caxis=None, keepdims=False):
             return np.zeros_like(X)
         else:  # complex in real
             d = np.ndim(X)
-            idx = [[1]] if keepdims else [1]
+            idx = [[1]] if keepcaxis else [1]
             return X[pb.sl(d, axis=caxis, idx=idx)]
 
 
-def abs(X, caxis=None, keepdims=False):
+def abs(X, caxis=None, keepcaxis=False):
     r"""obtain amplitude of a array
 
     Both complex and real representation are supported.
@@ -441,8 +486,8 @@ def abs(X, caxis=None, keepdims=False):
         If :attr:`X` is complex-valued, :attr:`cdim` is ignored. If :attr:`X` is real-valued and :attr:`cdim` is integer
         then :attr:`X` will be treated as complex-valued, in this case, :attr:`cdim` specifies the complex axis;
         otherwise (None), :attr:`X` will be treated as real-valued
-    keepdims : bool, optional
-        keep dimensions?
+    keepcaxis : bool, optional
+        keep complex-dimension?
 
     Returns
     -------
@@ -479,12 +524,12 @@ def abs(X, caxis=None, keepdims=False):
             return np.abs(X)
         else:  # complex in real
             d = np.ndim(X)
-            idxreal = [[0]] if keepdims else [0]
-            idximag = [[1]] if keepdims else [1]
+            idxreal = [[0]] if keepcaxis else [0]
+            idximag = [[1]] if keepcaxis else [1]
             return np.sqrt((X[pb.sl(d, axis=caxis, idx=idxreal)]**2 + X[pb.sl(d, axis=caxis, idx=idximag)]**2))
 
 
-def pow(X, caxis=None, keepdims=False):
+def pow(X, caxis=None, keepcaxis=False):
     r"""obtain power of a array
 
     Both complex and real representation are supported.
@@ -502,8 +547,8 @@ def pow(X, caxis=None, keepdims=False):
         If :attr:`X` is complex-valued, :attr:`cdim` is ignored. If :attr:`X` is real-valued and :attr:`cdim` is integer
         then :attr:`X` will be treated as complex-valued, in this case, :attr:`cdim` specifies the complex axis;
         otherwise (None), :attr:`X` will be treated as real-valued
-    keepdims : bool, optional
-        keep dimensions?
+    keepcaxis : bool, optional
+        keep complex-dimension?
 
     Returns
     -------
@@ -540,8 +585,8 @@ def pow(X, caxis=None, keepdims=False):
             return X**2
         else:  # complex in real
             d = np.ndim(X)
-            idxreal = [[0]] if keepdims else [0]
-            idximag = [[1]] if keepdims else [1]
+            idxreal = [[0]] if keepcaxis else [0]
+            idximag = [[1]] if keepcaxis else [1]
             return X[pb.sl(d, axis=caxis, idx=idxreal)]**2 + X[pb.sl(d, axis=caxis, idx=idximag)]**2
 
 
@@ -552,7 +597,7 @@ if __name__ == '__main__':
     np.random.seed(2020)
 
     Xreal = np.random.randint(0, 30, (3, 2, 4))
-    Xcplx = r2c(Xreal, caxis=1, keepdims=True)
+    Xcplx = r2c(Xreal, caxis=1, keepcaxis=True)
     Yreal = c2r(Xcplx, caxis=0)
 
     print(Xreal, Xreal.shape, 'Xreal')

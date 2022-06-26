@@ -39,7 +39,7 @@ def ampphaerror(orig, reco):
     return amperror, phaerror
 
 
-def mse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
+def mse(X, Y, caxis=None, axis=None, keepcaxis=False, norm=False, reduction='mean'):
     r"""computes the mean square error
 
     Both complex and real representation are supported.
@@ -59,6 +59,9 @@ def mse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
         otherwise (None), :attr:`X` will be treated as real-valued
     axis : int or None
         The dimension axis (:attr:`caxis` is not included) for computing norm. The default is :obj:`None`, which means all. 
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued tensor 
+        but represents in real format. Default is :obj:`False`.    
     norm : bool
         If :obj:`True`, normalize with the f-norm of :attr:`X` and :attr:`Y`. (default is :obj:`False`)
     reduction : str, optional
@@ -110,6 +113,11 @@ def mse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
 
     """
 
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
+    if Y.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        Y = Y.astype(np.float64)
+
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
@@ -123,18 +131,14 @@ def mse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
             else:
                E = np.mean(X**2, axis=axis)
         else:  # complex in real
-            d = np.ndim(X)
-            idxreal = pb.sl(d, axis=caxis, idx=[[0]])
-            idximag = pb.sl(d, axis=caxis, idx=[[1]])
-
             if axis is None:
-               E = np.mean(X[idxreal]**2 + X[idximag]**2)
+               E = np.mean(np.sum(X**2, axis=caxis))
             else:
-               E = np.mean(X[idxreal]**2 + X[idximag]**2, axis=axis)
+               E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis)
 
     if norm is True:
-        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, reduction=None)
-        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, reduction=None)
+        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
+        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
         E /= (xnorm * ynorm + pb.EPS)
 
     if reduction in ['mean', 'MEAN']:
@@ -145,7 +149,7 @@ def mse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
     return E
 
 
-def sse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
+def sse(X, Y, caxis=None, axis=None, keepcaxis=False, norm=False, reduction='mean'):
     r"""computes the sum square error
 
     Both complex and real representation are supported.
@@ -165,6 +169,9 @@ def sse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
         otherwise (None), :attr:`X` will be treated as real-valued
     axis : int or None
         The dimension axis (:attr:`caxis` is not included) for computing norm. The default is :obj:`None`, which means all. 
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued tensor 
+        but represents in real format. Default is :obj:`False`.    
     norm : bool
         If :obj:`True`, normalize with the f-norm of :attr:`X` and :attr:`Y`. (default is :obj:`False`)
     reduction : str, optional
@@ -216,6 +223,11 @@ def sse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
 
     """
 
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
+    if Y.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        Y = Y.astype(np.float64)
+
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
@@ -229,18 +241,14 @@ def sse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
             else:
                E = np.sum(X**2, axis=axis)
         else:  # complex in real
-            d = np.ndim(X)
-            idxreal = pb.sl(d, axis=caxis, idx=[[0]])
-            idximag = pb.sl(d, axis=caxis, idx=[[1]])
-
             if axis is None:
-               E = np.sum(X[idxreal]**2 + X[idximag]**2)
+               E = np.sum(np.sum(X**2, axis=caxis))
             else:
-               E = np.sum(X[idxreal]**2 + X[idximag]**2, axis=axis)
+               E = np.sum(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis)
 
     if norm is True:
-        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, reduction=None)
-        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, reduction=None)
+        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
+        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
         E /= (xnorm * ynorm + pb.EPS)
 
     if reduction in ['mean', 'MEAN']:
@@ -251,7 +259,7 @@ def sse(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
     return E
 
 
-def mae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
+def mae(X, Y, caxis=None, axis=None, keepcaxis=False, norm=False, reduction='mean'):
     r"""computes the mean absoluted error
 
     Both complex and real representation are supported.
@@ -271,6 +279,9 @@ def mae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
         otherwise (None), :attr:`X` will be treated as real-valued
     axis : int or None
         The dimension axis (:attr:`caxis` is not included) for computing norm. The default is :obj:`None`, which means all. 
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued tensor 
+        but represents in real format. Default is :obj:`False`.    
     norm : bool
         If :obj:`True`, normalize with the f-norm of :attr:`X` and :attr:`Y`. (default is :obj:`False`)
     reduction : str, optional
@@ -322,6 +333,11 @@ def mae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
 
     """
 
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
+    if Y.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        Y = Y.astype(np.float64)
+
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
@@ -335,18 +351,14 @@ def mae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
             else:
                E = np.mean(np.abs(X), axis=axis)
         else:  # complex in real
-            d = np.ndim(X)
-            idxreal = pb.sl(d, axis=caxis, idx=[[0]])
-            idximag = pb.sl(d, axis=caxis, idx=[[1]])
-
             if axis is None:
-               E = np.mean(np.sqrt(X[idxreal]**2 + X[idximag]**2))
+               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis)))
             else:
-               E = np.mean(np.sqrt(X[idxreal]**2 + X[idximag]**2), axis=axis)
+               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis)
     
     if norm is True:
-        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, reduction=None)
-        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, reduction=None)
+        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
+        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
         E /= (xnorm * ynorm + pb.EPS)
 
     if reduction in ['mean', 'MEAN']:
@@ -357,7 +369,7 @@ def mae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
     return E
 
 
-def sae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
+def sae(X, Y, caxis=None, axis=None, keepcaxis=False, norm=False, reduction='mean'):
     r"""computes the sum absoluted error
 
     Both complex and real representation are supported.
@@ -377,6 +389,9 @@ def sae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
         otherwise (None), :attr:`X` will be treated as real-valued
     axis : int or None
         The dimension axis (:attr:`caxis` is not included) for computing norm. The default is :obj:`None`, which means all. 
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued tensor 
+        but represents in real format. Default is :obj:`False`.
     norm : bool
         If :obj:`True`, normalize with the f-norm of :attr:`X` and :attr:`Y`. (default is :obj:`False`)
     reduction : str, optional
@@ -428,6 +443,11 @@ def sae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
 
     """
 
+    if X.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        X = X.astype(np.float64)
+    if Y.dtype in pb.dtypes('int') + pb.dtypes('uint'):
+        Y = Y.astype(np.float64)
+
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
@@ -441,18 +461,14 @@ def sae(X, Y, caxis=None, axis=None, norm=False, reduction='mean'):
             else:
                E = np.sum(np.abs(X), axis=axis)
         else:  # complex in real
-            d = np.ndim(X)
-            idxreal = pb.sl(d, axis=caxis, idx=[[0]])
-            idximag = pb.sl(d, axis=caxis, idx=[[1]])
-
             if axis is None:
-               E = np.sum(np.sqrt(X[idxreal]**2 + X[idximag]**2))
+               E = np.sum(np.sqrt(np.sum(X**2, axis=caxis)))
             else:
-               E = np.sum(np.sqrt(X[idxreal]**2 + X[idximag]**2), axis=axis)
+               E = np.sum(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis)
 
     if norm is True:
-        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, reduction=None)
-        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, reduction=None)
+        xnorm = pb.fnorm(X, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
+        ynorm = pb.fnorm(Y, caxis=caxis, axis=axis, keepcaxis=keepcaxis, reduction=None)
         E /= (xnorm * ynorm + pb.EPS)
 
     if reduction in ['mean', 'MEAN']:

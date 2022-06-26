@@ -12,7 +12,7 @@ n = -123456
 bs = n.to_bytes(8, 'little', signed=True)
 print(bs)
 print(hex(n))
-print(pb.bin2int(bs, '<'))
+print(pb.bstr2int(bs, '<'))
 
 print("===========================")
 x = np.array([[251, 200, 210], [220, 5, 6]]).astype('uint8')

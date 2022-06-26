@@ -12,29 +12,29 @@ from pyaibox.base.arrayops import arraycomb
 from pyaibox.utils.ios import loadmat, loadh5
 
 
-def upsampling(X, shape, axis=-1, method='Lanczos'):
+# def upsampling(X, shape, axis=-1, method='Lanczos'):
 
-    # Na, Nr = X.shape
-    # Y = np.zeros(shape, dtype=X.dtype)
-    # for a in range(Na):
-    #     Y[a, :] = np.interp(range(shape[1]), range(Nr), X[a, :])
-    # for r in range(Nr):
-    #     Y[:, a] = np.interp(range(shape[0]), range(Na), X[:, r])
+#     # Na, Nr = X.shape
+#     # Y = np.zeros(shape, dtype=X.dtype)
+#     # for a in range(Na):
+#     #     Y[a, :] = np.interp(range(shape[1]), range(Nr), X[a, :])
+#     # for r in range(Nr):
+#     #     Y[:, a] = np.interp(range(shape[0]), range(Na), X[:, r])
 
-    # return Y
+#     # return Y
 
-    print(shape, X.shape)
-    imgXr = Image.fromarray(X[:, :, 0])
-    # imgXr = imgXr.resize((shape[1], shape[0]), Image.LANCZOS)
-    # imgXr = imgXr.resize((shape[1], shape[0]), Image.BILINEAR)
-    imgXr = imgXr.resize((shape[1], shape[0]), Image.NEAREST)
-    # imgXr = imgXr.resize((shape[1], shape[0]), Image.ANTIALIAS)
-    imgXi = Image.fromarray(X[:, :, 1])
-    # imgXi = imgXi.resize((shape[1], shape[0]), Image.LANCZOS)
-    # imgXi = imgXi.resize((shape[1], shape[0]), Image.BILINEAR)
-    imgXi = imgXi.resize((shape[1], shape[0]), Image.NEAREST)
-    # imgXi = imgXi.resize((shape[1], shape[0]), Image.ANTIALIAS)
-    return np.transpose(np.array([np.array(imgXr), np.array(imgXi)]), (1, 2, 0))
+#     print(shape, X.shape)
+#     imgXr = Image.fromarray(X[:, :, 0])
+#     # imgXr = imgXr.resize((shape[1], shape[0]), Image.LANCZOS)
+#     # imgXr = imgXr.resize((shape[1], shape[0]), Image.BILINEAR)
+#     imgXr = imgXr.resize((shape[1], shape[0]), Image.NEAREST)
+#     # imgXr = imgXr.resize((shape[1], shape[0]), Image.ANTIALIAS)
+#     imgXi = Image.fromarray(X[:, :, 1])
+#     # imgXi = imgXi.resize((shape[1], shape[0]), Image.LANCZOS)
+#     # imgXi = imgXi.resize((shape[1], shape[0]), Image.BILINEAR)
+#     imgXi = imgXi.resize((shape[1], shape[0]), Image.NEAREST)
+#     # imgXi = imgXi.resize((shape[1], shape[0]), Image.ANTIALIAS)
+#     return np.transpose(np.array([np.array(imgXr), np.array(imgXi)]), (1, 2, 0))
 
 
 def slidegrid(start, stop, step, shake=0, n=None):
@@ -91,7 +91,7 @@ def slidegrid(start, stop, step, shake=0, n=None):
 
 
 def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None, extra=False):
-    """down-sampling a tensor
+    r"""down-sampling a tensor
 
     Args:
         x (ndarray): The input tensor.
@@ -197,7 +197,7 @@ def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None
 
 
 def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=False):
-    """sample a tensor
+    r"""sample a tensor
 
     Sample a tensor sequentially/uniformly/randomly.
 
@@ -279,7 +279,7 @@ def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=
 
 
 def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):
-    """shuffle a tensor
+    r"""shuffle a tensor
 
     Shuffle a tensor randomly.
 
@@ -361,7 +361,7 @@ def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):
 
 
 def split_tensor(x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False):
-    """split a tensor
+    r"""split a tensor
 
     split a tensor into some parts.
 
@@ -529,7 +529,7 @@ def tensor2patch(x, n=None, size=(256, 256), axis=(0, 1), start=(0, 0), stop=(No
 
 
 def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):
-    """merge patch to a tensor
+    r"""merge patch to a tensor
 
 
     Args:
@@ -589,7 +589,7 @@ def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):
 
 
 def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1], mode='sequentially', axis=0, parts=None, seed=None):
-    """Read samples
+    r"""Read samples
 
     Args:
         datafiles (list): list of path strings

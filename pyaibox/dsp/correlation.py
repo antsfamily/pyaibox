@@ -8,7 +8,7 @@ from __future__ import division, print_function, absolute_import
 
 import numpy as np
 from pyaibox.dsp.ffts import fft, ifft, padfft
-from pyaibox.base.mathops import nextpow2
+from pyaibox.base.mathops import nextpow2, c2r, r2c, conj
 from pyaibox.base.arrayops import cut
 
 
@@ -133,7 +133,7 @@ def cutfftcorr1(y, nfft, Nx, Nh, shape='same', axis=0, ftshift=False):
     return y
 
 
-def fftcorr1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
+def fftcorr1(x, h, shape='same', caxis=None, axis=0, keepcaxis=False, nfft=None, ftshift=False, eps=None):
     """Correlation using Fast Fourier Transformation
 
     Correlation using Fast Fourier Transformation.
@@ -143,15 +143,22 @@ def fftcorr1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
     x : numpy array
         data to be convolved.
     h : numpy array
-        filter array
+        filter array, it will be expanded to the same dimensions of :attr:`x` first.
     shape : str, optional
         output shape:
         1. ``'same'`` --> same size as input x, :math:`N_x`
         2. ``'valid'`` --> valid correlation output
         3. ``'full'`` --> full correlation output, :math:`N_x+N_h-1`
         (the default is 'same')
+    caxis : int or None
+        If :attr:`x` is complex-valued, :attr:`caxis` is ignored. If :attr:`x` is real-valued and :attr:`caxis` is integer
+        then :attr:`x` will be treated as complex-valued, in this case, :attr:`caxis` specifies the complex axis;
+        otherwise (None), :attr:`x` will be treated as real-valued.
     axis : int, optional
-        correlation axis (the default is 0)
+        axis of correlation operation (the default is 0, which means the first dimension)
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued array 
+        and :attr:`axis` is not :obj:`None` but represents in real format. Default is :obj:`False`.
     nfft : int, optional
         number of fft points (the default is None, :math:`2^{nextpow2(N_x+N_h-1)}`),
         note that :attr:`nfft` can not be smaller than :math:`N_x+N_h-1`.
@@ -167,8 +174,19 @@ def fftcorr1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
 
     """
 
+    CplxRealflag = False
+    if np.iscomplex(x).any():  # complex in complex
+        pass
+    else:
+        if caxis is None:  # real
+            pass
+        else:  # complex in real
+            CplxRealflag = True
+            x = r2c(x, caxis=caxis, keepcaxis=keepcaxis)
+            h = r2c(h, caxis=caxis, keepcaxis=keepcaxis)
+
     if np.ndim(h) == 1 and axis > 0:
-        h = np.expand_dims(h, list(range(axis)))
+        h = np.expand_axiss(h, list(range(axis)))
     Nh = np.size(h, axis)
     Nx = np.size(x, axis)
 
@@ -181,15 +199,18 @@ def fftcorr1(x, h, shape='same', axis=0, nfft=None, ftshift=False, eps=None):
 
     x = padfft(x, nfft, axis, ftshift)
     h = padfft(h, nfft, axis, ftshift)
-    X = fft(x, nfft, axis, norm=None, shift=ftshift)
-    H = fft(h, nfft, axis, norm=None, shift=ftshift)
-    Y = X * np.conj(H)
-    y = ifft(Y, nfft, axis, norm=None, shift=ftshift)
+    X = fft(x, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
+    H = fft(h, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
+    Y = X * conj(H, caxis=caxis)
+    y = ifft(Y, nfft, caxis=None, axis=axis, keepcaxis=False, norm=None, shift=ftshift)
 
     y = cutfftcorr1(y, nfft, Nx, Nh, shape, axis, ftshift)
 
     if eps is not None:
         y[abs(y) < eps] = 0.
+
+    if CplxRealflag:
+        y = c2r(y, caxis=caxis, keepcaxis=not keepcaxis)
 
     return y
 
@@ -284,6 +305,8 @@ def accc(Sr, isplot=False):
     acccv = np.sum(Sr[1:, :] * np.conj(Sr[0:-1, :]), 0)
 
     if isplot:
+        import matplotlib.pyplot as plt
+        import pyaibox
         plt.figure()
         plt.subplot(121)
         pyaibox.cplot(acccv, '-b')
@@ -301,7 +324,8 @@ def accc(Sr, isplot=False):
 if __name__ == '__main__':
 
     ftshift = False
-    x = np.array([1, 2, 3, 4, 5])
+    ftshift = True
+    x = np.array([1, 2, 3 + 6j, 4, 5])
     h = np.array([1 + 2j, 2, 3, 4, 5, 6, 7])
 
     y1 = corr1(x, h, shape='same')

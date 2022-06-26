@@ -36,6 +36,14 @@ pyaibox.utils.convert module
    :undoc-members:
    :show-inheritance:
 
+pyaibox.utils.docstr module
+---------------------------
+
+.. automodule:: pyaibox.utils.docstr
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 pyaibox.utils.file module
 -------------------------
 
@@ -64,14 +72,6 @@ pyaibox.utils.plot\_show module
 -------------------------------
 
 .. automodule:: pyaibox.utils.plot_show
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-pyaibox.utils.typevalue module
-------------------------------
-
-.. automodule:: pyaibox.utils.typevalue
    :members:
    :undoc-members:
    :show-inheritance:

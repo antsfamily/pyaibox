@@ -7,9 +7,10 @@
 from __future__ import division, print_function, absolute_import
 import numpy as np
 import numpy.fft as npfft
+import pyaibox as pb
 
 
-def freq(fs, n, norm=False, shift=False):
+def freq(n, fs, norm=False, shift=False):
     r"""Return the sample frequencies
 
     Return the sample frequencies.
@@ -26,10 +27,10 @@ def freq(fs, n, norm=False, shift=False):
 
     Parameters
     ----------
-    fs : float
-        Sampling rate.
     n : int
         Number of samples.
+    fs : float
+        Sampling rate.
     norm : bool
         Normalize the frequencies.
     shift : bool
@@ -52,7 +53,7 @@ def freq(fs, n, norm=False, shift=False):
         return f / (d * n)
 
 
-def fftfreq(fs, n, norm=False, shift=False):
+def fftfreq(n, fs, norm=False, shift=False):
     r"""Return the Discrete Fourier Transform sample frequencies
 
     Return the Discrete Fourier Transform sample frequencies.
@@ -85,23 +86,21 @@ def fftfreq(fs, n, norm=False, shift=False):
     numpy array
         frequency array with size :math:`n×1`.
     """
+
     d = 1. / fs
+
     if n % 2 == 0:
-        N = n
-        N1 = int(n / 2.)
-        N2 = int(n / 2.)
-        endpoint = False
+        pp = np.arange(0, n // 2)
+        pn = np.arange(-(n // 2), 0)
     else:
-        N = n - 1
-        N1 = int((n + 1) / 2.)
-        N2 = int((n - 1) / 2.)
-        endpoint = True
+        pp = np.arange(0, (n + 1) // 2)
+        pn = np.arange(-(n // 2), 0)
 
     if shift:
-        f = np.linspace(-N / 2., N / 2., n, endpoint=endpoint)
+        f = np.concatenate((pn, pp))
     else:
-        f = np.hstack((np.linspace(0, N / 2., N1, endpoint=endpoint),
-                       np.linspace(-N / 2., 0, N2, endpoint=False)))
+        f = np.concatenate((pp, pn))
+
     if norm:
         return f / n
     else:
@@ -129,40 +128,6 @@ def fftshift(x, axis=None):
     See Also
     --------
     ifftshift : The inverse of :func:`fftshift`.
-
-    Examples
-    --------
-
-    ::
-
-        import numpy as np
-        import pyaibox.as ps
-
-        x = [1, 2, 3, 4, 5, 6]
-        y = np.fft.fftshift(x)
-        print(y)
-        y = ps.fftshift(x)
-        print(y)
-
-        x = [1, 2, 3, 4, 5, 6, 7]
-        y = np.fft.fftshift(x)
-        print(y)
-        y = ps.fftshift(x)
-        print(y)
-
-        axis = (0, 1)  # axis = 0, axis = 1
-        x = [[1, 2, 3, 4, 5, 6], [0, 2, 3, 4, 5, 6]]
-        y = np.fft.fftshift(x, axis)
-        print(y)
-        y = ps.fftshift(x, axis)
-        print(y)
-
-
-        x = [[1, 2, 3, 4, 5, 6, 7], [0, 2, 3, 4, 5, 6, 7]]
-        y = np.fft.fftshift(x, axis)
-        print(y)
-        y = ps.fftshift(x, axis)
-        print(y)
 
     """
 
@@ -284,21 +249,228 @@ def padfft(X, nfft=None, axis=0, shift=False):
     return X
 
 
-def fft(a, n=None, axis=-1, norm=None, shift=False):
-    N = np.size(a, axis)
+def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+    r"""FFT in pyaibox
+
+    FFT in pyaibox, both real and complex valued tensors are supported.
+
+    Parameters
+    ----------
+    x : array
+        When :attr:`x` is complex, it can be either in real-representation format or complex-representation format.
+    n : int, optional
+        The number of fft points (the default is None --> equals to signal dimension)
+    caxis : int or None
+        If :attr:`X` is complex-valued, :attr:`caxis` is ignored. If :attr:`X` is real-valued and :attr:`caxis` is integer
+        then :attr:`X` will be treated as complex-valued, in this case, :attr:`caxis` specifies the complex axis;
+        otherwise (None), :attr:`X` will be treated as real-valued.
+    axis : int, optional
+        axis of fft operation (the default is 0, which means the first dimension)
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued array 
+        and :attr:`axis` is not :obj:`None` but represents in real format. Default is :obj:`False`.
+    norm : None or str, optional
+        Normalization mode. For the forward transform (fft()), these correspond to:
+        - :obj:`None` - no normalization (default)
+        - "ortho" - normalize by ``1/sqrt(n)`` (making the FFT orthonormal)
+    shift : bool, optional
+        shift the zero frequency to center (the default is False)
+
+    Returns
+    -------
+    y : array
+        fft results array with the same type as :attr:`x`
+
+    see also :func:`ifft`, :func:`fftfreq`, :func:`freq`.
+
+    Examples
+    ---------
+
+    .. image:: ./_static/FFTIFFTdemo.png
+       :scale: 100 %
+       :align: center
+
+    The results shown in the above figure can be obtained by the following codes.
+
+    ::
+
+        import numpy as np
+        import pyaibox as pb
+        import matplotlib.pyplot as plt
+
+        shift = True
+        frq = [10, 10]
+        amp = [0.8, 0.6]
+        Fs = 80
+        Ts = 2.
+        Ns = int(Fs * Ts)
+
+        t = np.linspace(-Ts / 2., Ts / 2., Ns).reshape(Ns, 1)
+        f = pb.freq(Ns, Fs, shift=shift)
+        f = pb.fftfreq(Ns, Fs, norm=False, shift=shift)
+
+        # ---complex vector in real representation format
+        x = amp[0] * np.cos(2. * np.pi * frq[0] * t) + 1j * amp[1] * np.sin(2. * np.pi * frq[1] * t)
+
+        # ---do fft
+        Xc = pb.fft(x, n=Ns, caxis=None, axis=0, keepcaxis=False, shift=shift)
+
+        # ~~~get real and imaginary part
+        xreal = pb.real(x, caxis=None, keepcaxis=False)
+        ximag = pb.imag(x, caxis=None, keepcaxis=False)
+        Xreal = pb.real(Xc, caxis=None, keepcaxis=False)
+        Ximag = pb.imag(Xc, caxis=None, keepcaxis=False)
+
+        # ---do ifft
+        x̂ = pb.ifft(Xc, n=Ns, caxis=None, axis=0, keepcaxis=False, shift=shift)
+        
+        # ~~~get real and imaginary part
+        x̂real = pb.real(x̂, caxis=None, keepcaxis=False)
+        x̂imag = pb.imag(x̂, caxis=None, keepcaxis=False)
+
+        plt.figure()
+        plt.subplot(131)
+        plt.grid()
+        plt.plot(t, xreal)
+        plt.plot(t, ximag)
+        plt.legend(['real', 'imag'])
+        plt.title('signal in time domain')
+        plt.subplot(132)
+        plt.grid()
+        plt.plot(f, Xreal)
+        plt.plot(f, Ximag)
+        plt.legend(['real', 'imag'])
+        plt.title('signal in frequency domain')
+        plt.subplot(133)
+        plt.grid()
+        plt.plot(t, x̂real)
+        plt.plot(t, x̂imag)
+        plt.legend(['real', 'imag'])
+        plt.title('reconstructed signal')
+        plt.show()
+
+        # ---complex vector in real representation format
+        x = pb.c2r(x, caxis=-1)
+
+        # ---do fft
+        Xc = pb.fft(x, n=Ns, caxis=-1, axis=0, keepcaxis=False, shift=shift)
+
+        # ~~~get real and imaginary part
+        xreal = pb.real(x, caxis=-1, keepcaxis=False)
+        ximag = pb.imag(x, caxis=-1, keepcaxis=False)
+        Xreal = pb.real(Xc, caxis=-1, keepcaxis=False)
+        Ximag = pb.imag(Xc, caxis=-1, keepcaxis=False)
+
+        # ---do ifft
+        x̂ = pb.ifft(Xc, n=Ns, caxis=-1, axis=0, keepcaxis=False, shift=shift)
+        
+        # ~~~get real and imaginary part
+        x̂real = pb.real(x̂, caxis=-1, keepcaxis=False)
+        x̂imag = pb.imag(x̂, caxis=-1, keepcaxis=False)
+
+        plt.figure()
+        plt.subplot(131)
+        plt.grid()
+        plt.plot(t, xreal)
+        plt.plot(t, ximag)
+        plt.legend(['real', 'imag'])
+        plt.title('signal in time domain')
+        plt.subplot(132)
+        plt.grid()
+        plt.plot(f, Xreal)
+        plt.plot(f, Ximag)
+        plt.legend(['real', 'imag'])
+        plt.title('signal in frequency domain')
+        plt.subplot(133)
+        plt.grid()
+        plt.plot(t, x̂real)
+        plt.plot(t, x̂imag)
+        plt.legend(['real', 'imag'])
+        plt.title('reconstructed signal')
+        plt.show()
+
+    """
+
+    CplxRealflag = False
+    if np.iscomplex(x).any():  # complex in complex
+        pass
+    else:
+        if caxis is None:  # real
+            pass
+        else:  # complex in real
+            CplxRealflag = True
+            x = pb.r2c(x, caxis=caxis, keepcaxis=keepcaxis)
+
+    N = np.size(x, axis)
     if (n is not None) and (n > N):
-        a = padfft(a, n, axis, shift)
+        x = padfft(x, n, axis, shift)
+
     if shift:
-        return npfft.fftshift(npfft.fft(npfft.fftshift(a, axes=axis), n=n, axis=axis, norm=norm), axes=axis)
+        y = npfft.fftshift(npfft.fft(npfft.fftshift(x, axes=axis), n=n, axis=axis, norm=norm), axes=axis)
     else:
-        return npfft.fft(a, n=n, axis=axis, norm=norm)
+        y = npfft.fft(x, n=n, axis=axis, norm=norm)
+
+    if CplxRealflag:
+        y = pb.c2r(y, caxis=caxis, keepcaxis=not keepcaxis)
+    
+    return y
 
 
-def ifft(a, n=None, axis=-1, norm=None, shift=False):
-    if shift:
-        return npfft.ifftshift(npfft.ifft(npfft.ifftshift(a, axes=axis), n=n, axis=axis, norm=norm), axes=axis)
+def ifft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+    r"""IFFT in pyaibox
+
+    IFFT in pyaibox, both real and complex valued tensors are supported.
+
+    Parameters
+    ----------
+    x : array
+        When :attr:`x` is complex, it can be either in real-representation format or complex-representation format.
+    n : int, optional
+        The number of ifft points (the default is None --> equals to signal dimension)
+    caxis : int or None
+        If :attr:`X` is complex-valued, :attr:`caxis` is ignored. If :attr:`X` is real-valued and :attr:`caxis` is integer
+        then :attr:`X` will be treated as complex-valued, in this case, :attr:`caxis` specifies the complex axis;
+        otherwise (None), :attr:`X` will be treated as real-valued.
+    axis : int, optional
+        axis of fft operation (the default is 0, which means the first dimension)
+    keepcaxis : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued array 
+        and :attr:`axis` is not :obj:`None` but represents in real format. Default is :obj:`False`.
+    norm : bool, optional
+        Normalization mode. For the backward transform (ifft()), these correspond to:
+        - :obj:`None` - no normalization (default)
+        - "ortho" - normalize by 1``/sqrt(n)`` (making the IFFT orthonormal)
+    shift : bool, optional
+        shift the zero frequency to center (the default is False)
+
+    Returns
+    -------
+    y : array
+        ifft results array with the same type as :attr:`x`
+
+    see also :func:`fft`, :func:`fftfreq`, :func:`freq`. see :func:`fft` for examples. 
+
+    """
+
+    CplxRealflag = False
+    if np.iscomplex(x).any():  # complex in complex
+        pass
     else:
-        return npfft.ifft(a, n=n, axis=axis, norm=norm)
+        if caxis is None:  # real
+            pass
+        else:  # complex in real
+            CplxRealflag = True
+            x = pb.r2c(x, caxis=caxis, keepcaxis=keepcaxis)
+
+    if shift:
+        y = npfft.ifftshift(npfft.ifft(npfft.ifftshift(x, axes=axis), n=n, axis=axis, norm=norm), axes=axis)
+    else:
+        y = npfft.ifft(x, n=n, axis=axis, norm=norm)
+
+    if CplxRealflag:
+        y = pb.c2r(y, caxis=caxis, keepcaxis=not keepcaxis)
+
+    return y
 
 
 def fft2(img):
@@ -335,16 +507,16 @@ if __name__ == "__main__":
 
     import matplotlib.pyplot as plt
 
-    fs = 1000.
     n = 16
+    fs = 1000.
 
     print(np.fft.fftfreq(n, 1. / fs))
 
-    f = fftfreq(fs, n, shift=False, norm=False)
+    f = fftfreq(n, fs, shift=False, norm=False)
     print(f)
-    f = fftfreq(fs, n, shift=False, norm=True)
+    f = fftfreq(n, fs, shift=False, norm=True)
     print(f)
-    f = fftfreq(fs, n, shift=True, norm=True)
+    f = fftfreq(n, fs, shift=True, norm=True)
     print(f)
 
     print(np.linspace(-fs / 2., fs / 2., n))
@@ -355,7 +527,7 @@ if __name__ == "__main__":
     Ns = int(Fs * Ts)
     t = np.linspace(0., Ts, Ns)
     # f = np.linspace(-Fs / 2., Fs / 2., Ns)
-    f = fftfreq(Fs, Ns, shift=True)
+    f = fftfreq(Ns, Fs, shift=True)
     print(f)
 
     x = np.sin(2. * np.pi * f0 * t)
