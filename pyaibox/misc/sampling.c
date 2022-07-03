@@ -2814,7 +2814,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_slidegrid(CYTHON_UNUSED PyObj
  * 
  * 
  * def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """down-sampling a tensor
+ *     r"""down-sampling a tensor
  * 
  */
 
@@ -5096,7 +5096,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_2dnsampling(CYTHON_UNUSED PyO
  * 
  * 
  * def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """down-sampling a tensor
+ *     r"""down-sampling a tensor
  * 
  */
 
@@ -5143,7 +5143,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_2dnsampling(CYTHON_UNUSED PyO
  * 
  * 
  * def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """sample a tensor
+ *     r"""sample a tensor
  * 
  */
 
@@ -6032,7 +6032,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_4sample_tensor(CYTHON_UNUSED 
  * 
  * 
  * def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """sample a tensor
+ *     r"""sample a tensor
  * 
  */
 
@@ -6062,7 +6062,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_4sample_tensor(CYTHON_UNUSED 
  * 
  * 
  * def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """shuffle a tensor
+ *     r"""shuffle a tensor
  * 
  */
 
@@ -6985,7 +6985,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_6shuffle_tensor(CYTHON_UNUSED
  * 
  * 
  * def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """shuffle a tensor
+ *     r"""shuffle a tensor
  * 
  */
 
@@ -7017,7 +7017,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_6shuffle_tensor(CYTHON_UNUSED
  * 
  * 
  * def split_tensor(x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """split a tensor
+ *     r"""split a tensor
  * 
  */
 
@@ -7552,7 +7552,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_8split_tensor(CYTHON_UNUSED P
  * 
  * 
  * def split_tensor(x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """split a tensor
+ *     r"""split a tensor
  * 
  */
 
@@ -9296,7 +9296,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_10tensor2patch(CYTHON_UNUSED 
  * 
  * 
  * def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):             # <<<<<<<<<<<<<<
- *     """merge patch to a tensor
+ *     r"""merge patch to a tensor
  * 
  */
 
@@ -10478,7 +10478,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_12patch2tensor(CYTHON_UNUSED 
  * 
  * 
  * def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):             # <<<<<<<<<<<<<<
- *     """merge patch to a tensor
+ *     r"""merge patch to a tensor
  * 
  */
 
@@ -10520,7 +10520,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_12patch2tensor(CYTHON_UNUSED 
  * 
  * 
  * def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1], mode='sequentially', axis=0, parts=None, seed=None):             # <<<<<<<<<<<<<<
- *     """Read samples
+ *     r"""Read samples
  * 
  */
 
@@ -12281,7 +12281,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_8sampling_14read_samples(CYTHON_UNUSED 
  * 
  * 
  * def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1], mode='sequentially', axis=0, parts=None, seed=None):             # <<<<<<<<<<<<<<
- *     """Read samples
+ *     r"""Read samples
  * 
  */
 
@@ -12700,7 +12700,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):             # <<<<<<<<<<<<<<
- *     """merge patch to a tensor
+ *     r"""merge patch to a tensor
  * 
  */
   __pyx_tuple__13 = PyTuple_Pack(2, __pyx_int_1, __pyx_int_2); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 531, __pyx_L1_error)
@@ -12737,7 +12737,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """down-sampling a tensor
+ *     r"""down-sampling a tensor
  * 
  */
   __pyx_tuple__19 = PyTuple_Pack(27, __pyx_n_s_x, __pyx_n_s_ratio, __pyx_n_s_axis, __pyx_n_s_smode, __pyx_n_s_omode, __pyx_n_s_seed, __pyx_n_s_extra, __pyx_n_s_nDims, __pyx_n_s_cnt, __pyx_n_s_index, __pyx_n_s_a, __pyx_n_s_r, __pyx_n_s_sa, __pyx_n_s_da, __pyx_n_s_mshape, __pyx_n_s_mask, __pyx_n_s_idx, __pyx_n_s_d, __pyx_n_s_s, __pyx_n_s_n, __pyx_n_s_s0, __pyx_n_s_s1, __pyx_n_s_n0, __pyx_n_s_n1, __pyx_n_s_idx0, __pyx_n_s_i0, __pyx_n_s_idx1); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -12752,7 +12752,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """sample a tensor
+ *     r"""sample a tensor
  * 
  */
   __pyx_tuple__22 = PyTuple_Pack(12, __pyx_n_s_x, __pyx_n_s_n, __pyx_n_s_axis, __pyx_n_s_groups, __pyx_n_s_mode, __pyx_n_s_seed, __pyx_n_s_extra, __pyx_n_s_N, __pyx_n_s_M, __pyx_n_s_m, __pyx_n_s_idx, __pyx_n_s_g); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 199, __pyx_L1_error)
@@ -12767,7 +12767,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """shuffle a tensor
+ *     r"""shuffle a tensor
  * 
  */
   __pyx_tuple__25 = PyTuple_Pack(13, __pyx_n_s_x, __pyx_n_s_axis, __pyx_n_s_groups, __pyx_n_s_mode, __pyx_n_s_seed, __pyx_n_s_extra, __pyx_n_s_N, __pyx_n_s_M, __pyx_n_s_idx, __pyx_n_s_g, __pyx_n_s_groupidx, __pyx_n_s_iidx, __pyx_n_s_i); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 281, __pyx_L1_error)
@@ -12782,7 +12782,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def split_tensor(x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """split a tensor
+ *     r"""split a tensor
  * 
  */
   __pyx_tuple__28 = PyTuple_Pack(13, __pyx_n_s_x, __pyx_n_s_ratios, __pyx_n_s_axis, __pyx_n_s_shuffle, __pyx_n_s_seed, __pyx_n_s_extra, __pyx_n_s_y, __pyx_n_s_idxes, __pyx_n_s_N, __pyx_n_s_ns, __pyx_n_s_idx, __pyx_n_s_ratio, __pyx_n_s_n); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 363, __pyx_L1_error)
@@ -12809,7 +12809,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):             # <<<<<<<<<<<<<<
- *     """merge patch to a tensor
+ *     r"""merge patch to a tensor
  * 
  */
   __pyx_tuple__33 = PyTuple_Pack(25, __pyx_n_s_p, __pyx_n_s_size, __pyx_n_s_axis, __pyx_n_s_mode, __pyx_n_s_naxis, __pyx_n_s_sizep, __pyx_n_s_sizex, __pyx_n_s_dimp, __pyx_n_s_axisp, __pyx_n_s_npatch, __pyx_n_s_steps, __pyx_n_s_a, __pyx_n_s_s, __pyx_n_s_axisn, __pyx_n_s_N, __pyx_n_s_x, __pyx_n_s_dimx, __pyx_n_s_axisx, __pyx_n_s_index, __pyx_n_s_stop, __pyx_n_s_step, __pyx_n_s_idx, __pyx_n_s_naxisx, __pyx_n_s_n, __pyx_n_s_indexn); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 531, __pyx_L1_error)
@@ -12824,7 +12824,7 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
  * 
  * 
  * def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1], mode='sequentially', axis=0, parts=None, seed=None):             # <<<<<<<<<<<<<<
- *     """Read samples
+ *     r"""Read samples
  * 
  */
   __pyx_tuple__36 = PyTuple_Pack(29, __pyx_n_s_datafiles, __pyx_n_s_keys, __pyx_n_s_nsamples, __pyx_n_s_groups, __pyx_n_s_mode, __pyx_n_s_axis, __pyx_n_s_parts, __pyx_n_s_seed, __pyx_n_s_nfiles, __pyx_n_s_nkeys, __pyx_n_s_outs, __pyx_n_s_nparts, __pyx_n_s_datafile, __pyx_n_s_key, __pyx_n_s_n, __pyx_n_s_group, __pyx_n_s_data, __pyx_n_s_N, __pyx_n_s_M, __pyx_n_s_m, __pyx_n_s_idx, __pyx_n_s_g, __pyx_n_s_j, __pyx_n_s_k, __pyx_n_s_d, __pyx_n_s_nps, __pyx_n_s_npe, __pyx_n_s_i, __pyx_n_s_part); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 591, __pyx_L1_error)
@@ -13369,7 +13369,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def dnsampling(x, ratio=1., axis=-1, smode='uniform', omode='discard', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """down-sampling a tensor
+ *     r"""down-sampling a tensor
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_3dnsampling, 0, __pyx_n_s_dnsampling, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
@@ -13382,7 +13382,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def sample_tensor(x, n, axis=0, groups=1, mode='sequentially', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """sample a tensor
+ *     r"""sample a tensor
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_5sample_tensor, 0, __pyx_n_s_sample_tensor, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__23)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 199, __pyx_L1_error)
@@ -13395,7 +13395,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def shuffle_tensor(x, axis=0, groups=1, mode='inter', seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """shuffle a tensor
+ *     r"""shuffle a tensor
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_7shuffle_tensor, 0, __pyx_n_s_shuffle_tensor, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 281, __pyx_L1_error)
@@ -13408,7 +13408,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def split_tensor(x, ratios=[0.7, 0.2, 0.1], axis=0, shuffle=False, seed=None, extra=False):             # <<<<<<<<<<<<<<
- *     """split a tensor
+ *     r"""split a tensor
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_9split_tensor, 0, __pyx_n_s_split_tensor, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__29)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 363, __pyx_L1_error)
@@ -13449,7 +13449,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def patch2tensor(p, size=(256, 256), axis=(1, 2), mode='nfirst'):             # <<<<<<<<<<<<<<
- *     """merge patch to a tensor
+ *     r"""merge patch to a tensor
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_13patch2tensor, 0, __pyx_n_s_patch2tensor, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 531, __pyx_L1_error)
@@ -13462,7 +13462,7 @@ if (!__Pyx_RefNanny) {
  * 
  * 
  * def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1], mode='sequentially', axis=0, parts=None, seed=None):             # <<<<<<<<<<<<<<
- *     """Read samples
+ *     r"""Read samples
  * 
  */
   __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_8sampling_15read_samples, 0, __pyx_n_s_read_samples, NULL, __pyx_n_s_pyaibox_misc_sampling, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L1_error)
