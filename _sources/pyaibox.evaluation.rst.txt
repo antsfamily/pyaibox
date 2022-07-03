@@ -44,10 +44,10 @@ pyaibox.evaluation.norm module
    :undoc-members:
    :show-inheritance:
 
-pyaibox.evaluation.snr module
------------------------------
+pyaibox.evaluation.snrs module
+------------------------------
 
-.. automodule:: pyaibox.evaluation.snr
+.. automodule:: pyaibox.evaluation.snrs
    :members:
    :undoc-members:
    :show-inheritance:

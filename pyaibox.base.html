@@ -98,9 +98,11 @@
 <li class="toctree-l3 current"><a class="reference internal" href="pyaibox.html#subpackages">Subpackages</a><ul class="current">
 <li class="toctree-l4 current"><a class="current reference internal" href="#">pyaibox.base package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.compression.html">pyaibox.compression package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.datasets.html">pyaibox.datasets package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.dsp.html">pyaibox.dsp package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.evaluation.html">pyaibox.evaluation package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.misc.html">pyaibox.misc package</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pyaibox.nn.html">pyaibox.nn package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.summary.html">pyaibox.summary package</a></li>
 <li class="toctree-l4"><a class="reference internal" href="pyaibox.utils.html">pyaibox.utils package</a></li>
 </ul>
@@ -331,7 +333,7 @@ this will produce a <span class="math">\(12\times 3\)</span> array.</p>
 <span id="pyaibox-base-mathops-module"></span><h2>pyaibox.base.mathops module<a class="headerlink" href="#module-pyaibox.base.mathops" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.abs">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">abs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.abs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">abs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.abs" title="Permalink to this definition">¶</a></dt>
 <dd><p>obtain amplitude of a array</p>
 <p>Both complex and real representation are supported.</p>
 <div class="math">
@@ -346,7 +348,7 @@ this will produce a <span class="math">\(12\times 3\)</span> array.</p>
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
-<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep complex-dimension?</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -378,13 +380,14 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.c2r">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">c2r</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.c2r" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">c2r</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.c2r" title="Permalink to this definition">¶</a></dt>
 <dd><p>convert complex-valued array to real-valued array</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X</strong> (<em>numpy array</em>) – complex-valued array</p></li>
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – complex axis for real-valued array. Defaults to -1.</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keepcaxis? default is True.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -401,7 +404,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <span class="n">Xreal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">Xcplx</span> <span class="o">=</span> <span class="n">r2c</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepcaxis</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">Xreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xreal&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xcplx&#39;</span><span class="p">)</span>
@@ -520,8 +523,41 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 </dd></dl>
 
 <dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.mathops.fnab">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">fnab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.fnab" title="Permalink to this definition">¶</a></dt>
+<dd><p>gives the closest two integer number factor of a number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – the number</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>a</strong> (<em>int</em>)</p></li>
+<li><p><strong>b</strong> (<em>int</em>) – the factor number</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">fnab</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fnab</span><span class="p">(</span><span class="mi">6</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fnab</span><span class="p">(</span><span class="mi">7</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fnab</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fnab</span><span class="p">(</span><span class="mi">9</span><span class="p">))</span>
+
+<span class="c1"># ---output</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.imag">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">imag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.imag" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">imag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.imag" title="Permalink to this definition">¶</a></dt>
 <dd><p>obtain imaginary part of a array</p>
 <p>Both complex and real representation are supported.</p>
 <dl class="field-list simple">
@@ -531,7 +567,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
-<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep complex-dimension?</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -596,7 +632,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.pow">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">pow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.pow" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">pow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.pow" title="Permalink to this definition">¶</a></dt>
 <dd><p>obtain power of a array</p>
 <p>Both complex and real representation are supported.</p>
 <div class="math">
@@ -611,7 +647,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
-<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep complex-dimension?</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -676,7 +712,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.r2c">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">r2c</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.r2c" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">r2c</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.r2c" title="Permalink to this definition">¶</a></dt>
 <dd><p>convert real-valued array to complex-valued array</p>
 <p>Convert real-valued array (the size of <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> -th dimension is 2) to complex-valued array</p>
 <dl class="field-list simple">
@@ -684,7 +720,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X</strong> (<em>numpy array</em>) – real-valued array.</p></li>
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – the complex axis. Defaults to -1.</p></li>
-<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keepdims? default is False.</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keepcaxis? default is False.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -701,7 +737,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <span class="n">Xreal</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">))</span>
 <span class="n">Xcplx</span> <span class="o">=</span> <span class="n">r2c</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepdims</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">Yreal</span> <span class="o">=</span> <span class="n">c2r</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keepcaxis</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 
 <span class="nb">print</span><span class="p">(</span><span class="n">Xreal</span><span class="p">,</span> <span class="n">Xreal</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xreal&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">Xcplx</span><span class="p">,</span> <span class="n">Xcplx</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="s1">&#39;Xcplx&#39;</span><span class="p">)</span>
@@ -744,7 +780,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.base.mathops.real">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">real</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepdims</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.real" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">real</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.real" title="Permalink to this definition">¶</a></dt>
 <dd><p>obtain real part of a array</p>
 <p>Both complex and real representation are supported.</p>
 <dl class="field-list simple">
@@ -754,7 +790,7 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued</p></li>
-<li><p><strong>keepdims</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep dimensions?</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – keep complex-dimension?</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -934,6 +970,32 @@ if positive, add a positive shake, if negative, add a negative.</p></li>
 </ul>
 </p></li>
 </ul>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="module-pyaibox.base.typevalue">
+<span id="pyaibox-base-typevalue-module"></span><h2>pyaibox.base.typevalue module<a class="headerlink" href="#module-pyaibox.base.typevalue" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.typevalue.dtypes">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.typevalue.</span></span><span class="sig-name descname"><span class="pre">dtypes</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'int'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.typevalue.dtypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.typevalue.peakvalue">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.typevalue.</span></span><span class="sig-name descname"><span class="pre">peakvalue</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.typevalue.peakvalue" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute the peak value of the input.</p>
+<p>Find peak value in matrix</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>A</strong> (<em>numpy array</em>) – Data for finding peak value</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Peak value.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>number</p>
 </dd>
 </dl>
 </dd></dl>

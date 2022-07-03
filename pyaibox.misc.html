@@ -385,6 +385,258 @@ If the type of <code class="xref py py-attr docutils literal notranslate"><span 
 </dd></dl>
 
 </section>
+<section id="module-pyaibox.misc.noising">
+<span id="pyaibox-misc-noising-module"></span><h2>pyaibox.misc.noising module<a class="headerlink" href="#module-pyaibox.misc.noising" title="Permalink to this headline">¶</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.misc.noising.awgn">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.noising.</span></span><span class="sig-name descname"><span class="pre">awgn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">sig</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snrv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'db'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'measured'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.noising.awgn" title="Permalink to this definition">¶</a></dt>
+<dd><p>AWGN Add white Gaussian noise to a signal.</p>
+<p>AWGN Add white Gaussian noise to a signal like matlab.</p>
+<p>Y = AWGN(X,snrv) adds white Gaussian noise to X.  The snrv is in dB.
+The power of X is assumed to be 0 dBW.  If X is complex, then
+AWGN adds complex noise.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sig</strong> (<em>tensor</em>) – Signal that will be noised.</p></li>
+<li><p><strong>snrv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Signal Noise Ratio (the default is 30)</p></li>
+<li><p><strong>pmode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – Power mode <code class="docutils literal notranslate"><span class="pre">'linear'</span></code>, <code class="docutils literal notranslate"><span class="pre">'db'</span></code> (the default is ‘db’)</p></li>
+<li><p><strong>power</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – the power of signal or the method for computing power (the default is ‘measured’, which is sigPower = np.sum(np.abs(sig) ** 2) / np.numel(sig))</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Seed for random number generator. (the default is None, which means different each time)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>noised data</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tensor</p>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><ul class="simple">
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#IOError" title="(in Python v3.10)"><strong>IOError</strong></a> – No input signal</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/exceptions.html#TypeError" title="(in Python v3.10)"><strong>TypeError</strong></a> – Input signal shape wrong</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.misc.noising.awgns">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.noising.</span></span><span class="sig-name descname"><span class="pre">awgns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snrv</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.noising.awgns" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds white gaussian noise to signal</p>
+<p>see <a class="reference external" href="https://sites.ualberta.ca/~msacchi/SNR_Def.pdf">Adding noise with a desired signal-to-noise ratio</a> .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>tensor</em>) – The pure signal data.</p></li>
+<li><p><strong>snrv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – The signal-to-noise ratio value in dB.</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex-valued but represented in real format,
+<code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> or <code class="xref py py-attr docutils literal notranslate"><span class="pre">cdim</span></code> should be specified. If not, it’s set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>,
+which means <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is real-valued or complex-valued in complex format.</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – keep the complex dimension?</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – Specifies the dimensions for adding noise, if not specified, it’s set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>,
+which means all the dimensions.</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – Specifies the seed for generating random noise, if not specified, it’s set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</p></li>
+<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, noise will also be returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>y</strong> (<em>tensor</em>) – The SNRs.</p></li>
+<li><p>see <a class="reference internal" href="#pyaibox.misc.noising.awgns2" title="pyaibox.misc.noising.awgns2"><code class="xref py py-func docutils literal notranslate"><span class="pre">awgns2()</span></code></a>.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">torch</span> <span class="k">as</span> <span class="nn">th</span>
+<span class="kn">import</span> <span class="nn">torchbox</span> <span class="k">as</span> <span class="nn">pb</span>
+
+<span class="n">pb</span><span class="o">.</span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">r2c</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>  <span class="c1"># 5, 3, 4</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">awgns</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2022</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">snrv</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snrv</span><span class="p">,</span> <span class="s1">&#39;complex-valued in complex-format&#39;</span><span class="p">)</span>
+
+<span class="n">pb</span><span class="o">.</span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">awgns</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepcaxis</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2022</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">snrv</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">keepcaxis</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snrv</span><span class="p">,</span> <span class="s1">&#39;complex-valued in real-format&#39;</span><span class="p">)</span>
+
+<span class="n">pb</span><span class="o">.</span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">awgns</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2022</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">snrv</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snrv</span><span class="p">,</span> <span class="s1">&#39;real-valued in real-format&#39;</span><span class="p">)</span>
+
+<span class="n">pb</span><span class="o">.</span><span class="n">setseed</span><span class="p">(</span><span class="mi">2020</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">)</span>
+<span class="n">y</span><span class="p">,</span> <span class="n">n</span> <span class="o">=</span> <span class="n">awgns2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="n">seed</span><span class="o">=</span><span class="mi">2022</span><span class="p">,</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">snrv</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">n</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">keepcaxis</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">snrv</span><span class="p">,</span> <span class="s1">&#39;real-valued in real-format, multi-channel&#39;</span><span class="p">)</span>
+
+<span class="c1"># ---output</span>
+<span class="p">[</span><span class="mf">29.97444457</span> <span class="mf">30.06965181</span> <span class="mf">29.95413251</span> <span class="mf">29.99284633</span> <span class="mf">29.96209985</span><span class="p">]</span> <span class="nb">complex</span><span class="o">-</span><span class="n">valued</span> <span class="ow">in</span> <span class="nb">complex</span><span class="o">-</span><span class="nb">format</span>
+<span class="p">[</span><span class="mf">29.97444457</span> <span class="mf">30.06965181</span> <span class="mf">29.95413251</span> <span class="mf">29.99284633</span> <span class="mf">29.96209985</span><span class="p">]</span> <span class="nb">complex</span><span class="o">-</span><span class="n">valued</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="nb">format</span>
+<span class="p">[</span><span class="mf">29.99399902</span> <span class="mf">30.04417082</span> <span class="mf">30.05313719</span> <span class="mf">29.86315167</span> <span class="mf">29.9423689</span> <span class="p">]</span> <span class="n">real</span><span class="o">-</span><span class="n">valued</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="nb">format</span>
+<span class="p">[</span><span class="mf">29.97424739</span> <span class="mf">30.07329346</span> <span class="mf">29.95404992</span> <span class="mf">29.98695481</span> <span class="mf">29.94601035</span><span class="p">]</span> <span class="n">real</span><span class="o">-</span><span class="n">valued</span> <span class="ow">in</span> <span class="n">real</span><span class="o">-</span><span class="nb">format</span><span class="p">,</span> <span class="n">multi</span><span class="o">-</span><span class="n">channel</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.misc.noising.awgns2">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.noising.</span></span><span class="sig-name descname"><span class="pre">awgns2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snrv</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.noising.awgns2" title="Permalink to this definition">¶</a></dt>
+<dd><p>adds white gaussian noise to multi-channel signal</p>
+<p>see <a class="reference external" href="https://sites.ualberta.ca/~msacchi/SNR_Def.pdf">Adding noise with a desired signal-to-noise ratio</a> .</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>tensor</em>) – The pure real-valued multi-channel signal data.</p></li>
+<li><p><strong>snrv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – The signal-to-noise ratio value in dB.</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Specifies the channel dimension. If not specified, <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> will be treated as
+single-channel signal.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – Specifies the dimensions for adding noise, if not specified, it’s set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>,
+which means all the dimensions.</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – Specifies the seed for generating random noise, if not specified, it’s set to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</p></li>
+<li><p><strong>extra</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, noise will also be returned.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p><ul class="simple">
+<li><p><strong>y</strong> (<em>tensor</em>) – The SNRs.</p></li>
+<li><p>see <a class="reference internal" href="#pyaibox.misc.noising.awgns" title="pyaibox.misc.noising.awgns"><code class="xref py py-func docutils literal notranslate"><span class="pre">awgns()</span></code></a>.</p></li>
+</ul>
+</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<a class="reference internal image-reference" href="_images/DemoNoiseAWGNS.png"><img alt="_images/DemoNoiseAWGNS.png" class="align-center" src="_images/DemoNoiseAWGNS.png" style="width: 557.0px; height: 561.0px;" /></a>
+<p>The results shown in the above figure can be obtained by the following codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">datafolder</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">data_path</span><span class="p">(</span><span class="s1">&#39;optical&#39;</span><span class="p">)</span>
+<span class="n">xr</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;Einstein256.png&#39;</span><span class="p">)</span>
+<span class="n">xi</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;LenaGRAY256.png&#39;</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">xr</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">xi</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">c2r</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+
+<span class="n">xnp15</span><span class="p">,</span> <span class="n">np15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">awgns2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">xn0</span><span class="p">,</span> <span class="n">n0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">awgns2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">xnn5</span><span class="p">,</span> <span class="n">nn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">awgns2</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=-</span><span class="mi">5</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="n">extra</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">np15</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n0</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">pb</span><span class="o">.</span><span class="n">snr</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">nn5</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)))</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xnp15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnp15</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xn0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xn0</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xnn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnn5</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imshow</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">xnp15</span><span class="p">,</span> <span class="n">xn0</span><span class="p">,</span> <span class="n">xnn5</span><span class="p">],</span> <span class="n">titles</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;original&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(15dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(0dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(-5dB)&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.misc.noising.imnoise">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.noising.</span></span><span class="sig-name descname"><span class="pre">imnoise</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">noise</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'awgn'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">snrv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'chnllast'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.noising.imnoise" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add noise to image</p>
+<p>Add noise to each channel of the image.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> (<em>tensor</em>) – image aray</p></li>
+<li><p><strong>noise</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – noise type (the default is ‘awgn’, which means white gaussian noise, using <a class="reference internal" href="#pyaibox.misc.noising.awgn" title="pyaibox.misc.noising.awgn"><code class="xref py py-func docutils literal notranslate"><span class="pre">awgn()</span></code></a>)</p></li>
+<li><p><strong>snrv</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Signal-to-noise ratio (the default is 30, which [default_description])</p></li>
+<li><p><strong>peak</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – Peak value in input, if None, auto detected (default), if <code class="docutils literal notranslate"><span class="pre">'maxv'</span></code>, use the maximum value as peak value.</p></li>
+<li><p><strong>fmt</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – for color image, <code class="xref py py-attr docutils literal notranslate"><span class="pre">fmt</span></code> should be specified with <code class="docutils literal notranslate"><span class="pre">'chnllast'</span></code> or <code class="docutils literal notranslate"><span class="pre">'chnlfirst'</span></code>, for gray image, <code class="xref py py-attr docutils literal notranslate"><span class="pre">fmt</span></code> should be setted to <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Images with added noise.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tensor</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<a class="reference internal image-reference" href="_images/DemoIMNOISE.png"><img alt="_images/DemoIMNOISE.png" class="align-center" src="_images/DemoIMNOISE.png" style="width: 518.0px; height: 523.0px;" /></a>
+<p>The results shown in the above figure can be obtained by the following codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">datafolder</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">data_path</span><span class="p">(</span><span class="s1">&#39;optical&#39;</span><span class="p">)</span>
+<span class="n">xr</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;Einstein256.png&#39;</span><span class="p">)</span>
+<span class="n">xi</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;LenaGRAY256.png&#39;</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">xr</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">xi</span>
+
+<span class="n">xnp15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">xn0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">xnn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">xnp15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnp15</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">xn0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xn0</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">xnn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnn5</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+
+<span class="n">plt</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imshow</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">xnp15</span><span class="p">,</span> <span class="n">xn0</span><span class="p">,</span> <span class="n">xnn5</span><span class="p">],</span> <span class="n">titles</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;original&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(15dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(0dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(-5dB)&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="n">datafolder</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">data_path</span><span class="p">(</span><span class="s1">&#39;optical&#39;</span><span class="p">)</span>
+<span class="n">xr</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;Einstein256.png&#39;</span><span class="p">)</span>
+<span class="n">xi</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;LenaGRAY256.png&#39;</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">xr</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">xi</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">c2r</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">max</span><span class="p">())</span>
+
+<span class="n">xnp15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+<span class="n">xn0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">xnn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imnoise</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="s1">&#39;awgn&#39;</span><span class="p">,</span> <span class="n">snrv</span><span class="o">=-</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xnp15</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnp15</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xn0</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xn0</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">xnn5</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">xnn5</span><span class="p">,</span> <span class="n">caxis</span><span class="o">=-</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">plt</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imshow</span><span class="p">([</span><span class="n">x</span><span class="p">,</span> <span class="n">xnp15</span><span class="p">,</span> <span class="n">xn0</span><span class="p">,</span> <span class="n">xnn5</span><span class="p">],</span> <span class="n">titles</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;original&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(15dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(0dB)&#39;</span><span class="p">,</span> <span class="s1">&#39;noised(-5dB)&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.misc.noising.wgn">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.noising.</span></span><span class="sig-name descname"><span class="pre">wgn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">power</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pmode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'dbw'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dtype</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'real'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">seed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.noising.wgn" title="Permalink to this definition">¶</a></dt>
+<dd><p>WGN Generates white Gaussian noise.</p>
+<p>WGN Generates white Gaussian noise like matlab.</p>
+<p>Y = WGN((M,N),P) generates an M-by-N matrix of white Gaussian noise. P
+specifies the power of the output noise in dBW. The unit of measure for
+the output of the wgn function is Volts. For power calculations, it is
+assumed that there is a load of 1 Ohm.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a>) – Shape of noising matrix</p></li>
+<li><p><strong>power</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – P specifies the power of the output noise in dBW.</p></li>
+<li><p><strong>pmode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – Power mode of the output noise (the default is ‘dbw’)</p></li>
+<li><p><strong>dtype</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – data type, real or complex (the default is ‘real’, which means real-valued)</p></li>
+<li><p><strong>seed</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Seed for random number generator. (the default is None, which means different each time)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Matrix of white Gaussian noise (real or complex).</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>tensor</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
 <section id="module-pyaibox.misc.sampling">
 <span id="pyaibox-misc-sampling-module"></span><h2>pyaibox.misc.sampling module<a class="headerlink" href="#module-pyaibox.misc.sampling" title="Permalink to this headline">¶</a></h2>
 <dl class="py function">
@@ -723,11 +975,6 @@ and then reform these patches into an image.</p>
 </pre></div>
 </div>
 </dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyaibox.misc.sampling.upsampling">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.misc.sampling.</span></span><span class="sig-name descname"><span class="pre">upsampling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Lanczos'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.sampling.upsampling" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
 
 </section>
 <section id="module-pyaibox.misc.transform">

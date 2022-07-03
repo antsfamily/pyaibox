@@ -28,6 +28,14 @@ pyaibox.misc.mapping\_operation module
    :undoc-members:
    :show-inheritance:
 
+pyaibox.misc.noising module
+---------------------------
+
+.. automodule:: pyaibox.misc.noising
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 pyaibox.misc.sampling module
 ----------------------------
 
