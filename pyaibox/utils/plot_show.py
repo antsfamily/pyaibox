@@ -12,6 +12,7 @@ from pyaibox.base.mathops import fnab
 
 
 def cplot(ca, lmod=None):
+    
     N = len(ca)
     if lmod is None:
         lmod = '-b'

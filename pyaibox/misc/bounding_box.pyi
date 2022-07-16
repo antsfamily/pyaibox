@@ -8,69 +8,47 @@ def plot_bbox(bboxes, labels=None, scores=None, edgecolors=None, linewidths=1, f
         The bounding boxes, in ``LeftTopRightBottom`` mode, which means (xmin, ymin, xmax, ymax)
     labels : list or None, optional
         The labels, can be a list of class id or class name. If None, won't show labels.
-    scores : list or None, optional
-        The scores, can be a list of float numbers. If None, won't show labels.
-    edgecolors : None, optional
-        The edgecolors for bounding boxes.
-    linewidths : int, optional
-        The linewidths for bounding boxes.
-    fontdict : None, optional
-        The fontdict for labels and scores.
-    textpos : str, optional
-        The position for text (labels and scores).
-    offset : None, optional
-        The offset for text (labels and scores).
-    ax : None, optional
-        The ``ax`` handle, If None, auto generated.
+    """
+    nbox = len(bboxes)
+    labels = [labels] * nbox if labels is None or type(labels) is str else labels
+    labels = labels * nbox if len(labels) == 1 else labels
+    scores = [scores] * nbox if scores is None or type(scores) is float else scores
+    scores = scores * nbox if len(scores) == 1 else scores
+    # edgecolors = pb.DISTINCT_COLORS['DistinctNormRGB20'][slice(0, nbox)] if edgecolors is None else edgecolors
+    edgecolors = [edgecolors] * nbox if edgecolors is None else edgecolors
+    edgecolors = edgecolors * nbox if len(edgecolors) == 1 else edgecolors
+    edgecolors = [edgecolors] * nbox if type(edgecolors) is str or len(edgecolors) != nbox else edgecolors
 
-    Returns
-    -------
-    ax
-        The ``ax`` handle
+    linewidths = [linewidths] * nbox if type(linewidths) is float or type(linewidths) is int or linewidths is None else linewidths
+    linewidths = linewidths * nbox if len(linewidths) == 1 else linewidths
+    offset = [6, 0] if offset is None else offset
+    offset = [offset] * 2 if type(offset) is int or type(offset) is float else offset
 
-    see :func:`fmt_bbox`
-
-    Example
-    -------
-
-    Plot bounding boxes with scores and labels on an image.
-
-    .. image:: ./_static/demo_plot_bboxes.png
-       :scale: 100 %
-       :align: center
-
-    The results shown in the above figure can be obtained by the following codes.
-
-    ::
-
-        import pyaibox as pl
-        import matplotlib.pyplot as plt
-
-        bboxes = [[100, 100, 200, 200], [300, 300, 400, 500]]
-        labels = ['dog', 'cat']
-        scores = [0.987, None]
-        edgecolors = [list(pb.DISTINCT_COLORS_RGB_NORM.values())[0], None]
-        edgecolors = list(pb.DISTINCT_COLORS_RGB_NORM.values())[0:2]
-        linewidths = [2, 4]
-
-        fontdict = {'family': 'Times New Roman',
-                    'style': 'italic',
-                    'weight': 'normal',
-                    'color': 'darkred',
-                    'size': 12,
-                    }
-
-        x = pb.imread('../../data/images/LenaRGB512.tif')
+    if ax is None:
         fig = plt.figure()
         ax = fig.add_subplot(1, 1, 1)
-        ax.imshow(x)
 
-        pb.plot_bbox(bboxes, labels=labels, scores=scores, edgecolors=edgecolors, linewidths=linewidths, fontdict=fontdict, textpos='TopLeft', ax=ax)
-        plt.axis('off')
-        plt.savefig('./bbbox.png', bbox_inches='tight', pad_inches=0)
-        plt.show()
+    for bbox, label, score, edgecolor, linewidth in zip(bboxes, labels, scores, edgecolors, linewidths):
+        xy = (bbox[1], bbox[0])
+        height = bbox[2] - bbox[0]
+        width = bbox[3] - bbox[1]
+        ax.add_patch(plt.Rectangle(xy, width, height, fill=False, edgecolor=edgecolor, linewidth=linewidth))
+        caption = ''
+        if label is not None:
+            caption += str(label)
+        if score is not None:
+            caption += ': {:.2f}'.format(score)
 
-    """
+        if textpos in ['TopCenter', 'topcenter']:
+            ax.text(bbox[1] + width / 2 - offset[1], bbox[0] - offset[0], caption, fontdict=fontdict)
+        if textpos in ['BottomCenter', 'bottomcenter']:
+            ax.text(bbox[1] + width / 2 - offset[1], bbox[2] + offset[0], caption, fontdict=fontdict)
+        if textpos in ['TopLeft', 'topleft']:
+            ax.text(bbox[1] - offset[1], bbox[0] - offset[0], caption, fontdict=fontdict)
+        if textpos in ['BottomLeft', 'bottomleft']:
+            ax.text(bbox[1] - offset[1], bbox[2] + offset[0], caption, fontdict=fontdict)
+    return ax
+
 
 # def fmt_bbox(bboxes, fmtstr='LTRB2CHW'):
 #     r"""Formats bounding boxes

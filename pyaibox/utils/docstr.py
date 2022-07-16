@@ -35,6 +35,8 @@ def gpyi(pkgdir, autoskip=True):
         cntcomflag = -1
         for dstr in data:
             defpos = dstr.find('def ')
+            if defpos == -1:
+                defpos = dstr.find('class ')
             if defpos >= 0:
                 cntcomflag = 0
                 fpyi.write(dstr)

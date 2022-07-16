@@ -52,6 +52,7 @@ def standardization(X, mean=None, std=None, axis=None, extra=False):
 
 def scale(X, st=[0, 1], sf=None, istrunc=True, extra=False):
     r"""
+
     Scale data.
 
     .. math::
@@ -121,6 +122,7 @@ def scale(X, st=[0, 1], sf=None, istrunc=True, extra=False):
 
 def quantization(X, idrange=None, odrange=[0, 31], odtype='auto', extra=False):
     r"""
+
     Quantize data.
 
     .. math::
@@ -196,6 +198,18 @@ def quantization(X, idrange=None, odrange=[0, 31], odtype='auto', extra=False):
 
 
 def db20(x):
+    r"""compute dB
+
+    Parameters
+    ----------
+    x : float or array
+        linear value
+
+    Returns
+    -------
+    float or array
+        the dB value of x.
+    """
 
     return 20. * np.log10(np.abs(x))
 
@@ -209,25 +223,66 @@ def ct2rt(x, axis=0):
     Parameters
     ----------
     x : Tensor
-        The input tensor :math:`{\bf x}\in {\mathbb C}^{H×W}`.
+        The input tensor :math:`{\bf x}`.
     axis : int
         The axis for excuting FFT.
 
     Returns
     -------
     Tensor
-        The output tensor :math:`{\bf y}\in {\mathbb R}^{2H×W}` ( :attr:`axis` = 0 ), :math:`{\bf y}\in {\mathbb R}^{H×2W}` ( :attr:`axis` = 1 )
+        The output tensor :math:`{\bf y}`.
+
+    see also :func:`rt2ct`.
+
+    Examples
+    ---------
+
+    .. image:: ./_static/CT2RTRT2CTdemo.png
+       :scale: 100 %
+       :align: center
+
+    The results shown in the above figure can be obtained by the following codes.
+
+    ::
+
+        import numpy as np
+        import pyaibox as pb
+
+
+        datafolder = pb.data_path('optical')
+        xr = pb.imread(datafolder + 'Einstein256.png')
+        xi = pb.imread(datafolder + 'LenaGRAY256.png')
+
+        x = xr + 1j * xi
+
+        y = pb.ct2rt(x, axis=0)
+        z = pb.rt2ct(y, axis=0)
+
+        print(x.shape, y.shape, z.shape)
+        print(x.dtype, y.dtype, z.dtype)
+
+        print(np.min(np.abs(x)), np.max(np.abs(x)))
+        print(np.min(np.abs(y)), np.max(np.abs(y)))
+        print(np.min(np.abs(z)), np.max(np.abs(z)))
+
+
+        plt = pb.imshow([x.real, x.imag, y.real, y.imag, z.real, z.imag], nrows=3, ncols=2,
+                        titles=['original(real)', 'original(imag)', 'converted(real)', 
+                        'converted(imag)', 'reconstructed(real)', 'reconstructed(imag)'])
+        plt.show()
+
+
     """
 
-    d = x.dim()
+    d = np.ndim(x)
     n = x.shape[axis]
     X = np.fft.fft(x, axis=axis)
     X0 = X[sl(d, axis, [[0]])]
-    X1 = np.conj(X[sl(d, axis, range(n - 1, 0, -1))])
-    Y = np.cat((X, X0.imag, X1), dim=axis)
-    Y[sl(d, axis, [[0]])] = X0.real + 0j
-    del x, X, X1
+    Y = np.concatenate((X0.real, X[sl(d, axis, range(1, n))], X0.imag, np.conj(X[sl(d, axis, range(n - 1, 0, -1))])), axis=axis)
+
+    del x, X
     y = np.fft.ifft(Y, axis=axis)
+
     return y
 
 
@@ -240,28 +295,40 @@ def rt2ct(y, axis=0):
     Parameters
     ----------
     y : Tensor
-        The input tensor :math:`{\bf y}\in {\mathbb C}^{2H×W}`.
+        The input tensor :math:`{\bf y}`.
     axis : int
         The axis for excuting FFT.
 
     Returns
     -------
     Tensor
-        The output tensor :math:`{\bf x}\in {\mathbb R}^{H×W}` ( :attr:`axis` = 0 ), :math:`{\bf x}\in {\mathbb R}^{H×W}` ( :attr:`axis` = 1 )
+        The output tensor :math:`{\bf x}`.
+    
+    see also :func:`ct2rt`.
+    
     """
 
-    d = y.dim()
+    d = np.ndim(y)
     n = y.shape[axis]
 
     Y = np.fft.fft(y, axis=axis)
     X = Y[sl(d, axis, range(0, int(n / 2)))]
-    X[sl(d, axis, [[0]])].imag = Y[sl(d, axis, [[int(n / 2)]])].real
+    X[sl(d, axis, [[0]])] = X[sl(d, axis, [[0]])] + 1j * Y[sl(d, axis, [[int(n / 2)]])].real
     del y, Y
     x = np.fft.ifft(X, axis=axis)
     return x
 
 
 if __name__ == '__main__':
+
+    x = np.array([1, 2, 3]) + np.array([1, 2, 3]) * 1j
+
+    y = ct2rt(x)
+    z = rt2ct(y)
+
+    print(x)
+    print(y)
+    print(z)
 
     X = np.random.randn(4, 3, 5, 6)
     XX = standardization(X, axis=(0, 2, 3))

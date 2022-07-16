@@ -1,3 +1,37 @@
+def db2mag(db):
+    r"""Converts decibel values to magnitudes
+
+    .. mathh::
+       {\rm mag} = 10^{db / 20}
+
+    Parameters
+    ----------
+    db : int, float, tuple, list, ndarray
+        The decibel values.
+
+    Returns
+    -------
+     int, float, tuple, list, ndarray
+        The magnitudes of inputs with the same type.
+    """
+
+def mag2db(mag):
+    r"""Converts decibel values to magnitudes
+
+    .. mathh::
+       {\rm db} = 20*{\rm log10}{\rm mag}
+
+    Parameters
+    ----------
+    mag : int, float, tuple, list, ndarray
+        The magnitude values.
+
+    Returns
+    -------
+     int, float, tuple, list, ndarray
+        The decibel of inputs with the same type.
+    """
+
 def fnab(n):
     """gives the closest two integer number factor of a number
 

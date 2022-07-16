@@ -3,6 +3,7 @@
 
 class HuffmanCoding:
     def __init__(self, path):
+    class HeapNode:
         def __init__(self, char, freq):
         def __lt__(self, other):
         def __eq__(self, other):

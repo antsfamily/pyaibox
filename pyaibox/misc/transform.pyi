@@ -18,6 +18,7 @@ def standardization(X, mean=None, std=None, axis=None, extra=False):
 
 def scale(X, st=[0, 1], sf=None, istrunc=True, extra=False):
     r"""
+
     Scale data.
 
     .. math::
@@ -45,6 +46,7 @@ def scale(X, st=[0, 1], sf=None, istrunc=True, extra=False):
 
 def quantization(X, idrange=None, odrange=[0, 31], odtype='auto', extra=False):
     r"""
+
     Quantize data.
 
     .. math::
@@ -70,6 +72,19 @@ def quantization(X, idrange=None, odrange=[0, 31], odtype='auto', extra=False):
     """
 
 def db20(x):
+    r"""compute dB
+
+    Parameters
+    ----------
+    x : float or array
+        linear value
+
+    Returns
+    -------
+    float or array
+        the dB value of x.
+    """
+
 def ct2rt(x, axis=0):
     r"""Converts a complex-valued tensor to a real-valued tensor
 
@@ -79,14 +94,55 @@ def ct2rt(x, axis=0):
     Parameters
     ----------
     x : Tensor
-        The input tensor :math:`{\bf x}\in {\mathbb C}^{H×W}`.
+        The input tensor :math:`{\bf x}`.
     axis : int
         The axis for excuting FFT.
 
     Returns
     -------
     Tensor
-        The output tensor :math:`{\bf y}\in {\mathbb R}^{2H×W}` ( :attr:`axis` = 0 ), :math:`{\bf y}\in {\mathbb R}^{H×2W}` ( :attr:`axis` = 1 )
+        The output tensor :math:`{\bf y}`.
+
+    see also :func:`rt2ct`.
+
+    Examples
+    ---------
+
+    .. image:: ./_static/CT2RTRT2CTdemo.png
+       :scale: 100 %
+       :align: center
+
+    The results shown in the above figure can be obtained by the following codes.
+
+    ::
+
+        import numpy as np
+        import pyaibox as pb
+
+
+        datafolder = pb.data_path('optical')
+        xr = pb.imread(datafolder + 'Einstein256.png')
+        xi = pb.imread(datafolder + 'LenaGRAY256.png')
+
+        x = xr + 1j * xi
+
+        y = pb.ct2rt(x, axis=0)
+        z = pb.rt2ct(y, axis=0)
+
+        print(x.shape, y.shape, z.shape)
+        print(x.dtype, y.dtype, z.dtype)
+
+        print(np.min(np.abs(x)), np.max(np.abs(x)))
+        print(np.min(np.abs(y)), np.max(np.abs(y)))
+        print(np.min(np.abs(z)), np.max(np.abs(z)))
+
+
+        plt = pb.imshow([x.real, x.imag, y.real, y.imag, z.real, z.imag], nrows=3, ncols=2,
+                        titles=['original(real)', 'original(imag)', 'converted(real)', 
+                        'converted(imag)', 'reconstructed(real)', 'reconstructed(imag)'])
+        plt.show()
+
+
     """
 
 def rt2ct(y, axis=0):
@@ -98,13 +154,16 @@ def rt2ct(y, axis=0):
     Parameters
     ----------
     y : Tensor
-        The input tensor :math:`{\bf y}\in {\mathbb C}^{2H×W}`.
+        The input tensor :math:`{\bf y}`.
     axis : int
         The axis for excuting FFT.
 
     Returns
     -------
     Tensor
-        The output tensor :math:`{\bf x}\in {\mathbb R}^{H×W}` ( :attr:`axis` = 0 ), :math:`{\bf x}\in {\mathbb R}^{H×W}` ( :attr:`axis` = 1 )
+        The output tensor :math:`{\bf x}`.
+    
+    see also :func:`ct2rt`.
+    
     """
 

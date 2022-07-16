@@ -10,6 +10,53 @@ import numpy as np
 import pyaibox as pb
 
 
+def db2mag(db):
+    r"""Converts decibel values to magnitudes
+
+    .. mathh::
+       {\rm mag} = 10^{db / 20}
+
+    Parameters
+    ----------
+    db : int, float, tuple, list, ndarray
+        The decibel values.
+
+    Returns
+    -------
+     int, float, tuple, list, ndarray
+        The magnitudes of inputs with the same type.
+    """
+    if type(db) is list:
+        return list(10 ** (dbi / 20) for dbi in db)
+    if type(db) is tuple:
+        return tuple(10 ** (dbi / 20) for dbi in db)
+    return 10 ** (db / 20)
+
+
+def mag2db(mag):
+    r"""Converts decibel values to magnitudes
+
+    .. mathh::
+       {\rm db} = 20*{\rm log10}{\rm mag}
+
+    Parameters
+    ----------
+    mag : int, float, tuple, list, ndarray
+        The magnitude values.
+
+    Returns
+    -------
+     int, float, tuple, list, ndarray
+        The decibel of inputs with the same type.
+    """
+    if type(mag) is list:
+        return list(20 * np.log10(magi) for magi in mag)
+    if type(mag) is tuple:
+        return tuple(20 * np.log10(magi) for magi in mag)
+
+    return 20 * np.log10(mag)
+
+
 def fnab(n):
     """gives the closest two integer number factor of a number
 
