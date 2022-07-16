@@ -987,23 +987,65 @@ and then reform these patches into an image.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf x}\in {\mathbb C}^{H×W}\)</span>.</p></li>
+<li><p><strong>x</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf x}\)</span>.</p></li>
 <li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The axis for excuting FFT.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The output tensor <span class="math">\({\bf y}\in {\mathbb R}^{2H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 0 ), <span class="math">\({\bf y}\in {\mathbb R}^{H×2W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 1 )</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Tensor</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>Tensor</em> – The output tensor <span class="math">\({\bf y}\)</span>.</p></li>
+<li><p>see also <a class="reference internal" href="#pyaibox.misc.transform.rt2ct" title="pyaibox.misc.transform.rt2ct"><code class="xref py py-func docutils literal notranslate"><span class="pre">rt2ct()</span></code></a>.</p></li>
+</ul>
+</p>
 </dd>
 </dl>
+<p class="rubric">Examples</p>
+<a class="reference internal image-reference" href="_images/CT2RTRT2CTdemo.png"><img alt="_images/CT2RTRT2CTdemo.png" class="align-center" src="_images/CT2RTRT2CTdemo.png" style="width: 507.0px; height: 805.0px;" /></a>
+<p>The results shown in the above figure can be obtained by the following codes.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pyaibox</span> <span class="k">as</span> <span class="nn">pb</span>
+
+<span class="n">datafolder</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">data_path</span><span class="p">(</span><span class="s1">&#39;optical&#39;</span><span class="p">)</span>
+<span class="n">xr</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;Einstein256.png&#39;</span><span class="p">)</span>
+<span class="n">xi</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="n">datafolder</span> <span class="o">+</span> <span class="s1">&#39;LenaGRAY256.png&#39;</span><span class="p">)</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">xr</span> <span class="o">+</span> <span class="mi">1</span><span class="n">j</span> <span class="o">*</span> <span class="n">xi</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">ct2rt</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">z</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">rt2ct</span><span class="p">(</span><span class="n">y</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">shape</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">dtype</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">dtype</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">y</span><span class="p">)))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)),</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">z</span><span class="p">)))</span>
+
+
+<span class="n">plt</span> <span class="o">=</span> <span class="n">pb</span><span class="o">.</span><span class="n">imshow</span><span class="p">([</span><span class="n">x</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">y</span><span class="o">.</span><span class="n">imag</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">real</span><span class="p">,</span> <span class="n">z</span><span class="o">.</span><span class="n">imag</span><span class="p">],</span> <span class="n">nrows</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+                <span class="n">titles</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;original(real)&#39;</span><span class="p">,</span> <span class="s1">&#39;original(imag)&#39;</span><span class="p">,</span> <span class="s1">&#39;converted(real)&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;converted(imag)&#39;</span><span class="p">,</span> <span class="s1">&#39;reconstructed(real)&#39;</span><span class="p">,</span> <span class="s1">&#39;reconstructed(imag)&#39;</span><span class="p">])</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.misc.transform.db20">
 <span class="sig-prename descclassname"><span class="pre">pyaibox.misc.transform.</span></span><span class="sig-name descname"><span class="pre">db20</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.misc.transform.db20" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>compute dB</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>x</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em> or </em><em>array</em>) – linear value</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>the dB value of x.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a> or array</p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.misc.transform.quantization">
@@ -1049,15 +1091,16 @@ idrange, odrange (list or tuple): If <code class="xref py py-attr docutils liter
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>y</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf y}\in {\mathbb C}^{2H×W}\)</span>.</p></li>
+<li><p><strong>y</strong> (<em>Tensor</em>) – The input tensor <span class="math">\({\bf y}\)</span>.</p></li>
 <li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – The axis for excuting FFT.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The output tensor <span class="math">\({\bf x}\in {\mathbb R}^{H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 0 ), <span class="math">\({\bf x}\in {\mathbb R}^{H×W}\)</span> ( <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> = 1 )</p>
-</dd>
-<dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p>Tensor</p>
+<dd class="field-even"><p><ul class="simple">
+<li><p><em>Tensor</em> – The output tensor <span class="math">\({\bf x}\)</span>.</p></li>
+<li><p>see also <a class="reference internal" href="#pyaibox.misc.transform.ct2rt" title="pyaibox.misc.transform.ct2rt"><code class="xref py py-func docutils literal notranslate"><span class="pre">ct2rt()</span></code></a>.</p></li>
+</ul>
+</p>
 </dd>
 </dl>
 </dd></dl>
