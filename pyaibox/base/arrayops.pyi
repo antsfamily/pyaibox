@@ -68,6 +68,8 @@ def cut(x, pos, axis=None):
     """
 
 def cat(arrays, axis=None, out=None):
+    ...
+
 def arraycomb(arrays, out=None):
     r"""compute the elemnts combination of several lists.
 
@@ -103,4 +105,5 @@ def arraycomb(arrays, out=None):
         [3 5 7]] (12, 3)
 
     """
+
 

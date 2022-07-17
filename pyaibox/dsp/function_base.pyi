@@ -80,8 +80,10 @@ def unwrap2(x, discont=pb.PI, axis=-1):
         print(y, y.shape, type(y))
 
         # output
-        [3.14       3.16318531 3.12       3.13       3.17318531] (5,) <class 'numpy.ndarray'>
-        3.16318531 3.12       3.13       3.17318531] (10,) <class 'numpy.ndarray'>
+        [3.14       3.16318531 3.12       3.13       3.17318531] (5,) <class 'numpy.ndarray'> ------------------------
+                                                                           ...
+
+        3.16318531 3.12       3.13       3.17318531] (10,) <class 'numpy.ndarray'> 
     """
 
     d = x.ndim
@@ -104,3 +106,4 @@ if __name__ == '__main__':
     x = np.concatenate((x[::-1], x), axis=0)
     y = unwrap2(x)
     print(y, y.shape, type(y))
+

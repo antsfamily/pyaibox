@@ -60,3 +60,4 @@ def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolor
     """
 
 def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):
+

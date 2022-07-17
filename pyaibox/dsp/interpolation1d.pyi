@@ -1,5 +1,9 @@
 def sinc_table(Nq, Ns):
+    ...
+
 def sinc_interp(xin, r=1.0):
+    ...
+
 def interp(x, xp, yp, mod='sinc'):
     """interpolation
 
@@ -29,3 +33,4 @@ def interp(x, xp, yp, mod='sinc'):
     """
 
 def sinc(x):
+

@@ -1,6 +1,12 @@
 def imread(imgfile):
+    ...
+
 def imsave(outfile, img):
+    ...
+
 def histeq(img, nbins=256):
+    ...
+
 def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, clip=True, preserve_range=False):
     r"""resize image to oshape
 
@@ -57,4 +63,5 @@ def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, cl
         (100, 100)
 
     """
+
 

@@ -7,7 +7,7 @@ def plot_bbox(bboxes, labels=None, scores=None, edgecolors=None, linewidths=1, f
     bboxes : list or numpy array
         The bounding boxes, in ``LeftTopRightBottom`` mode, which means (xmin, ymin, xmax, ymax)
     labels : list or None, optional
-        The labels, can be a list of class id or class name. If None, won't show labels.
+        The labels, can be a list of class id or class name. If None, won't show labels. scores : list or None, optional
     """
     nbox = len(bboxes)
     labels = [labels] * nbox if labels is None or type(labels) is str else labels
@@ -129,4 +129,5 @@ def fmt_bbox(bboxes, fmtstr='LTRB2CHW'):
     see :func:`plot_bbox`
 
     """
+
 

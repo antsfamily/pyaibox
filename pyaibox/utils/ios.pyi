@@ -23,7 +23,11 @@ def loadjson(filepath, field=None):
     """
 
 def _check_keys(d):
+    ...
+
 def _todict(matobj):
+    ...
+
 def loadmat(filepath):
     r"""load data from an ``.mat`` file
 
@@ -59,7 +63,11 @@ def savemat(filepath, mdict, fmt='5'):
     """
 
 def _create_group_dataset(group, mdict):
+    ...
+
 def _read_group_dataset(group, mdict, keys=None):
+    ...
+
 def loadh5(filename, keys=None):
     r"""load h5 file
 
@@ -220,4 +228,5 @@ def savebin(file, x, dtype='i', endian='little', offsets=0, mode='o'):
         print(y)
 
     """
+
 

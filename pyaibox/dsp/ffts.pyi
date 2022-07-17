@@ -344,6 +344,13 @@ def fft2(img):
     """
 
 def fftx(x, n=None):
+    ...
+
 def ffty(x, n=None):
+    ...
+
 def ifftx(x, n=None):
+    ...
+
 def iffty(x, n=None):
+

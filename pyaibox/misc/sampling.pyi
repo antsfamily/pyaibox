@@ -1,4 +1,6 @@
 # def upsampling(X, shape, axis=-1, method='Lanczos'):
+      ...
+
 def slidegrid(start, stop, step, shake=0, n=None):
     r"""generates sliding grid indexes
 
@@ -288,4 +290,5 @@ def read_samples(datafiles, keys=[['SI', 'ca', 'cr']], nsamples=[10], groups=[1]
     Raises:
         ValueError: :attr:`nsamples` should be large enough
     """
+
 

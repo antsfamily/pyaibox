@@ -21,7 +21,7 @@ def bbox_iou(bbox_a, bbox_b):
         box in :obj:`bbox_b`.
     """
 
-def eval_detection_voc(
+def eval_detection_voc( pred_bboxes,
     r"""Calculate average precisions based on evaluation code of PASCAL VOC.
 
     This function evaluates predicted bounding boxes obtained from a dataset
@@ -73,7 +73,7 @@ def eval_detection_voc(
 
         - **ap** (ndarray): An array of average precisions. \
             The :math:`l`-th value corresponds to the average precision \
-            for class :math:`l`. If class :math:`l` does not exist in \
+            for class :math:`l`. If class :math:`l` does not exist in \ either :obj:`pred_labels` or :obj:`gt_labels`, the corresponding \
     """
 
     prec, rec = calc_detection_voc_prec_rec(pred_bboxes,
@@ -89,7 +89,7 @@ def eval_detection_voc(
     return {'ap': ap, 'map': np.nanmean(ap)}
 
 
-def calc_detection_voc_prec_rec(
+def calc_detection_voc_prec_rec( pred_bboxes, pred_labels, pred_scores, gt_bboxes, gt_labels,
     r"""Calculate precision and recall based on evaluation code of PASCAL VOC.
 
     This function calculates precision and recall of
@@ -136,8 +136,10 @@ def calc_detection_voc_prec_rec(
         This function returns two lists: :obj:`prec` and :obj:`rec`.
 
         * :obj:`prec`: A list of arrays. :obj:`prec[l]` is precision \
-            for class :math:`l`. If class :math:`l` does not exist in \
-            for class :math:`l`. If class :math:`l` that is not marked as \
+            for class :math:`l`. If class :math:`l` does not exist in \ either :obj:`pred_labels` or :obj:`gt_labels`, :obj:`prec[l]` is \
+                    ...
+
+            for class :math:`l`. If class :math:`l` that is not marked as \ difficult does not exist in \
     """
 
     pred_bboxes = iter(pred_bboxes)
@@ -216,7 +218,9 @@ def calc_detection_voc_prec_rec(
         if next(iter_, None) is not None:
             raise ValueError('Length of input iterables need to be same.')
 
-    n_fg_class = max(n_pos.keys()) + 1
+    n_fg_class = max(n_pos.keys()) + 1 prec = [None] * n_fg_class
+             ...
+
 def calc_detection_voc_ap(prec, rec, use_07_metric=False):
     r"""Calculate average precisions based on evaluation code of PASCAL VOC.
 
@@ -226,11 +230,20 @@ def calc_detection_voc_ap(prec, rec, use_07_metric=False):
 
     Args:
         prec (list of numpy.array): A list of arrays.
-            :obj:`prec[l]` indicates precision for class :math:`l`.
-            :obj:`numpy.nan` for class :math:`l`.
-            :obj:`rec[l]` indicates recall for class :math:`l`.
-            :obj:`numpy.nan` for class :math:`l`.
-        for class :math:`l`. If :obj:`prec[l]` or :obj:`rec[l]` is
+            :obj:`prec[l]` indicates precision for class :math:`l`. If :obj:`prec[l]` is :obj:`None`, this function returns
+                                                       ...
+
+            :obj:`numpy.nan` for class :math:`l`. rec (list of numpy.array): A list of arrays.
+                                     ...
+
+            :obj:`rec[l]` indicates recall for class :math:`l`. If :obj:`rec[l]` is :obj:`None`, this function returns
+                                                   ...
+
+            :obj:`numpy.nan` for class :math:`l`. use_07_metric (bool): Whether to use PASCAL VOC 2007 evaluation metric
+                                     ...
+
+        for class :math:`l`. If :obj:`prec[l]` or :obj:`rec[l]` is :obj:`None`, the corresponding value is set to :obj:`numpy.nan`.
     """
 
-    n_fg_class = len(prec)
+    n_fg_class = len(prec) ap = np.empty(n_fg_class)
+
