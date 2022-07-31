@@ -284,7 +284,7 @@ def acorr(x, P, axis=0, scale=None):
     Parameters
     ----------
     x : tensor
-        the input signal tensor
+        the input signal array
     P : int
         maxlag
     axis : int
