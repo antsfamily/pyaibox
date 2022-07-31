@@ -34,7 +34,7 @@ from .compression.huffman_coding import HuffmanCoding
 
 from .dsp.ffts import padfft, freq, fftfreq, fftshift, ifftshift, fft, ifft, fftx, ffty, ifftx, iffty
 from .dsp.convolution import conv1, cutfftconv1, fftconv1
-from .dsp.correlation import corr1, cutfftcorr1, fftcorr1
+from .dsp.correlation import corr1, cutfftcorr1, fftcorr1, acorr, xcorr, accc
 from .dsp.normalsignals import rect, chirp
 from .dsp.interpolation1d import sinc, sinc_table, sinc_interp, interp
 from .dsp.interpolation2d import interp2d
