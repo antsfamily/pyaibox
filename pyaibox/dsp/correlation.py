@@ -293,14 +293,14 @@ def acorr(x, P, axis=0, scale=None):
         :obj:`None`, ``'biased'`` or ``'unbiased'``, by default None
     """    
 
-    M, N = x.shape
+    M = x.shape[axis]
     mxl = min(P, M - 1)
     M2 = 2 * M
 
     X = np.fft.fft(x, n=M2, axis=axis)
     C = X * X.conj()
     c = np.fft.ifft(C, axis=axis)
-    c = np.concatenate((c[range(M2-mxl, M2), :], c[0:mxl+1, :]), axis=axis)
+    c = cut(c, [(M2-mxl, M2), (0, mxl+1)], axis=axis)
 
     if np.iscomplex(x).any():
         pass

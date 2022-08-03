@@ -118,6 +118,21 @@ def xcorr(A, B, shape='same', mod=None, axis=0):
         - :obj:`None`: no scaling (this is the default).
     """
 
+def acorr(x, P, axis=0, scale=None):
+    r"""computes auto-correlation using fft
+
+    Parameters
+    ----------
+    x : tensor
+        the input signal array
+    P : int
+        maxlag
+    axis : int
+        the auto-correlation dimension
+    scale : str or None, optional
+        :obj:`None`, ``'biased'`` or ``'unbiased'``, by default None
+    """    
+
 def accc(Sr, isplot=False):
     r"""Average cross correlation coefficient
 
