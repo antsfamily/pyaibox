@@ -26,7 +26,7 @@ from .summary.loss_log import LossLog
 from .evaluation.contrast import contrast
 from .evaluation.entropy import entropy
 from .evaluation.norm import fnorm, pnorm
-from .evaluation.error import mse, sse, mae, sae
+from .evaluation.error import mse, sse, mae, sae, nmse, nsse, nmae, nsae
 from .evaluation.snrs import snr, psnr
 from .evaluation.detection_voc import bbox_iou, calc_detection_voc_ap, calc_detection_voc_prec_rec, eval_detection_voc
 
