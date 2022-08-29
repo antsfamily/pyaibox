@@ -521,20 +521,20 @@ def nmse(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+            E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
         else:
-            E = np.mean((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
+            E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
     else:
         if caxis is None:  # real
             if axis is None:
-               E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+               E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
             else:
-               E = np.mean(X**2, axis=axis) / (np.sum(Y**2, axis=axis) + pb.EPS)
+               E = np.mean(X**2, axis=axis) / (np.mean(Y**2, axis=axis) + pb.EPS)
         else:  # complex in real
             if axis is None:
-               E = np.mean(np.sum(X**2, axis=caxis)) / (np.sum(np.sum(Y**2, axis=caxis)) + pb.EPS)
+               E = np.mean(np.sum(X**2, axis=caxis)) / (np.mean(np.sum(Y**2, axis=caxis)) + pb.EPS)
             else:
-               E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.sum(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
+               E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.mean(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
 
     if reduction in ['mean', 'MEAN']:
        E = np.mean(E)
@@ -707,20 +707,20 @@ def nmae(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-           E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+           E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
         else:
-           E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+           E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
     else:
         if caxis is None:  # real
             if axis is None:
-               E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+               E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
             else:
-               E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+               E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
         else:  # complex in real
             if axis is None:
-               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
+               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
             else:
-               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
+               E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
     
     if reduction in ['mean', 'MEAN']:
        E = np.mean(E)

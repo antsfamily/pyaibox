@@ -6201,7 +6201,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         if axis is None:
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 522, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -6249,7 +6249,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:             # <<<<<<<<<<<<<<
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
  *         else:
  */
     __pyx_t_6 = (__pyx_v_axis == Py_None);
@@ -6259,9 +6259,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
       /* "pyaibox/evaluation/error.py":524
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)             # <<<<<<<<<<<<<<
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)             # <<<<<<<<<<<<<<
  *         else:
- *             E = np.mean((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
  */
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 524, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -6309,7 +6309,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 524, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 524, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 524, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_Y, __pyx_n_s_conj); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 524, __pyx_L1_error)
@@ -6371,16 +6371,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:             # <<<<<<<<<<<<<<
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
  *         else:
  */
       goto __pyx_L6;
     }
 
     /* "pyaibox/evaluation/error.py":526
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
  *         else:
- *             E = np.mean((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *             E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  *     else:
  *         if caxis is None:  # real
  */
@@ -6428,7 +6428,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 526, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 526, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 526, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_Y, __pyx_n_s_conj); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 526, __pyx_L1_error)
@@ -6490,17 +6490,17 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         if axis is None:
- *             E = np.mean((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
  */
     goto __pyx_L5;
   }
 
   /* "pyaibox/evaluation/error.py":528
- *             E = np.mean((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
  *             if axis is None:
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
  */
   /*else*/ {
     __pyx_t_7 = (__pyx_v_caxis == Py_None);
@@ -6511,7 +6511,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     else:
  *         if caxis is None:  # real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
  *             else:
  */
       __pyx_t_6 = (__pyx_v_axis == Py_None);
@@ -6521,9 +6521,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         /* "pyaibox/evaluation/error.py":530
  *         if caxis is None:  # real
  *             if axis is None:
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)             # <<<<<<<<<<<<<<
  *             else:
- *                E = np.mean(X**2, axis=axis) / (np.sum(Y**2, axis=axis) + pb.EPS)
+ *                E = np.mean(X**2, axis=axis) / (np.mean(Y**2, axis=axis) + pb.EPS)
  */
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 530, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -6550,7 +6550,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 530, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 530, __pyx_L1_error)
+        __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 530, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_2);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_t_4 = PyNumber_Power(__pyx_v_Y, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 530, __pyx_L1_error)
@@ -6591,16 +6591,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
  *     else:
  *         if caxis is None:  # real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
  *             else:
  */
         goto __pyx_L8;
       }
 
       /* "pyaibox/evaluation/error.py":532
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
  *             else:
- *                E = np.mean(X**2, axis=axis) / (np.sum(Y**2, axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(X**2, axis=axis) / (np.mean(Y**2, axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  *         else:  # complex in real
  *             if axis is None:
  */
@@ -6627,7 +6627,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 532, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 532, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __pyx_t_4 = PyNumber_Power(__pyx_v_Y, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 532, __pyx_L1_error)
@@ -6664,20 +6664,20 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
       __pyx_L8:;
 
       /* "pyaibox/evaluation/error.py":528
- *             E = np.mean((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
+ *             E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
  *             if axis is None:
- *                E = np.mean(X**2) / (np.sum(Y**2) + pb.EPS)
+ *                E = np.mean(X**2) / (np.mean(Y**2) + pb.EPS)
  */
       goto __pyx_L7;
     }
 
     /* "pyaibox/evaluation/error.py":534
- *                E = np.mean(X**2, axis=axis) / (np.sum(Y**2, axis=axis) + pb.EPS)
+ *                E = np.mean(X**2, axis=axis) / (np.mean(Y**2, axis=axis) + pb.EPS)
  *         else:  # complex in real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.sum(np.sum(Y**2, axis=caxis)) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.mean(np.sum(Y**2, axis=caxis)) + pb.EPS)
  *             else:
  */
     /*else*/ {
@@ -6688,9 +6688,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         /* "pyaibox/evaluation/error.py":535
  *         else:  # complex in real
  *             if axis is None:
- *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.sum(np.sum(Y**2, axis=caxis)) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.mean(np.sum(Y**2, axis=caxis)) + pb.EPS)             # <<<<<<<<<<<<<<
  *             else:
- *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.sum(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.mean(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
  */
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 535, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -6735,7 +6735,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 535, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_sum); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 535, __pyx_L1_error)
+        __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_mean); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 535, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 535, __pyx_L1_error)
@@ -6791,19 +6791,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         __pyx_t_9 = 0;
 
         /* "pyaibox/evaluation/error.py":534
- *                E = np.mean(X**2, axis=axis) / (np.sum(Y**2, axis=axis) + pb.EPS)
+ *                E = np.mean(X**2, axis=axis) / (np.mean(Y**2, axis=axis) + pb.EPS)
  *         else:  # complex in real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.sum(np.sum(Y**2, axis=caxis)) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.mean(np.sum(Y**2, axis=caxis)) + pb.EPS)
  *             else:
  */
         goto __pyx_L9;
       }
 
       /* "pyaibox/evaluation/error.py":537
- *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.sum(np.sum(Y**2, axis=caxis)) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis)) / (np.mean(np.sum(Y**2, axis=caxis)) + pb.EPS)
  *             else:
- *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.sum(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.mean(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  * 
  *     if reduction in ['mean', 'MEAN']:
  */
@@ -6849,7 +6849,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 537, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_sum); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 537, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_mean); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 537, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 537, __pyx_L1_error)
@@ -6909,7 +6909,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
   __pyx_L5:;
 
   /* "pyaibox/evaluation/error.py":539
- *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.sum(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.mean(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
  *        E = np.mean(E)
@@ -6961,7 +6961,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_10nmse(CYTHON_UNUSED PyOb
     __pyx_t_8 = 0;
 
     /* "pyaibox/evaluation/error.py":539
- *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.sum(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sum(X**2, axis=caxis, keepdims=keepcaxis), axis=axis) / (np.mean(np.sum(Y**2, axis=caxis, keepdims=keepcaxis), axis=axis) + pb.EPS)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
  *        E = np.mean(E)
@@ -8675,7 +8675,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         if axis is None:
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  */
   __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 708, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -8723,7 +8723,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:             # <<<<<<<<<<<<<<
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *         else:
  */
     __pyx_t_6 = (__pyx_v_axis == Py_None);
@@ -8733,9 +8733,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
       /* "pyaibox/evaluation/error.py":710
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)             # <<<<<<<<<<<<<<
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)             # <<<<<<<<<<<<<<
  *         else:
- *            E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *            E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  */
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 710, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
@@ -8780,7 +8780,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 710, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 710, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 710, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 710, __pyx_L1_error)
@@ -8839,16 +8839,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex
  *         if axis is None:             # <<<<<<<<<<<<<<
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *         else:
  */
       goto __pyx_L6;
     }
 
     /* "pyaibox/evaluation/error.py":712
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *         else:
- *            E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *            E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  *     else:
  *         if caxis is None:  # real
  */
@@ -8893,7 +8893,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 712, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 712, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 712, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 712, __pyx_L1_error)
@@ -8952,17 +8952,17 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     X = X - Y
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         if axis is None:
- *            E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *            E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  */
     goto __pyx_L5;
   }
 
   /* "pyaibox/evaluation/error.py":714
- *            E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *            E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
  *             if axis is None:
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  */
   /*else*/ {
     __pyx_t_7 = (__pyx_v_caxis == Py_None);
@@ -8973,7 +8973,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     else:
  *         if caxis is None:  # real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *             else:
  */
       __pyx_t_6 = (__pyx_v_axis == Py_None);
@@ -8983,9 +8983,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         /* "pyaibox/evaluation/error.py":716
  *         if caxis is None:  # real
  *             if axis is None:
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)             # <<<<<<<<<<<<<<
  *             else:
- *                E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *                E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  */
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 716, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -9030,7 +9030,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 716, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 716, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 716, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 716, __pyx_L1_error)
@@ -9089,16 +9089,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
  *     else:
  *         if caxis is None:  # real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *             else:
  */
         goto __pyx_L8;
       }
 
       /* "pyaibox/evaluation/error.py":718
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  *             else:
- *                E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  *         else:  # complex in real
  *             if axis is None:
  */
@@ -9143,7 +9143,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 718, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 718, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 718, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 718, __pyx_L1_error)
@@ -9198,20 +9198,20 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
       __pyx_L8:;
 
       /* "pyaibox/evaluation/error.py":714
- *            E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *            E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
  *             if axis is None:
- *                E = np.mean(np.abs(X)) / (np.sum(np.abs(Y)) + pb.EPS)
+ *                E = np.mean(np.abs(X)) / (np.mean(np.abs(Y)) + pb.EPS)
  */
       goto __pyx_L7;
     }
 
     /* "pyaibox/evaluation/error.py":720
- *                E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *                E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  *         else:  # complex in real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
  *             else:
  */
     /*else*/ {
@@ -9222,9 +9222,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         /* "pyaibox/evaluation/error.py":721
  *         else:  # complex in real
  *             if axis is None:
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)             # <<<<<<<<<<<<<<
  *             else:
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
  */
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 721, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
@@ -9290,7 +9290,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 721, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 721, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 721, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 721, __pyx_L1_error)
@@ -9367,19 +9367,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         __pyx_t_4 = 0;
 
         /* "pyaibox/evaluation/error.py":720
- *                E = np.mean(np.abs(X), axis=axis) / (np.sum(np.abs(Y), axis=axis) + pb.EPS)
+ *                E = np.mean(np.abs(X), axis=axis) / (np.mean(np.abs(Y), axis=axis) + pb.EPS)
  *         else:  # complex in real
  *             if axis is None:             # <<<<<<<<<<<<<<
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
  *             else:
  */
         goto __pyx_L9;
       }
 
       /* "pyaibox/evaluation/error.py":723
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis))) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis))) + pb.EPS)
  *             else:
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)             # <<<<<<<<<<<<<<
  * 
  *     if reduction in ['mean', 'MEAN']:
  */
@@ -9446,7 +9446,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 723, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
-        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_sum); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 723, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 723, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 723, __pyx_L1_error)
@@ -9527,7 +9527,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
   __pyx_L5:;
 
   /* "pyaibox/evaluation/error.py":725
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
  *        E = np.mean(E)
@@ -9579,7 +9579,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_5error_14nmae(CYTHON_UNUSED PyOb
     __pyx_t_1 = 0;
 
     /* "pyaibox/evaluation/error.py":725
- *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.sum(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
+ *                E = np.mean(np.sqrt(np.sum(X**2, axis=caxis, keepdims=keepcaxis)), axis=axis) / (np.mean(np.sqrt(np.sum(Y**2, axis=caxis, keepdims=keepcaxis)), axis=axis) + pb.EPS)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
  *        E = np.mean(E)
