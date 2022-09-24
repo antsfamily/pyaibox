@@ -5,7 +5,7 @@
 # @Link    : http://iridescent.ink
 # @Version : $1.0$
 
-
+import os
 from pyaibox import listxfile
 
 
@@ -127,6 +127,22 @@ def gpyi(pkgdir, autoskip=True):
 
         fpy.close()
         fpyi.close()
+
+
+def rmcache(pkgdir, ext='.c'):
+    """remove files
+
+    Parameters
+    ----------
+    pkgdir : str
+        package root directory
+    ext : str, optional
+        file extension
+    """    
+
+    allfiles = listxfile(pkgdir, ext, recursive=True)
+    for file in allfiles:
+        os.remove(file)
 
 
 if __name__ == '__main__':
