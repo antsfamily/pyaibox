@@ -13,7 +13,7 @@ import pyaibox as pb
 def db2mag(db):
     r"""Converts decibel values to magnitudes
 
-    .. mathh::
+    .. math::
        {\rm mag} = 10^{db / 20}
 
     Parameters
@@ -36,7 +36,7 @@ def db2mag(db):
 def mag2db(mag):
     r"""Converts decibel values to magnitudes
 
-    .. mathh::
+    .. math::
        {\rm db} = 20*{\rm log10}{\rm mag}
 
     Parameters
@@ -626,7 +626,7 @@ def pow(X, caxis=None, keepcaxis=False):
     """
 
     if np.iscomplex(X).any():  # complex in complex
-        return (X.conj() * X).real
+        return X.real*X.real + X.imag*X.imag
     else:
         if caxis is None:  # real
             return X**2

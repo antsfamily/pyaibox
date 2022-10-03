@@ -82,9 +82,9 @@ def fnorm(X, caxis=None, axis=None, reduction='mean'):
 
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            F = np.sqrt(np.sum((X.conj() * X).real))
+            F = np.sqrt(np.sum(X.real*X.real + X.imag*X.imag))
         else:
-            F = np.sqrt(np.sum((X.conj() * X).real, axis=axis))
+            F = np.sqrt(np.sum(X.real*X.real + X.imag*X.imag, axis=axis))
     else:
         if caxis is None:  # real
             if axis is None:

@@ -14,7 +14,7 @@ this_dir = os_path.abspath(os_path.dirname(__file__))
 
 extensions = [
               Extension("pyaibox.misc.draw_shapes", ['pyaibox/misc/draw_shapes.py']), 
-            #   Extension("pyaibox.misc.noising", ['pyaibox/misc/noising.py']),
+              Extension("pyaibox.misc.noising", ['pyaibox/misc/noising.py']),
               Extension("pyaibox.misc.sampling", ['pyaibox/misc/sampling.py']),
               Extension("pyaibox.misc.transform", ['pyaibox/misc/transform.py']),
               Extension("pyaibox.misc.mapping_operation", ['pyaibox/misc/mapping_operation.py']),
@@ -22,10 +22,10 @@ extensions = [
               Extension("pyaibox.dsp.convolution", ['pyaibox/dsp/convolution.py']),
               Extension("pyaibox.dsp.correlation", ['pyaibox/dsp/correlation.py']),
               Extension("pyaibox.dsp.function_base", ['pyaibox/dsp/function_base.py']),
-            #   Extension("pyaibox.dsp.window_function", ['pyaibox/dsp/window_function.py']),
+              Extension("pyaibox.dsp.window_function", ['pyaibox/dsp/window_function.py']),
               Extension("pyaibox.dsp.normalsignals", ['pyaibox/dsp/normalsignals.py']),
-            #   Extension("pyaibox.dsp.polynomialfit", ['pyaibox/dsp/polynomialfit.py']),
-            #   Extension("pyaibox.linalg.orthogonalization", ['pyaibox/linalg/orthogonalization.py']),
+              Extension("pyaibox.dsp.polynomialfit", ['pyaibox/dsp/polynomialfit.py']),
+              Extension("pyaibox.linalg.orthogonalization", ['pyaibox/linalg/orthogonalization.py']),
               Extension("pyaibox.evaluation.contrast", ['pyaibox/evaluation/contrast.py']),
               Extension("pyaibox.evaluation.entropy", ['pyaibox/evaluation/entropy.py']),
               Extension("pyaibox.evaluation.error", ['pyaibox/evaluation/error.py']),

@@ -119,9 +119,9 @@ def mse(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            E = np.mean((X.conj() * X).real)
+            E = np.mean(X.real*X.real + X.imag*X.imag)
         else:
-            E = np.mean((X.conj() * X).real, axis=axis)
+            E = np.mean(X.real*X.real + X.imag*X.imag, axis=axis)
     else:
         if caxis is None:  # real
             if axis is None:
@@ -222,9 +222,9 @@ def sse(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            E = np.sum((X.conj() * X).real)
+            E = np.sum(X.real*X.real + X.imag*X.imag)
         else:
-            E = np.sum((X.conj() * X).real, axis=axis)
+            E = np.sum(X.real*X.real + X.imag*X.imag, axis=axis)
     else:
         if caxis is None:  # real
             if axis is None:
@@ -521,9 +521,9 @@ def nmse(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            E = np.mean((X.conj() * X).real) / (np.mean((Y.conj() * Y).real) + pb.EPS)
+            E = np.mean(X.real*X.real + X.imag*X.imag) / (np.mean((Y.conj() * Y).real) + pb.EPS)
         else:
-            E = np.mean((X.conj() * X).real, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
+            E = np.mean(X.real*X.real + X.imag*X.imag, axis=axis) / (np.mean((Y.conj() * Y).real, axis=axis) + pb.EPS)
     else:
         if caxis is None:  # real
             if axis is None:
@@ -614,9 +614,9 @@ def nsse(X, Y, caxis=None, axis=None, keepcaxis=False, reduction='mean'):
     X = X - Y
     if np.iscomplex(X).any():  # complex in complex
         if axis is None:
-            E = np.sum((X.conj() * X).real) / (np.sum((Y.conj() * Y).real) + pb.EPS)
+            E = np.sum(X.real*X.real + X.imag*X.imag) / (np.sum((Y.conj() * Y).real) + pb.EPS)
         else:
-            E = np.sum((X.conj() * X).real, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
+            E = np.sum(X.real*X.real + X.imag*X.imag, axis=axis) / (np.sum((Y.conj() * Y).real, axis=axis) + pb.EPS)
     else:
         if caxis is None:  # real
             if axis is None:

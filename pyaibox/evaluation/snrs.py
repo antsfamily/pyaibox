@@ -109,7 +109,7 @@ def snr(x, n=None, **kwargs):
     axis = tuple(range(np.ndim(x))) if axis is None else axis
 
     if np.iscomplex(x).any():  # complex in complex
-        Px = np.sum((x * x.conj()).real, axis=axis)
+        Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)
         Pn = np.sum((n * n.conj()).real, axis=axis)
     elif caxis is None:  # real
         Px = np.sum(x**2, axis=axis)

@@ -84,7 +84,7 @@ def contrast(X, caxis=None, axis=None, mode='way1', reduction='mean'):
     """
 
     if np.iscomplex(X).any():  # complex in complex
-        X = (X * X.conj()).real
+        X = X.real*X.real + X.imag*X.imag
     else:
         if caxis is None:  # real
             X = X**2

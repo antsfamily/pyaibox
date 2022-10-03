@@ -82,7 +82,7 @@ def entropy(X, caxis=None, axis=None, mode='shannon', reduction='mean'):
         logfunc = np.log
 
     if np.iscomplex(X).any():  # complex in complex
-        X = (X * X.conj()).real
+        X = X.real*X.real + X.imag*X.imag
     else:
         if caxis is None:  # real
             X = X**2
