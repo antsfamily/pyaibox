@@ -328,6 +328,28 @@ this will produce a <span class="math">\(12\times 3\)</span> array.</p>
 <span class="sig-prename descclassname"><span class="pre">pyaibox.base.baseops.</span></span><span class="sig-name descname"><span class="pre">dreplace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rv</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'None'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.baseops.dreplace" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="pyaibox.base.baseops.upkeys">
+<span class="sig-prename descclassname"><span class="pre">pyaibox.base.baseops.</span></span><span class="sig-name descname"><span class="pre">upkeys</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">D</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'module.'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.baseops.upkeys" title="Permalink to this definition">¶</a></dt>
+<dd><p>update keys of a dictionary</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>D</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)"><em>dict</em></a>) – the input dictionary</p></li>
+<li><p><strong>mode</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'-'</span></code> for remove key string which is specified by <code class="xref py py-attr docutils literal notranslate"><span class="pre">k</span></code>, by default ‘-’
+<code class="docutils literal notranslate"><span class="pre">'+'</span></code> for add key string which is specified by <code class="xref py py-attr docutils literal notranslate"><span class="pre">k</span></code>, by default ‘-’</p></li>
+<li><p><strong>k</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – key string pattern, by default ‘module.’</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>new dictionary with keys updated</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#dict" title="(in Python v3.10)">dict</a></p>
+</dd>
+</dl>
+</dd></dl>
+
 </section>
 <section id="module-pyaibox.base.mathops">
 <span id="pyaibox-base-mathops-module"></span><h2>pyaibox.base.mathops module<a class="headerlink" href="#module-pyaibox.base.mathops" title="Permalink to this headline">¶</a></h2>
@@ -494,6 +516,10 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <dt class="sig sig-object py" id="pyaibox.base.mathops.db2mag">
 <span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">db2mag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.db2mag" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts decibel values to magnitudes</p>
+<div class="math">
+\[{\rm mag} = 10^{db / 20}
+
+\]</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>db</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em>, </em><em>ndarray</em>) – The decibel values.</p>
@@ -618,6 +644,10 @@ otherwise (None), <code class="xref py py-attr docutils literal notranslate"><sp
 <dt class="sig sig-object py" id="pyaibox.base.mathops.mag2db">
 <span class="sig-prename descclassname"><span class="pre">pyaibox.base.mathops.</span></span><span class="sig-name descname"><span class="pre">mag2db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mag</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.base.mathops.mag2db" title="Permalink to this definition">¶</a></dt>
 <dd><p>Converts decibel values to magnitudes</p>
+<div class="math">
+\[{\rm db} = 20*{\rm log10}{\rm mag}
+
+\]</div>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>mag</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#tuple" title="(in Python v3.10)"><em>tuple</em></a><em>, </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#list" title="(in Python v3.10)"><em>list</em></a><em>, </em><em>ndarray</em>) – The magnitude values.</p>
