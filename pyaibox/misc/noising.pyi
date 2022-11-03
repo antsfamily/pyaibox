@@ -36,7 +36,7 @@ def awgns(x, snrv, **kwargs):
     ::
 
         import torch as th
-        import torchbox as pb
+        import pyaibox as pb
 
         pb.setseed(2020)
         x = np.random.randn(5, 2, 3, 4)

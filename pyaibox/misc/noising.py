@@ -47,7 +47,7 @@ def awgns(x, snrv, **kwargs):
     ::
 
         import torch as th
-        import torchbox as pb
+        import pyaibox as pb
 
         pb.setseed(2020)
         x = np.random.randn(5, 2, 3, 4)
@@ -120,7 +120,7 @@ def awgns(x, snrv, **kwargs):
     if np.iscomplex(x).any():  # complex in complex format
         axis = tuple(range(np.ndim(x))) if axis is None else axis
         n = np.random.randn(*x.shape) + 1j * np.random.randn(*x.shape)
-        Px = np.sum(X.real*X.real + X.imag*X.imag, axis=axis, keepdims=True)
+        Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis, keepdims=True)
         Pn = np.sum((n * n.conj()).real, axis=axis, keepdims=True)
     elif caxis is None:  # real in real format
         n = np.random.randn(*x.shape)
@@ -131,7 +131,7 @@ def awgns(x, snrv, **kwargs):
         x = pb.r2c(x, caxis=caxis, keepcaxis=keepcaxis)
         axis = tuple(range(np.ndim(x))) if axis is None else axis
         n = np.random.randn(*x.shape) + 1j * np.random.randn(*x.shape)
-        Px = np.sum(X.real*X.real + X.imag*X.imag, axis=axis, keepdims=True)
+        Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis, keepdims=True)
         Pn = np.sum((n * n.conj()).real, axis=axis, keepdims=True)
 
     alpha = np.sqrt(Px / linearSNR / Pn)

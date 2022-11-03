@@ -147,8 +147,7 @@ def rmcache(pkgdir, ext='.c'):
 
 if __name__ == '__main__':
 
-    pkgdir = '/mnt/e/ws/github/antsfamily/torchbox/torchbox/torchbox/module/layers/'
-    # pkgdir = '/mnt/e/ws/github/antsfamily/torchcs/torchcs/torchcs/'
+    pkgdir = '/mnt/e/ws/github/antsfamily/torchcs/torchcs/torchcs/'
     # pkgdir = '/mnt/e/ws/github/antsfamily/pysparse/pysparse/pysparse/'
 
     gpyi(pkgdir, autoskip=True)

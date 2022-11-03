@@ -10,6 +10,27 @@ def loadyaml(filepath, field=None):
 
     """
 
+def saveyaml(filepath, ddict=None, indent='-', mode='w'):
+    r"""Load a yaml file.
+
+    Parameters
+    ----------
+    filepath : str
+        The file path string.
+    ddict : dict
+        The data to be written is in dict format, {'field1': value1, ...}
+    indent : str
+        The indent, (the default is ``'  '``)
+    mode : str
+        save mode, ``'w'`` for overwrite, ``'a'`` for add.
+
+    Returns
+    -------
+    0
+        all is ok!
+
+    """
+
 def loadjson(filepath, field=None):
     r"""load a json file
 

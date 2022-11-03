@@ -48,12 +48,15 @@ def gpyi(pkgdir, autoskip=True):
         fpyi.close()
 
 
-if __name__ == '__main__':
+def rmcache(pkgdir, ext='.c'):
+    """remove files
 
-    pkgdir = '/mnt/e/ws/github/antsfamily/torchbox/torchbox/torchbox/module/layers/'
-    # pkgdir = '/mnt/e/ws/github/antsfamily/torchcs/torchcs/torchcs/'
-    # pkgdir = '/mnt/e/ws/github/antsfamily/pysparse/pysparse/pysparse/'
-
-    gpyi(pkgdir, autoskip=True)
+    Parameters
+    ----------
+    pkgdir : str
+        package root directory
+    ext : str, optional
+        file extension
+    """    
 
 

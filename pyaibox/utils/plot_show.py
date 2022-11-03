@@ -8,7 +8,7 @@
 import math
 import numpy as np
 import matplotlib.pyplot as plt
-from torchbox.base.mathops import fnab
+from pyaibox.base.mathops import fnab
 
 
 def cplot(ca, lmod=None):
