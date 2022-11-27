@@ -1,7 +1,7 @@
 
 import pyaibox as pb
 
-path = '../../data/files/english_sentence.txt'
+path = 'data/files/english_sentence.txt'
 
 h = pb.HuffmanCoding(path)
 
