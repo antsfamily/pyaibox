@@ -1531,7 +1531,7 @@ static PyObject *__pyx_codeobj__4;
 static PyObject *__pyx_codeobj__6;
 /* Late includes */
 
-/* "pyaibox/misc/draw_shapes.py":32
+/* "pyaibox/misc/draw_shapes.py":33
  * 
  * 
  * def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)):             # <<<<<<<<<<<<<<
@@ -1549,7 +1549,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_4__defaults__(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_edgecolors);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_edgecolors);
@@ -1563,7 +1563,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_4__defaults__(CYTHON_UNUS
   __Pyx_INCREF(((PyObject*)__pyx_tuple_));
   __Pyx_GIVEREF(((PyObject*)__pyx_tuple_));
   PyTuple_SET_ITEM(__pyx_t_1, 3, ((PyObject*)__pyx_tuple_));
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -1640,7 +1640,7 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_1draw_rectangle(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_rects)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("draw_rectangle", 0, 2, 6, 1); __PYX_ERR(0, 32, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("draw_rectangle", 0, 2, 6, 1); __PYX_ERR(0, 33, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -1668,7 +1668,7 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_1draw_rectangle(PyObject 
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "draw_rectangle") < 0)) __PYX_ERR(0, 32, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "draw_rectangle") < 0)) __PYX_ERR(0, 33, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1695,7 +1695,7 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_1draw_rectangle(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("draw_rectangle", 0, 2, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 32, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("draw_rectangle", 0, 2, 6, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 33, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.misc.draw_shapes.draw_rectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1745,29 +1745,29 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   __Pyx_INCREF(__pyx_v_x);
   __Pyx_INCREF(__pyx_v_axes);
 
-  /* "pyaibox/misc/draw_shapes.py":93
+  /* "pyaibox/misc/draw_shapes.py":94
  *     """
  * 
  *     axes = axes * len(rects) if len(axes) == 1 and len(rects) > 1 else axes             # <<<<<<<<<<<<<<
  * 
  *     x = np.array(x)
  */
-  __pyx_t_3 = PyObject_Length(__pyx_v_axes); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_3 = PyObject_Length(__pyx_v_axes); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 94, __pyx_L1_error)
   __pyx_t_4 = ((__pyx_t_3 == 1) != 0);
   if (__pyx_t_4) {
   } else {
     __pyx_t_2 = __pyx_t_4;
     goto __pyx_L3_bool_binop_done;
   }
-  __pyx_t_3 = PyObject_Length(__pyx_v_rects); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_3 = PyObject_Length(__pyx_v_rects); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 94, __pyx_L1_error)
   __pyx_t_4 = ((__pyx_t_3 > 1) != 0);
   __pyx_t_2 = __pyx_t_4;
   __pyx_L3_bool_binop_done:;
   if (__pyx_t_2) {
-    __pyx_t_3 = PyObject_Length(__pyx_v_rects); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 93, __pyx_L1_error)
-    __pyx_t_5 = PyInt_FromSsize_t(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 93, __pyx_L1_error)
+    __pyx_t_3 = PyObject_Length(__pyx_v_rects); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 94, __pyx_L1_error)
+    __pyx_t_5 = PyInt_FromSsize_t(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PyNumber_Multiply(__pyx_v_axes, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Multiply(__pyx_v_axes, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_1 = __pyx_t_6;
@@ -1779,16 +1779,16 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   __Pyx_DECREF_SET(__pyx_v_axes, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":95
+  /* "pyaibox/misc/draw_shapes.py":96
  *     axes = axes * len(rects) if len(axes) == 1 and len(rects) > 1 else axes
  * 
  *     x = np.array(x)             # <<<<<<<<<<<<<<
  *     d = np.ndim(x)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -1803,22 +1803,22 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   }
   __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_x);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF_SET(__pyx_v_x, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":96
+  /* "pyaibox/misc/draw_shapes.py":97
  * 
  *     x = np.array(x)
  *     d = np.ndim(x)             # <<<<<<<<<<<<<<
  * 
  *     for rect, edgecolor, linewidth, fillcolor, axis in zip(rects, edgecolors, linewidths, fillcolors, axes):
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -1833,20 +1833,20 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_x);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_v_d = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":98
+  /* "pyaibox/misc/draw_shapes.py":99
  *     d = np.ndim(x)
  * 
  *     for rect, edgecolor, linewidth, fillcolor, axis in zip(rects, edgecolors, linewidths, fillcolors, axes):             # <<<<<<<<<<<<<<
  *         edgecolor = np.array(edgecolor, dtype=x.dtype) if edgecolor is not None else None
  *         fillcolor = np.array(fillcolor, dtype=x.dtype) if fillcolor is not None else None
  */
-  __pyx_t_1 = PyTuple_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_rects);
   __Pyx_GIVEREF(__pyx_v_rects);
@@ -1863,16 +1863,16 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   __Pyx_INCREF(__pyx_v_axes);
   __Pyx_GIVEREF(__pyx_v_axes);
   PyTuple_SET_ITEM(__pyx_t_1, 4, __pyx_v_axes);
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_1 = __pyx_t_6; __Pyx_INCREF(__pyx_t_1); __pyx_t_3 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_3 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_3 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 99, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -1880,17 +1880,17 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_3 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_3 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_3); __Pyx_INCREF(__pyx_t_6); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_1, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -1900,7 +1900,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 98, __pyx_L1_error)
+          else __PYX_ERR(0, 99, __pyx_L1_error)
         }
         break;
       }
@@ -1912,7 +1912,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       if (unlikely(size != 5)) {
         if (size > 5) __Pyx_RaiseTooManyValuesError(5);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 98, __pyx_L1_error)
+        __PYX_ERR(0, 99, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -1938,7 +1938,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         Py_ssize_t i;
         PyObject** temps[5] = {&__pyx_t_5,&__pyx_t_8,&__pyx_t_9,&__pyx_t_10,&__pyx_t_11};
         for (i=0; i < 5; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 98, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 99, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -1948,7 +1948,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[5] = {&__pyx_t_5,&__pyx_t_8,&__pyx_t_9,&__pyx_t_10,&__pyx_t_11};
-      __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 98, __pyx_L1_error)
+      __pyx_t_12 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 99, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -1957,7 +1957,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 5) < 0) __PYX_ERR(0, 98, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 5) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
       __pyx_t_13 = NULL;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       goto __pyx_L8_unpacking_done;
@@ -1965,7 +1965,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_13 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 98, __pyx_L1_error)
+      __PYX_ERR(0, 99, __pyx_L1_error)
       __pyx_L8_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_rect, __pyx_t_5);
@@ -1979,7 +1979,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     __Pyx_XDECREF_SET(__pyx_v_axis, __pyx_t_11);
     __pyx_t_11 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":99
+    /* "pyaibox/misc/draw_shapes.py":100
  * 
  *     for rect, edgecolor, linewidth, fillcolor, axis in zip(rects, edgecolors, linewidths, fillcolors, axes):
  *         edgecolor = np.array(edgecolor, dtype=x.dtype) if edgecolor is not None else None             # <<<<<<<<<<<<<<
@@ -1988,23 +1988,23 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
  */
     __pyx_t_2 = (__pyx_v_edgecolor != Py_None);
     if ((__pyx_t_2 != 0)) {
-      __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_11 = PyTuple_New(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_11 = PyTuple_New(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_INCREF(__pyx_v_edgecolor);
       __Pyx_GIVEREF(__pyx_v_edgecolor);
       PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_v_edgecolor);
-      __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_dtype); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_dtype); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_8) < 0) __PYX_ERR(0, 99, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_9, __pyx_n_s_dtype, __pyx_t_8) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_11, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 99, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_11, __pyx_t_9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
@@ -2018,7 +2018,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     __Pyx_DECREF_SET(__pyx_v_edgecolor, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":100
+    /* "pyaibox/misc/draw_shapes.py":101
  *     for rect, edgecolor, linewidth, fillcolor, axis in zip(rects, edgecolors, linewidths, fillcolors, axes):
  *         edgecolor = np.array(edgecolor, dtype=x.dtype) if edgecolor is not None else None
  *         fillcolor = np.array(fillcolor, dtype=x.dtype) if fillcolor is not None else None             # <<<<<<<<<<<<<<
@@ -2027,23 +2027,23 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
  */
     __pyx_t_2 = (__pyx_v_fillcolor != Py_None);
     if ((__pyx_t_2 != 0)) {
-      __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_array); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_array); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_8 = PyTuple_New(1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_INCREF(__pyx_v_fillcolor);
       __Pyx_GIVEREF(__pyx_v_fillcolor);
       PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_v_fillcolor);
-      __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_dtype); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_dtype); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_11, __pyx_n_s_dtype, __pyx_t_10) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_8, __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 100, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_8, __pyx_t_11); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 101, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -2057,7 +2057,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     __Pyx_DECREF_SET(__pyx_v_fillcolor, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":101
+    /* "pyaibox/misc/draw_shapes.py":102
  *         edgecolor = np.array(edgecolor, dtype=x.dtype) if edgecolor is not None else None
  *         fillcolor = np.array(fillcolor, dtype=x.dtype) if fillcolor is not None else None
  *         if edgecolor is not None:             # <<<<<<<<<<<<<<
@@ -2068,7 +2068,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     __pyx_t_4 = (__pyx_t_2 != 0);
     if (__pyx_t_4) {
 
-      /* "pyaibox/misc/draw_shapes.py":102
+      /* "pyaibox/misc/draw_shapes.py":103
  *         fillcolor = np.array(fillcolor, dtype=x.dtype) if fillcolor is not None else None
  *         if edgecolor is not None:
  *             top, left, bottom, right = rect             # <<<<<<<<<<<<<<
@@ -2081,7 +2081,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         if (unlikely(size != 4)) {
           if (size > 4) __Pyx_RaiseTooManyValuesError(4);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 102, __pyx_L1_error)
+          __PYX_ERR(0, 103, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -2104,7 +2104,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
           Py_ssize_t i;
           PyObject** temps[4] = {&__pyx_t_6,&__pyx_t_10,&__pyx_t_11,&__pyx_t_8};
           for (i=0; i < 4; i++) {
-            PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 102, __pyx_L1_error)
+            PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 103, __pyx_L1_error)
             __Pyx_GOTREF(item);
             *(temps[i]) = item;
           }
@@ -2113,7 +2113,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       } else {
         Py_ssize_t index = -1;
         PyObject** temps[4] = {&__pyx_t_6,&__pyx_t_10,&__pyx_t_11,&__pyx_t_8};
-        __pyx_t_9 = PyObject_GetIter(__pyx_v_rect); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 102, __pyx_L1_error)
+        __pyx_t_9 = PyObject_GetIter(__pyx_v_rect); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 103, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __pyx_t_13 = Py_TYPE(__pyx_t_9)->tp_iternext;
         for (index=0; index < 4; index++) {
@@ -2121,7 +2121,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
           __Pyx_GOTREF(item);
           *(temps[index]) = item;
         }
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_9), 4) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_9), 4) < 0) __PYX_ERR(0, 103, __pyx_L1_error)
         __pyx_t_13 = NULL;
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         goto __pyx_L11_unpacking_done;
@@ -2129,7 +2129,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
         __pyx_t_13 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 102, __pyx_L1_error)
+        __PYX_ERR(0, 103, __pyx_L1_error)
         __pyx_L11_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_top, __pyx_t_6);
@@ -2141,22 +2141,22 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       __Pyx_XDECREF_SET(__pyx_v_right, __pyx_t_8);
       __pyx_t_8 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":103
+      /* "pyaibox/misc/draw_shapes.py":104
  *         if edgecolor is not None:
  *             top, left, bottom, right = rect
  *             for l in range(linewidth):             # <<<<<<<<<<<<<<
  *                 x[sl(d, axis, [slice(top, bottom + 1), [left, right]])] = edgecolor
  *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor
  */
-      __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_linewidth); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 103, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_linewidth); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       if (likely(PyList_CheckExact(__pyx_t_8)) || PyTuple_CheckExact(__pyx_t_8)) {
         __pyx_t_11 = __pyx_t_8; __Pyx_INCREF(__pyx_t_11); __pyx_t_14 = 0;
         __pyx_t_15 = NULL;
       } else {
-        __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 103, __pyx_L1_error)
+        __pyx_t_14 = -1; __pyx_t_11 = PyObject_GetIter(__pyx_t_8); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 104, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 103, __pyx_L1_error)
+        __pyx_t_15 = Py_TYPE(__pyx_t_11)->tp_iternext; if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 104, __pyx_L1_error)
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       for (;;) {
@@ -2164,17 +2164,17 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
           if (likely(PyList_CheckExact(__pyx_t_11))) {
             if (__pyx_t_14 >= PyList_GET_SIZE(__pyx_t_11)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_8); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 103, __pyx_L1_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_8); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 103, __pyx_L1_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_14 >= PyTuple_GET_SIZE(__pyx_t_11)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_8); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 103, __pyx_L1_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_11, __pyx_t_14); __Pyx_INCREF(__pyx_t_8); __pyx_t_14++; if (unlikely(0 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 103, __pyx_L1_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_11, __pyx_t_14); __pyx_t_14++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -2184,7 +2184,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 103, __pyx_L1_error)
+              else __PYX_ERR(0, 104, __pyx_L1_error)
             }
             break;
           }
@@ -2193,21 +2193,21 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_XDECREF_SET(__pyx_v_l, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "pyaibox/misc/draw_shapes.py":104
+        /* "pyaibox/misc/draw_shapes.py":105
  *             top, left, bottom, right = rect
  *             for l in range(linewidth):
  *                 x[sl(d, axis, [slice(top, bottom + 1), [left, right]])] = edgecolor             # <<<<<<<<<<<<<<
  *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor
  *                 top += 1
  */
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_v_bottom, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyInt_AddObjC(__pyx_v_bottom, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_9 = PySlice_New(__pyx_v_top, __pyx_t_6, Py_None); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_9 = PySlice_New(__pyx_v_top, __pyx_t_6, Py_None); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-        __pyx_t_6 = PyList_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 104, __pyx_L1_error)
+        __pyx_t_6 = PyList_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_INCREF(__pyx_v_left);
         __Pyx_GIVEREF(__pyx_v_left);
@@ -2215,89 +2215,6 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_INCREF(__pyx_v_right);
         __Pyx_GIVEREF(__pyx_v_right);
         PyList_SET_ITEM(__pyx_t_6, 1, __pyx_v_right);
-        __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 104, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __Pyx_GIVEREF(__pyx_t_9);
-        PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_9);
-        __Pyx_GIVEREF(__pyx_t_6);
-        PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_6);
-        __pyx_t_9 = 0;
-        __pyx_t_6 = 0;
-        __pyx_t_6 = NULL;
-        __pyx_t_16 = 0;
-        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
-          __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_10);
-          if (likely(__pyx_t_6)) {
-            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_10);
-            __Pyx_INCREF(__pyx_t_6);
-            __Pyx_INCREF(function);
-            __Pyx_DECREF_SET(__pyx_t_10, function);
-            __pyx_t_16 = 1;
-          }
-        }
-        #if CYTHON_FAST_PYCALL
-        if (PyFunction_Check(__pyx_t_10)) {
-          PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_d, __pyx_v_axis, __pyx_t_5};
-          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        } else
-        #endif
-        #if CYTHON_FAST_PYCCALL
-        if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
-          PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_d, __pyx_v_axis, __pyx_t_5};
-          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
-          __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-          __Pyx_GOTREF(__pyx_t_8);
-          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-        } else
-        #endif
-        {
-          __pyx_t_9 = PyTuple_New(3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 104, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_9);
-          if (__pyx_t_6) {
-            __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6); __pyx_t_6 = NULL;
-          }
-          __Pyx_INCREF(__pyx_v_d);
-          __Pyx_GIVEREF(__pyx_v_d);
-          PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_16, __pyx_v_d);
-          __Pyx_INCREF(__pyx_v_axis);
-          __Pyx_GIVEREF(__pyx_v_axis);
-          PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_16, __pyx_v_axis);
-          __Pyx_GIVEREF(__pyx_t_5);
-          PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_16, __pyx_t_5);
-          __pyx_t_5 = 0;
-          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_9, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 104, __pyx_L1_error)
-          __Pyx_GOTREF(__pyx_t_8);
-          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-        }
-        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-        if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_8, __pyx_v_edgecolor) < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
-        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-
-        /* "pyaibox/misc/draw_shapes.py":105
- *             for l in range(linewidth):
- *                 x[sl(d, axis, [slice(top, bottom + 1), [left, right]])] = edgecolor
- *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor             # <<<<<<<<<<<<<<
- *                 top += 1
- *                 left += 1
- */
-        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 105, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_10);
-        __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 105, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_9);
-        __Pyx_INCREF(__pyx_v_top);
-        __Pyx_GIVEREF(__pyx_v_top);
-        PyList_SET_ITEM(__pyx_t_9, 0, __pyx_v_top);
-        __Pyx_INCREF(__pyx_v_bottom);
-        __Pyx_GIVEREF(__pyx_v_bottom);
-        PyList_SET_ITEM(__pyx_t_9, 1, __pyx_v_bottom);
-        __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_v_right, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 105, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_6 = PySlice_New(__pyx_v_left, __pyx_t_5, Py_None); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 105, __pyx_L1_error)
-        __Pyx_GOTREF(__pyx_t_6);
-        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 105, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_GIVEREF(__pyx_t_9);
@@ -2360,54 +2277,137 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
         /* "pyaibox/misc/draw_shapes.py":106
+ *             for l in range(linewidth):
+ *                 x[sl(d, axis, [slice(top, bottom + 1), [left, right]])] = edgecolor
+ *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor             # <<<<<<<<<<<<<<
+ *                 top += 1
+ *                 left += 1
+ */
+        __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_10);
+        __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_9);
+        __Pyx_INCREF(__pyx_v_top);
+        __Pyx_GIVEREF(__pyx_v_top);
+        PyList_SET_ITEM(__pyx_t_9, 0, __pyx_v_top);
+        __Pyx_INCREF(__pyx_v_bottom);
+        __Pyx_GIVEREF(__pyx_v_bottom);
+        PyList_SET_ITEM(__pyx_t_9, 1, __pyx_v_bottom);
+        __pyx_t_5 = __Pyx_PyInt_AddObjC(__pyx_v_right, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __pyx_t_6 = PySlice_New(__pyx_v_left, __pyx_t_5, Py_None); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_6);
+        __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_GOTREF(__pyx_t_5);
+        __Pyx_GIVEREF(__pyx_t_9);
+        PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_9);
+        __Pyx_GIVEREF(__pyx_t_6);
+        PyList_SET_ITEM(__pyx_t_5, 1, __pyx_t_6);
+        __pyx_t_9 = 0;
+        __pyx_t_6 = 0;
+        __pyx_t_6 = NULL;
+        __pyx_t_16 = 0;
+        if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_10))) {
+          __pyx_t_6 = PyMethod_GET_SELF(__pyx_t_10);
+          if (likely(__pyx_t_6)) {
+            PyObject* function = PyMethod_GET_FUNCTION(__pyx_t_10);
+            __Pyx_INCREF(__pyx_t_6);
+            __Pyx_INCREF(function);
+            __Pyx_DECREF_SET(__pyx_t_10, function);
+            __pyx_t_16 = 1;
+          }
+        }
+        #if CYTHON_FAST_PYCALL
+        if (PyFunction_Check(__pyx_t_10)) {
+          PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_d, __pyx_v_axis, __pyx_t_5};
+          __pyx_t_8 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 106, __pyx_L1_error)
+          __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        } else
+        #endif
+        #if CYTHON_FAST_PYCCALL
+        if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
+          PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_v_d, __pyx_v_axis, __pyx_t_5};
+          __pyx_t_8 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 106, __pyx_L1_error)
+          __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+        } else
+        #endif
+        {
+          __pyx_t_9 = PyTuple_New(3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 106, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_9);
+          if (__pyx_t_6) {
+            __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_6); __pyx_t_6 = NULL;
+          }
+          __Pyx_INCREF(__pyx_v_d);
+          __Pyx_GIVEREF(__pyx_v_d);
+          PyTuple_SET_ITEM(__pyx_t_9, 0+__pyx_t_16, __pyx_v_d);
+          __Pyx_INCREF(__pyx_v_axis);
+          __Pyx_GIVEREF(__pyx_v_axis);
+          PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_16, __pyx_v_axis);
+          __Pyx_GIVEREF(__pyx_t_5);
+          PyTuple_SET_ITEM(__pyx_t_9, 2+__pyx_t_16, __pyx_t_5);
+          __pyx_t_5 = 0;
+          __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_9, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 106, __pyx_L1_error)
+          __Pyx_GOTREF(__pyx_t_8);
+          __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
+        }
+        __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
+        if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_8, __pyx_v_edgecolor) < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
+
+        /* "pyaibox/misc/draw_shapes.py":107
  *                 x[sl(d, axis, [slice(top, bottom + 1), [left, right]])] = edgecolor
  *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor
  *                 top += 1             # <<<<<<<<<<<<<<
  *                 left += 1
  *                 bottom -= 1
  */
-        __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_top, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 106, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_top, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 107, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF_SET(__pyx_v_top, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "pyaibox/misc/draw_shapes.py":107
+        /* "pyaibox/misc/draw_shapes.py":108
  *                 x[sl(d, axis, [[top, bottom], slice(left, right + 1)])] = edgecolor
  *                 top += 1
  *                 left += 1             # <<<<<<<<<<<<<<
  *                 bottom -= 1
  *                 right -= 1
  */
-        __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_left, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 107, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_left, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF_SET(__pyx_v_left, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "pyaibox/misc/draw_shapes.py":108
+        /* "pyaibox/misc/draw_shapes.py":109
  *                 top += 1
  *                 left += 1
  *                 bottom -= 1             # <<<<<<<<<<<<<<
  *                 right -= 1
  *         if fillcolor is not None:
  */
-        __pyx_t_8 = __Pyx_PyInt_SubtractObjC(__pyx_v_bottom, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 108, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_SubtractObjC(__pyx_v_bottom, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF_SET(__pyx_v_bottom, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "pyaibox/misc/draw_shapes.py":109
+        /* "pyaibox/misc/draw_shapes.py":110
  *                 left += 1
  *                 bottom -= 1
  *                 right -= 1             # <<<<<<<<<<<<<<
  *         if fillcolor is not None:
  *             top, left, bottom, right = rect
  */
-        __pyx_t_8 = __Pyx_PyInt_SubtractObjC(__pyx_v_right, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyInt_SubtractObjC(__pyx_v_right, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 110, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __Pyx_DECREF_SET(__pyx_v_right, __pyx_t_8);
         __pyx_t_8 = 0;
 
-        /* "pyaibox/misc/draw_shapes.py":103
+        /* "pyaibox/misc/draw_shapes.py":104
  *         if edgecolor is not None:
  *             top, left, bottom, right = rect
  *             for l in range(linewidth):             # <<<<<<<<<<<<<<
@@ -2417,7 +2417,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       }
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":101
+      /* "pyaibox/misc/draw_shapes.py":102
  *         edgecolor = np.array(edgecolor, dtype=x.dtype) if edgecolor is not None else None
  *         fillcolor = np.array(fillcolor, dtype=x.dtype) if fillcolor is not None else None
  *         if edgecolor is not None:             # <<<<<<<<<<<<<<
@@ -2426,7 +2426,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
  */
     }
 
-    /* "pyaibox/misc/draw_shapes.py":110
+    /* "pyaibox/misc/draw_shapes.py":111
  *                 bottom -= 1
  *                 right -= 1
  *         if fillcolor is not None:             # <<<<<<<<<<<<<<
@@ -2437,7 +2437,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
     __pyx_t_2 = (__pyx_t_4 != 0);
     if (__pyx_t_2) {
 
-      /* "pyaibox/misc/draw_shapes.py":111
+      /* "pyaibox/misc/draw_shapes.py":112
  *                 right -= 1
  *         if fillcolor is not None:
  *             top, left, bottom, right = rect             # <<<<<<<<<<<<<<
@@ -2450,7 +2450,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         if (unlikely(size != 4)) {
           if (size > 4) __Pyx_RaiseTooManyValuesError(4);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 111, __pyx_L1_error)
+          __PYX_ERR(0, 112, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -2473,7 +2473,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
           Py_ssize_t i;
           PyObject** temps[4] = {&__pyx_t_11,&__pyx_t_8,&__pyx_t_10,&__pyx_t_9};
           for (i=0; i < 4; i++) {
-            PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 111, __pyx_L1_error)
+            PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 112, __pyx_L1_error)
             __Pyx_GOTREF(item);
             *(temps[i]) = item;
           }
@@ -2482,7 +2482,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       } else {
         Py_ssize_t index = -1;
         PyObject** temps[4] = {&__pyx_t_11,&__pyx_t_8,&__pyx_t_10,&__pyx_t_9};
-        __pyx_t_5 = PyObject_GetIter(__pyx_v_rect); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 111, __pyx_L1_error)
+        __pyx_t_5 = PyObject_GetIter(__pyx_v_rect); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 112, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __pyx_t_13 = Py_TYPE(__pyx_t_5)->tp_iternext;
         for (index=0; index < 4; index++) {
@@ -2490,7 +2490,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
           __Pyx_GOTREF(item);
           *(temps[index]) = item;
         }
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_5), 4) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_5), 4) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
         __pyx_t_13 = NULL;
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         goto __pyx_L16_unpacking_done;
@@ -2498,7 +2498,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __pyx_t_13 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 111, __pyx_L1_error)
+        __PYX_ERR(0, 112, __pyx_L1_error)
         __pyx_L16_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_top, __pyx_t_11);
@@ -2510,74 +2510,74 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       __Pyx_XDECREF_SET(__pyx_v_right, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":112
+      /* "pyaibox/misc/draw_shapes.py":113
  *         if fillcolor is not None:
  *             top, left, bottom, right = rect
  *             top += linewidth             # <<<<<<<<<<<<<<
  *             left += linewidth
  *             bottom -= linewidth
  */
-      __pyx_t_9 = PyNumber_InPlaceAdd(__pyx_v_top, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_InPlaceAdd(__pyx_v_top, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF_SET(__pyx_v_top, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":113
+      /* "pyaibox/misc/draw_shapes.py":114
  *             top, left, bottom, right = rect
  *             top += linewidth
  *             left += linewidth             # <<<<<<<<<<<<<<
  *             bottom -= linewidth
  *             right -= linewidth
  */
-      __pyx_t_9 = PyNumber_InPlaceAdd(__pyx_v_left, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 113, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_InPlaceAdd(__pyx_v_left, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 114, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF_SET(__pyx_v_left, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":114
+      /* "pyaibox/misc/draw_shapes.py":115
  *             top += linewidth
  *             left += linewidth
  *             bottom -= linewidth             # <<<<<<<<<<<<<<
  *             right -= linewidth
  *             x[sl(d, axis, [slice(top, bottom + 1), slice(left, right + 1)])] = fillcolor
  */
-      __pyx_t_9 = PyNumber_InPlaceSubtract(__pyx_v_bottom, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 114, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_InPlaceSubtract(__pyx_v_bottom, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 115, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF_SET(__pyx_v_bottom, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":115
+      /* "pyaibox/misc/draw_shapes.py":116
  *             left += linewidth
  *             bottom -= linewidth
  *             right -= linewidth             # <<<<<<<<<<<<<<
  *             x[sl(d, axis, [slice(top, bottom + 1), slice(left, right + 1)])] = fillcolor
  *     return x
  */
-      __pyx_t_9 = PyNumber_InPlaceSubtract(__pyx_v_right, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 115, __pyx_L1_error)
+      __pyx_t_9 = PyNumber_InPlaceSubtract(__pyx_v_right, __pyx_v_linewidth); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF_SET(__pyx_v_right, __pyx_t_9);
       __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":116
+      /* "pyaibox/misc/draw_shapes.py":117
  *             bottom -= linewidth
  *             right -= linewidth
  *             x[sl(d, axis, [slice(top, bottom + 1), slice(left, right + 1)])] = fillcolor             # <<<<<<<<<<<<<<
  *     return x
  * 
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_sl); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_bottom, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_bottom, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_11 = PySlice_New(__pyx_v_top, __pyx_t_8, Py_None); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_11 = PySlice_New(__pyx_v_top, __pyx_t_8, Py_None); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_right, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_right, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_5 = PySlice_New(__pyx_v_left, __pyx_t_8, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_5 = PySlice_New(__pyx_v_left, __pyx_t_8, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-      __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_GIVEREF(__pyx_t_11);
       PyList_SET_ITEM(__pyx_t_8, 0, __pyx_t_11);
@@ -2600,7 +2600,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_10)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_v_d, __pyx_v_axis, __pyx_t_8};
-        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -2609,14 +2609,14 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
         PyObject *__pyx_temp[4] = {__pyx_t_5, __pyx_v_d, __pyx_v_axis, __pyx_t_8};
-        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_16, 3+__pyx_t_16); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       } else
       #endif
       {
-        __pyx_t_11 = PyTuple_New(3+__pyx_t_16); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __pyx_t_11 = PyTuple_New(3+__pyx_t_16); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 117, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_11, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -2630,15 +2630,15 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
         __Pyx_GIVEREF(__pyx_t_8);
         PyTuple_SET_ITEM(__pyx_t_11, 2+__pyx_t_16, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_11, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 116, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_11, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 117, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_9);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       }
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_9, __pyx_v_fillcolor) < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_9, __pyx_v_fillcolor) < 0)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-      /* "pyaibox/misc/draw_shapes.py":110
+      /* "pyaibox/misc/draw_shapes.py":111
  *                 bottom -= 1
  *                 right -= 1
  *         if fillcolor is not None:             # <<<<<<<<<<<<<<
@@ -2647,7 +2647,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
  */
     }
 
-    /* "pyaibox/misc/draw_shapes.py":98
+    /* "pyaibox/misc/draw_shapes.py":99
  *     d = np.ndim(x)
  * 
  *     for rect, edgecolor, linewidth, fillcolor, axis in zip(rects, edgecolors, linewidths, fillcolors, axes):             # <<<<<<<<<<<<<<
@@ -2657,7 +2657,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":117
+  /* "pyaibox/misc/draw_shapes.py":118
  *             right -= linewidth
  *             x[sl(d, axis, [slice(top, bottom + 1), slice(left, right + 1)])] = fillcolor
  *     return x             # <<<<<<<<<<<<<<
@@ -2669,7 +2669,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   __pyx_r = __pyx_v_x;
   goto __pyx_L0;
 
-  /* "pyaibox/misc/draw_shapes.py":32
+  /* "pyaibox/misc/draw_shapes.py":33
  * 
  * 
  * def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)):             # <<<<<<<<<<<<<<
@@ -2708,7 +2708,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_draw_rectangle(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "pyaibox/misc/draw_shapes.py":120
+/* "pyaibox/misc/draw_shapes.py":121
  * 
  * 
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):             # <<<<<<<<<<<<<<
@@ -2726,7 +2726,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_6__defaults__(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_edgecolors);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults1, __pyx_self)->__pyx_arg_edgecolors);
@@ -2740,7 +2740,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_6__defaults__(CYTHON_UNUS
   __Pyx_INCREF(((PyObject*)__pyx_tuple__2));
   __Pyx_GIVEREF(((PyObject*)__pyx_tuple__2));
   PyTuple_SET_ITEM(__pyx_t_1, 3, ((PyObject*)__pyx_tuple__2));
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -2822,19 +2822,19 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_3draw_eclipse(PyObject *_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_centroids)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 1); __PYX_ERR(0, 120, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 1); __PYX_ERR(0, 121, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_aradii)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 2); __PYX_ERR(0, 120, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 2); __PYX_ERR(0, 121, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
         if (likely((values[3] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_bradii)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 3); __PYX_ERR(0, 120, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, 3); __PYX_ERR(0, 121, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  4:
@@ -2862,7 +2862,7 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_3draw_eclipse(PyObject *_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "draw_eclipse") < 0)) __PYX_ERR(0, 120, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "draw_eclipse") < 0)) __PYX_ERR(0, 121, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2893,7 +2893,7 @@ static PyObject *__pyx_pw_7pyaibox_4misc_11draw_shapes_3draw_eclipse(PyObject *_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 120, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("draw_eclipse", 0, 4, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 121, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.misc.draw_shapes.draw_eclipse", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2925,14 +2925,14 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("draw_eclipse", 0);
 
-  /* "pyaibox/misc/draw_shapes.py":122
+  /* "pyaibox/misc/draw_shapes.py":123
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):
  * 
  *     for centroid, aradius, bradius in centroids, aradii, bradii:             # <<<<<<<<<<<<<<
  *         pass
  * 
  */
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_centroids);
   __Pyx_GIVEREF(__pyx_v_centroids);
@@ -2948,9 +2948,9 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
   for (;;) {
     if (__pyx_t_3 >= 3) break;
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-    __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_2, __pyx_t_3); __Pyx_INCREF(__pyx_t_1); __pyx_t_3++; if (unlikely(0 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
     #else
-    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(__pyx_t_2, __pyx_t_3); __pyx_t_3++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     #endif
     if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
@@ -2959,7 +2959,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
       if (unlikely(size != 3)) {
         if (size > 3) __Pyx_RaiseTooManyValuesError(3);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 122, __pyx_L1_error)
+        __PYX_ERR(0, 123, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -2975,17 +2975,17 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
       __Pyx_INCREF(__pyx_t_5);
       __Pyx_INCREF(__pyx_t_6);
       #else
-      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 122, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 123, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 122, __pyx_L1_error)
+      __pyx_t_5 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 122, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 123, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 122, __pyx_L1_error)
+      __pyx_t_7 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 123, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_8 = Py_TYPE(__pyx_t_7)->tp_iternext;
@@ -2995,7 +2995,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
       __Pyx_GOTREF(__pyx_t_5);
       index = 2; __pyx_t_6 = __pyx_t_8(__pyx_t_7); if (unlikely(!__pyx_t_6)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_6);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_8(__pyx_t_7), 3) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
       __pyx_t_8 = NULL;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       goto __pyx_L6_unpacking_done;
@@ -3003,7 +3003,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_8 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 122, __pyx_L1_error)
+      __PYX_ERR(0, 123, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_centroid, __pyx_t_4);
@@ -3015,7 +3015,7 @@ static PyObject *__pyx_pf_7pyaibox_4misc_11draw_shapes_2draw_eclipse(CYTHON_UNUS
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":120
+  /* "pyaibox/misc/draw_shapes.py":121
  * 
  * 
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):             # <<<<<<<<<<<<<<
@@ -3138,9 +3138,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 134, __pyx_L1_error)
-  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 98, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 104, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -3150,99 +3150,99 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/misc/draw_shapes.py":32
+  /* "pyaibox/misc/draw_shapes.py":33
  * 
  * 
  * def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)):             # <<<<<<<<<<<<<<
  *     """Draw rectangles in a tensor
  * 
  */
-  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_neg_3, __pyx_int_neg_2); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(2, __pyx_int_neg_3, __pyx_int_neg_2); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "pyaibox/misc/draw_shapes.py":120
+  /* "pyaibox/misc/draw_shapes.py":121
  * 
  * 
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):             # <<<<<<<<<<<<<<
  * 
  *     for centroid, aradius, bradius in centroids, aradii, bradii:
  */
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_int_neg_2, __pyx_int_neg_1); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_int_neg_2, __pyx_int_neg_1); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "pyaibox/misc/draw_shapes.py":32
+  /* "pyaibox/misc/draw_shapes.py":33
  * 
  * 
  * def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)):             # <<<<<<<<<<<<<<
  *     """Draw rectangles in a tensor
  * 
  */
-  __pyx_tuple__3 = PyTuple_Pack(17, __pyx_n_s_x, __pyx_n_s_rects, __pyx_n_s_edgecolors, __pyx_n_s_linewidths, __pyx_n_s_fillcolors, __pyx_n_s_axes, __pyx_n_s_d, __pyx_n_s_rect, __pyx_n_s_edgecolor, __pyx_n_s_linewidth, __pyx_n_s_fillcolor, __pyx_n_s_axis, __pyx_n_s_top, __pyx_n_s_left, __pyx_n_s_bottom, __pyx_n_s_right, __pyx_n_s_l); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(17, __pyx_n_s_x, __pyx_n_s_rects, __pyx_n_s_edgecolors, __pyx_n_s_linewidths, __pyx_n_s_fillcolors, __pyx_n_s_axes, __pyx_n_s_d, __pyx_n_s_rect, __pyx_n_s_edgecolor, __pyx_n_s_linewidth, __pyx_n_s_fillcolor, __pyx_n_s_axis, __pyx_n_s_top, __pyx_n_s_left, __pyx_n_s_bottom, __pyx_n_s_right, __pyx_n_s_l); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
-  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(6, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_misc_draw_shapes_py, __pyx_n_s_draw_rectangle, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_codeobj__4 = (PyObject*)__Pyx_PyCode_New(6, 0, 17, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__3, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_misc_draw_shapes_py, __pyx_n_s_draw_rectangle, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__4)) __PYX_ERR(0, 33, __pyx_L1_error)
 
-  /* "pyaibox/misc/draw_shapes.py":120
+  /* "pyaibox/misc/draw_shapes.py":121
  * 
  * 
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):             # <<<<<<<<<<<<<<
  * 
  *     for centroid, aradius, bradius in centroids, aradii, bradii:
  */
-  __pyx_tuple__5 = PyTuple_Pack(11, __pyx_n_s_x, __pyx_n_s_centroids, __pyx_n_s_aradii, __pyx_n_s_bradii, __pyx_n_s_edgecolors, __pyx_n_s_linewidths, __pyx_n_s_fillcolors, __pyx_n_s_axes, __pyx_n_s_centroid, __pyx_n_s_aradius, __pyx_n_s_bradius); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(11, __pyx_n_s_x, __pyx_n_s_centroids, __pyx_n_s_aradii, __pyx_n_s_bradii, __pyx_n_s_edgecolors, __pyx_n_s_linewidths, __pyx_n_s_fillcolors, __pyx_n_s_axes, __pyx_n_s_centroid, __pyx_n_s_aradius, __pyx_n_s_bradius); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(8, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_misc_draw_shapes_py, __pyx_n_s_draw_eclipse, 120, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(8, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_misc_draw_shapes_py, __pyx_n_s_draw_eclipse, 121, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 121, __pyx_L1_error)
 
-  /* "pyaibox/misc/draw_shapes.py":128
+  /* "pyaibox/misc/draw_shapes.py":129
  * if __name__ == '__main__':
  * 
  *     x = np.zeros((2, 8, 10, 3))             # <<<<<<<<<<<<<<
  * 
  *     rects = [[1, 2, 6, 8]]
  */
-  __pyx_tuple__7 = PyTuple_Pack(4, __pyx_int_2, __pyx_int_8, __pyx_int_10, __pyx_int_3); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(4, __pyx_int_2, __pyx_int_8, __pyx_int_10, __pyx_int_3); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_tuple__7); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(1, __pyx_tuple__7); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 129, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "pyaibox/misc/draw_shapes.py":134
+  /* "pyaibox/misc/draw_shapes.py":135
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[None], axes=[(-3, -2)])
  * 
  *     print(x[0, :, :, 0])             # <<<<<<<<<<<<<<
  *     print(x[0, :, :, 1])
  *     print(x[0, :, :, 2])
  */
-  __pyx_slice__9 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__9)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_slice__9 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__9)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__9);
   __Pyx_GIVEREF(__pyx_slice__9);
-  __pyx_tuple__10 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_0); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_0); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "pyaibox/misc/draw_shapes.py":135
+  /* "pyaibox/misc/draw_shapes.py":136
  * 
  *     print(x[0, :, :, 0])
  *     print(x[0, :, :, 1])             # <<<<<<<<<<<<<<
  *     print(x[0, :, :, 2])
  * 
  */
-  __pyx_tuple__11 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_1); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_1); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
 
-  /* "pyaibox/misc/draw_shapes.py":136
+  /* "pyaibox/misc/draw_shapes.py":137
  *     print(x[0, :, :, 0])
  *     print(x[0, :, :, 1])
  *     print(x[0, :, :, 2])             # <<<<<<<<<<<<<<
  * 
  *     print(y[0, :, :, 0])
  */
-  __pyx_tuple__12 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_2); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 136, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(4, __pyx_int_0, __pyx_slice__9, __pyx_slice__9, __pyx_int_2); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
   __Pyx_RefNannyFinishContext();
@@ -3544,50 +3544,50 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/misc/draw_shapes.py":28
+  /* "pyaibox/misc/draw_shapes.py":29
  * #
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * from pyaibox.base.arrayops import sl
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":29
+  /* "pyaibox/misc/draw_shapes.py":30
  * 
  * import numpy as np
  * from pyaibox.base.arrayops import sl             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_sl);
   __Pyx_GIVEREF(__pyx_n_s_sl);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_sl);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_base_arrayops, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_base_arrayops, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_sl); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_sl); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sl, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_sl, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":32
+  /* "pyaibox/misc/draw_shapes.py":33
  * 
  * 
  * def draw_rectangle(x, rects, edgecolors=[[255, 0, 0]], linewidths=[1], fillcolors=[None], axes=(-3, -2)):             # <<<<<<<<<<<<<<
  *     """Draw rectangles in a tensor
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_11draw_shapes_1draw_rectangle, 0, __pyx_n_s_draw_rectangle, NULL, __pyx_n_s_pyaibox_misc_draw_shapes, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_11draw_shapes_1draw_rectangle, 0, __pyx_n_s_draw_rectangle, NULL, __pyx_n_s_pyaibox_misc_draw_shapes, __pyx_d, ((PyObject *)__pyx_codeobj__4)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults), 3)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults), 3)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_int_255);
   __Pyx_GIVEREF(__pyx_int_255);
@@ -3598,7 +3598,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
   PyList_SET_ITEM(__pyx_t_1, 2, __pyx_int_0);
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyList_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -3606,7 +3606,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_2)->__pyx_arg_edgecolors = __pyx_t_3;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_int_1);
   __Pyx_GIVEREF(__pyx_int_1);
@@ -3614,7 +3614,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_t_2)->__pyx_arg_linewidths = __pyx_t_3;
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(Py_None);
   __Pyx_GIVEREF(Py_None);
@@ -3623,20 +3623,20 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
   __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_2, __pyx_pf_7pyaibox_4misc_11draw_shapes_4__defaults__);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw_rectangle, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw_rectangle, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":120
+  /* "pyaibox/misc/draw_shapes.py":121
  * 
  * 
  * def draw_eclipse(x, centroids, aradii, bradii, edgecolors=[255, 0, 0], linewidths=1, fillcolors=None, axes=(-2, -1)):             # <<<<<<<<<<<<<<
  * 
  *     for centroid, aradius, bradius in centroids, aradii, bradii:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_11draw_shapes_3draw_eclipse, 0, __pyx_n_s_draw_eclipse, NULL, __pyx_n_s_pyaibox_misc_draw_shapes, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4misc_11draw_shapes_3draw_eclipse, 0, __pyx_n_s_draw_eclipse, NULL, __pyx_n_s_pyaibox_misc_draw_shapes, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults1), 1)) __PYX_ERR(0, 120, __pyx_L1_error)
-  __pyx_t_3 = PyList_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_2, sizeof(__pyx_defaults1), 1)) __PYX_ERR(0, 121, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_int_255);
   __Pyx_GIVEREF(__pyx_int_255);
@@ -3651,48 +3651,48 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_3);
   __pyx_t_3 = 0;
   __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_2, __pyx_pf_7pyaibox_4misc_11draw_shapes_6__defaults__);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw_eclipse, __pyx_t_2) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_draw_eclipse, __pyx_t_2) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/misc/draw_shapes.py":126
+  /* "pyaibox/misc/draw_shapes.py":127
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     x = np.zeros((2, 8, 10, 3))
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_4) {
 
-    /* "pyaibox/misc/draw_shapes.py":128
+    /* "pyaibox/misc/draw_shapes.py":129
  * if __name__ == '__main__':
  * 
  *     x = np.zeros((2, 8, 10, 3))             # <<<<<<<<<<<<<<
  * 
  *     rects = [[1, 2, 6, 8]]
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_2) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_2) < 0) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":130
+    /* "pyaibox/misc/draw_shapes.py":131
  *     x = np.zeros((2, 8, 10, 3))
  * 
  *     rects = [[1, 2, 6, 8]]             # <<<<<<<<<<<<<<
  * 
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[None], axes=[(-3, -2)])
  */
-    __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
@@ -3706,28 +3706,28 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_8);
     __Pyx_GIVEREF(__pyx_int_8);
     PyList_SET_ITEM(__pyx_t_2, 3, __pyx_int_8);
-    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_rects, __pyx_t_3) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_rects, __pyx_t_3) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":132
+    /* "pyaibox/misc/draw_shapes.py":133
  *     rects = [[1, 2, 6, 8]]
  * 
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[None], axes=[(-3, -2)])             # <<<<<<<<<<<<<<
  * 
  *     print(x[0, :, :, 0])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_draw_rectangle); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_draw_rectangle); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_x); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rects); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rects); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -3735,9 +3735,9 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_1);
     __pyx_t_2 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_100);
     __Pyx_GIVEREF(__pyx_int_100);
@@ -3748,69 +3748,52 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_255);
     __Pyx_GIVEREF(__pyx_int_255);
     PyList_SET_ITEM(__pyx_t_2, 2, __pyx_int_255);
-    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_6, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_edgecolors, __pyx_t_6) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_edgecolors, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_int_2);
     __Pyx_GIVEREF(__pyx_int_2);
     PyList_SET_ITEM(__pyx_t_6, 0, __pyx_int_2);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_linewidths, __pyx_t_6) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_linewidths, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyList_SET_ITEM(__pyx_t_6, 0, Py_None);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_fillcolors, __pyx_t_6) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_fillcolors, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_tuple_);
     __Pyx_GIVEREF(__pyx_tuple_);
     PyList_SET_ITEM(__pyx_t_6, 0, __pyx_tuple_);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axes, __pyx_t_6) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axes, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_6) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_6) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":134
+    /* "pyaibox/misc/draw_shapes.py":135
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[None], axes=[(-3, -2)])
  * 
  *     print(x[0, :, :, 0])             # <<<<<<<<<<<<<<
  *     print(x[0, :, :, 1])
  *     print(x[0, :, :, 2])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_x); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 134, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-    /* "pyaibox/misc/draw_shapes.py":135
- * 
- *     print(x[0, :, :, 0])
- *     print(x[0, :, :, 1])             # <<<<<<<<<<<<<<
- *     print(x[0, :, :, 2])
- * 
- */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_x); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
@@ -3819,15 +3802,15 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "pyaibox/misc/draw_shapes.py":136
- *     print(x[0, :, :, 0])
- *     print(x[0, :, :, 1])
- *     print(x[0, :, :, 2])             # <<<<<<<<<<<<<<
  * 
- *     print(y[0, :, :, 0])
+ *     print(x[0, :, :, 0])
+ *     print(x[0, :, :, 1])             # <<<<<<<<<<<<<<
+ *     print(x[0, :, :, 2])
+ * 
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_x); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -3835,33 +3818,33 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":138
+    /* "pyaibox/misc/draw_shapes.py":137
+ *     print(x[0, :, :, 0])
+ *     print(x[0, :, :, 1])
+ *     print(x[0, :, :, 2])             # <<<<<<<<<<<<<<
+ * 
+ *     print(y[0, :, :, 0])
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_x); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+
+    /* "pyaibox/misc/draw_shapes.py":139
  *     print(x[0, :, :, 2])
  * 
  *     print(y[0, :, :, 0])             # <<<<<<<<<<<<<<
  *     print(y[0, :, :, 1])
  *     print(y[0, :, :, 2])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_y); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-
-    /* "pyaibox/misc/draw_shapes.py":139
- * 
- *     print(y[0, :, :, 0])
- *     print(y[0, :, :, 1])             # <<<<<<<<<<<<<<
- *     print(y[0, :, :, 2])
- * 
- */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_y); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__10); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
@@ -3870,15 +3853,15 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
     /* "pyaibox/misc/draw_shapes.py":140
- *     print(y[0, :, :, 0])
- *     print(y[0, :, :, 1])
- *     print(y[0, :, :, 2])             # <<<<<<<<<<<<<<
  * 
- *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[[20, 50, 80]], axes=[(-3, -2)])
+ *     print(y[0, :, :, 0])
+ *     print(y[0, :, :, 1])             # <<<<<<<<<<<<<<
+ *     print(y[0, :, :, 2])
+ * 
  */
     __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_y); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__11); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
@@ -3886,20 +3869,37 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":142
+    /* "pyaibox/misc/draw_shapes.py":141
+ *     print(y[0, :, :, 0])
+ *     print(y[0, :, :, 1])
+ *     print(y[0, :, :, 2])             # <<<<<<<<<<<<<<
+ * 
+ *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[[20, 50, 80]], axes=[(-3, -2)])
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_y); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_t_6, __pyx_tuple__12); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_6);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
+
+    /* "pyaibox/misc/draw_shapes.py":143
  *     print(y[0, :, :, 2])
  * 
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[[20, 50, 80]], axes=[(-3, -2)])             # <<<<<<<<<<<<<<
  * 
  *     print(x[0, :, :, 0])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_draw_rectangle); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_draw_rectangle); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rects); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_rects); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -3907,9 +3907,9 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_t_5);
     __pyx_t_1 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_int_100);
     __Pyx_GIVEREF(__pyx_int_100);
@@ -3920,21 +3920,21 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_255);
     __Pyx_GIVEREF(__pyx_int_255);
     PyList_SET_ITEM(__pyx_t_1, 2, __pyx_int_255);
-    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_edgecolors, __pyx_t_2) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_edgecolors, __pyx_t_2) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_2);
     __Pyx_GIVEREF(__pyx_int_2);
     PyList_SET_ITEM(__pyx_t_2, 0, __pyx_int_2);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_linewidths, __pyx_t_2) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_linewidths, __pyx_t_2) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_20);
     __Pyx_GIVEREF(__pyx_int_20);
@@ -3945,55 +3945,38 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_80);
     __Pyx_GIVEREF(__pyx_int_80);
     PyList_SET_ITEM(__pyx_t_2, 2, __pyx_int_80);
-    __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_fillcolors, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_fillcolors, __pyx_t_1) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_tuple_);
     __Pyx_GIVEREF(__pyx_tuple_);
     PyList_SET_ITEM(__pyx_t_1, 0, __pyx_tuple_);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axes, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axes, __pyx_t_1) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_1) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":144
+    /* "pyaibox/misc/draw_shapes.py":145
  *     y = draw_rectangle(x, rects, edgecolors=[[100, 125, 255]], linewidths=[2], fillcolors=[[20, 50, 80]], axes=[(-3, -2)])
  * 
  *     print(x[0, :, :, 0])             # <<<<<<<<<<<<<<
  *     print(x[0, :, :, 1])
  *     print(x[0, :, :, 2])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 144, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-    /* "pyaibox/misc/draw_shapes.py":145
- * 
- *     print(x[0, :, :, 0])
- *     print(x[0, :, :, 1])             # <<<<<<<<<<<<<<
- *     print(x[0, :, :, 2])
- * 
- */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
@@ -4002,15 +3985,15 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "pyaibox/misc/draw_shapes.py":146
- *     print(x[0, :, :, 0])
- *     print(x[0, :, :, 1])
- *     print(x[0, :, :, 2])             # <<<<<<<<<<<<<<
  * 
- *     print(y[0, :, :, 0])
+ *     print(x[0, :, :, 0])
+ *     print(x[0, :, :, 1])             # <<<<<<<<<<<<<<
+ *     print(x[0, :, :, 2])
+ * 
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 146, __pyx_L1_error)
@@ -4018,32 +4001,33 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":148
+    /* "pyaibox/misc/draw_shapes.py":147
+ *     print(x[0, :, :, 0])
+ *     print(x[0, :, :, 1])
+ *     print(x[0, :, :, 2])             # <<<<<<<<<<<<<<
+ * 
+ *     print(y[0, :, :, 0])
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "pyaibox/misc/draw_shapes.py":149
  *     print(x[0, :, :, 2])
  * 
  *     print(y[0, :, :, 0])             # <<<<<<<<<<<<<<
  *     print(y[0, :, :, 1])
  *     print(y[0, :, :, 2])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-    /* "pyaibox/misc/draw_shapes.py":149
- * 
- *     print(y[0, :, :, 0])
- *     print(y[0, :, :, 1])             # <<<<<<<<<<<<<<
- *     print(y[0, :, :, 2])
- */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__10); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -4052,13 +4036,14 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "pyaibox/misc/draw_shapes.py":150
+ * 
  *     print(y[0, :, :, 0])
- *     print(y[0, :, :, 1])
- *     print(y[0, :, :, 2])             # <<<<<<<<<<<<<<
+ *     print(y[0, :, :, 1])             # <<<<<<<<<<<<<<
+ *     print(y[0, :, :, 2])
  */
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__11); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
@@ -4066,7 +4051,22 @@ if (!__Pyx_RefNanny) {
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/misc/draw_shapes.py":126
+    /* "pyaibox/misc/draw_shapes.py":151
+ *     print(y[0, :, :, 0])
+ *     print(y[0, :, :, 1])
+ *     print(y[0, :, :, 2])             # <<<<<<<<<<<<<<
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__12); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+    /* "pyaibox/misc/draw_shapes.py":127
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

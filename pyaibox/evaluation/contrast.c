@@ -1578,7 +1578,7 @@ static PyObject *__pyx_tuple__9;
 static PyObject *__pyx_codeobj__2;
 /* Late includes */
 
-/* "pyaibox/evaluation/contrast.py":32
+/* "pyaibox/evaluation/contrast.py":33
  * 
  * 
  * def contrast(X, caxis=None, axis=None, mode='way1', reduction='mean'):             # <<<<<<<<<<<<<<
@@ -1657,7 +1657,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_8contrast_1contrast(PyObject *__
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "contrast") < 0)) __PYX_ERR(0, 32, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "contrast") < 0)) __PYX_ERR(0, 33, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1682,7 +1682,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_8contrast_1contrast(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("contrast", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 32, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("contrast", 0, 1, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 33, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.evaluation.contrast.contrast", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1716,16 +1716,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
   __Pyx_RefNannySetupContext("contrast", 0);
   __Pyx_INCREF(__pyx_v_X);
 
-  /* "pyaibox/evaluation/contrast.py":106
+  /* "pyaibox/evaluation/contrast.py":107
  *     """
  * 
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         X = X.real*X.real + X.imag*X.imag
  *     else:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iscomplex); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_iscomplex); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -1740,10 +1740,10 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
   }
   __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_3, __pyx_v_X) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_X);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+  if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_any); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_any); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -1758,44 +1758,44 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 106, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_5) {
 
-    /* "pyaibox/evaluation/contrast.py":107
+    /* "pyaibox/evaluation/contrast.py":108
  * 
  *     if np.iscomplex(X).any():  # complex in complex
  *         X = X.real*X.real + X.imag*X.imag             # <<<<<<<<<<<<<<
  *     else:
  *         if caxis is None:  # real
  */
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_real); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_real); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_imag); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_imag); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Multiply(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_X, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":106
+    /* "pyaibox/evaluation/contrast.py":107
  *     """
  * 
  *     if np.iscomplex(X).any():  # complex in complex             # <<<<<<<<<<<<<<
@@ -1805,7 +1805,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     goto __pyx_L3;
   }
 
-  /* "pyaibox/evaluation/contrast.py":109
+  /* "pyaibox/evaluation/contrast.py":110
  *         X = X.real*X.real + X.imag*X.imag
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
@@ -1817,19 +1817,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "pyaibox/evaluation/contrast.py":110
+      /* "pyaibox/evaluation/contrast.py":111
  *     else:
  *         if caxis is None:  # real
  *             X = X**2             # <<<<<<<<<<<<<<
  *         else:  # complex in real
  *             X = np.sum(X**2, axis=caxis)
  */
-      __pyx_t_1 = PyNumber_Power(__pyx_v_X, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_1 = PyNumber_Power(__pyx_v_X, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF_SET(__pyx_v_X, __pyx_t_1);
       __pyx_t_1 = 0;
 
-      /* "pyaibox/evaluation/contrast.py":109
+      /* "pyaibox/evaluation/contrast.py":110
  *         X = X.real*X.real + X.imag*X.imag
  *     else:
  *         if caxis is None:  # real             # <<<<<<<<<<<<<<
@@ -1839,7 +1839,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
       goto __pyx_L4;
     }
 
-    /* "pyaibox/evaluation/contrast.py":112
+    /* "pyaibox/evaluation/contrast.py":113
  *             X = X**2
  *         else:  # complex in real
  *             X = np.sum(X**2, axis=caxis)             # <<<<<<<<<<<<<<
@@ -1847,22 +1847,22 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  *     if mode in ['way1', 'WAY1']:
  */
     /*else*/ {
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-      __pyx_t_1 = PyNumber_Power(__pyx_v_X, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_1 = PyNumber_Power(__pyx_v_X, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_GIVEREF(__pyx_t_1);
       PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
       __pyx_t_1 = 0;
-      __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 113, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -1874,7 +1874,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
   }
   __pyx_L3:;
 
-  /* "pyaibox/evaluation/contrast.py":114
+  /* "pyaibox/evaluation/contrast.py":115
  *             X = np.sum(X**2, axis=caxis)
  * 
  *     if mode in ['way1', 'WAY1']:             # <<<<<<<<<<<<<<
@@ -1883,57 +1883,57 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   __Pyx_INCREF(__pyx_v_mode);
   __pyx_t_4 = __pyx_v_mode;
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_way1, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_way1, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
   if (!__pyx_t_5) {
   } else {
     __pyx_t_6 = __pyx_t_5;
     goto __pyx_L6_bool_binop_done;
   }
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_WAY1, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_WAY1, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
   __pyx_t_6 = __pyx_t_5;
   __pyx_L6_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_5 = (__pyx_t_6 != 0);
   if (__pyx_t_5) {
 
-    /* "pyaibox/evaluation/contrast.py":115
+    /* "pyaibox/evaluation/contrast.py":116
  * 
  *     if mode in ['way1', 'WAY1']:
  *         Xmean = X.mean(axis=axis, keepdims=True)             # <<<<<<<<<<<<<<
  *         C = np.sqrt(np.power(X - Xmean, 2).mean(axis=axis, keepdims=True)) / (Xmean + EPS)
  *         C = C.squeeze(axis)
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_mean); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_mean); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 115, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 115, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 115, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_Xmean = __pyx_t_2;
     __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":116
+    /* "pyaibox/evaluation/contrast.py":117
  *     if mode in ['way1', 'WAY1']:
  *         Xmean = X.mean(axis=axis, keepdims=True)
  *         C = np.sqrt(np.power(X - Xmean, 2).mean(axis=axis, keepdims=True)) / (Xmean + EPS)             # <<<<<<<<<<<<<<
  *         C = C.squeeze(axis)
  *     if mode in ['way2', 'WAY2']:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_power); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_power); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Subtract(__pyx_v_X, __pyx_v_Xmean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Subtract(__pyx_v_X, __pyx_v_Xmean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_8 = NULL;
     __pyx_t_9 = 0;
@@ -1950,7 +1950,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_t_3, __pyx_int_2};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -1959,14 +1959,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[3] = {__pyx_t_8, __pyx_t_3, __pyx_int_2};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     } else
     #endif
     {
-      __pyx_t_10 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_10 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       if (__pyx_t_8) {
         __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -1977,19 +1977,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
       __Pyx_GIVEREF(__pyx_int_2);
       PyTuple_SET_ITEM(__pyx_t_10, 1+__pyx_t_9, __pyx_int_2);
       __pyx_t_3 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_10, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     }
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_mean); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_mean); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 116, __pyx_L1_error)
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 117, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -2006,29 +2006,29 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_1, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_10);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_EPS); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_EPS); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_10 = PyNumber_Add(__pyx_v_Xmean, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_10 = PyNumber_Add(__pyx_v_Xmean, __pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_v_C = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":117
+    /* "pyaibox/evaluation/contrast.py":118
  *         Xmean = X.mean(axis=axis, keepdims=True)
  *         C = np.sqrt(np.power(X - Xmean, 2).mean(axis=axis, keepdims=True)) / (Xmean + EPS)
  *         C = C.squeeze(axis)             # <<<<<<<<<<<<<<
  *     if mode in ['way2', 'WAY2']:
  *         C = X.mean(axis=axis) / (np.power((np.sqrt(X).mean(axis=axis, keepdims=True)), 2) + EPS)
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_C, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 117, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_C, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 118, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -2042,13 +2042,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     }
     __pyx_t_4 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_2, __pyx_v_axis) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_axis);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 117, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 118, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF_SET(__pyx_v_C, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":114
+    /* "pyaibox/evaluation/contrast.py":115
  *             X = np.sum(X**2, axis=caxis)
  * 
  *     if mode in ['way1', 'WAY1']:             # <<<<<<<<<<<<<<
@@ -2057,7 +2057,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   }
 
-  /* "pyaibox/evaluation/contrast.py":118
+  /* "pyaibox/evaluation/contrast.py":119
  *         C = np.sqrt(np.power(X - Xmean, 2).mean(axis=axis, keepdims=True)) / (Xmean + EPS)
  *         C = C.squeeze(axis)
  *     if mode in ['way2', 'WAY2']:             # <<<<<<<<<<<<<<
@@ -2066,43 +2066,43 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   __Pyx_INCREF(__pyx_v_mode);
   __pyx_t_4 = __pyx_v_mode;
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_way2, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_way2, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 119, __pyx_L1_error)
   if (!__pyx_t_6) {
   } else {
     __pyx_t_5 = __pyx_t_6;
     goto __pyx_L9_bool_binop_done;
   }
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_WAY2, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 118, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_4, __pyx_n_u_WAY2, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 119, __pyx_L1_error)
   __pyx_t_5 = __pyx_t_6;
   __pyx_L9_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "pyaibox/evaluation/contrast.py":119
+    /* "pyaibox/evaluation/contrast.py":120
  *         C = C.squeeze(axis)
  *     if mode in ['way2', 'WAY2']:
  *         C = X.mean(axis=axis) / (np.power((np.sqrt(X).mean(axis=axis, keepdims=True)), 2) + EPS)             # <<<<<<<<<<<<<<
  *         C = C.squeeze(axis)
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_mean); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_X, __pyx_n_s_mean); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 119, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_10); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_power); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_power); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_np); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_sqrt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_7 = NULL;
@@ -2117,17 +2117,17 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     }
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_7, __pyx_v_X) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_X);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_mean); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 119, __pyx_L1_error)
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 119, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepdims, Py_True) < 0) __PYX_ERR(0, 120, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -2146,7 +2146,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_1)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_7, __pyx_int_2};
-      __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2155,14 +2155,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_1)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_t_7, __pyx_int_2};
-      __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_1, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else
     #endif
     {
-      __pyx_t_3 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_3 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       if (__pyx_t_4) {
         __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -2173,32 +2173,32 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
       __Pyx_GIVEREF(__pyx_int_2);
       PyTuple_SET_ITEM(__pyx_t_3, 1+__pyx_t_9, __pyx_int_2);
       __pyx_t_7 = 0;
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 119, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 120, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     }
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_EPS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_EPS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_Add(__pyx_t_10, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_t_10, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_C, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":120
+    /* "pyaibox/evaluation/contrast.py":121
  *     if mode in ['way2', 'WAY2']:
  *         C = X.mean(axis=axis) / (np.power((np.sqrt(X).mean(axis=axis, keepdims=True)), 2) + EPS)
  *         C = C.squeeze(axis)             # <<<<<<<<<<<<<<
  * 
  *     if reduction in ['mean', 'MEAN']:
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_C, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_C, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2212,13 +2212,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_axis) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_axis);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_C, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":118
+    /* "pyaibox/evaluation/contrast.py":119
  *         C = np.sqrt(np.power(X - Xmean, 2).mean(axis=axis, keepdims=True)) / (Xmean + EPS)
  *         C = C.squeeze(axis)
  *     if mode in ['way2', 'WAY2']:             # <<<<<<<<<<<<<<
@@ -2227,7 +2227,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   }
 
-  /* "pyaibox/evaluation/contrast.py":122
+  /* "pyaibox/evaluation/contrast.py":123
  *         C = C.squeeze(axis)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -2236,32 +2236,32 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_1 = __pyx_v_reduction;
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
   if (!__pyx_t_5) {
   } else {
     __pyx_t_6 = __pyx_t_5;
     goto __pyx_L12_bool_binop_done;
   }
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
   __pyx_t_6 = __pyx_t_5;
   __pyx_L12_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_5 = (__pyx_t_6 != 0);
   if (__pyx_t_5) {
 
-    /* "pyaibox/evaluation/contrast.py":123
+    /* "pyaibox/evaluation/contrast.py":124
  * 
  *     if reduction in ['mean', 'MEAN']:
  *         C = np.mean(C)             # <<<<<<<<<<<<<<
  *     if reduction in ['sum', 'SUM']:
  *         C = np.sum(C)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 123, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 123, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 123, __pyx_L1_error) }
+    if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 124, __pyx_L1_error) }
     __pyx_t_3 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
       __pyx_t_3 = PyMethod_GET_SELF(__pyx_t_2);
@@ -2274,13 +2274,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     }
     __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_C) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_C);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_XDECREF_SET(__pyx_v_C, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":122
+    /* "pyaibox/evaluation/contrast.py":123
  *         C = C.squeeze(axis)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -2289,7 +2289,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   }
 
-  /* "pyaibox/evaluation/contrast.py":124
+  /* "pyaibox/evaluation/contrast.py":125
  *     if reduction in ['mean', 'MEAN']:
  *         C = np.mean(C)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -2298,32 +2298,32 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_1 = __pyx_v_reduction;
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
   if (!__pyx_t_6) {
   } else {
     __pyx_t_5 = __pyx_t_6;
     goto __pyx_L15_bool_binop_done;
   }
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 125, __pyx_L1_error)
   __pyx_t_5 = __pyx_t_6;
   __pyx_L15_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "pyaibox/evaluation/contrast.py":125
+    /* "pyaibox/evaluation/contrast.py":126
  *         C = np.mean(C)
  *     if reduction in ['sum', 'SUM']:
  *         C = np.sum(C)             # <<<<<<<<<<<<<<
  *     return C
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 125, __pyx_L1_error) }
+    if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 126, __pyx_L1_error) }
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
       __pyx_t_2 = PyMethod_GET_SELF(__pyx_t_3);
@@ -2336,13 +2336,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
     }
     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_C) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_C);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_C, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":124
+    /* "pyaibox/evaluation/contrast.py":125
  *     if reduction in ['mean', 'MEAN']:
  *         C = np.mean(C)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -2351,7 +2351,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  */
   }
 
-  /* "pyaibox/evaluation/contrast.py":126
+  /* "pyaibox/evaluation/contrast.py":127
  *     if reduction in ['sum', 'SUM']:
  *         C = np.sum(C)
  *     return C             # <<<<<<<<<<<<<<
@@ -2359,12 +2359,12 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_8contrast_contrast(CYTHON_UNUSED
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 126, __pyx_L1_error) }
+  if (unlikely(!__pyx_v_C)) { __Pyx_RaiseUnboundLocalError("C"); __PYX_ERR(0, 127, __pyx_L1_error) }
   __Pyx_INCREF(__pyx_v_C);
   __pyx_r = __pyx_v_C;
   goto __pyx_L0;
 
-  /* "pyaibox/evaluation/contrast.py":32
+  /* "pyaibox/evaluation/contrast.py":33
  * 
  * 
  * def contrast(X, caxis=None, axis=None, mode='way1', reduction='mean'):             # <<<<<<<<<<<<<<
@@ -2486,7 +2486,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 138, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 139, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -2496,68 +2496,68 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/evaluation/contrast.py":32
+  /* "pyaibox/evaluation/contrast.py":33
  * 
  * 
  * def contrast(X, caxis=None, axis=None, mode='way1', reduction='mean'):             # <<<<<<<<<<<<<<
  *     r"""Compute contrast of an complex image
  * 
  */
-  __pyx_tuple_ = PyTuple_Pack(7, __pyx_n_s_X, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_mode, __pyx_n_s_reduction, __pyx_n_s_Xmean, __pyx_n_s_C); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(7, __pyx_n_s_X, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_mode, __pyx_n_s_reduction, __pyx_n_s_Xmean, __pyx_n_s_C); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_contrast_py, __pyx_n_s_contrast, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __pyx_tuple__3 = PyTuple_Pack(4, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_way1), ((PyObject*)__pyx_n_u_mean)); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_contrast_py, __pyx_n_s_contrast, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(4, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_way1), ((PyObject*)__pyx_n_u_mean)); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pyaibox/evaluation/contrast.py":131
+  /* "pyaibox/evaluation/contrast.py":132
  * if __name__ == '__main__':
  * 
  *     np.random.seed(2020)             # <<<<<<<<<<<<<<
  *     X = np.random.randn(5, 2, 3, 4)
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_2020); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(1, __pyx_int_2020); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "pyaibox/evaluation/contrast.py":132
+  /* "pyaibox/evaluation/contrast.py":133
  * 
  *     np.random.seed(2020)
  *     X = np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
  * 
  *     # real
  */
-  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 133, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
 
-  /* "pyaibox/evaluation/contrast.py":135
+  /* "pyaibox/evaluation/contrast.py":136
  * 
  *     # real
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)             # <<<<<<<<<<<<<<
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  */
-  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_int_neg_2, __pyx_int_neg_1); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 135, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_int_neg_2, __pyx_int_neg_1); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "pyaibox/evaluation/contrast.py":147
+  /* "pyaibox/evaluation/contrast.py":148
  * 
  *     # complex in complex format
  *     X = X[:, 0, ...] + 1j * X[:, 1, ...]             # <<<<<<<<<<<<<<
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  */
-  __pyx_slice__7 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_slice__7 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__7);
   __Pyx_GIVEREF(__pyx_slice__7);
-  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_slice__7, __pyx_int_0, Py_Ellipsis); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_slice__7, __pyx_int_0, Py_Ellipsis); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_slice__7, __pyx_int_1, Py_Ellipsis); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 147, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_slice__7, __pyx_int_1, Py_Ellipsis); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 148, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
   __Pyx_RefNannyFinishContext();
@@ -2851,145 +2851,115 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/evaluation/contrast.py":28
+  /* "pyaibox/evaluation/contrast.py":29
  * #
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * from pyaibox.utils.const import EPS
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/evaluation/contrast.py":29
+  /* "pyaibox/evaluation/contrast.py":30
  * 
  * import numpy as np
  * from pyaibox.utils.const import EPS             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_EPS);
   __Pyx_GIVEREF(__pyx_n_s_EPS);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_EPS);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_utils_const, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_utils_const, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_EPS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_EPS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_EPS, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_EPS, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/evaluation/contrast.py":32
+  /* "pyaibox/evaluation/contrast.py":33
  * 
  * 
  * def contrast(X, caxis=None, axis=None, mode='way1', reduction='mean'):             # <<<<<<<<<<<<<<
  *     r"""Compute contrast of an complex image
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_8contrast_1contrast, 0, __pyx_n_s_contrast, NULL, __pyx_n_s_pyaibox_evaluation_contrast, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_8contrast_1contrast, 0, __pyx_n_s_contrast, NULL, __pyx_n_s_pyaibox_evaluation_contrast, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_contrast, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_contrast, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/evaluation/contrast.py":129
+  /* "pyaibox/evaluation/contrast.py":130
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     np.random.seed(2020)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "pyaibox/evaluation/contrast.py":131
+    /* "pyaibox/evaluation/contrast.py":132
  * if __name__ == '__main__':
  * 
  *     np.random.seed(2020)             # <<<<<<<<<<<<<<
  *     X = np.random.randn(5, 2, 3, 4)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_seed); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_seed); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":132
+    /* "pyaibox/evaluation/contrast.py":133
  * 
  *     np.random.seed(2020)
  *     X = np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
  * 
  *     # real
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_X, __pyx_t_2) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_X, __pyx_t_2) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":135
+    /* "pyaibox/evaluation/contrast.py":136
  * 
  *     # real
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)             # <<<<<<<<<<<<<<
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_contrast); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_contrast); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GIVEREF(__pyx_t_1);
-    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
-    __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 135, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_5) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-    /* "pyaibox/evaluation/contrast.py":136
- *     # real
- *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
- *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
- *     print(C1, C2, C3)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 136, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 136, __pyx_L1_error)
@@ -3002,24 +2972,24 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 136, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_2) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_5) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "pyaibox/evaluation/contrast.py":137
+ *     # real
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
- *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
+ *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)
- * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_contrast); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
@@ -3032,29 +3002,59 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_2) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "pyaibox/evaluation/contrast.py":138
+ *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
+ *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
+ *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     print(C1, C2, C3)
+ * 
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_contrast); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_GIVEREF(__pyx_t_1);
+    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
+    __pyx_t_1 = 0;
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_5) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_5) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":138
+    /* "pyaibox/evaluation/contrast.py":139
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)             # <<<<<<<<<<<<<<
  * 
  *     # complex in real format
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_C1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_C1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_C3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_C3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
@@ -3065,50 +3065,20 @@ if (!__Pyx_RefNanny) {
     __pyx_t_5 = 0;
     __pyx_t_1 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":141
+    /* "pyaibox/evaluation/contrast.py":142
  * 
  *     # complex in real format
  *     C1 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction=None)             # <<<<<<<<<<<<<<
  *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_contrast); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_contrast); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GIVEREF(__pyx_t_2);
-    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
-    __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 141, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_5) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-    /* "pyaibox/evaluation/contrast.py":142
- *     # complex in real format
- *     C1 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
- *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')
- *     print(C1, C2, C3)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 142, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 142, __pyx_L1_error)
@@ -3121,24 +3091,24 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_4) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_5) < 0) __PYX_ERR(0, 142, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "pyaibox/evaluation/contrast.py":143
+ *     # complex in real format
  *     C1 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')
- *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
+ *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)
- * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_contrast); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 143, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 143, __pyx_L1_error)
@@ -3151,29 +3121,59 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_4) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+
+    /* "pyaibox/evaluation/contrast.py":144
+ *     C1 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction=None)
+ *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')
+ *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     print(C1, C2, C3)
+ * 
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_contrast); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_1 = PyTuple_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
+    __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_5) < 0) __PYX_ERR(0, 143, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_5) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":144
+    /* "pyaibox/evaluation/contrast.py":145
  *     C2 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=1, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)             # <<<<<<<<<<<<<<
  * 
  *     # complex in complex format
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_C1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_C1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_C2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_C2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_5);
@@ -3184,80 +3184,50 @@ if (!__Pyx_RefNanny) {
     __pyx_t_5 = 0;
     __pyx_t_2 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 144, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 145, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":147
+    /* "pyaibox/evaluation/contrast.py":148
  * 
  *     # complex in complex format
  *     X = X[:, 0, ...] + 1j * X[:, 1, ...]             # <<<<<<<<<<<<<<
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_X); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_tuple__8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyComplex_FromDoubles(0.0, 1.0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_1 = PyComplex_FromDoubles(0.0, 1.0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_tuple__9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_2, __pyx_tuple__9); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Multiply(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Add(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 147, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Add(__pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_X, __pyx_t_5) < 0) __PYX_ERR(0, 147, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_X, __pyx_t_5) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":148
+    /* "pyaibox/evaluation/contrast.py":149
  *     # complex in complex format
  *     X = X[:, 0, ...] + 1j * X[:, 1, ...]
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)             # <<<<<<<<<<<<<<
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 148, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GIVEREF(__pyx_t_2);
-    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
-    __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_1) < 0) __PYX_ERR(0, 148, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-    /* "pyaibox/evaluation/contrast.py":149
- *     X = X[:, 0, ...] + 1j * X[:, 1, ...]
- *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
- *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
- *     print(C1, C2, C3)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_contrast); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
@@ -3270,23 +3240,24 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 149, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 149, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_5) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C1, __pyx_t_1) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
     /* "pyaibox/evaluation/contrast.py":150
+ *     X = X[:, 0, ...] + 1j * X[:, 1, ...]
  *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
- *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
- *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')             # <<<<<<<<<<<<<<
+ *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_contrast); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 150, __pyx_L1_error)
@@ -3299,27 +3270,56 @@ if (!__Pyx_RefNanny) {
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
     if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 150, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_sum) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 150, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C2, __pyx_t_5) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "pyaibox/evaluation/contrast.py":151
+ *     C1 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction=None)
+ *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
+ *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')             # <<<<<<<<<<<<<<
+ *     print(C1, C2, C3)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_contrast); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_X); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_GIVEREF(__pyx_t_2);
+    PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
+    __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_axis, __pyx_tuple__6) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_mode, __pyx_n_u_way1) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_1) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_C3, __pyx_t_1) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":151
+    /* "pyaibox/evaluation/contrast.py":152
  *     C2 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='sum')
  *     C3 = contrast(X, caxis=None, axis=(-2, -1), mode='way1', reduction='mean')
  *     print(C1, C2, C3)             # <<<<<<<<<<<<<<
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_C1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_C2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_C2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_C3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_C3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3330,12 +3330,12 @@ if (!__Pyx_RefNanny) {
     __pyx_t_1 = 0;
     __pyx_t_2 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 152, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/contrast.py":129
+    /* "pyaibox/evaluation/contrast.py":130
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

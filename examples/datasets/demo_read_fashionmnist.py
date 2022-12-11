@@ -1,10 +1,9 @@
-#!/usr/bin/env python
-#-*- coding: utf-8 -*-
-# @file      : const.py
+#
+# @file      : demo_read_fashionmnist.py
 # @author    : Zhi Liu
 # @email     : zhiliu.mind@gmail.com
 # @homepage  : http://iridescent.ink
-# @date      : Sun Nov 11 2019
+# @date      : Sun Dec 11 2022
 # @version   : 0.0
 # @license   : The GNU General Public License (GPL) v3.0
 # @note      : 
@@ -26,14 +25,21 @@
 # If not, see <https://www.gnu.org/licenses/>. 
 #
 
-# DEFINE GLOBAL CONSTS
-C = 299792458.0  # 2.99792458e8 in m/s
-# PI = 3.14159265358979323846
-PI = 3.141592653589793238462643383279502884197169399375105820974944592307
-EPS = 1.0e-32
+import pyaibox as pb
 
 
-Ge = 398603e9  # the constant of earth gravitation
-Rea = 6367.856e3  # the avarage radius of earth
-Ree = 6378.137e3  # the equatorial radius of earth
-Rep = 6356.752e3  # the polar radius of earth
+rootdir = '/mnt/d/DataSets/oi/dgi/fashionmnist/official/'
+dataset = 'train'
+X, Y = pb.read_mnist(rootdir=rootdir, dataset=dataset, fmt='ubyte')
+print(X.shape, Y.shape)
+
+plt = pb.imshow([X[i] for i in range(0, 32)])
+plt.show()
+
+dataset = 'test'
+X, Y = pb.read_mnist(rootdir=rootdir, dataset=dataset, fmt='ubyte')
+print(X.shape, Y.shape)
+
+plt = pb.imshow([X[i] for i in range(0, 32)])
+plt.show()
+

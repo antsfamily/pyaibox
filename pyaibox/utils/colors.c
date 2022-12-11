@@ -1747,7 +1747,7 @@ static PyObject *__pyx_codeobj__56;
 static PyObject *__pyx_codeobj__59;
 /* Late includes */
 
-/* "pyaibox/utils/colors.py":82
+/* "pyaibox/utils/colors.py":83
  * 
  * 
  * def rgb2gray(rgb, fmt='chnllast'):             # <<<<<<<<<<<<<<
@@ -1796,7 +1796,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_6colors_1rgb2gray(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "rgb2gray") < 0)) __PYX_ERR(0, 82, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "rgb2gray") < 0)) __PYX_ERR(0, 83, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1812,7 +1812,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_6colors_1rgb2gray(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("rgb2gray", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 82, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("rgb2gray", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 83, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.colors.rgb2gray", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1840,28 +1840,28 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("rgb2gray", 0);
 
-  /* "pyaibox/utils/colors.py":102
+  /* "pyaibox/utils/colors.py":103
  *     """
  * 
  *     dtype = rgb.dtype             # <<<<<<<<<<<<<<
  * 
  *     if np.ndim(rgb) < 3:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_rgb, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_rgb, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_dtype = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":104
+  /* "pyaibox/utils/colors.py":105
  *     dtype = rgb.dtype
  * 
  *     if np.ndim(rgb) < 3:             # <<<<<<<<<<<<<<
  *         return rgb
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ndim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_ndim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -1876,16 +1876,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_rgb) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_rgb);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 104, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_int_3, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_int_3, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_4) {
 
-    /* "pyaibox/utils/colors.py":105
+    /* "pyaibox/utils/colors.py":106
  * 
  *     if np.ndim(rgb) < 3:
  *         return rgb             # <<<<<<<<<<<<<<
@@ -1897,7 +1897,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
     __pyx_r = __pyx_v_rgb;
     goto __pyx_L0;
 
-    /* "pyaibox/utils/colors.py":104
+    /* "pyaibox/utils/colors.py":105
  *     dtype = rgb.dtype
  * 
  *     if np.ndim(rgb) < 3:             # <<<<<<<<<<<<<<
@@ -1906,7 +1906,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/colors.py":107
+  /* "pyaibox/utils/colors.py":108
  *         return rgb
  * 
  *     if fmt in ['chnllast', 'ChnlLast']:             # <<<<<<<<<<<<<<
@@ -1915,20 +1915,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  */
   __Pyx_INCREF(__pyx_v_fmt);
   __pyx_t_3 = __pyx_v_fmt;
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_chnllast, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_chnllast, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
   if (!__pyx_t_5) {
   } else {
     __pyx_t_4 = __pyx_t_5;
     goto __pyx_L5_bool_binop_done;
   }
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_ChnlLast, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_ChnlLast, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
   __pyx_t_4 = __pyx_t_5;
   __pyx_L5_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "pyaibox/utils/colors.py":108
+    /* "pyaibox/utils/colors.py":109
  * 
  *     if fmt in ['chnllast', 'ChnlLast']:
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)             # <<<<<<<<<<<<<<
@@ -1936,30 +1936,30 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  *         return (0.2989 * rgb[0, ...] + 0.5870 * rgb[1, ...] + 0.1140 * rgb[2, ...]).astype(dtype)
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple_); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple_); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyNumber_Multiply(__pyx_float_0_2989, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Multiply(__pyx_float_0_2989, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_5870, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_5870, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_2 = PyNumber_Multiply(__pyx_float_0_1140, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Multiply(__pyx_float_0_1140, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Add(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
@@ -1974,14 +1974,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
     }
     __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_6, __pyx_v_dtype) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_dtype);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "pyaibox/utils/colors.py":107
+    /* "pyaibox/utils/colors.py":108
  *         return rgb
  * 
  *     if fmt in ['chnllast', 'ChnlLast']:             # <<<<<<<<<<<<<<
@@ -1990,7 +1990,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/colors.py":109
+  /* "pyaibox/utils/colors.py":110
  *     if fmt in ['chnllast', 'ChnlLast']:
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)
  *     if fmt in ['chnlfirst', 'ChnlFirst']:             # <<<<<<<<<<<<<<
@@ -1999,20 +1999,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  */
   __Pyx_INCREF(__pyx_v_fmt);
   __pyx_t_3 = __pyx_v_fmt;
-  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_chnlfirst, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_chnlfirst, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 110, __pyx_L1_error)
   if (!__pyx_t_4) {
   } else {
     __pyx_t_5 = __pyx_t_4;
     goto __pyx_L8_bool_binop_done;
   }
-  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_ChnlFirst, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_t_4 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_ChnlFirst, Py_EQ)); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 110, __pyx_L1_error)
   __pyx_t_5 = __pyx_t_4;
   __pyx_L8_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_4 = (__pyx_t_5 != 0);
   if (__pyx_t_4) {
 
-    /* "pyaibox/utils/colors.py":110
+    /* "pyaibox/utils/colors.py":111
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)
  *     if fmt in ['chnlfirst', 'ChnlFirst']:
  *         return (0.2989 * rgb[0, ...] + 0.5870 * rgb[1, ...] + 0.1140 * rgb[2, ...]).astype(dtype)             # <<<<<<<<<<<<<<
@@ -2020,30 +2020,30 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_2989, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_2989, __pyx_t_2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_float_0_5870, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Multiply(__pyx_float_0_5870, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyNumber_Add(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_2 = PyNumber_Add(__pyx_t_6, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_rgb, __pyx_tuple__6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_1140, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Multiply(__pyx_float_0_1140, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_t_2, __pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_astype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 110, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_astype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_1 = NULL;
@@ -2058,14 +2058,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
     }
     __pyx_t_3 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_1, __pyx_v_dtype) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_dtype);
     __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_r = __pyx_t_3;
     __pyx_t_3 = 0;
     goto __pyx_L0;
 
-    /* "pyaibox/utils/colors.py":109
+    /* "pyaibox/utils/colors.py":110
  *     if fmt in ['chnllast', 'ChnlLast']:
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)
  *     if fmt in ['chnlfirst', 'ChnlFirst']:             # <<<<<<<<<<<<<<
@@ -2074,7 +2074,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/colors.py":82
+  /* "pyaibox/utils/colors.py":83
  * 
  * 
  * def rgb2gray(rgb, fmt='chnllast'):             # <<<<<<<<<<<<<<
@@ -2099,7 +2099,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_rgb2gray(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "pyaibox/utils/colors.py":113
+/* "pyaibox/utils/colors.py":114
  * 
  * 
  * def gray2rgb(gray, cmap, drange=[0, 255], fmtstr=False):             # <<<<<<<<<<<<<<
@@ -2117,7 +2117,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_4__defaults__(CYTHON_UNUSED Py
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__defaults__", 0);
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_drange);
   __Pyx_GIVEREF(__Pyx_CyFunction_Defaults(__pyx_defaults, __pyx_self)->__pyx_arg_drange);
@@ -2125,7 +2125,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_4__defaults__(CYTHON_UNUSED Py
   __Pyx_INCREF(((PyObject *)Py_False));
   __Pyx_GIVEREF(((PyObject *)Py_False));
   PyTuple_SET_ITEM(__pyx_t_1, 1, ((PyObject *)Py_False));
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -2194,7 +2194,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_6colors_3gray2rgb(PyObject *__pyx_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_cmap)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("gray2rgb", 0, 2, 4, 1); __PYX_ERR(0, 113, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("gray2rgb", 0, 2, 4, 1); __PYX_ERR(0, 114, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -2210,7 +2210,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_6colors_3gray2rgb(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "gray2rgb") < 0)) __PYX_ERR(0, 113, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "gray2rgb") < 0)) __PYX_ERR(0, 114, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2231,7 +2231,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_6colors_3gray2rgb(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("gray2rgb", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 113, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("gray2rgb", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 114, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.colors.gray2rgb", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2264,31 +2264,31 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("gray2rgb", 0);
   __Pyx_INCREF(__pyx_v_gray);
 
-  /* "pyaibox/utils/colors.py":164
+  /* "pyaibox/utils/colors.py":165
  *     """
  * 
  *     N = 256 if (drange[1] == 1) and (drange[0] == 0) else drange[1] - drange[0] + 1             # <<<<<<<<<<<<<<
  * 
  *     if cmap == 'parula':
  */
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyInt_EqObjC(__pyx_t_3, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyInt_EqObjC(__pyx_t_3, __pyx_int_1, 1, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (__pyx_t_5) {
   } else {
     __pyx_t_2 = __pyx_t_5;
     goto __pyx_L3_bool_binop_done;
   }
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_4, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyInt_EqObjC(__pyx_t_4, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_2 = __pyx_t_5;
   __pyx_L3_bool_binop_done:;
@@ -2296,15 +2296,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
     __Pyx_INCREF(__pyx_int_256);
     __pyx_t_1 = __pyx_int_256;
   } else {
-    __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = PyNumber_Subtract(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Subtract(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 165, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyInt_AddObjC(__pyx_t_6, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_1 = __pyx_t_4;
@@ -2313,32 +2313,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   __pyx_v_N = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":166
+  /* "pyaibox/utils/colors.py":167
  *     N = 256 if (drange[1] == 1) and (drange[0] == 0) else drange[1] - drange[0] + 1
  * 
  *     if cmap == 'parula':             # <<<<<<<<<<<<<<
  *         colormap = cmaps['parula']
  *         N = 64
  */
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_cmap, __pyx_n_u_parula, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 166, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_cmap, __pyx_n_u_parula, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 167, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/colors.py":167
+    /* "pyaibox/utils/colors.py":168
  * 
  *     if cmap == 'parula':
  *         colormap = cmaps['parula']             # <<<<<<<<<<<<<<
  *         N = 64
  *     else:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_cmaps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_cmaps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_u_parula); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 167, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Dict_GetItem(__pyx_t_1, __pyx_n_u_parula); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_v_colormap = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":168
+    /* "pyaibox/utils/colors.py":169
  *     if cmap == 'parula':
  *         colormap = cmaps['parula']
  *         N = 64             # <<<<<<<<<<<<<<
@@ -2348,7 +2348,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
     __Pyx_INCREF(__pyx_int_64);
     __Pyx_DECREF_SET(__pyx_v_N, __pyx_int_64);
 
-    /* "pyaibox/utils/colors.py":166
+    /* "pyaibox/utils/colors.py":167
  *     N = 256 if (drange[1] == 1) and (drange[0] == 0) else drange[1] - drange[0] + 1
  * 
  *     if cmap == 'parula':             # <<<<<<<<<<<<<<
@@ -2358,7 +2358,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
     goto __pyx_L5;
   }
 
-  /* "pyaibox/utils/colors.py":170
+  /* "pyaibox/utils/colors.py":171
  *         N = 64
  *     else:
  *         colormap = cm.get_cmap(cmap, N) if type(cmap) is str else cmap             # <<<<<<<<<<<<<<
@@ -2368,9 +2368,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   /*else*/ {
     __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_cmap)) == ((PyObject *)(&PyUnicode_Type)));
     if ((__pyx_t_2 != 0)) {
-      __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_cm); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 170, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_cm); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 171, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_get_cmap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_get_cmap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_6 = NULL;
@@ -2388,7 +2388,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_cmap, __pyx_v_N};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_1);
       } else
@@ -2396,13 +2396,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
         PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_v_cmap, __pyx_v_N};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
         __Pyx_GOTREF(__pyx_t_1);
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         if (__pyx_t_6) {
           __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -2413,7 +2413,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
         __Pyx_INCREF(__pyx_v_N);
         __Pyx_GIVEREF(__pyx_v_N);
         PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_7, __pyx_v_N);
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
@@ -2429,23 +2429,23 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   }
   __pyx_L5:;
 
-  /* "pyaibox/utils/colors.py":171
+  /* "pyaibox/utils/colors.py":172
  *     else:
  *         colormap = cm.get_cmap(cmap, N) if type(cmap) is str else cmap
  *     gray = scale(gray, st=[0, N], sf=None, istrunc=True, extra=False).astype('int')             # <<<<<<<<<<<<<<
  *     rgb = colormap(gray)[:, :, :3]
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_gray);
   __Pyx_GIVEREF(__pyx_v_gray);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_gray);
-  __pyx_t_8 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_6 = PyList_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
@@ -2453,17 +2453,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   __Pyx_INCREF(__pyx_v_N);
   __Pyx_GIVEREF(__pyx_v_N);
   PyList_SET_ITEM(__pyx_t_6, 1, __pyx_v_N);
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_st, __pyx_t_6) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_st, __pyx_t_6) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_sf, Py_None) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_istrunc, Py_True) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_extra, Py_False) < 0) __PYX_ERR(0, 171, __pyx_L1_error)
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_8); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_sf, Py_None) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_istrunc, Py_True) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_extra, Py_False) < 0) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_8); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 171, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -2478,13 +2478,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_6, __pyx_n_u_int) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_n_u_int);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 171, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF_SET(__pyx_v_gray, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/colors.py":172
+  /* "pyaibox/utils/colors.py":173
  *         colormap = cm.get_cmap(cmap, N) if type(cmap) is str else cmap
  *     gray = scale(gray, st=[0, N], sf=None, istrunc=True, extra=False).astype('int')
  *     rgb = colormap(gray)[:, :, :3]             # <<<<<<<<<<<<<<
@@ -2504,60 +2504,60 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_6, __pyx_v_gray) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_gray);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 172, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_tuple__9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_tuple__9); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_rgb = __pyx_t_8;
   __pyx_t_8 = 0;
 
-  /* "pyaibox/utils/colors.py":174
+  /* "pyaibox/utils/colors.py":175
  *     rgb = colormap(gray)[:, :, :3]
  * 
  *     rgb = drange[0] + (drange[1] - drange[0]) * rgb  # [drange(1), drange(2)]             # <<<<<<<<<<<<<<
  *     if fmtstr:
  *         rgb = rgb.astype(fmtstr)
  */
-  __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_GetItemInt(__pyx_v_drange, 1, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_GetItemInt(__pyx_v_drange, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_3 = PyNumber_Subtract(__pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Subtract(__pyx_t_4, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyNumber_Multiply(__pyx_t_3, __pyx_v_rgb); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Multiply(__pyx_t_3, __pyx_v_rgb); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Add(__pyx_t_8, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 174, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Add(__pyx_t_8, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 175, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF_SET(__pyx_v_rgb, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/utils/colors.py":175
+  /* "pyaibox/utils/colors.py":176
  * 
  *     rgb = drange[0] + (drange[1] - drange[0]) * rgb  # [drange(1), drange(2)]
  *     if fmtstr:             # <<<<<<<<<<<<<<
  *         rgb = rgb.astype(fmtstr)
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_fmtstr); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_fmtstr); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 176, __pyx_L1_error)
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/colors.py":176
+    /* "pyaibox/utils/colors.py":177
  *     rgb = drange[0] + (drange[1] - drange[0]) * rgb  # [drange(1), drange(2)]
  *     if fmtstr:
  *         rgb = rgb.astype(fmtstr)             # <<<<<<<<<<<<<<
  * 
  *     return rgb
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_rgb, __pyx_n_s_astype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 176, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_rgb, __pyx_n_s_astype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_8 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -2571,13 +2571,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
     }
     __pyx_t_3 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_8, __pyx_v_fmtstr) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_fmtstr);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF_SET(__pyx_v_rgb, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/utils/colors.py":175
+    /* "pyaibox/utils/colors.py":176
  * 
  *     rgb = drange[0] + (drange[1] - drange[0]) * rgb  # [drange(1), drange(2)]
  *     if fmtstr:             # <<<<<<<<<<<<<<
@@ -2586,7 +2586,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/utils/colors.py":178
+  /* "pyaibox/utils/colors.py":179
  *         rgb = rgb.astype(fmtstr)
  * 
  *     return rgb             # <<<<<<<<<<<<<<
@@ -2598,7 +2598,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_6colors_2gray2rgb(CYTHON_UNUSED PyObje
   __pyx_r = __pyx_v_rgb;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/colors.py":113
+  /* "pyaibox/utils/colors.py":114
  * 
  * 
  * def gray2rgb(gray, cmap, drange=[0, 255], fmtstr=False):             # <<<<<<<<<<<<<<
@@ -2789,7 +2789,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 185, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 186, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -2799,364 +2799,364 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/utils/colors.py":108
+  /* "pyaibox/utils/colors.py":109
  * 
  *     if fmt in ['chnllast', 'ChnlLast']:
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)             # <<<<<<<<<<<<<<
  *     if fmt in ['chnlfirst', 'ChnlFirst']:
  *         return (0.2989 * rgb[0, ...] + 0.5870 * rgb[1, ...] + 0.1140 * rgb[2, ...]).astype(dtype)
  */
-  __pyx_tuple_ = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_0); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_0); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_tuple__2 = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_1); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_1); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_tuple__3 = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_2); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(2, Py_Ellipsis, __pyx_int_2); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 109, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pyaibox/utils/colors.py":110
+  /* "pyaibox/utils/colors.py":111
  *         return (0.2989 * rgb[..., 0] + 0.5870 * rgb[..., 1] + 0.1140 * rgb[..., 2]).astype(dtype)
  *     if fmt in ['chnlfirst', 'ChnlFirst']:
  *         return (0.2989 * rgb[0, ...] + 0.5870 * rgb[1, ...] + 0.1140 * rgb[2, ...]).astype(dtype)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_int_0, Py_Ellipsis); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_int_0, Py_Ellipsis); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_tuple__5 = PyTuple_Pack(2, __pyx_int_1, Py_Ellipsis); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(2, __pyx_int_1, Py_Ellipsis); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_int_2, Py_Ellipsis); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(2, __pyx_int_2, Py_Ellipsis); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "pyaibox/utils/colors.py":172
+  /* "pyaibox/utils/colors.py":173
  *         colormap = cm.get_cmap(cmap, N) if type(cmap) is str else cmap
  *     gray = scale(gray, st=[0, N], sf=None, istrunc=True, extra=False).astype('int')
  *     rgb = colormap(gray)[:, :, :3]             # <<<<<<<<<<<<<<
  * 
  *     rgb = drange[0] + (drange[1] - drange[0]) * rgb  # [drange(1), drange(2)]
  */
-  __pyx_slice__7 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_slice__7 = PySlice_New(Py_None, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__7);
   __Pyx_GIVEREF(__pyx_slice__7);
-  __pyx_slice__8 = PySlice_New(Py_None, __pyx_int_3, Py_None); if (unlikely(!__pyx_slice__8)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_slice__8 = PySlice_New(Py_None, __pyx_int_3, Py_None); if (unlikely(!__pyx_slice__8)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__8);
   __Pyx_GIVEREF(__pyx_slice__8);
-  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_slice__7, __pyx_slice__7, __pyx_slice__8); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 172, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(3, __pyx_slice__7, __pyx_slice__7, __pyx_slice__8); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 173, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "pyaibox/utils/colors.py":48
+  /* "pyaibox/utils/colors.py":49
  * 
  * DISTINCT_COLORS_RGB = {
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),             # <<<<<<<<<<<<<<
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  */
-  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_int_230, __pyx_int_25, __pyx_int_75); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_int_230, __pyx_int_25, __pyx_int_75); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_60, __pyx_int_180, __pyx_int_75); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(3, __pyx_int_60, __pyx_int_180, __pyx_int_75); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_tuple__13 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_225, __pyx_int_25); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_225, __pyx_int_25); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_tuple__14 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_130, __pyx_int_200); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_130, __pyx_int_200); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "pyaibox/utils/colors.py":49
+  /* "pyaibox/utils/colors.py":50
  * DISTINCT_COLORS_RGB = {
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),             # <<<<<<<<<<<<<<
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  */
-  __pyx_tuple__15 = PyTuple_Pack(3, __pyx_int_245, __pyx_int_130, __pyx_int_48); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(3, __pyx_int_245, __pyx_int_130, __pyx_int_48); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_tuple__16 = PyTuple_Pack(3, __pyx_int_145, __pyx_int_30, __pyx_int_180); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(3, __pyx_int_145, __pyx_int_30, __pyx_int_180); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
-  __pyx_tuple__17 = PyTuple_Pack(3, __pyx_int_70, __pyx_int_240, __pyx_int_240); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(3, __pyx_int_70, __pyx_int_240, __pyx_int_240); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_tuple__18 = PyTuple_Pack(3, __pyx_int_240, __pyx_int_50, __pyx_int_230); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(3, __pyx_int_240, __pyx_int_50, __pyx_int_230); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "pyaibox/utils/colors.py":50
+  /* "pyaibox/utils/colors.py":51
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),             # <<<<<<<<<<<<<<
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  */
-  __pyx_tuple__19 = PyTuple_Pack(3, __pyx_int_210, __pyx_int_245, __pyx_int_60); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(3, __pyx_int_210, __pyx_int_245, __pyx_int_60); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_tuple__20 = PyTuple_Pack(3, __pyx_int_250, __pyx_int_190, __pyx_int_212); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(3, __pyx_int_250, __pyx_int_190, __pyx_int_212); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_tuple__21 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_128, __pyx_int_128); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_128, __pyx_int_128); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_int_220, __pyx_int_190, __pyx_int_255); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(3, __pyx_int_220, __pyx_int_190, __pyx_int_255); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "pyaibox/utils/colors.py":51
+  /* "pyaibox/utils/colors.py":52
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),             # <<<<<<<<<<<<<<
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  *     'white': (255, 255, 255), 'black': (0, 0, 0)
  */
-  __pyx_tuple__23 = PyTuple_Pack(3, __pyx_int_170, __pyx_int_110, __pyx_int_40); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(3, __pyx_int_170, __pyx_int_110, __pyx_int_40); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_tuple__24 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_250, __pyx_int_200); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_250, __pyx_int_200); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
-  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_tuple__26 = PyTuple_Pack(3, __pyx_int_170, __pyx_int_255, __pyx_int_195); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(3, __pyx_int_170, __pyx_int_255, __pyx_int_195); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
 
-  /* "pyaibox/utils/colors.py":52
+  /* "pyaibox/utils/colors.py":53
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),             # <<<<<<<<<<<<<<
  *     'white': (255, 255, 255), 'black': (0, 0, 0)
  * }
  */
-  __pyx_tuple__27 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_128, __pyx_int_0); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_128, __pyx_int_0); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_tuple__28 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_215, __pyx_int_180); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_215, __pyx_int_180); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
-  __pyx_tuple__29 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_0, __pyx_int_128); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_0, __pyx_int_128); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_tuple__30 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_128, __pyx_int_128); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 52, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(3, __pyx_int_128, __pyx_int_128, __pyx_int_128); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 53, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "pyaibox/utils/colors.py":53
+  /* "pyaibox/utils/colors.py":54
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  *     'white': (255, 255, 255), 'black': (0, 0, 0)             # <<<<<<<<<<<<<<
  * }
  * 
  */
-  __pyx_tuple__31 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_255, __pyx_int_255); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(3, __pyx_int_255, __pyx_int_255, __pyx_int_255); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
 
-  /* "pyaibox/utils/colors.py":57
+  /* "pyaibox/utils/colors.py":58
  * 
  * DISTINCT_COLORS_CMYK = {
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),             # <<<<<<<<<<<<<<
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  */
-  __pyx_tuple__33 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_66, __pyx_int_0); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_66, __pyx_int_0); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_tuple__34 = PyTuple_Pack(4, __pyx_int_75, __pyx_int_0, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(4, __pyx_int_75, __pyx_int_0, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
-  __pyx_tuple__35 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_25, __pyx_int_95, __pyx_int_0); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_25, __pyx_int_95, __pyx_int_0); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
-  __pyx_tuple__36 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_35, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_35, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
 
-  /* "pyaibox/utils/colors.py":58
+  /* "pyaibox/utils/colors.py":59
  * DISTINCT_COLORS_CMYK = {
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),             # <<<<<<<<<<<<<<
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  */
-  __pyx_tuple__37 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_60, __pyx_int_92, __pyx_int_0); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_tuple__37 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_60, __pyx_int_92, __pyx_int_0); if (unlikely(!__pyx_tuple__37)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__37);
   __Pyx_GIVEREF(__pyx_tuple__37);
-  __pyx_tuple__38 = PyTuple_Pack(4, __pyx_int_35, __pyx_int_70, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(4, __pyx_int_35, __pyx_int_70, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_tuple__39 = PyTuple_Pack(4, __pyx_int_70, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_tuple__39 = PyTuple_Pack(4, __pyx_int_70, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__39)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__39);
   __Pyx_GIVEREF(__pyx_tuple__39);
-  __pyx_tuple__40 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
 
-  /* "pyaibox/utils/colors.py":59
+  /* "pyaibox/utils/colors.py":60
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),             # <<<<<<<<<<<<<<
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  */
-  __pyx_tuple__41 = PyTuple_Pack(4, __pyx_int_35, __pyx_int_0, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_tuple__41 = PyTuple_Pack(4, __pyx_int_35, __pyx_int_0, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__41)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__41);
   __Pyx_GIVEREF(__pyx_tuple__41);
-  __pyx_tuple__42 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_24, __pyx_int_100, __pyx_int_2); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_tuple__42 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_24, __pyx_int_100, __pyx_int_2); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
   __Pyx_GIVEREF(__pyx_tuple__42);
-  __pyx_tuple__43 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_0, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_tuple__43 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_0, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__43)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__43);
   __Pyx_GIVEREF(__pyx_tuple__43);
-  __pyx_tuple__44 = PyTuple_Pack(4, __pyx_int_14, __pyx_int_25, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_tuple__44 = PyTuple_Pack(4, __pyx_int_14, __pyx_int_25, __pyx_int_100, __pyx_int_0); if (unlikely(!__pyx_tuple__44)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__44);
   __Pyx_GIVEREF(__pyx_tuple__44);
 
-  /* "pyaibox/utils/colors.py":60
+  /* "pyaibox/utils/colors.py":61
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),             # <<<<<<<<<<<<<<
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)
  */
-  __pyx_tuple__45 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_35, __pyx_int_75, __pyx_int_33); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_tuple__45 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_35, __pyx_int_75, __pyx_int_33); if (unlikely(!__pyx_tuple__45)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__45);
   __Pyx_GIVEREF(__pyx_tuple__45);
-  __pyx_tuple__46 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_10, __pyx_int_30, __pyx_int_0); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_tuple__46 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_10, __pyx_int_30, __pyx_int_0); if (unlikely(!__pyx_tuple__46)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__46);
   __Pyx_GIVEREF(__pyx_tuple__46);
-  __pyx_tuple__47 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_100, __pyx_int_50); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_tuple__47 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_100, __pyx_int_100, __pyx_int_50); if (unlikely(!__pyx_tuple__47)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__47);
   __Pyx_GIVEREF(__pyx_tuple__47);
-  __pyx_tuple__48 = PyTuple_Pack(4, __pyx_int_33, __pyx_int_0, __pyx_int_23, __pyx_int_0); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_tuple__48 = PyTuple_Pack(4, __pyx_int_33, __pyx_int_0, __pyx_int_23, __pyx_int_0); if (unlikely(!__pyx_tuple__48)) __PYX_ERR(0, 61, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__48);
   __Pyx_GIVEREF(__pyx_tuple__48);
 
-  /* "pyaibox/utils/colors.py":61
+  /* "pyaibox/utils/colors.py":62
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),             # <<<<<<<<<<<<<<
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)
  * }
  */
-  __pyx_tuple__49 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_100, __pyx_int_50); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__49 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_100, __pyx_int_50); if (unlikely(!__pyx_tuple__49)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__49);
   __Pyx_GIVEREF(__pyx_tuple__49);
-  __pyx_tuple__50 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_15, __pyx_int_30, __pyx_int_0); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__50 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_15, __pyx_int_30, __pyx_int_0); if (unlikely(!__pyx_tuple__50)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__50);
   __Pyx_GIVEREF(__pyx_tuple__50);
-  __pyx_tuple__51 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_100, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__51 = PyTuple_Pack(4, __pyx_int_100, __pyx_int_100, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__51)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__51);
   __Pyx_GIVEREF(__pyx_tuple__51);
-  __pyx_tuple__52 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__52 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_50); if (unlikely(!__pyx_tuple__52)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__52);
   __Pyx_GIVEREF(__pyx_tuple__52);
 
-  /* "pyaibox/utils/colors.py":62
+  /* "pyaibox/utils/colors.py":63
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)             # <<<<<<<<<<<<<<
  * }
  * 
  */
-  __pyx_tuple__53 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_tuple__53 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_0); if (unlikely(!__pyx_tuple__53)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__53);
   __Pyx_GIVEREF(__pyx_tuple__53);
-  __pyx_tuple__54 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_100); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_tuple__54 = PyTuple_Pack(4, __pyx_int_0, __pyx_int_0, __pyx_int_0, __pyx_int_100); if (unlikely(!__pyx_tuple__54)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__54);
   __Pyx_GIVEREF(__pyx_tuple__54);
 
-  /* "pyaibox/utils/colors.py":82
+  /* "pyaibox/utils/colors.py":83
  * 
  * 
  * def rgb2gray(rgb, fmt='chnllast'):             # <<<<<<<<<<<<<<
  *     r"""Converts RGB image to GRAY image
  * 
  */
-  __pyx_tuple__55 = PyTuple_Pack(3, __pyx_n_s_rgb, __pyx_n_s_fmt, __pyx_n_s_dtype); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_tuple__55 = PyTuple_Pack(3, __pyx_n_s_rgb, __pyx_n_s_fmt, __pyx_n_s_dtype); if (unlikely(!__pyx_tuple__55)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__55);
   __Pyx_GIVEREF(__pyx_tuple__55);
-  __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_colors_py, __pyx_n_s_rgb2gray, 82, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 82, __pyx_L1_error)
-  __pyx_tuple__57 = PyTuple_Pack(1, ((PyObject*)__pyx_n_u_chnllast)); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_codeobj__56 = (PyObject*)__Pyx_PyCode_New(2, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__55, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_colors_py, __pyx_n_s_rgb2gray, 83, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__56)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_tuple__57 = PyTuple_Pack(1, ((PyObject*)__pyx_n_u_chnllast)); if (unlikely(!__pyx_tuple__57)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__57);
   __Pyx_GIVEREF(__pyx_tuple__57);
 
-  /* "pyaibox/utils/colors.py":113
+  /* "pyaibox/utils/colors.py":114
  * 
  * 
  * def gray2rgb(gray, cmap, drange=[0, 255], fmtstr=False):             # <<<<<<<<<<<<<<
  *     r"""Converts gray image values to rgb image
  * 
  */
-  __pyx_tuple__58 = PyTuple_Pack(7, __pyx_n_s_gray, __pyx_n_s_cmap, __pyx_n_s_drange, __pyx_n_s_fmtstr, __pyx_n_s_N, __pyx_n_s_colormap, __pyx_n_s_rgb); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_tuple__58 = PyTuple_Pack(7, __pyx_n_s_gray, __pyx_n_s_cmap, __pyx_n_s_drange, __pyx_n_s_fmtstr, __pyx_n_s_N, __pyx_n_s_colormap, __pyx_n_s_rgb); if (unlikely(!__pyx_tuple__58)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__58);
   __Pyx_GIVEREF(__pyx_tuple__58);
-  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_colors_py, __pyx_n_s_gray2rgb, 113, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_codeobj__59 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__58, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_colors_py, __pyx_n_s_gray2rgb, 114, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__59)) __PYX_ERR(0, 114, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":184
+  /* "pyaibox/utils/colors.py":185
  * if __name__ == '__main__':
  * 
  *     A = np.random.randn(5, 4, 3)             # <<<<<<<<<<<<<<
  *     print(A)
  *     print(rgb2gray(A, fmt='chnlfirst'))
  */
-  __pyx_tuple__60 = PyTuple_Pack(3, __pyx_int_5, __pyx_int_4, __pyx_int_3); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 184, __pyx_L1_error)
+  __pyx_tuple__60 = PyTuple_Pack(3, __pyx_int_5, __pyx_int_4, __pyx_int_3); if (unlikely(!__pyx_tuple__60)) __PYX_ERR(0, 185, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__60);
   __Pyx_GIVEREF(__pyx_tuple__60);
 
-  /* "pyaibox/utils/colors.py":188
+  /* "pyaibox/utils/colors.py":189
  *     print(rgb2gray(A, fmt='chnlfirst'))
  * 
  *     A = np.random.randn(3, 5, 4)             # <<<<<<<<<<<<<<
  *     print(A)
  *     print(rgb2gray(A, fmt='chnllast'))
  */
-  __pyx_tuple__61 = PyTuple_Pack(3, __pyx_int_3, __pyx_int_5, __pyx_int_4); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 188, __pyx_L1_error)
+  __pyx_tuple__61 = PyTuple_Pack(3, __pyx_int_3, __pyx_int_5, __pyx_int_4); if (unlikely(!__pyx_tuple__61)) __PYX_ERR(0, 189, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__61);
   __Pyx_GIVEREF(__pyx_tuple__61);
 
-  /* "pyaibox/utils/colors.py":200
+  /* "pyaibox/utils/colors.py":201
  *     # cmap = 'hot'
  *     # cmap = 'parula'
  *     gray = pb.imread('../../data/images/LenaGRAY256.png')             # <<<<<<<<<<<<<<
  *     print(gray.shape)
  * 
  */
-  __pyx_tuple__62 = PyTuple_Pack(1, __pyx_kp_u_data_images_LenaGRAY256_png); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 200, __pyx_L1_error)
+  __pyx_tuple__62 = PyTuple_Pack(1, __pyx_kp_u_data_images_LenaGRAY256_png); if (unlikely(!__pyx_tuple__62)) __PYX_ERR(0, 201, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__62);
   __Pyx_GIVEREF(__pyx_tuple__62);
 
-  /* "pyaibox/utils/colors.py":211
+  /* "pyaibox/utils/colors.py":212
  * 
  *     plt.figure()
  *     plt.subplot(121)             # <<<<<<<<<<<<<<
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  *     plt.subplot(122)
  */
-  __pyx_tuple__63 = PyTuple_Pack(1, __pyx_int_121); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 211, __pyx_L1_error)
+  __pyx_tuple__63 = PyTuple_Pack(1, __pyx_int_121); if (unlikely(!__pyx_tuple__63)) __PYX_ERR(0, 212, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__63);
   __Pyx_GIVEREF(__pyx_tuple__63);
 
-  /* "pyaibox/utils/colors.py":213
+  /* "pyaibox/utils/colors.py":214
  *     plt.subplot(121)
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  *     plt.subplot(122)             # <<<<<<<<<<<<<<
  *     plt.imshow(rgb)
  *     plt.show()
  */
-  __pyx_tuple__64 = PyTuple_Pack(1, __pyx_int_122); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(0, 213, __pyx_L1_error)
+  __pyx_tuple__64 = PyTuple_Pack(1, __pyx_int_122); if (unlikely(!__pyx_tuple__64)) __PYX_ERR(0, 214, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__64);
   __Pyx_GIVEREF(__pyx_tuple__64);
   __Pyx_RefNannyFinishContext();
@@ -3494,318 +3494,318 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/utils/colors.py":28
+  /* "pyaibox/utils/colors.py":29
  * #
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * import matplotlib.colors as mcolors
  * from matplotlib import cm
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":29
+  /* "pyaibox/utils/colors.py":30
  * 
  * import numpy as np
  * import matplotlib.colors as mcolors             # <<<<<<<<<<<<<<
  * from matplotlib import cm
  * from pyaibox.utils.colormaps import cmaps
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s__10);
   __Pyx_GIVEREF(__pyx_n_s__10);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s__10);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_matplotlib_colors, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_matplotlib_colors, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mcolors, __pyx_t_2) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mcolors, __pyx_t_2) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":30
+  /* "pyaibox/utils/colors.py":31
  * import numpy as np
  * import matplotlib.colors as mcolors
  * from matplotlib import cm             # <<<<<<<<<<<<<<
  * from pyaibox.utils.colormaps import cmaps
  * from pyaibox.base.mathops import nextpow2
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_cm);
   __Pyx_GIVEREF(__pyx_n_s_cm);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_cm);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_cm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_cm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cm, __pyx_t_2) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cm, __pyx_t_2) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":31
+  /* "pyaibox/utils/colors.py":32
  * import matplotlib.colors as mcolors
  * from matplotlib import cm
  * from pyaibox.utils.colormaps import cmaps             # <<<<<<<<<<<<<<
  * from pyaibox.base.mathops import nextpow2
  * from pyaibox.misc.transform import scale
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_cmaps);
   __Pyx_GIVEREF(__pyx_n_s_cmaps);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_cmaps);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_utils_colormaps, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_utils_colormaps, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_cmaps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_cmaps); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cmaps, __pyx_t_1) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cmaps, __pyx_t_1) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":32
+  /* "pyaibox/utils/colors.py":33
  * from matplotlib import cm
  * from pyaibox.utils.colormaps import cmaps
  * from pyaibox.base.mathops import nextpow2             # <<<<<<<<<<<<<<
  * from pyaibox.misc.transform import scale
  * 
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_nextpow2);
   __Pyx_GIVEREF(__pyx_n_s_nextpow2);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_nextpow2);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pyaibox_base_mathops, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pyaibox_base_mathops, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_nextpow2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_nextpow2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nextpow2, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_nextpow2, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":33
+  /* "pyaibox/utils/colors.py":34
  * from pyaibox.utils.colormaps import cmaps
  * from pyaibox.base.mathops import nextpow2
  * from pyaibox.misc.transform import scale             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_scale);
   __Pyx_GIVEREF(__pyx_n_s_scale);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_scale);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_misc_transform, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_misc_transform, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_scale); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_scale, __pyx_t_1) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_scale, __pyx_t_1) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":39
+  /* "pyaibox/utils/colors.py":40
  * 
  * DISTINCT_COLORS_HEX = {
  *     'red': '#e6194B', 'green': '#3cb44b', 'yellow': '#ffe119', 'blue': '#4363d8',             # <<<<<<<<<<<<<<
  *     'orange': '#f58231', 'purple': '#911eb4', 'cyan': '#42d4f4', 'magenta': '#f032e6',
  *     'lime': '#bfef45', 'pink': '#fabed4', 'teal': '#469990', 'lavende': '#dcbeff',
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_kp_u_e6194B) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_kp_u_3cb44b) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_kp_u_ffe119) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_kp_u_4363d8) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_kp_u_f58231) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_kp_u_911eb4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_kp_u_42d4f4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_kp_u_f032e6) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_kp_u_bfef45) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_kp_u_fabed4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_kp_u_469990) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_kp_u_dcbeff) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_kp_u_9A6324) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_kp_u_fffac8) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_kp_u_800000) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_kp_u_aaffc3) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_kp_u_808000) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_kp_u_ffd8b1) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_kp_u_000075) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_kp_u_a9a9a9) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_kp_u_ffffff) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_kp_u_000000) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_HEX, __pyx_t_2) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_kp_u_e6194B) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_kp_u_3cb44b) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_kp_u_ffe119) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_kp_u_4363d8) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_kp_u_f58231) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_kp_u_911eb4) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_kp_u_42d4f4) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_kp_u_f032e6) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_kp_u_bfef45) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_kp_u_fabed4) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_kp_u_469990) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_kp_u_dcbeff) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_kp_u_9A6324) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_kp_u_fffac8) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_kp_u_800000) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_kp_u_aaffc3) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_kp_u_808000) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_kp_u_ffd8b1) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_kp_u_000075) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_kp_u_a9a9a9) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_kp_u_ffffff) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_kp_u_000000) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_HEX, __pyx_t_2) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":48
+  /* "pyaibox/utils/colors.py":49
  * 
  * DISTINCT_COLORS_RGB = {
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),             # <<<<<<<<<<<<<<
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_tuple__11) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_tuple__12) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_tuple__13) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_tuple__14) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_tuple__11) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_tuple__12) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_tuple__13) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_tuple__14) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":49
+  /* "pyaibox/utils/colors.py":50
  * DISTINCT_COLORS_RGB = {
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),             # <<<<<<<<<<<<<<
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_tuple__15) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_tuple__16) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_tuple__17) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_tuple__18) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_tuple__15) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_tuple__16) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_tuple__17) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_tuple__18) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":50
+  /* "pyaibox/utils/colors.py":51
  *     'red': (230, 25, 75), 'green': (60, 180, 75), 'yellow': (255, 225, 25), 'blue': (0, 130, 200),
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),             # <<<<<<<<<<<<<<
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_tuple__19) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_tuple__20) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_tuple__21) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_tuple__22) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_tuple__19) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_tuple__20) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_tuple__21) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_tuple__22) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":51
+  /* "pyaibox/utils/colors.py":52
  *     'orange': (245, 130, 48), 'purple': (145, 30, 180), 'cyan': (70, 240, 240), 'magenta': (240, 50, 230),
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),             # <<<<<<<<<<<<<<
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  *     'white': (255, 255, 255), 'black': (0, 0, 0)
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_tuple__23) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_tuple__24) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_tuple__25) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_tuple__26) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_tuple__23) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_tuple__24) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_tuple__25) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_tuple__26) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":52
+  /* "pyaibox/utils/colors.py":53
  *     'lime': (210, 245, 60), 'pink': (250, 190, 212), 'teal': (0, 128, 128), 'lavende': (220, 190, 255),
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),             # <<<<<<<<<<<<<<
  *     'white': (255, 255, 255), 'black': (0, 0, 0)
  * }
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_tuple__27) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_tuple__28) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_tuple__29) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_tuple__30) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_tuple__27) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_tuple__28) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_tuple__29) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_tuple__30) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":53
+  /* "pyaibox/utils/colors.py":54
  *     'brown': (170, 110, 40), 'beige': (255, 250, 200), 'maroon': (128, 0, 0), 'mint': (170, 255, 195),
  *     'olive': (128, 128, 0), 'apricot': (255, 215, 180), 'navy': (0, 0, 128), 'grey': (128, 128, 128),
  *     'white': (255, 255, 255), 'black': (0, 0, 0)             # <<<<<<<<<<<<<<
  * }
  * 
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_tuple__31) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_tuple__32) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_RGB, __pyx_t_2) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_tuple__31) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_tuple__32) < 0) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_RGB, __pyx_t_2) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":57
+  /* "pyaibox/utils/colors.py":58
  * 
  * DISTINCT_COLORS_CMYK = {
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),             # <<<<<<<<<<<<<<
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_tuple__33) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_tuple__34) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_tuple__35) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_tuple__36) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_tuple__33) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_tuple__34) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_tuple__35) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_tuple__36) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":58
+  /* "pyaibox/utils/colors.py":59
  * DISTINCT_COLORS_CMYK = {
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),             # <<<<<<<<<<<<<<
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_tuple__37) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_tuple__38) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_tuple__39) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_tuple__40) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_tuple__37) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_tuple__38) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_tuple__39) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_tuple__40) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":59
+  /* "pyaibox/utils/colors.py":60
  *     'red': (0, 100, 66, 0), 'green': (75, 0, 100, 0), 'yellow': (0, 25, 95, 0), 'blue': (100, 35, 0, 0),
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),             # <<<<<<<<<<<<<<
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_tuple__41) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_tuple__42) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_tuple__43) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_tuple__44) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_tuple__41) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_tuple__42) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_tuple__43) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_tuple__44) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":60
+  /* "pyaibox/utils/colors.py":61
  *     'orange': (0, 60, 92, 0), 'purple': (35, 70, 0, 0), 'cyan': (70, 0, 0, 0), 'magenta': (0, 100, 0, 0),
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),             # <<<<<<<<<<<<<<
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_tuple__45) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_tuple__46) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_tuple__47) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_tuple__48) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_tuple__45) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_tuple__46) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_tuple__47) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_tuple__48) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":61
+  /* "pyaibox/utils/colors.py":62
  *     'lime': (35, 0, 100, 0), 'pink': (0, 24, 100, 2), 'teal': (100, 0, 0, 50), 'lavende': (14, 25, 100, 0),
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),             # <<<<<<<<<<<<<<
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)
  * }
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_tuple__49) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_tuple__50) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_tuple__51) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_tuple__52) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_tuple__49) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_tuple__50) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_tuple__51) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_tuple__52) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
 
-  /* "pyaibox/utils/colors.py":62
+  /* "pyaibox/utils/colors.py":63
  *     'brown': (0, 35, 75, 33), 'beige': (5, 10, 30, 0), 'maroon': (0, 100, 100, 50), 'mint': (33, 0, 23, 0),
  *     'olive': (0, 0, 100, 50), 'apricot': (0, 15, 30, 0), 'navy': (100, 100, 0, 50), 'grey': (0, 0, 0, 50),
  *     'white': (0, 0, 0, 0), 'black': (0, 0, 0, 100)             # <<<<<<<<<<<<<<
  * }
  * 
  */
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_tuple__53) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_tuple__54) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_CMYK, __pyx_t_2) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_tuple__53) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_tuple__54) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_CMYK, __pyx_t_2) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":66
+  /* "pyaibox/utils/colors.py":67
  * 
  * DISTINCT_COLORS_RGB_NORM = {
  *     'red': (230 / 255, 25 / 255, 75 / 255), 'green': (60 / 255, 180 / 255, 75 / 255), 'yellow': (255 / 255, 225 / 255, 25 / 255), 'blue': (0 / 255, 130 / 255, 200 / 255),             # <<<<<<<<<<<<<<
  *     'orange': (245 / 255, 130 / 255, 48 / 255), 'purple': (145 / 255, 30 / 255, 180 / 255), 'cyan': (70 / 255, 240 / 255, 240 / 255), 'magenta': (240 / 255, 50 / 255, 230 / 255),
  *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),
  */
-  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyDict_NewPresized(22); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = PyFloat_FromDouble((230.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((230.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((25.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((25.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((75.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((75.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3816,15 +3816,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_red, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((60.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((60.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((75.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((75.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -3835,15 +3835,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_green, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((225.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((225.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((25.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((25.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3854,15 +3854,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_yellow, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((130.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((130.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((200.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((200.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -3873,23 +3873,23 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_blue, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":67
+  /* "pyaibox/utils/colors.py":68
  * DISTINCT_COLORS_RGB_NORM = {
  *     'red': (230 / 255, 25 / 255, 75 / 255), 'green': (60 / 255, 180 / 255, 75 / 255), 'yellow': (255 / 255, 225 / 255, 25 / 255), 'blue': (0 / 255, 130 / 255, 200 / 255),
  *     'orange': (245 / 255, 130 / 255, 48 / 255), 'purple': (145 / 255, 30 / 255, 180 / 255), 'cyan': (70 / 255, 240 / 255, 240 / 255), 'magenta': (240 / 255, 50 / 255, 230 / 255),             # <<<<<<<<<<<<<<
  *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),
  *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),
  */
-  __pyx_t_1 = PyFloat_FromDouble((245.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((245.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((130.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((130.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((48.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((48.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3900,15 +3900,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_orange, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((145.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((145.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((30.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((30.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -3919,15 +3919,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_purple, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble((70.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((70.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3938,15 +3938,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_cyan, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((240.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((50.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((50.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((230.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((230.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -3957,23 +3957,23 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_magenta, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":68
+  /* "pyaibox/utils/colors.py":69
  *     'red': (230 / 255, 25 / 255, 75 / 255), 'green': (60 / 255, 180 / 255, 75 / 255), 'yellow': (255 / 255, 225 / 255, 25 / 255), 'blue': (0 / 255, 130 / 255, 200 / 255),
  *     'orange': (245 / 255, 130 / 255, 48 / 255), 'purple': (145 / 255, 30 / 255, 180 / 255), 'cyan': (70 / 255, 240 / 255, 240 / 255), 'magenta': (240 / 255, 50 / 255, 230 / 255),
  *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),             # <<<<<<<<<<<<<<
  *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),
  *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),
  */
-  __pyx_t_1 = PyFloat_FromDouble((210.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((210.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((245.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((245.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((60.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((60.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -3984,15 +3984,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lime, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((250.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((250.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((190.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((190.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((212.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((212.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -4003,15 +4003,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_pink, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -4022,15 +4022,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_teal, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((220.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((220.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((190.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((190.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -4041,23 +4041,23 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_lavende, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":69
+  /* "pyaibox/utils/colors.py":70
  *     'orange': (245 / 255, 130 / 255, 48 / 255), 'purple': (145 / 255, 30 / 255, 180 / 255), 'cyan': (70 / 255, 240 / 255, 240 / 255), 'magenta': (240 / 255, 50 / 255, 230 / 255),
  *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),
  *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),             # <<<<<<<<<<<<<<
  *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),
  *     'white': (255 / 255, 255 / 255, 255 / 255), 'black': (0 / 255, 0 / 255, 0 / 255)
  */
-  __pyx_t_1 = PyFloat_FromDouble((170.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((170.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((110.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((110.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((40.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((40.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -4068,15 +4068,15 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_brown, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((250.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((250.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((200.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((200.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -4087,57 +4087,11 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_beige, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
-  __Pyx_GIVEREF(__pyx_t_3);
-  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3);
-  __Pyx_GIVEREF(__pyx_t_4);
-  PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_t_4);
-  __pyx_t_1 = 0;
-  __pyx_t_3 = 0;
-  __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((170.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((195.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GIVEREF(__pyx_t_5);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_4);
-  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_4);
-  __Pyx_GIVEREF(__pyx_t_3);
-  PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_t_3);
-  __pyx_t_5 = 0;
-  __pyx_t_4 = 0;
-  __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-
-  /* "pyaibox/utils/colors.py":70
- *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),
- *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),
- *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),             # <<<<<<<<<<<<<<
- *     'white': (255 / 255, 255 / 255, 255 / 255), 'black': (0 / 255, 0 / 255, 0 / 255)
- * }
- */
   __pyx_t_1 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
@@ -4152,13 +4106,13 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_maroon, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((170.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((215.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((195.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4171,59 +4125,21 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_1);
-  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
-  __Pyx_GIVEREF(__pyx_t_3);
-  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3);
-  __Pyx_GIVEREF(__pyx_t_4);
-  PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_t_4);
-  __pyx_t_1 = 0;
-  __pyx_t_3 = 0;
-  __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
-  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
-  __Pyx_GOTREF(__pyx_t_1);
-  __Pyx_GIVEREF(__pyx_t_5);
-  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
-  __Pyx_GIVEREF(__pyx_t_4);
-  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_4);
-  __Pyx_GIVEREF(__pyx_t_3);
-  PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_t_3);
-  __pyx_t_5 = 0;
-  __pyx_t_4 = 0;
-  __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_mint, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
   /* "pyaibox/utils/colors.py":71
+ *     'lime': (210 / 255, 245 / 255, 60 / 255), 'pink': (250 / 255, 190 / 255, 212 / 255), 'teal': (0 / 255, 128 / 255, 128 / 255), 'lavende': (220 / 255, 190 / 255, 255 / 255),
  *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),
- *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),
- *     'white': (255 / 255, 255 / 255, 255 / 255), 'black': (0 / 255, 0 / 255, 0 / 255)             # <<<<<<<<<<<<<<
+ *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),             # <<<<<<<<<<<<<<
+ *     'white': (255 / 255, 255 / 255, 255 / 255), 'black': (0 / 255, 0 / 255, 0 / 255)
  * }
- * 
  */
-  __pyx_t_1 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
@@ -4236,13 +4152,13 @@ if (!__Pyx_RefNanny) {
   __pyx_t_1 = 0;
   __pyx_t_3 = 0;
   __pyx_t_4 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_t_5) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_olive, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_5 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_4 = PyFloat_FromDouble((215.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_3 = PyFloat_FromDouble((180.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
@@ -4255,80 +4171,164 @@ if (!__Pyx_RefNanny) {
   __pyx_t_5 = 0;
   __pyx_t_4 = 0;
   __pyx_t_3 = 0;
-  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_t_1) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_apricot, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_RGB_NORM, __pyx_t_2) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_1 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_3);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_t_4);
+  __pyx_t_1 = 0;
+  __pyx_t_3 = 0;
+  __pyx_t_4 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_navy, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_3 = PyFloat_FromDouble((128.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_5);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_3);
+  PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_t_3);
+  __pyx_t_5 = 0;
+  __pyx_t_4 = 0;
+  __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_grey, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+
+  /* "pyaibox/utils/colors.py":72
+ *     'brown': (170 / 255, 110 / 255, 40 / 255), 'beige': (255 / 255, 250 / 255, 200 / 255), 'maroon': (128 / 255, 0 / 255, 0 / 255), 'mint': (170 / 255, 255 / 255, 195 / 255),
+ *     'olive': (128 / 255, 128 / 255, 0 / 255), 'apricot': (255 / 255, 215 / 255, 180 / 255), 'navy': (0 / 255, 0 / 255, 128 / 255), 'grey': (128 / 255, 128 / 255, 128 / 255),
+ *     'white': (255 / 255, 255 / 255, 255 / 255), 'black': (0 / 255, 0 / 255, 0 / 255)             # <<<<<<<<<<<<<<
+ * }
+ * 
+ */
+  __pyx_t_1 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __pyx_t_3 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_4 = PyFloat_FromDouble((255.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __Pyx_GIVEREF(__pyx_t_1);
+  PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_3);
+  PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_3);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_t_4);
+  __pyx_t_1 = 0;
+  __pyx_t_3 = 0;
+  __pyx_t_4 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_white, __pyx_t_5) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+  __pyx_t_5 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_5);
+  __pyx_t_4 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_4);
+  __pyx_t_3 = PyFloat_FromDouble((0.0 / 255.0)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_3);
+  __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __Pyx_GOTREF(__pyx_t_1);
+  __Pyx_GIVEREF(__pyx_t_5);
+  PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
+  __Pyx_GIVEREF(__pyx_t_4);
+  PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_4);
+  __Pyx_GIVEREF(__pyx_t_3);
+  PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_t_3);
+  __pyx_t_5 = 0;
+  __pyx_t_4 = 0;
+  __pyx_t_3 = 0;
+  if (PyDict_SetItem(__pyx_t_2, __pyx_n_u_black, __pyx_t_1) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_DISTINCT_COLORS_RGB_NORM, __pyx_t_2) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":77
+  /* "pyaibox/utils/colors.py":78
  * # https://matplotlib.org/stable/gallery/color/named_colors.html
  * 
  * BASE_COLORS = mcolors.BASE_COLORS             # <<<<<<<<<<<<<<
  * TABLEAU_COLORS = mcolors.TABLEAU_COLORS
  * CSS4_COLORS = mcolors.CSS4_COLORS
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_BASE_COLORS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 77, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_BASE_COLORS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_BASE_COLORS, __pyx_t_1) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_BASE_COLORS, __pyx_t_1) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":78
+  /* "pyaibox/utils/colors.py":79
  * 
  * BASE_COLORS = mcolors.BASE_COLORS
  * TABLEAU_COLORS = mcolors.TABLEAU_COLORS             # <<<<<<<<<<<<<<
  * CSS4_COLORS = mcolors.CSS4_COLORS
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_TABLEAU_COLORS); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_TABLEAU_COLORS); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_TABLEAU_COLORS, __pyx_t_2) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_TABLEAU_COLORS, __pyx_t_2) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/colors.py":79
+  /* "pyaibox/utils/colors.py":80
  * BASE_COLORS = mcolors.BASE_COLORS
  * TABLEAU_COLORS = mcolors.TABLEAU_COLORS
  * CSS4_COLORS = mcolors.CSS4_COLORS             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mcolors); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CSS4_COLORS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 79, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_CSS4_COLORS); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CSS4_COLORS, __pyx_t_1) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_CSS4_COLORS, __pyx_t_1) < 0) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":82
+  /* "pyaibox/utils/colors.py":83
  * 
  * 
  * def rgb2gray(rgb, fmt='chnllast'):             # <<<<<<<<<<<<<<
  *     r"""Converts RGB image to GRAY image
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_6colors_1rgb2gray, 0, __pyx_n_s_rgb2gray, NULL, __pyx_n_s_pyaibox_utils_colors, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_6colors_1rgb2gray, 0, __pyx_n_s_rgb2gray, NULL, __pyx_n_s_pyaibox_utils_colors, __pyx_d, ((PyObject *)__pyx_codeobj__56)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__57);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_rgb2gray, __pyx_t_1) < 0) __PYX_ERR(0, 82, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_rgb2gray, __pyx_t_1) < 0) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":113
+  /* "pyaibox/utils/colors.py":114
  * 
  * 
  * def gray2rgb(gray, cmap, drange=[0, 255], fmtstr=False):             # <<<<<<<<<<<<<<
  *     r"""Converts gray image values to rgb image
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_6colors_3gray2rgb, 0, __pyx_n_s_gray2rgb, NULL, __pyx_n_s_pyaibox_utils_colors, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_6colors_3gray2rgb, 0, __pyx_n_s_gray2rgb, NULL, __pyx_n_s_pyaibox_utils_colors, __pyx_d, ((PyObject *)__pyx_codeobj__59)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_1, sizeof(__pyx_defaults), 1)) __PYX_ERR(0, 113, __pyx_L1_error)
-  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (!__Pyx_CyFunction_InitDefaults(__pyx_t_1, sizeof(__pyx_defaults), 1)) __PYX_ERR(0, 114, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
@@ -4340,250 +4340,250 @@ if (!__Pyx_RefNanny) {
   __Pyx_GIVEREF(__pyx_t_2);
   __pyx_t_2 = 0;
   __Pyx_CyFunction_SetDefaultsGetter(__pyx_t_1, __pyx_pf_7pyaibox_5utils_6colors_4__defaults__);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gray2rgb, __pyx_t_1) < 0) __PYX_ERR(0, 113, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_gray2rgb, __pyx_t_1) < 0) __PYX_ERR(0, 114, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/colors.py":182
+  /* "pyaibox/utils/colors.py":183
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     A = np.random.randn(5, 4, 3)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 182, __pyx_L1_error)
+  __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 183, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_6) {
 
-    /* "pyaibox/utils/colors.py":184
+    /* "pyaibox/utils/colors.py":185
  * if __name__ == '__main__':
  * 
  *     A = np.random.randn(5, 4, 3)             # <<<<<<<<<<<<<<
  *     print(A)
  *     print(rgb2gray(A, fmt='chnlfirst'))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__60, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 184, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__60, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_A, __pyx_t_2) < 0) __PYX_ERR(0, 184, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_A, __pyx_t_2) < 0) __PYX_ERR(0, 185, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/colors.py":185
+    /* "pyaibox/utils/colors.py":186
  * 
  *     A = np.random.randn(5, 4, 3)
  *     print(A)             # <<<<<<<<<<<<<<
  *     print(rgb2gray(A, fmt='chnlfirst'))
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_A); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_A); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 185, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":186
+    /* "pyaibox/utils/colors.py":187
  *     A = np.random.randn(5, 4, 3)
  *     print(A)
  *     print(rgb2gray(A, fmt='chnlfirst'))             # <<<<<<<<<<<<<<
  * 
  *     A = np.random.randn(3, 5, 4)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb2gray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb2gray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_A); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_A); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_fmt, __pyx_n_u_chnlfirst) < 0) __PYX_ERR(0, 186, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 186, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_fmt, __pyx_n_u_chnlfirst) < 0) __PYX_ERR(0, 187, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 186, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 187, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/colors.py":188
+    /* "pyaibox/utils/colors.py":189
  *     print(rgb2gray(A, fmt='chnlfirst'))
  * 
  *     A = np.random.randn(3, 5, 4)             # <<<<<<<<<<<<<<
  *     print(A)
  *     print(rgb2gray(A, fmt='chnllast'))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_randn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_randn); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__61, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__61, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_A, __pyx_t_4) < 0) __PYX_ERR(0, 188, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_A, __pyx_t_4) < 0) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":189
+    /* "pyaibox/utils/colors.py":190
  * 
  *     A = np.random.randn(3, 5, 4)
  *     print(A)             # <<<<<<<<<<<<<<
  *     print(rgb2gray(A, fmt='chnllast'))
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_A); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_A); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 189, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/colors.py":190
+    /* "pyaibox/utils/colors.py":191
  *     A = np.random.randn(3, 5, 4)
  *     print(A)
  *     print(rgb2gray(A, fmt='chnllast'))             # <<<<<<<<<<<<<<
  * 
  *     import pyaibox as pb
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rgb2gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_rgb2gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_A); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_A); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_fmt, __pyx_n_u_chnllast) < 0) __PYX_ERR(0, 190, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 190, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_fmt, __pyx_n_u_chnllast) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 190, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":192
+    /* "pyaibox/utils/colors.py":193
  *     print(rgb2gray(A, fmt='chnllast'))
  * 
  *     import pyaibox as pb             # <<<<<<<<<<<<<<
  *     import matplotlib.pyplot as plt
  *     import numpy as np
  */
-    __pyx_t_4 = __Pyx_Import(__pyx_n_s_pyaibox, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_Import(__pyx_n_s_pyaibox, 0, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_pb, __pyx_t_4) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_pb, __pyx_t_4) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":193
+    /* "pyaibox/utils/colors.py":194
  * 
  *     import pyaibox as pb
  *     import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
  *     import numpy as np
  * 
  */
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 193, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_n_s__10);
     __Pyx_GIVEREF(__pyx_n_s__10);
     PyList_SET_ITEM(__pyx_t_4, 0, __pyx_n_s__10);
-    __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_4, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 193, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_4, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_1) < 0) __PYX_ERR(0, 193, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_1) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":194
+    /* "pyaibox/utils/colors.py":195
  *     import pyaibox as pb
  *     import matplotlib.pyplot as plt
  *     import numpy as np             # <<<<<<<<<<<<<<
  * 
  *     cmap = 'jet'
  */
-    __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 194, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 195, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 194, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 195, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":196
+    /* "pyaibox/utils/colors.py":197
  *     import numpy as np
  * 
  *     cmap = 'jet'             # <<<<<<<<<<<<<<
  *     # cmap = 'hsv'
  *     # cmap = 'hot'
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_cmap, __pyx_n_u_jet) < 0) __PYX_ERR(0, 196, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_cmap, __pyx_n_u_jet) < 0) __PYX_ERR(0, 197, __pyx_L1_error)
 
-    /* "pyaibox/utils/colors.py":200
+    /* "pyaibox/utils/colors.py":201
  *     # cmap = 'hot'
  *     # cmap = 'parula'
  *     gray = pb.imread('../../data/images/LenaGRAY256.png')             # <<<<<<<<<<<<<<
  *     print(gray.shape)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_imread); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 200, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_imread); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__62, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 200, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__62, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_gray, __pyx_t_1) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_gray, __pyx_t_1) < 0) __PYX_ERR(0, 201, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":201
+    /* "pyaibox/utils/colors.py":202
  *     # cmap = 'parula'
  *     gray = pb.imread('../../data/images/LenaGRAY256.png')
  *     print(gray.shape)             # <<<<<<<<<<<<<<
  * 
  *     rgb = gray2rgb(gray, cmap, [0, 1], False)  # rgb --> double, [0, 1]
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gray); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 202, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 201, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 202, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":203
+    /* "pyaibox/utils/colors.py":204
  *     print(gray.shape)
  * 
  *     rgb = gray2rgb(gray, cmap, [0, 1], False)  # rgb --> double, [0, 1]             # <<<<<<<<<<<<<<
  *     # rgb = gray2rgb(gray, cmap, [0, 255], False)  # rgb --> double, [0., 255.]
  *     # rgb = gray2rgb(gray, cmap, [0, 255], True)  # rgb --> uint8, [0, 255]
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gray2rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_gray2rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_gray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_gray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_cmap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_cmap); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -4591,7 +4591,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyList_SET_ITEM(__pyx_t_2, 1, __pyx_int_1);
-    __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -4605,53 +4605,53 @@ if (!__Pyx_RefNanny) {
     __pyx_t_4 = 0;
     __pyx_t_3 = 0;
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 203, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_rgb, __pyx_t_2) < 0) __PYX_ERR(0, 203, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_rgb, __pyx_t_2) < 0) __PYX_ERR(0, 204, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/colors.py":207
+    /* "pyaibox/utils/colors.py":208
  *     # rgb = gray2rgb(gray, cmap, [0, 255], True)  # rgb --> uint8, [0, 255]
  * 
  *     print(gray.shape, np.min(gray), np.max(gray), gray.dtype)             # <<<<<<<<<<<<<<
  *     print(rgb.shape, np.min(rgb), np.max(rgb), rgb.dtype)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_shape); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_shape); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_min); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_min); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_max); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_max); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_gray); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_dtype); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
@@ -4665,51 +4665,51 @@ if (!__Pyx_RefNanny) {
     __pyx_t_3 = 0;
     __pyx_t_4 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 207, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/colors.py":208
+    /* "pyaibox/utils/colors.py":209
  * 
  *     print(gray.shape, np.min(gray), np.max(gray), gray.dtype)
  *     print(rgb.shape, np.min(rgb), np.max(rgb), rgb.dtype)             # <<<<<<<<<<<<<<
  * 
  *     plt.figure()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_shape); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_min); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_min); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_max); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_rgb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dtype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_dtype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -4723,145 +4723,145 @@ if (!__Pyx_RefNanny) {
     __pyx_t_3 = 0;
     __pyx_t_5 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 208, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 209, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":210
+    /* "pyaibox/utils/colors.py":211
  *     print(rgb.shape, np.min(rgb), np.max(rgb), rgb.dtype)
  * 
  *     plt.figure()             # <<<<<<<<<<<<<<
  *     plt.subplot(121)
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 210, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 210, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 210, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":211
+    /* "pyaibox/utils/colors.py":212
  * 
  *     plt.figure()
  *     plt.subplot(121)             # <<<<<<<<<<<<<<
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  *     plt.subplot(122)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_subplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_subplot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__63, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__63, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/colors.py":212
+    /* "pyaibox/utils/colors.py":213
  *     plt.figure()
  *     plt.subplot(121)
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)             # <<<<<<<<<<<<<<
  *     plt.subplot(122)
  *     plt.imshow(rgb)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_imshow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_imshow); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_gray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_gray); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_cmap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_cmap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_parula, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_6 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_parula, Py_EQ)); if (unlikely(__pyx_t_6 < 0)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_6) {
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 212, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 213, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parula); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 212, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_parula); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 213, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_3 = __pyx_t_7;
       __pyx_t_7 = 0;
     } else {
-      __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_cmap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 212, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_cmap); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 213, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __pyx_t_3 = __pyx_t_7;
       __pyx_t_7 = 0;
     }
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cmap, __pyx_t_3) < 0) __PYX_ERR(0, 212, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_cmap, __pyx_t_3) < 0) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 212, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/utils/colors.py":213
+    /* "pyaibox/utils/colors.py":214
  *     plt.subplot(121)
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  *     plt.subplot(122)             # <<<<<<<<<<<<<<
  *     plt.imshow(rgb)
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_subplot); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 213, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_subplot); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 214, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__64, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 213, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__64, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/utils/colors.py":214
+    /* "pyaibox/utils/colors.py":215
  *     plt.imshow(gray, cmap=pb.parula if cmap == 'parula' else cmap)
  *     plt.subplot(122)
  *     plt.imshow(rgb)             # <<<<<<<<<<<<<<
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_imshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_imshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rgb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_rgb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/colors.py":215
+    /* "pyaibox/utils/colors.py":216
  *     plt.subplot(122)
  *     plt.imshow(rgb)
  *     plt.show()             # <<<<<<<<<<<<<<
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 215, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 216, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/colors.py":182
+    /* "pyaibox/utils/colors.py":183
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

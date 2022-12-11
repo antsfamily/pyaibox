@@ -1416,7 +1416,7 @@ static const char __pyx_k_skimresize[] = "skimresize";
 static const char __pyx_k_output_shape[] = "output_shape";
 static const char __pyx_k_check_contrast[] = "check_contrast";
 static const char __pyx_k_preserve_range[] = "preserve_range";
-static const char __pyx_k_imresize_line_53[] = "imresize (line 53)";
+static const char __pyx_k_imresize_line_54[] = "imresize (line 54)";
 static const char __pyx_k_skimage_transform[] = "skimage.transform";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
 static const char __pyx_k_pyaibox_utils_image[] = "pyaibox.utils.image";
@@ -1441,7 +1441,7 @@ static PyObject *__pyx_n_s_imhist;
 static PyObject *__pyx_n_s_import;
 static PyObject *__pyx_n_s_imread;
 static PyObject *__pyx_n_s_imresize;
-static PyObject *__pyx_kp_u_imresize_line_53;
+static PyObject *__pyx_kp_u_imresize_line_54;
 static PyObject *__pyx_n_s_imsave;
 static PyObject *__pyx_n_s_interp;
 static PyObject *__pyx_n_s_main;
@@ -1492,7 +1492,7 @@ static PyObject *__pyx_codeobj__7;
 static PyObject *__pyx_codeobj__10;
 /* Late includes */
 
-/* "pyaibox/utils/image.py":35
+/* "pyaibox/utils/image.py":36
  * 
  * 
  * def imread(imgfile):             # <<<<<<<<<<<<<<
@@ -1525,7 +1525,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_imread(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("imread", 0);
 
-  /* "pyaibox/utils/image.py":36
+  /* "pyaibox/utils/image.py":37
  * 
  * def imread(imgfile):
  *     return skimread(imgfile)             # <<<<<<<<<<<<<<
@@ -1533,7 +1533,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_imread(CYTHON_UNUSED PyObject *
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_skimread); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_skimread); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_3 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_2))) {
@@ -1547,14 +1547,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_imread(CYTHON_UNUSED PyObject *
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_3, __pyx_v_imgfile) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_v_imgfile);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/image.py":35
+  /* "pyaibox/utils/image.py":36
  * 
  * 
  * def imread(imgfile):             # <<<<<<<<<<<<<<
@@ -1575,7 +1575,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_imread(CYTHON_UNUSED PyObject *
   return __pyx_r;
 }
 
-/* "pyaibox/utils/image.py":39
+/* "pyaibox/utils/image.py":40
  * 
  * 
  * def imsave(outfile, img):             # <<<<<<<<<<<<<<
@@ -1618,11 +1618,11 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_3imsave(PyObject *__pyx_self, P
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_img)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("imsave", 1, 2, 2, 1); __PYX_ERR(0, 39, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("imsave", 1, 2, 2, 1); __PYX_ERR(0, 40, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "imsave") < 0)) __PYX_ERR(0, 39, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "imsave") < 0)) __PYX_ERR(0, 40, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -1635,7 +1635,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_3imsave(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("imsave", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 39, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("imsave", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 40, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.image.imsave", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1660,7 +1660,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_2imsave(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("imsave", 0);
 
-  /* "pyaibox/utils/image.py":40
+  /* "pyaibox/utils/image.py":41
  * 
  * def imsave(outfile, img):
  *     return skimsave(outfile, img, check_contrast=False)             # <<<<<<<<<<<<<<
@@ -1668,9 +1668,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_2imsave(CYTHON_UNUSED PyObject 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_skimsave); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_skimsave); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_outfile);
   __Pyx_GIVEREF(__pyx_v_outfile);
@@ -1678,10 +1678,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_2imsave(CYTHON_UNUSED PyObject 
   __Pyx_INCREF(__pyx_v_img);
   __Pyx_GIVEREF(__pyx_v_img);
   PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_v_img);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 40, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_check_contrast, Py_False) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_check_contrast, Py_False) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -1690,7 +1690,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_2imsave(CYTHON_UNUSED PyObject 
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/image.py":39
+  /* "pyaibox/utils/image.py":40
  * 
  * 
  * def imsave(outfile, img):             # <<<<<<<<<<<<<<
@@ -1712,7 +1712,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_2imsave(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "pyaibox/utils/image.py":43
+/* "pyaibox/utils/image.py":44
  * 
  * 
  * def histeq(img, nbins=256):             # <<<<<<<<<<<<<<
@@ -1760,7 +1760,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_5histeq(PyObject *__pyx_self, P
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "histeq") < 0)) __PYX_ERR(0, 43, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "histeq") < 0)) __PYX_ERR(0, 44, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1776,7 +1776,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_5histeq(PyObject *__pyx_self, P
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("histeq", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 43, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("histeq", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 44, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.image.histeq", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1810,31 +1810,31 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   __Pyx_RefNannySetupContext("histeq", 0);
   __Pyx_INCREF(__pyx_v_img);
 
-  /* "pyaibox/utils/image.py":44
+  /* "pyaibox/utils/image.py":45
  * 
  * def histeq(img, nbins=256):
  *     dshape = img.shape             # <<<<<<<<<<<<<<
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)
  *     cdf = imhist.cumsum()
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_shape); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_dshape = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/image.py":45
+  /* "pyaibox/utils/image.py":46
  * def histeq(img, nbins=256):
  *     dshape = img.shape
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)             # <<<<<<<<<<<<<<
  *     cdf = imhist.cumsum()
  *     cdf = 255.0 * cdf / cdf[-1]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_histogram); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_histogram); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_flatten); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_flatten); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -1848,10 +1848,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -1859,10 +1859,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   __Pyx_GIVEREF(__pyx_v_nbins);
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_nbins);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_normed, Py_True) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_normed, Py_True) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -1873,7 +1873,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 45, __pyx_L1_error)
+      __PYX_ERR(0, 46, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -1886,15 +1886,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
     __Pyx_INCREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_t_3);
     #else
-    __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
+    __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 45, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_2 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
+    __pyx_t_2 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_5 = Py_TYPE(__pyx_t_2)->tp_iternext;
@@ -1902,7 +1902,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
     __Pyx_GOTREF(__pyx_t_1);
     index = 1; __pyx_t_3 = __pyx_t_5(__pyx_t_2); if (unlikely(!__pyx_t_3)) goto __pyx_L3_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_3);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_2), 2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_2), 2) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
     __pyx_t_5 = NULL;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     goto __pyx_L4_unpacking_done;
@@ -1910,7 +1910,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_5 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 45, __pyx_L1_error)
+    __PYX_ERR(0, 46, __pyx_L1_error)
     __pyx_L4_unpacking_done:;
   }
   __pyx_v_imhist = __pyx_t_1;
@@ -1918,14 +1918,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   __pyx_v_bins = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/utils/image.py":46
+  /* "pyaibox/utils/image.py":47
  *     dshape = img.shape
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)
  *     cdf = imhist.cumsum()             # <<<<<<<<<<<<<<
  *     cdf = 255.0 * cdf / cdf[-1]
  *     #
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_imhist, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_imhist, __pyx_n_s_cumsum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_1 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -1939,43 +1939,43 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   }
   __pyx_t_4 = (__pyx_t_1) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_1) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_cdf = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/image.py":47
+  /* "pyaibox/utils/image.py":48
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)
  *     cdf = imhist.cumsum()
  *     cdf = 255.0 * cdf / cdf[-1]             # <<<<<<<<<<<<<<
  *     #
  *     img = np.interp(img.flatten(), bins[:-1], cdf)
  */
-  __pyx_t_4 = PyNumber_Multiply(__pyx_float_255_0, __pyx_v_cdf); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Multiply(__pyx_float_255_0, __pyx_v_cdf); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_cdf, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_GetItemInt(__pyx_v_cdf, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF_SET(__pyx_v_cdf, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/image.py":49
+  /* "pyaibox/utils/image.py":50
  *     cdf = 255.0 * cdf / cdf[-1]
  *     #
  *     img = np.interp(img.flatten(), bins[:-1], cdf)             # <<<<<<<<<<<<<<
  *     return img.reshape(dshape)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_interp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_interp); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_flatten); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_flatten); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -1989,10 +1989,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   }
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_bins, 0, -1L, NULL, NULL, &__pyx_slice_, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_bins, 0, -1L, NULL, NULL, &__pyx_slice_, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_6 = NULL;
   __pyx_t_7 = 0;
@@ -2009,7 +2009,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_3, __pyx_t_2, __pyx_v_cdf};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2019,7 +2019,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
     PyObject *__pyx_temp[4] = {__pyx_t_6, __pyx_t_3, __pyx_t_2, __pyx_v_cdf};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 3+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2027,7 +2027,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   } else
   #endif
   {
-    __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     if (__pyx_t_6) {
       __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -2041,7 +2041,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
     PyTuple_SET_ITEM(__pyx_t_8, 2+__pyx_t_7, __pyx_v_cdf);
     __pyx_t_3 = 0;
     __pyx_t_2 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   }
@@ -2049,7 +2049,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   __Pyx_DECREF_SET(__pyx_v_img, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/image.py":50
+  /* "pyaibox/utils/image.py":51
  *     #
  *     img = np.interp(img.flatten(), bins[:-1], cdf)
  *     return img.reshape(dshape)             # <<<<<<<<<<<<<<
@@ -2057,7 +2057,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_reshape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_img, __pyx_n_s_reshape); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_8 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -2071,14 +2071,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   }
   __pyx_t_1 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_8, __pyx_v_dshape) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_dshape);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_r = __pyx_t_1;
   __pyx_t_1 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/image.py":43
+  /* "pyaibox/utils/image.py":44
  * 
  * 
  * def histeq(img, nbins=256):             # <<<<<<<<<<<<<<
@@ -2107,7 +2107,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_4histeq(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "pyaibox/utils/image.py":53
+/* "pyaibox/utils/image.py":54
  * 
  * 
  * def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, clip=True, preserve_range=False):             # <<<<<<<<<<<<<<
@@ -2216,7 +2216,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_7imresize(PyObject *__pyx_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "imresize") < 0)) __PYX_ERR(0, 53, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "imresize") < 0)) __PYX_ERR(0, 54, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2250,7 +2250,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_5image_7imresize(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("imresize", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 53, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("imresize", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 54, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.image.imresize", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2278,45 +2278,45 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("imresize", 0);
 
-  /* "pyaibox/utils/image.py":110
+  /* "pyaibox/utils/image.py":111
  *     """
  * 
  *     oimage = skimresize(img, output_shape=oshape, order=1, mode=mode,             # <<<<<<<<<<<<<<
  *                         cval=cval, clip=clip, preserve_range=preserve_range)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_skimresize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_skimresize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_v_img);
   __Pyx_GIVEREF(__pyx_v_img);
   PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_v_img);
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_output_shape, __pyx_v_oshape) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_order, __pyx_int_1) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_mode, __pyx_v_mode) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_output_shape, __pyx_v_oshape) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_order, __pyx_int_1) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_mode, __pyx_v_mode) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
 
-  /* "pyaibox/utils/image.py":111
+  /* "pyaibox/utils/image.py":112
  * 
  *     oimage = skimresize(img, output_shape=oshape, order=1, mode=mode,
  *                         cval=cval, clip=clip, preserve_range=preserve_range)             # <<<<<<<<<<<<<<
  * 
  *     if odtype is not None:
  */
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_cval, __pyx_v_cval) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_clip, __pyx_v_clip) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_preserve_range, __pyx_v_preserve_range) < 0) __PYX_ERR(0, 110, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_cval, __pyx_v_cval) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_clip, __pyx_v_clip) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_preserve_range, __pyx_v_preserve_range) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
 
-  /* "pyaibox/utils/image.py":110
+  /* "pyaibox/utils/image.py":111
  *     """
  * 
  *     oimage = skimresize(img, output_shape=oshape, order=1, mode=mode,             # <<<<<<<<<<<<<<
  *                         cval=cval, clip=clip, preserve_range=preserve_range)
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -2324,7 +2324,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
   __pyx_v_oimage = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/image.py":113
+  /* "pyaibox/utils/image.py":114
  *                         cval=cval, clip=clip, preserve_range=preserve_range)
  * 
  *     if odtype is not None:             # <<<<<<<<<<<<<<
@@ -2335,14 +2335,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
   __pyx_t_6 = (__pyx_t_5 != 0);
   if (__pyx_t_6) {
 
-    /* "pyaibox/utils/image.py":114
+    /* "pyaibox/utils/image.py":115
  * 
  *     if odtype is not None:
  *         oimage = oimage.astype(odtype)             # <<<<<<<<<<<<<<
  * 
  *     return oimage
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oimage, __pyx_n_s_astype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_oimage, __pyx_n_s_astype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_2 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2356,13 +2356,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
     }
     __pyx_t_4 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_odtype) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_odtype);
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 114, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 115, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_oimage, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/image.py":113
+    /* "pyaibox/utils/image.py":114
  *                         cval=cval, clip=clip, preserve_range=preserve_range)
  * 
  *     if odtype is not None:             # <<<<<<<<<<<<<<
@@ -2371,7 +2371,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/image.py":116
+  /* "pyaibox/utils/image.py":117
  *         oimage = oimage.astype(odtype)
  * 
  *     return oimage             # <<<<<<<<<<<<<<
@@ -2381,7 +2381,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_5image_6imresize(CYTHON_UNUSED PyObjec
   __pyx_r = __pyx_v_oimage;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/image.py":53
+  /* "pyaibox/utils/image.py":54
  * 
  * 
  * def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, clip=True, preserve_range=False):             # <<<<<<<<<<<<<<
@@ -2469,7 +2469,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {&__pyx_n_s_import, __pyx_k_import, sizeof(__pyx_k_import), 0, 0, 1, 1},
   {&__pyx_n_s_imread, __pyx_k_imread, sizeof(__pyx_k_imread), 0, 0, 1, 1},
   {&__pyx_n_s_imresize, __pyx_k_imresize, sizeof(__pyx_k_imresize), 0, 0, 1, 1},
-  {&__pyx_kp_u_imresize_line_53, __pyx_k_imresize_line_53, sizeof(__pyx_k_imresize_line_53), 0, 1, 0, 0},
+  {&__pyx_kp_u_imresize_line_54, __pyx_k_imresize_line_54, sizeof(__pyx_k_imresize_line_54), 0, 1, 0, 0},
   {&__pyx_n_s_imsave, __pyx_k_imsave, sizeof(__pyx_k_imsave), 0, 0, 1, 1},
   {&__pyx_n_s_interp, __pyx_k_interp, sizeof(__pyx_k_interp), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
@@ -2508,68 +2508,68 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/utils/image.py":49
+  /* "pyaibox/utils/image.py":50
  *     cdf = 255.0 * cdf / cdf[-1]
  *     #
  *     img = np.interp(img.flatten(), bins[:-1], cdf)             # <<<<<<<<<<<<<<
  *     return img.reshape(dshape)
  * 
  */
-  __pyx_slice_ = PySlice_New(Py_None, __pyx_int_neg_1, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_slice_ = PySlice_New(Py_None, __pyx_int_neg_1, Py_None); if (unlikely(!__pyx_slice_)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice_);
   __Pyx_GIVEREF(__pyx_slice_);
 
-  /* "pyaibox/utils/image.py":35
+  /* "pyaibox/utils/image.py":36
  * 
  * 
  * def imread(imgfile):             # <<<<<<<<<<<<<<
  *     return skimread(imgfile)
  * 
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_imgfile); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_n_s_imgfile); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imread, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(1, 0, 1, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imread, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "pyaibox/utils/image.py":39
+  /* "pyaibox/utils/image.py":40
  * 
  * 
  * def imsave(outfile, img):             # <<<<<<<<<<<<<<
  *     return skimsave(outfile, img, check_contrast=False)
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_n_s_outfile, __pyx_n_s_img); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(2, __pyx_n_s_outfile, __pyx_n_s_img); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imsave, 39, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imsave, 40, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 40, __pyx_L1_error)
 
-  /* "pyaibox/utils/image.py":43
+  /* "pyaibox/utils/image.py":44
  * 
  * 
  * def histeq(img, nbins=256):             # <<<<<<<<<<<<<<
  *     dshape = img.shape
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)
  */
-  __pyx_tuple__6 = PyTuple_Pack(6, __pyx_n_s_img, __pyx_n_s_nbins, __pyx_n_s_dshape, __pyx_n_s_imhist, __pyx_n_s_bins, __pyx_n_s_cdf); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(6, __pyx_n_s_img, __pyx_n_s_nbins, __pyx_n_s_dshape, __pyx_n_s_imhist, __pyx_n_s_bins, __pyx_n_s_cdf); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
-  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_histeq, 43, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 43, __pyx_L1_error)
-  __pyx_tuple__8 = PyTuple_Pack(1, ((PyObject *)__pyx_int_256)); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_codeobj__7 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__6, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_histeq, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__7)) __PYX_ERR(0, 44, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(1, ((PyObject *)__pyx_int_256)); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "pyaibox/utils/image.py":53
+  /* "pyaibox/utils/image.py":54
  * 
  * 
  * def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, clip=True, preserve_range=False):             # <<<<<<<<<<<<<<
  *     r"""resize image to oshape
  * 
  */
-  __pyx_tuple__9 = PyTuple_Pack(9, __pyx_n_s_img, __pyx_n_s_oshape, __pyx_n_s_odtype, __pyx_n_s_order, __pyx_n_s_mode, __pyx_n_s_cval, __pyx_n_s_clip, __pyx_n_s_preserve_range, __pyx_n_s_oimage); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(9, __pyx_n_s_img, __pyx_n_s_oshape, __pyx_n_s_odtype, __pyx_n_s_order, __pyx_n_s_mode, __pyx_n_s_cval, __pyx_n_s_clip, __pyx_n_s_preserve_range, __pyx_n_s_oimage); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(8, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imresize, 53, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 53, __pyx_L1_error)
-  __pyx_tuple__11 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)__pyx_int_1), ((PyObject*)__pyx_n_u_constant), ((PyObject *)__pyx_int_0), ((PyObject *)Py_True), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(8, 0, 9, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_image_py, __pyx_n_s_imresize, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)__pyx_int_1), ((PyObject*)__pyx_n_u_constant), ((PyObject *)__pyx_int_0), ((PyObject *)Py_True), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
   __Pyx_RefNannyFinishContext();
@@ -2856,129 +2856,129 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/utils/image.py":28
+  /* "pyaibox/utils/image.py":29
  * #
  * 
  * from skimage.io import imread as skimread             # <<<<<<<<<<<<<<
  * from skimage.io import imsave as skimsave
  * from skimage.transform import resize as skimresize
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_imread);
   __Pyx_GIVEREF(__pyx_n_s_imread);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_imread);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_skimage_io, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_skimage_io, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_imread); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_imread); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimread, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimread, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":29
+  /* "pyaibox/utils/image.py":30
  * 
  * from skimage.io import imread as skimread
  * from skimage.io import imsave as skimsave             # <<<<<<<<<<<<<<
  * from skimage.transform import resize as skimresize
  * 
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_imsave);
   __Pyx_GIVEREF(__pyx_n_s_imsave);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_imsave);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_skimage_io, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_skimage_io, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_imsave); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_imsave); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimsave, __pyx_t_2) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimsave, __pyx_t_2) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/image.py":30
+  /* "pyaibox/utils/image.py":31
  * from skimage.io import imread as skimread
  * from skimage.io import imsave as skimsave
  * from skimage.transform import resize as skimresize             # <<<<<<<<<<<<<<
  * 
  * import numpy as np
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_resize);
   __Pyx_GIVEREF(__pyx_n_s_resize);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_resize);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_skimage_transform, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_skimage_transform, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_resize); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimresize, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_skimresize, __pyx_t_1) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":32
+  /* "pyaibox/utils/image.py":33
  * from skimage.transform import resize as skimresize
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":35
+  /* "pyaibox/utils/image.py":36
  * 
  * 
  * def imread(imgfile):             # <<<<<<<<<<<<<<
  *     return skimread(imgfile)
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_1imread, 0, __pyx_n_s_imread, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_1imread, 0, __pyx_n_s_imread, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imread, __pyx_t_2) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imread, __pyx_t_2) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":39
+  /* "pyaibox/utils/image.py":40
  * 
  * 
  * def imsave(outfile, img):             # <<<<<<<<<<<<<<
  *     return skimsave(outfile, img, check_contrast=False)
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_3imsave, 0, __pyx_n_s_imsave, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_3imsave, 0, __pyx_n_s_imsave, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imsave, __pyx_t_2) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imsave, __pyx_t_2) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":43
+  /* "pyaibox/utils/image.py":44
  * 
  * 
  * def histeq(img, nbins=256):             # <<<<<<<<<<<<<<
  *     dshape = img.shape
  *     imhist, bins = np.histogram(img.flatten(), nbins, normed=True)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_5histeq, 0, __pyx_n_s_histeq, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_5histeq, 0, __pyx_n_s_histeq, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__7)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__8);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_histeq, __pyx_t_2) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_histeq, __pyx_t_2) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/image.py":53
+  /* "pyaibox/utils/image.py":54
  * 
  * 
  * def imresize(img, oshape=None, odtype=None, order=1, mode='constant', cval=0, clip=True, preserve_range=False):             # <<<<<<<<<<<<<<
  *     r"""resize image to oshape
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_7imresize, 0, __pyx_n_s_imresize, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_5image_7imresize, 0, __pyx_n_s_imresize, NULL, __pyx_n_s_pyaibox_utils_image, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__11);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imresize, __pyx_t_2) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imresize, __pyx_t_2) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
   /* "pyaibox/utils/image.py":1
@@ -2988,7 +2988,7 @@ if (!__Pyx_RefNanny) {
  */
   __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_t_2, __pyx_kp_u_imresize_line_53, __pyx_kp_u_resize_image_to_oshape_see_func) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_2, __pyx_kp_u_imresize_line_54, __pyx_kp_u_resize_image_to_oshape_see_func) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_test, __pyx_t_2) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 

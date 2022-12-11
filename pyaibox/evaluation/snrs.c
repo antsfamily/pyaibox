@@ -1511,7 +1511,7 @@ static PyObject *__pyx_codeobj__2;
 static PyObject *__pyx_codeobj__5;
 /* Late includes */
 
-/* "pyaibox/evaluation/snrs.py":32
+/* "pyaibox/evaluation/snrs.py":33
  * 
  * 
  * def snr(x, n=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -1563,7 +1563,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_4snrs_1snr(PyObject *__pyx_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "snr") < 0)) __PYX_ERR(0, 32, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "snr") < 0)) __PYX_ERR(0, 33, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1579,7 +1579,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_4snrs_1snr(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("snr", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 32, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("snr", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 33, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.evaluation.snrs.snr", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -1616,30 +1616,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("snr", 0);
 
-  /* "pyaibox/evaluation/snrs.py":101
+  /* "pyaibox/evaluation/snrs.py":102
  *     """
  * 
  *     if 'caxis' in kwargs:             # <<<<<<<<<<<<<<
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 102, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":102
+    /* "pyaibox/evaluation/snrs.py":103
  * 
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']             # <<<<<<<<<<<<<<
  *     elif 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 103, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_caxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":101
+    /* "pyaibox/evaluation/snrs.py":102
  *     """
  * 
  *     if 'caxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -1649,30 +1649,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L3;
   }
 
-  /* "pyaibox/evaluation/snrs.py":103
+  /* "pyaibox/evaluation/snrs.py":104
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:             # <<<<<<<<<<<<<<
  *         caxis = kwargs['caxis']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 104, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":104
+    /* "pyaibox/evaluation/snrs.py":105
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:
  *         caxis = kwargs['caxis']             # <<<<<<<<<<<<<<
  *     else:
  *         caxis = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 104, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_caxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":103
+    /* "pyaibox/evaluation/snrs.py":104
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -1682,7 +1682,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L3;
   }
 
-  /* "pyaibox/evaluation/snrs.py":106
+  /* "pyaibox/evaluation/snrs.py":107
  *         caxis = kwargs['caxis']
  *     else:
  *         caxis = None             # <<<<<<<<<<<<<<
@@ -1695,30 +1695,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_L3:;
 
-  /* "pyaibox/evaluation/snrs.py":108
+  /* "pyaibox/evaluation/snrs.py":109
  *         caxis = None
  * 
  *     if 'axis' in kwargs:             # <<<<<<<<<<<<<<
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_axis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_axis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":109
+    /* "pyaibox/evaluation/snrs.py":110
  * 
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']             # <<<<<<<<<<<<<<
  *     elif 'dim' in kwargs:
  *         axis = kwargs['dim']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_axis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_axis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_axis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":108
+    /* "pyaibox/evaluation/snrs.py":109
  *         caxis = None
  * 
  *     if 'axis' in kwargs:             # <<<<<<<<<<<<<<
@@ -1728,30 +1728,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L4;
   }
 
-  /* "pyaibox/evaluation/snrs.py":110
+  /* "pyaibox/evaluation/snrs.py":111
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:             # <<<<<<<<<<<<<<
  *         axis = kwargs['dim']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_dim, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 110, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_dim, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":111
+    /* "pyaibox/evaluation/snrs.py":112
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:
  *         axis = kwargs['dim']             # <<<<<<<<<<<<<<
  *     else:
  *         axis = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_dim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_dim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_axis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":110
+    /* "pyaibox/evaluation/snrs.py":111
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:             # <<<<<<<<<<<<<<
@@ -1761,7 +1761,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L4;
   }
 
-  /* "pyaibox/evaluation/snrs.py":113
+  /* "pyaibox/evaluation/snrs.py":114
  *         axis = kwargs['dim']
  *     else:
  *         axis = None             # <<<<<<<<<<<<<<
@@ -1774,30 +1774,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_L4:;
 
-  /* "pyaibox/evaluation/snrs.py":115
+  /* "pyaibox/evaluation/snrs.py":116
  *         axis = None
  * 
  *     if 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 115, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 116, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":116
+    /* "pyaibox/evaluation/snrs.py":117
  * 
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']             # <<<<<<<<<<<<<<
  *     elif 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_keepcaxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":115
+    /* "pyaibox/evaluation/snrs.py":116
  *         axis = None
  * 
  *     if 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -1807,30 +1807,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L5;
   }
 
-  /* "pyaibox/evaluation/snrs.py":117
+  /* "pyaibox/evaluation/snrs.py":118
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
  *         keepcaxis = kwargs['keepcaxis']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 117, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 118, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":118
+    /* "pyaibox/evaluation/snrs.py":119
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']             # <<<<<<<<<<<<<<
  *     else:
  *          keepcaxis = False
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_keepcaxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":117
+    /* "pyaibox/evaluation/snrs.py":118
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -1840,7 +1840,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L5;
   }
 
-  /* "pyaibox/evaluation/snrs.py":120
+  /* "pyaibox/evaluation/snrs.py":121
  *         keepcaxis = kwargs['keepcaxis']
  *     else:
  *          keepcaxis = False             # <<<<<<<<<<<<<<
@@ -1853,30 +1853,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_L5:;
 
-  /* "pyaibox/evaluation/snrs.py":122
+  /* "pyaibox/evaluation/snrs.py":123
  *          keepcaxis = False
  * 
  *     if 'reduction' in kwargs:             # <<<<<<<<<<<<<<
  *         reduction = kwargs['reduction']
  *     else:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_reduction, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 122, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_reduction, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 123, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":123
+    /* "pyaibox/evaluation/snrs.py":124
  * 
  *     if 'reduction' in kwargs:
  *         reduction = kwargs['reduction']             # <<<<<<<<<<<<<<
  *     else:
  *         reduction = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_reduction); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 123, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_reduction); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 124, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_reduction = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":122
+    /* "pyaibox/evaluation/snrs.py":123
  *          keepcaxis = False
  * 
  *     if 'reduction' in kwargs:             # <<<<<<<<<<<<<<
@@ -1886,7 +1886,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L6;
   }
 
-  /* "pyaibox/evaluation/snrs.py":125
+  /* "pyaibox/evaluation/snrs.py":126
  *         reduction = kwargs['reduction']
  *     else:
  *         reduction = None             # <<<<<<<<<<<<<<
@@ -1899,7 +1899,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_L6:;
 
-  /* "pyaibox/evaluation/snrs.py":127
+  /* "pyaibox/evaluation/snrs.py":128
  *         reduction = None
  * 
  *     axis = tuple(range(np.ndim(x))) if axis is None else axis             # <<<<<<<<<<<<<<
@@ -1908,9 +1908,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  */
   __pyx_t_2 = (__pyx_v_axis == Py_None);
   if ((__pyx_t_2 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -1925,13 +1925,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     }
     __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_x);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_3 = __pyx_t_4;
@@ -1943,16 +1943,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   __Pyx_DECREF_SET(__pyx_v_axis, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":129
+  /* "pyaibox/evaluation/snrs.py":130
  *     axis = tuple(range(np.ndim(x))) if axis is None else axis
  * 
  *     if np.iscomplex(x).any():  # complex in complex             # <<<<<<<<<<<<<<
  *         Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)
  *         Pn = np.sum((n * n.conj()).real, axis=axis)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_iscomplex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_iscomplex); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -1967,10 +1967,10 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_v_x) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_x);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 129, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_any); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_any); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -1985,54 +1985,54 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 130, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":130
+    /* "pyaibox/evaluation/snrs.py":131
  * 
  *     if np.iscomplex(x).any():  # complex in complex
  *         Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)             # <<<<<<<<<<<<<<
  *         Pn = np.sum((n * n.conj()).real, axis=axis)
  *     elif caxis is None:  # real
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_real); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_real); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_6 = PyNumber_Multiply(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Multiply(__pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_imag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_x, __pyx_n_s_imag); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = PyNumber_Multiply(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Add(__pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_t_6, __pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 130, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2040,19 +2040,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Px = __pyx_t_6;
     __pyx_t_6 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":131
+    /* "pyaibox/evaluation/snrs.py":132
  *     if np.iscomplex(x).any():  # complex in complex
  *         Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)
  *         Pn = np.sum((n * n.conj()).real, axis=axis)             # <<<<<<<<<<<<<<
  *     elif caxis is None:  # real
  *         Px = np.sum(x**2, axis=axis)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_n, __pyx_n_s_conj); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_n, __pyx_n_s_conj); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_7))) {
@@ -2066,24 +2066,24 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     }
     __pyx_t_6 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_7);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyNumber_Multiply(__pyx_v_n, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_v_n, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_real); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_real); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_6);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6);
     __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 132, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2091,7 +2091,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Pn = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":129
+    /* "pyaibox/evaluation/snrs.py":130
  *     axis = tuple(range(np.ndim(x))) if axis is None else axis
  * 
  *     if np.iscomplex(x).any():  # complex in complex             # <<<<<<<<<<<<<<
@@ -2101,7 +2101,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L7;
   }
 
-  /* "pyaibox/evaluation/snrs.py":132
+  /* "pyaibox/evaluation/snrs.py":133
  *         Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)
  *         Pn = np.sum((n * n.conj()).real, axis=axis)
  *     elif caxis is None:  # real             # <<<<<<<<<<<<<<
@@ -2112,29 +2112,29 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":133
+    /* "pyaibox/evaluation/snrs.py":134
  *         Pn = np.sum((n * n.conj()).real, axis=axis)
  *     elif caxis is None:  # real
  *         Px = np.sum(x**2, axis=axis)             # <<<<<<<<<<<<<<
  *         Pn = np.sum(n**2, axis=axis)
  *     else: # complex in real
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Power(__pyx_v_x, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Power(__pyx_v_x, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 133, __pyx_L1_error)
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2142,29 +2142,29 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Px = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":134
+    /* "pyaibox/evaluation/snrs.py":135
  *     elif caxis is None:  # real
  *         Px = np.sum(x**2, axis=axis)
  *         Pn = np.sum(n**2, axis=axis)             # <<<<<<<<<<<<<<
  *     else: # complex in real
  *         Px = np.sum(x**2, axis=caxis, keepdims=keepcaxis)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Power(__pyx_v_n, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Power(__pyx_v_n, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_3);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_3);
     __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 134, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_7, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2172,7 +2172,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Pn = __pyx_t_6;
     __pyx_t_6 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":132
+    /* "pyaibox/evaluation/snrs.py":133
  *         Px = np.sum(x.real*x.real + x.imag*x.imag, axis=axis)
  *         Pn = np.sum((n * n.conj()).real, axis=axis)
  *     elif caxis is None:  # real             # <<<<<<<<<<<<<<
@@ -2182,7 +2182,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     goto __pyx_L7;
   }
 
-  /* "pyaibox/evaluation/snrs.py":136
+  /* "pyaibox/evaluation/snrs.py":137
  *         Pn = np.sum(n**2, axis=axis)
  *     else: # complex in real
  *         Px = np.sum(x**2, axis=caxis, keepdims=keepcaxis)             # <<<<<<<<<<<<<<
@@ -2190,23 +2190,23 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  *         Px = np.sum(Px, axis=axis)
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyNumber_Power(__pyx_v_x, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Power(__pyx_v_x, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_6);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6);
     __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 136, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_keepdims, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 136, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 136, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_6, __pyx_n_s_keepdims, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, __pyx_t_6); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2214,30 +2214,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Px = __pyx_t_5;
     __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":137
+    /* "pyaibox/evaluation/snrs.py":138
  *     else: # complex in real
  *         Px = np.sum(x**2, axis=caxis, keepdims=keepcaxis)
  *         Pn = np.sum(n**2, axis=caxis, keepdims=keepcaxis)             # <<<<<<<<<<<<<<
  *         Px = np.sum(Px, axis=axis)
  *         Pn = np.sum(Pn, axis=axis)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Power(__pyx_v_n, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Power(__pyx_v_n, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepdims, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_axis, __pyx_v_caxis) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepdims, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_7, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -2245,27 +2245,27 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __pyx_v_Pn = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":138
+    /* "pyaibox/evaluation/snrs.py":139
  *         Px = np.sum(x**2, axis=caxis, keepdims=keepcaxis)
  *         Pn = np.sum(n**2, axis=caxis, keepdims=keepcaxis)
  *         Px = np.sum(Px, axis=axis)             # <<<<<<<<<<<<<<
  *         Pn = np.sum(Pn, axis=axis)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_Px);
     __Pyx_GIVEREF(__pyx_v_Px);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_v_Px);
-    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 138, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 138, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 138, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_3, __pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -2273,27 +2273,27 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     __Pyx_DECREF_SET(__pyx_v_Px, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":139
+    /* "pyaibox/evaluation/snrs.py":140
  *         Pn = np.sum(n**2, axis=caxis, keepdims=keepcaxis)
  *         Px = np.sum(Px, axis=axis)
  *         Pn = np.sum(Pn, axis=axis)             # <<<<<<<<<<<<<<
  * 
  *     S = 10 * np.log10(Px / Pn)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_v_Pn);
     __Pyx_GIVEREF(__pyx_v_Pn);
     PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_v_Pn);
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 139, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 139, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 139, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_6, __pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 140, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2303,19 +2303,19 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   }
   __pyx_L7:;
 
-  /* "pyaibox/evaluation/snrs.py":141
+  /* "pyaibox/evaluation/snrs.py":142
  *         Pn = np.sum(Pn, axis=axis)
  * 
  *     S = 10 * np.log10(Px / Pn)             # <<<<<<<<<<<<<<
  *     if reduction in ['sum', 'SUM']:
  *         return np.sum(S)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_log10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_log10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_Px, __pyx_v_Pn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyNumber_Divide(__pyx_v_Px, __pyx_v_Pn); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -2330,16 +2330,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   __pyx_t_5 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 141, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyNumber_Multiply(__pyx_int_10, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Multiply(__pyx_int_10, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 142, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_S = __pyx_t_6;
   __pyx_t_6 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":142
+  /* "pyaibox/evaluation/snrs.py":143
  * 
  *     S = 10 * np.log10(Px / Pn)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -2348,20 +2348,20 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_6 = __pyx_v_reduction;
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 143, __pyx_L1_error)
   if (!__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L9_bool_binop_done;
   }
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 142, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 143, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_2;
   __pyx_L9_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":143
+    /* "pyaibox/evaluation/snrs.py":144
  *     S = 10 * np.log10(Px / Pn)
  *     if reduction in ['sum', 'SUM']:
  *         return np.sum(S)             # <<<<<<<<<<<<<<
@@ -2369,9 +2369,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  *         return np.mean(S)
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -2386,14 +2386,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     }
     __pyx_t_6 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_5, __pyx_v_S) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_S);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 143, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 144, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_r = __pyx_t_6;
     __pyx_t_6 = 0;
     goto __pyx_L0;
 
-    /* "pyaibox/evaluation/snrs.py":142
+    /* "pyaibox/evaluation/snrs.py":143
  * 
  *     S = 10 * np.log10(Px / Pn)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -2402,7 +2402,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":144
+  /* "pyaibox/evaluation/snrs.py":145
  *     if reduction in ['sum', 'SUM']:
  *         return np.sum(S)
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -2411,20 +2411,20 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_6 = __pyx_v_reduction;
-  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 145, __pyx_L1_error)
   if (!__pyx_t_1) {
   } else {
     __pyx_t_2 = __pyx_t_1;
     goto __pyx_L12_bool_binop_done;
   }
-  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 144, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_6, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 145, __pyx_L1_error)
   __pyx_t_2 = __pyx_t_1;
   __pyx_L12_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":145
+    /* "pyaibox/evaluation/snrs.py":146
  *         return np.sum(S)
  *     if reduction in ['mean', 'MEAN']:
  *         return np.mean(S)             # <<<<<<<<<<<<<<
@@ -2432,9 +2432,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  * 
  */
     __Pyx_XDECREF(__pyx_r);
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 145, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 145, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_mean); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -2449,14 +2449,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
     }
     __pyx_t_6 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_3, __pyx_v_S) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_S);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 145, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 146, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_r = __pyx_t_6;
     __pyx_t_6 = 0;
     goto __pyx_L0;
 
-    /* "pyaibox/evaluation/snrs.py":144
+    /* "pyaibox/evaluation/snrs.py":145
  *     if reduction in ['sum', 'SUM']:
  *         return np.sum(S)
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -2465,7 +2465,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":146
+  /* "pyaibox/evaluation/snrs.py":147
  *     if reduction in ['mean', 'MEAN']:
  *         return np.mean(S)
  *     return S             # <<<<<<<<<<<<<<
@@ -2477,7 +2477,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   __pyx_r = __pyx_v_S;
   goto __pyx_L0;
 
-  /* "pyaibox/evaluation/snrs.py":32
+  /* "pyaibox/evaluation/snrs.py":33
  * 
  * 
  * def snr(x, n=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -2507,7 +2507,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_snr(CYTHON_UNUSED PyObject
   return __pyx_r;
 }
 
-/* "pyaibox/evaluation/snrs.py":149
+/* "pyaibox/evaluation/snrs.py":150
  * 
  * 
  * def psnr(P, G, vpeak=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -2558,7 +2558,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_4snrs_3psnr(PyObject *__pyx_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_G)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("psnr", 0, 2, 3, 1); __PYX_ERR(0, 149, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("psnr", 0, 2, 3, 1); __PYX_ERR(0, 150, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -2568,7 +2568,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_4snrs_3psnr(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "psnr") < 0)) __PYX_ERR(0, 149, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "psnr") < 0)) __PYX_ERR(0, 150, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2586,7 +2586,7 @@ static PyObject *__pyx_pw_7pyaibox_10evaluation_4snrs_3psnr(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("psnr", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 149, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("psnr", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 150, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.evaluation.snrs.psnr", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -2622,30 +2622,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("psnr", 0);
   __Pyx_INCREF(__pyx_v_vpeak);
 
-  /* "pyaibox/evaluation/snrs.py":220
+  /* "pyaibox/evaluation/snrs.py":221
  *     """
  * 
  *     if 'caxis' in kwargs:             # <<<<<<<<<<<<<<
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 220, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 221, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":221
+    /* "pyaibox/evaluation/snrs.py":222
  * 
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']             # <<<<<<<<<<<<<<
  *     elif 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 221, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 222, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_caxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":220
+    /* "pyaibox/evaluation/snrs.py":221
  *     """
  * 
  *     if 'caxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -2655,30 +2655,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L3;
   }
 
-  /* "pyaibox/evaluation/snrs.py":222
+  /* "pyaibox/evaluation/snrs.py":223
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:             # <<<<<<<<<<<<<<
  *         caxis = kwargs['caxis']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 222, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_caxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 223, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":223
+    /* "pyaibox/evaluation/snrs.py":224
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:
  *         caxis = kwargs['caxis']             # <<<<<<<<<<<<<<
  *     else:
  *         caxis = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 223, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_caxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 224, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_caxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":222
+    /* "pyaibox/evaluation/snrs.py":223
  *     if 'caxis' in kwargs:
  *         caxis = kwargs['caxis']
  *     elif 'caxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -2688,7 +2688,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L3;
   }
 
-  /* "pyaibox/evaluation/snrs.py":225
+  /* "pyaibox/evaluation/snrs.py":226
  *         caxis = kwargs['caxis']
  *     else:
  *         caxis = None             # <<<<<<<<<<<<<<
@@ -2701,30 +2701,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   }
   __pyx_L3:;
 
-  /* "pyaibox/evaluation/snrs.py":227
+  /* "pyaibox/evaluation/snrs.py":228
  *         caxis = None
  * 
  *     if 'axis' in kwargs:             # <<<<<<<<<<<<<<
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_axis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_axis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 228, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":228
+    /* "pyaibox/evaluation/snrs.py":229
  * 
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']             # <<<<<<<<<<<<<<
  *     elif 'dim' in kwargs:
  *         axis = kwargs['dim']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_axis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 228, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_axis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 229, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_axis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":227
+    /* "pyaibox/evaluation/snrs.py":228
  *         caxis = None
  * 
  *     if 'axis' in kwargs:             # <<<<<<<<<<<<<<
@@ -2734,30 +2734,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L4;
   }
 
-  /* "pyaibox/evaluation/snrs.py":229
+  /* "pyaibox/evaluation/snrs.py":230
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:             # <<<<<<<<<<<<<<
  *         axis = kwargs['dim']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_dim, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 229, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_dim, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 230, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":230
+    /* "pyaibox/evaluation/snrs.py":231
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:
  *         axis = kwargs['dim']             # <<<<<<<<<<<<<<
  *     else:
  *         axis = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_dim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 230, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_dim); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 231, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_axis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":229
+    /* "pyaibox/evaluation/snrs.py":230
  *     if 'axis' in kwargs:
  *         axis = kwargs['axis']
  *     elif 'dim' in kwargs:             # <<<<<<<<<<<<<<
@@ -2767,7 +2767,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L4;
   }
 
-  /* "pyaibox/evaluation/snrs.py":232
+  /* "pyaibox/evaluation/snrs.py":233
  *         axis = kwargs['dim']
  *     else:
  *         axis = None             # <<<<<<<<<<<<<<
@@ -2780,30 +2780,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   }
   __pyx_L4:;
 
-  /* "pyaibox/evaluation/snrs.py":234
+  /* "pyaibox/evaluation/snrs.py":235
  *         axis = None
  * 
  *     if 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 234, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 235, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":235
+    /* "pyaibox/evaluation/snrs.py":236
  * 
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']             # <<<<<<<<<<<<<<
  *     elif 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_keepcaxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":234
+    /* "pyaibox/evaluation/snrs.py":235
  *         axis = None
  * 
  *     if 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -2813,30 +2813,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L5;
   }
 
-  /* "pyaibox/evaluation/snrs.py":236
+  /* "pyaibox/evaluation/snrs.py":237
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
  *         keepcaxis = kwargs['keepcaxis']
  *     else:
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 236, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_keepcaxis, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 237, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":237
+    /* "pyaibox/evaluation/snrs.py":238
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']             # <<<<<<<<<<<<<<
  *     else:
  *          keepcaxis = False
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 237, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_keepcaxis); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 238, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_keepcaxis = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":236
+    /* "pyaibox/evaluation/snrs.py":237
  *     if 'keepcaxis' in kwargs:
  *         keepcaxis = kwargs['keepcaxis']
  *     elif 'keepcaxis' in kwargs:             # <<<<<<<<<<<<<<
@@ -2846,7 +2846,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L5;
   }
 
-  /* "pyaibox/evaluation/snrs.py":239
+  /* "pyaibox/evaluation/snrs.py":240
  *         keepcaxis = kwargs['keepcaxis']
  *     else:
  *          keepcaxis = False             # <<<<<<<<<<<<<<
@@ -2859,30 +2859,30 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   }
   __pyx_L5:;
 
-  /* "pyaibox/evaluation/snrs.py":241
+  /* "pyaibox/evaluation/snrs.py":242
  *          keepcaxis = False
  * 
  *     if 'reduction' in kwargs:             # <<<<<<<<<<<<<<
  *         reduction = kwargs['reduction']
  *     else:
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_reduction, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 241, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_reduction, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 242, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":242
+    /* "pyaibox/evaluation/snrs.py":243
  * 
  *     if 'reduction' in kwargs:
  *         reduction = kwargs['reduction']             # <<<<<<<<<<<<<<
  *     else:
  *         reduction = None
  */
-    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_reduction); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 242, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_reduction); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_v_reduction = __pyx_t_3;
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":241
+    /* "pyaibox/evaluation/snrs.py":242
  *          keepcaxis = False
  * 
  *     if 'reduction' in kwargs:             # <<<<<<<<<<<<<<
@@ -2892,7 +2892,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     goto __pyx_L6;
   }
 
-  /* "pyaibox/evaluation/snrs.py":244
+  /* "pyaibox/evaluation/snrs.py":245
  *         reduction = kwargs['reduction']
  *     else:
  *         reduction = None             # <<<<<<<<<<<<<<
@@ -2905,7 +2905,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   }
   __pyx_L6:;
 
-  /* "pyaibox/evaluation/snrs.py":246
+  /* "pyaibox/evaluation/snrs.py":247
  *         reduction = None
  * 
  *     axis = tuple(range(np.ndim(P))) if axis is None else axis             # <<<<<<<<<<<<<<
@@ -2914,9 +2914,9 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   __pyx_t_2 = (__pyx_v_axis == Py_None);
   if ((__pyx_t_2 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_ndim); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -2931,13 +2931,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     }
     __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_P) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_P);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 246, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PySequence_Tuple(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_3 = __pyx_t_4;
@@ -2949,60 +2949,60 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __Pyx_DECREF_SET(__pyx_v_axis, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":248
+  /* "pyaibox/evaluation/snrs.py":249
  *     axis = tuple(range(np.ndim(P))) if axis is None else axis
  * 
  *     if P.dtype != G.dtype:             # <<<<<<<<<<<<<<
  *         print("Warning: P(" + str(P.dtype) + ")and G(" + str(G.dtype) +
  *               ")have different type! PSNR may not right!")
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_dtype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_dtype); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_G, __pyx_n_s_dtype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_G, __pyx_n_s_dtype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = PyObject_RichCompare(__pyx_t_3, __pyx_t_4, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_6 = PyObject_RichCompare(__pyx_t_3, __pyx_t_4, Py_NE); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 248, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 249, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":249
+    /* "pyaibox/evaluation/snrs.py":250
  * 
  *     if P.dtype != G.dtype:
  *         print("Warning: P(" + str(P.dtype) + ")and G(" + str(G.dtype) +             # <<<<<<<<<<<<<<
  *               ")have different type! PSNR may not right!")
  * 
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_dtype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_dtype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Warning_P, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_kp_u_Warning_P, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyUnicode_Concat(__pyx_t_6, __pyx_kp_u_and_G); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyUnicode_Concat(__pyx_t_6, __pyx_kp_u_and_G); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_G, __pyx_n_s_dtype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_G, __pyx_n_s_dtype); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyUnicode_Type)), __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_t_4, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_t_6, __pyx_kp_u_have_different_type_PSNR_may_no); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyUnicode_Concat(__pyx_t_6, __pyx_kp_u_have_different_type_PSNR_may_no); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 249, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 250, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":248
+    /* "pyaibox/evaluation/snrs.py":249
  *     axis = tuple(range(np.ndim(P))) if axis is None else axis
  * 
  *     if P.dtype != G.dtype:             # <<<<<<<<<<<<<<
@@ -3011,7 +3011,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":252
+  /* "pyaibox/evaluation/snrs.py":253
  *               ")have different type! PSNR may not right!")
  * 
  *     if vpeak is None:             # <<<<<<<<<<<<<<
@@ -3022,14 +3022,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":253
+    /* "pyaibox/evaluation/snrs.py":254
  * 
  *     if vpeak is None:
  *         vpeak = peakvalue(G)             # <<<<<<<<<<<<<<
  * 
  *     msev = mse(P, G, caxis=caxis, axis=axis, keepcaxis=keepcaxis, norm=False, reduction=None)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_peakvalue); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 253, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_peakvalue); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -3043,13 +3043,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     }
     __pyx_t_6 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_v_G) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_G);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 253, __pyx_L1_error)
+    if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 254, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_vpeak, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":252
+    /* "pyaibox/evaluation/snrs.py":253
  *               ")have different type! PSNR may not right!")
  * 
  *     if vpeak is None:             # <<<<<<<<<<<<<<
@@ -3058,16 +3058,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":255
+  /* "pyaibox/evaluation/snrs.py":256
  *         vpeak = peakvalue(G)
  * 
  *     msev = mse(P, G, caxis=caxis, axis=axis, keepcaxis=keepcaxis, norm=False, reduction=None)             # <<<<<<<<<<<<<<
  *     psnrv = 10 * np.log10((vpeak ** 2) / msev)
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_mse); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_mse); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_v_P);
   __Pyx_GIVEREF(__pyx_v_P);
@@ -3075,14 +3075,14 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __Pyx_INCREF(__pyx_v_G);
   __Pyx_GIVEREF(__pyx_v_G);
   PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_v_G);
-  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyDict_NewPresized(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_v_caxis) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_norm, Py_False) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 255, __pyx_L1_error)
-  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 255, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_v_caxis) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_axis, __pyx_v_axis) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, __pyx_v_keepcaxis) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_norm, Py_False) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_reduction, Py_None) < 0) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_3, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -3090,21 +3090,21 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __pyx_v_msev = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":256
+  /* "pyaibox/evaluation/snrs.py":257
  * 
  *     msev = mse(P, G, caxis=caxis, axis=axis, keepcaxis=keepcaxis, norm=False, reduction=None)
  *     psnrv = 10 * np.log10((vpeak ** 2) / msev)             # <<<<<<<<<<<<<<
  * 
  *     if reduction in ['mean', 'MEAN']:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_log10); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_log10); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = PyNumber_Power(__pyx_v_vpeak, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Power(__pyx_v_vpeak, __pyx_int_2, Py_None); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_v_msev); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_4, __pyx_v_msev); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -3120,16 +3120,16 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __pyx_t_5 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 256, __pyx_L1_error)
+  if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyNumber_Multiply(__pyx_int_10, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
+  __pyx_t_3 = PyNumber_Multiply(__pyx_int_10, __pyx_t_5); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 257, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_psnrv = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":258
+  /* "pyaibox/evaluation/snrs.py":259
  *     psnrv = 10 * np.log10((vpeak ** 2) / msev)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -3138,29 +3138,29 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_3 = __pyx_v_reduction;
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 258, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_mean, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 259, __pyx_L1_error)
   if (!__pyx_t_2) {
   } else {
     __pyx_t_1 = __pyx_t_2;
     goto __pyx_L10_bool_binop_done;
   }
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 258, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_MEAN, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 259, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_2;
   __pyx_L10_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/evaluation/snrs.py":259
+    /* "pyaibox/evaluation/snrs.py":260
  * 
  *     if reduction in ['mean', 'MEAN']:
  *        psnrv = np.mean(psnrv)             # <<<<<<<<<<<<<<
  *     if reduction in ['sum', 'SUM']:
  *        psnrv = np.sum(psnrv)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 259, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_mean); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 259, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_mean); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -3175,13 +3175,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     }
     __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_psnrv) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_psnrv);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 260, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF_SET(__pyx_v_psnrv, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":258
+    /* "pyaibox/evaluation/snrs.py":259
  *     psnrv = 10 * np.log10((vpeak ** 2) / msev)
  * 
  *     if reduction in ['mean', 'MEAN']:             # <<<<<<<<<<<<<<
@@ -3190,7 +3190,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":260
+  /* "pyaibox/evaluation/snrs.py":261
  *     if reduction in ['mean', 'MEAN']:
  *        psnrv = np.mean(psnrv)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -3199,29 +3199,29 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   __Pyx_INCREF(__pyx_v_reduction);
   __pyx_t_3 = __pyx_v_reduction;
-  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 260, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_sum, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 261, __pyx_L1_error)
   if (!__pyx_t_1) {
   } else {
     __pyx_t_2 = __pyx_t_1;
     goto __pyx_L13_bool_binop_done;
   }
-  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 260, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_3, __pyx_n_u_SUM, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 261, __pyx_L1_error)
   __pyx_t_2 = __pyx_t_1;
   __pyx_L13_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/evaluation/snrs.py":261
+    /* "pyaibox/evaluation/snrs.py":262
  *        psnrv = np.mean(psnrv)
  *     if reduction in ['sum', 'SUM']:
  *        psnrv = np.sum(psnrv)             # <<<<<<<<<<<<<<
  * 
  *     return psnrv
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 261, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 261, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_sum); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
@@ -3236,13 +3236,13 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
     }
     __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_v_psnrv) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_psnrv);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 261, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF_SET(__pyx_v_psnrv, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":260
+    /* "pyaibox/evaluation/snrs.py":261
  *     if reduction in ['mean', 'MEAN']:
  *        psnrv = np.mean(psnrv)
  *     if reduction in ['sum', 'SUM']:             # <<<<<<<<<<<<<<
@@ -3251,7 +3251,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/evaluation/snrs.py":263
+  /* "pyaibox/evaluation/snrs.py":264
  *        psnrv = np.sum(psnrv)
  * 
  *     return psnrv             # <<<<<<<<<<<<<<
@@ -3263,7 +3263,7 @@ static PyObject *__pyx_pf_7pyaibox_10evaluation_4snrs_2psnr(CYTHON_UNUSED PyObje
   __pyx_r = __pyx_v_psnrv;
   goto __pyx_L0;
 
-  /* "pyaibox/evaluation/snrs.py":149
+  /* "pyaibox/evaluation/snrs.py":150
  * 
  * 
  * def psnr(P, G, vpeak=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -3409,8 +3409,8 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 274, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 275, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 128, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -3420,77 +3420,77 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/evaluation/snrs.py":32
+  /* "pyaibox/evaluation/snrs.py":33
  * 
  * 
  * def snr(x, n=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""computes signal-to-noise ratio
  * 
  */
-  __pyx_tuple_ = PyTuple_Pack(10, __pyx_n_s_x, __pyx_n_s_n, __pyx_n_s_kwargs, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_keepcaxis, __pyx_n_s_reduction, __pyx_n_s_Px, __pyx_n_s_Pn, __pyx_n_s_S); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(10, __pyx_n_s_x, __pyx_n_s_n, __pyx_n_s_kwargs, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_keepcaxis, __pyx_n_s_reduction, __pyx_n_s_Px, __pyx_n_s_Pn, __pyx_n_s_S); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
-  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(2, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_snrs_py, __pyx_n_s_snr, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 32, __pyx_L1_error)
-  __pyx_tuple__3 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_codeobj__2 = (PyObject*)__Pyx_PyCode_New(2, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple_, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_snrs_py, __pyx_n_s_snr, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__2)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pyaibox/evaluation/snrs.py":149
+  /* "pyaibox/evaluation/snrs.py":150
  * 
  * 
  * def psnr(P, G, vpeak=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""Peak Signal-to-Noise Ratio
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(10, __pyx_n_s_P, __pyx_n_s_G, __pyx_n_s_vpeak, __pyx_n_s_kwargs, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_keepcaxis, __pyx_n_s_reduction, __pyx_n_s_msev, __pyx_n_s_psnrv); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(10, __pyx_n_s_P, __pyx_n_s_G, __pyx_n_s_vpeak, __pyx_n_s_kwargs, __pyx_n_s_caxis, __pyx_n_s_axis, __pyx_n_s_keepcaxis, __pyx_n_s_reduction, __pyx_n_s_msev, __pyx_n_s_psnrv); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(3, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_snrs_py, __pyx_n_s_psnr, 149, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 149, __pyx_L1_error)
-  __pyx_tuple__6 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(3, 0, 10, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_evaluation_snrs_py, __pyx_n_s_psnr, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "pyaibox/evaluation/snrs.py":271
+  /* "pyaibox/evaluation/snrs.py":272
  * 
  *     pb.setseed(seed=2020, target='numpy')
  *     x = 10 * np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
  *     n = np.random.randn(5, 2, 3, 4)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
  */
-  __pyx_tuple__7 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 271, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(4, __pyx_int_5, __pyx_int_2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "pyaibox/evaluation/snrs.py":273
+  /* "pyaibox/evaluation/snrs.py":274
  *     x = 10 * np.random.randn(5, 2, 3, 4)
  *     n = np.random.randn(5, 2, 3, 4)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)             # <<<<<<<<<<<<<<
  *     print(snrv)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  */
-  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_3); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_3); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 274, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "pyaibox/evaluation/snrs.py":279
+  /* "pyaibox/evaluation/snrs.py":280
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)
  *     snrv = snr(x, n, caxis=None, dim=(1, 2), reduction='mean')             # <<<<<<<<<<<<<<
  *     print(snrv)
  * 
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_int_1, __pyx_int_2); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 279, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_int_1, __pyx_int_2); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 280, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "pyaibox/evaluation/snrs.py":282
+  /* "pyaibox/evaluation/snrs.py":283
  *     print(snrv)
  * 
  *     print('---psnr')             # <<<<<<<<<<<<<<
  *     pb.setseed(seed=2020, target='numpy')
  *     P = 255. * np.random.rand(5, 2, 3, 4)
  */
-  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u_psnr_2); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 282, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(1, __pyx_kp_u_psnr_2); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 283, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
   __Pyx_RefNannyFinishContext();
@@ -3783,26 +3783,26 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/evaluation/snrs.py":28
+  /* "pyaibox/evaluation/snrs.py":29
  * #
  * 
  * import numpy as np             # <<<<<<<<<<<<<<
  * from pyaibox import peakvalue, mse
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":29
+  /* "pyaibox/evaluation/snrs.py":30
  * 
  * import numpy as np
  * from pyaibox import peakvalue, mse             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_peakvalue);
   __Pyx_GIVEREF(__pyx_n_s_peakvalue);
@@ -3810,122 +3810,98 @@ if (!__Pyx_RefNanny) {
   __Pyx_INCREF(__pyx_n_s_mse);
   __Pyx_GIVEREF(__pyx_n_s_mse);
   PyList_SET_ITEM(__pyx_t_1, 1, __pyx_n_s_mse);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_peakvalue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_peakvalue); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_peakvalue, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_peakvalue, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_mse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_mse); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mse, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mse, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":32
+  /* "pyaibox/evaluation/snrs.py":33
  * 
  * 
  * def snr(x, n=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""computes signal-to-noise ratio
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_4snrs_1snr, 0, __pyx_n_s_snr, NULL, __pyx_n_s_pyaibox_evaluation_snrs, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_4snrs_1snr, 0, __pyx_n_s_snr, NULL, __pyx_n_s_pyaibox_evaluation_snrs, __pyx_d, ((PyObject *)__pyx_codeobj__2)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__3);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_snr, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_snr, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":149
+  /* "pyaibox/evaluation/snrs.py":150
  * 
  * 
  * def psnr(P, G, vpeak=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""Peak Signal-to-Noise Ratio
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_4snrs_3psnr, 0, __pyx_n_s_psnr, NULL, __pyx_n_s_pyaibox_evaluation_snrs, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 149, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_10evaluation_4snrs_3psnr, 0, __pyx_n_s_psnr, NULL, __pyx_n_s_pyaibox_evaluation_snrs, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_psnr, __pyx_t_2) < 0) __PYX_ERR(0, 149, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_psnr, __pyx_t_2) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/evaluation/snrs.py":266
+  /* "pyaibox/evaluation/snrs.py":267
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     import pyaibox as pb
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 267, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 266, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 267, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "pyaibox/evaluation/snrs.py":268
+    /* "pyaibox/evaluation/snrs.py":269
  * if __name__ == '__main__':
  * 
  *     import pyaibox as pb             # <<<<<<<<<<<<<<
  * 
  *     pb.setseed(seed=2020, target='numpy')
  */
-    __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_pb, __pyx_t_2) < 0) __PYX_ERR(0, 268, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_pb, __pyx_t_2) < 0) __PYX_ERR(0, 269, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":270
+    /* "pyaibox/evaluation/snrs.py":271
  *     import pyaibox as pb
  * 
  *     pb.setseed(seed=2020, target='numpy')             # <<<<<<<<<<<<<<
  *     x = 10 * np.random.randn(5, 2, 3, 4)
  *     n = np.random.randn(5, 2, 3, 4)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_seed, __pyx_int_2020) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_u_numpy) < 0) __PYX_ERR(0, 270, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 270, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_seed, __pyx_int_2020) < 0) __PYX_ERR(0, 271, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_u_numpy) < 0) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":271
+    /* "pyaibox/evaluation/snrs.py":272
  * 
  *     pb.setseed(seed=2020, target='numpy')
  *     x = 10 * np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
  *     n = np.random.randn(5, 2, 3, 4)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_Multiply(__pyx_int_10, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 271, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-
-    /* "pyaibox/evaluation/snrs.py":272
- *     pb.setseed(seed=2020, target='numpy')
- *     x = 10 * np.random.randn(5, 2, 3, 4)
- *     n = np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
- *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
- *     print(snrv)
  */
     __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
@@ -3938,23 +3914,47 @@ if (!__Pyx_RefNanny) {
     __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_2) < 0) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Multiply(__pyx_int_10, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 272, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
     /* "pyaibox/evaluation/snrs.py":273
+ *     pb.setseed(seed=2020, target='numpy')
+ *     x = 10 * np.random.randn(5, 2, 3, 4)
+ *     n = np.random.randn(5, 2, 3, 4)             # <<<<<<<<<<<<<<
+ *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
+ *     print(snrv)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_randn); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_4);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_2) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+
+    /* "pyaibox/evaluation/snrs.py":274
  *     x = 10 * np.random.randn(5, 2, 3, 4)
  *     n = np.random.randn(5, 2, 3, 4)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)             # <<<<<<<<<<<<<<
  *     print(snrv)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -3962,47 +3962,47 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_1);
     __pyx_t_4 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 273, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 274, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 274, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 274, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_4) < 0) __PYX_ERR(0, 273, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_4) < 0) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":274
+    /* "pyaibox/evaluation/snrs.py":275
  *     n = np.random.randn(5, 2, 3, 4)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
  *     print(snrv)             # <<<<<<<<<<<<<<
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snrv); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snrv); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":275
+    /* "pyaibox/evaluation/snrs.py":276
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True)
  *     print(snrv)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')             # <<<<<<<<<<<<<<
  *     print(snrv)
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 275, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_n); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_4);
@@ -4010,110 +4010,110 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_5);
     __pyx_t_4 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 275, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 275, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_4) < 0) __PYX_ERR(0, 275, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_4) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":276
+    /* "pyaibox/evaluation/snrs.py":277
  *     print(snrv)
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)             # <<<<<<<<<<<<<<
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snrv); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snrv); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":277
+    /* "pyaibox/evaluation/snrs.py":278
  *     snrv = snr(x, n, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)             # <<<<<<<<<<<<<<
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)
  *     snrv = snr(x, n, caxis=None, dim=(1, 2), reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_pb); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_pb); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_r2c); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_r2c); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_1) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_1) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":278
+    /* "pyaibox/evaluation/snrs.py":279
  *     print(snrv)
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)             # <<<<<<<<<<<<<<
  *     snrv = snr(x, n, caxis=None, dim=(1, 2), reduction='mean')
  *     print(snrv)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_r2c); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_r2c); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 278, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_2, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_4) < 0) __PYX_ERR(0, 278, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_4) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":279
+    /* "pyaibox/evaluation/snrs.py":280
  *     x = pb.r2c(x, caxis=1, keepcaxis=False)
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)
  *     snrv = snr(x, n, caxis=None, dim=(1, 2), reduction='mean')             # <<<<<<<<<<<<<<
  *     print(snrv)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_snr); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -4121,96 +4121,72 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_2);
     __pyx_t_1 = 0;
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dim, __pyx_tuple__9) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 279, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_dim, __pyx_tuple__9) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_1) < 0) __PYX_ERR(0, 279, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_1) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":280
+    /* "pyaibox/evaluation/snrs.py":281
  *     n = pb.r2c(n, caxis=1, keepcaxis=False)
  *     snrv = snr(x, n, caxis=None, dim=(1, 2), reduction='mean')
  *     print(snrv)             # <<<<<<<<<<<<<<
  * 
  *     print('---psnr')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snrv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snrv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":282
+    /* "pyaibox/evaluation/snrs.py":283
  *     print(snrv)
  * 
  *     print('---psnr')             # <<<<<<<<<<<<<<
  *     pb.setseed(seed=2020, target='numpy')
  *     P = 255. * np.random.rand(5, 2, 3, 4)
  */
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__10, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":283
+    /* "pyaibox/evaluation/snrs.py":284
  * 
  *     print('---psnr')
  *     pb.setseed(seed=2020, target='numpy')             # <<<<<<<<<<<<<<
  *     P = 255. * np.random.rand(5, 2, 3, 4)
  *     G = 255. * np.random.rand(5, 2, 3, 4)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_pb); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_seed, __pyx_int_2020) < 0) __PYX_ERR(0, 283, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_u_numpy) < 0) __PYX_ERR(0, 283, __pyx_L1_error)
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 283, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_seed, __pyx_int_2020) < 0) __PYX_ERR(0, 284, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_target, __pyx_n_u_numpy) < 0) __PYX_ERR(0, 284, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":284
+    /* "pyaibox/evaluation/snrs.py":285
  *     print('---psnr')
  *     pb.setseed(seed=2020, target='numpy')
  *     P = 255. * np.random.rand(5, 2, 3, 4)             # <<<<<<<<<<<<<<
  *     G = 255. * np.random.rand(5, 2, 3, 4)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)
- */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Multiply(__pyx_float_255_, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_P, __pyx_t_5) < 0) __PYX_ERR(0, 284, __pyx_L1_error)
-    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-
-    /* "pyaibox/evaluation/snrs.py":285
- *     pb.setseed(seed=2020, target='numpy')
- *     P = 255. * np.random.rand(5, 2, 3, 4)
- *     G = 255. * np.random.rand(5, 2, 3, 4)             # <<<<<<<<<<<<<<
- *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)
- *     print(snrv)
  */
     __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
@@ -4226,23 +4202,47 @@ if (!__Pyx_RefNanny) {
     __pyx_t_5 = PyNumber_Multiply(__pyx_float_255_, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_G, __pyx_t_5) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_P, __pyx_t_5) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
     /* "pyaibox/evaluation/snrs.py":286
+ *     pb.setseed(seed=2020, target='numpy')
+ *     P = 255. * np.random.rand(5, 2, 3, 4)
+ *     G = 255. * np.random.rand(5, 2, 3, 4)             # <<<<<<<<<<<<<<
+ *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)
+ *     print(snrv)
+ */
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__7, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_2);
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+    __pyx_t_5 = PyNumber_Multiply(__pyx_float_255_, __pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GOTREF(__pyx_t_5);
+    __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_G, __pyx_t_5) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
+
+    /* "pyaibox/evaluation/snrs.py":287
  *     P = 255. * np.random.rand(5, 2, 3, 4)
  *     G = 255. * np.random.rand(5, 2, 3, 4)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)             # <<<<<<<<<<<<<<
  *     print(snrv)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_psnr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_psnr); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_P); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_P); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2);
@@ -4250,47 +4250,47 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_1);
     __pyx_t_2 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_4, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_2) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_2) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":287
+    /* "pyaibox/evaluation/snrs.py":288
  *     G = 255. * np.random.rand(5, 2, 3, 4)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)
  *     print(snrv)             # <<<<<<<<<<<<<<
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snrv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snrv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 287, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":288
+    /* "pyaibox/evaluation/snrs.py":289
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True)
  *     print(snrv)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')             # <<<<<<<<<<<<<<
  *     print(snrv)
  *     P = pb.r2c(P, caxis=1, keepcaxis=False)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_psnr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_psnr); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_P); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_P); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_G); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_G); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
@@ -4298,110 +4298,110 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_2 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(4); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_dim, __pyx_tuple__8) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, Py_True) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_2) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_2) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":289
+    /* "pyaibox/evaluation/snrs.py":290
  *     print(snrv)
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)             # <<<<<<<<<<<<<<
  *     P = pb.r2c(P, caxis=1, keepcaxis=False)
  *     G = pb.r2c(G, caxis=1, keepcaxis=False)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snrv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_snrv); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":290
+    /* "pyaibox/evaluation/snrs.py":291
  *     snrv = psnr(P, G, caxis=1, dim=(2, 3), keepcaxis=True, reduction='mean')
  *     print(snrv)
  *     P = pb.r2c(P, caxis=1, keepcaxis=False)             # <<<<<<<<<<<<<<
  *     G = pb.r2c(G, caxis=1, keepcaxis=False)
  *     snrv = psnr(P, G, caxis=None, dim=(1, 2), reduction='mean')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pb); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_pb); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_r2c); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_r2c); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_P); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_P); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 290, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 290, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 290, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_5, __pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_P, __pyx_t_1) < 0) __PYX_ERR(0, 290, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_P, __pyx_t_1) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":291
+    /* "pyaibox/evaluation/snrs.py":292
  *     print(snrv)
  *     P = pb.r2c(P, caxis=1, keepcaxis=False)
  *     G = pb.r2c(G, caxis=1, keepcaxis=False)             # <<<<<<<<<<<<<<
  *     snrv = psnr(P, G, caxis=None, dim=(1, 2), reduction='mean')
  *     print(snrv)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_pb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_r2c); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_r2c); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_G); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 291, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_caxis, __pyx_int_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_keepcaxis, Py_False) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_G, __pyx_t_2) < 0) __PYX_ERR(0, 291, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_G, __pyx_t_2) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":292
+    /* "pyaibox/evaluation/snrs.py":293
  *     P = pb.r2c(P, caxis=1, keepcaxis=False)
  *     G = pb.r2c(G, caxis=1, keepcaxis=False)
  *     snrv = psnr(P, G, caxis=None, dim=(1, 2), reduction='mean')             # <<<<<<<<<<<<<<
  *     print(snrv)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_psnr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_psnr); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_P); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_P); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_G); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_G); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_1);
@@ -4409,34 +4409,34 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_4, 1, __pyx_t_5);
     __pyx_t_1 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_tuple__9) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 292, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_caxis, Py_None) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_dim, __pyx_tuple__9) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_reduction, __pyx_n_u_mean) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_1) < 0) __PYX_ERR(0, 292, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_snrv, __pyx_t_1) < 0) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":293
+    /* "pyaibox/evaluation/snrs.py":294
  *     G = pb.r2c(G, caxis=1, keepcaxis=False)
  *     snrv = psnr(P, G, caxis=None, dim=(1, 2), reduction='mean')
  *     print(snrv)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snrv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_snrv); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/evaluation/snrs.py":266
+    /* "pyaibox/evaluation/snrs.py":267
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

@@ -1545,65 +1545,65 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/utils/const.py":29
+  /* "pyaibox/utils/const.py":30
  * 
  * # DEFINE GLOBAL CONSTS
  * C = 299792458.0  # 2.99792458e8 in m/s             # <<<<<<<<<<<<<<
  * # PI = 3.14159265358979323846
  * PI = 3.141592653589793238462643383279502884197169399375105820974944592307
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_C, __pyx_float_299792458_0) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_C, __pyx_float_299792458_0) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":31
+  /* "pyaibox/utils/const.py":32
  * C = 299792458.0  # 2.99792458e8 in m/s
  * # PI = 3.14159265358979323846
  * PI = 3.141592653589793238462643383279502884197169399375105820974944592307             # <<<<<<<<<<<<<<
  * EPS = 1.0e-32
  * 
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PI, __pyx_float_3_141592653589793238462643383279502884197169399375105820974944592307) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_PI, __pyx_float_3_141592653589793238462643383279502884197169399375105820974944592307) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":32
+  /* "pyaibox/utils/const.py":33
  * # PI = 3.14159265358979323846
  * PI = 3.141592653589793238462643383279502884197169399375105820974944592307
  * EPS = 1.0e-32             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_EPS, __pyx_float_1_0eneg_32) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_EPS, __pyx_float_1_0eneg_32) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":35
+  /* "pyaibox/utils/const.py":36
  * 
  * 
  * Ge = 398603e9  # the constant of earth gravitation             # <<<<<<<<<<<<<<
  * Rea = 6367.856e3  # the avarage radius of earth
  * Ree = 6378.137e3  # the equatorial radius of earth
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ge, __pyx_float_398603e9) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ge, __pyx_float_398603e9) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":36
+  /* "pyaibox/utils/const.py":37
  * 
  * Ge = 398603e9  # the constant of earth gravitation
  * Rea = 6367.856e3  # the avarage radius of earth             # <<<<<<<<<<<<<<
  * Ree = 6378.137e3  # the equatorial radius of earth
  * Rep = 6356.752e3  # the polar radius of earth
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rea, __pyx_float_6367_856e3) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rea, __pyx_float_6367_856e3) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":37
+  /* "pyaibox/utils/const.py":38
  * Ge = 398603e9  # the constant of earth gravitation
  * Rea = 6367.856e3  # the avarage radius of earth
  * Ree = 6378.137e3  # the equatorial radius of earth             # <<<<<<<<<<<<<<
  * Rep = 6356.752e3  # the polar radius of earth
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ree, __pyx_float_6378_137e3) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ree, __pyx_float_6378_137e3) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
 
-  /* "pyaibox/utils/const.py":38
+  /* "pyaibox/utils/const.py":39
  * Rea = 6367.856e3  # the avarage radius of earth
  * Ree = 6378.137e3  # the equatorial radius of earth
  * Rep = 6356.752e3  # the polar radius of earth             # <<<<<<<<<<<<<<
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rep, __pyx_float_6356_752e3) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rep, __pyx_float_6356_752e3) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
 
   /* "pyaibox/utils/const.py":1
  * #!/usr/bin/env python             # <<<<<<<<<<<<<<

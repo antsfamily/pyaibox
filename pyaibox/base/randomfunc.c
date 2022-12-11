@@ -1650,7 +1650,7 @@ static PyObject *__pyx_codeobj__8;
 static PyObject *__pyx_codeobj__11;
 /* Late includes */
 
-/* "pyaibox/base/randomfunc.py":33
+/* "pyaibox/base/randomfunc.py":34
  * 
  * 
  * def setseed(seed=None, target='numpy'):             # <<<<<<<<<<<<<<
@@ -1702,7 +1702,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_1setseed(PyObject *__pyx_s
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setseed") < 0)) __PYX_ERR(0, 33, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "setseed") < 0)) __PYX_ERR(0, 34, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1719,7 +1719,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_1setseed(PyObject *__pyx_s
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("setseed", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 33, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("setseed", 0, 0, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 34, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.randomfunc.setseed", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1745,7 +1745,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("setseed", 0);
 
-  /* "pyaibox/base/randomfunc.py":48
+  /* "pyaibox/base/randomfunc.py":49
  *     """
  * 
  *     if target in ['numpy', 'np']:             # <<<<<<<<<<<<<<
@@ -1754,32 +1754,32 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
  */
   __Pyx_INCREF(__pyx_v_target);
   __pyx_t_1 = __pyx_v_target;
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_numpy, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_numpy, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
   if (!__pyx_t_3) {
   } else {
     __pyx_t_2 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_np, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_np, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
   __pyx_t_2 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "pyaibox/base/randomfunc.py":49
+    /* "pyaibox/base/randomfunc.py":50
  * 
  *     if target in ['numpy', 'np']:
  *         np.random.seed(seed)             # <<<<<<<<<<<<<<
  *     if target in ['random']:
  *         random.seed(seed)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_np); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_seed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 49, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_seed); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -1794,12 +1794,12 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
     }
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_5, __pyx_v_seed) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_seed);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":48
+    /* "pyaibox/base/randomfunc.py":49
  *     """
  * 
  *     if target in ['numpy', 'np']:             # <<<<<<<<<<<<<<
@@ -1808,7 +1808,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":50
+  /* "pyaibox/base/randomfunc.py":51
  *     if target in ['numpy', 'np']:
  *         np.random.seed(seed)
  *     if target in ['random']:             # <<<<<<<<<<<<<<
@@ -1817,21 +1817,21 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
  */
   __Pyx_INCREF(__pyx_v_target);
   __pyx_t_1 = __pyx_v_target;
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_random, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_random, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/randomfunc.py":51
+    /* "pyaibox/base/randomfunc.py":52
  *         np.random.seed(seed)
  *     if target in ['random']:
  *         random.seed(seed)             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_random); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_seed); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_seed); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -1846,12 +1846,12 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_v_seed) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_seed);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":50
+    /* "pyaibox/base/randomfunc.py":51
  *     if target in ['numpy', 'np']:
  *         np.random.seed(seed)
  *     if target in ['random']:             # <<<<<<<<<<<<<<
@@ -1860,7 +1860,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":33
+  /* "pyaibox/base/randomfunc.py":34
  * 
  * 
  * def setseed(seed=None, target='numpy'):             # <<<<<<<<<<<<<<
@@ -1883,7 +1883,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_setseed(CYTHON_UNUSED PyOb
   return __pyx_r;
 }
 
-/* "pyaibox/base/randomfunc.py":54
+/* "pyaibox/base/randomfunc.py":55
  * 
  * 
  * def randperm(start, stop, n):             # <<<<<<<<<<<<<<
@@ -1930,17 +1930,17 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_3randperm(PyObject *__pyx_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_stop)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, 1); __PYX_ERR(0, 54, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, 1); __PYX_ERR(0, 55, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_n)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, 2); __PYX_ERR(0, 54, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, 2); __PYX_ERR(0, 55, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randperm") < 0)) __PYX_ERR(0, 54, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randperm") < 0)) __PYX_ERR(0, 55, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -1955,7 +1955,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_3randperm(PyObject *__pyx_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 54, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("randperm", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.randomfunc.randperm", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1995,7 +1995,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_stop);
   __Pyx_INCREF(__pyx_v_n);
 
-  /* "pyaibox/base/randomfunc.py":79
+  /* "pyaibox/base/randomfunc.py":80
  *     """
  * 
  *     if (n is not None) and (type(n) is not int):             # <<<<<<<<<<<<<<
@@ -2015,20 +2015,20 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_L4_bool_binop_done:;
   if (unlikely(__pyx_t_1)) {
 
-    /* "pyaibox/base/randomfunc.py":80
+    /* "pyaibox/base/randomfunc.py":81
  * 
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')             # <<<<<<<<<<<<<<
  *     elif n is None:
  *         n = int(stop - start)
  */
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_Raise(__pyx_t_4, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __PYX_ERR(0, 80, __pyx_L1_error)
+    __PYX_ERR(0, 81, __pyx_L1_error)
 
-    /* "pyaibox/base/randomfunc.py":79
+    /* "pyaibox/base/randomfunc.py":80
  *     """
  * 
  *     if (n is not None) and (type(n) is not int):             # <<<<<<<<<<<<<<
@@ -2037,7 +2037,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":81
+  /* "pyaibox/base/randomfunc.py":82
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:             # <<<<<<<<<<<<<<
@@ -2048,22 +2048,22 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/randomfunc.py":82
+    /* "pyaibox/base/randomfunc.py":83
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:
  *         n = int(stop - start)             # <<<<<<<<<<<<<<
  * 
  *     Ps = []
  */
-    __pyx_t_4 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_start); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 82, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyNumber_Int(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF_SET(__pyx_v_n, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "pyaibox/base/randomfunc.py":81
+    /* "pyaibox/base/randomfunc.py":82
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:             # <<<<<<<<<<<<<<
@@ -2072,19 +2072,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":84
+  /* "pyaibox/base/randomfunc.py":85
  *         n = int(stop - start)
  * 
  *     Ps = []             # <<<<<<<<<<<<<<
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop
  */
-  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_v_Ps = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "pyaibox/base/randomfunc.py":85
+  /* "pyaibox/base/randomfunc.py":86
  * 
  *     Ps = []
  *     starts = [start] if type(start) is int else start             # <<<<<<<<<<<<<<
@@ -2093,7 +2093,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
  */
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_start)) == ((PyObject *)(&PyInt_Type)));
   if ((__pyx_t_2 != 0)) {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_start);
     __Pyx_GIVEREF(__pyx_v_start);
@@ -2107,7 +2107,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_v_starts = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "pyaibox/base/randomfunc.py":86
+  /* "pyaibox/base/randomfunc.py":87
  *     Ps = []
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop             # <<<<<<<<<<<<<<
@@ -2116,7 +2116,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
  */
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_stop)) == ((PyObject *)(&PyInt_Type)));
   if ((__pyx_t_2 != 0)) {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_stop);
     __Pyx_GIVEREF(__pyx_v_stop);
@@ -2130,14 +2130,14 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_v_stops = __pyx_t_5;
   __pyx_t_5 = 0;
 
-  /* "pyaibox/base/randomfunc.py":87
+  /* "pyaibox/base/randomfunc.py":88
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop
  *     for start, stop in zip(starts, stops):             # <<<<<<<<<<<<<<
  *         P = np.random.permutation(range(start, stop, 1))[0:n]
  *         Ps.append(list(P))
  */
-  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_INCREF(__pyx_v_starts);
   __Pyx_GIVEREF(__pyx_v_starts);
@@ -2145,16 +2145,16 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_stops);
   __Pyx_GIVEREF(__pyx_v_stops);
   PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_v_stops);
-  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
     __pyx_t_5 = __pyx_t_4; __Pyx_INCREF(__pyx_t_5); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 88, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   for (;;) {
@@ -2162,17 +2162,17 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
       if (likely(PyList_CheckExact(__pyx_t_5))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 88, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 88, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2182,7 +2182,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 87, __pyx_L1_error)
+          else __PYX_ERR(0, 88, __pyx_L1_error)
         }
         break;
       }
@@ -2194,7 +2194,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 87, __pyx_L1_error)
+        __PYX_ERR(0, 88, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -2207,15 +2207,15 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(__pyx_t_9);
       #else
-      __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_9 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_9 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_10 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 87, __pyx_L1_error)
+      __pyx_t_10 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 88, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_11 = Py_TYPE(__pyx_t_10)->tp_iternext;
@@ -2223,7 +2223,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
       __Pyx_GOTREF(__pyx_t_8);
       index = 1; __pyx_t_9 = __pyx_t_11(__pyx_t_10); if (unlikely(!__pyx_t_9)) goto __pyx_L8_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_9);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 2) < 0) __PYX_ERR(0, 87, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_11(__pyx_t_10), 2) < 0) __PYX_ERR(0, 88, __pyx_L1_error)
       __pyx_t_11 = NULL;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       goto __pyx_L9_unpacking_done;
@@ -2231,7 +2231,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_11 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 87, __pyx_L1_error)
+      __PYX_ERR(0, 88, __pyx_L1_error)
       __pyx_L9_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_start, __pyx_t_8);
@@ -2239,22 +2239,22 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
     __Pyx_DECREF_SET(__pyx_v_stop, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "pyaibox/base/randomfunc.py":88
+    /* "pyaibox/base/randomfunc.py":89
  *     stops = [stop] if type(stop) is int else stop
  *     for start, stop in zip(starts, stops):
  *         P = np.random.permutation(range(start, stop, 1))[0:n]             # <<<<<<<<<<<<<<
  *         Ps.append(list(P))
  *     if len(Ps) == 1 and type(Ps[0]) is list:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_np); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_permutation); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_permutation); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_v_start);
     __Pyx_GIVEREF(__pyx_v_start);
@@ -2265,7 +2265,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
     __Pyx_INCREF(__pyx_int_1);
     __Pyx_GIVEREF(__pyx_int_1);
     PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_int_1);
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_8, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_8, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_8 = NULL;
@@ -2281,28 +2281,28 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
     __pyx_t_4 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_9, __pyx_t_8, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_10);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = __Pyx_PyObject_GetSlice(__pyx_t_4, 0, 0, NULL, &__pyx_v_n, NULL, 1, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetSlice(__pyx_t_4, 0, 0, NULL, &__pyx_v_n, NULL, 1, 0, 1); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF_SET(__pyx_v_P, __pyx_t_9);
     __pyx_t_9 = 0;
 
-    /* "pyaibox/base/randomfunc.py":89
+    /* "pyaibox/base/randomfunc.py":90
  *     for start, stop in zip(starts, stops):
  *         P = np.random.permutation(range(start, stop, 1))[0:n]
  *         Ps.append(list(P))             # <<<<<<<<<<<<<<
  *     if len(Ps) == 1 and type(Ps[0]) is list:
  *         Ps = Ps[0]
  */
-    __pyx_t_9 = PySequence_List(__pyx_v_P); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_9 = PySequence_List(__pyx_v_P); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
-    __pyx_t_12 = __Pyx_PyObject_Append(__pyx_v_Ps, __pyx_t_9); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyObject_Append(__pyx_v_Ps, __pyx_t_9); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
 
-    /* "pyaibox/base/randomfunc.py":87
+    /* "pyaibox/base/randomfunc.py":88
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop
  *     for start, stop in zip(starts, stops):             # <<<<<<<<<<<<<<
@@ -2312,21 +2312,21 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   }
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-  /* "pyaibox/base/randomfunc.py":90
+  /* "pyaibox/base/randomfunc.py":91
  *         P = np.random.permutation(range(start, stop, 1))[0:n]
  *         Ps.append(list(P))
  *     if len(Ps) == 1 and type(Ps[0]) is list:             # <<<<<<<<<<<<<<
  *         Ps = Ps[0]
  *     return Ps
  */
-  __pyx_t_6 = PyObject_Length(__pyx_v_Ps); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_v_Ps); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 91, __pyx_L1_error)
   __pyx_t_1 = ((__pyx_t_6 == 1) != 0);
   if (__pyx_t_1) {
   } else {
     __pyx_t_2 = __pyx_t_1;
     goto __pyx_L11_bool_binop_done;
   }
-  __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_Ps, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_GetItemInt(__pyx_v_Ps, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_1 = (((PyObject *)Py_TYPE(__pyx_t_5)) == ((PyObject *)(&PyList_Type)));
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2335,19 +2335,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_L11_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/randomfunc.py":91
+    /* "pyaibox/base/randomfunc.py":92
  *         Ps.append(list(P))
  *     if len(Ps) == 1 and type(Ps[0]) is list:
  *         Ps = Ps[0]             # <<<<<<<<<<<<<<
  *     return Ps
  * 
  */
-    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_Ps, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_GetItemInt_List(__pyx_v_Ps, 0, long, 1, __Pyx_PyInt_From_long, 1, 0, 1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF_SET(__pyx_v_Ps, __pyx_t_5);
     __pyx_t_5 = 0;
 
-    /* "pyaibox/base/randomfunc.py":90
+    /* "pyaibox/base/randomfunc.py":91
  *         P = np.random.permutation(range(start, stop, 1))[0:n]
  *         Ps.append(list(P))
  *     if len(Ps) == 1 and type(Ps[0]) is list:             # <<<<<<<<<<<<<<
@@ -2356,7 +2356,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":92
+  /* "pyaibox/base/randomfunc.py":93
  *     if len(Ps) == 1 and type(Ps[0]) is list:
  *         Ps = Ps[0]
  *     return Ps             # <<<<<<<<<<<<<<
@@ -2368,7 +2368,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   __pyx_r = __pyx_v_Ps;
   goto __pyx_L0;
 
-  /* "pyaibox/base/randomfunc.py":54
+  /* "pyaibox/base/randomfunc.py":55
  * 
  * 
  * def randperm(start, stop, n):             # <<<<<<<<<<<<<<
@@ -2398,7 +2398,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_2randperm(CYTHON_UNUSED Py
   return __pyx_r;
 }
 
-/* "pyaibox/base/randomfunc.py":95
+/* "pyaibox/base/randomfunc.py":96
  * 
  * 
  * def randperm2d(H, W, number, population=None, mask=None):             # <<<<<<<<<<<<<<
@@ -2453,13 +2453,13 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_5randperm2d(PyObject *__py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_W)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, 1); __PYX_ERR(0, 95, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, 1); __PYX_ERR(0, 96, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_number)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, 2); __PYX_ERR(0, 95, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, 2); __PYX_ERR(0, 96, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -2475,7 +2475,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_5randperm2d(PyObject *__py
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randperm2d") < 0)) __PYX_ERR(0, 95, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randperm2d") < 0)) __PYX_ERR(0, 96, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2498,7 +2498,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_5randperm2d(PyObject *__py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 95, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("randperm2d", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 96, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.randomfunc.randperm2d", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2531,7 +2531,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   __Pyx_RefNannySetupContext("randperm2d", 0);
   __Pyx_INCREF(__pyx_v_population);
 
-  /* "pyaibox/base/randomfunc.py":124
+  /* "pyaibox/base/randomfunc.py":125
  *     """
  * 
  *     if population is None:             # <<<<<<<<<<<<<<
@@ -2542,21 +2542,21 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/randomfunc.py":125
+    /* "pyaibox/base/randomfunc.py":126
  * 
  *     if population is None:
  *         population = np.array(range(0, H * W)).reshape(H, W)             # <<<<<<<<<<<<<<
  *     population = np.array(population)
  *     if mask is not None and np.sum(mask) != 0:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_array); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Multiply(__pyx_v_H, __pyx_v_W); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Multiply(__pyx_v_H, __pyx_v_W); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -2564,7 +2564,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_7, 1, __pyx_t_5);
     __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_7, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __pyx_t_7 = NULL;
@@ -2580,10 +2580,10 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_reshape); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 125, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_reshape); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 126, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -2601,7 +2601,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_H, __pyx_v_W};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
@@ -2609,13 +2609,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_6)) {
       PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_v_H, __pyx_v_W};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_6, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_4) {
         __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -2626,7 +2626,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
       __Pyx_INCREF(__pyx_v_W);
       __Pyx_GIVEREF(__pyx_v_W);
       PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_8, __pyx_v_W);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_5, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -2634,7 +2634,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     __Pyx_DECREF_SET(__pyx_v_population, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/base/randomfunc.py":124
+    /* "pyaibox/base/randomfunc.py":125
  *     """
  * 
  *     if population is None:             # <<<<<<<<<<<<<<
@@ -2643,16 +2643,16 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":126
+  /* "pyaibox/base/randomfunc.py":127
  *     if population is None:
  *         population = np.array(range(0, H * W)).reshape(H, W)
  *     population = np.array(population)             # <<<<<<<<<<<<<<
  *     if mask is not None and np.sum(mask) != 0:
  *         population = population[mask > 0]
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_array); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -2667,13 +2667,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_v_population) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_population);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF_SET(__pyx_v_population, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/base/randomfunc.py":127
+  /* "pyaibox/base/randomfunc.py":128
  *         population = np.array(range(0, H * W)).reshape(H, W)
  *     population = np.array(population)
  *     if mask is not None and np.sum(mask) != 0:             # <<<<<<<<<<<<<<
@@ -2687,9 +2687,9 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
     __pyx_t_2 = __pyx_t_9;
     goto __pyx_L5_bool_binop_done;
   }
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_sum); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -2704,33 +2704,33 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_mask) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_mask);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 127, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyInt_NeObjC(__pyx_t_3, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyInt_NeObjC(__pyx_t_3, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 127, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 128, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_2 = __pyx_t_9;
   __pyx_L5_bool_binop_done:;
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/randomfunc.py":128
+    /* "pyaibox/base/randomfunc.py":129
  *     population = np.array(population)
  *     if mask is not None and np.sum(mask) != 0:
  *         population = population[mask > 0]             # <<<<<<<<<<<<<<
  * 
  *     population = population.flatten()
  */
-    __pyx_t_6 = PyObject_RichCompare(__pyx_v_mask, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 128, __pyx_L1_error)
-    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_population, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L1_error)
+    __pyx_t_6 = PyObject_RichCompare(__pyx_v_mask, __pyx_int_0, Py_GT); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 129, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetItem(__pyx_v_population, __pyx_t_6); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF_SET(__pyx_v_population, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/base/randomfunc.py":127
+    /* "pyaibox/base/randomfunc.py":128
  *         population = np.array(range(0, H * W)).reshape(H, W)
  *     population = np.array(population)
  *     if mask is not None and np.sum(mask) != 0:             # <<<<<<<<<<<<<<
@@ -2739,14 +2739,14 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":130
+  /* "pyaibox/base/randomfunc.py":131
  *         population = population[mask > 0]
  * 
  *     population = population.flatten()             # <<<<<<<<<<<<<<
  *     population = np.random.permutation(population)
  * 
  */
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_population, __pyx_n_s_flatten); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_population, __pyx_n_s_flatten); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_5 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -2760,25 +2760,25 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 130, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF_SET(__pyx_v_population, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/base/randomfunc.py":131
+  /* "pyaibox/base/randomfunc.py":132
  * 
  *     population = population.flatten()
  *     population = np.random.permutation(population)             # <<<<<<<<<<<<<<
  * 
  *     Ph = np.floor(population / W).astype('int')
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_permutation); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_permutation); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -2793,25 +2793,25 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_5, __pyx_v_population) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_population);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 131, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 132, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF_SET(__pyx_v_population, __pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/base/randomfunc.py":133
+  /* "pyaibox/base/randomfunc.py":134
  *     population = np.random.permutation(population)
  * 
  *     Ph = np.floor(population / W).astype('int')             # <<<<<<<<<<<<<<
  *     Pw = np.floor(population - Ph * W).astype('int')
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_floor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_floor); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_v_population, __pyx_v_W); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyNumber_Divide(__pyx_v_population, __pyx_v_W); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -2826,10 +2826,10 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   __pyx_t_6 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_7, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_astype); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -2844,27 +2844,27 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_n_u_int) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_n_u_int);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 133, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_v_Ph = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/base/randomfunc.py":134
+  /* "pyaibox/base/randomfunc.py":135
  * 
  *     Ph = np.floor(population / W).astype('int')
  *     Pw = np.floor(population - Ph * W).astype('int')             # <<<<<<<<<<<<<<
  * 
  *     # print(Pw + Ph * W)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_np); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_floor); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_floor); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = PyNumber_Multiply(__pyx_v_Ph, __pyx_v_W); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Multiply(__pyx_v_Ph, __pyx_v_W); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = PyNumber_Subtract(__pyx_v_population, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_7 = PyNumber_Subtract(__pyx_v_population, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -2880,10 +2880,10 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_t_7) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_7);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 134, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_astype); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 134, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_astype); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -2898,13 +2898,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   }
   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_n_u_int) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_n_u_int);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 134, __pyx_L1_error)
+  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_Pw = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/base/randomfunc.py":137
+  /* "pyaibox/base/randomfunc.py":138
  * 
  *     # print(Pw + Ph * W)
  *     return list(Ph[0:number]), list(Pw[0:number])             # <<<<<<<<<<<<<<
@@ -2912,17 +2912,17 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_v_Ph, 0, 0, NULL, &__pyx_v_number, NULL, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_v_Ph, 0, 0, NULL, &__pyx_v_number, NULL, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_5 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_v_Pw, 0, 0, NULL, &__pyx_v_number, NULL, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetSlice(__pyx_v_Pw, 0, 0, NULL, &__pyx_v_number, NULL, 1, 0, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_4 = PySequence_List(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 138, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_5);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_5);
@@ -2934,7 +2934,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/base/randomfunc.py":95
+  /* "pyaibox/base/randomfunc.py":96
  * 
  * 
  * def randperm2d(H, W, number, population=None, mask=None):             # <<<<<<<<<<<<<<
@@ -2960,7 +2960,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_4randperm2d(CYTHON_UNUSED 
   return __pyx_r;
 }
 
-/* "pyaibox/base/randomfunc.py":140
+/* "pyaibox/base/randomfunc.py":141
  * 
  * 
  * def randgrid(start, stop, step, shake=0, n=None):             # <<<<<<<<<<<<<<
@@ -3015,13 +3015,13 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_7randgrid(PyObject *__pyx_
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_stop)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, 1); __PYX_ERR(0, 140, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, 1); __PYX_ERR(0, 141, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_step)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, 2); __PYX_ERR(0, 140, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, 2); __PYX_ERR(0, 141, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -3037,7 +3037,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_7randgrid(PyObject *__pyx_
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randgrid") < 0)) __PYX_ERR(0, 140, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "randgrid") < 0)) __PYX_ERR(0, 141, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3060,7 +3060,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_10randomfunc_7randgrid(PyObject *__pyx_
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 140, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("randgrid", 0, 3, 5, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 141, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.randomfunc.randgrid", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3112,7 +3112,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_shake);
   __Pyx_INCREF(__pyx_v_n);
 
-  /* "pyaibox/base/randomfunc.py":234
+  /* "pyaibox/base/randomfunc.py":235
  *     """
  * 
  *     starts = [start] if type(start) is int else start             # <<<<<<<<<<<<<<
@@ -3121,7 +3121,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_start)) == ((PyObject *)(&PyInt_Type)));
   if ((__pyx_t_2 != 0)) {
-    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 234, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_start);
     __Pyx_GIVEREF(__pyx_v_start);
@@ -3135,7 +3135,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_v_starts = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":235
+  /* "pyaibox/base/randomfunc.py":236
  * 
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop             # <<<<<<<<<<<<<<
@@ -3144,7 +3144,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_stop)) == ((PyObject *)(&PyInt_Type)));
   if ((__pyx_t_2 != 0)) {
-    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 235, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 236, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_stop);
     __Pyx_GIVEREF(__pyx_v_stop);
@@ -3158,7 +3158,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_v_stops = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":236
+  /* "pyaibox/base/randomfunc.py":237
  *     starts = [start] if type(start) is int else start
  *     stops = [stop] if type(stop) is int else stop
  *     steps = [step] if type(step) is int else step             # <<<<<<<<<<<<<<
@@ -3167,7 +3167,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_step)) == ((PyObject *)(&PyInt_Type)));
   if ((__pyx_t_2 != 0)) {
-    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 236, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 237, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_step);
     __Pyx_GIVEREF(__pyx_v_step);
@@ -3181,7 +3181,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_v_steps = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":237
+  /* "pyaibox/base/randomfunc.py":238
  *     stops = [stop] if type(stop) is int else stop
  *     steps = [step] if type(step) is int else step
  *     shakes = [shake] if type(shake) is int or type(shake) is float else shake             # <<<<<<<<<<<<<<
@@ -3200,7 +3200,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_t_2 = __pyx_t_4;
   __pyx_L3_bool_binop_done:;
   if (__pyx_t_2) {
-    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 237, __pyx_L1_error)
+    __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 238, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_shake);
     __Pyx_GIVEREF(__pyx_v_shake);
@@ -3214,7 +3214,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_v_shakes = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":238
+  /* "pyaibox/base/randomfunc.py":239
  *     steps = [step] if type(step) is int else step
  *     shakes = [shake] if type(shake) is int or type(shake) is float else shake
  *     if (n is not None) and (type(n) is not int):             # <<<<<<<<<<<<<<
@@ -3234,20 +3234,20 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_L6_bool_binop_done:;
   if (unlikely(__pyx_t_2)) {
 
-    /* "pyaibox/base/randomfunc.py":239
+    /* "pyaibox/base/randomfunc.py":240
  *     shakes = [shake] if type(shake) is int or type(shake) is float else shake
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')             # <<<<<<<<<<<<<<
  *     elif n is None:
  *         n = float('inf')
  */
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 239, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_TypeError, __pyx_tuple_, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 240, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_Raise(__pyx_t_1, 0, 0, 0);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __PYX_ERR(0, 239, __pyx_L1_error)
+    __PYX_ERR(0, 240, __pyx_L1_error)
 
-    /* "pyaibox/base/randomfunc.py":238
+    /* "pyaibox/base/randomfunc.py":239
  *     steps = [step] if type(step) is int else step
  *     shakes = [shake] if type(shake) is int or type(shake) is float else shake
  *     if (n is not None) and (type(n) is not int):             # <<<<<<<<<<<<<<
@@ -3256,7 +3256,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":240
+  /* "pyaibox/base/randomfunc.py":241
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:             # <<<<<<<<<<<<<<
@@ -3267,19 +3267,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_t_4 = (__pyx_t_2 != 0);
   if (__pyx_t_4) {
 
-    /* "pyaibox/base/randomfunc.py":241
+    /* "pyaibox/base/randomfunc.py":242
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:
  *         n = float('inf')             # <<<<<<<<<<<<<<
  *     index = []
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):
  */
-    __pyx_t_1 = __Pyx_PyNumber_Float(__pyx_n_u_inf); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 241, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyNumber_Float(__pyx_n_u_inf); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF_SET(__pyx_v_n, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":240
+    /* "pyaibox/base/randomfunc.py":241
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')
  *     elif n is None:             # <<<<<<<<<<<<<<
@@ -3288,26 +3288,26 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":242
+  /* "pyaibox/base/randomfunc.py":243
  *     elif n is None:
  *         n = float('inf')
  *     index = []             # <<<<<<<<<<<<<<
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 242, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_index = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":243
+  /* "pyaibox/base/randomfunc.py":244
  *         n = float('inf')
  *     index = []
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):             # <<<<<<<<<<<<<<
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)
  *         x = np.array(range(start, stop, step))
  */
-  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_starts);
   __Pyx_GIVEREF(__pyx_v_starts);
@@ -3321,16 +3321,16 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __Pyx_INCREF(__pyx_v_shakes);
   __Pyx_GIVEREF(__pyx_v_shakes);
   PyTuple_SET_ITEM(__pyx_t_1, 3, __pyx_v_shakes);
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_1, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 244, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_1 = __pyx_t_3; __Pyx_INCREF(__pyx_t_1); __pyx_t_6 = 0;
     __pyx_t_7 = NULL;
   } else {
-    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __pyx_t_6 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 244, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 243, __pyx_L1_error)
+    __pyx_t_7 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 244, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -3338,17 +3338,17 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 243, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 244, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 244, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 243, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_6); __Pyx_INCREF(__pyx_t_3); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 244, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 243, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_1, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 244, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -3358,7 +3358,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 243, __pyx_L1_error)
+          else __PYX_ERR(0, 244, __pyx_L1_error)
         }
         break;
       }
@@ -3370,7 +3370,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       if (unlikely(size != 4)) {
         if (size > 4) __Pyx_RaiseTooManyValuesError(4);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 243, __pyx_L1_error)
+        __PYX_ERR(0, 244, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -3393,7 +3393,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
         Py_ssize_t i;
         PyObject** temps[4] = {&__pyx_t_8,&__pyx_t_9,&__pyx_t_10,&__pyx_t_11};
         for (i=0; i < 4; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 243, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 244, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -3403,7 +3403,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[4] = {&__pyx_t_8,&__pyx_t_9,&__pyx_t_10,&__pyx_t_11};
-      __pyx_t_12 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 243, __pyx_L1_error)
+      __pyx_t_12 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 244, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __pyx_t_13 = Py_TYPE(__pyx_t_12)->tp_iternext;
@@ -3412,7 +3412,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 4) < 0) __PYX_ERR(0, 243, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_13(__pyx_t_12), 4) < 0) __PYX_ERR(0, 244, __pyx_L1_error)
       __pyx_t_13 = NULL;
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       goto __pyx_L11_unpacking_done;
@@ -3420,7 +3420,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_13 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 243, __pyx_L1_error)
+      __PYX_ERR(0, 244, __pyx_L1_error)
       __pyx_L11_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_start, __pyx_t_8);
@@ -3432,18 +3432,18 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     __Pyx_DECREF_SET(__pyx_v_shake, __pyx_t_11);
     __pyx_t_11 = 0;
 
-    /* "pyaibox/base/randomfunc.py":244
+    /* "pyaibox/base/randomfunc.py":245
  *     index = []
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)             # <<<<<<<<<<<<<<
  *         x = np.array(range(start, stop, step))
  *         if shakep != 0:
  */
-    __pyx_t_11 = __Pyx_PyNumber_Absolute(__pyx_v_shake); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 244, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyNumber_Absolute(__pyx_v_shake); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_10 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 244, __pyx_L1_error)
+    __pyx_t_10 = PyObject_RichCompare(__pyx_t_11, __pyx_int_1, Py_GE); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 244, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 245, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     if (__pyx_t_2) {
     } else {
@@ -3458,9 +3458,9 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       __Pyx_INCREF(__pyx_v_shake);
       __pyx_t_3 = __pyx_v_shake;
     } else {
-      __pyx_t_10 = PyNumber_Multiply(__pyx_v_shake, __pyx_v_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __pyx_t_10 = PyNumber_Multiply(__pyx_v_shake, __pyx_v_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 245, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_11 = __Pyx_PyNumber_Int(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 244, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyNumber_Int(__pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 245, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_3 = __pyx_t_11;
@@ -3469,19 +3469,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     __Pyx_XDECREF_SET(__pyx_v_shakep, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/base/randomfunc.py":245
+    /* "pyaibox/base/randomfunc.py":246
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)
  *         x = np.array(range(start, stop, step))             # <<<<<<<<<<<<<<
  *         if shakep != 0:
  *             s = np.random.randint(0, abs(shakep), len(x))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_np); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_array); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-    __pyx_t_11 = PyTuple_New(3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_t_11 = PyTuple_New(3); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_INCREF(__pyx_v_start);
     __Pyx_GIVEREF(__pyx_v_start);
@@ -3492,7 +3492,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     __Pyx_INCREF(__pyx_v_step);
     __Pyx_GIVEREF(__pyx_v_step);
     PyTuple_SET_ITEM(__pyx_t_11, 2, __pyx_v_step);
-    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_11, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 245, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_11, NULL); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __pyx_t_11 = NULL;
@@ -3508,44 +3508,44 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     __pyx_t_3 = (__pyx_t_11) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_11, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_t_9);
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 245, __pyx_L1_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 246, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/base/randomfunc.py":246
+    /* "pyaibox/base/randomfunc.py":247
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)
  *         x = np.array(range(start, stop, step))
  *         if shakep != 0:             # <<<<<<<<<<<<<<
  *             s = np.random.randint(0, abs(shakep), len(x))
  *             x = x - s if shakep < 0 else x + s
  */
-    __pyx_t_3 = __Pyx_PyInt_NeObjC(__pyx_v_shakep, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_NeObjC(__pyx_v_shakep, __pyx_int_0, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 246, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_3); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 247, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     if (__pyx_t_4) {
 
-      /* "pyaibox/base/randomfunc.py":247
+      /* "pyaibox/base/randomfunc.py":248
  *         x = np.array(range(start, stop, step))
  *         if shakep != 0:
  *             s = np.random.randint(0, abs(shakep), len(x))             # <<<<<<<<<<<<<<
  *             x = x - s if shakep < 0 else x + s
  *             x[x >= (stop - step)] = stop - step
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 248, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_random); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_random); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 248, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_randint); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_randint); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 248, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-      __pyx_t_9 = __Pyx_PyNumber_Absolute(__pyx_v_shakep); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyNumber_Absolute(__pyx_v_shakep); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 248, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
-      __pyx_t_14 = PyObject_Length(__pyx_v_x); if (unlikely(__pyx_t_14 == ((Py_ssize_t)-1))) __PYX_ERR(0, 247, __pyx_L1_error)
-      __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_14); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 247, __pyx_L1_error)
+      __pyx_t_14 = PyObject_Length(__pyx_v_x); if (unlikely(__pyx_t_14 == ((Py_ssize_t)-1))) __PYX_ERR(0, 248, __pyx_L1_error)
+      __pyx_t_11 = PyInt_FromSsize_t(__pyx_t_14); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 248, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __pyx_t_8 = NULL;
       __pyx_t_15 = 0;
@@ -3562,7 +3562,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_10)) {
         PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_int_0, __pyx_t_9, __pyx_t_11};
-        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -3572,7 +3572,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_10)) {
         PyObject *__pyx_temp[4] = {__pyx_t_8, __pyx_int_0, __pyx_t_9, __pyx_t_11};
-        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_10, __pyx_temp+1-__pyx_t_15, 3+__pyx_t_15); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -3580,7 +3580,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       } else
       #endif
       {
-        __pyx_t_12 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 247, __pyx_L1_error)
+        __pyx_t_12 = PyTuple_New(3+__pyx_t_15); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 248, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_12);
         if (__pyx_t_8) {
           __Pyx_GIVEREF(__pyx_t_8); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_8); __pyx_t_8 = NULL;
@@ -3594,7 +3594,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
         PyTuple_SET_ITEM(__pyx_t_12, 2+__pyx_t_15, __pyx_t_11);
         __pyx_t_9 = 0;
         __pyx_t_11 = 0;
-        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_12, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 247, __pyx_L1_error)
+        __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_12, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 248, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       }
@@ -3602,23 +3602,23 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pyaibox/base/randomfunc.py":248
+      /* "pyaibox/base/randomfunc.py":249
  *         if shakep != 0:
  *             s = np.random.randint(0, abs(shakep), len(x))
  *             x = x - s if shakep < 0 else x + s             # <<<<<<<<<<<<<<
  *             x[x >= (stop - step)] = stop - step
  *             x[x < start] = start
  */
-      __pyx_t_10 = PyObject_RichCompare(__pyx_v_shakep, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 248, __pyx_L1_error)
-      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 248, __pyx_L1_error)
+      __pyx_t_10 = PyObject_RichCompare(__pyx_v_shakep, __pyx_int_0, Py_LT); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 249, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 249, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       if (__pyx_t_4) {
-        __pyx_t_10 = PyNumber_Subtract(__pyx_v_x, __pyx_v_s); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 248, __pyx_L1_error)
+        __pyx_t_10 = PyNumber_Subtract(__pyx_v_x, __pyx_v_s); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 249, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __pyx_t_3 = __pyx_t_10;
         __pyx_t_10 = 0;
       } else {
-        __pyx_t_10 = PyNumber_Add(__pyx_v_x, __pyx_v_s); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 248, __pyx_L1_error)
+        __pyx_t_10 = PyNumber_Add(__pyx_v_x, __pyx_v_s); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 249, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __pyx_t_3 = __pyx_t_10;
         __pyx_t_10 = 0;
@@ -3626,35 +3626,35 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
       __Pyx_DECREF_SET(__pyx_v_x, __pyx_t_3);
       __pyx_t_3 = 0;
 
-      /* "pyaibox/base/randomfunc.py":249
+      /* "pyaibox/base/randomfunc.py":250
  *             s = np.random.randint(0, abs(shakep), len(x))
  *             x = x - s if shakep < 0 else x + s
  *             x[x >= (stop - step)] = stop - step             # <<<<<<<<<<<<<<
  *             x[x < start] = start
  *         index.append(x)
  */
-      __pyx_t_3 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_step); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 249, __pyx_L1_error)
+      __pyx_t_3 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_step); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_10 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 249, __pyx_L1_error)
+      __pyx_t_10 = PyNumber_Subtract(__pyx_v_stop, __pyx_v_step); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_12 = PyObject_RichCompare(__pyx_v_x, __pyx_t_10, Py_GE); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 249, __pyx_L1_error)
+      __pyx_t_12 = PyObject_RichCompare(__pyx_v_x, __pyx_t_10, Py_GE); __Pyx_XGOTREF(__pyx_t_12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_12, __pyx_t_3) < 0)) __PYX_ERR(0, 249, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_12, __pyx_t_3) < 0)) __PYX_ERR(0, 250, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "pyaibox/base/randomfunc.py":250
+      /* "pyaibox/base/randomfunc.py":251
  *             x = x - s if shakep < 0 else x + s
  *             x[x >= (stop - step)] = stop - step
  *             x[x < start] = start             # <<<<<<<<<<<<<<
  *         index.append(x)
  *     P = arraycomb(index)
  */
-      __pyx_t_3 = PyObject_RichCompare(__pyx_v_x, __pyx_v_start, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 250, __pyx_L1_error)
-      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_3, __pyx_v_start) < 0)) __PYX_ERR(0, 250, __pyx_L1_error)
+      __pyx_t_3 = PyObject_RichCompare(__pyx_v_x, __pyx_v_start, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 251, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_v_x, __pyx_t_3, __pyx_v_start) < 0)) __PYX_ERR(0, 251, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-      /* "pyaibox/base/randomfunc.py":246
+      /* "pyaibox/base/randomfunc.py":247
  *         shakep = shake if abs(shake) >= 1 and type(shake) is int else int(shake * step)
  *         x = np.array(range(start, stop, step))
  *         if shakep != 0:             # <<<<<<<<<<<<<<
@@ -3663,16 +3663,16 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
     }
 
-    /* "pyaibox/base/randomfunc.py":251
+    /* "pyaibox/base/randomfunc.py":252
  *             x[x >= (stop - step)] = stop - step
  *             x[x < start] = start
  *         index.append(x)             # <<<<<<<<<<<<<<
  *     P = arraycomb(index)
  *     n = min(P.shape[0], n)
  */
-    __pyx_t_16 = __Pyx_PyList_Append(__pyx_v_index, __pyx_v_x); if (unlikely(__pyx_t_16 == ((int)-1))) __PYX_ERR(0, 251, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyList_Append(__pyx_v_index, __pyx_v_x); if (unlikely(__pyx_t_16 == ((int)-1))) __PYX_ERR(0, 252, __pyx_L1_error)
 
-    /* "pyaibox/base/randomfunc.py":243
+    /* "pyaibox/base/randomfunc.py":244
  *         n = float('inf')
  *     index = []
  *     for start, stop, step, shake in zip(starts, stops, steps, shakes):             # <<<<<<<<<<<<<<
@@ -3682,14 +3682,14 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":252
+  /* "pyaibox/base/randomfunc.py":253
  *             x[x < start] = start
  *         index.append(x)
  *     P = arraycomb(index)             # <<<<<<<<<<<<<<
  *     n = min(P.shape[0], n)
  *     idx = np.random.permutation(range(0, P.shape[0], 1))
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_arraycomb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 252, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_arraycomb); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 253, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -3703,13 +3703,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   }
   __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_12, __pyx_v_index) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_index);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 252, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 253, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_P = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":253
+  /* "pyaibox/base/randomfunc.py":254
  *         index.append(x)
  *     P = arraycomb(index)
  *     n = min(P.shape[0], n)             # <<<<<<<<<<<<<<
@@ -3718,13 +3718,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   __Pyx_INCREF(__pyx_v_n);
   __pyx_t_1 = __pyx_v_n;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_shape); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_12 = __Pyx_GetItemInt(__pyx_t_3, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_GetItemInt(__pyx_t_3, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_10 = PyObject_RichCompare(__pyx_t_1, __pyx_t_12, Py_LT); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 253, __pyx_L1_error)
-  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 253, __pyx_L1_error)
+  __pyx_t_10 = PyObject_RichCompare(__pyx_t_1, __pyx_t_12, Py_LT); __Pyx_XGOTREF(__pyx_t_10); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_10); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 254, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   if (__pyx_t_4) {
     __Pyx_INCREF(__pyx_t_1);
@@ -3741,27 +3741,27 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __Pyx_DECREF_SET(__pyx_v_n, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":254
+  /* "pyaibox/base/randomfunc.py":255
  *     P = arraycomb(index)
  *     n = min(P.shape[0], n)
  *     idx = np.random.permutation(range(0, P.shape[0], 1))             # <<<<<<<<<<<<<<
  *     P = P[idx[:n], ...]
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_np); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_random); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_permutation); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_permutation); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_shape); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_shape); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_10 = __Pyx_GetItemInt(__pyx_t_12, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_GetItemInt(__pyx_t_12, 0, long, 1, __Pyx_PyInt_From_long, 0, 0, 1); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_12 = PyTuple_New(3); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
@@ -3772,7 +3772,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __Pyx_GIVEREF(__pyx_int_1);
   PyTuple_SET_ITEM(__pyx_t_12, 2, __pyx_int_1);
   __pyx_t_10 = 0;
-  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_12, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 254, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_12, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __pyx_t_12 = NULL;
@@ -3788,22 +3788,22 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_12, __pyx_t_10) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_10);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 254, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_idx = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":255
+  /* "pyaibox/base/randomfunc.py":256
  *     n = min(P.shape[0], n)
  *     idx = np.random.permutation(range(0, P.shape[0], 1))
  *     P = P[idx[:n], ...]             # <<<<<<<<<<<<<<
  * 
  *     if len(starts) == 1:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_idx, 0, 0, NULL, &__pyx_v_n, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_idx, 0, 0, NULL, &__pyx_v_n, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_GIVEREF(__pyx_t_1);
   PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -3811,31 +3811,31 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
   __Pyx_GIVEREF(Py_Ellipsis);
   PyTuple_SET_ITEM(__pyx_t_3, 1, Py_Ellipsis);
   __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_P, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 255, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetItem(__pyx_v_P, __pyx_t_3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 256, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF_SET(__pyx_v_P, __pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":257
+  /* "pyaibox/base/randomfunc.py":258
  *     P = P[idx[:n], ...]
  * 
  *     if len(starts) == 1:             # <<<<<<<<<<<<<<
  *         P = P.squeeze(1)
  *         return P
  */
-  __pyx_t_6 = PyObject_Length(__pyx_v_starts); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 257, __pyx_L1_error)
+  __pyx_t_6 = PyObject_Length(__pyx_v_starts); if (unlikely(__pyx_t_6 == ((Py_ssize_t)-1))) __PYX_ERR(0, 258, __pyx_L1_error)
   __pyx_t_4 = ((__pyx_t_6 == 1) != 0);
   if (__pyx_t_4) {
 
-    /* "pyaibox/base/randomfunc.py":258
+    /* "pyaibox/base/randomfunc.py":259
  * 
  *     if len(starts) == 1:
  *         P = P.squeeze(1)             # <<<<<<<<<<<<<<
  *         return P
  *     else:
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 258, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_squeeze); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -3849,13 +3849,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     }
     __pyx_t_1 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_10, __pyx_int_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_int_1);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 258, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 259, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF_SET(__pyx_v_P, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":259
+    /* "pyaibox/base/randomfunc.py":260
  *     if len(starts) == 1:
  *         P = P.squeeze(1)
  *         return P             # <<<<<<<<<<<<<<
@@ -3867,7 +3867,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     __pyx_r = __pyx_v_P;
     goto __pyx_L0;
 
-    /* "pyaibox/base/randomfunc.py":257
+    /* "pyaibox/base/randomfunc.py":258
  *     P = P[idx[:n], ...]
  * 
  *     if len(starts) == 1:             # <<<<<<<<<<<<<<
@@ -3876,7 +3876,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   }
 
-  /* "pyaibox/base/randomfunc.py":261
+  /* "pyaibox/base/randomfunc.py":262
  *         return P
  *     else:
  *         return P.transpose()             # <<<<<<<<<<<<<<
@@ -3885,7 +3885,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
  */
   /*else*/ {
     __Pyx_XDECREF(__pyx_r);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_transpose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 261, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_P, __pyx_n_s_transpose); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -3899,7 +3899,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     }
     __pyx_t_1 = (__pyx_t_10) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_10) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 261, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 262, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_r = __pyx_t_1;
@@ -3907,7 +3907,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_10randomfunc_6randgrid(CYTHON_UNUSED Py
     goto __pyx_L0;
   }
 
-  /* "pyaibox/base/randomfunc.py":140
+  /* "pyaibox/base/randomfunc.py":141
  * 
  * 
  * def randgrid(start, stop, step, shake=0, n=None):             # <<<<<<<<<<<<<<
@@ -4078,10 +4078,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 269, __pyx_L1_error)
-  __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 80, __pyx_L1_error)
-  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 87, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_builtin_TypeError = __Pyx_GetBuiltinName(__pyx_n_s_TypeError); if (!__pyx_builtin_TypeError) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 89, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -4091,206 +4091,206 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/base/randomfunc.py":80
+  /* "pyaibox/base/randomfunc.py":81
  * 
  *     if (n is not None) and (type(n) is not int):
  *         raise TypeError('The number of samples should be an integer or None!')             # <<<<<<<<<<<<<<
  *     elif n is None:
  *         n = int(stop - start)
  */
-  __pyx_tuple_ = PyTuple_Pack(1, __pyx_kp_u_The_number_of_samples_should_be); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_tuple_ = PyTuple_Pack(1, __pyx_kp_u_The_number_of_samples_should_be); if (unlikely(!__pyx_tuple_)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple_);
   __Pyx_GIVEREF(__pyx_tuple_);
 
-  /* "pyaibox/base/randomfunc.py":33
+  /* "pyaibox/base/randomfunc.py":34
  * 
  * 
  * def setseed(seed=None, target='numpy'):             # <<<<<<<<<<<<<<
  *     r"""set seed
  * 
  */
-  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_n_s_seed, __pyx_n_s_target); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(2, __pyx_n_s_seed, __pyx_n_s_target); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
-  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_setseed, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 33, __pyx_L1_error)
-  __pyx_tuple__4 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_numpy)); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_codeobj__3 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__2, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_setseed, 34, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__3)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_numpy)); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "pyaibox/base/randomfunc.py":54
+  /* "pyaibox/base/randomfunc.py":55
  * 
  * 
  * def randperm(start, stop, n):             # <<<<<<<<<<<<<<
  *     r"""randperm function like matlab
  * 
  */
-  __pyx_tuple__5 = PyTuple_Pack(7, __pyx_n_s_start, __pyx_n_s_stop, __pyx_n_s_n, __pyx_n_s_Ps, __pyx_n_s_starts, __pyx_n_s_stops, __pyx_n_s_P); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(7, __pyx_n_s_start, __pyx_n_s_stop, __pyx_n_s_n, __pyx_n_s_Ps, __pyx_n_s_starts, __pyx_n_s_stops, __pyx_n_s_P); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randperm, 54, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randperm, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 55, __pyx_L1_error)
 
-  /* "pyaibox/base/randomfunc.py":95
+  /* "pyaibox/base/randomfunc.py":96
  * 
  * 
  * def randperm2d(H, W, number, population=None, mask=None):             # <<<<<<<<<<<<<<
  *     r"""randperm 2d function
  * 
  */
-  __pyx_tuple__7 = PyTuple_Pack(7, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_number, __pyx_n_s_population, __pyx_n_s_mask, __pyx_n_s_Ph, __pyx_n_s_Pw); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(7, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_number, __pyx_n_s_population, __pyx_n_s_mask, __pyx_n_s_Ph, __pyx_n_s_Pw); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randperm2d, 95, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 95, __pyx_L1_error)
-  __pyx_tuple__9 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(5, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randperm2d, 96, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "pyaibox/base/randomfunc.py":140
+  /* "pyaibox/base/randomfunc.py":141
  * 
  * 
  * def randgrid(start, stop, step, shake=0, n=None):             # <<<<<<<<<<<<<<
  *     r"""generates non-repeated uniform stepped random integers
  * 
  */
-  __pyx_tuple__10 = PyTuple_Pack(15, __pyx_n_s_start, __pyx_n_s_stop, __pyx_n_s_step, __pyx_n_s_shake, __pyx_n_s_n, __pyx_n_s_starts, __pyx_n_s_stops, __pyx_n_s_steps, __pyx_n_s_shakes, __pyx_n_s_index, __pyx_n_s_shakep, __pyx_n_s_x, __pyx_n_s_s, __pyx_n_s_P, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(15, __pyx_n_s_start, __pyx_n_s_stop, __pyx_n_s_step, __pyx_n_s_shake, __pyx_n_s_n, __pyx_n_s_starts, __pyx_n_s_stops, __pyx_n_s_steps, __pyx_n_s_shakes, __pyx_n_s_index, __pyx_n_s_shakep, __pyx_n_s_x, __pyx_n_s_s, __pyx_n_s_P, __pyx_n_s_idx); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(5, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randgrid, 140, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 140, __pyx_L1_error)
-  __pyx_tuple__12 = PyTuple_Pack(2, ((PyObject *)__pyx_int_0), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(5, 0, 15, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_randomfunc_py, __pyx_n_s_randgrid, 141, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 141, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(2, ((PyObject *)__pyx_int_0), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
 
-  /* "pyaibox/base/randomfunc.py":268
+  /* "pyaibox/base/randomfunc.py":269
  *     import matplotlib.pyplot as plt
  * 
  *     setseed(2021)             # <<<<<<<<<<<<<<
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  */
-  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_int_2021); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 268, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, __pyx_int_2021); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 269, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "pyaibox/base/randomfunc.py":269
+  /* "pyaibox/base/randomfunc.py":270
  * 
  *     setseed(2021)
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  */
-  __pyx_tuple__15 = PyTuple_Pack(3, __pyx_int_2, __pyx_int_40, __pyx_int_8); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 269, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(3, __pyx_int_2, __pyx_int_40, __pyx_int_8); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 270, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
 
-  /* "pyaibox/base/randomfunc.py":270
+  /* "pyaibox/base/randomfunc.py":271
  *     setseed(2021)
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  */
-  __pyx_tuple__16 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_1, __pyx_float_neg_1_, __pyx_int_8); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 270, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_1, __pyx_float_neg_1_, __pyx_int_8); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 271, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "pyaibox/base/randomfunc.py":271
+  /* "pyaibox/base/randomfunc.py":272
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  */
-  __pyx_tuple__17 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_int_neg_1, __pyx_int_8); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 271, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_int_neg_1, __pyx_int_8); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 272, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "pyaibox/base/randomfunc.py":272
+  /* "pyaibox/base/randomfunc.py":273
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  */
-  __pyx_tuple__18 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_float_0_5, __pyx_int_8); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 272, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_float_0_5, __pyx_int_8); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 273, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
 
-  /* "pyaibox/base/randomfunc.py":273
+  /* "pyaibox/base/randomfunc.py":274
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  * 
  */
-  __pyx_tuple__19 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_int_neg_1, __pyx_int_12); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 273, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_int_neg_1, __pyx_int_12); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 274, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "pyaibox/base/randomfunc.py":274
+  /* "pyaibox/base/randomfunc.py":275
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")             # <<<<<<<<<<<<<<
  * 
  *     mask = np.zeros((5, 6))
  */
-  __pyx_tuple__20 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_float_0_5, __pyx_int_12); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 274, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(5, __pyx_int_2, __pyx_int_40, __pyx_int_6, __pyx_float_0_5, __pyx_int_12); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 275, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "pyaibox/base/randomfunc.py":276
+  /* "pyaibox/base/randomfunc.py":277
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  * 
  *     mask = np.zeros((5, 6))             # <<<<<<<<<<<<<<
  *     mask[3, 4] = 0
  *     mask[2, 5] = 0
  */
-  __pyx_tuple__21 = PyTuple_Pack(2, __pyx_int_5, __pyx_int_6); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(2, __pyx_int_5, __pyx_int_6); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_tuple__21); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 276, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(1, __pyx_tuple__21); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 277, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "pyaibox/base/randomfunc.py":277
+  /* "pyaibox/base/randomfunc.py":278
  * 
  *     mask = np.zeros((5, 6))
  *     mask[3, 4] = 0             # <<<<<<<<<<<<<<
  *     mask[2, 5] = 0
  * 
  */
-  __pyx_tuple__23 = PyTuple_Pack(2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 277, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(2, __pyx_int_3, __pyx_int_4); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 278, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
 
-  /* "pyaibox/base/randomfunc.py":278
+  /* "pyaibox/base/randomfunc.py":279
  *     mask = np.zeros((5, 6))
  *     mask[3, 4] = 0
  *     mask[2, 5] = 0             # <<<<<<<<<<<<<<
  * 
  *     Rh, Rw = randperm2d(5, 6, 4, mask=mask)
  */
-  __pyx_tuple__24 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_5); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 278, __pyx_L1_error)
+  __pyx_tuple__24 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_5); if (unlikely(!__pyx_tuple__24)) __PYX_ERR(0, 279, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__24);
   __Pyx_GIVEREF(__pyx_tuple__24);
 
-  /* "pyaibox/base/randomfunc.py":280
+  /* "pyaibox/base/randomfunc.py":281
  *     mask[2, 5] = 0
  * 
  *     Rh, Rw = randperm2d(5, 6, 4, mask=mask)             # <<<<<<<<<<<<<<
  * 
  *     print(Rh)
  */
-  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_int_5, __pyx_int_6, __pyx_int_4); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 280, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_int_5, __pyx_int_6, __pyx_int_4); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 281, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "pyaibox/base/randomfunc.py":285
+  /* "pyaibox/base/randomfunc.py":286
  *     print(Rw)
  * 
  *     y = randperm(0, 8192, 800)             # <<<<<<<<<<<<<<
  *     x = randperm(0, 8192, 800)
  * 
  */
-  __pyx_tuple__26 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_8192, __pyx_int_800); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 285, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(3, __pyx_int_0, __pyx_int_8192, __pyx_int_800); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 286, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
   __Pyx_RefNannyFinishContext();
@@ -4602,160 +4602,160 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/base/randomfunc.py":28
+  /* "pyaibox/base/randomfunc.py":29
  * #
  * 
  * import random             # <<<<<<<<<<<<<<
  * import numpy as np
  * from pyaibox.base.arrayops import arraycomb
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_random, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_random, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_random, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":29
+  /* "pyaibox/base/randomfunc.py":30
  * 
  * import random
  * import numpy as np             # <<<<<<<<<<<<<<
  * from pyaibox.base.arrayops import arraycomb
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/randomfunc.py":30
+  /* "pyaibox/base/randomfunc.py":31
  * import random
  * import numpy as np
  * from pyaibox.base.arrayops import arraycomb             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s_arraycomb);
   __Pyx_GIVEREF(__pyx_n_s_arraycomb);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s_arraycomb);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_base_arrayops, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_pyaibox_base_arrayops, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_arraycomb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_ImportFrom(__pyx_t_2, __pyx_n_s_arraycomb); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_arraycomb, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_arraycomb, __pyx_t_1) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/randomfunc.py":33
+  /* "pyaibox/base/randomfunc.py":34
  * 
  * 
  * def setseed(seed=None, target='numpy'):             # <<<<<<<<<<<<<<
  *     r"""set seed
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_1setseed, 0, __pyx_n_s_setseed, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 33, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_1setseed, 0, __pyx_n_s_setseed, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__3)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__4);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_setseed, __pyx_t_2) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_setseed, __pyx_t_2) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/randomfunc.py":54
+  /* "pyaibox/base/randomfunc.py":55
  * 
  * 
  * def randperm(start, stop, n):             # <<<<<<<<<<<<<<
  *     r"""randperm function like matlab
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_3randperm, 0, __pyx_n_s_randperm, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_3randperm, 0, __pyx_n_s_randperm, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randperm, __pyx_t_2) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randperm, __pyx_t_2) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/randomfunc.py":95
+  /* "pyaibox/base/randomfunc.py":96
  * 
  * 
  * def randperm2d(H, W, number, population=None, mask=None):             # <<<<<<<<<<<<<<
  *     r"""randperm 2d function
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_5randperm2d, 0, __pyx_n_s_randperm2d, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_5randperm2d, 0, __pyx_n_s_randperm2d, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__9);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randperm2d, __pyx_t_2) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randperm2d, __pyx_t_2) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/randomfunc.py":140
+  /* "pyaibox/base/randomfunc.py":141
  * 
  * 
  * def randgrid(start, stop, step, shake=0, n=None):             # <<<<<<<<<<<<<<
  *     r"""generates non-repeated uniform stepped random integers
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_7randgrid, 0, __pyx_n_s_randgrid, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_10randomfunc_7randgrid, 0, __pyx_n_s_randgrid, NULL, __pyx_n_s_pyaibox_base_randomfunc, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__12);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randgrid, __pyx_t_2) < 0) __PYX_ERR(0, 140, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_randgrid, __pyx_t_2) < 0) __PYX_ERR(0, 141, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/randomfunc.py":264
+  /* "pyaibox/base/randomfunc.py":265
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     import matplotlib.pyplot as plt
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 264, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_name); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 264, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 265, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if (__pyx_t_3) {
 
-    /* "pyaibox/base/randomfunc.py":266
+    /* "pyaibox/base/randomfunc.py":267
  * if __name__ == '__main__':
  * 
  *     import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
  * 
  *     setseed(2021)
  */
-    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 266, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 267, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_n_s__13);
     __Pyx_GIVEREF(__pyx_n_s__13);
     PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s__13);
-    __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 266, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 267, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_1) < 0) __PYX_ERR(0, 266, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_1) < 0) __PYX_ERR(0, 267, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":268
+    /* "pyaibox/base/randomfunc.py":269
  *     import matplotlib.pyplot as plt
  * 
  *     setseed(2021)             # <<<<<<<<<<<<<<
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_setseed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 268, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__14, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":269
+    /* "pyaibox/base/randomfunc.py":270
  * 
  *     setseed(2021)
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__15, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -4763,24 +4763,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randperm_2_40_8);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u_randperm_2_40_8);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 269, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":270
+    /* "pyaibox/base/randomfunc.py":271
  *     setseed(2021)
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__16, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -4788,24 +4788,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randgrid_2_40_1_8_1);
     PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_kp_u_randgrid_2_40_1_8_1);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 270, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":271
+    /* "pyaibox/base/randomfunc.py":272
  *     print(randperm(2, 40, 8), ", randperm(2, 40, 8)")
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__17, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -4813,24 +4813,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randgrid_2_40_6_8);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u_randgrid_2_40_6_8);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 271, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":272
+    /* "pyaibox/base/randomfunc.py":273
  *     print(randgrid(2, 40, 1, -1., 8), ", randgrid(2, 40, 1, 8, -1.)")
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__18, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -4838,24 +4838,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randgrid_2_40_6_8_0_5);
     PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_kp_u_randgrid_2_40_6_8_0_5);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 272, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":273
+    /* "pyaibox/base/randomfunc.py":274
  *     print(randgrid(2, 40, 6, -1, 8), ", randgrid(2, 40, 6, 8)")
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")             # <<<<<<<<<<<<<<
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__19, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -4863,24 +4863,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randgrid_2_40_6_12);
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u_randgrid_2_40_6_12);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 273, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":274
+    /* "pyaibox/base/randomfunc.py":275
  *     print(randgrid(2, 40, 6, 0.5, 8), ", randgrid(2, 40, 6, 8, 0.5)")
  *     print(randgrid(2, 40, 6, -1, 12), ", randgrid(2, 40, 6, 12)")
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")             # <<<<<<<<<<<<<<
  * 
  *     mask = np.zeros((5, 6))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__20, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -4888,69 +4888,69 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_kp_u_randgrid_2_40_6_12_0_5);
     PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_kp_u_randgrid_2_40_6_12_0_5);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 274, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 275, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":276
+    /* "pyaibox/base/randomfunc.py":277
  *     print(randgrid(2, 40, 6, 0.5, 12), ", randgrid(2, 40, 6, 12, 0.5)")
  * 
  *     mask = np.zeros((5, 6))             # <<<<<<<<<<<<<<
  *     mask[3, 4] = 0
  *     mask[2, 5] = 0
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_zeros); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 276, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__22, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_mask, __pyx_t_2) < 0) __PYX_ERR(0, 276, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_mask, __pyx_t_2) < 0) __PYX_ERR(0, 277, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":277
+    /* "pyaibox/base/randomfunc.py":278
  * 
  *     mask = np.zeros((5, 6))
  *     mask[3, 4] = 0             # <<<<<<<<<<<<<<
  *     mask[2, 5] = 0
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mask); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 277, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mask); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (unlikely(PyObject_SetItem(__pyx_t_2, __pyx_tuple__23, __pyx_int_0) < 0)) __PYX_ERR(0, 277, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_2, __pyx_tuple__23, __pyx_int_0) < 0)) __PYX_ERR(0, 278, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":278
+    /* "pyaibox/base/randomfunc.py":279
  *     mask = np.zeros((5, 6))
  *     mask[3, 4] = 0
  *     mask[2, 5] = 0             # <<<<<<<<<<<<<<
  * 
  *     Rh, Rw = randperm2d(5, 6, 4, mask=mask)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mask); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 278, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_mask); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (unlikely(PyObject_SetItem(__pyx_t_2, __pyx_tuple__24, __pyx_int_0) < 0)) __PYX_ERR(0, 278, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_2, __pyx_tuple__24, __pyx_int_0) < 0)) __PYX_ERR(0, 279, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":280
+    /* "pyaibox/base/randomfunc.py":281
  *     mask[2, 5] = 0
  * 
  *     Rh, Rw = randperm2d(5, 6, 4, mask=mask)             # <<<<<<<<<<<<<<
  * 
  *     print(Rh)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm2d); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm2d); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_mask); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_mask); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mask, __pyx_t_4) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_mask, __pyx_t_4) < 0) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__25, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 280, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__25, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -4960,7 +4960,7 @@ if (!__Pyx_RefNanny) {
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 280, __pyx_L1_error)
+        __PYX_ERR(0, 281, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -4973,15 +4973,15 @@ if (!__Pyx_RefNanny) {
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_2);
       #else
-      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 280, __pyx_L1_error)
+      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 281, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 280, __pyx_L1_error)
+      __pyx_t_2 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 281, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 280, __pyx_L1_error)
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 281, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_6 = Py_TYPE(__pyx_t_5)->tp_iternext;
@@ -4989,7 +4989,7 @@ if (!__Pyx_RefNanny) {
       __Pyx_GOTREF(__pyx_t_1);
       index = 1; __pyx_t_2 = __pyx_t_6(__pyx_t_5); if (unlikely(!__pyx_t_2)) goto __pyx_L3_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_2);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_5), 2) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_5), 2) < 0) __PYX_ERR(0, 281, __pyx_L1_error)
       __pyx_t_6 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L4_unpacking_done;
@@ -4997,82 +4997,82 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_6 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 280, __pyx_L1_error)
+      __PYX_ERR(0, 281, __pyx_L1_error)
       __pyx_L4_unpacking_done:;
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rh, __pyx_t_1) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rh, __pyx_t_1) < 0) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rw, __pyx_t_2) < 0) __PYX_ERR(0, 280, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Rw, __pyx_t_2) < 0) __PYX_ERR(0, 281, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":282
+    /* "pyaibox/base/randomfunc.py":283
  *     Rh, Rw = randperm2d(5, 6, 4, mask=mask)
  * 
  *     print(Rh)             # <<<<<<<<<<<<<<
  *     print(Rw)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Rh); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 282, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Rh); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 283, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 282, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":283
+    /* "pyaibox/base/randomfunc.py":284
  * 
  *     print(Rh)
  *     print(Rw)             # <<<<<<<<<<<<<<
  * 
  *     y = randperm(0, 8192, 800)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Rw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_Rw); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 283, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 284, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/randomfunc.py":285
+    /* "pyaibox/base/randomfunc.py":286
  *     print(Rw)
  * 
  *     y = randperm(0, 8192, 800)             # <<<<<<<<<<<<<<
  *     x = randperm(0, 8192, 800)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_randperm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 285, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_randperm); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 285, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_2) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_2) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/base/randomfunc.py":286
+    /* "pyaibox/base/randomfunc.py":287
  * 
  *     y = randperm(0, 8192, 800)
  *     x = randperm(0, 8192, 800)             # <<<<<<<<<<<<<<
  * 
  *     y, x = randgrid([0, 0], [512, 512], [64, 64], [0.0, 0.], 32)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_randperm); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__26, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/randomfunc.py":288
+    /* "pyaibox/base/randomfunc.py":289
  *     x = randperm(0, 8192, 800)
  * 
  *     y, x = randgrid([0, 0], [512, 512], [64, 64], [0.0, 0.], 32)             # <<<<<<<<<<<<<<
  *     print(len(y), len(x))
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -5080,7 +5080,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
     PyList_SET_ITEM(__pyx_t_2, 1, __pyx_int_0);
-    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_int_512);
     __Pyx_GIVEREF(__pyx_int_512);
@@ -5088,7 +5088,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_512);
     __Pyx_GIVEREF(__pyx_int_512);
     PyList_SET_ITEM(__pyx_t_1, 1, __pyx_int_512);
-    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_int_64);
     __Pyx_GIVEREF(__pyx_int_64);
@@ -5096,7 +5096,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_64);
     __Pyx_GIVEREF(__pyx_int_64);
     PyList_SET_ITEM(__pyx_t_5, 1, __pyx_int_64);
-    __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_float_0_0);
     __Pyx_GIVEREF(__pyx_float_0_0);
@@ -5104,7 +5104,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_float_0_);
     __Pyx_GIVEREF(__pyx_float_0_);
     PyList_SET_ITEM(__pyx_t_7, 1, __pyx_float_0_);
-    __pyx_t_8 = PyTuple_New(5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_2);
@@ -5121,7 +5121,7 @@ if (!__Pyx_RefNanny) {
     __pyx_t_1 = 0;
     __pyx_t_5 = 0;
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 288, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5131,7 +5131,7 @@ if (!__Pyx_RefNanny) {
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 288, __pyx_L1_error)
+        __PYX_ERR(0, 289, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -5144,15 +5144,15 @@ if (!__Pyx_RefNanny) {
       __Pyx_INCREF(__pyx_t_8);
       __Pyx_INCREF(__pyx_t_4);
       #else
-      __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 288, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 289, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 288, __pyx_L1_error)
+      __pyx_t_4 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       #endif
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 288, __pyx_L1_error)
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 289, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
       __pyx_t_6 = Py_TYPE(__pyx_t_5)->tp_iternext;
@@ -5160,7 +5160,7 @@ if (!__Pyx_RefNanny) {
       __Pyx_GOTREF(__pyx_t_8);
       index = 1; __pyx_t_4 = __pyx_t_6(__pyx_t_5); if (unlikely(!__pyx_t_4)) goto __pyx_L5_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_4);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_5), 2) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_5), 2) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
       __pyx_t_6 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L6_unpacking_done;
@@ -5168,34 +5168,34 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_6 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 288, __pyx_L1_error)
+      __PYX_ERR(0, 289, __pyx_L1_error)
       __pyx_L6_unpacking_done:;
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_8) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_8) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 288, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_4) < 0) __PYX_ERR(0, 289, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/randomfunc.py":289
+    /* "pyaibox/base/randomfunc.py":290
  * 
  *     y, x = randgrid([0, 0], [512, 512], [64, 64], [0.0, 0.], 32)
  *     print(len(y), len(x))             # <<<<<<<<<<<<<<
  * 
  *     plt.figure()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_9 = PyObject_Length(__pyx_t_7); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_9 = PyObject_Length(__pyx_t_7); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_9 = PyObject_Length(__pyx_t_4); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_9 = PyObject_Length(__pyx_t_4); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_7);
@@ -5203,45 +5203,45 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_8, 1, __pyx_t_4);
     __pyx_t_7 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_8, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/randomfunc.py":291
+    /* "pyaibox/base/randomfunc.py":292
  *     print(len(y), len(x))
  * 
  *     plt.figure()             # <<<<<<<<<<<<<<
  *     plt.plot(x, y, 'o')
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/randomfunc.py":292
+    /* "pyaibox/base/randomfunc.py":293
  * 
  *     plt.figure()
  *     plt.plot(x, y, 'o')             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_y); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_4);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4);
@@ -5252,39 +5252,39 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_n_u_o);
     __pyx_t_4 = 0;
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_5, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 292, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_5, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pyaibox/base/randomfunc.py":293
+    /* "pyaibox/base/randomfunc.py":294
  *     plt.figure()
  *     plt.plot(x, y, 'o')
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  *     y, x = randgrid([0, 0], [8192, 8192], [256, 256], [0., 0.], 400)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_show); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_show); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 293, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_5); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 294, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pyaibox/base/randomfunc.py":295
+    /* "pyaibox/base/randomfunc.py":296
  *     plt.show()
  * 
  *     y, x = randgrid([0, 0], [8192, 8192], [256, 256], [0., 0.], 400)             # <<<<<<<<<<<<<<
  *     print(len(y), len(x))
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_randgrid); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -5292,7 +5292,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
     PyList_SET_ITEM(__pyx_t_5, 1, __pyx_int_0);
-    __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_int_8192);
     __Pyx_GIVEREF(__pyx_int_8192);
@@ -5300,7 +5300,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_8192);
     __Pyx_GIVEREF(__pyx_int_8192);
     PyList_SET_ITEM(__pyx_t_8, 1, __pyx_int_8192);
-    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_int_256);
     __Pyx_GIVEREF(__pyx_int_256);
@@ -5308,7 +5308,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_int_256);
     __Pyx_GIVEREF(__pyx_int_256);
     PyList_SET_ITEM(__pyx_t_4, 1, __pyx_int_256);
-    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_INCREF(__pyx_float_0_);
     __Pyx_GIVEREF(__pyx_float_0_);
@@ -5316,7 +5316,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_float_0_);
     __Pyx_GIVEREF(__pyx_float_0_);
     PyList_SET_ITEM(__pyx_t_1, 1, __pyx_float_0_);
-    __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(5); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
@@ -5333,7 +5333,7 @@ if (!__Pyx_RefNanny) {
     __pyx_t_8 = 0;
     __pyx_t_4 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 295, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -5343,7 +5343,7 @@ if (!__Pyx_RefNanny) {
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 295, __pyx_L1_error)
+        __PYX_ERR(0, 296, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -5356,15 +5356,15 @@ if (!__Pyx_RefNanny) {
       __Pyx_INCREF(__pyx_t_2);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 295, __pyx_L1_error)
+      __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 295, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 296, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 295, __pyx_L1_error)
+      __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 296, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_6 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -5372,7 +5372,7 @@ if (!__Pyx_RefNanny) {
       __Pyx_GOTREF(__pyx_t_2);
       index = 1; __pyx_t_7 = __pyx_t_6(__pyx_t_4); if (unlikely(!__pyx_t_7)) goto __pyx_L7_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_4), 2) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_6(__pyx_t_4), 2) < 0) __PYX_ERR(0, 296, __pyx_L1_error)
       __pyx_t_6 = NULL;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       goto __pyx_L8_unpacking_done;
@@ -5380,34 +5380,34 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_6 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 295, __pyx_L1_error)
+      __PYX_ERR(0, 296, __pyx_L1_error)
       __pyx_L8_unpacking_done:;
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_2) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_2) < 0) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_7) < 0) __PYX_ERR(0, 295, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_7) < 0) __PYX_ERR(0, 296, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pyaibox/base/randomfunc.py":296
+    /* "pyaibox/base/randomfunc.py":297
  * 
  *     y, x = randgrid([0, 0], [8192, 8192], [256, 256], [0., 0.], 400)
  *     print(len(y), len(x))             # <<<<<<<<<<<<<<
  * 
  *     plt.figure()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_9 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_9 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_x); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_x); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_9 = PyObject_Length(__pyx_t_7); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_9 = PyObject_Length(__pyx_t_7); if (unlikely(__pyx_t_9 == ((Py_ssize_t)-1))) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_7 = PyInt_FromSsize_t(__pyx_t_9); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_1);
@@ -5415,45 +5415,45 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_7);
     __pyx_t_1 = 0;
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 296, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_t_2, NULL); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 297, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pyaibox/base/randomfunc.py":298
+    /* "pyaibox/base/randomfunc.py":299
  *     print(len(y), len(x))
  * 
  *     plt.figure()             # <<<<<<<<<<<<<<
  *     plt.plot(x, y, '*')
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 298, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 299, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_figure); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_figure); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 299, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 299, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
 
-    /* "pyaibox/base/randomfunc.py":299
+    /* "pyaibox/base/randomfunc.py":300
  * 
  *     plt.figure()
  *     plt.plot(x, y, '*')             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_plot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_plot); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_x); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_x); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_y); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_7);
@@ -5464,29 +5464,29 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_kp_u__13);
     __pyx_t_7 = 0;
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 299, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":300
+    /* "pyaibox/base/randomfunc.py":301
  *     plt.figure()
  *     plt.plot(x, y, '*')
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plt); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 301, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_show); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_show); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 301, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_4); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 301, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/randomfunc.py":264
+    /* "pyaibox/base/randomfunc.py":265
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

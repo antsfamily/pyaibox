@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
-# @file      : const.py
+# @file      : demo_convert.py
 # @author    : Zhi Liu
 # @email     : zhiliu.mind@gmail.com
 # @homepage  : http://iridescent.ink
-# @date      : Sun Nov 11 2019
+# @date      : Sun Dec 11 2022
 # @version   : 0.0
 # @license   : The GNU General Public License (GPL) v3.0
 # @note      : 
@@ -26,14 +26,35 @@
 # If not, see <https://www.gnu.org/licenses/>. 
 #
 
-# DEFINE GLOBAL CONSTS
-C = 299792458.0  # 2.99792458e8 in m/s
-# PI = 3.14159265358979323846
-PI = 3.141592653589793238462643383279502884197169399375105820974944592307
-EPS = 1.0e-32
+import pyaibox as pb
 
+s = '[0, [[[[1], 2.], 33], 4], [5, [6, 2.E-3]], 7, [8]], 1e-3'
 
-Ge = 398603e9  # the constant of earth gravitation
-Rea = 6367.856e3  # the avarage radius of earth
-Ree = 6378.137e3  # the equatorial radius of earth
-Rep = 6356.752e3  # the polar radius of earth
+print(pb.str2list(s))
+
+print(pb.str2num(s, int))
+print(pb.str2num(s, float))
+print(pb.str2num(s, 'auto'))
+
+print(2**(pb.str2num('int8', int)[0]))
+print(pb.str2num('int', int) == [])
+
+print(pb.str2sec('1:00:0'))
+print(pb.str2sec('1:10:0'))
+print(pb.str2sec('1:10:6'))
+print(pb.str2sec('1:10:30'))
+
+n = -123
+
+bs = pb.int2bstr(n, 4, '<', signed=True)
+print(bs)
+print(hex(n))
+print(pb.bstr2int(bs, '<'))
+
+bs = pb.int2bstr(n, 4, '>', signed=True)
+print(bs)
+print(hex(n))
+print(pb.bstr2int(bs, '>'))
+
+print(pb.str2hash('123456ABCDEFG', 'md5'), 'md5')
+print(pb.file2hash('deploy.sh', 'md5'), 'md5')

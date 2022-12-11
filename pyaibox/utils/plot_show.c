@@ -1911,7 +1911,7 @@ static PyObject *__pyx_codeobj__24;
 static PyObject *__pyx_codeobj__27;
 /* Late includes */
 
-/* "pyaibox/utils/plot_show.py":34
+/* "pyaibox/utils/plot_show.py":35
  * 
  * 
  * def cplot(ca, lmod=None):             # <<<<<<<<<<<<<<
@@ -1959,7 +1959,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_1cplot(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cplot") < 0)) __PYX_ERR(0, 34, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "cplot") < 0)) __PYX_ERR(0, 35, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1975,7 +1975,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_1cplot(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("cplot", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 34, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("cplot", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 35, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.cplot", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2013,17 +2013,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   __Pyx_RefNannySetupContext("cplot", 0);
   __Pyx_INCREF(__pyx_v_lmod);
 
-  /* "pyaibox/utils/plot_show.py":35
+  /* "pyaibox/utils/plot_show.py":36
  * 
  * def cplot(ca, lmod=None):
  *     N = len(ca)             # <<<<<<<<<<<<<<
  *     if lmod is None:
  *         lmod = '-b'
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_ca); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_ca); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 36, __pyx_L1_error)
   __pyx_v_N = __pyx_t_1;
 
-  /* "pyaibox/utils/plot_show.py":36
+  /* "pyaibox/utils/plot_show.py":37
  * def cplot(ca, lmod=None):
  *     N = len(ca)
  *     if lmod is None:             # <<<<<<<<<<<<<<
@@ -2034,7 +2034,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "pyaibox/utils/plot_show.py":37
+    /* "pyaibox/utils/plot_show.py":38
  *     N = len(ca)
  *     if lmod is None:
  *         lmod = '-b'             # <<<<<<<<<<<<<<
@@ -2044,7 +2044,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     __Pyx_INCREF(__pyx_kp_u_b);
     __Pyx_DECREF_SET(__pyx_v_lmod, __pyx_kp_u_b);
 
-    /* "pyaibox/utils/plot_show.py":36
+    /* "pyaibox/utils/plot_show.py":37
  * def cplot(ca, lmod=None):
  *     N = len(ca)
  *     if lmod is None:             # <<<<<<<<<<<<<<
@@ -2053,31 +2053,31 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":38
+  /* "pyaibox/utils/plot_show.py":39
  *     if lmod is None:
  *         lmod = '-b'
  *     r = ca.real             # <<<<<<<<<<<<<<
  *     i = ca.imag
  *     for n in range(N):
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_ca, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_ca, __pyx_n_s_real); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_r = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":39
+  /* "pyaibox/utils/plot_show.py":40
  *         lmod = '-b'
  *     r = ca.real
  *     i = ca.imag             # <<<<<<<<<<<<<<
  *     for n in range(N):
  *         plt.plot([0, r[n]], [0, i[n]], lmod)
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_ca, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_ca, __pyx_n_s_imag); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 40, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_i = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":40
+  /* "pyaibox/utils/plot_show.py":41
  *     r = ca.real
  *     i = ca.imag
  *     for n in range(N):             # <<<<<<<<<<<<<<
@@ -2089,21 +2089,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   for (__pyx_t_6 = 0; __pyx_t_6 < __pyx_t_5; __pyx_t_6+=1) {
     __pyx_v_n = __pyx_t_6;
 
-    /* "pyaibox/utils/plot_show.py":41
+    /* "pyaibox/utils/plot_show.py":42
  *     i = ca.imag
  *     for n in range(N):
  *         plt.plot([0, r[n]], [0, i[n]], lmod)             # <<<<<<<<<<<<<<
  *     plt.xlabel('real')
  *     plt.ylabel('imag')
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_7, __pyx_n_s_plt); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_7, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_r, __pyx_v_n, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_r, __pyx_v_n, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -2111,9 +2111,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     __Pyx_GIVEREF(__pyx_t_7);
     PyList_SET_ITEM(__pyx_t_9, 1, __pyx_t_7);
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_i, __pyx_v_n, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_GetItemInt(__pyx_v_i, __pyx_v_n, Py_ssize_t, 1, PyInt_FromSsize_t, 0, 1, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 41, __pyx_L1_error)
+    __pyx_t_10 = PyList_New(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 42, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_INCREF(__pyx_int_0);
     __Pyx_GIVEREF(__pyx_int_0);
@@ -2136,7 +2136,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_9, __pyx_t_10, __pyx_v_lmod};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -2146,7 +2146,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[4] = {__pyx_t_7, __pyx_t_9, __pyx_t_10, __pyx_v_lmod};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_11, 3+__pyx_t_11); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -2154,7 +2154,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     } else
     #endif
     {
-      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(3+__pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -2168,7 +2168,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
       PyTuple_SET_ITEM(__pyx_t_12, 2+__pyx_t_11, __pyx_v_lmod);
       __pyx_t_9 = 0;
       __pyx_t_10 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
@@ -2176,16 +2176,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
 
-  /* "pyaibox/utils/plot_show.py":42
+  /* "pyaibox/utils/plot_show.py":43
  *     for n in range(N):
  *         plt.plot([0, r[n]], [0, i[n]], lmod)
  *     plt.xlabel('real')             # <<<<<<<<<<<<<<
  *     plt.ylabel('imag')
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_8 = NULL;
@@ -2200,21 +2200,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   }
   __pyx_t_4 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_12, __pyx_t_8, __pyx_n_u_real) : __Pyx_PyObject_CallOneArg(__pyx_t_12, __pyx_n_u_real);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 42, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":43
+  /* "pyaibox/utils/plot_show.py":44
  *         plt.plot([0, r[n]], [0, i[n]], lmod)
  *     plt.xlabel('real')
  *     plt.ylabel('imag')             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_plt); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_12, __pyx_n_s_plt); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_12);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_12, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
   __pyx_t_12 = NULL;
@@ -2229,12 +2229,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   }
   __pyx_t_4 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_12, __pyx_n_u_imag) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_n_u_imag);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":34
+  /* "pyaibox/utils/plot_show.py":35
  * 
  * 
  * def cplot(ca, lmod=None):             # <<<<<<<<<<<<<<
@@ -2263,7 +2263,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_cplot(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":46
+/* "pyaibox/utils/plot_show.py":47
  * 
  * 
  * def plots(x, ydict, plotdir='./', xlabel='x', ylabel='y', title='', issave=False, isshow=True):             # <<<<<<<<<<<<<<
@@ -2330,7 +2330,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_3plots(PyObject *__pyx_self
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ydict)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("plots", 0, 2, 8, 1); __PYX_ERR(0, 46, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("plots", 0, 2, 8, 1); __PYX_ERR(0, 47, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -2370,7 +2370,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_3plots(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "plots") < 0)) __PYX_ERR(0, 46, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "plots") < 0)) __PYX_ERR(0, 47, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2403,7 +2403,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_3plots(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("plots", 0, 2, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 46, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("plots", 0, 2, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 47, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.plots", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2438,28 +2438,28 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("plots", 0);
 
-  /* "pyaibox/utils/plot_show.py":48
+  /* "pyaibox/utils/plot_show.py":49
  * def plots(x, ydict, plotdir='./', xlabel='x', ylabel='y', title='', issave=False, isshow=True):
  * 
  *     legend = []             # <<<<<<<<<<<<<<
  *     plt.figure()
  *     plt.grid()
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_legend = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":49
+  /* "pyaibox/utils/plot_show.py":50
  * 
  *     legend = []
  *     plt.figure()             # <<<<<<<<<<<<<<
  *     plt.grid()
  *     for k, v in ydict.items():
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_figure); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_figure); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_2 = NULL;
@@ -2474,21 +2474,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 49, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":50
+  /* "pyaibox/utils/plot_show.py":51
  *     legend = []
  *     plt.figure()
  *     plt.grid()             # <<<<<<<<<<<<<<
  *     for k, v in ydict.items():
  *         plt.plot(x, v)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_grid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_grid); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2503,12 +2503,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":51
+  /* "pyaibox/utils/plot_show.py":52
  *     plt.figure()
  *     plt.grid()
  *     for k, v in ydict.items():             # <<<<<<<<<<<<<<
@@ -2518,9 +2518,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   __pyx_t_4 = 0;
   if (unlikely(__pyx_v_ydict == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 51, __pyx_L1_error)
+    __PYX_ERR(0, 52, __pyx_L1_error)
   }
-  __pyx_t_2 = __Pyx_dict_iterator(__pyx_v_ydict, 0, __pyx_n_s_items, (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_dict_iterator(__pyx_v_ydict, 0, __pyx_n_s_items, (&__pyx_t_5), (&__pyx_t_6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_XDECREF(__pyx_t_1);
   __pyx_t_1 = __pyx_t_2;
@@ -2528,7 +2528,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   while (1) {
     __pyx_t_7 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_5, &__pyx_t_4, &__pyx_t_2, &__pyx_t_3, NULL, __pyx_t_6);
     if (unlikely(__pyx_t_7 == 0)) break;
-    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_2);
@@ -2536,16 +2536,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/utils/plot_show.py":52
+    /* "pyaibox/utils/plot_show.py":53
  *     plt.grid()
  *     for k, v in ydict.items():
  *         plt.plot(x, v)             # <<<<<<<<<<<<<<
  *         legend.append(k)
  *     plt.legend(legend)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = NULL;
@@ -2563,7 +2563,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_x, __pyx_v_v};
-      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
@@ -2571,13 +2571,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
       PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_x, __pyx_v_v};
-      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_GOTREF(__pyx_t_3);
     } else
     #endif
     {
-      __pyx_t_9 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 52, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 53, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       if (__pyx_t_2) {
         __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -2588,34 +2588,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
       __Pyx_INCREF(__pyx_v_v);
       __Pyx_GIVEREF(__pyx_v_v);
       PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_7, __pyx_v_v);
-      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 52, __pyx_L1_error)
+      __pyx_t_3 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_9, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     }
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/utils/plot_show.py":53
+    /* "pyaibox/utils/plot_show.py":54
  *     for k, v in ydict.items():
  *         plt.plot(x, v)
  *         legend.append(k)             # <<<<<<<<<<<<<<
  *     plt.legend(legend)
  *     plt.xlabel(xlabel)
  */
-    __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 53, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_10 == ((int)-1))) __PYX_ERR(0, 54, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":54
+  /* "pyaibox/utils/plot_show.py":55
  *         plt.plot(x, v)
  *         legend.append(k)
  *     plt.legend(legend)             # <<<<<<<<<<<<<<
  *     plt.xlabel(xlabel)
  *     plt.ylabel(ylabel)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_legend); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 54, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_legend); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2630,21 +2630,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_3, __pyx_v_legend) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_legend);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 54, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":55
+  /* "pyaibox/utils/plot_show.py":56
  *         legend.append(k)
  *     plt.legend(legend)
  *     plt.xlabel(xlabel)             # <<<<<<<<<<<<<<
  *     plt.ylabel(ylabel)
  *     plt.title(title)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_8 = NULL;
@@ -2659,21 +2659,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_8, __pyx_v_xlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_xlabel);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":56
+  /* "pyaibox/utils/plot_show.py":57
  *     plt.legend(legend)
  *     plt.xlabel(xlabel)
  *     plt.ylabel(ylabel)             # <<<<<<<<<<<<<<
  *     plt.title(title)
  *     if issave:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_3 = NULL;
@@ -2688,21 +2688,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_3, __pyx_v_ylabel) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_v_ylabel);
   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":57
+  /* "pyaibox/utils/plot_show.py":58
  *     plt.xlabel(xlabel)
  *     plt.ylabel(ylabel)
  *     plt.title(title)             # <<<<<<<<<<<<<<
  *     if issave:
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_title); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 57, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_title); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __pyx_t_8 = NULL;
@@ -2717,42 +2717,42 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_8, __pyx_v_title) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_title);
   __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":58
+  /* "pyaibox/utils/plot_show.py":59
  *     plt.ylabel(ylabel)
  *     plt.title(title)
  *     if issave:             # <<<<<<<<<<<<<<
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')
  *     if isshow:
  */
-  __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_v_issave); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_v_issave); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 59, __pyx_L1_error)
   if (__pyx_t_11) {
 
-    /* "pyaibox/utils/plot_show.py":59
+    /* "pyaibox/utils/plot_show.py":60
  *     plt.title(title)
  *     if issave:
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')             # <<<<<<<<<<<<<<
  *     if isshow:
  *         plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_plt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_savefig); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_savefig); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Add(__pyx_v_plotdir, __pyx_v_ylabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_v_plotdir, __pyx_v_ylabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_9 = PyNumber_Add(__pyx_t_3, __pyx_n_u__3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_9 = PyNumber_Add(__pyx_t_3, __pyx_n_u__3); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_3 = PyNumber_Add(__pyx_t_9, __pyx_v_xlabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_t_9, __pyx_v_xlabel); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyNumber_Add(__pyx_t_3, __pyx_kp_u_png); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_9 = PyNumber_Add(__pyx_t_3, __pyx_kp_u_png); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -2768,12 +2768,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
     __pyx_t_1 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_3, __pyx_t_9) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_9);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/plot_show.py":58
+    /* "pyaibox/utils/plot_show.py":59
  *     plt.ylabel(ylabel)
  *     plt.title(title)
  *     if issave:             # <<<<<<<<<<<<<<
@@ -2782,26 +2782,26 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":60
+  /* "pyaibox/utils/plot_show.py":61
  *     if issave:
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')
  *     if isshow:             # <<<<<<<<<<<<<<
  *         plt.show()
  *     plt.close()
  */
-  __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_v_isshow); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_IsTrue(__pyx_v_isshow); if (unlikely(__pyx_t_11 < 0)) __PYX_ERR(0, 61, __pyx_L1_error)
   if (__pyx_t_11) {
 
-    /* "pyaibox/utils/plot_show.py":61
+    /* "pyaibox/utils/plot_show.py":62
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')
  *     if isshow:
  *         plt.show()             # <<<<<<<<<<<<<<
  *     plt.close()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 61, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_show); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 61, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_show); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_8 = NULL;
@@ -2816,12 +2816,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
     }
     __pyx_t_1 = (__pyx_t_8) ? __Pyx_PyObject_CallOneArg(__pyx_t_9, __pyx_t_8) : __Pyx_PyObject_CallNoArg(__pyx_t_9);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/plot_show.py":60
+    /* "pyaibox/utils/plot_show.py":61
  *     if issave:
  *         plt.savefig(plotdir + ylabel + '_' + xlabel + '.png')
  *     if isshow:             # <<<<<<<<<<<<<<
@@ -2830,16 +2830,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":62
+  /* "pyaibox/utils/plot_show.py":63
  *     if isshow:
  *         plt.show()
  *     plt.close()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_plt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_9, __pyx_n_s_plt); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_close); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_9, __pyx_n_s_close); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   __pyx_t_9 = NULL;
@@ -2854,12 +2854,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   }
   __pyx_t_1 = (__pyx_t_9) ? __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_9) : __Pyx_PyObject_CallNoArg(__pyx_t_8);
   __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":46
+  /* "pyaibox/utils/plot_show.py":47
  * 
  * 
  * def plots(x, ydict, plotdir='./', xlabel='x', ylabel='y', title='', issave=False, isshow=True):             # <<<<<<<<<<<<<<
@@ -2887,7 +2887,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_2plots(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":67
+/* "pyaibox/utils/plot_show.py":68
  * class Plots:
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):             # <<<<<<<<<<<<<<
@@ -2995,7 +2995,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5Plots_1__init__(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 67, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 68, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3029,7 +3029,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5Plots_1__init__(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 67, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 68, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.Plots.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3056,61 +3056,61 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots___init__(CYTHON_UNUS
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pyaibox/utils/plot_show.py":69
+  /* "pyaibox/utils/plot_show.py":70
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):
  * 
  *         self.plotdir = plotdir             # <<<<<<<<<<<<<<
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 69, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":70
+  /* "pyaibox/utils/plot_show.py":71
  * 
  *         self.plotdir = plotdir
  *         self.xlabel = xlabel             # <<<<<<<<<<<<<<
  *         self.ylabel = ylabel
  *         self.title = title
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 70, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":71
+  /* "pyaibox/utils/plot_show.py":72
  *         self.plotdir = plotdir
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel             # <<<<<<<<<<<<<<
  *         self.title = title
  *         self.issave = issave
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 71, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":72
+  /* "pyaibox/utils/plot_show.py":73
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel
  *         self.title = title             # <<<<<<<<<<<<<<
  *         self.issave = issave
  *         self.isshow = isshow
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":73
+  /* "pyaibox/utils/plot_show.py":74
  *         self.ylabel = ylabel
  *         self.title = title
  *         self.issave = issave             # <<<<<<<<<<<<<<
  *         self.isshow = isshow
  *         if figname is None or figname == '':
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_issave, __pyx_v_issave) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_issave, __pyx_v_issave) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":74
+  /* "pyaibox/utils/plot_show.py":75
  *         self.title = title
  *         self.issave = issave
  *         self.isshow = isshow             # <<<<<<<<<<<<<<
  *         if figname is None or figname == '':
  *             self.figname = self.plotdir + self.ylabel + '_' + self.xlabel + '.png'
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_isshow, __pyx_v_isshow) < 0) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_isshow, __pyx_v_isshow) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
 
-  /* "pyaibox/utils/plot_show.py":75
+  /* "pyaibox/utils/plot_show.py":76
  *         self.issave = issave
  *         self.isshow = isshow
  *         if figname is None or figname == '':             # <<<<<<<<<<<<<<
@@ -3124,42 +3124,42 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots___init__(CYTHON_UNUS
     __pyx_t_1 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_v_figname, __pyx_kp_u__2, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_v_figname, __pyx_kp_u__2, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 76, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":76
+    /* "pyaibox/utils/plot_show.py":77
  *         self.isshow = isshow
  *         if figname is None or figname == '':
  *             self.figname = self.plotdir + self.ylabel + '_' + self.xlabel + '.png'             # <<<<<<<<<<<<<<
  *         else:
  *             self.figname = figname
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_t_5); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Add(__pyx_t_6, __pyx_n_u__3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Add(__pyx_t_6, __pyx_n_u__3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_Add(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_kp_u_png); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Add(__pyx_t_4, __pyx_kp_u_png); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_figname, __pyx_t_6) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_figname, __pyx_t_6) < 0) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":75
+    /* "pyaibox/utils/plot_show.py":76
  *         self.issave = issave
  *         self.isshow = isshow
  *         if figname is None or figname == '':             # <<<<<<<<<<<<<<
@@ -3169,7 +3169,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots___init__(CYTHON_UNUS
     goto __pyx_L3;
   }
 
-  /* "pyaibox/utils/plot_show.py":78
+  /* "pyaibox/utils/plot_show.py":79
  *             self.figname = self.plotdir + self.ylabel + '_' + self.xlabel + '.png'
  *         else:
  *             self.figname = figname             # <<<<<<<<<<<<<<
@@ -3177,11 +3177,11 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots___init__(CYTHON_UNUS
  *     def __call__(self, x, ydict, figname=None):
  */
   /*else*/ {
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_figname, __pyx_v_figname) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_figname, __pyx_v_figname) < 0) __PYX_ERR(0, 79, __pyx_L1_error)
   }
   __pyx_L3:;
 
-  /* "pyaibox/utils/plot_show.py":67
+  /* "pyaibox/utils/plot_show.py":68
  * class Plots:
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):             # <<<<<<<<<<<<<<
@@ -3204,7 +3204,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots___init__(CYTHON_UNUS
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":80
+/* "pyaibox/utils/plot_show.py":81
  *             self.figname = figname
  * 
  *     def __call__(self, x, ydict, figname=None):             # <<<<<<<<<<<<<<
@@ -3254,13 +3254,13 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5Plots_3__call__(PyObject *
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_x)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, 1); __PYX_ERR(0, 80, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, 1); __PYX_ERR(0, 81, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_ydict)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, 2); __PYX_ERR(0, 80, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, 2); __PYX_ERR(0, 81, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  3:
@@ -3270,7 +3270,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5Plots_3__call__(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(0, 80, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__call__") < 0)) __PYX_ERR(0, 81, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3290,7 +3290,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5Plots_3__call__(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 80, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__call__", 0, 3, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 81, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.Plots.__call__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3328,7 +3328,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   __Pyx_RefNannySetupContext("__call__", 0);
   __Pyx_INCREF(__pyx_v_figname);
 
-  /* "pyaibox/utils/plot_show.py":82
+  /* "pyaibox/utils/plot_show.py":83
  *     def __call__(self, x, ydict, figname=None):
  * 
  *         if figname is None or figname == '':             # <<<<<<<<<<<<<<
@@ -3342,24 +3342,24 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     __pyx_t_1 = __pyx_t_3;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_v_figname, __pyx_kp_u__2, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_v_figname, __pyx_kp_u__2, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 83, __pyx_L1_error)
   __pyx_t_1 = __pyx_t_3;
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":83
+    /* "pyaibox/utils/plot_show.py":84
  * 
  *         if figname is None or figname == '':
  *             figname = self.figname             # <<<<<<<<<<<<<<
  * 
  *         legend = []
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_figname); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_figname); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF_SET(__pyx_v_figname, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":82
+    /* "pyaibox/utils/plot_show.py":83
  *     def __call__(self, x, ydict, figname=None):
  * 
  *         if figname is None or figname == '':             # <<<<<<<<<<<<<<
@@ -3368,28 +3368,28 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":85
+  /* "pyaibox/utils/plot_show.py":86
  *             figname = self.figname
  * 
  *         legend = []             # <<<<<<<<<<<<<<
  *         plt.figure()
  *         plt.grid()
  */
-  __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_legend = ((PyObject*)__pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":86
+  /* "pyaibox/utils/plot_show.py":87
  * 
  *         legend = []
  *         plt.figure()             # <<<<<<<<<<<<<<
  *         plt.grid()
  *         for k, v in ydict.items():
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_figure); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 86, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_figure); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -3404,21 +3404,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   }
   __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":87
+  /* "pyaibox/utils/plot_show.py":88
  *         legend = []
  *         plt.figure()
  *         plt.grid()             # <<<<<<<<<<<<<<
  *         for k, v in ydict.items():
  *             plt.plot(x, v)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_grid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_grid); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -3433,12 +3433,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":88
+  /* "pyaibox/utils/plot_show.py":89
  *         plt.figure()
  *         plt.grid()
  *         for k, v in ydict.items():             # <<<<<<<<<<<<<<
@@ -3448,9 +3448,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   __pyx_t_7 = 0;
   if (unlikely(__pyx_v_ydict == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 88, __pyx_L1_error)
+    __PYX_ERR(0, 89, __pyx_L1_error)
   }
-  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_ydict, 0, __pyx_n_s_items, (&__pyx_t_8), (&__pyx_t_9)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_ydict, 0, __pyx_n_s_items, (&__pyx_t_8), (&__pyx_t_9)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_4);
   __pyx_t_4 = __pyx_t_5;
@@ -3458,7 +3458,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   while (1) {
     __pyx_t_10 = __Pyx_dict_iter_next(__pyx_t_4, __pyx_t_8, &__pyx_t_7, &__pyx_t_5, &__pyx_t_6, NULL, __pyx_t_9);
     if (unlikely(__pyx_t_10 == 0)) break;
-    if (unlikely(__pyx_t_10 == -1)) __PYX_ERR(0, 88, __pyx_L1_error)
+    if (unlikely(__pyx_t_10 == -1)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_5);
@@ -3466,16 +3466,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":89
+    /* "pyaibox/utils/plot_show.py":90
  *         plt.grid()
  *         for k, v in ydict.items():
  *             plt.plot(x, v)             # <<<<<<<<<<<<<<
  *             legend.append(k)
  *         plt.legend(legend)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_plot); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 89, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_plot); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 90, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -3493,7 +3493,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_11)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_v_x, __pyx_v_v};
-      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_6);
     } else
@@ -3501,13 +3501,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_11)) {
       PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_v_x, __pyx_v_v};
-      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_11, __pyx_temp+1-__pyx_t_10, 2+__pyx_t_10); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_t_6);
     } else
     #endif
     {
-      __pyx_t_12 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 89, __pyx_L1_error)
+      __pyx_t_12 = PyTuple_New(2+__pyx_t_10); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 90, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_t_5) {
         __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -3518,34 +3518,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
       __Pyx_INCREF(__pyx_v_v);
       __Pyx_GIVEREF(__pyx_v_v);
       PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_10, __pyx_v_v);
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_11, __pyx_t_12, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 90, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
     }
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":90
+    /* "pyaibox/utils/plot_show.py":91
  *         for k, v in ydict.items():
  *             plt.plot(x, v)
  *             legend.append(k)             # <<<<<<<<<<<<<<
  *         plt.legend(legend)
  *         plt.xlabel(self.xlabel)
  */
-    __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 90, __pyx_L1_error)
+    __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 91, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":91
+  /* "pyaibox/utils/plot_show.py":92
  *             plt.plot(x, v)
  *             legend.append(k)
  *         plt.legend(legend)             # <<<<<<<<<<<<<<
  *         plt.xlabel(self.xlabel)
  *         plt.ylabel(self.ylabel)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_legend); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 91, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_legend); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -3560,24 +3560,24 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_6, __pyx_v_legend) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_v_legend);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":92
+  /* "pyaibox/utils/plot_show.py":93
  *             legend.append(k)
  *         plt.legend(legend)
  *         plt.xlabel(self.xlabel)             # <<<<<<<<<<<<<<
  *         plt.ylabel(self.ylabel)
  *         plt.title(self.title)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 92, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -3592,24 +3592,24 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   __pyx_t_4 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_12, __pyx_t_11) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 93, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":93
+  /* "pyaibox/utils/plot_show.py":94
  *         plt.legend(legend)
  *         plt.xlabel(self.xlabel)
  *         plt.ylabel(self.ylabel)             # <<<<<<<<<<<<<<
  *         plt.title(self.title)
  *         if self.issave:
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_11))) {
@@ -3624,24 +3624,24 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   __pyx_t_4 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_12, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 93, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":94
+  /* "pyaibox/utils/plot_show.py":95
  *         plt.xlabel(self.xlabel)
  *         plt.ylabel(self.ylabel)
  *         plt.title(self.title)             # <<<<<<<<<<<<<<
  *         if self.issave:
  *             plt.savefig(figname)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
-  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_title); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_title); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -3656,34 +3656,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   __pyx_t_4 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_12, __pyx_t_11) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_11);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":95
+  /* "pyaibox/utils/plot_show.py":96
  *         plt.ylabel(self.ylabel)
  *         plt.title(self.title)
  *         if self.issave:             # <<<<<<<<<<<<<<
  *             plt.savefig(figname)
  *         if self.isshow:
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_issave); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_issave); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":96
+    /* "pyaibox/utils/plot_show.py":97
  *         plt.title(self.title)
  *         if self.issave:
  *             plt.savefig(figname)             # <<<<<<<<<<<<<<
  *         if self.isshow:
  *             plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_savefig); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_savefig); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_6 = NULL;
@@ -3698,12 +3698,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     }
     __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_6, __pyx_v_figname) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_v_figname);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":95
+    /* "pyaibox/utils/plot_show.py":96
  *         plt.ylabel(self.ylabel)
  *         plt.title(self.title)
  *         if self.issave:             # <<<<<<<<<<<<<<
@@ -3712,29 +3712,29 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":97
+  /* "pyaibox/utils/plot_show.py":98
  *         if self.issave:
  *             plt.savefig(figname)
  *         if self.isshow:             # <<<<<<<<<<<<<<
  *             plt.show()
  *         plt.close()
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_isshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_isshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_t_4); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 98, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":98
+    /* "pyaibox/utils/plot_show.py":99
  *             plt.savefig(figname)
  *         if self.isshow:
  *             plt.show()             # <<<<<<<<<<<<<<
  *         plt.close()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_11, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_show); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_show); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __pyx_t_11 = NULL;
@@ -3749,12 +3749,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
     }
     __pyx_t_4 = (__pyx_t_11) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_11) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":97
+    /* "pyaibox/utils/plot_show.py":98
  *         if self.issave:
  *             plt.savefig(figname)
  *         if self.isshow:             # <<<<<<<<<<<<<<
@@ -3763,16 +3763,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":99
+  /* "pyaibox/utils/plot_show.py":100
  *         if self.isshow:
  *             plt.show()
  *         plt.close()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_plt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_close); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_close); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_11);
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   __pyx_t_6 = NULL;
@@ -3787,12 +3787,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   }
   __pyx_t_4 = (__pyx_t_6) ? __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_6) : __Pyx_PyObject_CallNoArg(__pyx_t_11);
   __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":80
+  /* "pyaibox/utils/plot_show.py":81
  *             self.figname = figname
  * 
  *     def __call__(self, x, ydict, figname=None):             # <<<<<<<<<<<<<<
@@ -3821,7 +3821,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_5Plots_2__call__(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":102
+/* "pyaibox/utils/plot_show.py":103
  * 
  * 
  * def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -3963,7 +3963,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5plot(PyObject *__pyx_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "plot") < 0)) __PYX_ERR(0, 102, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "plot") < 0)) __PYX_ERR(0, 103, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4006,7 +4006,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_5plot(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("plot", 0, 1, 11, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 102, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("plot", 0, 1, 11, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 103, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.plot", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -4082,7 +4082,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_ylabels);
   __Pyx_INCREF(__pyx_v_titles);
 
-  /* "pyaibox/utils/plot_show.py":161
+  /* "pyaibox/utils/plot_show.py":162
  *     """
  * 
  *     if (type(Ys) is not list) and (type(Ys) is not tuple):             # <<<<<<<<<<<<<<
@@ -4102,14 +4102,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":162
+    /* "pyaibox/utils/plot_show.py":163
  * 
  *     if (type(Ys) is not list) and (type(Ys) is not tuple):
  *         Ys = [Ys]             # <<<<<<<<<<<<<<
  * 
  *     n = len(Ys)
  */
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 162, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 163, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_Ys);
     __Pyx_GIVEREF(__pyx_v_Ys);
@@ -4117,7 +4117,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_Ys, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":161
+    /* "pyaibox/utils/plot_show.py":162
  *     """
  * 
  *     if (type(Ys) is not list) and (type(Ys) is not tuple):             # <<<<<<<<<<<<<<
@@ -4126,20 +4126,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":164
+  /* "pyaibox/utils/plot_show.py":165
  *         Ys = [Ys]
  * 
  *     n = len(Ys)             # <<<<<<<<<<<<<<
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 164, __pyx_L1_error)
-  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 164, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 165, __pyx_L1_error)
+  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 165, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_n = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":165
+  /* "pyaibox/utils/plot_show.py":166
  * 
  *     n = len(Ys)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -4159,14 +4159,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":166
+    /* "pyaibox/utils/plot_show.py":167
  *     n = len(Ys)
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)             # <<<<<<<<<<<<<<
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 166, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 167, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -4180,7 +4180,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_v_n) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_n);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 166, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 167, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
@@ -4189,7 +4189,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 166, __pyx_L1_error)
+        __PYX_ERR(0, 167, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -4202,15 +4202,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 166, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 166, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 166, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -4218,7 +4218,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_GOTREF(__pyx_t_6);
       index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L9_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 166, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 167, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       goto __pyx_L10_unpacking_done;
@@ -4226,7 +4226,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 166, __pyx_L1_error)
+      __PYX_ERR(0, 167, __pyx_L1_error)
       __pyx_L10_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_6);
@@ -4234,7 +4234,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "pyaibox/utils/plot_show.py":165
+    /* "pyaibox/utils/plot_show.py":166
  * 
  *     n = len(Ys)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -4243,7 +4243,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":167
+  /* "pyaibox/utils/plot_show.py":168
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows             # <<<<<<<<<<<<<<
@@ -4252,12 +4252,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   __pyx_t_1 = (__pyx_v_nrows == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 167, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 167, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 167, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -4272,7 +4272,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_10, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 167, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 168, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -4284,7 +4284,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":168
+  /* "pyaibox/utils/plot_show.py":169
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols             # <<<<<<<<<<<<<<
@@ -4293,12 +4293,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   __pyx_t_1 = (__pyx_v_ncols == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 168, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 168, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 168, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -4313,7 +4313,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_10, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 168, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 169, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -4325,7 +4325,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":170
+  /* "pyaibox/utils/plot_show.py":171
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  * 
  *     grids = [grids] * n if (type(grids) is bool) or (grids is None) else grids             # <<<<<<<<<<<<<<
@@ -4344,12 +4344,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L11_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 170, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 171, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_grids);
     __Pyx_GIVEREF(__pyx_v_grids);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_grids);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 170, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 171, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -4363,7 +4363,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_grids, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":171
+  /* "pyaibox/utils/plot_show.py":172
  * 
  *     grids = [grids] * n if (type(grids) is bool) or (grids is None) else grids
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels             # <<<<<<<<<<<<<<
@@ -4382,12 +4382,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L13_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 171, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 172, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_xlabels);
     __Pyx_GIVEREF(__pyx_v_xlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_xlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 171, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 172, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -4401,7 +4401,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_xlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":172
+  /* "pyaibox/utils/plot_show.py":173
  *     grids = [grids] * n if (type(grids) is bool) or (grids is None) else grids
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels             # <<<<<<<<<<<<<<
@@ -4420,12 +4420,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L15_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 172, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 173, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_ylabels);
     __Pyx_GIVEREF(__pyx_v_ylabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_ylabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 172, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 173, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -4439,7 +4439,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_ylabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":173
+  /* "pyaibox/utils/plot_show.py":174
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles             # <<<<<<<<<<<<<<
@@ -4458,12 +4458,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L17_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 173, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 174, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_titles);
     __Pyx_GIVEREF(__pyx_v_titles);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_titles);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 173, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 174, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -4477,39 +4477,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_titles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":175
+  /* "pyaibox/utils/plot_show.py":176
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 175, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 176, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":176
+    /* "pyaibox/utils/plot_show.py":177
  * 
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']             # <<<<<<<<<<<<<<
  *         del(kwargs['Xs'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 176, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 177, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_Xs = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":177
+    /* "pyaibox/utils/plot_show.py":178
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])             # <<<<<<<<<<<<<<
  *     else:
  *         Xs = [[None]*len(Y) for Y in Ys]
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 177, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 178, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":175
+    /* "pyaibox/utils/plot_show.py":176
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
@@ -4519,7 +4519,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     goto __pyx_L19;
   }
 
-  /* "pyaibox/utils/plot_show.py":179
+  /* "pyaibox/utils/plot_show.py":180
  *         del(kwargs['Xs'])
  *     else:
  *         Xs = [[None]*len(Y) for Y in Ys]             # <<<<<<<<<<<<<<
@@ -4528,32 +4528,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   /*else*/ {
     { /* enter inner scope */
-      __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 179, __pyx_L22_error)
+      __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 180, __pyx_L22_error)
       __Pyx_GOTREF(__pyx_t_4);
       if (likely(PyList_CheckExact(__pyx_v_Ys)) || PyTuple_CheckExact(__pyx_v_Ys)) {
         __pyx_t_7 = __pyx_v_Ys; __Pyx_INCREF(__pyx_t_7); __pyx_t_5 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_5 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 179, __pyx_L22_error)
+        __pyx_t_5 = -1; __pyx_t_7 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 180, __pyx_L22_error)
         __Pyx_GOTREF(__pyx_t_7);
-        __pyx_t_11 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 179, __pyx_L22_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_7)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 180, __pyx_L22_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_7))) {
             if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_7)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_6 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 179, __pyx_L22_error)
+            __pyx_t_6 = PyList_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 180, __pyx_L22_error)
             #else
-            __pyx_t_6 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L22_error)
+            __pyx_t_6 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L22_error)
             __Pyx_GOTREF(__pyx_t_6);
             #endif
           } else {
             if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_7)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 179, __pyx_L22_error)
+            __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_7, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 180, __pyx_L22_error)
             #else
-            __pyx_t_6 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L22_error)
+            __pyx_t_6 = PySequence_ITEM(__pyx_t_7, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L22_error)
             __Pyx_GOTREF(__pyx_t_6);
             #endif
           }
@@ -4563,7 +4563,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 179, __pyx_L22_error)
+              else __PYX_ERR(0, 180, __pyx_L22_error)
             }
             break;
           }
@@ -4571,8 +4571,8 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __Pyx_XDECREF_SET(__pyx_7genexpr__pyx_v_Y, __pyx_t_6);
         __pyx_t_6 = 0;
-        __pyx_t_12 = PyObject_Length(__pyx_7genexpr__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 179, __pyx_L22_error)
-        __pyx_t_6 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 179, __pyx_L22_error)
+        __pyx_t_12 = PyObject_Length(__pyx_7genexpr__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 180, __pyx_L22_error)
+        __pyx_t_6 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 180, __pyx_L22_error)
         __Pyx_GOTREF(__pyx_t_6);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < __pyx_t_12; __pyx_temp++) {
@@ -4581,7 +4581,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyList_SET_ITEM(__pyx_t_6, __pyx_temp, Py_None);
           }
         }
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_t_6))) __PYX_ERR(0, 179, __pyx_L22_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_4, (PyObject*)__pyx_t_6))) __PYX_ERR(0, 180, __pyx_L22_error)
         __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       }
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -4597,7 +4597,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   }
   __pyx_L19:;
 
-  /* "pyaibox/utils/plot_show.py":181
+  /* "pyaibox/utils/plot_show.py":182
  *         Xs = [[None]*len(Y) for Y in Ys]
  * 
  *     styles = [[None]*len(Y) for Y in Ys] if styles is None else styles             # <<<<<<<<<<<<<<
@@ -4607,32 +4607,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_2 = (__pyx_v_styles == Py_None);
   if ((__pyx_t_2 != 0)) {
     { /* enter inner scope */
-      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 181, __pyx_L28_error)
+      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 182, __pyx_L28_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_v_Ys)) || PyTuple_CheckExact(__pyx_v_Ys)) {
         __pyx_t_6 = __pyx_v_Ys; __Pyx_INCREF(__pyx_t_6); __pyx_t_5 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 181, __pyx_L28_error)
+        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L28_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 181, __pyx_L28_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 182, __pyx_L28_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_6))) {
             if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 181, __pyx_L28_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 182, __pyx_L28_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 181, __pyx_L28_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L28_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 181, __pyx_L28_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 182, __pyx_L28_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 181, __pyx_L28_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L28_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -4642,7 +4642,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 181, __pyx_L28_error)
+              else __PYX_ERR(0, 182, __pyx_L28_error)
             }
             break;
           }
@@ -4650,8 +4650,8 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr1__pyx_v_Y, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_12 = PyObject_Length(__pyx_8genexpr1__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 181, __pyx_L28_error)
-        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 181, __pyx_L28_error)
+        __pyx_t_12 = PyObject_Length(__pyx_8genexpr1__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 182, __pyx_L28_error)
+        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L28_error)
         __Pyx_GOTREF(__pyx_t_8);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < __pyx_t_12; __pyx_temp++) {
@@ -4660,7 +4660,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyList_SET_ITEM(__pyx_t_8, __pyx_temp, Py_None);
           }
         }
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 181, __pyx_L28_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 182, __pyx_L28_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4680,7 +4680,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_styles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":182
+  /* "pyaibox/utils/plot_show.py":183
  * 
  *     styles = [[None]*len(Y) for Y in Ys] if styles is None else styles
  *     styles = [[styles]*len(Y) for Y in Ys] if type(styles) is str else styles             # <<<<<<<<<<<<<<
@@ -4690,32 +4690,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_styles)) == ((PyObject *)(&PyUnicode_Type)));
   if ((__pyx_t_2 != 0)) {
     { /* enter inner scope */
-      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 182, __pyx_L34_error)
+      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 183, __pyx_L34_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_v_Ys)) || PyTuple_CheckExact(__pyx_v_Ys)) {
         __pyx_t_6 = __pyx_v_Ys; __Pyx_INCREF(__pyx_t_6); __pyx_t_5 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 182, __pyx_L34_error)
+        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 183, __pyx_L34_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 182, __pyx_L34_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 183, __pyx_L34_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_6))) {
             if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 182, __pyx_L34_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 183, __pyx_L34_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L34_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L34_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 182, __pyx_L34_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 183, __pyx_L34_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L34_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L34_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -4725,7 +4725,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 182, __pyx_L34_error)
+              else __PYX_ERR(0, 183, __pyx_L34_error)
             }
             break;
           }
@@ -4733,8 +4733,8 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr2__pyx_v_Y, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_12 = PyObject_Length(__pyx_8genexpr2__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 182, __pyx_L34_error)
-        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 182, __pyx_L34_error)
+        __pyx_t_12 = PyObject_Length(__pyx_8genexpr2__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 183, __pyx_L34_error)
+        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 183, __pyx_L34_error)
         __Pyx_GOTREF(__pyx_t_8);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < __pyx_t_12; __pyx_temp++) {
@@ -4743,7 +4743,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyList_SET_ITEM(__pyx_t_8, __pyx_temp, __pyx_v_styles);
           }
         }
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 182, __pyx_L34_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 183, __pyx_L34_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4763,7 +4763,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_styles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":184
+  /* "pyaibox/utils/plot_show.py":185
  *     styles = [[styles]*len(Y) for Y in Ys] if type(styles) is str else styles
  * 
  *     legends = [[None]*len(Y) for Y in Ys] if legends is None else legends             # <<<<<<<<<<<<<<
@@ -4773,32 +4773,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_2 = (__pyx_v_legends == Py_None);
   if ((__pyx_t_2 != 0)) {
     { /* enter inner scope */
-      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 184, __pyx_L40_error)
+      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 185, __pyx_L40_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_v_Ys)) || PyTuple_CheckExact(__pyx_v_Ys)) {
         __pyx_t_6 = __pyx_v_Ys; __Pyx_INCREF(__pyx_t_6); __pyx_t_5 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 184, __pyx_L40_error)
+        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 185, __pyx_L40_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 184, __pyx_L40_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 185, __pyx_L40_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_6))) {
             if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 184, __pyx_L40_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L40_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L40_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L40_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 184, __pyx_L40_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L40_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L40_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L40_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -4808,7 +4808,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 184, __pyx_L40_error)
+              else __PYX_ERR(0, 185, __pyx_L40_error)
             }
             break;
           }
@@ -4816,8 +4816,8 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr3__pyx_v_Y, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_12 = PyObject_Length(__pyx_8genexpr3__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 184, __pyx_L40_error)
-        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 184, __pyx_L40_error)
+        __pyx_t_12 = PyObject_Length(__pyx_8genexpr3__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 185, __pyx_L40_error)
+        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L40_error)
         __Pyx_GOTREF(__pyx_t_8);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < __pyx_t_12; __pyx_temp++) {
@@ -4826,7 +4826,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyList_SET_ITEM(__pyx_t_8, __pyx_temp, Py_None);
           }
         }
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 184, __pyx_L40_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 185, __pyx_L40_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4846,7 +4846,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_legends, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":185
+  /* "pyaibox/utils/plot_show.py":186
  * 
  *     legends = [[None]*len(Y) for Y in Ys] if legends is None else legends
  *     legends = [[legends]*len(Y) for Y in Ys] if type(legends) is str else legends             # <<<<<<<<<<<<<<
@@ -4856,32 +4856,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_2 = (((PyObject *)Py_TYPE(__pyx_v_legends)) == ((PyObject *)(&PyUnicode_Type)));
   if ((__pyx_t_2 != 0)) {
     { /* enter inner scope */
-      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 185, __pyx_L46_error)
+      __pyx_t_7 = PyList_New(0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 186, __pyx_L46_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (likely(PyList_CheckExact(__pyx_v_Ys)) || PyTuple_CheckExact(__pyx_v_Ys)) {
         __pyx_t_6 = __pyx_v_Ys; __Pyx_INCREF(__pyx_t_6); __pyx_t_5 = 0;
         __pyx_t_11 = NULL;
       } else {
-        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 185, __pyx_L46_error)
+        __pyx_t_5 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_v_Ys); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 186, __pyx_L46_error)
         __Pyx_GOTREF(__pyx_t_6);
-        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 185, __pyx_L46_error)
+        __pyx_t_11 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 186, __pyx_L46_error)
       }
       for (;;) {
         if (likely(!__pyx_t_11)) {
           if (likely(PyList_CheckExact(__pyx_t_6))) {
             if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L46_error)
+            __pyx_t_8 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 186, __pyx_L46_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L46_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L46_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           } else {
             if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 185, __pyx_L46_error)
+            __pyx_t_8 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_5); __Pyx_INCREF(__pyx_t_8); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 186, __pyx_L46_error)
             #else
-            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L46_error)
+            __pyx_t_8 = PySequence_ITEM(__pyx_t_6, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L46_error)
             __Pyx_GOTREF(__pyx_t_8);
             #endif
           }
@@ -4891,7 +4891,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 185, __pyx_L46_error)
+              else __PYX_ERR(0, 186, __pyx_L46_error)
             }
             break;
           }
@@ -4899,8 +4899,8 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __Pyx_XDECREF_SET(__pyx_8genexpr4__pyx_v_Y, __pyx_t_8);
         __pyx_t_8 = 0;
-        __pyx_t_12 = PyObject_Length(__pyx_8genexpr4__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 185, __pyx_L46_error)
-        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 185, __pyx_L46_error)
+        __pyx_t_12 = PyObject_Length(__pyx_8genexpr4__pyx_v_Y); if (unlikely(__pyx_t_12 == ((Py_ssize_t)-1))) __PYX_ERR(0, 186, __pyx_L46_error)
+        __pyx_t_8 = PyList_New(1 * ((__pyx_t_12<0) ? 0:__pyx_t_12)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 186, __pyx_L46_error)
         __Pyx_GOTREF(__pyx_t_8);
         { Py_ssize_t __pyx_temp;
           for (__pyx_temp=0; __pyx_temp < __pyx_t_12; __pyx_temp++) {
@@ -4909,7 +4909,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
             PyList_SET_ITEM(__pyx_t_8, __pyx_temp, __pyx_v_legends);
           }
         }
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 185, __pyx_L46_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_7, (PyObject*)__pyx_t_8))) __PYX_ERR(0, 186, __pyx_L46_error)
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -4929,39 +4929,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_legends, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":187
+  /* "pyaibox/utils/plot_show.py":188
  *     legends = [[legends]*len(Y) for Y in Ys] if type(legends) is str else legends
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 187, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 188, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":188
+    /* "pyaibox/utils/plot_show.py":189
  * 
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']             # <<<<<<<<<<<<<<
  *         del(kwargs['fig'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 188, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 189, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_fig = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":189
+    /* "pyaibox/utils/plot_show.py":190
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])             # <<<<<<<<<<<<<<
  *     else:
  *         fig = plt.figure(figsize=figsize)
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 189, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 190, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":187
+    /* "pyaibox/utils/plot_show.py":188
  *     legends = [[legends]*len(Y) for Y in Ys] if type(legends) is str else legends
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
@@ -4971,7 +4971,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     goto __pyx_L50;
   }
 
-  /* "pyaibox/utils/plot_show.py":191
+  /* "pyaibox/utils/plot_show.py":192
  *         del(kwargs['fig'])
  *     else:
  *         fig = plt.figure(figsize=figsize)             # <<<<<<<<<<<<<<
@@ -4979,15 +4979,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  *     axs = []
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 191, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 191, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 191, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 192, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 192, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -4996,34 +4996,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   }
   __pyx_L50:;
 
-  /* "pyaibox/utils/plot_show.py":193
+  /* "pyaibox/utils/plot_show.py":194
  *         fig = plt.figure(figsize=figsize)
  * 
  *     axs = []             # <<<<<<<<<<<<<<
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  */
-  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 193, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 194, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_v_axs = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "pyaibox/utils/plot_show.py":194
+  /* "pyaibox/utils/plot_show.py":195
  * 
  *     axs = []
  *     for i in range(n):             # <<<<<<<<<<<<<<
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  *         axs.append(ax)
  */
-  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 194, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 194, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 195, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 194, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 195, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -5031,17 +5031,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 194, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 194, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 194, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 195, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 194, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -5051,7 +5051,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 194, __pyx_L1_error)
+          else __PYX_ERR(0, 195, __pyx_L1_error)
         }
         break;
       }
@@ -5060,16 +5060,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":195
+    /* "pyaibox/utils/plot_show.py":196
  *     axs = []
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)             # <<<<<<<<<<<<<<
  *         axs.append(ax)
  * 
  */
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 196, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 195, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 196, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     __pyx_t_13 = 0;
@@ -5086,7 +5086,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_v_nrows, __pyx_v_ncols, __pyx_t_8};
-      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 196, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -5095,14 +5095,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_v_nrows, __pyx_v_ncols, __pyx_t_8};
-      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_13, 3+__pyx_t_13); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 196, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     } else
     #endif
     {
-      __pyx_t_14 = PyTuple_New(3+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_14 = PyTuple_New(3+__pyx_t_13); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 196, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       if (__pyx_t_10) {
         __Pyx_GIVEREF(__pyx_t_10); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_10); __pyx_t_10 = NULL;
@@ -5116,7 +5116,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_GIVEREF(__pyx_t_8);
       PyTuple_SET_ITEM(__pyx_t_14, 2+__pyx_t_13, __pyx_t_8);
       __pyx_t_8 = 0;
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_14, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 195, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_14, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 196, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
     }
@@ -5124,16 +5124,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":196
+    /* "pyaibox/utils/plot_show.py":197
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  *         axs.append(ax)             # <<<<<<<<<<<<<<
  * 
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):
  */
-    __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 196, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_15 == ((int)-1))) __PYX_ERR(0, 197, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":194
+    /* "pyaibox/utils/plot_show.py":195
  * 
  *     axs = []
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -5143,14 +5143,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":198
+  /* "pyaibox/utils/plot_show.py":199
  *         axs.append(ax)
  * 
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):             # <<<<<<<<<<<<<<
  *         for x, y, s in zip(X, Y, style):
  *             if x is None:
  */
-  __pyx_t_4 = PyTuple_New(9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_axs);
   __Pyx_GIVEREF(__pyx_v_axs);
@@ -5179,16 +5179,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_titles);
   __Pyx_GIVEREF(__pyx_v_titles);
   PyTuple_SET_ITEM(__pyx_t_4, 8, __pyx_v_titles);
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 198, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 199, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 198, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 199, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 198, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 199, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -5196,17 +5196,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 198, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 198, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 199, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 198, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 198, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 199, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -5216,7 +5216,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 198, __pyx_L1_error)
+          else __PYX_ERR(0, 199, __pyx_L1_error)
         }
         break;
       }
@@ -5228,7 +5228,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       if (unlikely(size != 9)) {
         if (size > 9) __Pyx_RaiseTooManyValuesError(9);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 198, __pyx_L1_error)
+        __PYX_ERR(0, 199, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -5266,7 +5266,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         Py_ssize_t i;
         PyObject** temps[9] = {&__pyx_t_7,&__pyx_t_14,&__pyx_t_8,&__pyx_t_10,&__pyx_t_16,&__pyx_t_17,&__pyx_t_18,&__pyx_t_19,&__pyx_t_20};
         for (i=0; i < 9; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 198, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 199, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -5276,7 +5276,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[9] = {&__pyx_t_7,&__pyx_t_14,&__pyx_t_8,&__pyx_t_10,&__pyx_t_16,&__pyx_t_17,&__pyx_t_18,&__pyx_t_19,&__pyx_t_20};
-      __pyx_t_21 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 198, __pyx_L1_error)
+      __pyx_t_21 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_21)) __PYX_ERR(0, 199, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_21);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_21)->tp_iternext;
@@ -5285,7 +5285,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_21), 9) < 0) __PYX_ERR(0, 198, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_21), 9) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
       goto __pyx_L56_unpacking_done;
@@ -5293,7 +5293,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_21); __pyx_t_21 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 198, __pyx_L1_error)
+      __PYX_ERR(0, 199, __pyx_L1_error)
       __pyx_L56_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_7);
@@ -5315,14 +5315,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_title, __pyx_t_20);
     __pyx_t_20 = 0;
 
-    /* "pyaibox/utils/plot_show.py":199
+    /* "pyaibox/utils/plot_show.py":200
  * 
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):
  *         for x, y, s in zip(X, Y, style):             # <<<<<<<<<<<<<<
  *             if x is None:
  *                 if s is not None:
  */
-    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 199, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(3); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_v_X);
     __Pyx_GIVEREF(__pyx_v_X);
@@ -5333,16 +5333,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     __Pyx_INCREF(__pyx_v_style);
     __Pyx_GIVEREF(__pyx_v_style);
     PyTuple_SET_ITEM(__pyx_t_6, 2, __pyx_v_style);
-    __pyx_t_20 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_6, NULL); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 199, __pyx_L1_error)
+    __pyx_t_20 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_6, NULL); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 200, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_20);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if (likely(PyList_CheckExact(__pyx_t_20)) || PyTuple_CheckExact(__pyx_t_20)) {
       __pyx_t_6 = __pyx_t_20; __Pyx_INCREF(__pyx_t_6); __pyx_t_12 = 0;
       __pyx_t_22 = NULL;
     } else {
-      __pyx_t_12 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_20); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 199, __pyx_L1_error)
+      __pyx_t_12 = -1; __pyx_t_6 = PyObject_GetIter(__pyx_t_20); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 200, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_22 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 199, __pyx_L1_error)
+      __pyx_t_22 = Py_TYPE(__pyx_t_6)->tp_iternext; if (unlikely(!__pyx_t_22)) __PYX_ERR(0, 200, __pyx_L1_error)
     }
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
     for (;;) {
@@ -5350,17 +5350,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         if (likely(PyList_CheckExact(__pyx_t_6))) {
           if (__pyx_t_12 >= PyList_GET_SIZE(__pyx_t_6)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_20 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_12); __Pyx_INCREF(__pyx_t_20); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
+          __pyx_t_20 = PyList_GET_ITEM(__pyx_t_6, __pyx_t_12); __Pyx_INCREF(__pyx_t_20); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 200, __pyx_L1_error)
           #else
-          __pyx_t_20 = PySequence_ITEM(__pyx_t_6, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 199, __pyx_L1_error)
+          __pyx_t_20 = PySequence_ITEM(__pyx_t_6, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 200, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
           #endif
         } else {
           if (__pyx_t_12 >= PyTuple_GET_SIZE(__pyx_t_6)) break;
           #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-          __pyx_t_20 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_12); __Pyx_INCREF(__pyx_t_20); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 199, __pyx_L1_error)
+          __pyx_t_20 = PyTuple_GET_ITEM(__pyx_t_6, __pyx_t_12); __Pyx_INCREF(__pyx_t_20); __pyx_t_12++; if (unlikely(0 < 0)) __PYX_ERR(0, 200, __pyx_L1_error)
           #else
-          __pyx_t_20 = PySequence_ITEM(__pyx_t_6, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 199, __pyx_L1_error)
+          __pyx_t_20 = PySequence_ITEM(__pyx_t_6, __pyx_t_12); __pyx_t_12++; if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 200, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
           #endif
         }
@@ -5370,7 +5370,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           PyObject* exc_type = PyErr_Occurred();
           if (exc_type) {
             if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-            else __PYX_ERR(0, 199, __pyx_L1_error)
+            else __PYX_ERR(0, 200, __pyx_L1_error)
           }
           break;
         }
@@ -5382,7 +5382,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         if (unlikely(size != 3)) {
           if (size > 3) __Pyx_RaiseTooManyValuesError(3);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 199, __pyx_L1_error)
+          __PYX_ERR(0, 200, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -5398,17 +5398,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __Pyx_INCREF(__pyx_t_18);
         __Pyx_INCREF(__pyx_t_17);
         #else
-        __pyx_t_19 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 199, __pyx_L1_error)
+        __pyx_t_19 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 200, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_19);
-        __pyx_t_18 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 199, __pyx_L1_error)
+        __pyx_t_18 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 200, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_18);
-        __pyx_t_17 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 199, __pyx_L1_error)
+        __pyx_t_17 = PySequence_ITEM(sequence, 2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 200, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_17);
         #endif
         __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_16 = PyObject_GetIter(__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 199, __pyx_L1_error)
+        __pyx_t_16 = PyObject_GetIter(__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 200, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_16);
         __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
         __pyx_t_9 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -5418,7 +5418,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __Pyx_GOTREF(__pyx_t_18);
         index = 2; __pyx_t_17 = __pyx_t_9(__pyx_t_16); if (unlikely(!__pyx_t_17)) goto __pyx_L59_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_17);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 3) < 0) __PYX_ERR(0, 199, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 3) < 0) __PYX_ERR(0, 200, __pyx_L1_error)
         __pyx_t_9 = NULL;
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         goto __pyx_L60_unpacking_done;
@@ -5426,7 +5426,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
         __pyx_t_9 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 199, __pyx_L1_error)
+        __PYX_ERR(0, 200, __pyx_L1_error)
         __pyx_L60_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_x, __pyx_t_19);
@@ -5436,7 +5436,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __Pyx_XDECREF_SET(__pyx_v_s, __pyx_t_17);
       __pyx_t_17 = 0;
 
-      /* "pyaibox/utils/plot_show.py":200
+      /* "pyaibox/utils/plot_show.py":201
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):
  *         for x, y, s in zip(X, Y, style):
  *             if x is None:             # <<<<<<<<<<<<<<
@@ -5447,7 +5447,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       __pyx_t_2 = (__pyx_t_1 != 0);
       if (__pyx_t_2) {
 
-        /* "pyaibox/utils/plot_show.py":201
+        /* "pyaibox/utils/plot_show.py":202
  *         for x, y, s in zip(X, Y, style):
  *             if x is None:
  *                 if s is not None:             # <<<<<<<<<<<<<<
@@ -5458,16 +5458,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __pyx_t_1 = (__pyx_t_2 != 0);
         if (__pyx_t_1) {
 
-          /* "pyaibox/utils/plot_show.py":202
+          /* "pyaibox/utils/plot_show.py":203
  *             if x is None:
  *                 if s is not None:
  *                     ax.plot(y, s, **kwargs)             # <<<<<<<<<<<<<<
  *                 else:
  *                     ax.plot(y, **kwargs)
  */
-          __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 202, __pyx_L1_error)
+          __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 203, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
-          __pyx_t_17 = PyTuple_New(2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 202, __pyx_L1_error)
+          __pyx_t_17 = PyTuple_New(2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 203, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_17);
           __Pyx_INCREF(__pyx_v_y);
           __Pyx_GIVEREF(__pyx_v_y);
@@ -5475,16 +5475,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           __Pyx_INCREF(__pyx_v_s);
           __Pyx_GIVEREF(__pyx_v_s);
           PyTuple_SET_ITEM(__pyx_t_17, 1, __pyx_v_s);
-          __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 202, __pyx_L1_error)
+          __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 203, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_18);
-          __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_20, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 202, __pyx_L1_error)
+          __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_20, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 203, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_19);
           __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
           __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
           __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
 
-          /* "pyaibox/utils/plot_show.py":201
+          /* "pyaibox/utils/plot_show.py":202
  *         for x, y, s in zip(X, Y, style):
  *             if x is None:
  *                 if s is not None:             # <<<<<<<<<<<<<<
@@ -5494,7 +5494,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           goto __pyx_L62;
         }
 
-        /* "pyaibox/utils/plot_show.py":204
+        /* "pyaibox/utils/plot_show.py":205
  *                     ax.plot(y, s, **kwargs)
  *                 else:
  *                     ax.plot(y, **kwargs)             # <<<<<<<<<<<<<<
@@ -5502,16 +5502,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  *                 if s is not None:
  */
         /*else*/ {
-          __pyx_t_19 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 204, __pyx_L1_error)
+          __pyx_t_19 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 205, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_19);
-          __pyx_t_18 = PyTuple_New(1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 204, __pyx_L1_error)
+          __pyx_t_18 = PyTuple_New(1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 205, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_18);
           __Pyx_INCREF(__pyx_v_y);
           __Pyx_GIVEREF(__pyx_v_y);
           PyTuple_SET_ITEM(__pyx_t_18, 0, __pyx_v_y);
-          __pyx_t_17 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 204, __pyx_L1_error)
+          __pyx_t_17 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 205, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_17);
-          __pyx_t_20 = __Pyx_PyObject_Call(__pyx_t_19, __pyx_t_18, __pyx_t_17); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 204, __pyx_L1_error)
+          __pyx_t_20 = __Pyx_PyObject_Call(__pyx_t_19, __pyx_t_18, __pyx_t_17); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 205, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
           __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -5520,7 +5520,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         }
         __pyx_L62:;
 
-        /* "pyaibox/utils/plot_show.py":200
+        /* "pyaibox/utils/plot_show.py":201
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):
  *         for x, y, s in zip(X, Y, style):
  *             if x is None:             # <<<<<<<<<<<<<<
@@ -5530,7 +5530,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         goto __pyx_L61;
       }
 
-      /* "pyaibox/utils/plot_show.py":206
+      /* "pyaibox/utils/plot_show.py":207
  *                     ax.plot(y, **kwargs)
  *             else:
  *                 if s is not None:             # <<<<<<<<<<<<<<
@@ -5542,16 +5542,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
         __pyx_t_2 = (__pyx_t_1 != 0);
         if (__pyx_t_2) {
 
-          /* "pyaibox/utils/plot_show.py":207
+          /* "pyaibox/utils/plot_show.py":208
  *             else:
  *                 if s is not None:
  *                     ax.plot(x, y, s, **kwargs)             # <<<<<<<<<<<<<<
  *                 else:
  *                     ax.plot(x, y, **kwargs)
  */
-          __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 207, __pyx_L1_error)
+          __pyx_t_20 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 208, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
-          __pyx_t_17 = PyTuple_New(3); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 207, __pyx_L1_error)
+          __pyx_t_17 = PyTuple_New(3); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 208, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_17);
           __Pyx_INCREF(__pyx_v_x);
           __Pyx_GIVEREF(__pyx_v_x);
@@ -5562,16 +5562,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           __Pyx_INCREF(__pyx_v_s);
           __Pyx_GIVEREF(__pyx_v_s);
           PyTuple_SET_ITEM(__pyx_t_17, 2, __pyx_v_s);
-          __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 207, __pyx_L1_error)
+          __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 208, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_18);
-          __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_20, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 207, __pyx_L1_error)
+          __pyx_t_19 = __Pyx_PyObject_Call(__pyx_t_20, __pyx_t_17, __pyx_t_18); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 208, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_19);
           __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
           __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
           __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
 
-          /* "pyaibox/utils/plot_show.py":206
+          /* "pyaibox/utils/plot_show.py":207
  *                     ax.plot(y, **kwargs)
  *             else:
  *                 if s is not None:             # <<<<<<<<<<<<<<
@@ -5581,7 +5581,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           goto __pyx_L63;
         }
 
-        /* "pyaibox/utils/plot_show.py":209
+        /* "pyaibox/utils/plot_show.py":210
  *                     ax.plot(x, y, s, **kwargs)
  *                 else:
  *                     ax.plot(x, y, **kwargs)             # <<<<<<<<<<<<<<
@@ -5589,9 +5589,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  *         if legend != [None]:
  */
         /*else*/ {
-          __pyx_t_19 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 209, __pyx_L1_error)
+          __pyx_t_19 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_19);
-          __pyx_t_18 = PyTuple_New(2); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 209, __pyx_L1_error)
+          __pyx_t_18 = PyTuple_New(2); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_18);
           __Pyx_INCREF(__pyx_v_x);
           __Pyx_GIVEREF(__pyx_v_x);
@@ -5599,9 +5599,9 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
           __Pyx_INCREF(__pyx_v_y);
           __Pyx_GIVEREF(__pyx_v_y);
           PyTuple_SET_ITEM(__pyx_t_18, 1, __pyx_v_y);
-          __pyx_t_17 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 209, __pyx_L1_error)
+          __pyx_t_17 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_17);
-          __pyx_t_20 = __Pyx_PyObject_Call(__pyx_t_19, __pyx_t_18, __pyx_t_17); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 209, __pyx_L1_error)
+          __pyx_t_20 = __Pyx_PyObject_Call(__pyx_t_19, __pyx_t_18, __pyx_t_17); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 210, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_20);
           __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
           __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -5612,7 +5612,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       }
       __pyx_L61:;
 
-      /* "pyaibox/utils/plot_show.py":199
+      /* "pyaibox/utils/plot_show.py":200
  * 
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):
  *         for x, y, s in zip(X, Y, style):             # <<<<<<<<<<<<<<
@@ -5622,32 +5622,32 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":211
+    /* "pyaibox/utils/plot_show.py":212
  *                     ax.plot(x, y, **kwargs)
  * 
  *         if legend != [None]:             # <<<<<<<<<<<<<<
  *             ax.legend(legend)
  * 
  */
-    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_6 = PyList_New(1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
     PyList_SET_ITEM(__pyx_t_6, 0, Py_None);
-    __pyx_t_20 = PyObject_RichCompare(__pyx_v_legend, __pyx_t_6, Py_NE); __Pyx_XGOTREF(__pyx_t_20); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_20 = PyObject_RichCompare(__pyx_v_legend, __pyx_t_6, Py_NE); __Pyx_XGOTREF(__pyx_t_20); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_20); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 211, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_t_20); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 212, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
     if (__pyx_t_2) {
 
-      /* "pyaibox/utils/plot_show.py":212
+      /* "pyaibox/utils/plot_show.py":213
  * 
  *         if legend != [None]:
  *             ax.legend(legend)             # <<<<<<<<<<<<<<
  * 
  *         if grid:
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_legend); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 212, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_legend); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 213, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_17 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -5661,12 +5661,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       }
       __pyx_t_20 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_17, __pyx_v_legend) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_legend);
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-      if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 212, __pyx_L1_error)
+      if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 213, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_20);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
 
-      /* "pyaibox/utils/plot_show.py":211
+      /* "pyaibox/utils/plot_show.py":212
  *                     ax.plot(x, y, **kwargs)
  * 
  *         if legend != [None]:             # <<<<<<<<<<<<<<
@@ -5675,24 +5675,24 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
     }
 
-    /* "pyaibox/utils/plot_show.py":214
+    /* "pyaibox/utils/plot_show.py":215
  *             ax.legend(legend)
  * 
  *         if grid:             # <<<<<<<<<<<<<<
  *             ax.grid()
  * 
  */
-    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_grid); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 214, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_IsTrue(__pyx_v_grid); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 215, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "pyaibox/utils/plot_show.py":215
+      /* "pyaibox/utils/plot_show.py":216
  * 
  *         if grid:
  *             ax.grid()             # <<<<<<<<<<<<<<
  * 
  *         ax.set_xlabel(xlabel)
  */
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_grid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 215, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_grid); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 216, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __pyx_t_17 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -5706,12 +5706,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
       }
       __pyx_t_20 = (__pyx_t_17) ? __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_17) : __Pyx_PyObject_CallNoArg(__pyx_t_6);
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-      if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 215, __pyx_L1_error)
+      if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 216, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_20);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
 
-      /* "pyaibox/utils/plot_show.py":214
+      /* "pyaibox/utils/plot_show.py":215
  *             ax.legend(legend)
  * 
  *         if grid:             # <<<<<<<<<<<<<<
@@ -5720,14 +5720,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
     }
 
-    /* "pyaibox/utils/plot_show.py":217
+    /* "pyaibox/utils/plot_show.py":218
  *             ax.grid()
  * 
  *         ax.set_xlabel(xlabel)             # <<<<<<<<<<<<<<
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 217, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 218, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -5741,19 +5741,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __pyx_t_20 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_17, __pyx_v_xlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_xlabel);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 217, __pyx_L1_error)
+    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 218, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_20);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
 
-    /* "pyaibox/utils/plot_show.py":218
+    /* "pyaibox/utils/plot_show.py":219
  * 
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)             # <<<<<<<<<<<<<<
  *         ax.set_title(title)
  * 
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 218, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -5767,19 +5767,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __pyx_t_20 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_17, __pyx_v_ylabel) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_ylabel);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 218, __pyx_L1_error)
+    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 219, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_20);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
 
-    /* "pyaibox/utils/plot_show.py":219
+    /* "pyaibox/utils/plot_show.py":220
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)             # <<<<<<<<<<<<<<
  * 
  *     if outfile is not None:
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 219, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_6))) {
@@ -5793,12 +5793,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __pyx_t_20 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_17, __pyx_v_title) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_title);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 219, __pyx_L1_error)
+    if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 220, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_20);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
 
-    /* "pyaibox/utils/plot_show.py":198
+    /* "pyaibox/utils/plot_show.py":199
  *         axs.append(ax)
  * 
  *     for ax, X, Y, style, legend, grid, xlabel, ylabel, title in zip(axs, Xs, Ys, styles, legends, grids, xlabels, ylabels, titles):             # <<<<<<<<<<<<<<
@@ -5808,7 +5808,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":221
+  /* "pyaibox/utils/plot_show.py":222
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -5819,16 +5819,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":222
+    /* "pyaibox/utils/plot_show.py":223
  * 
  *     if outfile is not None:
  *         plt.savefig(outfile)             # <<<<<<<<<<<<<<
  *     return plt
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_20, __pyx_n_s_plt); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 222, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_20, __pyx_n_s_plt); if (unlikely(!__pyx_t_20)) __PYX_ERR(0, 223, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_20);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_20, __pyx_n_s_savefig); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 222, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_20, __pyx_n_s_savefig); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 223, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_20); __pyx_t_20 = 0;
     __pyx_t_20 = NULL;
@@ -5843,12 +5843,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
     }
     __pyx_t_4 = (__pyx_t_20) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_20, __pyx_v_outfile) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_outfile);
     __Pyx_XDECREF(__pyx_t_20); __pyx_t_20 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 222, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 223, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":221
+    /* "pyaibox/utils/plot_show.py":222
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -5857,7 +5857,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":223
+  /* "pyaibox/utils/plot_show.py":224
  *     if outfile is not None:
  *         plt.savefig(outfile)
  *     return plt             # <<<<<<<<<<<<<<
@@ -5865,13 +5865,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 223, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 224, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/plot_show.py":102
+  /* "pyaibox/utils/plot_show.py":103
  * 
  * 
  * def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -5932,7 +5932,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_4plot(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":226
+/* "pyaibox/utils/plot_show.py":227
  * 
  * 
  * def imshow(Xs, nrows=None, ncols=None, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -6044,7 +6044,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_7imshow(PyObject *__pyx_sel
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "imshow") < 0)) __PYX_ERR(0, 226, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "imshow") < 0)) __PYX_ERR(0, 227, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -6078,7 +6078,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_7imshow(PyObject *__pyx_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("imshow", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 226, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("imshow", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 227, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.imshow", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -6132,7 +6132,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_ylabels);
   __Pyx_INCREF(__pyx_v_titles);
 
-  /* "pyaibox/utils/plot_show.py":280
+  /* "pyaibox/utils/plot_show.py":281
  *     """
  * 
  *     if (type(Xs) is not list) and (type(Xs) is not tuple):             # <<<<<<<<<<<<<<
@@ -6152,14 +6152,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":281
+    /* "pyaibox/utils/plot_show.py":282
  * 
  *     if (type(Xs) is not list) and (type(Xs) is not tuple):
  *         Xs = [Xs]             # <<<<<<<<<<<<<<
  * 
  *     n = len(Xs)
  */
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 281, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 282, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_Xs);
     __Pyx_GIVEREF(__pyx_v_Xs);
@@ -6167,7 +6167,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __Pyx_DECREF_SET(__pyx_v_Xs, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":280
+    /* "pyaibox/utils/plot_show.py":281
  *     """
  * 
  *     if (type(Xs) is not list) and (type(Xs) is not tuple):             # <<<<<<<<<<<<<<
@@ -6176,20 +6176,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":283
+  /* "pyaibox/utils/plot_show.py":284
  *         Xs = [Xs]
  * 
  *     n = len(Xs)             # <<<<<<<<<<<<<<
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 283, __pyx_L1_error)
-  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 283, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 284, __pyx_L1_error)
+  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 284, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_n = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":284
+  /* "pyaibox/utils/plot_show.py":285
  * 
  *     n = len(Xs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -6209,14 +6209,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":285
+    /* "pyaibox/utils/plot_show.py":286
  *     n = len(Xs)
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)             # <<<<<<<<<<<<<<
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 285, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -6230,7 +6230,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_v_n) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_n);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 285, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 286, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
@@ -6239,7 +6239,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 285, __pyx_L1_error)
+        __PYX_ERR(0, 286, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -6252,15 +6252,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 286, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 285, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 286, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -6268,7 +6268,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       __Pyx_GOTREF(__pyx_t_6);
       index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L9_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 285, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 286, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       goto __pyx_L10_unpacking_done;
@@ -6276,7 +6276,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 285, __pyx_L1_error)
+      __PYX_ERR(0, 286, __pyx_L1_error)
       __pyx_L10_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_6);
@@ -6284,7 +6284,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "pyaibox/utils/plot_show.py":284
+    /* "pyaibox/utils/plot_show.py":285
  * 
  *     n = len(Xs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -6293,7 +6293,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":286
+  /* "pyaibox/utils/plot_show.py":287
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows             # <<<<<<<<<<<<<<
@@ -6302,12 +6302,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  */
   __pyx_t_1 = (__pyx_v_nrows == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 286, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -6322,7 +6322,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_10, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 286, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 287, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -6334,7 +6334,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":287
+  /* "pyaibox/utils/plot_show.py":288
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols             # <<<<<<<<<<<<<<
@@ -6343,12 +6343,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  */
   __pyx_t_1 = (__pyx_v_ncols == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 287, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 287, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 287, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -6363,7 +6363,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_10, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 287, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 288, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -6375,7 +6375,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":289
+  /* "pyaibox/utils/plot_show.py":290
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels             # <<<<<<<<<<<<<<
@@ -6394,12 +6394,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L11_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 289, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 290, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_xlabels);
     __Pyx_GIVEREF(__pyx_v_xlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_xlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 289, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 290, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -6413,7 +6413,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_xlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":290
+  /* "pyaibox/utils/plot_show.py":291
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels             # <<<<<<<<<<<<<<
@@ -6432,12 +6432,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L13_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 290, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 291, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_ylabels);
     __Pyx_GIVEREF(__pyx_v_ylabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_ylabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 290, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 291, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -6451,7 +6451,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_ylabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":291
+  /* "pyaibox/utils/plot_show.py":292
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles             # <<<<<<<<<<<<<<
@@ -6470,12 +6470,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L15_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 291, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 292, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_titles);
     __Pyx_GIVEREF(__pyx_v_titles);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_titles);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 291, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 292, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -6489,39 +6489,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_titles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":293
+  /* "pyaibox/utils/plot_show.py":294
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 293, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 294, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":294
+    /* "pyaibox/utils/plot_show.py":295
  * 
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']             # <<<<<<<<<<<<<<
  *         del(kwargs['fig'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 294, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 295, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_fig = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":295
+    /* "pyaibox/utils/plot_show.py":296
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])             # <<<<<<<<<<<<<<
  *     else:
  *         fig = plt.figure(figsize=figsize)
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 295, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 296, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":293
+    /* "pyaibox/utils/plot_show.py":294
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
@@ -6531,7 +6531,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     goto __pyx_L17;
   }
 
-  /* "pyaibox/utils/plot_show.py":297
+  /* "pyaibox/utils/plot_show.py":298
  *         del(kwargs['fig'])
  *     else:
  *         fig = plt.figure(figsize=figsize)             # <<<<<<<<<<<<<<
@@ -6539,15 +6539,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  *     axs = []
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 297, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 297, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 298, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 297, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 298, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 297, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 297, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 298, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 298, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -6556,34 +6556,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   }
   __pyx_L17:;
 
-  /* "pyaibox/utils/plot_show.py":299
+  /* "pyaibox/utils/plot_show.py":300
  *         fig = plt.figure(figsize=figsize)
  * 
  *     axs = []             # <<<<<<<<<<<<<<
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  */
-  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 299, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_v_axs = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "pyaibox/utils/plot_show.py":300
+  /* "pyaibox/utils/plot_show.py":301
  * 
  *     axs = []
  *     for i in range(n):             # <<<<<<<<<<<<<<
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  *         axs.append(ax)
  */
-  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 301, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 300, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 301, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -6591,17 +6591,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 301, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 301, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 300, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -6611,7 +6611,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 300, __pyx_L1_error)
+          else __PYX_ERR(0, 301, __pyx_L1_error)
         }
         break;
       }
@@ -6620,16 +6620,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":301
+    /* "pyaibox/utils/plot_show.py":302
  *     axs = []
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)             # <<<<<<<<<<<<<<
  *         axs.append(ax)
  * 
  */
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 301, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 302, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 301, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 302, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     __pyx_t_12 = 0;
@@ -6646,7 +6646,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_v_nrows, __pyx_v_ncols, __pyx_t_8};
-      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -6655,14 +6655,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_7)) {
       PyObject *__pyx_temp[4] = {__pyx_t_10, __pyx_v_nrows, __pyx_v_ncols, __pyx_t_8};
-      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_7, __pyx_temp+1-__pyx_t_12, 3+__pyx_t_12); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     } else
     #endif
     {
-      __pyx_t_13 = PyTuple_New(3+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 301, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(3+__pyx_t_12); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 302, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       if (__pyx_t_10) {
         __Pyx_GIVEREF(__pyx_t_10); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_10); __pyx_t_10 = NULL;
@@ -6676,7 +6676,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       __Pyx_GIVEREF(__pyx_t_8);
       PyTuple_SET_ITEM(__pyx_t_13, 2+__pyx_t_12, __pyx_t_8);
       __pyx_t_8 = 0;
-      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_13, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 301, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_t_13, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 302, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     }
@@ -6684,16 +6684,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":302
+    /* "pyaibox/utils/plot_show.py":303
  *     for i in range(n):
  *         ax = fig.add_subplot(nrows, ncols, i + 1)
  *         axs.append(ax)             # <<<<<<<<<<<<<<
  * 
  *     for ax, X, xlabel, ylabel, title in zip(axs, Xs, xlabels, ylabels, titles):
  */
-    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 302, __pyx_L1_error)
+    __pyx_t_14 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_14 == ((int)-1))) __PYX_ERR(0, 303, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":300
+    /* "pyaibox/utils/plot_show.py":301
  * 
  *     axs = []
  *     for i in range(n):             # <<<<<<<<<<<<<<
@@ -6703,14 +6703,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":304
+  /* "pyaibox/utils/plot_show.py":305
  *         axs.append(ax)
  * 
  *     for ax, X, xlabel, ylabel, title in zip(axs, Xs, xlabels, ylabels, titles):             # <<<<<<<<<<<<<<
  *         ax.imshow(X, **kwargs)
  *         ax.set_xlabel(xlabel)
  */
-  __pyx_t_4 = PyTuple_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_axs);
   __Pyx_GIVEREF(__pyx_v_axs);
@@ -6727,16 +6727,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_titles);
   __Pyx_GIVEREF(__pyx_v_titles);
   PyTuple_SET_ITEM(__pyx_t_4, 4, __pyx_v_titles);
-  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 305, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 304, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 305, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 304, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 305, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -6744,17 +6744,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 304, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 305, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 305, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 304, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 305, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 304, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 305, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -6764,7 +6764,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 304, __pyx_L1_error)
+          else __PYX_ERR(0, 305, __pyx_L1_error)
         }
         break;
       }
@@ -6776,7 +6776,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       if (unlikely(size != 5)) {
         if (size > 5) __Pyx_RaiseTooManyValuesError(5);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 304, __pyx_L1_error)
+        __PYX_ERR(0, 305, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -6802,7 +6802,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
         Py_ssize_t i;
         PyObject** temps[5] = {&__pyx_t_7,&__pyx_t_13,&__pyx_t_8,&__pyx_t_10,&__pyx_t_15};
         for (i=0; i < 5; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 304, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 305, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -6812,7 +6812,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[5] = {&__pyx_t_7,&__pyx_t_13,&__pyx_t_8,&__pyx_t_10,&__pyx_t_15};
-      __pyx_t_16 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 304, __pyx_L1_error)
+      __pyx_t_16 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 305, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -6821,7 +6821,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 5) < 0) __PYX_ERR(0, 304, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 5) < 0) __PYX_ERR(0, 305, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       goto __pyx_L23_unpacking_done;
@@ -6829,7 +6829,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 304, __pyx_L1_error)
+      __PYX_ERR(0, 305, __pyx_L1_error)
       __pyx_L23_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_7);
@@ -6843,37 +6843,37 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_title, __pyx_t_15);
     __pyx_t_15 = 0;
 
-    /* "pyaibox/utils/plot_show.py":305
+    /* "pyaibox/utils/plot_show.py":306
  * 
  *     for ax, X, xlabel, ylabel, title in zip(axs, Xs, xlabels, ylabels, titles):
  *         ax.imshow(X, **kwargs)             # <<<<<<<<<<<<<<
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_imshow); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 305, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_imshow); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_15 = PyTuple_New(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 305, __pyx_L1_error)
+    __pyx_t_15 = PyTuple_New(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __Pyx_INCREF(__pyx_v_X);
     __Pyx_GIVEREF(__pyx_v_X);
     PyTuple_SET_ITEM(__pyx_t_15, 0, __pyx_v_X);
-    __pyx_t_10 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 305, __pyx_L1_error)
+    __pyx_t_10 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_15, __pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 305, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_15, __pyx_t_10); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 306, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":306
+    /* "pyaibox/utils/plot_show.py":307
  *     for ax, X, xlabel, ylabel, title in zip(axs, Xs, xlabels, ylabels, titles):
  *         ax.imshow(X, **kwargs)
  *         ax.set_xlabel(xlabel)             # <<<<<<<<<<<<<<
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 306, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 307, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_15 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -6887,19 +6887,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_8 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_15, __pyx_v_xlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_xlabel);
     __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 306, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 307, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":307
+    /* "pyaibox/utils/plot_show.py":308
  *         ax.imshow(X, **kwargs)
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)             # <<<<<<<<<<<<<<
  *         ax.set_title(title)
  *         ax.axis("off")
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 307, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_15 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -6913,19 +6913,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_8 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_15, __pyx_v_ylabel) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_ylabel);
     __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 307, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 308, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":308
+    /* "pyaibox/utils/plot_show.py":309
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)             # <<<<<<<<<<<<<<
  *         ax.axis("off")
  * 
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 308, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 309, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_15 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -6939,19 +6939,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_8 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_15, __pyx_v_title) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_title);
     __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 308, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 309, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":309
+    /* "pyaibox/utils/plot_show.py":310
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)
  *         ax.axis("off")             # <<<<<<<<<<<<<<
  * 
  *     if outfile is not None:
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_axis); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 309, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_axis); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 310, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __pyx_t_15 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_10))) {
@@ -6965,12 +6965,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_8 = (__pyx_t_15) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_15, __pyx_n_u_off) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_n_u_off);
     __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
-    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 309, __pyx_L1_error)
+    if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 310, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":304
+    /* "pyaibox/utils/plot_show.py":305
  *         axs.append(ax)
  * 
  *     for ax, X, xlabel, ylabel, title in zip(axs, Xs, xlabels, ylabels, titles):             # <<<<<<<<<<<<<<
@@ -6980,7 +6980,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":311
+  /* "pyaibox/utils/plot_show.py":312
  *         ax.axis("off")
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -6991,16 +6991,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":312
+    /* "pyaibox/utils/plot_show.py":313
  * 
  *     if outfile is not None:
  *         plt.savefig(outfile)             # <<<<<<<<<<<<<<
  *     return plt
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 312, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_savefig); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 312, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_savefig); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_8 = NULL;
@@ -7015,12 +7015,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_4 = (__pyx_t_8) ? __Pyx_PyObject_Call2Args(__pyx_t_10, __pyx_t_8, __pyx_v_outfile) : __Pyx_PyObject_CallOneArg(__pyx_t_10, __pyx_v_outfile);
     __Pyx_XDECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 312, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 313, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":311
+    /* "pyaibox/utils/plot_show.py":312
  *         ax.axis("off")
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -7029,7 +7029,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":313
+  /* "pyaibox/utils/plot_show.py":314
  *     if outfile is not None:
  *         plt.savefig(outfile)
  *     return plt             # <<<<<<<<<<<<<<
@@ -7037,13 +7037,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 313, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 314, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/plot_show.py":226
+  /* "pyaibox/utils/plot_show.py":227
  * 
  * 
  * def imshow(Xs, nrows=None, ncols=None, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -7084,7 +7084,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_6imshow(CYTHON_UNUSED PyObj
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":316
+/* "pyaibox/utils/plot_show.py":317
  * 
  * 
  * def mesh(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -7206,7 +7206,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_9mesh(PyObject *__pyx_self,
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "mesh") < 0)) __PYX_ERR(0, 316, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "mesh") < 0)) __PYX_ERR(0, 317, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -7243,7 +7243,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_9mesh(PyObject *__pyx_self,
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("mesh", 0, 1, 9, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 316, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("mesh", 0, 1, 9, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 317, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.mesh", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -7310,7 +7310,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_zlabels);
   __Pyx_INCREF(__pyx_v_titles);
 
-  /* "pyaibox/utils/plot_show.py":381
+  /* "pyaibox/utils/plot_show.py":382
  *     """
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):             # <<<<<<<<<<<<<<
@@ -7330,14 +7330,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":382
+    /* "pyaibox/utils/plot_show.py":383
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):
  *         Zs = [Zs]             # <<<<<<<<<<<<<<
  * 
  *     n = len(Zs)
  */
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 382, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 383, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_Zs);
     __Pyx_GIVEREF(__pyx_v_Zs);
@@ -7345,7 +7345,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_Zs, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":381
+    /* "pyaibox/utils/plot_show.py":382
  *     """
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):             # <<<<<<<<<<<<<<
@@ -7354,20 +7354,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":384
+  /* "pyaibox/utils/plot_show.py":385
  *         Zs = [Zs]
  * 
  *     n = len(Zs)             # <<<<<<<<<<<<<<
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Zs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 384, __pyx_L1_error)
-  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 384, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Zs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 385, __pyx_L1_error)
+  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 385, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_n = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":385
+  /* "pyaibox/utils/plot_show.py":386
  * 
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -7387,14 +7387,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":386
+    /* "pyaibox/utils/plot_show.py":387
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)             # <<<<<<<<<<<<<<
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 386, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 387, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -7408,7 +7408,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_v_n) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_n);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 386, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 387, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
@@ -7417,7 +7417,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 386, __pyx_L1_error)
+        __PYX_ERR(0, 387, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -7430,15 +7430,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 386, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 387, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 386, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 387, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 386, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 387, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -7446,7 +7446,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_GOTREF(__pyx_t_6);
       index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L9_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 386, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 387, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       goto __pyx_L10_unpacking_done;
@@ -7454,7 +7454,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 386, __pyx_L1_error)
+      __PYX_ERR(0, 387, __pyx_L1_error)
       __pyx_L10_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_6);
@@ -7462,7 +7462,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "pyaibox/utils/plot_show.py":385
+    /* "pyaibox/utils/plot_show.py":386
  * 
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -7471,7 +7471,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":387
+  /* "pyaibox/utils/plot_show.py":388
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows             # <<<<<<<<<<<<<<
@@ -7480,12 +7480,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  */
   __pyx_t_1 = (__pyx_v_nrows == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 387, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 387, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 387, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -7500,7 +7500,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_10, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 387, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 388, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -7512,7 +7512,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":388
+  /* "pyaibox/utils/plot_show.py":389
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols             # <<<<<<<<<<<<<<
@@ -7521,12 +7521,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  */
   __pyx_t_1 = (__pyx_v_ncols == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 388, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 389, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 388, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 389, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 388, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 389, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -7541,7 +7541,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_10, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 388, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 389, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -7553,7 +7553,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":390
+  /* "pyaibox/utils/plot_show.py":391
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels             # <<<<<<<<<<<<<<
@@ -7572,12 +7572,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L11_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 390, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 391, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_xlabels);
     __Pyx_GIVEREF(__pyx_v_xlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_xlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 390, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 391, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -7591,7 +7591,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_xlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":391
+  /* "pyaibox/utils/plot_show.py":392
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels             # <<<<<<<<<<<<<<
@@ -7610,12 +7610,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L13_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 391, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_ylabels);
     __Pyx_GIVEREF(__pyx_v_ylabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_ylabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 391, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 392, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -7629,7 +7629,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_ylabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":392
+  /* "pyaibox/utils/plot_show.py":393
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     zlabels = [zlabels] * n if (type(zlabels) is str) or (zlabels is None) else zlabels             # <<<<<<<<<<<<<<
@@ -7648,12 +7648,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L15_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 392, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 393, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_zlabels);
     __Pyx_GIVEREF(__pyx_v_zlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_zlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 392, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 393, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -7667,7 +7667,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_zlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":393
+  /* "pyaibox/utils/plot_show.py":394
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     zlabels = [zlabels] * n if (type(zlabels) is str) or (zlabels is None) else zlabels
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles             # <<<<<<<<<<<<<<
@@ -7686,12 +7686,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_t_1 = __pyx_t_2;
   __pyx_L17_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 393, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 394, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_titles);
     __Pyx_GIVEREF(__pyx_v_titles);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_titles);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 393, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 394, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -7705,39 +7705,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_titles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":395
+  /* "pyaibox/utils/plot_show.py":396
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 395, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 396, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":396
+    /* "pyaibox/utils/plot_show.py":397
  * 
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']             # <<<<<<<<<<<<<<
  *         del(kwargs['Xs'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 396, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 397, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_Xs = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":397
+    /* "pyaibox/utils/plot_show.py":398
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])             # <<<<<<<<<<<<<<
  *     else:
  *         Xs = [None]
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 397, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 398, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":395
+    /* "pyaibox/utils/plot_show.py":396
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
@@ -7747,7 +7747,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     goto __pyx_L19;
   }
 
-  /* "pyaibox/utils/plot_show.py":399
+  /* "pyaibox/utils/plot_show.py":400
  *         del(kwargs['Xs'])
  *     else:
  *         Xs = [None]             # <<<<<<<<<<<<<<
@@ -7755,7 +7755,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  *         Ys = kwargs['Ys']
  */
   /*else*/ {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 399, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 400, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
@@ -7765,39 +7765,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   }
   __pyx_L19:;
 
-  /* "pyaibox/utils/plot_show.py":400
+  /* "pyaibox/utils/plot_show.py":401
  *     else:
  *         Xs = [None]
  *     if 'Ys' in kwargs:             # <<<<<<<<<<<<<<
  *         Ys = kwargs['Ys']
  *         del(kwargs['Ys'])
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Ys, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 400, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Ys, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 401, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":401
+    /* "pyaibox/utils/plot_show.py":402
  *         Xs = [None]
  *     if 'Ys' in kwargs:
  *         Ys = kwargs['Ys']             # <<<<<<<<<<<<<<
  *         del(kwargs['Ys'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Ys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 401, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Ys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 402, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_Ys = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":402
+    /* "pyaibox/utils/plot_show.py":403
  *     if 'Ys' in kwargs:
  *         Ys = kwargs['Ys']
  *         del(kwargs['Ys'])             # <<<<<<<<<<<<<<
  *     else:
  *         Ys = [None]
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Ys) < 0)) __PYX_ERR(0, 402, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Ys) < 0)) __PYX_ERR(0, 403, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":400
+    /* "pyaibox/utils/plot_show.py":401
  *     else:
  *         Xs = [None]
  *     if 'Ys' in kwargs:             # <<<<<<<<<<<<<<
@@ -7807,7 +7807,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     goto __pyx_L20;
   }
 
-  /* "pyaibox/utils/plot_show.py":404
+  /* "pyaibox/utils/plot_show.py":405
  *         del(kwargs['Ys'])
  *     else:
  *         Ys = [None]             # <<<<<<<<<<<<<<
@@ -7815,7 +7815,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  *     Xs = Xs * n if len(Xs) == 1 else Xs
  */
   /*else*/ {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 404, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 405, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
@@ -7825,16 +7825,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   }
   __pyx_L20:;
 
-  /* "pyaibox/utils/plot_show.py":406
+  /* "pyaibox/utils/plot_show.py":407
  *         Ys = [None]
  * 
  *     Xs = Xs * n if len(Xs) == 1 else Xs             # <<<<<<<<<<<<<<
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 406, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 407, __pyx_L1_error)
   if (((__pyx_t_5 == 1) != 0)) {
-    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Xs, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 406, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Xs, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 407, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = __pyx_t_7;
     __pyx_t_7 = 0;
@@ -7845,16 +7845,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_Xs, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":407
+  /* "pyaibox/utils/plot_show.py":408
  * 
  *     Xs = Xs * n if len(Xs) == 1 else Xs
  *     Ys = Ys * n if len(Ys) == 1 else Ys             # <<<<<<<<<<<<<<
  * 
  *     if 'fig' in kwargs:
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 407, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 408, __pyx_L1_error)
   if (((__pyx_t_5 == 1) != 0)) {
-    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Ys, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 407, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Ys, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 408, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = __pyx_t_7;
     __pyx_t_7 = 0;
@@ -7865,39 +7865,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_DECREF_SET(__pyx_v_Ys, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":409
+  /* "pyaibox/utils/plot_show.py":410
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 409, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 410, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":410
+    /* "pyaibox/utils/plot_show.py":411
  * 
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']             # <<<<<<<<<<<<<<
  *         del(kwargs['fig'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 410, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 411, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_fig = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":411
+    /* "pyaibox/utils/plot_show.py":412
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])             # <<<<<<<<<<<<<<
  *     else:
  *         fig = plt.figure(figsize=figsize)
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 411, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 412, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":409
+    /* "pyaibox/utils/plot_show.py":410
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
@@ -7907,7 +7907,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     goto __pyx_L21;
   }
 
-  /* "pyaibox/utils/plot_show.py":413
+  /* "pyaibox/utils/plot_show.py":414
  *         del(kwargs['fig'])
  *     else:
  *         fig = plt.figure(figsize=figsize)             # <<<<<<<<<<<<<<
@@ -7915,15 +7915,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  *     axs = []
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 413, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 414, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 413, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 414, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 413, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 414, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 413, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 413, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 414, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 414, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -7932,34 +7932,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   }
   __pyx_L21:;
 
-  /* "pyaibox/utils/plot_show.py":415
+  /* "pyaibox/utils/plot_show.py":416
  *         fig = plt.figure(figsize=figsize)
  * 
  *     axs = []             # <<<<<<<<<<<<<<
  *     for cnt in range(n):
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection='3d')
  */
-  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 415, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 416, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_v_axs = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "pyaibox/utils/plot_show.py":416
+  /* "pyaibox/utils/plot_show.py":417
  * 
  *     axs = []
  *     for cnt in range(n):             # <<<<<<<<<<<<<<
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection='3d')
  *         axs.append(ax)
  */
-  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 416, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 417, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 416, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 417, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 416, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 417, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -7967,17 +7967,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 416, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 417, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 416, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 417, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 416, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 417, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 416, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 417, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -7987,7 +7987,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 416, __pyx_L1_error)
+          else __PYX_ERR(0, 417, __pyx_L1_error)
         }
         break;
       }
@@ -7996,18 +7996,18 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_cnt, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":417
+    /* "pyaibox/utils/plot_show.py":418
  *     axs = []
  *     for cnt in range(n):
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection='3d')             # <<<<<<<<<<<<<<
  *         axs.append(ax)
  * 
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 417, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_cnt, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 417, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_cnt, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 417, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_v_nrows);
     __Pyx_GIVEREF(__pyx_v_nrows);
@@ -8018,10 +8018,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_t_7);
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 417, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_projection, __pyx_kp_u_3d) < 0) __PYX_ERR(0, 417, __pyx_L1_error)
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 417, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_projection, __pyx_kp_u_3d) < 0) __PYX_ERR(0, 418, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 418, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -8029,16 +8029,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":418
+    /* "pyaibox/utils/plot_show.py":419
  *     for cnt in range(n):
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection='3d')
  *         axs.append(ax)             # <<<<<<<<<<<<<<
  * 
  *     for ax, X, Y, Z, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, xlabels, ylabels, zlabels, titles):
  */
-    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 418, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 419, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":416
+    /* "pyaibox/utils/plot_show.py":417
  * 
  *     axs = []
  *     for cnt in range(n):             # <<<<<<<<<<<<<<
@@ -8048,14 +8048,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":420
+  /* "pyaibox/utils/plot_show.py":421
  *         axs.append(ax)
  * 
  *     for ax, X, Y, Z, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, xlabels, ylabels, zlabels, titles):             # <<<<<<<<<<<<<<
  *         H, W = Z.shape
  *         X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  */
-  __pyx_t_4 = PyTuple_New(8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 420, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_axs);
   __Pyx_GIVEREF(__pyx_v_axs);
@@ -8081,16 +8081,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __Pyx_INCREF(__pyx_v_titles);
   __Pyx_GIVEREF(__pyx_v_titles);
   PyTuple_SET_ITEM(__pyx_t_4, 7, __pyx_v_titles);
-  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 420, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(PyList_CheckExact(__pyx_t_10)) || PyTuple_CheckExact(__pyx_t_10)) {
     __pyx_t_4 = __pyx_t_10; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 420, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 421, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 420, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 421, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   for (;;) {
@@ -8098,17 +8098,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 420, __pyx_L1_error)
+        __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 421, __pyx_L1_error)
         #else
-        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 420, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 420, __pyx_L1_error)
+        __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 421, __pyx_L1_error)
         #else
-        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 420, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         #endif
       }
@@ -8118,7 +8118,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 420, __pyx_L1_error)
+          else __PYX_ERR(0, 421, __pyx_L1_error)
         }
         break;
       }
@@ -8130,7 +8130,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (unlikely(size != 8)) {
         if (size > 8) __Pyx_RaiseTooManyValuesError(8);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 420, __pyx_L1_error)
+        __PYX_ERR(0, 421, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8165,7 +8165,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
         Py_ssize_t i;
         PyObject** temps[8] = {&__pyx_t_7,&__pyx_t_8,&__pyx_t_6,&__pyx_t_13,&__pyx_t_14,&__pyx_t_15,&__pyx_t_16,&__pyx_t_17};
         for (i=0; i < 8; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 420, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 421, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -8175,7 +8175,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[8] = {&__pyx_t_7,&__pyx_t_8,&__pyx_t_6,&__pyx_t_13,&__pyx_t_14,&__pyx_t_15,&__pyx_t_16,&__pyx_t_17};
-      __pyx_t_18 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 420, __pyx_L1_error)
+      __pyx_t_18 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 421, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_18)->tp_iternext;
@@ -8184,7 +8184,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_18), 8) < 0) __PYX_ERR(0, 420, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_18), 8) < 0) __PYX_ERR(0, 421, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
       goto __pyx_L27_unpacking_done;
@@ -8192,7 +8192,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 420, __pyx_L1_error)
+      __PYX_ERR(0, 421, __pyx_L1_error)
       __pyx_L27_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_7);
@@ -8212,14 +8212,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_title, __pyx_t_17);
     __pyx_t_17 = 0;
 
-    /* "pyaibox/utils/plot_show.py":421
+    /* "pyaibox/utils/plot_show.py":422
  * 
  *     for ax, X, Y, Z, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, xlabels, ylabels, zlabels, titles):
  *         H, W = Z.shape             # <<<<<<<<<<<<<<
  *         X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *         X = X0 if X is None else X
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_Z, __pyx_n_s_shape); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 421, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_Z, __pyx_n_s_shape); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     if ((likely(PyTuple_CheckExact(__pyx_t_10))) || (PyList_CheckExact(__pyx_t_10))) {
       PyObject* sequence = __pyx_t_10;
@@ -8227,7 +8227,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 421, __pyx_L1_error)
+        __PYX_ERR(0, 422, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8240,15 +8240,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_t_17);
       __Pyx_INCREF(__pyx_t_16);
       #else
-      __pyx_t_17 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 421, __pyx_L1_error)
+      __pyx_t_17 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 422, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
-      __pyx_t_16 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 421, __pyx_L1_error)
+      __pyx_t_16 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 422, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       #endif
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_15 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 421, __pyx_L1_error)
+      __pyx_t_15 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_15);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_15)->tp_iternext;
@@ -8256,7 +8256,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_GOTREF(__pyx_t_17);
       index = 1; __pyx_t_16 = __pyx_t_9(__pyx_t_15); if (unlikely(!__pyx_t_16)) goto __pyx_L28_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_16);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_15), 2) < 0) __PYX_ERR(0, 421, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_15), 2) < 0) __PYX_ERR(0, 422, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       goto __pyx_L29_unpacking_done;
@@ -8264,7 +8264,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 421, __pyx_L1_error)
+      __PYX_ERR(0, 422, __pyx_L1_error)
       __pyx_L29_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_H, __pyx_t_17);
@@ -8272,21 +8272,21 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_W, __pyx_t_16);
     __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":422
+    /* "pyaibox/utils/plot_show.py":423
  *     for ax, X, Y, Z, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, xlabels, ylabels, zlabels, titles):
  *         H, W = Z.shape
  *         X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')             # <<<<<<<<<<<<<<
  *         X = X0 if X is None else X
  *         Y = Y0 if Y is None else Y
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_17, __pyx_n_s_np); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_17, __pyx_n_s_np); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_17);
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_17, __pyx_n_s_arange); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_17, __pyx_n_s_arange); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
     __pyx_t_17 = NULL;
@@ -8304,7 +8304,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_15)) {
       PyObject *__pyx_temp[4] = {__pyx_t_17, __pyx_int_0, __pyx_v_W, __pyx_int_1};
-      __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_15, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_15, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_10);
     } else
@@ -8312,13 +8312,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_15)) {
       PyObject *__pyx_temp[4] = {__pyx_t_17, __pyx_int_0, __pyx_v_W, __pyx_int_1};
-      __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_15, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_15, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_GOTREF(__pyx_t_10);
     } else
     #endif
     {
-      __pyx_t_14 = PyTuple_New(3+__pyx_t_19); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_14 = PyTuple_New(3+__pyx_t_19); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_14);
       if (__pyx_t_17) {
         __Pyx_GIVEREF(__pyx_t_17); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_17); __pyx_t_17 = NULL;
@@ -8332,14 +8332,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_int_1);
       __Pyx_GIVEREF(__pyx_int_1);
       PyTuple_SET_ITEM(__pyx_t_14, 2+__pyx_t_19, __pyx_int_1);
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_15, __pyx_t_14, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_15, __pyx_t_14, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
     }
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_14, __pyx_n_s_np); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_14, __pyx_n_s_np); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_14);
-    __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_arange); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_t_14, __pyx_n_s_arange); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_17);
     __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
     __pyx_t_14 = NULL;
@@ -8357,7 +8357,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_17)) {
       PyObject *__pyx_temp[4] = {__pyx_t_14, __pyx_int_0, __pyx_v_H, __pyx_int_1};
-      __pyx_t_15 = __Pyx_PyFunction_FastCall(__pyx_t_17, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_15 = __Pyx_PyFunction_FastCall(__pyx_t_17, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
       __Pyx_GOTREF(__pyx_t_15);
     } else
@@ -8365,13 +8365,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_17)) {
       PyObject *__pyx_temp[4] = {__pyx_t_14, __pyx_int_0, __pyx_v_H, __pyx_int_1};
-      __pyx_t_15 = __Pyx_PyCFunction_FastCall(__pyx_t_17, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_15 = __Pyx_PyCFunction_FastCall(__pyx_t_17, __pyx_temp+1-__pyx_t_19, 3+__pyx_t_19); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_14); __pyx_t_14 = 0;
       __Pyx_GOTREF(__pyx_t_15);
     } else
     #endif
     {
-      __pyx_t_13 = PyTuple_New(3+__pyx_t_19); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(3+__pyx_t_19); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       if (__pyx_t_14) {
         __Pyx_GIVEREF(__pyx_t_14); PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_14); __pyx_t_14 = NULL;
@@ -8385,12 +8385,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_int_1);
       __Pyx_GIVEREF(__pyx_int_1);
       PyTuple_SET_ITEM(__pyx_t_13, 2+__pyx_t_19, __pyx_int_1);
-      __pyx_t_15 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_13, NULL); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_15 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_13, NULL); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_15);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
     }
     __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
-    __pyx_t_17 = PyTuple_New(2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __pyx_t_17 = PyTuple_New(2); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_17);
     __Pyx_GIVEREF(__pyx_t_10);
     PyTuple_SET_ITEM(__pyx_t_17, 0, __pyx_t_10);
@@ -8398,10 +8398,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     PyTuple_SET_ITEM(__pyx_t_17, 1, __pyx_t_15);
     __pyx_t_10 = 0;
     __pyx_t_15 = 0;
-    __pyx_t_15 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
-    if (PyDict_SetItem(__pyx_t_15, __pyx_n_s_indexing, __pyx_n_u_xy) < 0) __PYX_ERR(0, 422, __pyx_L1_error)
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_17, __pyx_t_15); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 422, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_15, __pyx_n_s_indexing, __pyx_n_u_xy) < 0) __PYX_ERR(0, 423, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_17, __pyx_t_15); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 423, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
@@ -8412,7 +8412,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 422, __pyx_L1_error)
+        __PYX_ERR(0, 423, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -8425,15 +8425,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_INCREF(__pyx_t_15);
       __Pyx_INCREF(__pyx_t_17);
       #else
-      __pyx_t_15 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_15 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_15);
-      __pyx_t_17 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_17 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
       #endif
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_16 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 422, __pyx_L1_error)
+      __pyx_t_16 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 423, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -8441,7 +8441,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_GOTREF(__pyx_t_15);
       index = 1; __pyx_t_17 = __pyx_t_9(__pyx_t_16); if (unlikely(!__pyx_t_17)) goto __pyx_L30_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_17);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 2) < 0) __PYX_ERR(0, 422, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 2) < 0) __PYX_ERR(0, 423, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       goto __pyx_L31_unpacking_done;
@@ -8449,7 +8449,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 422, __pyx_L1_error)
+      __PYX_ERR(0, 423, __pyx_L1_error)
       __pyx_L31_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_X0, __pyx_t_15);
@@ -8457,7 +8457,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_XDECREF_SET(__pyx_v_Y0, __pyx_t_17);
     __pyx_t_17 = 0;
 
-    /* "pyaibox/utils/plot_show.py":423
+    /* "pyaibox/utils/plot_show.py":424
  *         H, W = Z.shape
  *         X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *         X = X0 if X is None else X             # <<<<<<<<<<<<<<
@@ -8475,7 +8475,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_X, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":424
+    /* "pyaibox/utils/plot_show.py":425
  *         X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *         X = X0 if X is None else X
  *         Y = Y0 if Y is None else Y             # <<<<<<<<<<<<<<
@@ -8493,16 +8493,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_DECREF_SET(__pyx_v_Y, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":426
+    /* "pyaibox/utils/plot_show.py":427
  *         Y = Y0 if Y is None else Y
  * 
  *         ax.plot_surface(X, Y, Z, **kwargs)             # <<<<<<<<<<<<<<
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot_surface); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 426, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot_surface); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 427, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_17 = PyTuple_New(3); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 426, __pyx_L1_error)
+    __pyx_t_17 = PyTuple_New(3); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 427, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_17);
     __Pyx_INCREF(__pyx_v_X);
     __Pyx_GIVEREF(__pyx_v_X);
@@ -8513,23 +8513,23 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     __Pyx_INCREF(__pyx_v_Z);
     __Pyx_GIVEREF(__pyx_v_Z);
     PyTuple_SET_ITEM(__pyx_t_17, 2, __pyx_v_Z);
-    __pyx_t_15 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 426, __pyx_L1_error)
+    __pyx_t_15 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 427, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
-    __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_17, __pyx_t_15); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 426, __pyx_L1_error)
+    __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_17, __pyx_t_15); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 427, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":427
+    /* "pyaibox/utils/plot_show.py":428
  * 
  *         ax.plot_surface(X, Y, Z, **kwargs)
  *         ax.set_xlabel(xlabel)             # <<<<<<<<<<<<<<
  *         ax.set_ylabel(ylabel)
  *         ax.set_zlabel(zlabel)
  */
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 427, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 428, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_15))) {
@@ -8543,19 +8543,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_16 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_17, __pyx_v_xlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_v_xlabel);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 427, __pyx_L1_error)
+    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 428, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":428
+    /* "pyaibox/utils/plot_show.py":429
  *         ax.plot_surface(X, Y, Z, **kwargs)
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)             # <<<<<<<<<<<<<<
  *         ax.set_zlabel(zlabel)
  *         ax.set_title(title)
  */
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 428, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 429, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_15))) {
@@ -8569,19 +8569,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_16 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_17, __pyx_v_ylabel) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_v_ylabel);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 428, __pyx_L1_error)
+    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 429, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":429
+    /* "pyaibox/utils/plot_show.py":430
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  *         ax.set_zlabel(zlabel)             # <<<<<<<<<<<<<<
  *         ax.set_title(title)
  * 
  */
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_zlabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 429, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_zlabel); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 430, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_15))) {
@@ -8595,19 +8595,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_16 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_17, __pyx_v_zlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_v_zlabel);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 429, __pyx_L1_error)
+    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 430, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":430
+    /* "pyaibox/utils/plot_show.py":431
  *         ax.set_ylabel(ylabel)
  *         ax.set_zlabel(zlabel)
  *         ax.set_title(title)             # <<<<<<<<<<<<<<
  * 
  *     if outfile is not None:
  */
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 430, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 431, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __pyx_t_17 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_15))) {
@@ -8621,12 +8621,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_16 = (__pyx_t_17) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_17, __pyx_v_title) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_v_title);
     __Pyx_XDECREF(__pyx_t_17); __pyx_t_17 = 0;
-    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 430, __pyx_L1_error)
+    if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 431, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
 
-    /* "pyaibox/utils/plot_show.py":420
+    /* "pyaibox/utils/plot_show.py":421
  *         axs.append(ax)
  * 
  *     for ax, X, Y, Z, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, xlabels, ylabels, zlabels, titles):             # <<<<<<<<<<<<<<
@@ -8636,7 +8636,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":432
+  /* "pyaibox/utils/plot_show.py":433
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -8647,16 +8647,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":433
+    /* "pyaibox/utils/plot_show.py":434
  * 
  *     if outfile is not None:
  *         plt.savefig(outfile)             # <<<<<<<<<<<<<<
  *     return plt
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_16, __pyx_n_s_plt); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 433, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_16, __pyx_n_s_plt); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 434, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_16);
-    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_16, __pyx_n_s_savefig); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 433, __pyx_L1_error)
+    __pyx_t_15 = __Pyx_PyObject_GetAttrStr(__pyx_t_16, __pyx_n_s_savefig); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 434, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_15);
     __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
     __pyx_t_16 = NULL;
@@ -8671,12 +8671,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
     }
     __pyx_t_4 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_15, __pyx_t_16, __pyx_v_outfile) : __Pyx_PyObject_CallOneArg(__pyx_t_15, __pyx_v_outfile);
     __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 433, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 434, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":432
+    /* "pyaibox/utils/plot_show.py":433
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -8685,7 +8685,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":434
+  /* "pyaibox/utils/plot_show.py":435
  *     if outfile is not None:
  *         plt.savefig(outfile)
  *     return plt             # <<<<<<<<<<<<<<
@@ -8693,13 +8693,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
  * def mshow(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, projections=None, figsize=None, outfile=None, **kwargs):
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 434, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 435, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/plot_show.py":316
+  /* "pyaibox/utils/plot_show.py":317
  * 
  * 
  * def mesh(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -8753,7 +8753,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_8mesh(CYTHON_UNUSED PyObjec
   return __pyx_r;
 }
 
-/* "pyaibox/utils/plot_show.py":436
+/* "pyaibox/utils/plot_show.py":437
  *     return plt
  * 
  * def mshow(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, projections=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -8885,7 +8885,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_11mshow(PyObject *__pyx_sel
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "mshow") < 0)) __PYX_ERR(0, 436, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, __pyx_v_kwargs, values, pos_args, "mshow") < 0)) __PYX_ERR(0, 437, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -8925,7 +8925,7 @@ static PyObject *__pyx_pw_7pyaibox_5utils_9plot_show_11mshow(PyObject *__pyx_sel
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("mshow", 0, 1, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 436, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("mshow", 0, 1, 10, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 437, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_DECREF(__pyx_v_kwargs); __pyx_v_kwargs = 0;
   __Pyx_AddTraceback("pyaibox.utils.plot_show.mshow", __pyx_clineno, __pyx_lineno, __pyx_filename);
@@ -8995,7 +8995,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_titles);
   __Pyx_INCREF(__pyx_v_projections);
 
-  /* "pyaibox/utils/plot_show.py":497
+  /* "pyaibox/utils/plot_show.py":498
  *     """
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):             # <<<<<<<<<<<<<<
@@ -9015,14 +9015,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_L4_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":498
+    /* "pyaibox/utils/plot_show.py":499
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):
  *         Zs = [Zs]             # <<<<<<<<<<<<<<
  * 
  *     n = len(Zs)
  */
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 498, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 499, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_v_Zs);
     __Pyx_GIVEREF(__pyx_v_Zs);
@@ -9030,7 +9030,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_DECREF_SET(__pyx_v_Zs, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":497
+    /* "pyaibox/utils/plot_show.py":498
  *     """
  * 
  *     if (type(Zs) is not list) and (type(Zs) is not tuple):             # <<<<<<<<<<<<<<
@@ -9039,20 +9039,20 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":500
+  /* "pyaibox/utils/plot_show.py":501
  *         Zs = [Zs]
  * 
  *     n = len(Zs)             # <<<<<<<<<<<<<<
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Zs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 500, __pyx_L1_error)
-  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 500, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Zs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 501, __pyx_L1_error)
+  __pyx_t_4 = PyInt_FromSsize_t(__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 501, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_v_n = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":501
+  /* "pyaibox/utils/plot_show.py":502
  * 
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -9072,14 +9072,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_L7_bool_binop_done:;
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":502
+    /* "pyaibox/utils/plot_show.py":503
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)             # <<<<<<<<<<<<<<
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 502, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_fnab); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 503, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -9093,7 +9093,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_7, __pyx_v_n) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_v_n);
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 502, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 503, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     if ((likely(PyTuple_CheckExact(__pyx_t_4))) || (PyList_CheckExact(__pyx_t_4))) {
@@ -9102,7 +9102,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 502, __pyx_L1_error)
+        __PYX_ERR(0, 503, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -9115,15 +9115,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_t_6);
       __Pyx_INCREF(__pyx_t_7);
       #else
-      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 502, __pyx_L1_error)
+      __pyx_t_6 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 503, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 502, __pyx_L1_error)
+      __pyx_t_7 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 503, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       #endif
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 502, __pyx_L1_error)
+      __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 503, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_8)->tp_iternext;
@@ -9131,7 +9131,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_GOTREF(__pyx_t_6);
       index = 1; __pyx_t_7 = __pyx_t_9(__pyx_t_8); if (unlikely(!__pyx_t_7)) goto __pyx_L9_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_7);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 502, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_8), 2) < 0) __PYX_ERR(0, 503, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       goto __pyx_L10_unpacking_done;
@@ -9139,7 +9139,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 502, __pyx_L1_error)
+      __PYX_ERR(0, 503, __pyx_L1_error)
       __pyx_L10_unpacking_done:;
     }
     __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_6);
@@ -9147,7 +9147,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_7);
     __pyx_t_7 = 0;
 
-    /* "pyaibox/utils/plot_show.py":501
+    /* "pyaibox/utils/plot_show.py":502
  * 
  *     n = len(Zs)
  *     if (nrows is None) and (ncols is None):             # <<<<<<<<<<<<<<
@@ -9156,7 +9156,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":503
+  /* "pyaibox/utils/plot_show.py":504
  *     if (nrows is None) and (ncols is None):
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows             # <<<<<<<<<<<<<<
@@ -9165,12 +9165,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  */
   __pyx_t_1 = (__pyx_v_nrows == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 503, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_6, __pyx_n_s_math); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 504, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 503, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_ceil); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 504, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 503, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_ncols); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 504, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_8))) {
@@ -9185,7 +9185,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_8, __pyx_t_10, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_6);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 503, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 504, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -9197,7 +9197,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_nrows, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":504
+  /* "pyaibox/utils/plot_show.py":505
  *         nrows, ncols = fnab(n)
  *     nrows = math.ceil(n / ncols) if nrows is None else nrows
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols             # <<<<<<<<<<<<<<
@@ -9206,12 +9206,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  */
   __pyx_t_1 = (__pyx_v_ncols == Py_None);
   if ((__pyx_t_1 != 0)) {
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 504, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_math); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 505, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 504, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_ceil); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 505, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 504, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyNumber_Divide(__pyx_v_n, __pyx_v_nrows); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 505, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __pyx_t_10 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_6))) {
@@ -9226,7 +9226,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __pyx_t_7 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_6, __pyx_t_10, __pyx_t_8) : __Pyx_PyObject_CallOneArg(__pyx_t_6, __pyx_t_8);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 504, __pyx_L1_error)
+    if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 505, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __pyx_t_4 = __pyx_t_7;
@@ -9238,7 +9238,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_ncols, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":506
+  /* "pyaibox/utils/plot_show.py":507
  *     ncols = math.ceil(n / nrows) if ncols is None else ncols
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels             # <<<<<<<<<<<<<<
@@ -9257,12 +9257,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L11_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 506, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 507, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_xlabels);
     __Pyx_GIVEREF(__pyx_v_xlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_xlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 506, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 507, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -9276,7 +9276,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_xlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":507
+  /* "pyaibox/utils/plot_show.py":508
  * 
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels             # <<<<<<<<<<<<<<
@@ -9295,12 +9295,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L13_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 507, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 508, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_ylabels);
     __Pyx_GIVEREF(__pyx_v_ylabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_ylabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 507, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 508, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -9314,7 +9314,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_ylabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":508
+  /* "pyaibox/utils/plot_show.py":509
  *     xlabels = [xlabels] * n if (type(xlabels) is str) or (xlabels is None) else xlabels
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     zlabels = [zlabels] * n if (type(zlabels) is str) or (zlabels is None) else zlabels             # <<<<<<<<<<<<<<
@@ -9333,12 +9333,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L15_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 508, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 509, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_zlabels);
     __Pyx_GIVEREF(__pyx_v_zlabels);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_zlabels);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 508, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 509, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -9352,7 +9352,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_zlabels, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":509
+  /* "pyaibox/utils/plot_show.py":510
  *     ylabels = [ylabels] * n if (type(ylabels) is str) or (ylabels is None) else ylabels
  *     zlabels = [zlabels] * n if (type(zlabels) is str) or (zlabels is None) else zlabels
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles             # <<<<<<<<<<<<<<
@@ -9371,12 +9371,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L17_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 509, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 510, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_titles);
     __Pyx_GIVEREF(__pyx_v_titles);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_titles);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 509, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 510, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -9390,7 +9390,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_titles, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":510
+  /* "pyaibox/utils/plot_show.py":511
  *     zlabels = [zlabels] * n if (type(zlabels) is str) or (zlabels is None) else zlabels
  *     titles = [titles] * n if (type(titles) is str) or (titles is None) else titles
  *     projections = [projections] * n if (type(projections) is str) or (projections is None) else projections             # <<<<<<<<<<<<<<
@@ -9409,12 +9409,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = __pyx_t_2;
   __pyx_L19_bool_binop_done:;
   if (__pyx_t_1) {
-    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 510, __pyx_L1_error)
+    __pyx_t_7 = PyList_New(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 511, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_INCREF(__pyx_v_projections);
     __Pyx_GIVEREF(__pyx_v_projections);
     PyList_SET_ITEM(__pyx_t_7, 0, __pyx_v_projections);
-    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 510, __pyx_L1_error)
+    { PyObject* __pyx_temp = PyNumber_InPlaceMultiply(__pyx_t_7, __pyx_v_n); if (unlikely(!__pyx_temp)) __PYX_ERR(0, 511, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_temp);
       __Pyx_DECREF(__pyx_t_7);
       __pyx_t_7 = __pyx_temp;
@@ -9428,39 +9428,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_projections, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":512
+  /* "pyaibox/utils/plot_show.py":513
  *     projections = [projections] * n if (type(projections) is str) or (projections is None) else projections
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 512, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Xs, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 513, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":513
+    /* "pyaibox/utils/plot_show.py":514
  * 
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']             # <<<<<<<<<<<<<<
  *         del(kwargs['Xs'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 513, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Xs); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 514, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_Xs = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":514
+    /* "pyaibox/utils/plot_show.py":515
  *     if 'Xs' in kwargs:
  *         Xs = kwargs['Xs']
  *         del(kwargs['Xs'])             # <<<<<<<<<<<<<<
  *     else:
  *         Xs = [None]
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 514, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Xs) < 0)) __PYX_ERR(0, 515, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":512
+    /* "pyaibox/utils/plot_show.py":513
  *     projections = [projections] * n if (type(projections) is str) or (projections is None) else projections
  * 
  *     if 'Xs' in kwargs:             # <<<<<<<<<<<<<<
@@ -9470,7 +9470,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     goto __pyx_L21;
   }
 
-  /* "pyaibox/utils/plot_show.py":516
+  /* "pyaibox/utils/plot_show.py":517
  *         del(kwargs['Xs'])
  *     else:
  *         Xs = [None]             # <<<<<<<<<<<<<<
@@ -9478,7 +9478,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  *         Ys = kwargs['Ys']
  */
   /*else*/ {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 516, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 517, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
@@ -9488,39 +9488,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   }
   __pyx_L21:;
 
-  /* "pyaibox/utils/plot_show.py":517
+  /* "pyaibox/utils/plot_show.py":518
  *     else:
  *         Xs = [None]
  *     if 'Ys' in kwargs:             # <<<<<<<<<<<<<<
  *         Ys = kwargs['Ys']
  *         del(kwargs['Ys'])
  */
-  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Ys, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 517, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_Ys, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 518, __pyx_L1_error)
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":518
+    /* "pyaibox/utils/plot_show.py":519
  *         Xs = [None]
  *     if 'Ys' in kwargs:
  *         Ys = kwargs['Ys']             # <<<<<<<<<<<<<<
  *         del(kwargs['Ys'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Ys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 518, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_Ys); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 519, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_Ys = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":519
+    /* "pyaibox/utils/plot_show.py":520
  *     if 'Ys' in kwargs:
  *         Ys = kwargs['Ys']
  *         del(kwargs['Ys'])             # <<<<<<<<<<<<<<
  *     else:
  *         Ys = [None]
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Ys) < 0)) __PYX_ERR(0, 519, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_Ys) < 0)) __PYX_ERR(0, 520, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":517
+    /* "pyaibox/utils/plot_show.py":518
  *     else:
  *         Xs = [None]
  *     if 'Ys' in kwargs:             # <<<<<<<<<<<<<<
@@ -9530,7 +9530,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     goto __pyx_L22;
   }
 
-  /* "pyaibox/utils/plot_show.py":521
+  /* "pyaibox/utils/plot_show.py":522
  *         del(kwargs['Ys'])
  *     else:
  *         Ys = [None]             # <<<<<<<<<<<<<<
@@ -9538,7 +9538,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  *     Xs = Xs * n if len(Xs) == 1 else Xs
  */
   /*else*/ {
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 521, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 522, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(Py_None);
     __Pyx_GIVEREF(Py_None);
@@ -9548,16 +9548,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   }
   __pyx_L22:;
 
-  /* "pyaibox/utils/plot_show.py":523
+  /* "pyaibox/utils/plot_show.py":524
  *         Ys = [None]
  * 
  *     Xs = Xs * n if len(Xs) == 1 else Xs             # <<<<<<<<<<<<<<
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 523, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Xs); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 524, __pyx_L1_error)
   if (((__pyx_t_5 == 1) != 0)) {
-    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Xs, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 523, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Xs, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 524, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = __pyx_t_7;
     __pyx_t_7 = 0;
@@ -9568,16 +9568,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_Xs, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":524
+  /* "pyaibox/utils/plot_show.py":525
  * 
  *     Xs = Xs * n if len(Xs) == 1 else Xs
  *     Ys = Ys * n if len(Ys) == 1 else Ys             # <<<<<<<<<<<<<<
  * 
  *     if 'fig' in kwargs:
  */
-  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 524, __pyx_L1_error)
+  __pyx_t_5 = PyObject_Length(__pyx_v_Ys); if (unlikely(__pyx_t_5 == ((Py_ssize_t)-1))) __PYX_ERR(0, 525, __pyx_L1_error)
   if (((__pyx_t_5 == 1) != 0)) {
-    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Ys, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 524, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Multiply(__pyx_v_Ys, __pyx_v_n); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 525, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __pyx_t_4 = __pyx_t_7;
     __pyx_t_7 = 0;
@@ -9588,39 +9588,39 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_DECREF_SET(__pyx_v_Ys, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":526
+  /* "pyaibox/utils/plot_show.py":527
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])
  */
-  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 526, __pyx_L1_error)
+  __pyx_t_1 = (__Pyx_PyDict_ContainsTF(__pyx_n_u_fig, __pyx_v_kwargs, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 527, __pyx_L1_error)
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/utils/plot_show.py":527
+    /* "pyaibox/utils/plot_show.py":528
  * 
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']             # <<<<<<<<<<<<<<
  *         del(kwargs['fig'])
  *     else:
  */
-    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 527, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_GetItem(__pyx_v_kwargs, __pyx_n_u_fig); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 528, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_v_fig = __pyx_t_4;
     __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":528
+    /* "pyaibox/utils/plot_show.py":529
  *     if 'fig' in kwargs:
  *         fig = kwargs['fig']
  *         del(kwargs['fig'])             # <<<<<<<<<<<<<<
  *     else:
  *         fig = plt.figure(figsize=figsize)
  */
-    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 528, __pyx_L1_error)
+    if (unlikely(PyDict_DelItem(__pyx_v_kwargs, __pyx_n_u_fig) < 0)) __PYX_ERR(0, 529, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":526
+    /* "pyaibox/utils/plot_show.py":527
  *     Ys = Ys * n if len(Ys) == 1 else Ys
  * 
  *     if 'fig' in kwargs:             # <<<<<<<<<<<<<<
@@ -9630,7 +9630,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     goto __pyx_L23;
   }
 
-  /* "pyaibox/utils/plot_show.py":530
+  /* "pyaibox/utils/plot_show.py":531
  *         del(kwargs['fig'])
  *     else:
  *         fig = plt.figure(figsize=figsize)             # <<<<<<<<<<<<<<
@@ -9638,15 +9638,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  *     axs = []
  */
   /*else*/ {
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 530, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 530, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_figure); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 530, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 530, __pyx_L1_error)
-    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 530, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_4, __pyx_n_s_figsize, __pyx_v_figsize) < 0) __PYX_ERR(0, 531, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_7, __pyx_empty_tuple, __pyx_t_4); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 531, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -9655,34 +9655,34 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   }
   __pyx_L23:;
 
-  /* "pyaibox/utils/plot_show.py":532
+  /* "pyaibox/utils/plot_show.py":533
  *         fig = plt.figure(figsize=figsize)
  * 
  *     axs = []             # <<<<<<<<<<<<<<
  *     for cnt in range(n):
  *         projection = projections[cnt]
  */
-  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 532, __pyx_L1_error)
+  __pyx_t_6 = PyList_New(0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 533, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_v_axs = ((PyObject*)__pyx_t_6);
   __pyx_t_6 = 0;
 
-  /* "pyaibox/utils/plot_show.py":533
+  /* "pyaibox/utils/plot_show.py":534
  * 
  *     axs = []
  *     for cnt in range(n):             # <<<<<<<<<<<<<<
  *         projection = projections[cnt]
  *         projection = None if projection == '2d' else projection
  */
-  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 533, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_range, __pyx_v_n); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 534, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   if (likely(PyList_CheckExact(__pyx_t_6)) || PyTuple_CheckExact(__pyx_t_6)) {
     __pyx_t_4 = __pyx_t_6; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 533, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_6); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 534, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 533, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 534, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
   for (;;) {
@@ -9690,17 +9690,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 533, __pyx_L1_error)
+        __pyx_t_6 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 534, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 533, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 534, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 533, __pyx_L1_error)
+        __pyx_t_6 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_6); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 534, __pyx_L1_error)
         #else
-        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 533, __pyx_L1_error)
+        __pyx_t_6 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 534, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         #endif
       }
@@ -9710,7 +9710,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 533, __pyx_L1_error)
+          else __PYX_ERR(0, 534, __pyx_L1_error)
         }
         break;
       }
@@ -9719,26 +9719,26 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_cnt, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":534
+    /* "pyaibox/utils/plot_show.py":535
  *     axs = []
  *     for cnt in range(n):
  *         projection = projections[cnt]             # <<<<<<<<<<<<<<
  *         projection = None if projection == '2d' else projection
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection=projection)
  */
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_projections, __pyx_v_cnt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 534, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_projections, __pyx_v_cnt); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 535, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_projection, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":535
+    /* "pyaibox/utils/plot_show.py":536
  *     for cnt in range(n):
  *         projection = projections[cnt]
  *         projection = None if projection == '2d' else projection             # <<<<<<<<<<<<<<
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection=projection)
  *         axs.append(ax)
  */
-    __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_projection, __pyx_kp_u_2d, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 535, __pyx_L1_error)
+    __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_projection, __pyx_kp_u_2d, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 536, __pyx_L1_error)
     if (__pyx_t_2) {
       __Pyx_INCREF(Py_None);
       __pyx_t_6 = Py_None;
@@ -9749,18 +9749,18 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_DECREF_SET(__pyx_v_projection, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/utils/plot_show.py":536
+    /* "pyaibox/utils/plot_show.py":537
  *         projection = projections[cnt]
  *         projection = None if projection == '2d' else projection
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection=projection)             # <<<<<<<<<<<<<<
  *         axs.append(ax)
  * 
  */
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 536, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_fig, __pyx_n_s_add_subplot); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 537, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_cnt, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 536, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyInt_AddObjC(__pyx_v_cnt, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 537, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 536, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 537, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_INCREF(__pyx_v_nrows);
     __Pyx_GIVEREF(__pyx_v_nrows);
@@ -9771,10 +9771,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_GIVEREF(__pyx_t_7);
     PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_t_7);
     __pyx_t_7 = 0;
-    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 536, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 537, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_projection, __pyx_v_projection) < 0) __PYX_ERR(0, 536, __pyx_L1_error)
-    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 536, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_7, __pyx_n_s_projection, __pyx_v_projection) < 0) __PYX_ERR(0, 537, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_6, __pyx_t_8, __pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 537, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
@@ -9782,16 +9782,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_10);
     __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":537
+    /* "pyaibox/utils/plot_show.py":538
  *         projection = None if projection == '2d' else projection
  *         ax = fig.add_subplot(nrows, ncols, cnt + 1, projection=projection)
  *         axs.append(ax)             # <<<<<<<<<<<<<<
  * 
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):
  */
-    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 537, __pyx_L1_error)
+    __pyx_t_12 = __Pyx_PyList_Append(__pyx_v_axs, __pyx_v_ax); if (unlikely(__pyx_t_12 == ((int)-1))) __PYX_ERR(0, 538, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":533
+    /* "pyaibox/utils/plot_show.py":534
  * 
  *     axs = []
  *     for cnt in range(n):             # <<<<<<<<<<<<<<
@@ -9801,14 +9801,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":539
+  /* "pyaibox/utils/plot_show.py":540
  *         axs.append(ax)
  * 
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):             # <<<<<<<<<<<<<<
  *         H, W = Z.shape
  *         if projection == '3d':
  */
-  __pyx_t_4 = PyTuple_New(9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 539, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 540, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_v_axs);
   __Pyx_GIVEREF(__pyx_v_axs);
@@ -9837,16 +9837,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __Pyx_INCREF(__pyx_v_titles);
   __Pyx_GIVEREF(__pyx_v_titles);
   PyTuple_SET_ITEM(__pyx_t_4, 8, __pyx_v_titles);
-  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 539, __pyx_L1_error)
+  __pyx_t_10 = __Pyx_PyObject_Call(__pyx_builtin_zip, __pyx_t_4, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 540, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_10);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(PyList_CheckExact(__pyx_t_10)) || PyTuple_CheckExact(__pyx_t_10)) {
     __pyx_t_4 = __pyx_t_10; __Pyx_INCREF(__pyx_t_4); __pyx_t_5 = 0;
     __pyx_t_11 = NULL;
   } else {
-    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 539, __pyx_L1_error)
+    __pyx_t_5 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 540, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 539, __pyx_L1_error)
+    __pyx_t_11 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 540, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
   for (;;) {
@@ -9854,17 +9854,17 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_5 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 539, __pyx_L1_error)
+        __pyx_t_10 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 540, __pyx_L1_error)
         #else
-        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 539, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 540, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         #endif
       } else {
         if (__pyx_t_5 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 539, __pyx_L1_error)
+        __pyx_t_10 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_5); __Pyx_INCREF(__pyx_t_10); __pyx_t_5++; if (unlikely(0 < 0)) __PYX_ERR(0, 540, __pyx_L1_error)
         #else
-        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 539, __pyx_L1_error)
+        __pyx_t_10 = PySequence_ITEM(__pyx_t_4, __pyx_t_5); __pyx_t_5++; if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 540, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         #endif
       }
@@ -9874,7 +9874,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 539, __pyx_L1_error)
+          else __PYX_ERR(0, 540, __pyx_L1_error)
         }
         break;
       }
@@ -9886,7 +9886,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       if (unlikely(size != 9)) {
         if (size > 9) __Pyx_RaiseTooManyValuesError(9);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 539, __pyx_L1_error)
+        __PYX_ERR(0, 540, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -9924,7 +9924,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         Py_ssize_t i;
         PyObject** temps[9] = {&__pyx_t_7,&__pyx_t_8,&__pyx_t_6,&__pyx_t_13,&__pyx_t_14,&__pyx_t_15,&__pyx_t_16,&__pyx_t_17,&__pyx_t_18};
         for (i=0; i < 9; i++) {
-          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 539, __pyx_L1_error)
+          PyObject* item = PySequence_ITEM(sequence, i); if (unlikely(!item)) __PYX_ERR(0, 540, __pyx_L1_error)
           __Pyx_GOTREF(item);
           *(temps[i]) = item;
         }
@@ -9934,7 +9934,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     } else {
       Py_ssize_t index = -1;
       PyObject** temps[9] = {&__pyx_t_7,&__pyx_t_8,&__pyx_t_6,&__pyx_t_13,&__pyx_t_14,&__pyx_t_15,&__pyx_t_16,&__pyx_t_17,&__pyx_t_18};
-      __pyx_t_19 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 539, __pyx_L1_error)
+      __pyx_t_19 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_19)) __PYX_ERR(0, 540, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_19);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_19)->tp_iternext;
@@ -9943,7 +9943,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_GOTREF(item);
         *(temps[index]) = item;
       }
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_19), 9) < 0) __PYX_ERR(0, 539, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_19), 9) < 0) __PYX_ERR(0, 540, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
       goto __pyx_L29_unpacking_done;
@@ -9951,7 +9951,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_19); __pyx_t_19 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 539, __pyx_L1_error)
+      __PYX_ERR(0, 540, __pyx_L1_error)
       __pyx_L29_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_ax, __pyx_t_7);
@@ -9973,14 +9973,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_title, __pyx_t_18);
     __pyx_t_18 = 0;
 
-    /* "pyaibox/utils/plot_show.py":540
+    /* "pyaibox/utils/plot_show.py":541
  * 
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):
  *         H, W = Z.shape             # <<<<<<<<<<<<<<
  *         if projection == '3d':
  *             X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  */
-    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_Z, __pyx_n_s_shape); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 540, __pyx_L1_error)
+    __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_Z, __pyx_n_s_shape); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 541, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     if ((likely(PyTuple_CheckExact(__pyx_t_10))) || (PyList_CheckExact(__pyx_t_10))) {
       PyObject* sequence = __pyx_t_10;
@@ -9988,7 +9988,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 540, __pyx_L1_error)
+        __PYX_ERR(0, 541, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -10001,15 +10001,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_t_18);
       __Pyx_INCREF(__pyx_t_17);
       #else
-      __pyx_t_18 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 540, __pyx_L1_error)
+      __pyx_t_18 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 541, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
-      __pyx_t_17 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 540, __pyx_L1_error)
+      __pyx_t_17 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 541, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
       #endif
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_16 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 540, __pyx_L1_error)
+      __pyx_t_16 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 541, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __pyx_t_9 = Py_TYPE(__pyx_t_16)->tp_iternext;
@@ -10017,7 +10017,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_GOTREF(__pyx_t_18);
       index = 1; __pyx_t_17 = __pyx_t_9(__pyx_t_16); if (unlikely(!__pyx_t_17)) goto __pyx_L30_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_17);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 2) < 0) __PYX_ERR(0, 540, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_16), 2) < 0) __PYX_ERR(0, 541, __pyx_L1_error)
       __pyx_t_9 = NULL;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       goto __pyx_L31_unpacking_done;
@@ -10025,7 +10025,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __pyx_t_9 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 540, __pyx_L1_error)
+      __PYX_ERR(0, 541, __pyx_L1_error)
       __pyx_L31_unpacking_done:;
     }
     __Pyx_XDECREF_SET(__pyx_v_H, __pyx_t_18);
@@ -10033,31 +10033,31 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     __Pyx_XDECREF_SET(__pyx_v_W, __pyx_t_17);
     __pyx_t_17 = 0;
 
-    /* "pyaibox/utils/plot_show.py":541
+    /* "pyaibox/utils/plot_show.py":542
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):
  *         H, W = Z.shape
  *         if projection == '3d':             # <<<<<<<<<<<<<<
  *             X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *             X = X0 if X is None else X
  */
-    __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_projection, __pyx_kp_u_3d, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 541, __pyx_L1_error)
+    __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_v_projection, __pyx_kp_u_3d, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 542, __pyx_L1_error)
     if (__pyx_t_2) {
 
-      /* "pyaibox/utils/plot_show.py":542
+      /* "pyaibox/utils/plot_show.py":543
  *         H, W = Z.shape
  *         if projection == '3d':
  *             X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')             # <<<<<<<<<<<<<<
  *             X = X0 if X is None else X
  *             Y = Y0 if Y is None else Y
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_np); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
-      __Pyx_GetModuleGlobalName(__pyx_t_18, __pyx_n_s_np); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_18, __pyx_n_s_np); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_18, __pyx_n_s_arange); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_t_18, __pyx_n_s_arange); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
       __pyx_t_18 = NULL;
@@ -10075,7 +10075,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_16)) {
         PyObject *__pyx_temp[4] = {__pyx_t_18, __pyx_int_0, __pyx_v_W, __pyx_int_1};
-        __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyFunction_FastCall(__pyx_t_16, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
         __Pyx_GOTREF(__pyx_t_10);
       } else
@@ -10083,13 +10083,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_16)) {
         PyObject *__pyx_temp[4] = {__pyx_t_18, __pyx_int_0, __pyx_v_W, __pyx_int_1};
-        __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyCFunction_FastCall(__pyx_t_16, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
         __Pyx_GOTREF(__pyx_t_10);
       } else
       #endif
       {
-        __pyx_t_15 = PyTuple_New(3+__pyx_t_20); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_15 = PyTuple_New(3+__pyx_t_20); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_15);
         if (__pyx_t_18) {
           __Pyx_GIVEREF(__pyx_t_18); PyTuple_SET_ITEM(__pyx_t_15, 0, __pyx_t_18); __pyx_t_18 = NULL;
@@ -10103,14 +10103,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_INCREF(__pyx_int_1);
         __Pyx_GIVEREF(__pyx_int_1);
         PyTuple_SET_ITEM(__pyx_t_15, 2+__pyx_t_20, __pyx_int_1);
-        __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_15, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_16, __pyx_t_15, NULL); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       }
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-      __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_15, __pyx_n_s_np); if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_15);
-      __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_arange); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_15, __pyx_n_s_arange); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
       __pyx_t_15 = NULL;
@@ -10128,7 +10128,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_18)) {
         PyObject *__pyx_temp[4] = {__pyx_t_15, __pyx_int_0, __pyx_v_H, __pyx_int_1};
-        __pyx_t_16 = __Pyx_PyFunction_FastCall(__pyx_t_18, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_16 = __Pyx_PyFunction_FastCall(__pyx_t_18, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_GOTREF(__pyx_t_16);
       } else
@@ -10136,13 +10136,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_18)) {
         PyObject *__pyx_temp[4] = {__pyx_t_15, __pyx_int_0, __pyx_v_H, __pyx_int_1};
-        __pyx_t_16 = __Pyx_PyCFunction_FastCall(__pyx_t_18, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_16 = __Pyx_PyCFunction_FastCall(__pyx_t_18, __pyx_temp+1-__pyx_t_20, 3+__pyx_t_20); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_15); __pyx_t_15 = 0;
         __Pyx_GOTREF(__pyx_t_16);
       } else
       #endif
       {
-        __pyx_t_14 = PyTuple_New(3+__pyx_t_20); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_14 = PyTuple_New(3+__pyx_t_20); if (unlikely(!__pyx_t_14)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_14);
         if (__pyx_t_15) {
           __Pyx_GIVEREF(__pyx_t_15); PyTuple_SET_ITEM(__pyx_t_14, 0, __pyx_t_15); __pyx_t_15 = NULL;
@@ -10156,12 +10156,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_INCREF(__pyx_int_1);
         __Pyx_GIVEREF(__pyx_int_1);
         PyTuple_SET_ITEM(__pyx_t_14, 2+__pyx_t_20, __pyx_int_1);
-        __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_18, __pyx_t_14, NULL); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_18, __pyx_t_14, NULL); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_16);
         __Pyx_DECREF(__pyx_t_14); __pyx_t_14 = 0;
       }
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-      __pyx_t_18 = PyTuple_New(2); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __pyx_t_18 = PyTuple_New(2); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_GIVEREF(__pyx_t_10);
       PyTuple_SET_ITEM(__pyx_t_18, 0, __pyx_t_10);
@@ -10169,10 +10169,10 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       PyTuple_SET_ITEM(__pyx_t_18, 1, __pyx_t_16);
       __pyx_t_10 = 0;
       __pyx_t_16 = 0;
-      __pyx_t_16 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
-      if (PyDict_SetItem(__pyx_t_16, __pyx_n_s_indexing, __pyx_n_u_xy) < 0) __PYX_ERR(0, 542, __pyx_L1_error)
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_18, __pyx_t_16); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 542, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_16, __pyx_n_s_indexing, __pyx_n_u_xy) < 0) __PYX_ERR(0, 543, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_18, __pyx_t_16); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 543, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
@@ -10183,7 +10183,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         if (unlikely(size != 2)) {
           if (size > 2) __Pyx_RaiseTooManyValuesError(2);
           else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-          __PYX_ERR(0, 542, __pyx_L1_error)
+          __PYX_ERR(0, 543, __pyx_L1_error)
         }
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
         if (likely(PyTuple_CheckExact(sequence))) {
@@ -10196,15 +10196,15 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_INCREF(__pyx_t_16);
         __Pyx_INCREF(__pyx_t_18);
         #else
-        __pyx_t_16 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_16 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_16);
-        __pyx_t_18 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_18 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_18);
         #endif
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       } else {
         Py_ssize_t index = -1;
-        __pyx_t_17 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 542, __pyx_L1_error)
+        __pyx_t_17 = PyObject_GetIter(__pyx_t_10); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 543, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_17);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
         __pyx_t_9 = Py_TYPE(__pyx_t_17)->tp_iternext;
@@ -10212,7 +10212,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_GOTREF(__pyx_t_16);
         index = 1; __pyx_t_18 = __pyx_t_9(__pyx_t_17); if (unlikely(!__pyx_t_18)) goto __pyx_L33_unpacking_failed;
         __Pyx_GOTREF(__pyx_t_18);
-        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_17), 2) < 0) __PYX_ERR(0, 542, __pyx_L1_error)
+        if (__Pyx_IternextUnpackEndCheck(__pyx_t_9(__pyx_t_17), 2) < 0) __PYX_ERR(0, 543, __pyx_L1_error)
         __pyx_t_9 = NULL;
         __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
         goto __pyx_L34_unpacking_done;
@@ -10220,7 +10220,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
         __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
         __pyx_t_9 = NULL;
         if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-        __PYX_ERR(0, 542, __pyx_L1_error)
+        __PYX_ERR(0, 543, __pyx_L1_error)
         __pyx_L34_unpacking_done:;
       }
       __Pyx_XDECREF_SET(__pyx_v_X0, __pyx_t_16);
@@ -10228,7 +10228,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_XDECREF_SET(__pyx_v_Y0, __pyx_t_18);
       __pyx_t_18 = 0;
 
-      /* "pyaibox/utils/plot_show.py":543
+      /* "pyaibox/utils/plot_show.py":544
  *         if projection == '3d':
  *             X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *             X = X0 if X is None else X             # <<<<<<<<<<<<<<
@@ -10246,7 +10246,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF_SET(__pyx_v_X, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "pyaibox/utils/plot_show.py":544
+      /* "pyaibox/utils/plot_show.py":545
  *             X0, Y0 = np.meshgrid(np.arange(0, W, 1), np.arange(0, H, 1), indexing='xy')
  *             X = X0 if X is None else X
  *             Y = Y0 if Y is None else Y             # <<<<<<<<<<<<<<
@@ -10264,16 +10264,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_DECREF_SET(__pyx_v_Y, __pyx_t_10);
       __pyx_t_10 = 0;
 
-      /* "pyaibox/utils/plot_show.py":545
+      /* "pyaibox/utils/plot_show.py":546
  *             X = X0 if X is None else X
  *             Y = Y0 if Y is None else Y
  *             ax.plot_surface(X, Y, Z, **kwargs)             # <<<<<<<<<<<<<<
  *             ax.set_zlabel(zlabel)
  *         else:
  */
-      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot_surface); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 545, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_plot_surface); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 546, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      __pyx_t_18 = PyTuple_New(3); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 545, __pyx_L1_error)
+      __pyx_t_18 = PyTuple_New(3); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 546, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
       __Pyx_INCREF(__pyx_v_X);
       __Pyx_GIVEREF(__pyx_v_X);
@@ -10284,23 +10284,23 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       __Pyx_INCREF(__pyx_v_Z);
       __Pyx_GIVEREF(__pyx_v_Z);
       PyTuple_SET_ITEM(__pyx_t_18, 2, __pyx_v_Z);
-      __pyx_t_16 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 545, __pyx_L1_error)
+      __pyx_t_16 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 546, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
-      __pyx_t_17 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_18, __pyx_t_16); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 545, __pyx_L1_error)
+      __pyx_t_17 = __Pyx_PyObject_Call(__pyx_t_10, __pyx_t_18, __pyx_t_16); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 546, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
 
-      /* "pyaibox/utils/plot_show.py":546
+      /* "pyaibox/utils/plot_show.py":547
  *             Y = Y0 if Y is None else Y
  *             ax.plot_surface(X, Y, Z, **kwargs)
  *             ax.set_zlabel(zlabel)             # <<<<<<<<<<<<<<
  *         else:
  *             ax.imshow(Z, **kwargs)
  */
-      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_zlabel); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 546, __pyx_L1_error)
+      __pyx_t_16 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_zlabel); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 547, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __pyx_t_18 = NULL;
       if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_16))) {
@@ -10314,12 +10314,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       }
       __pyx_t_17 = (__pyx_t_18) ? __Pyx_PyObject_Call2Args(__pyx_t_16, __pyx_t_18, __pyx_v_zlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_16, __pyx_v_zlabel);
       __Pyx_XDECREF(__pyx_t_18); __pyx_t_18 = 0;
-      if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 546, __pyx_L1_error)
+      if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 547, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
       __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
 
-      /* "pyaibox/utils/plot_show.py":541
+      /* "pyaibox/utils/plot_show.py":542
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):
  *         H, W = Z.shape
  *         if projection == '3d':             # <<<<<<<<<<<<<<
@@ -10329,7 +10329,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
       goto __pyx_L32;
     }
 
-    /* "pyaibox/utils/plot_show.py":548
+    /* "pyaibox/utils/plot_show.py":549
  *             ax.set_zlabel(zlabel)
  *         else:
  *             ax.imshow(Z, **kwargs)             # <<<<<<<<<<<<<<
@@ -10337,16 +10337,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  *         ax.set_xlabel(xlabel)
  */
     /*else*/ {
-      __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_imshow); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 548, __pyx_L1_error)
+      __pyx_t_17 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_imshow); if (unlikely(!__pyx_t_17)) __PYX_ERR(0, 549, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_17);
-      __pyx_t_16 = PyTuple_New(1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 548, __pyx_L1_error)
+      __pyx_t_16 = PyTuple_New(1); if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 549, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_16);
       __Pyx_INCREF(__pyx_v_Z);
       __Pyx_GIVEREF(__pyx_v_Z);
       PyTuple_SET_ITEM(__pyx_t_16, 0, __pyx_v_Z);
-      __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 548, __pyx_L1_error)
+      __pyx_t_18 = PyDict_Copy(__pyx_v_kwargs); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 549, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_18);
-      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_16, __pyx_t_18); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 548, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyObject_Call(__pyx_t_17, __pyx_t_16, __pyx_t_18); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 549, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
       __Pyx_DECREF(__pyx_t_17); __pyx_t_17 = 0;
       __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
@@ -10355,14 +10355,14 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_L32:;
 
-    /* "pyaibox/utils/plot_show.py":550
+    /* "pyaibox/utils/plot_show.py":551
  *             ax.imshow(Z, **kwargs)
  * 
  *         ax.set_xlabel(xlabel)             # <<<<<<<<<<<<<<
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)
  */
-    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 550, __pyx_L1_error)
+    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_xlabel); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 551, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_18);
     __pyx_t_16 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_18))) {
@@ -10376,19 +10376,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_10 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_18, __pyx_t_16, __pyx_v_xlabel) : __Pyx_PyObject_CallOneArg(__pyx_t_18, __pyx_v_xlabel);
     __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 550, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 551, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":551
+    /* "pyaibox/utils/plot_show.py":552
  * 
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)             # <<<<<<<<<<<<<<
  *         ax.set_title(title)
  * 
  */
-    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 551, __pyx_L1_error)
+    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_ylabel); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 552, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_18);
     __pyx_t_16 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_18))) {
@@ -10402,19 +10402,19 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_10 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_18, __pyx_t_16, __pyx_v_ylabel) : __Pyx_PyObject_CallOneArg(__pyx_t_18, __pyx_v_ylabel);
     __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 551, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 552, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":552
+    /* "pyaibox/utils/plot_show.py":553
  *         ax.set_xlabel(xlabel)
  *         ax.set_ylabel(ylabel)
  *         ax.set_title(title)             # <<<<<<<<<<<<<<
  * 
  *     if outfile is not None:
  */
-    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 552, __pyx_L1_error)
+    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_v_ax, __pyx_n_s_set_title); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 553, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_18);
     __pyx_t_16 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_18))) {
@@ -10428,12 +10428,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_10 = (__pyx_t_16) ? __Pyx_PyObject_Call2Args(__pyx_t_18, __pyx_t_16, __pyx_v_title) : __Pyx_PyObject_CallOneArg(__pyx_t_18, __pyx_v_title);
     __Pyx_XDECREF(__pyx_t_16); __pyx_t_16 = 0;
-    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 552, __pyx_L1_error)
+    if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 553, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
     __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
 
-    /* "pyaibox/utils/plot_show.py":539
+    /* "pyaibox/utils/plot_show.py":540
  *         axs.append(ax)
  * 
  *     for ax, X, Y, Z, projection, xlabel, ylabel, zlabel, title in zip(axs, Xs, Ys, Zs, projections, xlabels, ylabels, zlabels, titles):             # <<<<<<<<<<<<<<
@@ -10443,7 +10443,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/utils/plot_show.py":554
+  /* "pyaibox/utils/plot_show.py":555
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -10454,16 +10454,16 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/utils/plot_show.py":555
+    /* "pyaibox/utils/plot_show.py":556
  * 
  *     if outfile is not None:
  *         plt.savefig(outfile)             # <<<<<<<<<<<<<<
  *     return plt
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_plt); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 555, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_10, __pyx_n_s_plt); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 556, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_10);
-    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_savefig); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 555, __pyx_L1_error)
+    __pyx_t_18 = __Pyx_PyObject_GetAttrStr(__pyx_t_10, __pyx_n_s_savefig); if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 556, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_18);
     __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
     __pyx_t_10 = NULL;
@@ -10478,12 +10478,12 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
     }
     __pyx_t_4 = (__pyx_t_10) ? __Pyx_PyObject_Call2Args(__pyx_t_18, __pyx_t_10, __pyx_v_outfile) : __Pyx_PyObject_CallOneArg(__pyx_t_18, __pyx_v_outfile);
     __Pyx_XDECREF(__pyx_t_10); __pyx_t_10 = 0;
-    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 555, __pyx_L1_error)
+    if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 556, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":554
+    /* "pyaibox/utils/plot_show.py":555
  *         ax.set_title(title)
  * 
  *     if outfile is not None:             # <<<<<<<<<<<<<<
@@ -10492,7 +10492,7 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  */
   }
 
-  /* "pyaibox/utils/plot_show.py":556
+  /* "pyaibox/utils/plot_show.py":557
  *     if outfile is not None:
  *         plt.savefig(outfile)
  *     return plt             # <<<<<<<<<<<<<<
@@ -10500,13 +10500,13 @@ static PyObject *__pyx_pf_7pyaibox_5utils_9plot_show_10mshow(CYTHON_UNUSED PyObj
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 556, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 557, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_r = __pyx_t_4;
   __pyx_t_4 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/utils/plot_show.py":436
+  /* "pyaibox/utils/plot_show.py":437
  *     return plt
  * 
  * def mshow(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, projections=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
@@ -10745,9 +10745,9 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 573, __pyx_L1_error)
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 40, __pyx_L1_error)
-  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 198, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 574, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 41, __pyx_L1_error)
+  __pyx_builtin_zip = __Pyx_GetBuiltinName(__pyx_n_s_zip); if (!__pyx_builtin_zip) __PYX_ERR(0, 199, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -10757,192 +10757,192 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/utils/plot_show.py":34
+  /* "pyaibox/utils/plot_show.py":35
  * 
  * 
  * def cplot(ca, lmod=None):             # <<<<<<<<<<<<<<
  *     N = len(ca)
  *     if lmod is None:
  */
-  __pyx_tuple__5 = PyTuple_Pack(6, __pyx_n_s_ca, __pyx_n_s_lmod, __pyx_n_s_N, __pyx_n_s_r, __pyx_n_s_i, __pyx_n_s_n); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(6, __pyx_n_s_ca, __pyx_n_s_lmod, __pyx_n_s_N, __pyx_n_s_r, __pyx_n_s_i, __pyx_n_s_n); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_cplot, 34, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 34, __pyx_L1_error)
-  __pyx_tuple__7 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_cplot, 35, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 35, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "pyaibox/utils/plot_show.py":46
+  /* "pyaibox/utils/plot_show.py":47
  * 
  * 
  * def plots(x, ydict, plotdir='./', xlabel='x', ylabel='y', title='', issave=False, isshow=True):             # <<<<<<<<<<<<<<
  * 
  *     legend = []
  */
-  __pyx_tuple__8 = PyTuple_Pack(11, __pyx_n_s_x, __pyx_n_s_ydict, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_issave, __pyx_n_s_isshow, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(11, __pyx_n_s_x, __pyx_n_s_ydict, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_issave, __pyx_n_s_isshow, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(8, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_plots, 46, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 46, __pyx_L1_error)
-  __pyx_tuple__10 = PyTuple_Pack(6, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_n_u_x), ((PyObject*)__pyx_n_u_y), ((PyObject*)__pyx_kp_u__2), ((PyObject *)Py_False), ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(8, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_plots, 47, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 47, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(6, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_n_u_x), ((PyObject*)__pyx_n_u_y), ((PyObject*)__pyx_kp_u__2), ((PyObject *)Py_False), ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
 
-  /* "pyaibox/utils/plot_show.py":67
+  /* "pyaibox/utils/plot_show.py":68
  * class Plots:
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):             # <<<<<<<<<<<<<<
  * 
  *         self.plotdir = plotdir
  */
-  __pyx_tuple__11 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_figname, __pyx_n_s_issave, __pyx_n_s_isshow); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_figname, __pyx_n_s_issave, __pyx_n_s_isshow); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_init, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 67, __pyx_L1_error)
-  __pyx_tuple__13 = PyTuple_Pack(7, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_n_u_x), ((PyObject*)__pyx_n_u_y), ((PyObject*)__pyx_kp_u__2), ((PyObject *)Py_None), ((PyObject *)Py_False), ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(8, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_init, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(7, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_n_u_x), ((PyObject*)__pyx_n_u_y), ((PyObject*)__pyx_kp_u__2), ((PyObject *)Py_None), ((PyObject *)Py_False), ((PyObject *)Py_True)); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
 
-  /* "pyaibox/utils/plot_show.py":80
+  /* "pyaibox/utils/plot_show.py":81
  *             self.figname = figname
  * 
  *     def __call__(self, x, ydict, figname=None):             # <<<<<<<<<<<<<<
  * 
  *         if figname is None or figname == '':
  */
-  __pyx_tuple__14 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_ydict, __pyx_n_s_figname, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(7, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_ydict, __pyx_n_s_figname, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
-  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_call, 80, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 80, __pyx_L1_error)
-  __pyx_tuple__16 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_codeobj__15 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__14, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_call, 81, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__15)) __PYX_ERR(0, 81, __pyx_L1_error)
+  __pyx_tuple__16 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__16)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__16);
   __Pyx_GIVEREF(__pyx_tuple__16);
 
-  /* "pyaibox/utils/plot_show.py":102
+  /* "pyaibox/utils/plot_show.py":103
  * 
  * 
  * def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show images
  * 
  */
-  __pyx_tuple__17 = PyTuple_Pack(34, __pyx_n_s_Ys, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_styles, __pyx_n_s_legends, __pyx_n_s_grids, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_i, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_style, __pyx_n_s_legend, __pyx_n_s_grid, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_s, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(34, __pyx_n_s_Ys, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_styles, __pyx_n_s_legends, __pyx_n_s_grids, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_i, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_style, __pyx_n_s_legend, __pyx_n_s_grid, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_x, __pyx_n_s_y, __pyx_n_s_s, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y, __pyx_n_s_Y); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(11, 0, 34, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_plot, 102, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 102, __pyx_L1_error)
-  __pyx_tuple__19 = PyTuple_Pack(10, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_False), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(11, 0, 34, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_plot, 103, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(10, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_False), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
 
-  /* "pyaibox/utils/plot_show.py":226
+  /* "pyaibox/utils/plot_show.py":227
  * 
  * 
  * def imshow(Xs, nrows=None, ncols=None, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show images
  * 
  */
-  __pyx_tuple__20 = PyTuple_Pack(18, __pyx_n_s_Xs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_i, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(18, __pyx_n_s_Xs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_i, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
-  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(8, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_imshow, 226, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 226, __pyx_L1_error)
-  __pyx_tuple__22 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_codeobj__21 = (PyObject*)__Pyx_PyCode_New(8, 0, 18, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__20, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_imshow, 227, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__21)) __PYX_ERR(0, 227, __pyx_L1_error)
+  __pyx_tuple__22 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__22)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__22);
   __Pyx_GIVEREF(__pyx_tuple__22);
 
-  /* "pyaibox/utils/plot_show.py":316
+  /* "pyaibox/utils/plot_show.py":317
  * 
  * 
  * def mesh(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""mesh
  * 
  */
-  __pyx_tuple__23 = PyTuple_Pack(28, __pyx_n_s_Zs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_zlabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_Ys, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_cnt, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_Z, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_zlabel, __pyx_n_s_title, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_X0, __pyx_n_s_Y0); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 316, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(28, __pyx_n_s_Zs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_zlabels, __pyx_n_s_titles, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_Ys, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_cnt, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_Z, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_zlabel, __pyx_n_s_title, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_X0, __pyx_n_s_Y0); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(9, 0, 28, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_mesh, 316, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 316, __pyx_L1_error)
-  __pyx_tuple__25 = PyTuple_Pack(8, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 316, __pyx_L1_error)
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(9, 0, 28, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_mesh, 317, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 317, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(8, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
 
-  /* "pyaibox/utils/plot_show.py":436
+  /* "pyaibox/utils/plot_show.py":437
  *     return plt
  * 
  * def mshow(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, projections=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show tensors
  * 
  */
-  __pyx_tuple__26 = PyTuple_Pack(30, __pyx_n_s_Zs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_zlabels, __pyx_n_s_titles, __pyx_n_s_projections, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_Ys, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_cnt, __pyx_n_s_projection, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_Z, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_zlabel, __pyx_n_s_title, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_X0, __pyx_n_s_Y0); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_tuple__26 = PyTuple_Pack(30, __pyx_n_s_Zs, __pyx_n_s_nrows, __pyx_n_s_ncols, __pyx_n_s_xlabels, __pyx_n_s_ylabels, __pyx_n_s_zlabels, __pyx_n_s_titles, __pyx_n_s_projections, __pyx_n_s_figsize, __pyx_n_s_outfile, __pyx_n_s_kwargs, __pyx_n_s_n, __pyx_n_s_Xs, __pyx_n_s_Ys, __pyx_n_s_fig, __pyx_n_s_axs, __pyx_n_s_cnt, __pyx_n_s_projection, __pyx_n_s_ax, __pyx_n_s_X, __pyx_n_s_Y, __pyx_n_s_Z, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_zlabel, __pyx_n_s_title, __pyx_n_s_H, __pyx_n_s_W, __pyx_n_s_X0, __pyx_n_s_Y0); if (unlikely(!__pyx_tuple__26)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__26);
   __Pyx_GIVEREF(__pyx_tuple__26);
-  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(10, 0, 30, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_mshow, 436, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 436, __pyx_L1_error)
-  __pyx_tuple__28 = PyTuple_Pack(9, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_codeobj__27 = (PyObject*)__Pyx_PyCode_New(10, 0, 30, 0, CO_OPTIMIZED|CO_NEWLOCALS|CO_VARKEYWORDS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__26, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_utils_plot_show_py, __pyx_n_s_mshow, 437, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__27)) __PYX_ERR(0, 437, __pyx_L1_error)
+  __pyx_tuple__28 = PyTuple_Pack(9, ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__28)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__28);
   __Pyx_GIVEREF(__pyx_tuple__28);
 
-  /* "pyaibox/utils/plot_show.py":562
+  /* "pyaibox/utils/plot_show.py":563
  * 
  * 
  *     x1 = np.random.rand(2, 100)             # <<<<<<<<<<<<<<
  *     x2 = np.random.rand(2, 100)
  *     plt = plot([[xi for xi in x1], [xi for xi in x2]], styles=[['-b', '-r'], ['-b', '-r']], legends=[['real', 'imag'], ['real', 'imag']], grids=True)
  */
-  __pyx_tuple__29 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_100); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 562, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(2, __pyx_int_2, __pyx_int_100); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 563, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
 
-  /* "pyaibox/utils/plot_show.py":589
+  /* "pyaibox/utils/plot_show.py":590
  *     plot(x, {'y': y, 'f': f})
  * 
  *     x = np.random.rand(3, 100, 100)             # <<<<<<<<<<<<<<
  *     plt = imshow([xi for xi in x])
  *     plt.show()
  */
-  __pyx_tuple__30 = PyTuple_Pack(3, __pyx_int_3, __pyx_int_100, __pyx_int_100); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 589, __pyx_L1_error)
+  __pyx_tuple__30 = PyTuple_Pack(3, __pyx_int_3, __pyx_int_100, __pyx_int_100); if (unlikely(!__pyx_tuple__30)) __PYX_ERR(0, 590, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__30);
   __Pyx_GIVEREF(__pyx_tuple__30);
 
-  /* "pyaibox/utils/plot_show.py":593
+  /* "pyaibox/utils/plot_show.py":594
  *     plt.show()
  * 
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))             # <<<<<<<<<<<<<<
  *     z = np.random.rand(20, 10)
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])
  */
-  __pyx_tuple__31 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_10); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_10); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_tuple__32 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_20); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 593, __pyx_L1_error)
+  __pyx_tuple__32 = PyTuple_Pack(2, __pyx_int_0, __pyx_int_20); if (unlikely(!__pyx_tuple__32)) __PYX_ERR(0, 594, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__32);
   __Pyx_GIVEREF(__pyx_tuple__32);
 
-  /* "pyaibox/utils/plot_show.py":594
+  /* "pyaibox/utils/plot_show.py":595
  * 
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))
  *     z = np.random.rand(20, 10)             # <<<<<<<<<<<<<<
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])
  *     plt.show()
  */
-  __pyx_tuple__33 = PyTuple_Pack(2, __pyx_int_20, __pyx_int_10); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 594, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(2, __pyx_int_20, __pyx_int_10); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 595, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
 
-  /* "pyaibox/utils/plot_show.py":595
+  /* "pyaibox/utils/plot_show.py":596
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))
  *     z = np.random.rand(20, 10)
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-  __pyx_tuple__34 = PyTuple_Pack(2, __pyx_int_30, __pyx_int_40); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 595, __pyx_L1_error)
+  __pyx_tuple__34 = PyTuple_Pack(2, __pyx_int_30, __pyx_int_40); if (unlikely(!__pyx_tuple__34)) __PYX_ERR(0, 596, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__34);
   __Pyx_GIVEREF(__pyx_tuple__34);
 
-  /* "pyaibox/utils/plot_show.py":598
+  /* "pyaibox/utils/plot_show.py":599
  *     plt.show()
  * 
  *     plt = mshow([z, np.random.randn(60, 60)], 1, 2, Xs=[np.arange(30, 40)], projections=['3d', '2d'])             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-  __pyx_tuple__35 = PyTuple_Pack(2, __pyx_int_60, __pyx_int_60); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 598, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(2, __pyx_int_60, __pyx_int_60); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 599, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
   __Pyx_RefNannyFinishContext();
@@ -11246,272 +11246,272 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/utils/plot_show.py":28
+  /* "pyaibox/utils/plot_show.py":29
  * #
  * 
  * import math             # <<<<<<<<<<<<<<
  * import numpy as np
  * import matplotlib.pyplot as plt
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_math, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_math, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_math, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":29
+  /* "pyaibox/utils/plot_show.py":30
  * 
  * import math
  * import numpy as np             # <<<<<<<<<<<<<<
  * import matplotlib.pyplot as plt
  * from pyaibox.base.mathops import fnab
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_numpy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_np, __pyx_t_1) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":30
+  /* "pyaibox/utils/plot_show.py":31
  * import math
  * import numpy as np
  * import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
  * from pyaibox.base.mathops import fnab
  * 
  */
-  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_n_s__4);
   __Pyx_GIVEREF(__pyx_n_s__4);
   PyList_SET_ITEM(__pyx_t_1, 0, __pyx_n_s__4);
-  __pyx_t_2 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_1, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_2) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_2) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/plot_show.py":31
+  /* "pyaibox/utils/plot_show.py":32
  * import numpy as np
  * import matplotlib.pyplot as plt
  * from pyaibox.base.mathops import fnab             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = PyList_New(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_INCREF(__pyx_n_s_fnab);
   __Pyx_GIVEREF(__pyx_n_s_fnab);
   PyList_SET_ITEM(__pyx_t_2, 0, __pyx_n_s_fnab);
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pyaibox_base_mathops, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_pyaibox_base_mathops, __pyx_t_2, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_fnab); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_ImportFrom(__pyx_t_1, __pyx_n_s_fnab); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fnab, __pyx_t_2) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_fnab, __pyx_t_2) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":34
+  /* "pyaibox/utils/plot_show.py":35
  * 
  * 
  * def cplot(ca, lmod=None):             # <<<<<<<<<<<<<<
  *     N = len(ca)
  *     if lmod is None:
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_1cplot, 0, __pyx_n_s_cplot, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_1cplot, 0, __pyx_n_s_cplot, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__7);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cplot, __pyx_t_1) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_cplot, __pyx_t_1) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":46
+  /* "pyaibox/utils/plot_show.py":47
  * 
  * 
  * def plots(x, ydict, plotdir='./', xlabel='x', ylabel='y', title='', issave=False, isshow=True):             # <<<<<<<<<<<<<<
  * 
  *     legend = []
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_3plots, 0, __pyx_n_s_plots, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_3plots, 0, __pyx_n_s_plots, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__10);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plots, __pyx_t_1) < 0) __PYX_ERR(0, 46, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plots, __pyx_t_1) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":65
+  /* "pyaibox/utils/plot_show.py":66
  * 
  * 
  * class Plots:             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Plots, __pyx_n_s_Plots, (PyObject *) NULL, __pyx_n_s_pyaibox_utils_plot_show, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_Plots, __pyx_n_s_Plots, (PyObject *) NULL, __pyx_n_s_pyaibox_utils_plot_show, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "pyaibox/utils/plot_show.py":67
+  /* "pyaibox/utils/plot_show.py":68
  * class Plots:
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):             # <<<<<<<<<<<<<<
  * 
  *         self.plotdir = plotdir
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5Plots_1__init__, 0, __pyx_n_s_Plots___init, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5Plots_1__init__, 0, __pyx_n_s_Plots___init, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__13);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/plot_show.py":80
+  /* "pyaibox/utils/plot_show.py":81
  *             self.figname = figname
  * 
  *     def __call__(self, x, ydict, figname=None):             # <<<<<<<<<<<<<<
  * 
  *         if figname is None or figname == '':
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5Plots_3__call__, 0, __pyx_n_s_Plots___call, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5Plots_3__call__, 0, __pyx_n_s_Plots___call, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__15)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__16);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_call, __pyx_t_2) < 0) __PYX_ERR(0, 80, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_call, __pyx_t_2) < 0) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/utils/plot_show.py":65
+  /* "pyaibox/utils/plot_show.py":66
  * 
  * 
  * class Plots:             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, plotdir='./', xlabel='x', ylabel='y', title='', figname=None, issave=False, isshow=True):
  */
-  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Plots, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_Plots, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Plots, __pyx_t_2) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_Plots, __pyx_t_2) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":102
+  /* "pyaibox/utils/plot_show.py":103
  * 
  * 
  * def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show images
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5plot, 0, __pyx_n_s_plot, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_5plot, 0, __pyx_n_s_plot, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__19);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plot, __pyx_t_1) < 0) __PYX_ERR(0, 102, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_plot, __pyx_t_1) < 0) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":226
+  /* "pyaibox/utils/plot_show.py":227
  * 
  * 
  * def imshow(Xs, nrows=None, ncols=None, xlabels=None, ylabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show images
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_7imshow, 0, __pyx_n_s_imshow, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 226, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_7imshow, 0, __pyx_n_s_imshow, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__21)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__22);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imshow, __pyx_t_1) < 0) __PYX_ERR(0, 226, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_imshow, __pyx_t_1) < 0) __PYX_ERR(0, 227, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":316
+  /* "pyaibox/utils/plot_show.py":317
  * 
  * 
  * def mesh(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""mesh
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_9mesh, 0, __pyx_n_s_mesh, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 316, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_9mesh, 0, __pyx_n_s_mesh, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__25);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mesh, __pyx_t_1) < 0) __PYX_ERR(0, 316, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mesh, __pyx_t_1) < 0) __PYX_ERR(0, 317, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":436
+  /* "pyaibox/utils/plot_show.py":437
  *     return plt
  * 
  * def mshow(Zs, nrows=None, ncols=None, xlabels=None, ylabels=None, zlabels=None, titles=None, projections=None, figsize=None, outfile=None, **kwargs):             # <<<<<<<<<<<<<<
  *     r"""show tensors
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_11mshow, 0, __pyx_n_s_mshow, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 436, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_5utils_9plot_show_11mshow, 0, __pyx_n_s_mshow, NULL, __pyx_n_s_pyaibox_utils_plot_show, __pyx_d, ((PyObject *)__pyx_codeobj__27)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__28);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mshow, __pyx_t_1) < 0) __PYX_ERR(0, 436, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_mshow, __pyx_t_1) < 0) __PYX_ERR(0, 437, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/utils/plot_show.py":559
+  /* "pyaibox/utils/plot_show.py":560
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 559, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 560, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 559, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 560, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_3) {
 
-    /* "pyaibox/utils/plot_show.py":562
+    /* "pyaibox/utils/plot_show.py":563
  * 
  * 
  *     x1 = np.random.rand(2, 100)             # <<<<<<<<<<<<<<
  *     x2 = np.random.rand(2, 100)
  *     plt = plot([[xi for xi in x1], [xi for xi in x2]], styles=[['-b', '-r'], ['-b', '-r']], legends=[['real', 'imag'], ['real', 'imag']], grids=True)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 562, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 563, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 562, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 562, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 563, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 562, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x1, __pyx_t_2) < 0) __PYX_ERR(0, 562, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x1, __pyx_t_2) < 0) __PYX_ERR(0, 563, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/plot_show.py":563
+    /* "pyaibox/utils/plot_show.py":564
  * 
  *     x1 = np.random.rand(2, 100)
  *     x2 = np.random.rand(2, 100)             # <<<<<<<<<<<<<<
  *     plt = plot([[xi for xi in x1], [xi for xi in x2]], styles=[['-b', '-r'], ['-b', '-r']], legends=[['real', 'imag'], ['real', 'imag']], grids=True)
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 563, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 563, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 563, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__29, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x2, __pyx_t_1) < 0) __PYX_ERR(0, 563, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x2, __pyx_t_1) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/plot_show.py":564
+    /* "pyaibox/utils/plot_show.py":565
  *     x1 = np.random.rand(2, 100)
  *     x2 = np.random.rand(2, 100)
  *     plt = plot([[xi for xi in x1], [xi for xi in x2]], styles=[['-b', '-r'], ['-b', '-r']], legends=[['real', 'imag'], ['real', 'imag']], grids=True)             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     { /* enter inner scope */
-      __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L5_error)
+      __pyx_t_2 = PyList_New(0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L5_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L5_error)
       __Pyx_GOTREF(__pyx_t_4);
       if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
         __pyx_t_5 = __pyx_t_4; __Pyx_INCREF(__pyx_t_5); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L5_error)
+        __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 565, __pyx_L5_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 564, __pyx_L5_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 565, __pyx_L5_error)
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       for (;;) {
@@ -11519,17 +11519,17 @@ if (!__Pyx_RefNanny) {
           if (likely(PyList_CheckExact(__pyx_t_5))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L5_error)
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L5_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L5_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L5_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L5_error)
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L5_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L5_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L5_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           }
@@ -11539,7 +11539,7 @@ if (!__Pyx_RefNanny) {
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 564, __pyx_L5_error)
+              else __PYX_ERR(0, 565, __pyx_L5_error)
             }
             break;
           }
@@ -11549,7 +11549,7 @@ if (!__Pyx_RefNanny) {
         __Pyx_DECREF_SET(__pyx_8genexpr5__pyx_v_7pyaibox_5utils_9plot_show_xi, __pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_4);
         __pyx_t_4 = 0;
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_8genexpr5__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 564, __pyx_L5_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_2, (PyObject*)__pyx_8genexpr5__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 565, __pyx_L5_error)
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_8genexpr5__pyx_v_7pyaibox_5utils_9plot_show_xi);
@@ -11562,17 +11562,17 @@ if (!__Pyx_RefNanny) {
       __pyx_L8_exit_scope:;
     } /* exit inner scope */
     { /* enter inner scope */
-      __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L11_error)
+      __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 565, __pyx_L11_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L11_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_x2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L11_error)
       __Pyx_GOTREF(__pyx_t_4);
       if (likely(PyList_CheckExact(__pyx_t_4)) || PyTuple_CheckExact(__pyx_t_4)) {
         __pyx_t_8 = __pyx_t_4; __Pyx_INCREF(__pyx_t_8); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 564, __pyx_L11_error)
+        __pyx_t_6 = -1; __pyx_t_8 = PyObject_GetIter(__pyx_t_4); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 565, __pyx_L11_error)
         __Pyx_GOTREF(__pyx_t_8);
-        __pyx_t_7 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 564, __pyx_L11_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_8)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 565, __pyx_L11_error)
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       for (;;) {
@@ -11580,17 +11580,17 @@ if (!__Pyx_RefNanny) {
           if (likely(PyList_CheckExact(__pyx_t_8))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_8)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L11_error)
+            __pyx_t_4 = PyList_GET_ITEM(__pyx_t_8, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L11_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_8, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L11_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_8, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L11_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_8)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 564, __pyx_L11_error)
+            __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_8, __pyx_t_6); __Pyx_INCREF(__pyx_t_4); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 565, __pyx_L11_error)
             #else
-            __pyx_t_4 = PySequence_ITEM(__pyx_t_8, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L11_error)
+            __pyx_t_4 = PySequence_ITEM(__pyx_t_8, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L11_error)
             __Pyx_GOTREF(__pyx_t_4);
             #endif
           }
@@ -11600,7 +11600,7 @@ if (!__Pyx_RefNanny) {
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 564, __pyx_L11_error)
+              else __PYX_ERR(0, 565, __pyx_L11_error)
             }
             break;
           }
@@ -11610,7 +11610,7 @@ if (!__Pyx_RefNanny) {
         __Pyx_DECREF_SET(__pyx_8genexpr6__pyx_v_7pyaibox_5utils_9plot_show_xi, __pyx_t_4);
         __Pyx_GIVEREF(__pyx_t_4);
         __pyx_t_4 = 0;
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_5, (PyObject*)__pyx_8genexpr6__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 564, __pyx_L11_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_5, (PyObject*)__pyx_8genexpr6__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 565, __pyx_L11_error)
       }
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_GOTREF(__pyx_8genexpr6__pyx_v_7pyaibox_5utils_9plot_show_xi);
@@ -11622,7 +11622,7 @@ if (!__Pyx_RefNanny) {
       goto __pyx_L1_error;
       __pyx_L14_exit_scope:;
     } /* exit inner scope */
-    __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_8 = PyList_New(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_8, 0, __pyx_t_2);
@@ -11630,14 +11630,14 @@ if (!__Pyx_RefNanny) {
     PyList_SET_ITEM(__pyx_t_8, 1, __pyx_t_5);
     __pyx_t_2 = 0;
     __pyx_t_5 = 0;
-    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_8);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_8);
     __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_kp_u_b);
     __Pyx_GIVEREF(__pyx_kp_u_b);
@@ -11645,7 +11645,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_kp_u_r_2);
     __Pyx_GIVEREF(__pyx_kp_u_r_2);
     PyList_SET_ITEM(__pyx_t_2, 1, __pyx_kp_u_r_2);
-    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_kp_u_b);
     __Pyx_GIVEREF(__pyx_kp_u_b);
@@ -11653,7 +11653,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_kp_u_r_2);
     __Pyx_GIVEREF(__pyx_kp_u_r_2);
     PyList_SET_ITEM(__pyx_t_4, 1, __pyx_kp_u_r_2);
-    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_9, 0, __pyx_t_2);
@@ -11661,9 +11661,9 @@ if (!__Pyx_RefNanny) {
     PyList_SET_ITEM(__pyx_t_9, 1, __pyx_t_4);
     __pyx_t_2 = 0;
     __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_styles, __pyx_t_9) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_styles, __pyx_t_9) < 0) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
-    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_9 = PyList_New(2); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_INCREF(__pyx_n_u_real);
     __Pyx_GIVEREF(__pyx_n_u_real);
@@ -11671,7 +11671,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_n_u_imag);
     __Pyx_GIVEREF(__pyx_n_u_imag);
     PyList_SET_ITEM(__pyx_t_9, 1, __pyx_n_u_imag);
-    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_INCREF(__pyx_n_u_real);
     __Pyx_GIVEREF(__pyx_n_u_real);
@@ -11679,7 +11679,7 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_n_u_imag);
     __Pyx_GIVEREF(__pyx_n_u_imag);
     PyList_SET_ITEM(__pyx_t_4, 1, __pyx_n_u_imag);
-    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
+    __pyx_t_2 = PyList_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_9);
     PyList_SET_ITEM(__pyx_t_2, 0, __pyx_t_9);
@@ -11687,204 +11687,204 @@ if (!__Pyx_RefNanny) {
     PyList_SET_ITEM(__pyx_t_2, 1, __pyx_t_4);
     __pyx_t_9 = 0;
     __pyx_t_4 = 0;
-    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_legends, __pyx_t_2) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_legends, __pyx_t_2) < 0) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_grids, Py_True) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 564, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_8, __pyx_n_s_grids, Py_True) < 0) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_2) < 0) __PYX_ERR(0, 564, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_2) < 0) __PYX_ERR(0, 565, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/plot_show.py":565
+    /* "pyaibox/utils/plot_show.py":566
  *     x2 = np.random.rand(2, 100)
  *     plt = plot([[xi for xi in x1], [xi for xi in x2]], styles=[['-b', '-r'], ['-b', '-r']], legends=[['real', 'imag'], ['real', 'imag']], grids=True)
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_plt); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 565, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 566, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/plot_show.py":568
+    /* "pyaibox/utils/plot_show.py":569
  * 
  * 
  *     N = 3             # <<<<<<<<<<<<<<
  * 
  *     r = np.random.rand(N)
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_N, __pyx_int_3) < 0) __PYX_ERR(0, 568, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_N, __pyx_int_3) < 0) __PYX_ERR(0, 569, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":570
+    /* "pyaibox/utils/plot_show.py":571
  *     N = 3
  * 
  *     r = np.random.rand(N)             # <<<<<<<<<<<<<<
  *     i = -np.random.rand(N)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 570, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 570, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 570, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_N); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 570, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_N); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 570, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_r, __pyx_t_5) < 0) __PYX_ERR(0, 570, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_r, __pyx_t_5) < 0) __PYX_ERR(0, 571, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":571
+    /* "pyaibox/utils/plot_show.py":572
  * 
  *     r = np.random.rand(N)
  *     i = -np.random.rand(N)             # <<<<<<<<<<<<<<
  * 
  *     print(r)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_N); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_N); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = PyNumber_Negative(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 571, __pyx_L1_error)
+    __pyx_t_8 = PyNumber_Negative(__pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_8) < 0) __PYX_ERR(0, 571, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_i, __pyx_t_8) < 0) __PYX_ERR(0, 572, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":573
+    /* "pyaibox/utils/plot_show.py":574
  *     i = -np.random.rand(N)
  * 
  *     print(r)             # <<<<<<<<<<<<<<
  *     print(i)
  *     x = r + 1j * i
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_r); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 573, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_r); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 574, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 573, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_8); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 574, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/plot_show.py":574
+    /* "pyaibox/utils/plot_show.py":575
  * 
  *     print(r)
  *     print(i)             # <<<<<<<<<<<<<<
  *     x = r + 1j * i
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_i); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 575, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 574, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 575, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":575
+    /* "pyaibox/utils/plot_show.py":576
  *     print(r)
  *     print(i)
  *     x = r + 1j * i             # <<<<<<<<<<<<<<
  * 
  *     cplot(x)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_r); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 575, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_r); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = PyComplex_FromDoubles(0.0, 1.0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 575, __pyx_L1_error)
+    __pyx_t_2 = PyComplex_FromDoubles(0.0, 1.0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 575, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_i); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 575, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Multiply(__pyx_t_2, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyNumber_Add(__pyx_t_8, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 575, __pyx_L1_error)
+    __pyx_t_5 = PyNumber_Add(__pyx_t_8, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_5) < 0) __PYX_ERR(0, 575, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_5) < 0) __PYX_ERR(0, 576, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":577
+    /* "pyaibox/utils/plot_show.py":578
  *     x = r + 1j * i
  * 
  *     cplot(x)             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_cplot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 577, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_cplot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 578, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 577, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 578, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 577, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 578, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":578
+    /* "pyaibox/utils/plot_show.py":579
  * 
  *     cplot(x)
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  *     Ns = 100
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 578, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_plt); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 579, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_show); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 578, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_show); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 579, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 578, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 579, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":580
+    /* "pyaibox/utils/plot_show.py":581
  *     plt.show()
  * 
  *     Ns = 100             # <<<<<<<<<<<<<<
  *     x = np.linspace(-1, 1, Ns)
  * 
  */
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ns, __pyx_int_100) < 0) __PYX_ERR(0, 580, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ns, __pyx_int_100) < 0) __PYX_ERR(0, 581, __pyx_L1_error)
 
-    /* "pyaibox/utils/plot_show.py":581
+    /* "pyaibox/utils/plot_show.py":582
  * 
  *     Ns = 100
  *     x = np.linspace(-1, 1, Ns)             # <<<<<<<<<<<<<<
  * 
  *     y = np.random.randn(Ns)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 581, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_linspace); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 581, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_linspace); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_Ns); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 581, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_Ns); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 581, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(3); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_int_neg_1);
     __Pyx_GIVEREF(__pyx_int_neg_1);
@@ -11895,103 +11895,103 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_t_8);
     PyTuple_SET_ITEM(__pyx_t_5, 2, __pyx_t_8);
     __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 581, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_5, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_8) < 0) __PYX_ERR(0, 581, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_8) < 0) __PYX_ERR(0, 582, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":583
+    /* "pyaibox/utils/plot_show.py":584
  *     x = np.linspace(-1, 1, Ns)
  * 
  *     y = np.random.randn(Ns)             # <<<<<<<<<<<<<<
  *     f = np.random.randn(Ns)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 583, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 583, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_randn); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 583, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_randn); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Ns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 583, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Ns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 583, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallOneArg(__pyx_t_8, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_1) < 0) __PYX_ERR(0, 583, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_1) < 0) __PYX_ERR(0, 584, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/plot_show.py":584
+    /* "pyaibox/utils/plot_show.py":585
  * 
  *     y = np.random.randn(Ns)
  *     f = np.random.randn(Ns)             # <<<<<<<<<<<<<<
  * 
  *     plot = Plots(plotdir='./', issave=True)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 584, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 584, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 584, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Ns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 584, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_Ns); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 584, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_5); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_f, __pyx_t_8) < 0) __PYX_ERR(0, 584, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_f, __pyx_t_8) < 0) __PYX_ERR(0, 585, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":586
+    /* "pyaibox/utils/plot_show.py":587
  *     f = np.random.randn(Ns)
  * 
  *     plot = Plots(plotdir='./', issave=True)             # <<<<<<<<<<<<<<
  *     plot(x, {'y': y, 'f': f})
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_Plots); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_Plots); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 586, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_plotdir, __pyx_kp_u_) < 0) __PYX_ERR(0, 586, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_issave, Py_True) < 0) __PYX_ERR(0, 586, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 586, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_plotdir, __pyx_kp_u_) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_5, __pyx_n_s_issave, Py_True) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_empty_tuple, __pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plot, __pyx_t_1) < 0) __PYX_ERR(0, 586, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plot, __pyx_t_1) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/utils/plot_show.py":587
+    /* "pyaibox/utils/plot_show.py":588
  * 
  *     plot = Plots(plotdir='./', issave=True)
  *     plot(x, {'y': y, 'f': f})             # <<<<<<<<<<<<<<
  * 
  *     x = np.random.rand(3, 100, 100)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_x); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_y); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_y); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_8, __pyx_n_u_y, __pyx_t_2) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_8, __pyx_n_u_y, __pyx_t_2) < 0) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_f); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_f); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_8, __pyx_n_u_f, __pyx_t_2) < 0) __PYX_ERR(0, 587, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_8, __pyx_n_u_f, __pyx_t_2) < 0) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_2, 0, __pyx_t_5);
@@ -11999,54 +11999,54 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_t_8);
     __pyx_t_5 = 0;
     __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 587, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_t_2, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 588, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":589
+    /* "pyaibox/utils/plot_show.py":590
  *     plot(x, {'y': y, 'f': f})
  * 
  *     x = np.random.rand(3, 100, 100)             # <<<<<<<<<<<<<<
  *     plt = imshow([xi for xi in x])
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 589, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_np); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_random); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 589, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_rand); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 589, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_tuple__30, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_2) < 0) __PYX_ERR(0, 589, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_2) < 0) __PYX_ERR(0, 590, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-    /* "pyaibox/utils/plot_show.py":590
+    /* "pyaibox/utils/plot_show.py":591
  * 
  *     x = np.random.rand(3, 100, 100)
  *     plt = imshow([xi for xi in x])             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_imshow); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 590, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_imshow); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 591, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     { /* enter inner scope */
-      __pyx_t_8 = PyList_New(0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 590, __pyx_L17_error)
+      __pyx_t_8 = PyList_New(0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 591, __pyx_L17_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 590, __pyx_L17_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_x); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L17_error)
       __Pyx_GOTREF(__pyx_t_1);
       if (likely(PyList_CheckExact(__pyx_t_1)) || PyTuple_CheckExact(__pyx_t_1)) {
         __pyx_t_5 = __pyx_t_1; __Pyx_INCREF(__pyx_t_5); __pyx_t_6 = 0;
         __pyx_t_7 = NULL;
       } else {
-        __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 590, __pyx_L17_error)
+        __pyx_t_6 = -1; __pyx_t_5 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L17_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 590, __pyx_L17_error)
+        __pyx_t_7 = Py_TYPE(__pyx_t_5)->tp_iternext; if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 591, __pyx_L17_error)
       }
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       for (;;) {
@@ -12054,17 +12054,17 @@ if (!__Pyx_RefNanny) {
           if (likely(PyList_CheckExact(__pyx_t_5))) {
             if (__pyx_t_6 >= PyList_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 590, __pyx_L17_error)
+            __pyx_t_1 = PyList_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 591, __pyx_L17_error)
             #else
-            __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 590, __pyx_L17_error)
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L17_error)
             __Pyx_GOTREF(__pyx_t_1);
             #endif
           } else {
             if (__pyx_t_6 >= PyTuple_GET_SIZE(__pyx_t_5)) break;
             #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-            __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 590, __pyx_L17_error)
+            __pyx_t_1 = PyTuple_GET_ITEM(__pyx_t_5, __pyx_t_6); __Pyx_INCREF(__pyx_t_1); __pyx_t_6++; if (unlikely(0 < 0)) __PYX_ERR(0, 591, __pyx_L17_error)
             #else
-            __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 590, __pyx_L17_error)
+            __pyx_t_1 = PySequence_ITEM(__pyx_t_5, __pyx_t_6); __pyx_t_6++; if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 591, __pyx_L17_error)
             __Pyx_GOTREF(__pyx_t_1);
             #endif
           }
@@ -12074,7 +12074,7 @@ if (!__Pyx_RefNanny) {
             PyObject* exc_type = PyErr_Occurred();
             if (exc_type) {
               if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-              else __PYX_ERR(0, 590, __pyx_L17_error)
+              else __PYX_ERR(0, 591, __pyx_L17_error)
             }
             break;
           }
@@ -12084,7 +12084,7 @@ if (!__Pyx_RefNanny) {
         __Pyx_DECREF_SET(__pyx_8genexpr7__pyx_v_7pyaibox_5utils_9plot_show_xi, __pyx_t_1);
         __Pyx_GIVEREF(__pyx_t_1);
         __pyx_t_1 = 0;
-        if (unlikely(__Pyx_ListComp_Append(__pyx_t_8, (PyObject*)__pyx_8genexpr7__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 590, __pyx_L17_error)
+        if (unlikely(__Pyx_ListComp_Append(__pyx_t_8, (PyObject*)__pyx_8genexpr7__pyx_v_7pyaibox_5utils_9plot_show_xi))) __PYX_ERR(0, 591, __pyx_L17_error)
       }
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_GOTREF(__pyx_8genexpr7__pyx_v_7pyaibox_5utils_9plot_show_xi);
@@ -12096,59 +12096,59 @@ if (!__Pyx_RefNanny) {
       goto __pyx_L1_error;
       __pyx_L20_exit_scope:;
     } /* exit inner scope */
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 590, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_5) < 0) __PYX_ERR(0, 590, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_5) < 0) __PYX_ERR(0, 591, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":591
+    /* "pyaibox/utils/plot_show.py":592
  *     x = np.random.rand(3, 100, 100)
  *     plt = imshow([xi for xi in x])
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 592, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 591, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 592, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 591, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 592, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":593
+    /* "pyaibox/utils/plot_show.py":594
  *     plt.show()
  * 
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))             # <<<<<<<<<<<<<<
  *     z = np.random.rand(20, 10)
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_meshgrid); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_arange); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_arange); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__31, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_arange); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_arange); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__32, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_5);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_5);
@@ -12156,7 +12156,7 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_t_2);
     __pyx_t_5 = 0;
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 593, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -12166,7 +12166,7 @@ if (!__Pyx_RefNanny) {
       if (unlikely(size != 2)) {
         if (size > 2) __Pyx_RaiseTooManyValuesError(2);
         else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-        __PYX_ERR(0, 593, __pyx_L1_error)
+        __PYX_ERR(0, 594, __pyx_L1_error)
       }
       #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
       if (likely(PyTuple_CheckExact(sequence))) {
@@ -12179,15 +12179,15 @@ if (!__Pyx_RefNanny) {
       __Pyx_INCREF(__pyx_t_1);
       __Pyx_INCREF(__pyx_t_8);
       #else
-      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 593, __pyx_L1_error)
+      __pyx_t_1 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 594, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 593, __pyx_L1_error)
+      __pyx_t_8 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 594, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       #endif
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     } else {
       Py_ssize_t index = -1;
-      __pyx_t_5 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 593, __pyx_L1_error)
+      __pyx_t_5 = PyObject_GetIter(__pyx_t_2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 594, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __pyx_t_10 = Py_TYPE(__pyx_t_5)->tp_iternext;
@@ -12195,7 +12195,7 @@ if (!__Pyx_RefNanny) {
       __Pyx_GOTREF(__pyx_t_1);
       index = 1; __pyx_t_8 = __pyx_t_10(__pyx_t_5); if (unlikely(!__pyx_t_8)) goto __pyx_L21_unpacking_failed;
       __Pyx_GOTREF(__pyx_t_8);
-      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_5), 2) < 0) __PYX_ERR(0, 593, __pyx_L1_error)
+      if (__Pyx_IternextUnpackEndCheck(__pyx_t_10(__pyx_t_5), 2) < 0) __PYX_ERR(0, 594, __pyx_L1_error)
       __pyx_t_10 = NULL;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       goto __pyx_L22_unpacking_done;
@@ -12203,47 +12203,47 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __pyx_t_10 = NULL;
       if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-      __PYX_ERR(0, 593, __pyx_L1_error)
+      __PYX_ERR(0, 594, __pyx_L1_error)
       __pyx_L22_unpacking_done:;
     }
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_1) < 0) __PYX_ERR(0, 593, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_x, __pyx_t_1) < 0) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_8) < 0) __PYX_ERR(0, 593, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_y, __pyx_t_8) < 0) __PYX_ERR(0, 594, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":594
+    /* "pyaibox/utils/plot_show.py":595
  * 
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))
  *     z = np.random.rand(20, 10)             # <<<<<<<<<<<<<<
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])
  *     plt.show()
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 594, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 595, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 594, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_rand); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 594, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_2, __pyx_tuple__33, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 595, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_z, __pyx_t_8) < 0) __PYX_ERR(0, 594, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_z, __pyx_t_8) < 0) __PYX_ERR(0, 595, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
 
-    /* "pyaibox/utils/plot_show.py":595
+    /* "pyaibox/utils/plot_show.py":596
  *     x, y = np.meshgrid(np.arange(0, 10), np.arange(0, 20))
  *     z = np.random.rand(20, 10)
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_mesh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_8, __pyx_n_s_mesh); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_z); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_z); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_1 = PyTuple_New(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyTuple_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -12254,71 +12254,71 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_int_2);
     PyTuple_SET_ITEM(__pyx_t_1, 2, __pyx_int_2);
     __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_np); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_arange); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_arange); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GIVEREF(__pyx_t_5);
     PyList_SET_ITEM(__pyx_t_4, 0, __pyx_t_5);
     __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_Xs, __pyx_t_4) < 0) __PYX_ERR(0, 595, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_Xs, __pyx_t_4) < 0) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 595, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_4) < 0) __PYX_ERR(0, 595, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_4) < 0) __PYX_ERR(0, 596, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":596
+    /* "pyaibox/utils/plot_show.py":597
  *     z = np.random.rand(20, 10)
  *     plt = mesh(z, 1, 2, Xs=[np.arange(30, 40)])
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  *     plt = mshow([z, np.random.randn(60, 60)], 1, 2, Xs=[np.arange(30, 40)], projections=['3d', '2d'])
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 596, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 597, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_show); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 596, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_show); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 597, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 596, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_CallNoArg(__pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 597, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/utils/plot_show.py":598
+    /* "pyaibox/utils/plot_show.py":599
  *     plt.show()
  * 
  *     plt = mshow([z, np.random.randn(60, 60)], 1, 2, Xs=[np.arange(30, 40)], projections=['3d', '2d'])             # <<<<<<<<<<<<<<
  *     plt.show()
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_mshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_mshow); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_z); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_z); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_np); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_random); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_8, __pyx_n_s_randn); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_tuple__35, NULL); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_1 = PyList_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_1, 0, __pyx_t_2);
@@ -12326,7 +12326,7 @@ if (!__Pyx_RefNanny) {
     PyList_SET_ITEM(__pyx_t_1, 1, __pyx_t_8);
     __pyx_t_2 = 0;
     __pyx_t_8 = 0;
-    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_8 = PyTuple_New(3); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_1);
@@ -12337,24 +12337,24 @@ if (!__Pyx_RefNanny) {
     __Pyx_GIVEREF(__pyx_int_2);
     PyTuple_SET_ITEM(__pyx_t_8, 2, __pyx_int_2);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_np); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_arange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_arange); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_tuple__34, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_2);
     PyList_SET_ITEM(__pyx_t_5, 0, __pyx_t_2);
     __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_Xs, __pyx_t_5) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_Xs, __pyx_t_5) < 0) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_INCREF(__pyx_kp_u_3d);
     __Pyx_GIVEREF(__pyx_kp_u_3d);
@@ -12362,33 +12362,33 @@ if (!__Pyx_RefNanny) {
     __Pyx_INCREF(__pyx_kp_u_2d);
     __Pyx_GIVEREF(__pyx_kp_u_2d);
     PyList_SET_ITEM(__pyx_t_5, 1, __pyx_kp_u_2d);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_projections, __pyx_t_5) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_s_projections, __pyx_t_5) < 0) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 598, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, __pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_5) < 0) __PYX_ERR(0, 598, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_plt, __pyx_t_5) < 0) __PYX_ERR(0, 599, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":599
+    /* "pyaibox/utils/plot_show.py":600
  * 
  *     plt = mshow([z, np.random.randn(60, 60)], 1, 2, Xs=[np.arange(30, 40)], projections=['3d', '2d'])
  *     plt.show()             # <<<<<<<<<<<<<<
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 600, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 599, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 600, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 599, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallNoArg(__pyx_t_1); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 600, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/utils/plot_show.py":559
+    /* "pyaibox/utils/plot_show.py":560
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

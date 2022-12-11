@@ -1696,7 +1696,7 @@ static PyObject *__pyx_codeobj__19;
 static PyObject *__pyx_codeobj__22;
 /* Late includes */
 
-/* "pyaibox/summary/loss_log.py":30
+/* "pyaibox/summary/loss_log.py":31
  * class LossLog():
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):             # <<<<<<<<<<<<<<
@@ -1804,7 +1804,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_1__init__(PyObjec
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 30, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 31, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1838,7 +1838,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_1__init__(PyObjec
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 30, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 0, 1, 8, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 31, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1876,61 +1876,61 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pyaibox/summary/loss_log.py":31
+  /* "pyaibox/summary/loss_log.py":32
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):
  *         self.plotdir = plotdir             # <<<<<<<<<<<<<<
  *         self.title = title
  *         self.xlabel = xlabel
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":32
+  /* "pyaibox/summary/loss_log.py":33
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):
  *         self.plotdir = plotdir
  *         self.title = title             # <<<<<<<<<<<<<<
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":33
+  /* "pyaibox/summary/loss_log.py":34
  *         self.plotdir = plotdir
  *         self.title = title
  *         self.xlabel = xlabel             # <<<<<<<<<<<<<<
  *         self.ylabel = ylabel
  *         self.filename = filename
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":34
+  /* "pyaibox/summary/loss_log.py":35
  *         self.title = title
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel             # <<<<<<<<<<<<<<
  *         self.filename = filename
  *         self.lom = lom
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 34, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":35
+  /* "pyaibox/summary/loss_log.py":36
  *         self.xlabel = xlabel
  *         self.ylabel = ylabel
  *         self.filename = filename             # <<<<<<<<<<<<<<
  *         self.lom = lom
  *         if logdict is None:
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_filename, __pyx_v_filename) < 0) __PYX_ERR(0, 35, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_filename, __pyx_v_filename) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":36
+  /* "pyaibox/summary/loss_log.py":37
  *         self.ylabel = ylabel
  *         self.filename = filename
  *         self.lom = lom             # <<<<<<<<<<<<<<
  *         if logdict is None:
  *             self.losses = {'train': [], 'valid': [], 'test': []}
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lom, __pyx_v_lom) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_lom, __pyx_v_lom) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":37
+  /* "pyaibox/summary/loss_log.py":38
  *         self.filename = filename
  *         self.lom = lom
  *         if logdict is None:             # <<<<<<<<<<<<<<
@@ -1941,31 +1941,31 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/summary/loss_log.py":38
+    /* "pyaibox/summary/loss_log.py":39
  *         self.lom = lom
  *         if logdict is None:
  *             self.losses = {'train': [], 'valid': [], 'test': []}             # <<<<<<<<<<<<<<
  *         else:
  *             self.losses = logdict
  */
-    __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_train, __pyx_t_4) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_train, __pyx_t_4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_valid, __pyx_t_4) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_valid, __pyx_t_4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 38, __pyx_L1_error)
+    __pyx_t_4 = PyList_New(0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_test, __pyx_t_4) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_3, __pyx_n_u_test, __pyx_t_4) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_losses, __pyx_t_3) < 0) __PYX_ERR(0, 38, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_losses, __pyx_t_3) < 0) __PYX_ERR(0, 39, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/summary/loss_log.py":37
+    /* "pyaibox/summary/loss_log.py":38
  *         self.filename = filename
  *         self.lom = lom
  *         if logdict is None:             # <<<<<<<<<<<<<<
@@ -1975,7 +1975,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
     goto __pyx_L3;
   }
 
-  /* "pyaibox/summary/loss_log.py":40
+  /* "pyaibox/summary/loss_log.py":41
  *             self.losses = {'train': [], 'valid': [], 'test': []}
  *         else:
  *             self.losses = logdict             # <<<<<<<<<<<<<<
@@ -1983,23 +1983,23 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
  *         self.bests = {}
  */
   /*else*/ {
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_losses, __pyx_v_logdict) < 0) __PYX_ERR(0, 40, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_losses, __pyx_v_logdict) < 0) __PYX_ERR(0, 41, __pyx_L1_error)
   }
   __pyx_L3:;
 
-  /* "pyaibox/summary/loss_log.py":42
+  /* "pyaibox/summary/loss_log.py":43
  *             self.losses = logdict
  * 
  *         self.bests = {}             # <<<<<<<<<<<<<<
  *         for k, v in self.losses.items():
  *             if len(v) < 1:
  */
-  __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 42, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_bests, __pyx_t_3) < 0) __PYX_ERR(0, 42, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_bests, __pyx_t_3) < 0) __PYX_ERR(0, 43, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyaibox/summary/loss_log.py":43
+  /* "pyaibox/summary/loss_log.py":44
  * 
  *         self.bests = {}
  *         for k, v in self.losses.items():             # <<<<<<<<<<<<<<
@@ -2007,13 +2007,13 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
  *                 self.bests[k] = float('inf') if self.lom in ['min', 'MIN'] else float('-inf')
  */
   __pyx_t_5 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (unlikely(__pyx_t_4 == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 43, __pyx_L1_error)
+    __PYX_ERR(0, 44, __pyx_L1_error)
   }
-  __pyx_t_8 = __Pyx_dict_iterator(__pyx_t_4, 0, __pyx_n_s_items, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 43, __pyx_L1_error)
+  __pyx_t_8 = __Pyx_dict_iterator(__pyx_t_4, 0, __pyx_n_s_items, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_8);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_XDECREF(__pyx_t_3);
@@ -2022,7 +2022,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   while (1) {
     __pyx_t_9 = __Pyx_dict_iter_next(__pyx_t_3, __pyx_t_6, &__pyx_t_5, &__pyx_t_8, &__pyx_t_4, NULL, __pyx_t_7);
     if (unlikely(__pyx_t_9 == 0)) break;
-    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 43, __pyx_L1_error)
+    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 44, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_8);
@@ -2030,54 +2030,54 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/summary/loss_log.py":44
+    /* "pyaibox/summary/loss_log.py":45
  *         self.bests = {}
  *         for k, v in self.losses.items():
  *             if len(v) < 1:             # <<<<<<<<<<<<<<
  *                 self.bests[k] = float('inf') if self.lom in ['min', 'MIN'] else float('-inf')
  *             else:
  */
-    __pyx_t_10 = PyObject_Length(__pyx_v_v); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 44, __pyx_L1_error)
+    __pyx_t_10 = PyObject_Length(__pyx_v_v); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 45, __pyx_L1_error)
     __pyx_t_2 = ((__pyx_t_10 < 1) != 0);
     if (__pyx_t_2) {
 
-      /* "pyaibox/summary/loss_log.py":45
+      /* "pyaibox/summary/loss_log.py":46
  *         for k, v in self.losses.items():
  *             if len(v) < 1:
  *                 self.bests[k] = float('inf') if self.lom in ['min', 'MIN'] else float('-inf')             # <<<<<<<<<<<<<<
  *             else:
  *                 self.bests[k] = eval(self.lom)(v)
  */
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_8, __pyx_n_u_min, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_8, __pyx_n_u_min, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
       if (!__pyx_t_1) {
       } else {
         __pyx_t_2 = __pyx_t_1;
         goto __pyx_L7_bool_binop_done;
       }
-      __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_8, __pyx_n_u_MIN, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_1 = (__Pyx_PyUnicode_Equals(__pyx_t_8, __pyx_n_u_MIN, Py_EQ)); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
       __pyx_t_2 = __pyx_t_1;
       __pyx_L7_bool_binop_done:;
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       if ((__pyx_t_2 != 0)) {
-        __pyx_t_8 = __Pyx_PyNumber_Float(__pyx_n_u_inf); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyNumber_Float(__pyx_n_u_inf); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 46, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_4 = __pyx_t_8;
         __pyx_t_8 = 0;
       } else {
-        __pyx_t_8 = __Pyx_PyNumber_Float(__pyx_kp_u_inf_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+        __pyx_t_8 = __Pyx_PyNumber_Float(__pyx_kp_u_inf_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 46, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         __pyx_t_4 = __pyx_t_8;
         __pyx_t_8 = 0;
       }
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 45, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      if (unlikely(PyObject_SetItem(__pyx_t_8, __pyx_v_k, __pyx_t_4) < 0)) __PYX_ERR(0, 45, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_t_8, __pyx_v_k, __pyx_t_4) < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-      /* "pyaibox/summary/loss_log.py":44
+      /* "pyaibox/summary/loss_log.py":45
  *         self.bests = {}
  *         for k, v in self.losses.items():
  *             if len(v) < 1:             # <<<<<<<<<<<<<<
@@ -2087,7 +2087,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
       goto __pyx_L6;
     }
 
-    /* "pyaibox/summary/loss_log.py":47
+    /* "pyaibox/summary/loss_log.py":48
  *                 self.bests[k] = float('inf') if self.lom in ['min', 'MIN'] else float('-inf')
  *             else:
  *                 self.bests[k] = eval(self.lom)(v)             # <<<<<<<<<<<<<<
@@ -2095,49 +2095,49 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
  *         import matplotlib as mpl
  */
     /*else*/ {
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
-      __pyx_t_11 = __Pyx_Globals(); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_Globals(); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_12 = __Pyx_PyDict_NewPresized(12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyDict_NewPresized(12); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       if (__pyx_v_filename) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_filename, __pyx_v_filename) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_filename, __pyx_v_filename) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_k) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_k, __pyx_v_k) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_k, __pyx_v_k) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_logdict) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_logdict, __pyx_v_logdict) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_logdict, __pyx_v_logdict) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_lom) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_lom, __pyx_v_lom) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_lom, __pyx_v_lom) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_mpl) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_mpl, __pyx_v_mpl) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_mpl, __pyx_v_mpl) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_plotdir) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_plt) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_plt, __pyx_v_plt) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_plt, __pyx_v_plt) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_self) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_self, __pyx_v_self) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_self, __pyx_v_self) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_title) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_title, __pyx_v_title) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_v) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_v, __pyx_v_v) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_v, __pyx_v_v) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_xlabel) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_xlabel, __pyx_v_xlabel) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
       if (__pyx_v_ylabel) {
-        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 47, __pyx_L1_error)
+        if (PyDict_SetItem(__pyx_t_12, __pyx_n_s_ylabel, __pyx_v_ylabel) < 0) __PYX_ERR(0, 48, __pyx_L1_error)
       }
-      __pyx_t_13 = PyTuple_New(3); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_13 = PyTuple_New(3); if (unlikely(!__pyx_t_13)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_13);
       __Pyx_GIVEREF(__pyx_t_8);
       PyTuple_SET_ITEM(__pyx_t_13, 0, __pyx_t_8);
@@ -2148,7 +2148,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
       __pyx_t_8 = 0;
       __pyx_t_11 = 0;
       __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_PyObject_Call(__pyx_builtin_eval, __pyx_t_13, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_Call(__pyx_builtin_eval, __pyx_t_13, NULL); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_13); __pyx_t_13 = 0;
       __pyx_t_13 = NULL;
@@ -2163,12 +2163,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
       }
       __pyx_t_4 = (__pyx_t_13) ? __Pyx_PyObject_Call2Args(__pyx_t_12, __pyx_t_13, __pyx_v_v) : __Pyx_PyObject_CallOneArg(__pyx_t_12, __pyx_v_v);
       __Pyx_XDECREF(__pyx_t_13); __pyx_t_13 = 0;
-      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+      if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_12 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
-      if (unlikely(PyObject_SetItem(__pyx_t_12, __pyx_v_k, __pyx_t_4) < 0)) __PYX_ERR(0, 47, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_t_12, __pyx_v_k, __pyx_t_4) < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     }
@@ -2176,62 +2176,62 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyaibox/summary/loss_log.py":49
+  /* "pyaibox/summary/loss_log.py":50
  *                 self.bests[k] = eval(self.lom)(v)
  * 
  *         import matplotlib as mpl             # <<<<<<<<<<<<<<
  *         import matplotlib.pyplot as plt
  *         self.mpl = mpl
  */
-  __pyx_t_3 = __Pyx_Import(__pyx_n_s_matplotlib, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 49, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Import(__pyx_n_s_matplotlib, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_mpl = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/summary/loss_log.py":50
+  /* "pyaibox/summary/loss_log.py":51
  * 
  *         import matplotlib as mpl
  *         import matplotlib.pyplot as plt             # <<<<<<<<<<<<<<
  *         self.mpl = mpl
  *         self.plt = plt
  */
-  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_3 = PyList_New(1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_INCREF(__pyx_n_s_);
   __Pyx_GIVEREF(__pyx_n_s_);
   PyList_SET_ITEM(__pyx_t_3, 0, __pyx_n_s_);
-  __pyx_t_4 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_3, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_Import(__pyx_n_s_matplotlib_pyplot, __pyx_t_3, 0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_plt = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/summary/loss_log.py":51
+  /* "pyaibox/summary/loss_log.py":52
  *         import matplotlib as mpl
  *         import matplotlib.pyplot as plt
  *         self.mpl = mpl             # <<<<<<<<<<<<<<
  *         self.plt = plt
  *         self.backend = mpl.get_backend()
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_mpl, __pyx_v_mpl) < 0) __PYX_ERR(0, 51, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_mpl, __pyx_v_mpl) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":52
+  /* "pyaibox/summary/loss_log.py":53
  *         import matplotlib.pyplot as plt
  *         self.mpl = mpl
  *         self.plt = plt             # <<<<<<<<<<<<<<
  *         self.backend = mpl.get_backend()
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plt, __pyx_v_plt) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plt, __pyx_v_plt) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":53
+  /* "pyaibox/summary/loss_log.py":54
  *         self.mpl = mpl
  *         self.plt = plt
  *         self.backend = mpl.get_backend()             # <<<<<<<<<<<<<<
  * 
  *     def assign(self, key, value):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mpl, __pyx_n_s_get_backend); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_mpl, __pyx_n_s_get_backend); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -2245,13 +2245,13 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   }
   __pyx_t_4 = (__pyx_t_12) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_12) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_backend, __pyx_t_4) < 0) __PYX_ERR(0, 53, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_backend, __pyx_t_4) < 0) __PYX_ERR(0, 54, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/summary/loss_log.py":30
+  /* "pyaibox/summary/loss_log.py":31
  * class LossLog():
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):             # <<<<<<<<<<<<<<
@@ -2281,7 +2281,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog___init__(CYTHON_U
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":55
+/* "pyaibox/summary/loss_log.py":56
  *         self.backend = mpl.get_backend()
  * 
  *     def assign(self, key, value):             # <<<<<<<<<<<<<<
@@ -2327,17 +2327,17 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_3assign(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_key)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, 1); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, 1); __PYX_ERR(0, 56, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, 2); __PYX_ERR(0, 55, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, 2); __PYX_ERR(0, 56, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "assign") < 0)) __PYX_ERR(0, 55, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "assign") < 0)) __PYX_ERR(0, 56, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -2352,7 +2352,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_3assign(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 55, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("assign", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 56, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.assign", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2374,19 +2374,19 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_2assign(CYTHON_UN
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("assign", 0);
 
-  /* "pyaibox/summary/loss_log.py":56
+  /* "pyaibox/summary/loss_log.py":57
  * 
  *     def assign(self, key, value):
  *         self.losses[key] = value             # <<<<<<<<<<<<<<
  * 
  *     def add(self, key, value):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 56, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_v_key, __pyx_v_value) < 0)) __PYX_ERR(0, 56, __pyx_L1_error)
+  if (unlikely(PyObject_SetItem(__pyx_t_1, __pyx_v_key, __pyx_v_value) < 0)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":55
+  /* "pyaibox/summary/loss_log.py":56
  *         self.backend = mpl.get_backend()
  * 
  *     def assign(self, key, value):             # <<<<<<<<<<<<<<
@@ -2407,7 +2407,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_2assign(CYTHON_UN
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":58
+/* "pyaibox/summary/loss_log.py":59
  *         self.losses[key] = value
  * 
  *     def add(self, key, value):             # <<<<<<<<<<<<<<
@@ -2453,17 +2453,17 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_5add(PyObject *__
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_key)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, 1); __PYX_ERR(0, 58, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, 1); __PYX_ERR(0, 59, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_value)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, 2); __PYX_ERR(0, 58, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, 2); __PYX_ERR(0, 59, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add") < 0)) __PYX_ERR(0, 58, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "add") < 0)) __PYX_ERR(0, 59, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -2478,7 +2478,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_5add(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 58, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("add", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 59, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.add", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2502,22 +2502,22 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_4add(CYTHON_UNUSE
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("add", 0);
 
-  /* "pyaibox/summary/loss_log.py":59
+  /* "pyaibox/summary/loss_log.py":60
  * 
  *     def add(self, key, value):
  *         self.losses[key].append(value)             # <<<<<<<<<<<<<<
  * 
  *     def get(self, key=None):
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Append(__pyx_t_2, __pyx_v_value); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 59, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Append(__pyx_t_2, __pyx_v_value); if (unlikely(__pyx_t_3 == ((int)-1))) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":58
+  /* "pyaibox/summary/loss_log.py":59
  *         self.losses[key] = value
  * 
  *     def add(self, key, value):             # <<<<<<<<<<<<<<
@@ -2539,7 +2539,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_4add(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":61
+/* "pyaibox/summary/loss_log.py":62
  *         self.losses[key].append(value)
  * 
  *     def get(self, key=None):             # <<<<<<<<<<<<<<
@@ -2587,7 +2587,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_7get(PyObject *__
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get") < 0)) __PYX_ERR(0, 61, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get") < 0)) __PYX_ERR(0, 62, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2603,7 +2603,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_7get(PyObject *__
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 61, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 62, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.get", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2626,7 +2626,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_6get(CYTHON_UNUSE
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get", 0);
 
-  /* "pyaibox/summary/loss_log.py":62
+  /* "pyaibox/summary/loss_log.py":63
  * 
  *     def get(self, key=None):
  *         return self.losses[key]             # <<<<<<<<<<<<<<
@@ -2634,16 +2634,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_6get(CYTHON_UNUSE
  *     def updir(self, plotdir=None):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 63, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_r = __pyx_t_2;
   __pyx_t_2 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/summary/loss_log.py":61
+  /* "pyaibox/summary/loss_log.py":62
  *         self.losses[key].append(value)
  * 
  *     def get(self, key=None):             # <<<<<<<<<<<<<<
@@ -2663,7 +2663,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_6get(CYTHON_UNUSE
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":64
+/* "pyaibox/summary/loss_log.py":65
  *         return self.losses[key]
  * 
  *     def updir(self, plotdir=None):             # <<<<<<<<<<<<<<
@@ -2711,7 +2711,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_9updir(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "updir") < 0)) __PYX_ERR(0, 64, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "updir") < 0)) __PYX_ERR(0, 65, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2727,7 +2727,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_9updir(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("updir", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 64, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("updir", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 65, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.updir", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2748,16 +2748,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_8updir(CYTHON_UNU
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("updir", 0);
 
-  /* "pyaibox/summary/loss_log.py":65
+  /* "pyaibox/summary/loss_log.py":66
  * 
  *     def updir(self, plotdir=None):
  *         self.plotdir = plotdir             # <<<<<<<<<<<<<<
  * 
  *     def plot(self, x=None):
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_plotdir, __pyx_v_plotdir) < 0) __PYX_ERR(0, 66, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":64
+  /* "pyaibox/summary/loss_log.py":65
  *         return self.losses[key]
  * 
  *     def updir(self, plotdir=None):             # <<<<<<<<<<<<<<
@@ -2777,7 +2777,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_8updir(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":67
+/* "pyaibox/summary/loss_log.py":68
  *         self.plotdir = plotdir
  * 
  *     def plot(self, x=None):             # <<<<<<<<<<<<<<
@@ -2825,7 +2825,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_11plot(PyObject *
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "plot") < 0)) __PYX_ERR(0, 67, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "plot") < 0)) __PYX_ERR(0, 68, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -2841,7 +2841,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_11plot(PyObject *
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("plot", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 67, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("plot", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 68, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.plot", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2878,42 +2878,42 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("plot", 0);
 
-  /* "pyaibox/summary/loss_log.py":68
+  /* "pyaibox/summary/loss_log.py":69
  * 
  *     def plot(self, x=None):
  *         legend = []             # <<<<<<<<<<<<<<
  * 
  *         if self.plotdir is not None:
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 69, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_legend = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":70
+  /* "pyaibox/summary/loss_log.py":71
  *         legend = []
  * 
  *         if self.plotdir is not None:             # <<<<<<<<<<<<<<
  *             self.mpl.use('Agg')
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_t_1 != Py_None);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "pyaibox/summary/loss_log.py":71
+    /* "pyaibox/summary/loss_log.py":72
  * 
  *         if self.plotdir is not None:
  *             self.mpl.use('Agg')             # <<<<<<<<<<<<<<
  * 
  *         self.plt.figure()
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_mpl); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_mpl); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_use); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_use); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_4 = NULL;
@@ -2928,12 +2928,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     }
     __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_n_u_Agg) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_n_u_Agg);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 71, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 72, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":70
+    /* "pyaibox/summary/loss_log.py":71
  *         legend = []
  * 
  *         if self.plotdir is not None:             # <<<<<<<<<<<<<<
@@ -2942,16 +2942,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  */
   }
 
-  /* "pyaibox/summary/loss_log.py":73
+  /* "pyaibox/summary/loss_log.py":74
  *             self.mpl.use('Agg')
  * 
  *         self.plt.figure()             # <<<<<<<<<<<<<<
  * 
  *         for k, v in self.losses.items():
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_figure); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_figure); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -2966,12 +2966,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":75
+  /* "pyaibox/summary/loss_log.py":76
  *         self.plt.figure()
  * 
  *         for k, v in self.losses.items():             # <<<<<<<<<<<<<<
@@ -2979,13 +2979,13 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  *                 if x is None:
  */
   __pyx_t_6 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   if (unlikely(__pyx_t_4 == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 75, __pyx_L1_error)
+    __PYX_ERR(0, 76, __pyx_L1_error)
   }
-  __pyx_t_5 = __Pyx_dict_iterator(__pyx_t_4, 0, __pyx_n_s_items, (&__pyx_t_7), (&__pyx_t_8)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_dict_iterator(__pyx_t_4, 0, __pyx_n_s_items, (&__pyx_t_7), (&__pyx_t_8)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_XDECREF(__pyx_t_1);
@@ -2994,7 +2994,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   while (1) {
     __pyx_t_9 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_7, &__pyx_t_6, &__pyx_t_5, &__pyx_t_4, NULL, __pyx_t_8);
     if (unlikely(__pyx_t_9 == 0)) break;
-    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 75, __pyx_L1_error)
+    if (unlikely(__pyx_t_9 == -1)) __PYX_ERR(0, 76, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_5);
@@ -3002,18 +3002,18 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/summary/loss_log.py":76
+    /* "pyaibox/summary/loss_log.py":77
  * 
  *         for k, v in self.losses.items():
  *             if len(v) > 0:             # <<<<<<<<<<<<<<
  *                 if x is None:
  *                     self.plt.plot(v)
  */
-    __pyx_t_10 = PyObject_Length(__pyx_v_v); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_10 = PyObject_Length(__pyx_v_v); if (unlikely(__pyx_t_10 == ((Py_ssize_t)-1))) __PYX_ERR(0, 77, __pyx_L1_error)
     __pyx_t_3 = ((__pyx_t_10 > 0) != 0);
     if (__pyx_t_3) {
 
-      /* "pyaibox/summary/loss_log.py":77
+      /* "pyaibox/summary/loss_log.py":78
  *         for k, v in self.losses.items():
  *             if len(v) > 0:
  *                 if x is None:             # <<<<<<<<<<<<<<
@@ -3024,16 +3024,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
       __pyx_t_2 = (__pyx_t_3 != 0);
       if (__pyx_t_2) {
 
-        /* "pyaibox/summary/loss_log.py":78
+        /* "pyaibox/summary/loss_log.py":79
  *             if len(v) > 0:
  *                 if x is None:
  *                     self.plt.plot(v)             # <<<<<<<<<<<<<<
  *                 else:
  *                     self.plt.plot(x, v)
  */
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 78, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 79, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
-        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_plot); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 78, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_plot); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 79, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
         __pyx_t_5 = NULL;
@@ -3048,12 +3048,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
         }
         __pyx_t_4 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_5, __pyx_v_v) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_v_v);
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
+        if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 79, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-        /* "pyaibox/summary/loss_log.py":77
+        /* "pyaibox/summary/loss_log.py":78
  *         for k, v in self.losses.items():
  *             if len(v) > 0:
  *                 if x is None:             # <<<<<<<<<<<<<<
@@ -3063,7 +3063,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
         goto __pyx_L7;
       }
 
-      /* "pyaibox/summary/loss_log.py":80
+      /* "pyaibox/summary/loss_log.py":81
  *                     self.plt.plot(v)
  *                 else:
  *                     self.plt.plot(x, v)             # <<<<<<<<<<<<<<
@@ -3071,9 +3071,9 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  *         self.plt.legend(legend)
  */
       /*else*/ {
-        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 81, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_11);
-        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_plot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_plot); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         __pyx_t_11 = NULL;
@@ -3091,7 +3091,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
         #if CYTHON_FAST_PYCALL
         if (PyFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_x, __pyx_v_v};
-          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
@@ -3099,13 +3099,13 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
         #if CYTHON_FAST_PYCCALL
         if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
           PyObject *__pyx_temp[3] = {__pyx_t_11, __pyx_v_x, __pyx_v_v};
-          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_9, 2+__pyx_t_9); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
           __Pyx_GOTREF(__pyx_t_4);
         } else
         #endif
         {
-          __pyx_t_12 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 80, __pyx_L1_error)
+          __pyx_t_12 = PyTuple_New(2+__pyx_t_9); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_12);
           if (__pyx_t_11) {
             __Pyx_GIVEREF(__pyx_t_11); PyTuple_SET_ITEM(__pyx_t_12, 0, __pyx_t_11); __pyx_t_11 = NULL;
@@ -3116,7 +3116,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
           __Pyx_INCREF(__pyx_v_v);
           __Pyx_GIVEREF(__pyx_v_v);
           PyTuple_SET_ITEM(__pyx_t_12, 1+__pyx_t_9, __pyx_v_v);
-          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+          __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_12, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_4);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
         }
@@ -3125,16 +3125,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
       }
       __pyx_L7:;
 
-      /* "pyaibox/summary/loss_log.py":81
+      /* "pyaibox/summary/loss_log.py":82
  *                 else:
  *                     self.plt.plot(x, v)
  *                 legend.append(k)             # <<<<<<<<<<<<<<
  *         self.plt.legend(legend)
  *         self.plt.xlabel(self.xlabel)
  */
-      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 81, __pyx_L1_error)
+      __pyx_t_13 = __Pyx_PyList_Append(__pyx_v_legend, __pyx_v_k); if (unlikely(__pyx_t_13 == ((int)-1))) __PYX_ERR(0, 82, __pyx_L1_error)
 
-      /* "pyaibox/summary/loss_log.py":76
+      /* "pyaibox/summary/loss_log.py":77
  * 
  *         for k, v in self.losses.items():
  *             if len(v) > 0:             # <<<<<<<<<<<<<<
@@ -3145,16 +3145,16 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":82
+  /* "pyaibox/summary/loss_log.py":83
  *                     self.plt.plot(x, v)
  *                 legend.append(k)
  *         self.plt.legend(legend)             # <<<<<<<<<<<<<<
  *         self.plt.xlabel(self.xlabel)
  *         self.plt.ylabel(self.ylabel)
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_legend); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 82, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_legend); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_t_4 = NULL;
@@ -3169,24 +3169,24 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   }
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_4, __pyx_v_legend) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_v_legend);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 82, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":83
+  /* "pyaibox/summary/loss_log.py":84
  *                 legend.append(k)
  *         self.plt.legend(legend)
  *         self.plt.xlabel(self.xlabel)             # <<<<<<<<<<<<<<
  *         self.plt.ylabel(self.ylabel)
  *         self.plt.grid()
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 83, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_4))) {
@@ -3201,24 +3201,24 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_12, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":84
+  /* "pyaibox/summary/loss_log.py":85
  *         self.plt.legend(legend)
  *         self.plt.xlabel(self.xlabel)
  *         self.plt.ylabel(self.ylabel)             # <<<<<<<<<<<<<<
  *         self.plt.grid()
  * 
  */
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __pyx_t_12 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -3233,21 +3233,21 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_12, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4);
   __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 84, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":85
+  /* "pyaibox/summary/loss_log.py":86
  *         self.plt.xlabel(self.xlabel)
  *         self.plt.ylabel(self.ylabel)
  *         self.plt.grid()             # <<<<<<<<<<<<<<
  * 
  *         if self.title is not None:
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_grid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_grid); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_t_5 = NULL;
@@ -3262,38 +3262,38 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   }
   __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 85, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 86, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":87
+  /* "pyaibox/summary/loss_log.py":88
  *         self.plt.grid()
  * 
  *         if self.title is not None:             # <<<<<<<<<<<<<<
  *             self.plt.title(self.title)
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_2 = (__pyx_t_1 != Py_None);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_3 = (__pyx_t_2 != 0);
   if (__pyx_t_3) {
 
-    /* "pyaibox/summary/loss_log.py":88
+    /* "pyaibox/summary/loss_log.py":89
  * 
  *         if self.title is not None:
  *             self.plt.title(self.title)             # <<<<<<<<<<<<<<
  * 
  *         if self.plotdir is None:
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_title); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_title); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_12 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -3308,12 +3308,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_12, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4);
     __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 88, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":87
+    /* "pyaibox/summary/loss_log.py":88
  *         self.plt.grid()
  * 
  *         if self.title is not None:             # <<<<<<<<<<<<<<
@@ -3322,30 +3322,30 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  */
   }
 
-  /* "pyaibox/summary/loss_log.py":90
+  /* "pyaibox/summary/loss_log.py":91
  *             self.plt.title(self.title)
  * 
  *         if self.plotdir is None:             # <<<<<<<<<<<<<<
  *             self.plt.show()
  *         else:
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_t_3 = (__pyx_t_1 == Py_None);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_t_2 = (__pyx_t_3 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/summary/loss_log.py":91
+    /* "pyaibox/summary/loss_log.py":92
  * 
  *         if self.plotdir is None:
  *             self.plt.show()             # <<<<<<<<<<<<<<
  *         else:
  *             if self.filename is None:
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 91, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_show); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __pyx_t_5 = NULL;
@@ -3360,12 +3360,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     }
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 91, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 92, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":90
+    /* "pyaibox/summary/loss_log.py":91
  *             self.plt.title(self.title)
  * 
  *         if self.plotdir is None:             # <<<<<<<<<<<<<<
@@ -3375,7 +3375,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     goto __pyx_L9;
   }
 
-  /* "pyaibox/summary/loss_log.py":93
+  /* "pyaibox/summary/loss_log.py":94
  *             self.plt.show()
  *         else:
  *             if self.filename is None:             # <<<<<<<<<<<<<<
@@ -3383,46 +3383,46 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  *             else:
  */
   /*else*/ {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_filename); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __pyx_t_2 = (__pyx_t_1 == Py_None);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_3 = (__pyx_t_2 != 0);
     if (__pyx_t_3) {
 
-      /* "pyaibox/summary/loss_log.py":94
+      /* "pyaibox/summary/loss_log.py":95
  *         else:
  *             if self.filename is None:
  *                 self.plt.savefig(self.plotdir + '/' + self.ylabel + '_' + self.xlabel + '.png')             # <<<<<<<<<<<<<<
  *             else:
  *                 self.plt.savefig(self.plotdir + '/' + self.filename)
  */
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_savefig); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_savefig); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_12 = PyNumber_Add(__pyx_t_4, __pyx_kp_u__2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_12 = PyNumber_Add(__pyx_t_4, __pyx_kp_u__2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_ylabel); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_11 = PyNumber_Add(__pyx_t_12, __pyx_t_4); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_11 = PyNumber_Add(__pyx_t_12, __pyx_t_4); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __pyx_t_4 = PyNumber_Add(__pyx_t_11, __pyx_n_u__3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_4 = PyNumber_Add(__pyx_t_11, __pyx_n_u__3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_xlabel); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
-      __pyx_t_12 = PyNumber_Add(__pyx_t_4, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_12 = PyNumber_Add(__pyx_t_4, __pyx_t_11); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      __pyx_t_11 = PyNumber_Add(__pyx_t_12, __pyx_kp_u_png); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 94, __pyx_L1_error)
+      __pyx_t_11 = PyNumber_Add(__pyx_t_12, __pyx_kp_u_png); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __pyx_t_12 = NULL;
@@ -3438,12 +3438,12 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
       __pyx_t_1 = (__pyx_t_12) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_12, __pyx_t_11) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_11);
       __Pyx_XDECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pyaibox/summary/loss_log.py":93
+      /* "pyaibox/summary/loss_log.py":94
  *             self.plt.show()
  *         else:
  *             if self.filename is None:             # <<<<<<<<<<<<<<
@@ -3453,7 +3453,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
       goto __pyx_L10;
     }
 
-    /* "pyaibox/summary/loss_log.py":96
+    /* "pyaibox/summary/loss_log.py":97
  *                 self.plt.savefig(self.plotdir + '/' + self.ylabel + '_' + self.xlabel + '.png')
  *             else:
  *                 self.plt.savefig(self.plotdir + '/' + self.filename)             # <<<<<<<<<<<<<<
@@ -3461,19 +3461,19 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
  *             self.mpl.use(self.backend)
  */
     /*else*/ {
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_savefig); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_savefig); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_12 = PyNumber_Add(__pyx_t_5, __pyx_kp_u__2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_12 = PyNumber_Add(__pyx_t_5, __pyx_kp_u__2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_12);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_filename); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_filename); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
-      __pyx_t_4 = PyNumber_Add(__pyx_t_12, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
+      __pyx_t_4 = PyNumber_Add(__pyx_t_12, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3490,23 +3490,23 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
       __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_4);
       __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
+      if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
     __pyx_L10:;
 
-    /* "pyaibox/summary/loss_log.py":97
+    /* "pyaibox/summary/loss_log.py":98
  *             else:
  *                 self.plt.savefig(self.plotdir + '/' + self.filename)
  *             self.plt.close()             # <<<<<<<<<<<<<<
  *             self.mpl.use(self.backend)
  * 
  */
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_plt); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_11, __pyx_n_s_close); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __pyx_t_11 = NULL;
@@ -3521,24 +3521,24 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     }
     __pyx_t_1 = (__pyx_t_11) ? __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_11) : __Pyx_PyObject_CallNoArg(__pyx_t_4);
     __Pyx_XDECREF(__pyx_t_11); __pyx_t_11 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":98
+    /* "pyaibox/summary/loss_log.py":99
  *                 self.plt.savefig(self.plotdir + '/' + self.filename)
  *             self.plt.close()
  *             self.mpl.use(self.backend)             # <<<<<<<<<<<<<<
  * 
  *     def judge(self, key, n1=50, n2=10):
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_mpl); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_mpl); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_use); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_11 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_use); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_11);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_backend); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_backend); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_5 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_11))) {
@@ -3553,14 +3553,14 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
     __pyx_t_1 = (__pyx_t_5) ? __Pyx_PyObject_Call2Args(__pyx_t_11, __pyx_t_5, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_11, __pyx_t_4);
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
   __pyx_L9:;
 
-  /* "pyaibox/summary/loss_log.py":67
+  /* "pyaibox/summary/loss_log.py":68
  *         self.plotdir = plotdir
  * 
  *     def plot(self, x=None):             # <<<<<<<<<<<<<<
@@ -3588,7 +3588,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_10plot(CYTHON_UNU
   return __pyx_r;
 }
 
-/* "pyaibox/summary/loss_log.py":100
+/* "pyaibox/summary/loss_log.py":101
  *             self.mpl.use(self.backend)
  * 
  *     def judge(self, key, n1=50, n2=10):             # <<<<<<<<<<<<<<
@@ -3639,7 +3639,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_13judge(PyObject 
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_key)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("judge", 0, 2, 4, 1); __PYX_ERR(0, 100, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("judge", 0, 2, 4, 1); __PYX_ERR(0, 101, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -3655,7 +3655,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_13judge(PyObject 
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "judge") < 0)) __PYX_ERR(0, 100, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "judge") < 0)) __PYX_ERR(0, 101, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -3676,7 +3676,7 @@ static PyObject *__pyx_pw_7pyaibox_7summary_8loss_log_7LossLog_13judge(PyObject 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("judge", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 100, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("judge", 0, 2, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 101, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.summary.loss_log.LossLog.judge", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3708,32 +3708,32 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("judge", 0);
 
-  /* "pyaibox/summary/loss_log.py":102
+  /* "pyaibox/summary/loss_log.py":103
  *     def judge(self, key, n1=50, n2=10):
  * 
  *         loss = self.losses[key]             # <<<<<<<<<<<<<<
  *         n = len(loss)
  *         flag, proof = False, ''
  */
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_losses); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_loss = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":103
+  /* "pyaibox/summary/loss_log.py":104
  * 
  *         loss = self.losses[key]
  *         n = len(loss)             # <<<<<<<<<<<<<<
  *         flag, proof = False, ''
  * 
  */
-  __pyx_t_3 = PyObject_Length(__pyx_v_loss); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_t_3 = PyObject_Length(__pyx_v_loss); if (unlikely(__pyx_t_3 == ((Py_ssize_t)-1))) __PYX_ERR(0, 104, __pyx_L1_error)
   __pyx_v_n = __pyx_t_3;
 
-  /* "pyaibox/summary/loss_log.py":104
+  /* "pyaibox/summary/loss_log.py":105
  *         loss = self.losses[key]
  *         n = len(loss)
  *         flag, proof = False, ''             # <<<<<<<<<<<<<<
@@ -3747,65 +3747,65 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
   __pyx_v_proof = ((PyObject*)__pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":106
+  /* "pyaibox/summary/loss_log.py":107
  *         flag, proof = False, ''
  * 
  *         if self.lom in ['min', 'MIN']:             # <<<<<<<<<<<<<<
  *             if loss[-1] < self.bests[key]:
  *                 self.bests[key] = loss[-1]
  */
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_lom); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_min, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_min, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
   if (!__pyx_t_5) {
   } else {
     __pyx_t_4 = __pyx_t_5;
     goto __pyx_L4_bool_binop_done;
   }
-  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_MIN, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_5 = (__Pyx_PyUnicode_Equals(__pyx_t_2, __pyx_n_u_MIN, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
   __pyx_t_4 = __pyx_t_5;
   __pyx_L4_bool_binop_done:;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_t_5 = (__pyx_t_4 != 0);
   if (__pyx_t_5) {
 
-    /* "pyaibox/summary/loss_log.py":107
+    /* "pyaibox/summary/loss_log.py":108
  * 
  *         if self.lom in ['min', 'MIN']:
  *             if loss[-1] < self.bests[key]:             # <<<<<<<<<<<<<<
  *                 self.bests[key] = loss[-1]
  *                 flag = True
  */
-    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_loss, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_GetItemInt(__pyx_v_loss, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_t_1, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = PyObject_RichCompare(__pyx_t_2, __pyx_t_6, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = PyObject_RichCompare(__pyx_t_2, __pyx_t_6, Py_LT); __Pyx_XGOTREF(__pyx_t_1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_1); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     if (__pyx_t_5) {
 
-      /* "pyaibox/summary/loss_log.py":108
+      /* "pyaibox/summary/loss_log.py":109
  *         if self.lom in ['min', 'MIN']:
  *             if loss[-1] < self.bests[key]:
  *                 self.bests[key] = loss[-1]             # <<<<<<<<<<<<<<
  *                 flag = True
  *                 proof += 'Single'
  */
-      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_loss, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_GetItemInt(__pyx_v_loss, -1L, long, 1, __Pyx_PyInt_From_long, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_bests); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      if (unlikely(PyObject_SetItem(__pyx_t_6, __pyx_v_key, __pyx_t_1) < 0)) __PYX_ERR(0, 108, __pyx_L1_error)
+      if (unlikely(PyObject_SetItem(__pyx_t_6, __pyx_v_key, __pyx_t_1) < 0)) __PYX_ERR(0, 109, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pyaibox/summary/loss_log.py":109
+      /* "pyaibox/summary/loss_log.py":110
  *             if loss[-1] < self.bests[key]:
  *                 self.bests[key] = loss[-1]
  *                 flag = True             # <<<<<<<<<<<<<<
@@ -3814,19 +3814,19 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
       __pyx_v_flag = 1;
 
-      /* "pyaibox/summary/loss_log.py":110
+      /* "pyaibox/summary/loss_log.py":111
  *                 self.bests[key] = loss[-1]
  *                 flag = True
  *                 proof += 'Single'             # <<<<<<<<<<<<<<
  *             if n > n1 + n2:
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):
  */
-      __pyx_t_1 = __Pyx_PyUnicode_Concat(__pyx_v_proof, __pyx_n_u_Single); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyUnicode_Concat(__pyx_v_proof, __pyx_n_u_Single); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF_SET(__pyx_v_proof, ((PyObject*)__pyx_t_1));
       __pyx_t_1 = 0;
 
-      /* "pyaibox/summary/loss_log.py":107
+      /* "pyaibox/summary/loss_log.py":108
  * 
  *         if self.lom in ['min', 'MIN']:
  *             if loss[-1] < self.bests[key]:             # <<<<<<<<<<<<<<
@@ -3835,83 +3835,83 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
     }
 
-    /* "pyaibox/summary/loss_log.py":111
+    /* "pyaibox/summary/loss_log.py":112
  *                 flag = True
  *                 proof += 'Single'
  *             if n > n1 + n2:             # <<<<<<<<<<<<<<
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):
  *                     flag = True
  */
-    __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_1 = PyInt_FromSsize_t(__pyx_v_n); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_6 = PyNumber_Add(__pyx_v_n1, __pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_6 = PyNumber_Add(__pyx_v_n1, __pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_6, Py_GT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_2 = PyObject_RichCompare(__pyx_t_1, __pyx_t_6, Py_GT); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 111, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     if (__pyx_t_5) {
 
-      /* "pyaibox/summary/loss_log.py":112
+      /* "pyaibox/summary/loss_log.py":113
  *                 proof += 'Single'
  *             if n > n1 + n2:
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):             # <<<<<<<<<<<<<<
  *                     flag = True
  *                     proof += 'Average'
  */
-      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_2, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_2, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_t_6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_1 = PyNumber_Subtract(__pyx_t_2, __pyx_v_n1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_1 = PyNumber_Subtract(__pyx_t_2, __pyx_v_n1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_7 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_1, &__pyx_t_2, NULL, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_1, &__pyx_t_2, NULL, 0, 0, 1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyObject_CallOneArg(__pyx_builtin_sum, __pyx_t_7); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_v_n1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyNumber_Divide(__pyx_t_2, __pyx_v_n1); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __pyx_t_2 = PyObject_RichCompare(__pyx_t_6, __pyx_t_7, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_2 = PyObject_RichCompare(__pyx_t_6, __pyx_t_7, Py_LE); __Pyx_XGOTREF(__pyx_t_2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_2); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       if (__pyx_t_4) {
       } else {
         __pyx_t_5 = __pyx_t_4;
         goto __pyx_L9_bool_binop_done;
       }
-      __pyx_t_7 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_7 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_7, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_7, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_index); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetAttrStr(__pyx_t_6, __pyx_n_s_index); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = PyNumber_Negative(__pyx_v_n2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
-      __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_6, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_loss, 0, 0, &__pyx_t_6, NULL, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_min, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = __Pyx_PyObject_CallOneArg(__pyx_builtin_min, __pyx_t_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
       __pyx_t_1 = NULL;
@@ -3927,21 +3927,21 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
       __pyx_t_2 = (__pyx_t_1) ? __Pyx_PyObject_Call2Args(__pyx_t_7, __pyx_t_1, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_7, __pyx_t_6);
       __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
+      if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_7 = __Pyx_PyInt_SubtractObjC(__pyx_v_n2, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyInt_SubtractObjC(__pyx_v_n2, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
-      __pyx_t_6 = PyObject_RichCompare(__pyx_t_2, __pyx_t_7, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_6 = PyObject_RichCompare(__pyx_t_2, __pyx_t_7, Py_EQ); __Pyx_XGOTREF(__pyx_t_6); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 112, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_IsTrue(__pyx_t_6); if (unlikely(__pyx_t_4 < 0)) __PYX_ERR(0, 113, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
       __pyx_t_5 = __pyx_t_4;
       __pyx_L9_bool_binop_done:;
       if (__pyx_t_5) {
 
-        /* "pyaibox/summary/loss_log.py":113
+        /* "pyaibox/summary/loss_log.py":114
  *             if n > n1 + n2:
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):
  *                     flag = True             # <<<<<<<<<<<<<<
@@ -3950,19 +3950,19 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
         __pyx_v_flag = 1;
 
-        /* "pyaibox/summary/loss_log.py":114
+        /* "pyaibox/summary/loss_log.py":115
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):
  *                     flag = True
  *                     proof += 'Average'             # <<<<<<<<<<<<<<
  * 
  *         return flag, proof
  */
-        __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_v_proof, __pyx_n_u_Average); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 114, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyUnicode_Concat(__pyx_v_proof, __pyx_n_u_Average); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 115, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF_SET(__pyx_v_proof, ((PyObject*)__pyx_t_6));
         __pyx_t_6 = 0;
 
-        /* "pyaibox/summary/loss_log.py":112
+        /* "pyaibox/summary/loss_log.py":113
  *                 proof += 'Single'
  *             if n > n1 + n2:
  *                 if (sum(loss[-n2:]) / n2 <= sum(loss[-n2 - n1:-n2]) / n1) and (loss[-n2:].index(min(loss[-n2:])) == n2 - 1):             # <<<<<<<<<<<<<<
@@ -3971,7 +3971,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
       }
 
-      /* "pyaibox/summary/loss_log.py":111
+      /* "pyaibox/summary/loss_log.py":112
  *                 flag = True
  *                 proof += 'Single'
  *             if n > n1 + n2:             # <<<<<<<<<<<<<<
@@ -3980,7 +3980,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
     }
 
-    /* "pyaibox/summary/loss_log.py":106
+    /* "pyaibox/summary/loss_log.py":107
  *         flag, proof = False, ''
  * 
  *         if self.lom in ['min', 'MIN']:             # <<<<<<<<<<<<<<
@@ -3989,7 +3989,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  */
   }
 
-  /* "pyaibox/summary/loss_log.py":116
+  /* "pyaibox/summary/loss_log.py":117
  *                     proof += 'Average'
  * 
  *         return flag, proof             # <<<<<<<<<<<<<<
@@ -3997,9 +3997,9 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
  * 
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_6 = __Pyx_PyBool_FromLong(__pyx_v_flag); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 116, __pyx_L1_error)
+  __pyx_t_6 = __Pyx_PyBool_FromLong(__pyx_v_flag); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
-  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 116, __pyx_L1_error)
+  __pyx_t_7 = PyTuple_New(2); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 117, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   __Pyx_GIVEREF(__pyx_t_6);
   PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6);
@@ -4011,7 +4011,7 @@ static PyObject *__pyx_pf_7pyaibox_7summary_8loss_log_7LossLog_12judge(CYTHON_UN
   __pyx_t_7 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/summary/loss_log.py":100
+  /* "pyaibox/summary/loss_log.py":101
  *             self.mpl.use(self.backend)
  * 
  *     def judge(self, key, n1=50, n2=10):             # <<<<<<<<<<<<<<
@@ -4175,10 +4175,10 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 123, __pyx_L1_error)
-  __pyx_builtin_eval = __Pyx_GetBuiltinName(__pyx_n_s_eval); if (!__pyx_builtin_eval) __PYX_ERR(0, 47, __pyx_L1_error)
-  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 112, __pyx_L1_error)
-  __pyx_builtin_min = __Pyx_GetBuiltinName(__pyx_n_s_min); if (!__pyx_builtin_min) __PYX_ERR(0, 112, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 124, __pyx_L1_error)
+  __pyx_builtin_eval = __Pyx_GetBuiltinName(__pyx_n_s_eval); if (!__pyx_builtin_eval) __PYX_ERR(0, 48, __pyx_L1_error)
+  __pyx_builtin_sum = __Pyx_GetBuiltinName(__pyx_n_s_sum); if (!__pyx_builtin_sum) __PYX_ERR(0, 113, __pyx_L1_error)
+  __pyx_builtin_min = __Pyx_GetBuiltinName(__pyx_n_s_min); if (!__pyx_builtin_min) __PYX_ERR(0, 113, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -4188,102 +4188,102 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/summary/loss_log.py":30
+  /* "pyaibox/summary/loss_log.py":31
  * class LossLog():
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):             # <<<<<<<<<<<<<<
  *         self.plotdir = plotdir
  *         self.title = title
  */
-  __pyx_tuple__5 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_filename, __pyx_n_s_logdict, __pyx_n_s_lom, __pyx_n_s_k, __pyx_n_s_v, __pyx_n_s_mpl, __pyx_n_s_plt); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_tuple__5 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_plotdir, __pyx_n_s_xlabel, __pyx_n_s_ylabel, __pyx_n_s_title, __pyx_n_s_filename, __pyx_n_s_logdict, __pyx_n_s_lom, __pyx_n_s_k, __pyx_n_s_v, __pyx_n_s_mpl, __pyx_n_s_plt); if (unlikely(!__pyx_tuple__5)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__5);
   __Pyx_GIVEREF(__pyx_tuple__5);
-  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(8, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_init, 30, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 30, __pyx_L1_error)
-  __pyx_tuple__7 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_Epoch), ((PyObject*)__pyx_n_u_Loss), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_min)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_codeobj__6 = (PyObject*)__Pyx_PyCode_New(8, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__5, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_init, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__6)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(7, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_Epoch), ((PyObject*)__pyx_n_u_Loss), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_min)); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
 
-  /* "pyaibox/summary/loss_log.py":55
+  /* "pyaibox/summary/loss_log.py":56
  *         self.backend = mpl.get_backend()
  * 
  *     def assign(self, key, value):             # <<<<<<<<<<<<<<
  *         self.losses[key] = value
  * 
  */
-  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
-  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_assign, 55, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_codeobj__9 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__8, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_assign, 56, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__9)) __PYX_ERR(0, 56, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":58
+  /* "pyaibox/summary/loss_log.py":59
  *         self.losses[key] = value
  * 
  *     def add(self, key, value):             # <<<<<<<<<<<<<<
  *         self.losses[key].append(value)
  * 
  */
-  __pyx_tuple__10 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_value); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_add, 58, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_add, 59, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 59, __pyx_L1_error)
 
-  /* "pyaibox/summary/loss_log.py":61
+  /* "pyaibox/summary/loss_log.py":62
  *         self.losses[key].append(value)
  * 
  *     def get(self, key=None):             # <<<<<<<<<<<<<<
  *         return self.losses[key]
  * 
  */
-  __pyx_tuple__12 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_key); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__12 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_key); if (unlikely(!__pyx_tuple__12)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__12);
   __Pyx_GIVEREF(__pyx_tuple__12);
-  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_get, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 61, __pyx_L1_error)
-  __pyx_tuple__14 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_codeobj__13 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__12, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_get, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__13)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_tuple__14 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__14)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__14);
   __Pyx_GIVEREF(__pyx_tuple__14);
 
-  /* "pyaibox/summary/loss_log.py":64
+  /* "pyaibox/summary/loss_log.py":65
  *         return self.losses[key]
  * 
  *     def updir(self, plotdir=None):             # <<<<<<<<<<<<<<
  *         self.plotdir = plotdir
  * 
  */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_plotdir); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_updir, 64, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 64, __pyx_L1_error)
-  __pyx_tuple__17 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_updir, 65, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
 
-  /* "pyaibox/summary/loss_log.py":67
+  /* "pyaibox/summary/loss_log.py":68
  *         self.plotdir = plotdir
  * 
  *     def plot(self, x=None):             # <<<<<<<<<<<<<<
  *         legend = []
  * 
  */
-  __pyx_tuple__18 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_tuple__18 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_x, __pyx_n_s_legend, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__18)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__18);
   __Pyx_GIVEREF(__pyx_tuple__18);
-  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_plot, 67, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 67, __pyx_L1_error)
-  __pyx_tuple__20 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_codeobj__19 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__18, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_plot, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__19)) __PYX_ERR(0, 68, __pyx_L1_error)
+  __pyx_tuple__20 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__20)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__20);
   __Pyx_GIVEREF(__pyx_tuple__20);
 
-  /* "pyaibox/summary/loss_log.py":100
+  /* "pyaibox/summary/loss_log.py":101
  *             self.mpl.use(self.backend)
  * 
  *     def judge(self, key, n1=50, n2=10):             # <<<<<<<<<<<<<<
  * 
  *         loss = self.losses[key]
  */
-  __pyx_tuple__21 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_n1, __pyx_n_s_n2, __pyx_n_s_loss, __pyx_n_s_n, __pyx_n_s_flag, __pyx_n_s_proof); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 100, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(8, __pyx_n_s_self, __pyx_n_s_key, __pyx_n_s_n1, __pyx_n_s_n2, __pyx_n_s_loss, __pyx_n_s_n, __pyx_n_s_flag, __pyx_n_s_proof); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_judge, 100, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 100, __pyx_L1_error)
-  __pyx_tuple__23 = PyTuple_Pack(2, ((PyObject *)__pyx_int_50), ((PyObject *)__pyx_int_10)); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 100, __pyx_L1_error)
+  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(4, 0, 8, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_summary_loss_log_py, __pyx_n_s_judge, 101, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 101, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(2, ((PyObject *)__pyx_int_50), ((PyObject *)__pyx_int_10)); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
   __Pyx_RefNannyFinishContext();
@@ -4574,188 +4574,188 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/summary/loss_log.py":28
+  /* "pyaibox/summary/loss_log.py":29
  * #
  * 
  * class LossLog():             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_LossLog, __pyx_n_s_LossLog, (PyObject *) NULL, __pyx_n_s_pyaibox_summary_loss_log, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_LossLog, __pyx_n_s_LossLog, (PyObject *) NULL, __pyx_n_s_pyaibox_summary_loss_log, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "pyaibox/summary/loss_log.py":30
+  /* "pyaibox/summary/loss_log.py":31
  * class LossLog():
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):             # <<<<<<<<<<<<<<
  *         self.plotdir = plotdir
  *         self.title = title
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_1__init__, 0, __pyx_n_s_LossLog___init, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 30, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_1__init__, 0, __pyx_n_s_LossLog___init, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__6)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__7);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":55
+  /* "pyaibox/summary/loss_log.py":56
  *         self.backend = mpl.get_backend()
  * 
  *     def assign(self, key, value):             # <<<<<<<<<<<<<<
  *         self.losses[key] = value
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_3assign, 0, __pyx_n_s_LossLog_assign, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 55, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_3assign, 0, __pyx_n_s_LossLog_assign, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__9)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_assign, __pyx_t_2) < 0) __PYX_ERR(0, 55, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_assign, __pyx_t_2) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":58
+  /* "pyaibox/summary/loss_log.py":59
  *         self.losses[key] = value
  * 
  *     def add(self, key, value):             # <<<<<<<<<<<<<<
  *         self.losses[key].append(value)
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_5add, 0, __pyx_n_s_LossLog_add, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 58, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_5add, 0, __pyx_n_s_LossLog_add, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_add, __pyx_t_2) < 0) __PYX_ERR(0, 58, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_add, __pyx_t_2) < 0) __PYX_ERR(0, 59, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":61
+  /* "pyaibox/summary/loss_log.py":62
  *         self.losses[key].append(value)
  * 
  *     def get(self, key=None):             # <<<<<<<<<<<<<<
  *         return self.losses[key]
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_7get, 0, __pyx_n_s_LossLog_get, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_7get, 0, __pyx_n_s_LossLog_get, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__13)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__14);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get, __pyx_t_2) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get, __pyx_t_2) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":64
+  /* "pyaibox/summary/loss_log.py":65
  *         return self.losses[key]
  * 
  *     def updir(self, plotdir=None):             # <<<<<<<<<<<<<<
  *         self.plotdir = plotdir
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_9updir, 0, __pyx_n_s_LossLog_updir, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_9updir, 0, __pyx_n_s_LossLog_updir, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__17);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_updir, __pyx_t_2) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_updir, __pyx_t_2) < 0) __PYX_ERR(0, 65, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":67
+  /* "pyaibox/summary/loss_log.py":68
  *         self.plotdir = plotdir
  * 
  *     def plot(self, x=None):             # <<<<<<<<<<<<<<
  *         legend = []
  * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_11plot, 0, __pyx_n_s_LossLog_plot, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 67, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_11plot, 0, __pyx_n_s_LossLog_plot, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__19)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__20);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_plot, __pyx_t_2) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_plot, __pyx_t_2) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":100
+  /* "pyaibox/summary/loss_log.py":101
  *             self.mpl.use(self.backend)
  * 
  *     def judge(self, key, n1=50, n2=10):             # <<<<<<<<<<<<<<
  * 
  *         loss = self.losses[key]
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_13judge, 0, __pyx_n_s_LossLog_judge, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_7summary_8loss_log_7LossLog_13judge, 0, __pyx_n_s_LossLog_judge, NULL, __pyx_n_s_pyaibox_summary_loss_log, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__23);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_judge, __pyx_t_2) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_judge, __pyx_t_2) < 0) __PYX_ERR(0, 101, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/summary/loss_log.py":28
+  /* "pyaibox/summary/loss_log.py":29
  * #
  * 
  * class LossLog():             # <<<<<<<<<<<<<<
  * 
  *     def __init__(self, plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename=None, logdict=None, lom='min'):
  */
-  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_LossLog, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_LossLog, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_LossLog, __pyx_t_2) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_LossLog, __pyx_t_2) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/summary/loss_log.py":119
+  /* "pyaibox/summary/loss_log.py":120
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     loslog = LossLog(plotdir='./', xlabel='xlabel', ylabel='ylabel')
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 119, __pyx_L1_error)
+  __pyx_t_3 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_3 < 0)) __PYX_ERR(0, 120, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_3) {
 
-    /* "pyaibox/summary/loss_log.py":121
+    /* "pyaibox/summary/loss_log.py":122
  * if __name__ == '__main__':
  * 
  *     loslog = LossLog(plotdir='./', xlabel='xlabel', ylabel='ylabel')             # <<<<<<<<<<<<<<
  *     loslog = LossLog(plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename='LossEpoch', logdict={'train': [], 'valid': []})
  *     for n in range(100):
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_LossLog); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_LossLog); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 121, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_plotdir, __pyx_kp_u__24) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_xlabel, __pyx_n_u_xlabel) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ylabel, __pyx_n_u_ylabel) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 121, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_plotdir, __pyx_kp_u__24) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_xlabel, __pyx_n_u_xlabel) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ylabel, __pyx_n_u_ylabel) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_1, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 122, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_loslog, __pyx_t_4) < 0) __PYX_ERR(0, 121, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_loslog, __pyx_t_4) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/summary/loss_log.py":122
+    /* "pyaibox/summary/loss_log.py":123
  * 
  *     loslog = LossLog(plotdir='./', xlabel='xlabel', ylabel='ylabel')
  *     loslog = LossLog(plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename='LossEpoch', logdict={'train': [], 'valid': []})             # <<<<<<<<<<<<<<
  *     for n in range(100):
  *         loslog.add('train', n)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_LossLog); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_LossLog); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_2 = __Pyx_PyDict_NewPresized(6); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_plotdir, Py_None) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_xlabel, __pyx_n_u_Epoch) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ylabel, __pyx_n_u_Loss) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_title, Py_None) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_filename, __pyx_n_u_LossEpoch) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_plotdir, Py_None) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_xlabel, __pyx_n_u_Epoch) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_ylabel, __pyx_n_u_Loss) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_title, Py_None) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_filename, __pyx_n_u_LossEpoch) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_train, __pyx_t_5) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_train, __pyx_t_5) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_5 = PyList_New(0); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_valid, __pyx_t_5) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_valid, __pyx_t_5) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_logdict, __pyx_t_1) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_2, __pyx_n_s_logdict, __pyx_t_1) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_empty_tuple, __pyx_t_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_loslog, __pyx_t_1) < 0) __PYX_ERR(0, 122, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_loslog, __pyx_t_1) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":123
+    /* "pyaibox/summary/loss_log.py":124
  *     loslog = LossLog(plotdir='./', xlabel='xlabel', ylabel='ylabel')
  *     loslog = LossLog(plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename='LossEpoch', logdict={'train': [], 'valid': []})
  *     for n in range(100):             # <<<<<<<<<<<<<<
@@ -4763,24 +4763,24 @@ if (!__Pyx_RefNanny) {
  *         loslog.add('valid', n - 1)
  */
     for (__pyx_t_6 = 0; __pyx_t_6 < 0x64; __pyx_t_6+=1) {
-      __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyInt_From_long(__pyx_t_6); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
-      if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_1) < 0) __PYX_ERR(0, 123, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_d, __pyx_n_s_n, __pyx_t_1) < 0) __PYX_ERR(0, 124, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pyaibox/summary/loss_log.py":124
+      /* "pyaibox/summary/loss_log.py":125
  *     loslog = LossLog(plotdir=None, xlabel='Epoch', ylabel='Loss', title=None, filename='LossEpoch', logdict={'train': [], 'valid': []})
  *     for n in range(100):
  *         loslog.add('train', n)             # <<<<<<<<<<<<<<
  *         loslog.add('valid', n - 1)
  * 
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_loslog); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_loslog); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_add); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_add); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 124, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_n); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __pyx_t_5 = NULL;
       __pyx_t_7 = 0;
@@ -4797,7 +4797,7 @@ if (!__Pyx_RefNanny) {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_n_u_train, __pyx_t_2};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4806,14 +4806,14 @@ if (!__Pyx_RefNanny) {
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
         PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_n_u_train, __pyx_t_2};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       } else
       #endif
       {
-        __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_8 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_8);
         if (__pyx_t_5) {
           __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_8, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -4824,28 +4824,28 @@ if (!__Pyx_RefNanny) {
         __Pyx_GIVEREF(__pyx_t_2);
         PyTuple_SET_ITEM(__pyx_t_8, 1+__pyx_t_7, __pyx_t_2);
         __pyx_t_2 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 124, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
       }
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-      /* "pyaibox/summary/loss_log.py":125
+      /* "pyaibox/summary/loss_log.py":126
  *     for n in range(100):
  *         loslog.add('train', n)
  *         loslog.add('valid', n - 1)             # <<<<<<<<<<<<<<
  * 
  *     loslog.plot()
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_loslog); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_loslog); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_add); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_8);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_n); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 125, __pyx_L1_error)
+      __pyx_t_2 = __Pyx_PyInt_SubtractObjC(__pyx_t_4, __pyx_int_1, 1, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 126, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_2);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __pyx_t_4 = NULL;
@@ -4863,7 +4863,7 @@ if (!__Pyx_RefNanny) {
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_n_u_valid, __pyx_t_2};
-        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
@@ -4872,14 +4872,14 @@ if (!__Pyx_RefNanny) {
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_8)) {
         PyObject *__pyx_temp[3] = {__pyx_t_4, __pyx_n_u_valid, __pyx_t_2};
-        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_8, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
       } else
       #endif
       {
-        __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_5 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_5);
         if (__pyx_t_4) {
           __Pyx_GIVEREF(__pyx_t_4); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_4); __pyx_t_4 = NULL;
@@ -4890,7 +4890,7 @@ if (!__Pyx_RefNanny) {
         __Pyx_GIVEREF(__pyx_t_2);
         PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_7, __pyx_t_2);
         __pyx_t_2 = 0;
-        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L1_error)
+        __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_1);
         __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
       }
@@ -4898,22 +4898,22 @@ if (!__Pyx_RefNanny) {
       __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     }
 
-    /* "pyaibox/summary/loss_log.py":127
+    /* "pyaibox/summary/loss_log.py":128
  *         loslog.add('valid', n - 1)
  * 
  *     loslog.plot()             # <<<<<<<<<<<<<<
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_loslog); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_loslog); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_plot); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 127, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_CallNoArg(__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/summary/loss_log.py":119
+    /* "pyaibox/summary/loss_log.py":120
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<

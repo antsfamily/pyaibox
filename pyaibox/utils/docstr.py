@@ -6,23 +6,24 @@
 # @homepage  : http://iridescent.ink
 # @date      : Sun Nov 11 2019
 # @version   : 0.0
-# @license   : The Apache License 2.0
+# @license   : The GNU General Public License (GPL) v3.0
 # @note      : 
 # 
-# The Apache 2.0 License
+# The GNU General Public License (GPL) v3.0
 # Copyright (C) 2013- Zhi Liu
 #
-#Licensed under the Apache License, Version 2.0 (the "License");
-#you may not use this file except in compliance with the License.
-#You may obtain a copy of the License at
+# This file is part of pyaibox.
 #
-#http://www.apache.org/licenses/LICENSE-2.0
+# pyaibox is free software: you can redistribute it and/or modify it under the 
+# terms of the GNU General Public License as published by the Free Software Foundation, 
+# either version 3 of the License, or (at your option) any later version.
 #
-#Unless required by applicable law or agreed to in writing, software
-#distributed under the License is distributed on an "AS IS" BASIS,
-#WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-#See the License for the specific language governing permissions and
-#limitations under the License.
+# pyaibox is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; 
+# without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+# See the GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License along with pyaibox. 
+# If not, see <https://www.gnu.org/licenses/>. 
 #
 
 import os
@@ -30,7 +31,7 @@ from pyaibox import listxfile
 
 
 def gpyi(pkgdir, autoskip=True):
-    """generates ``pyi`` files
+    r"""generates ``pyi`` files
 
     Parameters
     ----------
@@ -42,7 +43,7 @@ def gpyi(pkgdir, autoskip=True):
 
     filetype = '.py'
     dstfiletype = '.pyi'
-    allfiles = listxfile(pkgdir, filetype, recursive=True)
+    allfiles = listxfile(pkgdir, exts=filetype, recursive=True)
     
     dstfiles = []
     for file in allfiles:
@@ -63,9 +64,9 @@ def gpyi(pkgdir, autoskip=True):
         cntcomflag = -1
         outstr = []
         for n in range(len(data)):
-            defpos = data[n].find('def ')
+            defpos = data[n].find('def' + ' ')
             if defpos == -1:
-                defpos = data[n].find('class ')
+                defpos = data[n].find('class' + ' ')
             if defpos >= 0:
                 cntcomflag = 0
                 if data[n].find('):') > -1:
@@ -76,9 +77,9 @@ def gpyi(pkgdir, autoskip=True):
                             break
                     outstr.append(data[n][:-1] + data[n+1][k-1:])
                 continue
-            compos = data[n].find('"""')
+            compos = data[n].find('"' + '"' + '"')
             if compos < 0:
-                compos = data[n].find('r"""')
+                compos = data[n].find('r"' + '"' + '"')
             if compos >= 0:
                 cntcomflag += 1
 
@@ -95,7 +96,7 @@ def gpyi(pkgdir, autoskip=True):
         # tmpstr = []
         # N = len(outstr) - 1
         # for n in range(0, N):
-        #     if outstr[n].find('def ') > -1:
+        #     if outstr[n].find('def' + ' ') > -1:
         #         if outstr[n].find('):') > -1:
         #             tmpstr.append(outstr[n])
         #         else:
@@ -116,17 +117,17 @@ def gpyi(pkgdir, autoskip=True):
         outstr.append('ENDFLAG')
         N = len(outstr)
         for n in range(0, N-1):
-            defpos1 = outstr[n].find('def ')
-            defpos2 = outstr[n+1].find('def ')
-            clspos1 = outstr[n].find('class ')
-            clspos2 = outstr[n+1].find('class ')
+            defpos1 = outstr[n].find('def' + ' ')
+            defpos2 = outstr[n+1].find('def' + ' ')
+            clspos1 = outstr[n].find('class' + ' ')
+            clspos2 = outstr[n+1].find('class' + ' ')
 
             finalstr.append(outstr[n])
 
             startpos = -1 if (defpos1<0 and clspos1<0) else max(defpos1, clspos1)
             endpos = -1 if (defpos2<0 and clspos2<0) else max(defpos2, clspos2)
             if (startpos>=0 and endpos>=0) or (startpos>=0 and outstr[n+1]=='ENDFLAG'):
-                # finalstr.append(' '*(startpos + 4) + 'r"""\n' + ' '*(startpos + 4) + '"""\n\n')
+                # finalstr.append(' '*(startpos + 4) + 'r"' + '"' + '"' + '\n' + ' '*(startpos + 4) + 'r"' + '"' + '"' + '\n\n')
                 finalstr.append(' '*(startpos + 4) + '...\n\n')
 
         for ostr in finalstr:
@@ -134,13 +135,13 @@ def gpyi(pkgdir, autoskip=True):
 
         # fpyi.write(finalstr[0])
         # for n in range(1, len(finalstr)):
-        #     flag = finalstr[n-1].find('class ') >= 0
+        #     flag = finalstr[n-1].find('class' + ' ') >= 0
 
         #     if flag:
         #         if finalstr[n].find('__doc__ = ') > -1:
         #             fpyi.write(finalstr[n])
         #             continue
-        #         flagpos = max(finalstr[n].find('r"""'), finalstr[n].find('"""')) - 1
+        #         flagpos = max(finalstr[n].find('r"' + '"' + '"'), finalstr[n].find('"' + '"' + '"')) - 1
         #         fpyi.write(finalstr[n][0:flagpos] + '__doc__ = ' + finalstr[n][flagpos:])
         #     else:
         #         fpyi.write(finalstr[n])
@@ -148,9 +149,10 @@ def gpyi(pkgdir, autoskip=True):
         fpy.close()
         fpyi.close()
 
+    return 0
 
-def rmcache(pkgdir, ext='.c'):
-    """remove files
+def rmcache(pkgdir, exts='.c'):
+    r"""remove cache files
 
     Parameters
     ----------
@@ -158,11 +160,13 @@ def rmcache(pkgdir, ext='.c'):
         package root directory
     ext : str, optional
         file extension
-    """    
+    """
 
-    allfiles = listxfile(pkgdir, ext, recursive=True)
-    for file in allfiles:
+    allcfiles = listxfile(pkgdir, exts=exts, recursive=True)
+    for file in allcfiles:
         os.remove(file)
+
+    return 0
 
 
 if __name__ == '__main__':

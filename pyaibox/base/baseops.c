@@ -1478,7 +1478,7 @@ static PyObject *__pyx_codeobj__8;
 static PyObject *__pyx_codeobj__11;
 /* Late includes */
 
-/* "pyaibox/base/baseops.py":31
+/* "pyaibox/base/baseops.py":32
  * 
  * 
  * def upkeys(D, mode='-', k='module.'):             # <<<<<<<<<<<<<<
@@ -1537,7 +1537,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_1upkeys(PyObject *__pyx_self, 
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "upkeys") < 0)) __PYX_ERR(0, 31, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "upkeys") < 0)) __PYX_ERR(0, 32, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1556,7 +1556,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_1upkeys(PyObject *__pyx_self, 
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("upkeys", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 31, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("upkeys", 0, 1, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 32, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.baseops.upkeys", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1591,19 +1591,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("upkeys", 0);
 
-  /* "pyaibox/base/baseops.py":50
+  /* "pyaibox/base/baseops.py":51
  *     """
  * 
  *     X = {}             # <<<<<<<<<<<<<<
  *     for key, value in D.items():
  *         if mode == '-':
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_X = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":51
+  /* "pyaibox/base/baseops.py":52
  * 
  *     X = {}
  *     for key, value in D.items():             # <<<<<<<<<<<<<<
@@ -1613,9 +1613,9 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
   __pyx_t_2 = 0;
   if (unlikely(__pyx_v_D == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 51, __pyx_L1_error)
+    __PYX_ERR(0, 52, __pyx_L1_error)
   }
-  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_D, 0, __pyx_n_s_items, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 51, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_D, 0, __pyx_n_s_items, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_1);
   __pyx_t_1 = __pyx_t_5;
@@ -1623,7 +1623,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
   while (1) {
     __pyx_t_7 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_3, &__pyx_t_2, &__pyx_t_5, &__pyx_t_6, NULL, __pyx_t_4);
     if (unlikely(__pyx_t_7 == 0)) break;
-    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 52, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_key, __pyx_t_5);
@@ -1631,24 +1631,24 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
     __Pyx_XDECREF_SET(__pyx_v_value, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/base/baseops.py":52
+    /* "pyaibox/base/baseops.py":53
  *     X = {}
  *     for key, value in D.items():
  *         if mode == '-':             # <<<<<<<<<<<<<<
  *             newkey = key.replace(k, '')
  *         if mode == '+':
  */
-    __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_kp_u_, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_kp_u_, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
     if (__pyx_t_8) {
 
-      /* "pyaibox/base/baseops.py":53
+      /* "pyaibox/base/baseops.py":54
  *     for key, value in D.items():
  *         if mode == '-':
  *             newkey = key.replace(k, '')             # <<<<<<<<<<<<<<
  *         if mode == '+':
  *             newkey = k + key
  */
-      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_replace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+      __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_key, __pyx_n_s_replace); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       __pyx_t_9 = NULL;
       __pyx_t_7 = 0;
@@ -1665,7 +1665,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
       #if CYTHON_FAST_PYCALL
       if (PyFunction_Check(__pyx_t_5)) {
         PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_k, __pyx_kp_u__2};
-        __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 54, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_GOTREF(__pyx_t_6);
       } else
@@ -1673,13 +1673,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
       #if CYTHON_FAST_PYCCALL
       if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
         PyObject *__pyx_temp[3] = {__pyx_t_9, __pyx_v_k, __pyx_kp_u__2};
-        __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_7, 2+__pyx_t_7); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 54, __pyx_L1_error)
         __Pyx_XDECREF(__pyx_t_9); __pyx_t_9 = 0;
         __Pyx_GOTREF(__pyx_t_6);
       } else
       #endif
       {
-        __pyx_t_10 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 53, __pyx_L1_error)
+        __pyx_t_10 = PyTuple_New(2+__pyx_t_7); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 54, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_10);
         if (__pyx_t_9) {
           __Pyx_GIVEREF(__pyx_t_9); PyTuple_SET_ITEM(__pyx_t_10, 0, __pyx_t_9); __pyx_t_9 = NULL;
@@ -1690,7 +1690,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
         __Pyx_INCREF(__pyx_kp_u__2);
         __Pyx_GIVEREF(__pyx_kp_u__2);
         PyTuple_SET_ITEM(__pyx_t_10, 1+__pyx_t_7, __pyx_kp_u__2);
-        __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_10, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 53, __pyx_L1_error)
+        __pyx_t_6 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_10, NULL); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 54, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_6);
         __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       }
@@ -1698,7 +1698,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
       __Pyx_XDECREF_SET(__pyx_v_newkey, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "pyaibox/base/baseops.py":52
+      /* "pyaibox/base/baseops.py":53
  *     X = {}
  *     for key, value in D.items():
  *         if mode == '-':             # <<<<<<<<<<<<<<
@@ -1707,29 +1707,29 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
  */
     }
 
-    /* "pyaibox/base/baseops.py":54
+    /* "pyaibox/base/baseops.py":55
  *         if mode == '-':
  *             newkey = key.replace(k, '')
  *         if mode == '+':             # <<<<<<<<<<<<<<
  *             newkey = k + key
  *         X[newkey] = value
  */
-    __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_kp_u__3, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 54, __pyx_L1_error)
+    __pyx_t_8 = (__Pyx_PyUnicode_Equals(__pyx_v_mode, __pyx_kp_u__3, Py_EQ)); if (unlikely(__pyx_t_8 < 0)) __PYX_ERR(0, 55, __pyx_L1_error)
     if (__pyx_t_8) {
 
-      /* "pyaibox/base/baseops.py":55
+      /* "pyaibox/base/baseops.py":56
  *             newkey = key.replace(k, '')
  *         if mode == '+':
  *             newkey = k + key             # <<<<<<<<<<<<<<
  *         X[newkey] = value
  * 
  */
-      __pyx_t_6 = PyNumber_Add(__pyx_v_k, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
+      __pyx_t_6 = PyNumber_Add(__pyx_v_k, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 56, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       __Pyx_XDECREF_SET(__pyx_v_newkey, __pyx_t_6);
       __pyx_t_6 = 0;
 
-      /* "pyaibox/base/baseops.py":54
+      /* "pyaibox/base/baseops.py":55
  *         if mode == '-':
  *             newkey = key.replace(k, '')
  *         if mode == '+':             # <<<<<<<<<<<<<<
@@ -1738,19 +1738,19 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
  */
     }
 
-    /* "pyaibox/base/baseops.py":56
+    /* "pyaibox/base/baseops.py":57
  *         if mode == '+':
  *             newkey = k + key
  *         X[newkey] = value             # <<<<<<<<<<<<<<
  * 
  *     return X
  */
-    if (unlikely(!__pyx_v_newkey)) { __Pyx_RaiseUnboundLocalError("newkey"); __PYX_ERR(0, 56, __pyx_L1_error) }
-    if (unlikely(PyDict_SetItem(__pyx_v_X, __pyx_v_newkey, __pyx_v_value) < 0)) __PYX_ERR(0, 56, __pyx_L1_error)
+    if (unlikely(!__pyx_v_newkey)) { __Pyx_RaiseUnboundLocalError("newkey"); __PYX_ERR(0, 57, __pyx_L1_error) }
+    if (unlikely(PyDict_SetItem(__pyx_v_X, __pyx_v_newkey, __pyx_v_value) < 0)) __PYX_ERR(0, 57, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":58
+  /* "pyaibox/base/baseops.py":59
  *         X[newkey] = value
  * 
  *     return X             # <<<<<<<<<<<<<<
@@ -1762,7 +1762,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
   __pyx_r = __pyx_v_X;
   goto __pyx_L0;
 
-  /* "pyaibox/base/baseops.py":31
+  /* "pyaibox/base/baseops.py":32
  * 
  * 
  * def upkeys(D, mode='-', k='module.'):             # <<<<<<<<<<<<<<
@@ -1789,7 +1789,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_upkeys(CYTHON_UNUSED PyObject 
   return __pyx_r;
 }
 
-/* "pyaibox/base/baseops.py":61
+/* "pyaibox/base/baseops.py":62
  * 
  * 
  * def dreplace(d, fv=None, rv='None', new=False):             # <<<<<<<<<<<<<<
@@ -1857,7 +1857,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_3dreplace(PyObject *__pyx_self
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dreplace") < 0)) __PYX_ERR(0, 61, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dreplace") < 0)) __PYX_ERR(0, 62, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -1879,7 +1879,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_3dreplace(PyObject *__pyx_self
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dreplace", 0, 1, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 61, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dreplace", 0, 1, 4, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 62, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.baseops.dreplace", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1915,7 +1915,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   __Pyx_RefNannySetupContext("dreplace", 0);
   __Pyx_INCREF(__pyx_v_d);
 
-  /* "pyaibox/base/baseops.py":62
+  /* "pyaibox/base/baseops.py":63
  * 
  * def dreplace(d, fv=None, rv='None', new=False):
  *     fvtype = type(fv)             # <<<<<<<<<<<<<<
@@ -1925,26 +1925,26 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   __Pyx_INCREF(((PyObject *)Py_TYPE(__pyx_v_fv)));
   __pyx_v_fvtype = ((PyTypeObject*)((PyObject *)Py_TYPE(__pyx_v_fv)));
 
-  /* "pyaibox/base/baseops.py":63
+  /* "pyaibox/base/baseops.py":64
  * def dreplace(d, fv=None, rv='None', new=False):
  *     fvtype = type(fv)
  *     if new:             # <<<<<<<<<<<<<<
  *         d = copy.deepcopy(d)
  *     for k, v in d.items():
  */
-  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_new); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 63, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_IsTrue(__pyx_v_new); if (unlikely(__pyx_t_1 < 0)) __PYX_ERR(0, 64, __pyx_L1_error)
   if (__pyx_t_1) {
 
-    /* "pyaibox/base/baseops.py":64
+    /* "pyaibox/base/baseops.py":65
  *     fvtype = type(fv)
  *     if new:
  *         d = copy.deepcopy(d)             # <<<<<<<<<<<<<<
  *     for k, v in d.items():
  *         if type(v) is dict:
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 64, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_copy); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_deepcopy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 64, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_deepcopy); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __pyx_t_3 = NULL;
@@ -1959,13 +1959,13 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
     }
     __pyx_t_2 = (__pyx_t_3) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_3, __pyx_v_d) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_v_d);
     __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
-    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 64, __pyx_L1_error)
+    if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 65, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF_SET(__pyx_v_d, __pyx_t_2);
     __pyx_t_2 = 0;
 
-    /* "pyaibox/base/baseops.py":63
+    /* "pyaibox/base/baseops.py":64
  * def dreplace(d, fv=None, rv='None', new=False):
  *     fvtype = type(fv)
  *     if new:             # <<<<<<<<<<<<<<
@@ -1974,7 +1974,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
  */
   }
 
-  /* "pyaibox/base/baseops.py":65
+  /* "pyaibox/base/baseops.py":66
  *     if new:
  *         d = copy.deepcopy(d)
  *     for k, v in d.items():             # <<<<<<<<<<<<<<
@@ -1984,9 +1984,9 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   __pyx_t_5 = 0;
   if (unlikely(__pyx_v_d == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 65, __pyx_L1_error)
+    __PYX_ERR(0, 66, __pyx_L1_error)
   }
-  __pyx_t_4 = __Pyx_dict_iterator(__pyx_v_d, 0, __pyx_n_s_items, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_dict_iterator(__pyx_v_d, 0, __pyx_n_s_items, (&__pyx_t_6), (&__pyx_t_7)); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_2);
   __pyx_t_2 = __pyx_t_4;
@@ -1994,7 +1994,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   while (1) {
     __pyx_t_8 = __Pyx_dict_iter_next(__pyx_t_2, __pyx_t_6, &__pyx_t_5, &__pyx_t_4, &__pyx_t_3, NULL, __pyx_t_7);
     if (unlikely(__pyx_t_8 == 0)) break;
-    if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 65, __pyx_L1_error)
+    if (unlikely(__pyx_t_8 == -1)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_4);
@@ -2002,7 +2002,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/base/baseops.py":66
+    /* "pyaibox/base/baseops.py":67
  *         d = copy.deepcopy(d)
  *     for k, v in d.items():
  *         if type(v) is dict:             # <<<<<<<<<<<<<<
@@ -2013,32 +2013,32 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
     __pyx_t_9 = (__pyx_t_1 != 0);
     if (__pyx_t_9) {
 
-      /* "pyaibox/base/baseops.py":67
+      /* "pyaibox/base/baseops.py":68
  *     for k, v in d.items():
  *         if type(v) is dict:
  *             dreplace(v, fv=fv, rv=rv)             # <<<<<<<<<<<<<<
  *         else:
  *             if type(v) == fvtype:
  */
-      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_dreplace); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+      __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_dreplace); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 68, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_3);
-      __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+      __pyx_t_4 = PyTuple_New(1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 68, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_INCREF(__pyx_v_v);
       __Pyx_GIVEREF(__pyx_v_v);
       PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_v_v);
-      __pyx_t_10 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 67, __pyx_L1_error)
+      __pyx_t_10 = __Pyx_PyDict_NewPresized(2); if (unlikely(!__pyx_t_10)) __PYX_ERR(0, 68, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_10);
-      if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_fv, __pyx_v_fv) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
-      if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_rv, __pyx_v_rv) < 0) __PYX_ERR(0, 67, __pyx_L1_error)
-      __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 67, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_fv, __pyx_v_fv) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
+      if (PyDict_SetItem(__pyx_t_10, __pyx_n_s_rv, __pyx_v_rv) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
+      __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, __pyx_t_10); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 68, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_11);
       __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_DECREF(__pyx_t_10); __pyx_t_10 = 0;
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
 
-      /* "pyaibox/base/baseops.py":66
+      /* "pyaibox/base/baseops.py":67
  *         d = copy.deepcopy(d)
  *     for k, v in d.items():
  *         if type(v) is dict:             # <<<<<<<<<<<<<<
@@ -2048,7 +2048,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
       goto __pyx_L6;
     }
 
-    /* "pyaibox/base/baseops.py":69
+    /* "pyaibox/base/baseops.py":70
  *             dreplace(v, fv=fv, rv=rv)
  *         else:
  *             if type(v) == fvtype:             # <<<<<<<<<<<<<<
@@ -2056,33 +2056,33 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
  *                     d[k] = rv
  */
     /*else*/ {
-      __pyx_t_11 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_v)), ((PyObject *)__pyx_v_fvtype), Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 69, __pyx_L1_error)
-      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 69, __pyx_L1_error)
+      __pyx_t_11 = PyObject_RichCompare(((PyObject *)Py_TYPE(__pyx_v_v)), ((PyObject *)__pyx_v_fvtype), Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 70, __pyx_L1_error)
+      __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 70, __pyx_L1_error)
       __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
       if (__pyx_t_9) {
 
-        /* "pyaibox/base/baseops.py":70
+        /* "pyaibox/base/baseops.py":71
  *         else:
  *             if type(v) == fvtype:
  *                 if v == fv:             # <<<<<<<<<<<<<<
  *                     d[k] = rv
  *     return d
  */
-        __pyx_t_11 = PyObject_RichCompare(__pyx_v_v, __pyx_v_fv, Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 70, __pyx_L1_error)
-        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 70, __pyx_L1_error)
+        __pyx_t_11 = PyObject_RichCompare(__pyx_v_v, __pyx_v_fv, Py_EQ); __Pyx_XGOTREF(__pyx_t_11); if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 71, __pyx_L1_error)
+        __pyx_t_9 = __Pyx_PyObject_IsTrue(__pyx_t_11); if (unlikely(__pyx_t_9 < 0)) __PYX_ERR(0, 71, __pyx_L1_error)
         __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         if (__pyx_t_9) {
 
-          /* "pyaibox/base/baseops.py":71
+          /* "pyaibox/base/baseops.py":72
  *             if type(v) == fvtype:
  *                 if v == fv:
  *                     d[k] = rv             # <<<<<<<<<<<<<<
  *     return d
  * 
  */
-          if (unlikely(PyObject_SetItem(__pyx_v_d, __pyx_v_k, __pyx_v_rv) < 0)) __PYX_ERR(0, 71, __pyx_L1_error)
+          if (unlikely(PyObject_SetItem(__pyx_v_d, __pyx_v_k, __pyx_v_rv) < 0)) __PYX_ERR(0, 72, __pyx_L1_error)
 
-          /* "pyaibox/base/baseops.py":70
+          /* "pyaibox/base/baseops.py":71
  *         else:
  *             if type(v) == fvtype:
  *                 if v == fv:             # <<<<<<<<<<<<<<
@@ -2091,7 +2091,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
  */
         }
 
-        /* "pyaibox/base/baseops.py":69
+        /* "pyaibox/base/baseops.py":70
  *             dreplace(v, fv=fv, rv=rv)
  *         else:
  *             if type(v) == fvtype:             # <<<<<<<<<<<<<<
@@ -2104,7 +2104,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   }
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/base/baseops.py":72
+  /* "pyaibox/base/baseops.py":73
  *                 if v == fv:
  *                     d[k] = rv
  *     return d             # <<<<<<<<<<<<<<
@@ -2116,7 +2116,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   __pyx_r = __pyx_v_d;
   goto __pyx_L0;
 
-  /* "pyaibox/base/baseops.py":61
+  /* "pyaibox/base/baseops.py":62
  * 
  * 
  * def dreplace(d, fv=None, rv='None', new=False):             # <<<<<<<<<<<<<<
@@ -2143,7 +2143,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_2dreplace(CYTHON_UNUSED PyObje
   return __pyx_r;
 }
 
-/* "pyaibox/base/baseops.py":75
+/* "pyaibox/base/baseops.py":76
  * 
  * 
  * def dmka(D, Ds):             # <<<<<<<<<<<<<<
@@ -2187,11 +2187,11 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_5dmka(PyObject *__pyx_self, Py
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_Ds)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("dmka", 1, 2, 2, 1); __PYX_ERR(0, 75, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("dmka", 1, 2, 2, 1); __PYX_ERR(0, 76, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dmka") < 0)) __PYX_ERR(0, 75, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "dmka") < 0)) __PYX_ERR(0, 76, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2204,7 +2204,7 @@ static PyObject *__pyx_pw_7pyaibox_4base_7baseops_5dmka(PyObject *__pyx_self, Py
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("dmka", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 75, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("dmka", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 76, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.base.baseops.dmka", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2234,7 +2234,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_4dmka(CYTHON_UNUSED PyObject *
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("dmka", 0);
 
-  /* "pyaibox/base/baseops.py":88
+  /* "pyaibox/base/baseops.py":89
  *     """
  * 
  *     for k, v in Ds.items():             # <<<<<<<<<<<<<<
@@ -2244,9 +2244,9 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_4dmka(CYTHON_UNUSED PyObject *
   __pyx_t_2 = 0;
   if (unlikely(__pyx_v_Ds == Py_None)) {
     PyErr_Format(PyExc_AttributeError, "'NoneType' object has no attribute '%.30s'", "items");
-    __PYX_ERR(0, 88, __pyx_L1_error)
+    __PYX_ERR(0, 89, __pyx_L1_error)
   }
-  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_Ds, 0, __pyx_n_s_items, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_dict_iterator(__pyx_v_Ds, 0, __pyx_n_s_items, (&__pyx_t_3), (&__pyx_t_4)); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
   __Pyx_XDECREF(__pyx_t_1);
   __pyx_t_1 = __pyx_t_5;
@@ -2254,7 +2254,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_4dmka(CYTHON_UNUSED PyObject *
   while (1) {
     __pyx_t_7 = __Pyx_dict_iter_next(__pyx_t_1, __pyx_t_3, &__pyx_t_2, &__pyx_t_5, &__pyx_t_6, NULL, __pyx_t_4);
     if (unlikely(__pyx_t_7 == 0)) break;
-    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 88, __pyx_L1_error)
+    if (unlikely(__pyx_t_7 == -1)) __PYX_ERR(0, 89, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_XDECREF_SET(__pyx_v_k, __pyx_t_5);
@@ -2262,18 +2262,18 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_4dmka(CYTHON_UNUSED PyObject *
     __Pyx_XDECREF_SET(__pyx_v_v, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/base/baseops.py":89
+    /* "pyaibox/base/baseops.py":90
  * 
  *     for k, v in Ds.items():
  *         D[k] = v             # <<<<<<<<<<<<<<
  *     return D
  * 
  */
-    if (unlikely(PyObject_SetItem(__pyx_v_D, __pyx_v_k, __pyx_v_v) < 0)) __PYX_ERR(0, 89, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_v_D, __pyx_v_k, __pyx_v_v) < 0)) __PYX_ERR(0, 90, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":90
+  /* "pyaibox/base/baseops.py":91
  *     for k, v in Ds.items():
  *         D[k] = v
  *     return D             # <<<<<<<<<<<<<<
@@ -2285,7 +2285,7 @@ static PyObject *__pyx_pf_7pyaibox_4base_7baseops_4dmka(CYTHON_UNUSED PyObject *
   __pyx_r = __pyx_v_D;
   goto __pyx_L0;
 
-  /* "pyaibox/base/baseops.py":75
+  /* "pyaibox/base/baseops.py":76
  * 
  * 
  * def dmka(D, Ds):             # <<<<<<<<<<<<<<
@@ -2395,7 +2395,7 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 97, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 98, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -2405,47 +2405,47 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/base/baseops.py":31
+  /* "pyaibox/base/baseops.py":32
  * 
  * 
  * def upkeys(D, mode='-', k='module.'):             # <<<<<<<<<<<<<<
  *     r"""update keys of a dictionary
  * 
  */
-  __pyx_tuple__4 = PyTuple_Pack(7, __pyx_n_s_D, __pyx_n_s_mode, __pyx_n_s_k, __pyx_n_s_X, __pyx_n_s_key, __pyx_n_s_value, __pyx_n_s_newkey); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(7, __pyx_n_s_D, __pyx_n_s_mode, __pyx_n_s_k, __pyx_n_s_X, __pyx_n_s_key, __pyx_n_s_value, __pyx_n_s_newkey); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
-  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_upkeys, 31, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 31, __pyx_L1_error)
-  __pyx_tuple__6 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_kp_u_module)); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_codeobj__5 = (PyObject*)__Pyx_PyCode_New(3, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__4, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_upkeys, 32, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__5)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_tuple__6 = PyTuple_Pack(2, ((PyObject*)__pyx_kp_u_), ((PyObject*)__pyx_kp_u_module)); if (unlikely(!__pyx_tuple__6)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__6);
   __Pyx_GIVEREF(__pyx_tuple__6);
 
-  /* "pyaibox/base/baseops.py":61
+  /* "pyaibox/base/baseops.py":62
  * 
  * 
  * def dreplace(d, fv=None, rv='None', new=False):             # <<<<<<<<<<<<<<
  *     fvtype = type(fv)
  *     if new:
  */
-  __pyx_tuple__7 = PyTuple_Pack(7, __pyx_n_s_d, __pyx_n_s_fv, __pyx_n_s_rv, __pyx_n_s_new, __pyx_n_s_fvtype, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__7 = PyTuple_Pack(7, __pyx_n_s_d, __pyx_n_s_fv, __pyx_n_s_rv, __pyx_n_s_new, __pyx_n_s_fvtype, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__7)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__7);
   __Pyx_GIVEREF(__pyx_tuple__7);
-  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_dreplace, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 61, __pyx_L1_error)
-  __pyx_tuple__9 = PyTuple_Pack(3, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_None), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_codeobj__8 = (PyObject*)__Pyx_PyCode_New(4, 0, 7, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__7, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_dreplace, 62, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__8)) __PYX_ERR(0, 62, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(3, ((PyObject *)Py_None), ((PyObject*)__pyx_n_u_None), ((PyObject *)Py_False)); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
 
-  /* "pyaibox/base/baseops.py":75
+  /* "pyaibox/base/baseops.py":76
  * 
  * 
  * def dmka(D, Ds):             # <<<<<<<<<<<<<<
  *     """Multi-key value assign
  * 
  */
-  __pyx_tuple__10 = PyTuple_Pack(4, __pyx_n_s_D, __pyx_n_s_Ds, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_tuple__10 = PyTuple_Pack(4, __pyx_n_s_D, __pyx_n_s_Ds, __pyx_n_s_k, __pyx_n_s_v); if (unlikely(!__pyx_tuple__10)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__10);
   __Pyx_GIVEREF(__pyx_tuple__10);
-  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_dmka, 75, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_codeobj__11 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__10, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_base_baseops_py, __pyx_n_s_dmka, 76, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__11)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_RefNannyFinishContext();
   return 0;
   __pyx_L1_error:;
@@ -2732,124 +2732,124 @@ if (!__Pyx_RefNanny) {
   if (__Pyx_patch_abc() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
 
-  /* "pyaibox/base/baseops.py":28
+  /* "pyaibox/base/baseops.py":29
  * #
  * 
  * import copy             # <<<<<<<<<<<<<<
  * 
  * 
  */
-  __pyx_t_1 = __Pyx_Import(__pyx_n_s_copy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 28, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Import(__pyx_n_s_copy, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_copy, __pyx_t_1) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_copy, __pyx_t_1) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":31
+  /* "pyaibox/base/baseops.py":32
  * 
  * 
  * def upkeys(D, mode='-', k='module.'):             # <<<<<<<<<<<<<<
  *     r"""update keys of a dictionary
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_1upkeys, 0, __pyx_n_s_upkeys, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 31, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_1upkeys, 0, __pyx_n_s_upkeys, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__5)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__6);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_upkeys, __pyx_t_1) < 0) __PYX_ERR(0, 31, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_upkeys, __pyx_t_1) < 0) __PYX_ERR(0, 32, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":61
+  /* "pyaibox/base/baseops.py":62
  * 
  * 
  * def dreplace(d, fv=None, rv='None', new=False):             # <<<<<<<<<<<<<<
  *     fvtype = type(fv)
  *     if new:
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_3dreplace, 0, __pyx_n_s_dreplace, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_3dreplace, 0, __pyx_n_s_dreplace, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__8)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_1, __pyx_tuple__9);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dreplace, __pyx_t_1) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dreplace, __pyx_t_1) < 0) __PYX_ERR(0, 62, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":75
+  /* "pyaibox/base/baseops.py":76
  * 
  * 
  * def dmka(D, Ds):             # <<<<<<<<<<<<<<
  *     """Multi-key value assign
  * 
  */
-  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_5dmka, 0, __pyx_n_s_dmka, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 75, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_4base_7baseops_5dmka, 0, __pyx_n_s_dmka, NULL, __pyx_n_s_pyaibox_base_baseops, __pyx_d, ((PyObject *)__pyx_codeobj__11)); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dmka, __pyx_t_1) < 0) __PYX_ERR(0, 75, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_dmka, __pyx_t_1) < 0) __PYX_ERR(0, 76, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/base/baseops.py":93
+  /* "pyaibox/base/baseops.py":94
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
  * 
  *     D = {'a': 1, 'b': 2, 'c': 3}
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_name); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_2 = (__Pyx_PyUnicode_Equals(__pyx_t_1, __pyx_n_u_main, Py_EQ)); if (unlikely(__pyx_t_2 < 0)) __PYX_ERR(0, 94, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   if (__pyx_t_2) {
 
-    /* "pyaibox/base/baseops.py":95
+    /* "pyaibox/base/baseops.py":96
  * if __name__ == '__main__':
  * 
  *     D = {'a': 1, 'b': 2, 'c': 3}             # <<<<<<<<<<<<<<
  *     Ds = {'b': 6}
  *     print(D)
  */
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 95, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(3); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_a, __pyx_int_1) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_b, __pyx_int_2) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_c, __pyx_int_3) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_D, __pyx_t_1) < 0) __PYX_ERR(0, 95, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_a, __pyx_int_1) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_b, __pyx_int_2) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_c, __pyx_int_3) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_D, __pyx_t_1) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/baseops.py":96
+    /* "pyaibox/base/baseops.py":97
  * 
  *     D = {'a': 1, 'b': 2, 'c': 3}
  *     Ds = {'b': 6}             # <<<<<<<<<<<<<<
  *     print(D)
  *     dmka(D, Ds)
  */
-    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyDict_NewPresized(1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_b, __pyx_int_6) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
-    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ds, __pyx_t_1) < 0) __PYX_ERR(0, 96, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_t_1, __pyx_n_u_b, __pyx_int_6) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
+    if (PyDict_SetItem(__pyx_d, __pyx_n_s_Ds, __pyx_t_1) < 0) __PYX_ERR(0, 97, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-    /* "pyaibox/base/baseops.py":97
+    /* "pyaibox/base/baseops.py":98
  *     D = {'a': 1, 'b': 2, 'c': 3}
  *     Ds = {'b': 6}
  *     print(D)             # <<<<<<<<<<<<<<
  *     dmka(D, Ds)
  *     print(D)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_D); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_D); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 97, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/base/baseops.py":98
+    /* "pyaibox/base/baseops.py":99
  *     Ds = {'b': 6}
  *     print(D)
  *     dmka(D, Ds)             # <<<<<<<<<<<<<<
  *     print(D)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_dmka); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_3, __pyx_n_s_dmka); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_D); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_1, __pyx_n_s_D); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Ds); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_Ds); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_5 = PyTuple_New(2); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_1);
@@ -2857,25 +2857,25 @@ if (!__Pyx_RefNanny) {
     PyTuple_SET_ITEM(__pyx_t_5, 1, __pyx_t_4);
     __pyx_t_1 = 0;
     __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 98, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_5, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/base/baseops.py":99
+    /* "pyaibox/base/baseops.py":100
  *     print(D)
  *     dmka(D, Ds)
  *     print(D)             # <<<<<<<<<<<<<<
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_D); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_D); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_CallOneArg(__pyx_builtin_print, __pyx_t_4); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 100, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
 
-    /* "pyaibox/base/baseops.py":93
+    /* "pyaibox/base/baseops.py":94
  * 
  * 
  * if __name__ == '__main__':             # <<<<<<<<<<<<<<
