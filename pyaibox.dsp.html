@@ -1,76 +1,41 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
-  <meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>pyaibox.dsp package &mdash; pyaibox 1.0 documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" type="text/css" />
-  <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
-
-  
-  
-  
-  
-
-  
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.3/dist/katex.min.css" type="text/css" />
+      <link rel="stylesheet" href="_static/katex-math.css" type="text/css" />
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/contrib/auto-render.min.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/katex.min.js"></script>
+        <script src="_static/auto-render.min.js"></script>
         <script src="_static/katex_autorenderer.js"></script>
-    
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-
-    
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="pyaibox.evaluation package" href="pyaibox.evaluation.html" />
     <link rel="prev" title="pyaibox.datasets package" href="pyaibox.datasets.html" /> 
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search" >
-          
-
-          
-            <a href="index.html" class="icon icon-home" alt="Documentation Home"> pyaibox
-          
-
-          
+            <a href="index.html" class="icon icon-home"> pyaibox
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -78,19 +43,8 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
-              <p class="caption"><span class="caption-text">Contents:</span></p>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="getstarted.html">Get Started</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">pyaibox</a><ul class="current">
@@ -117,87 +71,46 @@
 </li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">pyaibox</a>
-        
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
-      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="modules.html">pyaibox</a> &raquo;</li>
-        
-          <li><a href="pyaibox.html">pyaibox package</a> &raquo;</li>
-        
-      <li>pyaibox.dsp package</li>
-    
-    
+      <li><a href="index.html" class="icon icon-home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">pyaibox</a></li>
+          <li class="breadcrumb-item"><a href="pyaibox.html">pyaibox package</a></li>
+      <li class="breadcrumb-item active">pyaibox.dsp package</li>
       <li class="wy-breadcrumbs-aside">
-        
-            
             <a href="_sources/pyaibox.dsp.rst.txt" rel="nofollow"> View page source</a>
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
+             
   <section id="pyaibox-dsp-package">
-<h1>pyaibox.dsp package<a class="headerlink" href="#pyaibox-dsp-package" title="Permalink to this headline">¶</a></h1>
+<h1>pyaibox.dsp package<a class="headerlink" href="#pyaibox-dsp-package" title="Permalink to this heading"></a></h1>
 <section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
+<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this heading"></a></h2>
 </section>
 <section id="module-pyaibox.dsp.convolution">
-<span id="pyaibox-dsp-convolution-module"></span><h2>pyaibox.dsp.convolution module<a class="headerlink" href="#module-pyaibox.dsp.convolution" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-convolution-module"></span><h2>pyaibox.dsp.convolution module<a class="headerlink" href="#module-pyaibox.dsp.convolution" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.convolution.conv1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">conv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.conv1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">conv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.conv1" title="Permalink to this definition"></a></dt>
 <dd><p>Convolution</p>
 <p>The convoltuion between f and g can be expressed as</p>
 <div class="math" id="equation-equ-1dconvdiscrete">
-<span class="eqno">(1)<a class="headerlink" href="#equation-equ-1dconvdiscrete" title="Permalink to this equation">¶</a></span>\[\begin{aligned}
+<span class="eqno">(1)<a class="headerlink" href="#equation-equ-1dconvdiscrete" title="Permalink to this equation"></a></span>\[\begin{aligned}
 (f*g)[n] &= \sum_{m=-\infty}^{+\infty}f[m]g[n-m] \\
          &= \sum_{m=-\infty}^{+\infty}f[n-m]g[m]
 \end{aligned}
@@ -208,7 +121,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>f</strong> (<em>numpy array</em>) – data to be filtered, can be 2d matrix</p></li>
 <li><p><strong>g</strong> (<em>numpy array</em>) – convolution kernel</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – <ul>
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">'full'</span></code>: returns the full convolution,</p></li>
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">'same'</span></code>: returns the central part of the convolution</dt><dd><p>that is the same size as x (default).</p>
@@ -231,23 +144,23 @@ LENGTH(y)is MAX(LENGTH(x)-MAX(0,LENGTH(g)-1),0).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.convolution.cutfftconv1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">cutfftconv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.cutfftconv1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">cutfftconv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.cutfftconv1" title="Permalink to this definition"></a></dt>
 <dd><p>Throwaway boundary elements to get convolution results.</p>
 <p>Throwaway boundary elements to get convolution results.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>numpy array</em>) – array after <code class="docutils literal notranslate"><span class="pre">iff</span></code>.</p></li>
-<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – number of fft points.</p></li>
-<li><p><strong>Nx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – signal length</p></li>
-<li><p><strong>Nh</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – filter length</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – output shape:
+<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of fft points.</p></li>
+<li><p><strong>Nx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – signal length</p></li>
+<li><p><strong>Nh</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – filter length</p></li>
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span></code> –&gt; same size as input x, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span></code> –&gt; valid convolution output
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span></code> –&gt; full convolution output, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – convolution axis (the default is 0)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to shift the frequencies (the default is False)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – convolution axis (the default is 0)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to shift the frequencies (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -261,7 +174,7 @@ LENGTH(y)is MAX(LENGTH(x)-MAX(0,LENGTH(g)-1),0).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.convolution.fftconv1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">fftconv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.fftconv1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.convolution.</span></span><span class="sig-name descname"><span class="pre">fftconv1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.convolution.fftconv1" title="Permalink to this definition"></a></dt>
 <dd><p>Convolution using Fast Fourier Transformation</p>
 <p>Convolution using Fast Fourier Transformation.</p>
 <dl class="field-list simple">
@@ -269,21 +182,21 @@ LENGTH(y)is MAX(LENGTH(x)-MAX(0,LENGTH(g)-1),0).</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>numpy array</em>) – data to be convolved.</p></li>
 <li><p><strong>h</strong> (<em>numpy array</em>) – filter array, it will be expanded to the same dimensions of <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> first.</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span></code> –&gt; same size as input x, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span></code> –&gt; valid convolution output
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span></code> –&gt; full convolution output, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>None</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – axis of convolution operation (the default is 0, which means the first dimension)</p></li>
-<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
-and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
-<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – number of fft points (the default is <span class="math">\(2^{nextpow2(N_x+N_h-1)}\)</span>),
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – axis of convolution operation (the default is 0, which means the first dimension)</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
+and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
+<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – number of fft points (the default is <span class="math">\(2^{nextpow2(N_x+N_h-1)}\)</span>),
 note that <code class="xref py py-attr docutils literal notranslate"><span class="pre">nfft</span></code> can not be smaller than <span class="math">\(N_x+N_h-1\)</span>.</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
-<li><p><strong>eps</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
+<li><p><strong>eps</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -297,10 +210,10 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 
 </section>
 <section id="module-pyaibox.dsp.correlation">
-<span id="pyaibox-dsp-correlation-module"></span><h2>pyaibox.dsp.correlation module<a class="headerlink" href="#module-pyaibox.dsp.correlation" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-correlation-module"></span><h2>pyaibox.dsp.correlation module<a class="headerlink" href="#module-pyaibox.dsp.correlation" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.accc">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">accc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isplot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.accc" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">accc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Sr</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">isplot</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.accc" title="Permalink to this definition"></a></dt>
 <dd><p>Average cross correlation coefficient</p>
 <p>Average cross correlation coefficient (ACCC)</p>
 <div class="math">
@@ -323,15 +236,15 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.acorr">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">acorr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.acorr" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">acorr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">P</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scale</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.acorr" title="Permalink to this definition"></a></dt>
 <dd><p>computes auto-correlation using fft</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>tensor</em>) – the input signal array</p></li>
-<li><p><strong>P</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – maxlag</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – the auto-correlation dimension</p></li>
-<li><p><strong>scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em>, </em><em>optional</em>) – <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <code class="docutils literal notranslate"><span class="pre">'biased'</span></code> or <code class="docutils literal notranslate"><span class="pre">'unbiased'</span></code>, by default None</p></li>
+<li><p><strong>P</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – maxlag</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – the auto-correlation dimension</p></li>
+<li><p><strong>scale</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em> or </em><em>None</em><em>, </em><em>optional</em>) – <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>, <code class="docutils literal notranslate"><span class="pre">'biased'</span></code> or <code class="docutils literal notranslate"><span class="pre">'unbiased'</span></code>, by default None</p></li>
 </ul>
 </dd>
 </dl>
@@ -339,11 +252,11 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.corr1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">corr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.corr1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">corr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.corr1" title="Permalink to this definition"></a></dt>
 <dd><p>Correlation.</p>
 <p>the correlation between f and g can be expressed as</p>
 <div class="math" id="equation-equ-1dcrosscorrelationdiscrete">
-<span class="eqno">(2)<a class="headerlink" href="#equation-equ-1dcrosscorrelationdiscrete" title="Permalink to this equation">¶</a></span>\[(f\star g)[n] = \sum_{m=-\infty}^{+\infty}{\overline{f[m]}g[m+n]} = \sum_{m=-\infty}^{+\infty}\overline{f[m-n]}g[m]
+<span class="eqno">(2)<a class="headerlink" href="#equation-equ-1dcrosscorrelationdiscrete" title="Permalink to this equation"></a></span>\[(f\star g)[n] = \sum_{m=-\infty}^{+\infty}{\overline{f[m]}g[m+n]} = \sum_{m=-\infty}^{+\infty}\overline{f[m-n]}g[m]
 
 \]</div>
 <dl class="field-list simple">
@@ -351,7 +264,7 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>f</strong> (<em>numpy array</em>) – data1</p></li>
 <li><p><strong>g</strong> (<em>numpy array</em>) – daat2</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">'full'</span></code>: returns the full correlation,</p></li>
 <li><dl class="simple">
 <dt><code class="docutils literal notranslate"><span class="pre">'same'</span></code>: returns the central part of the correlation</dt><dd><p>that is the same size as f (default).</p>
@@ -373,23 +286,23 @@ LENGTH(y)is MAX(LENGTH(f)-MAX(0,LENGTH(g)-1),0).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.cutfftcorr1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">cutfftcorr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.cutfftcorr1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">cutfftcorr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nx</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Nh</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.cutfftcorr1" title="Permalink to this definition"></a></dt>
 <dd><p>Throwaway boundary elements to get correlation results.</p>
 <p>Throwaway boundary elements to get correlation results.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>y</strong> (<em>numpy array</em>) – array after <code class="docutils literal notranslate"><span class="pre">iff</span></code>.</p></li>
-<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – number of fft points.</p></li>
-<li><p><strong>Nx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – signal length</p></li>
-<li><p><strong>Nh</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – filter length</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a>) – output shape:
+<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – number of fft points.</p></li>
+<li><p><strong>Nx</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – signal length</p></li>
+<li><p><strong>Nh</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – filter length</p></li>
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span></code> –&gt; same size as input x, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span></code> –&gt; valid correlation output
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span></code> –&gt; full correlation output, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – correlation axis (the default is 0)</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to shift the frequencies (the default is False)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – correlation axis (the default is 0)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – whether to shift the frequencies (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -403,7 +316,7 @@ LENGTH(y)is MAX(LENGTH(f)-MAX(0,LENGTH(g)-1),0).</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.fftcorr1">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">fftcorr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.fftcorr1" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">fftcorr1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ftshift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eps</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.fftcorr1" title="Permalink to this definition"></a></dt>
 <dd><p>Correlation using Fast Fourier Transformation</p>
 <p>Correlation using Fast Fourier Transformation.</p>
 <dl class="field-list simple">
@@ -411,21 +324,21 @@ LENGTH(y)is MAX(LENGTH(f)-MAX(0,LENGTH(g)-1),0).</p>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>numpy array</em>) – data to be convolved.</p></li>
 <li><p><strong>h</strong> (<em>numpy array</em>) – filter array, it will be expanded to the same dimensions of <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> first.</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span></code> –&gt; same size as input x, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span></code> –&gt; valid correlation output
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span></code> –&gt; full correlation output, <span class="math">\(N_x+N_h-1\)</span>
 (the default is ‘same’)</p></li>
-<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>None</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> will be treated as real-valued.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – axis of correlation operation (the default is 0, which means the first dimension)</p></li>
-<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
-and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
-<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – number of fft points (the default is None, <span class="math">\(2^{nextpow2(N_x+N_h-1)}\)</span>),
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – axis of correlation operation (the default is 0, which means the first dimension)</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
+and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
+<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – number of fft points (the default is None, <span class="math">\(2^{nextpow2(N_x+N_h-1)}\)</span>),
 note that <code class="xref py py-attr docutils literal notranslate"><span class="pre">nfft</span></code> can not be smaller than <span class="math">\(N_x+N_h-1\)</span>.</p></li>
-<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
-<li><p><strong>eps</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
+<li><p><strong>ftshift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – whether shift frequencies (the default is False)</p></li>
+<li><p><strong>eps</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – x[abs(x)&lt;eps] = 0 (the default is None, does nothing)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -439,18 +352,18 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.correlation.xcorr">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">xcorr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.xcorr" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.correlation.</span></span><span class="sig-name descname"><span class="pre">xcorr</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">A</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">B</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.correlation.xcorr" title="Permalink to this definition"></a></dt>
 <dd><p>Cross-correlation function estimates.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>A</strong> (<em>numpy array</em>) – data1</p></li>
 <li><p><strong>B</strong> (<em>numpy array</em>) – data2</p></li>
-<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
+<li><p><strong>shape</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – output shape:
 1. <code class="docutils literal notranslate"><span class="pre">'same'</span></code> –&gt; same size as input x, <span class="math">\(N_x\)</span>
 2. <code class="docutils literal notranslate"><span class="pre">'valid'</span></code> –&gt; valid correlation output
 3. <code class="docutils literal notranslate"><span class="pre">'full'</span></code> –&gt; full correlation output, <span class="math">\(N_x+N_h-1\)</span></p></li>
-<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
+<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">'biased'</span></code>: scales the raw cross-correlation by 1/M.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">'unbiased'</span></code>: scales the raw correlation by 1/(M-abs(lags)).</p></li>
 <li><dl class="simple">
@@ -458,7 +371,7 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 </dd>
 </dl>
 </li>
-<li><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>: no scaling (this is the default).</p></li>
+<li><p><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a>: no scaling (this is the default).</p></li>
 </ul>
 </p></li>
 </ul>
@@ -468,27 +381,27 @@ note that <code class="xref py py-attr docutils literal notranslate"><span class
 
 </section>
 <section id="module-pyaibox.dsp.ffts">
-<span id="pyaibox-dsp-ffts-module"></span><h2>pyaibox.dsp.ffts module<a class="headerlink" href="#module-pyaibox.dsp.ffts" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-ffts-module"></span><h2>pyaibox.dsp.ffts module<a class="headerlink" href="#module-pyaibox.dsp.ffts" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.fft">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fft" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fft" title="Permalink to this definition"></a></dt>
 <dd><p>FFT in pyaibox</p>
 <p>FFT in pyaibox, both real and complex valued tensors are supported.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>array</em>) – When <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex, it can be either in real-representation format or complex-representation format.</p></li>
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – The number of fft points (the default is None –&gt; equals to signal dimension)</p></li>
-<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – The number of fft points (the default is None –&gt; equals to signal dimension)</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>None</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – axis of fft operation (the default is 0, which means the first dimension)</p></li>
-<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
-and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
-<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – Normalization mode. For the forward transform (fft()), these correspond to:
-- <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> - no normalization (default)
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – axis of fft operation (the default is 0, which means the first dimension)</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
+and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
+<li><p><strong>norm</strong> (<em>None</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – Normalization mode. For the forward transform (fft()), these correspond to:
+- <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> - no normalization (default)
 - “ortho” - normalize by <code class="docutils literal notranslate"><span class="pre">1/sqrt(n)</span></code> (making the FFT orthonormal)</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – shift the zero frequency to center (the default is False)</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – shift the zero frequency to center (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -602,13 +515,13 @@ and <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.fft2">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fft2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fft2" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fft2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">img</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fft2" title="Permalink to this definition"></a></dt>
 <dd><p>Improved 2D fft</p>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.fftfreq">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftfreq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftfreq" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftfreq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftfreq" title="Permalink to this definition"></a></dt>
 <dd><p>Return the Discrete Fourier Transform sample frequencies</p>
 <p>Return the Discrete Fourier Transform sample frequencies.</p>
 <p>Given a window length <cite>n</cite> and a sample rate <cite>fs</cite>, if shift is <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
@@ -625,10 +538,10 @@ and <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – Sampling rate.</p></li>
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Number of samples.</p></li>
-<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
+<li><p><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Sampling rate.</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Number of samples.</p></li>
+<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -642,7 +555,7 @@ and <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.fftshift">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftshift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftshift" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftshift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftshift" title="Permalink to this definition"></a></dt>
 <dd><p>Shift the zero-frequency component to the center of the spectrum.</p>
 <p>This function swaps half-spaces for all axes listed (defaults to all).
 Note that <code class="docutils literal notranslate"><span class="pre">y[0]</span></code> is the Nyquist component only if <code class="docutils literal notranslate"><span class="pre">len(x)</span></code> is even.</p>
@@ -650,7 +563,7 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>numpy array</em>) – The input array.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -671,17 +584,17 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.fftx">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftx" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">fftx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.fftx" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.ffty">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ffty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ffty" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ffty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ffty" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.freq">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">freq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.freq" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">freq</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.freq" title="Permalink to this definition"></a></dt>
 <dd><p>Return the sample frequencies</p>
 <p>Return the sample frequencies.</p>
 <p>Given a window length <cite>n</cite> and a sample rate <cite>fs</cite>, if shift is <code class="docutils literal notranslate"><span class="pre">True</span></code>:</p>
@@ -696,10 +609,10 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a>) – Number of samples.</p></li>
-<li><p><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a>) – Sampling rate.</p></li>
-<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a>) – Number of samples.</p></li>
+<li><p><strong>fs</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a>) – Sampling rate.</p></li>
+<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Normalize the frequencies.</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – Does shift the zero frequency to center.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -713,24 +626,24 @@ Note that <code class="docutils literal notranslate"><span class="pre">y[0]</spa
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.ifft">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifft" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">keepcaxis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">norm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifft" title="Permalink to this definition"></a></dt>
 <dd><p>IFFT in pyaibox</p>
 <p>IFFT in pyaibox, both real and complex valued tensors are supported.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>array</em>) – When <code class="xref py py-attr docutils literal notranslate"><span class="pre">x</span></code> is complex, it can be either in real-representation format or complex-representation format.</p></li>
-<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – The number of ifft points (the default is None –&gt; equals to signal dimension)</p></li>
-<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
+<li><p><strong>n</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – The number of ifft points (the default is None –&gt; equals to signal dimension)</p></li>
+<li><p><strong>caxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>None</em>) – If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is ignored. If <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is real-valued and <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> is integer
 then <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as complex-valued, in this case, <code class="xref py py-attr docutils literal notranslate"><span class="pre">caxis</span></code> specifies the complex axis;
 otherwise (None), <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> will be treated as real-valued.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – axis of fft operation (the default is 0, which means the first dimension)</p></li>
-<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
-and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
-<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Normalization mode. For the backward transform (ifft()), these correspond to:
-- <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> - no normalization (default)
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – axis of fft operation (the default is 0, which means the first dimension)</p></li>
+<li><p><strong>keepcaxis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a>) – If <a class="reference external" href="https://docs.python.org/3/library/constants.html#True" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">True</span></code></a>, the complex dimension will be keeped. Only works when <code class="xref py py-attr docutils literal notranslate"><span class="pre">X</span></code> is complex-valued array
+and <code class="xref py py-attr docutils literal notranslate"><span class="pre">axis</span></code> is not <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> but represents in real format. Default is <a class="reference external" href="https://docs.python.org/3/library/constants.html#False" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">False</span></code></a>.</p></li>
+<li><p><strong>norm</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Normalization mode. For the backward transform (ifft()), these correspond to:
+- <a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.11)"><code class="xref py py-obj docutils literal notranslate"><span class="pre">None</span></code></a> - no normalization (default)
 - “ortho” - normalize by 1``/sqrt(n)`` (making the IFFT orthonormal)</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – shift the zero frequency to center (the default is False)</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – shift the zero frequency to center (the default is False)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -745,7 +658,7 @@ and <code class="xref py py-attr docutils literal notranslate"><span class="pre"
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.ifftshift">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifftshift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifftshift" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifftshift</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifftshift" title="Permalink to this definition"></a></dt>
 <dd><p>Shift the zero-frequency component back.</p>
 <p>The inverse of <a class="reference internal" href="#pyaibox.dsp.ffts.fftshift" title="pyaibox.dsp.ffts.fftshift"><code class="xref py py-func docutils literal notranslate"><span class="pre">fftshift()</span></code></a>. Although identical for even-length <cite>x</cite>, the
 functions differ by one sample for odd-length <cite>x</cite>.</p>
@@ -753,7 +666,7 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>numpy array</em>) – The input array.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Axes over which to shift. (Default is None, which shifts all axes.)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -801,26 +714,26 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.ifftx">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifftx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifftx" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">ifftx</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.ifftx" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.iffty">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">iffty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.iffty" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">iffty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.iffty" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.ffts.padfft">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">padfft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.padfft" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.ffts.</span></span><span class="sig-name descname"><span class="pre">padfft</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nfft</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shift</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.ffts.padfft" title="Permalink to this definition"></a></dt>
 <dd><p>PADFT Pad array for doing FFT or IFFT</p>
 <p>PADFT Pad array for doing FFT or IFFT</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>X</strong> (<em>ndarray</em>) – Data to be padded.</p></li>
-<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/constants.html#None" title="(in Python v3.10)"><em>None</em></a>) – the number of fft point.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Padding dimension. (the default is 0)</p></li>
-<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.10)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to shift the frequency (the default is False)</p></li>
+<li><p><strong>nfft</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em> or </em><em>None</em>) – the number of fft point.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Padding dimension. (the default is 0)</p></li>
+<li><p><strong>shift</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#bool" title="(in Python v3.11)"><em>bool</em></a><em>, </em><em>optional</em>) – Whether to shift the frequency (the default is False)</p></li>
 </ul>
 </dd>
 </dl>
@@ -828,10 +741,10 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 
 </section>
 <section id="module-pyaibox.dsp.function_base">
-<span id="pyaibox-dsp-function-base-module"></span><h2>pyaibox.dsp.function_base module<a class="headerlink" href="#module-pyaibox.dsp.function_base" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-function-base-module"></span><h2>pyaibox.dsp.function_base module<a class="headerlink" href="#module-pyaibox.dsp.function_base" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.function_base.unwrap">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.function_base.unwrap" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.function_base.unwrap" title="Permalink to this definition"></a></dt>
 <dd><p>Unwrap by changing deltas between values to <span class="math">\(2\pi\)</span> complement.</p>
 <p>Unwrap radian phase <cite>x</cite> by changing absoluted jumps greater than
 <cite>discont</cite> to their <span class="math">\(2\pi\)</span> complement along the given axis.</p>
@@ -839,8 +752,8 @@ functions differ by one sample for odd-length <cite>x</cite>.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>ndarray</em>) – The input.</p></li>
-<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is <span class="math">\(\pi\)</span>.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
+<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is <span class="math">\(\pi\)</span>.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -864,7 +777,7 @@ tensor([3.1400, 3.1632, 3.1200, 3.1300, 3.1732], dtype=torch.float64) torch.Size
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.function_base.unwrap2">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-</span> <span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.function_base.unwrap2" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.function_base.</span></span><span class="sig-name descname"><span class="pre">unwrap2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">discont</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3.141592653589793</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">-1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.function_base.unwrap2" title="Permalink to this definition"></a></dt>
 <dd><p>Unwrap by changing deltas between values to <span class="math">\(2\pi\)</span> complement.</p>
 <p>Unwrap radian phase <cite>x</cite> by changing absoluted jumps greater than
 <cite>discont</cite> to their <span class="math">\(2\pi\)</span> complement along the given axis. The elements
@@ -875,8 +788,8 @@ is unwrapped in normal order.</p>
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>Tensor</em>) – The input.</p></li>
-<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is <span class="math">\(\pi\)</span>.</p></li>
-<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.10)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
+<li><p><strong>discont</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em>, </em><em>optional</em>) – Maximum discontinuity between values, default is <span class="math">\(\pi\)</span>.</p></li>
+<li><p><strong>axis</strong> (<a class="reference external" href="https://docs.python.org/3/library/functions.html#int" title="(in Python v3.11)"><em>int</em></a><em>, </em><em>optional</em>) – Axis along which unwrap will operate, default is the last axis.</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
@@ -910,61 +823,61 @@ print(y, y.shape, type(y))
 
 </section>
 <section id="module-pyaibox.dsp.interpolation1d">
-<span id="pyaibox-dsp-interpolation1d-module"></span><h2>pyaibox.dsp.interpolation1d module<a class="headerlink" href="#module-pyaibox.dsp.interpolation1d" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-interpolation1d-module"></span><h2>pyaibox.dsp.interpolation1d module<a class="headerlink" href="#module-pyaibox.dsp.interpolation1d" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.interpolation1d.interp">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sinc'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.interp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yp</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mod</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'sinc'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.interp" title="Permalink to this definition"></a></dt>
 <dd><p>interpolation</p>
 <p>interpolation</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>x</strong> (<em>array_like</em>) – The x-coordinates of the interpolated values.</p></li>
-<li><p><strong>xp</strong> (<em>1-D sequence of floats</em>) – The x-coordinates of the data points, must be increasing if argument
+<li><p><strong>xp</strong> (<em>1-D sequence</em><em> of </em><em>floats</em>) – The x-coordinates of the data points, must be increasing if argument
 <cite>period</cite> is not specified. Otherwise, <cite>xp</cite> is internally sorted after
 normalizing the periodic boundaries with <code class="docutils literal notranslate"><span class="pre">xp</span> <span class="pre">=</span> <span class="pre">xp</span> <span class="pre">%</span> <span class="pre">period</span></code>.</p></li>
-<li><p><strong>yp</strong> (<em>1-D sequence of float</em><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)"><em>complex</em></a>) – The y-coordinates of the data points, same length as <cite>xp</cite>.</p></li>
-<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.10)"><em>str</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'sinc'</span></code> : sinc interpolation (the default is ‘sinc’)</p></li>
+<li><p><strong>yp</strong> (<em>1-D sequence</em><em> of </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)"><em>float</em></a><em> or </em><a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)"><em>complex</em></a>) – The y-coordinates of the data points, same length as <cite>xp</cite>.</p></li>
+<li><p><strong>mod</strong> (<a class="reference external" href="https://docs.python.org/3/library/stdtypes.html#str" title="(in Python v3.11)"><em>str</em></a><em>, </em><em>optional</em>) – <code class="docutils literal notranslate"><span class="pre">'sinc'</span></code> : sinc interpolation (the default is ‘sinc’)</p></li>
 </ul>
 </dd>
 <dt class="field-even">Returns</dt>
 <dd class="field-even"><p><strong>y</strong> – The interpolated values, same shape as <cite>x</cite>.</p>
 </dd>
 <dt class="field-odd">Return type</dt>
-<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.10)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.10)">complex</a> (corresponding to fp) or ndarray</p>
+<dd class="field-odd"><p><a class="reference external" href="https://docs.python.org/3/library/functions.html#float" title="(in Python v3.11)">float</a> or <a class="reference external" href="https://docs.python.org/3/library/functions.html#complex" title="(in Python v3.11)">complex</a> (corresponding to fp) or ndarray</p>
 </dd>
 </dl>
 </dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.interpolation1d.sinc">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.interpolation1d.sinc_interp">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc_interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc_interp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc_interp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xin</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc_interp" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.interpolation1d.sinc_table">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Nq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc_table" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation1d.</span></span><span class="sig-name descname"><span class="pre">sinc_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">Nq</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Ns</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation1d.sinc_table" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-pyaibox.dsp.interpolation2d">
-<span id="pyaibox-dsp-interpolation2d-module"></span><h2>pyaibox.dsp.interpolation2d module<a class="headerlink" href="#module-pyaibox.dsp.interpolation2d" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-interpolation2d-module"></span><h2>pyaibox.dsp.interpolation2d module<a class="headerlink" href="#module-pyaibox.dsp.interpolation2d" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.interpolation2d.interp2d">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation2d.</span></span><span class="sig-name descname"><span class="pre">interp2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cubic'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation2d.interp2d" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.interpolation2d.</span></span><span class="sig-name descname"><span class="pre">interp2d</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">X</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(2,</span> <span class="pre">2)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">axis</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">(0,</span> <span class="pre">1)</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'cubic'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.interpolation2d.interp2d" title="Permalink to this definition"></a></dt>
 <dd></dd></dl>
 
 </section>
 <section id="module-pyaibox.dsp.normalsignals">
-<span id="pyaibox-dsp-normalsignals-module"></span><h2>pyaibox.dsp.normalsignals module<a class="headerlink" href="#module-pyaibox.dsp.normalsignals" title="Permalink to this headline">¶</a></h2>
+<span id="pyaibox-dsp-normalsignals-module"></span><h2>pyaibox.dsp.normalsignals module<a class="headerlink" href="#module-pyaibox.dsp.normalsignals" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.normalsignals.chirp">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">chirp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Kr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.chirp" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">chirp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">t</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">T</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">Kr</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.chirp" title="Permalink to this definition"></a></dt>
 <dd><p>Create a chirp signal:
 .. math:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">S_</span><span class="p">{</span><span class="n">tx</span><span class="p">}(</span><span class="n">t</span><span class="p">)</span> <span class="o">=</span> <span class="n">rect</span><span class="p">(</span><span class="n">t</span><span class="o">/</span><span class="n">T</span><span class="p">)</span> <span class="o">*</span> <span class="n">exp</span><span class="p">(</span><span class="mi">1</span><span class="n">j</span><span class="o">*</span><span class="n">pi</span><span class="o">*</span><span class="n">Kr</span><span class="o">*</span><span class="n">t</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span>
@@ -974,7 +887,7 @@ normalizing the periodic boundaries with <code class="docutils literal notransla
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.normalsignals.hs">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">hs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.hs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">hs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.hs" title="Permalink to this definition"></a></dt>
 <dd><p>Heavyside function :
 .. math:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">hv</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="k">if</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">otherwise</span><span class="p">}</span>
@@ -984,7 +897,7 @@ normalizing the periodic boundaries with <code class="docutils literal notransla
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.normalsignals.ihs">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">ihs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.ihs" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">ihs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.ihs" title="Permalink to this definition"></a></dt>
 <dd><p>Inverse Heavyside function:
 .. math:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">ihv</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="k">if</span> <span class="n">x</span><span class="o">&gt;=</span><span class="mi">0</span><span class="p">;</span> <span class="mi">1</span><span class="p">,</span> <span class="n">otherwise</span><span class="p">}</span>
@@ -994,7 +907,7 @@ normalizing the periodic boundaries with <code class="docutils literal notransla
 
 <dl class="py function">
 <dt class="sig sig-object py" id="pyaibox.dsp.normalsignals.rect">
-<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">rect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.rect" title="Permalink to this definition">¶</a></dt>
+<span class="sig-prename descclassname"><span class="pre">pyaibox.dsp.normalsignals.</span></span><span class="sig-name descname"><span class="pre">rect</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#pyaibox.dsp.normalsignals.rect" title="Permalink to this definition"></a></dt>
 <dd><p>Rectangle function:
 .. math:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">rect</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="p">{</span><span class="mi">1</span><span class="p">,</span> <span class="k">if</span> <span class="o">|</span><span class="n">x</span><span class="o">|&lt;=</span> <span class="mf">0.5</span><span class="p">;</span> <span class="mi">0</span><span class="p">,</span> <span class="n">otherwise</span><span class="p">}</span>
@@ -1004,64 +917,39 @@ normalizing the periodic boundaries with <code class="docutils literal notransla
 
 </section>
 <section id="module-pyaibox.dsp">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyaibox.dsp" title="Permalink to this headline">¶</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pyaibox.dsp" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 
 
            </div>
-           
           </div>
-          <footer>
-  
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="pyaibox.evaluation.html" class="btn btn-neutral float-right" title="pyaibox.evaluation package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="pyaibox.datasets.html" class="btn btn-neutral float-left" title="pyaibox.datasets package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="pyaibox.datasets.html" class="btn btn-neutral float-left" title="pyaibox.datasets package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pyaibox.evaluation.html" class="btn btn-neutral float-right" title="pyaibox.evaluation package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        
-        &copy; Copyright 2018-, Zhi Liu
-
-    </p>
+    <p>&#169; Copyright 2018-, Zhi Liu.</p>
   </div>
-    
-    
-    
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
-    
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
-
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
