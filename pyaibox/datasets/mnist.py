@@ -71,7 +71,7 @@ def read_mnist(rootdir, dataset='test', fmt='ubyte'):
 
         rootdir = '/mnt/d/DataSets/oi/dgi/mnist/pics/'
         dataset = 'test'
-        X, Y = read_mnist(rootdir=rootdir, dataset=dataset, fmt='image')
+        X, Y = pb.read_mnist(rootdir=rootdir, dataset=dataset, fmt='image')
         print(X.shape, Y.shape)
 
         rootdir = '/mnt/d/DataSets/oi/dgi/mnist/official/'

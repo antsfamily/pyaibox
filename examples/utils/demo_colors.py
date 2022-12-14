@@ -13,7 +13,7 @@ cmap = 'jet'
 # cmap = 'hsv'
 # cmap = 'hot'
 # cmap = 'parula'
-gray = pb.imread('../../data/images/oi/LenaGRAY256.png')
+gray = pb.imread('data/images/oi/LenaGRAY256.png')
 print(gray.shape)
 
 rgb = pb.gray2rgb(gray, cmap, [0, 1], False)  # rgb --> double, [0, 1]
