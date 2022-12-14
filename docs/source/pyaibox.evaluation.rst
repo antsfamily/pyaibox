@@ -4,6 +4,14 @@ pyaibox.evaluation package
 Submodules
 ----------
 
+pyaibox.evaluation.classification module
+----------------------------------------
+
+.. automodule:: pyaibox.evaluation.classification
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 pyaibox.evaluation.contrast module
 ----------------------------------
 

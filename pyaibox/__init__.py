@@ -23,6 +23,7 @@ from .base.typevalue import peakvalue, dtypes
 
 from .summary.loss_log import LossLog
 
+from .evaluation.classification import categorical2onehot, onehot2categorical, accuracy, confusion, kappa, plot_confusion
 from .evaluation.contrast import contrast
 from .evaluation.entropy import entropy
 from .evaluation.norm import fnorm, pnorm

@@ -34,12 +34,14 @@ import six
 
 def bbox_iou(bbox_a, bbox_b):
     r"""Calculate the Intersection of Unions (IoUs) between bounding boxes.
+
     IoU is calculated as a ratio of area of the intersection
     and area of the union.
     This function accepts both :obj:`numpy.ndarray` and :obj:`cupy.ndarray` as
     inputs. Please note that both :obj:`bbox_a` and :obj:`bbox_b` need to be
     same type.
     The output is same type as the type of the inputs.
+
     Args:
         bbox_a (array): An array whose shape is :math:`(N, 4)`.
             :math:`N` is the number of bounding boxes.
@@ -48,12 +50,13 @@ def bbox_iou(bbox_a, bbox_b):
             whose shape is :math:`(K, 4)`.
             The dtype should be :obj:`numpy.float32`.
     Returns:
-        array:
-        An array whose shape is :math:`(N, K)`. \
-        An element at index :math:`(n, k)` contains IoUs between \
-        :math:`n` th bounding box in :obj:`bbox_a` and :math:`k` th bounding \
+        array
+        An array whose shape is :math:`(N, K)`.
+        An element at index :math:`(n, k)` contains IoUs between
+        :math:`n` th bounding box in :obj:`bbox_a` and :math:`k` th bounding
         box in :obj:`bbox_b`.
     """
+
     if bbox_a.shape[1] != 4 or bbox_b.shape[1] != 4:
         raise IndexError
 
@@ -68,15 +71,7 @@ def bbox_iou(bbox_a, bbox_b):
     return area_i / (area_a[:, None] + area_b - area_i)
 
 
-def eval_detection_voc(
-        pred_bboxes,
-        pred_labels,
-        pred_scores,
-        gt_bboxes,
-        gt_labels,
-        gt_difficults=None,
-        iou_thresh=0.5,
-        use_07_metric=False):
+def eval_detection_voc(pred_bboxes, pred_labels, pred_scores, gt_bboxes, gt_labels, gt_difficults=None, iou_thresh=0.5, use_07_metric=False):
     r"""Calculate average precisions based on evaluation code of PASCAL VOC.
 
     This function evaluates predicted bounding boxes obtained from a dataset
@@ -126,32 +121,23 @@ def eval_detection_voc(
         The keys, value-types and the description of the values are listed
         below.
 
-        - **ap** (ndarray): An array of average precisions. \
-            The :math:`l`-th value corresponds to the average precision \
-            for class :math:`l`. If class :math:`l` does not exist in \
-            either :obj:`pred_labels` or :obj:`gt_labels`, the corresponding \
-            value is set to :obj:`numpy.nan`.
+        - **ap** (ndarray): An array of average precisions.
+            The :math:`l`-th value corresponds to the average precision
+            for class :math:`l`. If class :math:`l` does not exist in 
+            either :obj:`pred_labels` or :obj:`gt_labels`, 
+            the corresponding value is set to :obj:`numpy.nan`.
         - **map** (float): The average of Average Precisions over classes.
 
     """
 
-    prec, rec = calc_detection_voc_prec_rec(pred_bboxes,
-                                            pred_labels,
-                                            pred_scores,
-                                            gt_bboxes,
-                                            gt_labels,
-                                            gt_difficults,
-                                            iou_thresh=iou_thresh)
+    prec, rec = calc_detection_voc_prec_rec(pred_bboxes, pred_labels, pred_scores, gt_bboxes, gt_labels, gt_difficults, iou_thresh=iou_thresh)
 
     ap = calc_detection_voc_ap(prec, rec, use_07_metric=use_07_metric)
 
     return {'ap': ap, 'map': np.nanmean(ap)}
 
 
-def calc_detection_voc_prec_rec(
-        pred_bboxes, pred_labels, pred_scores, gt_bboxes, gt_labels,
-        gt_difficults=None,
-        iou_thresh=0.5):
+def calc_detection_voc_prec_rec(pred_bboxes, pred_labels, pred_scores, gt_bboxes, gt_labels, gt_difficults=None, iou_thresh=0.5):
     r"""Calculate precision and recall based on evaluation code of PASCAL VOC.
 
     This function calculates precision and recall of
@@ -197,15 +183,13 @@ def calc_detection_voc_prec_rec(
         tuple of two lists:
         This function returns two lists: :obj:`prec` and :obj:`rec`.
 
-        * :obj:`prec`: A list of arrays. :obj:`prec[l]` is precision \
-            for class :math:`l`. If class :math:`l` does not exist in \
-            either :obj:`pred_labels` or :obj:`gt_labels`, :obj:`prec[l]` is \
+        * :obj:`prec`: A list of arrays. :obj:`prec[l]` is precision
+            for class :math:`l`. If class :math:`l` does not exist in
+            either :obj:`pred_labels` or :obj:`gt_labels`, :obj:`prec[l]` is
             set to :obj:`None`.
-        * :obj:`rec`: A list of arrays. :obj:`rec[l]` is recall \
-            for class :math:`l`. If class :math:`l` that is not marked as \
-            difficult does not exist in \
-            :obj:`gt_labels`, :obj:`rec[l]` is \
-            set to :obj:`None`.
+        * :obj:`rec`: A list of arrays. :obj:`rec[l]` is recall
+            for class :math:`l`. If class :math:`l` that is not marked as
+            difficult does not exist in :obj:`gt_labels`, :obj:`rec[l]` is set to :obj:`None`.
 
     """
 

@@ -1812,17 +1812,18 @@ static PyObject *__pyx_codeobj__39;
 static PyObject *__pyx_codeobj__41;
 /* Late includes */
 
-/* "pyaibox/compression/huffman_coding.py":12
- * 
+/* "pyaibox/compression/huffman_coding.py":11
  * class HuffmanCoding:
+ * 
  *     def __init__(self, path):             # <<<<<<<<<<<<<<
- *         self.path = path
- *         self.heap = []
+ *         r"""HuffmanCoding
+ * 
  */
 
 /* Python wrapper */
 static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds); /*proto*/
-static PyMethodDef __pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__, METH_VARARGS|METH_KEYWORDS, 0};
+static char __pyx_doc_7pyaibox_11compression_14huffman_coding_13HuffmanCoding___init__[] = "HuffmanCoding\n\n        Parameters\n        ----------\n        path : str\n            filepath\n        ";
+static PyMethodDef __pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__ = {"__init__", (PyCFunction)(void*)(PyCFunctionWithKeywords)__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__, METH_VARARGS|METH_KEYWORDS, __pyx_doc_7pyaibox_11compression_14huffman_coding_13HuffmanCoding___init__};
 static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__(PyObject *__pyx_self, PyObject *__pyx_args, PyObject *__pyx_kwds) {
   PyObject *__pyx_v_self = 0;
   PyObject *__pyx_v_path = 0;
@@ -1855,11 +1856,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_path)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, 1); __PYX_ERR(0, 12, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, 1); __PYX_ERR(0, 11, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 12, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 11, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -1872,7 +1873,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 12, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 11, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -1894,57 +1895,57 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":13
- * class HuffmanCoding:
- *     def __init__(self, path):
+  /* "pyaibox/compression/huffman_coding.py":20
+ *         """
+ * 
  *         self.path = path             # <<<<<<<<<<<<<<
  *         self.heap = []
  *         self.codes = {}
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_path, __pyx_v_path) < 0) __PYX_ERR(0, 13, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_path, __pyx_v_path) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":14
- *     def __init__(self, path):
+  /* "pyaibox/compression/huffman_coding.py":21
+ * 
  *         self.path = path
  *         self.heap = []             # <<<<<<<<<<<<<<
  *         self.codes = {}
  *         self.reverse_mapping = {}
  */
-  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 14, __pyx_L1_error)
+  __pyx_t_1 = PyList_New(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_heap, __pyx_t_1) < 0) __PYX_ERR(0, 14, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_heap, __pyx_t_1) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":15
+  /* "pyaibox/compression/huffman_coding.py":22
  *         self.path = path
  *         self.heap = []
  *         self.codes = {}             # <<<<<<<<<<<<<<
  *         self.reverse_mapping = {}
  * 
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 15, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_codes, __pyx_t_1) < 0) __PYX_ERR(0, 15, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_codes, __pyx_t_1) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":16
+  /* "pyaibox/compression/huffman_coding.py":23
  *         self.heap = []
  *         self.codes = {}
  *         self.reverse_mapping = {}             # <<<<<<<<<<<<<<
  * 
  *     class HeapNode:
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 16, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping, __pyx_t_1) < 0) __PYX_ERR(0, 16, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping, __pyx_t_1) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":12
- * 
+  /* "pyaibox/compression/huffman_coding.py":11
  * class HuffmanCoding:
+ * 
  *     def __init__(self, path):             # <<<<<<<<<<<<<<
- *         self.path = path
- *         self.heap = []
+ *         r"""HuffmanCoding
+ * 
  */
 
   /* function exit code */
@@ -1960,7 +1961,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":19
+/* "pyaibox/compression/huffman_coding.py":26
  * 
  *     class HeapNode:
  *         def __init__(self, char, freq):             # <<<<<<<<<<<<<<
@@ -2006,17 +2007,17 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_1__i
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_char)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 19, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 1); __PYX_ERR(0, 26, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_freq)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 19, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, 2); __PYX_ERR(0, 26, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 19, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__init__") < 0)) __PYX_ERR(0, 26, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -2031,7 +2032,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_1__i
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 19, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__init__", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 26, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HeapNode.__init__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2052,43 +2053,43 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode___in
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__init__", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":20
+  /* "pyaibox/compression/huffman_coding.py":27
  *     class HeapNode:
  *         def __init__(self, char, freq):
  *             self.char = char             # <<<<<<<<<<<<<<
  *             self.freq = freq
  *             self.left = None
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_char, __pyx_v_char) < 0) __PYX_ERR(0, 20, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_char, __pyx_v_char) < 0) __PYX_ERR(0, 27, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":21
+  /* "pyaibox/compression/huffman_coding.py":28
  *         def __init__(self, char, freq):
  *             self.char = char
  *             self.freq = freq             # <<<<<<<<<<<<<<
  *             self.left = None
  *             self.right = None
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_freq, __pyx_v_freq) < 0) __PYX_ERR(0, 21, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_freq, __pyx_v_freq) < 0) __PYX_ERR(0, 28, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":22
+  /* "pyaibox/compression/huffman_coding.py":29
  *             self.char = char
  *             self.freq = freq
  *             self.left = None             # <<<<<<<<<<<<<<
  *             self.right = None
  * 
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_left, Py_None) < 0) __PYX_ERR(0, 22, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_left, Py_None) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":23
+  /* "pyaibox/compression/huffman_coding.py":30
  *             self.freq = freq
  *             self.left = None
  *             self.right = None             # <<<<<<<<<<<<<<
  * 
  *         # defining comparators less_than and equals
  */
-  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_right, Py_None) < 0) __PYX_ERR(0, 23, __pyx_L1_error)
+  if (__Pyx_PyObject_SetAttrStr(__pyx_v_self, __pyx_n_s_right, Py_None) < 0) __PYX_ERR(0, 30, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":19
+  /* "pyaibox/compression/huffman_coding.py":26
  * 
  *     class HeapNode:
  *         def __init__(self, char, freq):             # <<<<<<<<<<<<<<
@@ -2108,7 +2109,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode___in
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":26
+/* "pyaibox/compression/huffman_coding.py":33
  * 
  *         # defining comparators less_than and equals
  *         def __lt__(self, other):             # <<<<<<<<<<<<<<
@@ -2151,11 +2152,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_3__l
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_other)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__lt__", 1, 2, 2, 1); __PYX_ERR(0, 26, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__lt__", 1, 2, 2, 1); __PYX_ERR(0, 33, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__lt__") < 0)) __PYX_ERR(0, 26, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__lt__") < 0)) __PYX_ERR(0, 33, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2168,7 +2169,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_3__l
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__lt__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 26, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__lt__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 33, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HeapNode.__lt__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2192,7 +2193,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_2__l
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__lt__", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":27
+  /* "pyaibox/compression/huffman_coding.py":34
  *         # defining comparators less_than and equals
  *         def __lt__(self, other):
  *             return self.freq < other.freq             # <<<<<<<<<<<<<<
@@ -2200,18 +2201,18 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_2__l
  *         def __eq__(self, other):
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_freq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_freq); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_other, __pyx_n_s_freq); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_other, __pyx_n_s_freq); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 27, __pyx_L1_error)
+  __pyx_t_3 = PyObject_RichCompare(__pyx_t_1, __pyx_t_2, Py_LT); __Pyx_XGOTREF(__pyx_t_3); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_r = __pyx_t_3;
   __pyx_t_3 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":26
+  /* "pyaibox/compression/huffman_coding.py":33
  * 
  *         # defining comparators less_than and equals
  *         def __lt__(self, other):             # <<<<<<<<<<<<<<
@@ -2232,7 +2233,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_2__l
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":29
+/* "pyaibox/compression/huffman_coding.py":36
  *             return self.freq < other.freq
  * 
  *         def __eq__(self, other):             # <<<<<<<<<<<<<<
@@ -2275,11 +2276,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_5__e
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_other)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("__eq__", 1, 2, 2, 1); __PYX_ERR(0, 29, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("__eq__", 1, 2, 2, 1); __PYX_ERR(0, 36, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__eq__") < 0)) __PYX_ERR(0, 29, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "__eq__") < 0)) __PYX_ERR(0, 36, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2292,7 +2293,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_8HeapNode_5__e
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("__eq__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 29, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("__eq__", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 36, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HeapNode.__eq__", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2318,7 +2319,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("__eq__", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":30
+  /* "pyaibox/compression/huffman_coding.py":37
  * 
  *         def __eq__(self, other):
  *             if other is None:             # <<<<<<<<<<<<<<
@@ -2329,7 +2330,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/compression/huffman_coding.py":31
+    /* "pyaibox/compression/huffman_coding.py":38
  *         def __eq__(self, other):
  *             if other is None:
  *                 return False             # <<<<<<<<<<<<<<
@@ -2341,7 +2342,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "pyaibox/compression/huffman_coding.py":30
+    /* "pyaibox/compression/huffman_coding.py":37
  * 
  *         def __eq__(self, other):
  *             if other is None:             # <<<<<<<<<<<<<<
@@ -2350,21 +2351,21 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":32
+  /* "pyaibox/compression/huffman_coding.py":39
  *             if other is None:
  *                 return False
  *             if not isinstance(other, self.HeapNode):             # <<<<<<<<<<<<<<
  *                 return False
  *             return self.freq == other.freq
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_2 = PyObject_IsInstance(__pyx_v_other, __pyx_t_3); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 32, __pyx_L1_error)
+  __pyx_t_2 = PyObject_IsInstance(__pyx_v_other, __pyx_t_3); if (unlikely(__pyx_t_2 == ((int)-1))) __PYX_ERR(0, 39, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_1 = ((!(__pyx_t_2 != 0)) != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/compression/huffman_coding.py":33
+    /* "pyaibox/compression/huffman_coding.py":40
  *                 return False
  *             if not isinstance(other, self.HeapNode):
  *                 return False             # <<<<<<<<<<<<<<
@@ -2376,7 +2377,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
     __pyx_r = Py_False;
     goto __pyx_L0;
 
-    /* "pyaibox/compression/huffman_coding.py":32
+    /* "pyaibox/compression/huffman_coding.py":39
  *             if other is None:
  *                 return False
  *             if not isinstance(other, self.HeapNode):             # <<<<<<<<<<<<<<
@@ -2385,7 +2386,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":34
+  /* "pyaibox/compression/huffman_coding.py":41
  *             if not isinstance(other, self.HeapNode):
  *                 return False
  *             return self.freq == other.freq             # <<<<<<<<<<<<<<
@@ -2393,18 +2394,18 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
  *     # functions for compression:
  */
   __Pyx_XDECREF(__pyx_r);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_freq); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_freq); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_other, __pyx_n_s_freq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_other, __pyx_n_s_freq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
-  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 34, __pyx_L1_error)
+  __pyx_t_5 = PyObject_RichCompare(__pyx_t_3, __pyx_t_4, Py_EQ); __Pyx_XGOTREF(__pyx_t_5); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 41, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   __pyx_r = __pyx_t_5;
   __pyx_t_5 = 0;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":29
+  /* "pyaibox/compression/huffman_coding.py":36
  *             return self.freq < other.freq
  * 
  *         def __eq__(self, other):             # <<<<<<<<<<<<<<
@@ -2425,7 +2426,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_8HeapNode_4__e
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":37
+/* "pyaibox/compression/huffman_coding.py":44
  * 
  *     # functions for compression:
  *     def make_frequency_dict(self, text):             # <<<<<<<<<<<<<<
@@ -2468,11 +2469,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("make_frequency_dict", 1, 2, 2, 1); __PYX_ERR(0, 37, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("make_frequency_dict", 1, 2, 2, 1); __PYX_ERR(0, 44, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_frequency_dict") < 0)) __PYX_ERR(0, 37, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_frequency_dict") < 0)) __PYX_ERR(0, 44, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2485,7 +2486,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("make_frequency_dict", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 37, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("make_frequency_dict", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 44, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.make_frequency_dict", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2516,19 +2517,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_frequency_dict", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":38
+  /* "pyaibox/compression/huffman_coding.py":45
  *     # functions for compression:
  *     def make_frequency_dict(self, text):
  *         frequency = {}             # <<<<<<<<<<<<<<
  *         for character in text:
  *             if character not in frequency:
  */
-  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 38, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 45, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_frequency = ((PyObject*)__pyx_t_1);
   __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":39
+  /* "pyaibox/compression/huffman_coding.py":46
  *     def make_frequency_dict(self, text):
  *         frequency = {}
  *         for character in text:             # <<<<<<<<<<<<<<
@@ -2539,26 +2540,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = __pyx_v_text; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 39, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 39, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2568,7 +2569,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 39, __pyx_L1_error)
+          else __PYX_ERR(0, 46, __pyx_L1_error)
         }
         break;
       }
@@ -2577,27 +2578,27 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_character, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":40
+    /* "pyaibox/compression/huffman_coding.py":47
  *         frequency = {}
  *         for character in text:
  *             if character not in frequency:             # <<<<<<<<<<<<<<
  *                 frequency[character] = 0
  *             frequency[character] += 1
  */
-    __pyx_t_5 = (__Pyx_PyDict_ContainsTF(__pyx_v_character, __pyx_v_frequency, Py_NE)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 40, __pyx_L1_error)
+    __pyx_t_5 = (__Pyx_PyDict_ContainsTF(__pyx_v_character, __pyx_v_frequency, Py_NE)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 47, __pyx_L1_error)
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "pyaibox/compression/huffman_coding.py":41
+      /* "pyaibox/compression/huffman_coding.py":48
  *         for character in text:
  *             if character not in frequency:
  *                 frequency[character] = 0             # <<<<<<<<<<<<<<
  *             frequency[character] += 1
  *         return frequency
  */
-      if (unlikely(PyDict_SetItem(__pyx_v_frequency, __pyx_v_character, __pyx_int_0) < 0)) __PYX_ERR(0, 41, __pyx_L1_error)
+      if (unlikely(PyDict_SetItem(__pyx_v_frequency, __pyx_v_character, __pyx_int_0) < 0)) __PYX_ERR(0, 48, __pyx_L1_error)
 
-      /* "pyaibox/compression/huffman_coding.py":40
+      /* "pyaibox/compression/huffman_coding.py":47
  *         frequency = {}
  *         for character in text:
  *             if character not in frequency:             # <<<<<<<<<<<<<<
@@ -2606,7 +2607,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
     }
 
-    /* "pyaibox/compression/huffman_coding.py":42
+    /* "pyaibox/compression/huffman_coding.py":49
  *             if character not in frequency:
  *                 frequency[character] = 0
  *             frequency[character] += 1             # <<<<<<<<<<<<<<
@@ -2615,16 +2616,16 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
     __Pyx_INCREF(__pyx_v_character);
     __pyx_t_4 = __pyx_v_character;
-    __pyx_t_7 = __Pyx_PyDict_GetItem(__pyx_v_frequency, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyDict_GetItem(__pyx_v_frequency, __pyx_t_4); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
-    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_t_7, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 42, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyInt_AddObjC(__pyx_t_7, __pyx_int_1, 1, 1, 0); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
-    if (unlikely(PyDict_SetItem(__pyx_v_frequency, __pyx_t_4, __pyx_t_8) < 0)) __PYX_ERR(0, 42, __pyx_L1_error)
+    if (unlikely(PyDict_SetItem(__pyx_v_frequency, __pyx_t_4, __pyx_t_8) < 0)) __PYX_ERR(0, 49, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":39
+    /* "pyaibox/compression/huffman_coding.py":46
  *     def make_frequency_dict(self, text):
  *         frequency = {}
  *         for character in text:             # <<<<<<<<<<<<<<
@@ -2634,7 +2635,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":43
+  /* "pyaibox/compression/huffman_coding.py":50
  *                 frequency[character] = 0
  *             frequency[character] += 1
  *         return frequency             # <<<<<<<<<<<<<<
@@ -2646,7 +2647,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_frequency;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":37
+  /* "pyaibox/compression/huffman_coding.py":44
  * 
  *     # functions for compression:
  *     def make_frequency_dict(self, text):             # <<<<<<<<<<<<<<
@@ -2670,7 +2671,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":45
+/* "pyaibox/compression/huffman_coding.py":52
  *         return frequency
  * 
  *     def make_heap(self, frequency):             # <<<<<<<<<<<<<<
@@ -2713,11 +2714,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_frequency)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("make_heap", 1, 2, 2, 1); __PYX_ERR(0, 45, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("make_heap", 1, 2, 2, 1); __PYX_ERR(0, 52, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_heap") < 0)) __PYX_ERR(0, 45, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_heap") < 0)) __PYX_ERR(0, 52, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -2730,7 +2731,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("make_heap", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 45, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("make_heap", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 52, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.make_heap", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -2762,7 +2763,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_heap", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":46
+  /* "pyaibox/compression/huffman_coding.py":53
  * 
  *     def make_heap(self, frequency):
  *         for key in frequency:             # <<<<<<<<<<<<<<
@@ -2773,26 +2774,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = __pyx_v_frequency; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_frequency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_frequency); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 46, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 53, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 53, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 46, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -2802,7 +2803,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 46, __pyx_L1_error)
+          else __PYX_ERR(0, 53, __pyx_L1_error)
         }
         break;
       }
@@ -2811,16 +2812,16 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_key, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":47
+    /* "pyaibox/compression/huffman_coding.py":54
  *     def make_heap(self, frequency):
  *         for key in frequency:
  *             node = self.HeapNode(key, frequency[key])             # <<<<<<<<<<<<<<
  *             heapq.heappush(self.heap, node)
  * 
  */
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 47, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 54, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_frequency, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 47, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetItem(__pyx_v_frequency, __pyx_v_key); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 54, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __pyx_t_7 = NULL;
     __pyx_t_8 = 0;
@@ -2837,7 +2838,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_key, __pyx_t_6};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -2846,14 +2847,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_v_key, __pyx_t_6};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     } else
     #endif
     {
-      __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_9);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -2864,7 +2865,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       __Pyx_GIVEREF(__pyx_t_6);
       PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
       __pyx_t_6 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 47, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 54, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     }
@@ -2872,19 +2873,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_node, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":48
+    /* "pyaibox/compression/huffman_coding.py":55
  *         for key in frequency:
  *             node = self.HeapNode(key, frequency[key])
  *             heapq.heappush(self.heap, node)             # <<<<<<<<<<<<<<
  * 
  *     def merge_nodes(self):
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_heapq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_heapq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_heappush); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 48, __pyx_L1_error)
+    __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_heappush); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 48, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 55, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     __pyx_t_8 = 0;
@@ -2901,7 +2902,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_t_5, __pyx_v_node};
-      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -2910,14 +2911,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_9)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, __pyx_t_5, __pyx_v_node};
-      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_9, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     } else
     #endif
     {
-      __pyx_t_7 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_7 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       if (__pyx_t_6) {
         __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -2928,14 +2929,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       __Pyx_GIVEREF(__pyx_v_node);
       PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_8, __pyx_v_node);
       __pyx_t_5 = 0;
-      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 48, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_9, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     }
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":46
+    /* "pyaibox/compression/huffman_coding.py":53
  * 
  *     def make_heap(self, frequency):
  *         for key in frequency:             # <<<<<<<<<<<<<<
@@ -2945,7 +2946,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":45
+  /* "pyaibox/compression/huffman_coding.py":52
  *         return frequency
  * 
  *     def make_heap(self, frequency):             # <<<<<<<<<<<<<<
@@ -2973,7 +2974,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":50
+/* "pyaibox/compression/huffman_coding.py":57
  *             heapq.heappush(self.heap, node)
  * 
  *     def merge_nodes(self):             # <<<<<<<<<<<<<<
@@ -3014,7 +3015,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("merge_nodes", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":51
+  /* "pyaibox/compression/huffman_coding.py":58
  * 
  *     def merge_nodes(self):
  *         while(len(self.heap) > 1):             # <<<<<<<<<<<<<<
@@ -3022,26 +3023,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  *             node2 = heapq.heappop(self.heap)
  */
   while (1) {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 51, __pyx_L1_error)
+    __pyx_t_2 = PyObject_Length(__pyx_t_1); if (unlikely(__pyx_t_2 == ((Py_ssize_t)-1))) __PYX_ERR(0, 58, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_3 = ((__pyx_t_2 > 1) != 0);
     if (!__pyx_t_3) break;
 
-    /* "pyaibox/compression/huffman_coding.py":52
+    /* "pyaibox/compression/huffman_coding.py":59
  *     def merge_nodes(self):
  *         while(len(self.heap) > 1):
  *             node1 = heapq.heappop(self.heap)             # <<<<<<<<<<<<<<
  *             node2 = heapq.heappop(self.heap)
  * 
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_heapq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_heapq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_heappop); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_heappop); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 52, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_5))) {
@@ -3056,25 +3057,25 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_6, __pyx_t_4) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_4);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 52, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_XDECREF_SET(__pyx_v_node1, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":53
+    /* "pyaibox/compression/huffman_coding.py":60
  *         while(len(self.heap) > 1):
  *             node1 = heapq.heappop(self.heap)
  *             node2 = heapq.heappop(self.heap)             # <<<<<<<<<<<<<<
  * 
  *             merged = self.HeapNode(None, node1.freq + node2.freq)
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_heapq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_5, __pyx_n_s_heapq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_heappop); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_t_5, __pyx_n_s_heappop); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 53, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __pyx_t_6 = NULL;
     if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_4))) {
@@ -3089,26 +3090,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = (__pyx_t_6) ? __Pyx_PyObject_Call2Args(__pyx_t_4, __pyx_t_6, __pyx_t_5) : __Pyx_PyObject_CallOneArg(__pyx_t_4, __pyx_t_5);
     __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
-    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 53, __pyx_L1_error)
+    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 60, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __Pyx_XDECREF_SET(__pyx_v_node2, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":55
+    /* "pyaibox/compression/huffman_coding.py":62
  *             node2 = heapq.heappop(self.heap)
  * 
  *             merged = self.HeapNode(None, node1.freq + node2.freq)             # <<<<<<<<<<<<<<
  *             merged.left = node1
  *             merged.right = node2
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_HeapNode); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_node1, __pyx_n_s_freq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_node1, __pyx_n_s_freq); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
-    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_node2, __pyx_n_s_freq); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetAttrStr(__pyx_v_node2, __pyx_n_s_freq); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
-    __pyx_t_7 = PyNumber_Add(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 55, __pyx_L1_error)
+    __pyx_t_7 = PyNumber_Add(__pyx_t_5, __pyx_t_6); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 62, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
@@ -3127,7 +3128,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, Py_None, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -3136,14 +3137,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_4)) {
       PyObject *__pyx_temp[3] = {__pyx_t_6, Py_None, __pyx_t_7};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_4, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_6); __pyx_t_6 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
     } else
     #endif
     {
-      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 55, __pyx_L1_error)
+      __pyx_t_5 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_5);
       if (__pyx_t_6) {
         __Pyx_GIVEREF(__pyx_t_6); PyTuple_SET_ITEM(__pyx_t_5, 0, __pyx_t_6); __pyx_t_6 = NULL;
@@ -3154,7 +3155,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       __Pyx_GIVEREF(__pyx_t_7);
       PyTuple_SET_ITEM(__pyx_t_5, 1+__pyx_t_8, __pyx_t_7);
       __pyx_t_7 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 55, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_4, __pyx_t_5, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 62, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     }
@@ -3162,37 +3163,37 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_merged, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":56
+    /* "pyaibox/compression/huffman_coding.py":63
  * 
  *             merged = self.HeapNode(None, node1.freq + node2.freq)
  *             merged.left = node1             # <<<<<<<<<<<<<<
  *             merged.right = node2
  * 
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_merged, __pyx_n_s_left, __pyx_v_node1) < 0) __PYX_ERR(0, 56, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_merged, __pyx_n_s_left, __pyx_v_node1) < 0) __PYX_ERR(0, 63, __pyx_L1_error)
 
-    /* "pyaibox/compression/huffman_coding.py":57
+    /* "pyaibox/compression/huffman_coding.py":64
  *             merged = self.HeapNode(None, node1.freq + node2.freq)
  *             merged.left = node1
  *             merged.right = node2             # <<<<<<<<<<<<<<
  * 
  *             heapq.heappush(self.heap, merged)
  */
-    if (__Pyx_PyObject_SetAttrStr(__pyx_v_merged, __pyx_n_s_right, __pyx_v_node2) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
+    if (__Pyx_PyObject_SetAttrStr(__pyx_v_merged, __pyx_n_s_right, __pyx_v_node2) < 0) __PYX_ERR(0, 64, __pyx_L1_error)
 
-    /* "pyaibox/compression/huffman_coding.py":59
+    /* "pyaibox/compression/huffman_coding.py":66
  *             merged.right = node2
  * 
  *             heapq.heappush(self.heap, merged)             # <<<<<<<<<<<<<<
  * 
  *     def make_codes_helper(self, root, current_code):
  */
-    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_heapq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __Pyx_GetModuleGlobalName(__pyx_t_4, __pyx_n_s_heapq); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_heappush); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_t_4, __pyx_n_s_heappush); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 59, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __pyx_t_7 = NULL;
     __pyx_t_8 = 0;
@@ -3209,7 +3210,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCALL
     if (PyFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_4, __pyx_v_merged};
-      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
@@ -3218,14 +3219,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     #if CYTHON_FAST_PYCCALL
     if (__Pyx_PyFastCFunction_Check(__pyx_t_5)) {
       PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_4, __pyx_v_merged};
-      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_5, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     } else
     #endif
     {
-      __pyx_t_6 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 59, __pyx_L1_error)
+      __pyx_t_6 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_6);
       if (__pyx_t_7) {
         __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_6, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -3236,7 +3237,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       __Pyx_GIVEREF(__pyx_v_merged);
       PyTuple_SET_ITEM(__pyx_t_6, 1+__pyx_t_8, __pyx_v_merged);
       __pyx_t_4 = 0;
-      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 59, __pyx_L1_error)
+      __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_5, __pyx_t_6, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 66, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_1);
       __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
     }
@@ -3244,7 +3245,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   }
 
-  /* "pyaibox/compression/huffman_coding.py":50
+  /* "pyaibox/compression/huffman_coding.py":57
  *             heapq.heappush(self.heap, node)
  * 
  *     def merge_nodes(self):             # <<<<<<<<<<<<<<
@@ -3272,7 +3273,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":61
+/* "pyaibox/compression/huffman_coding.py":68
  *             heapq.heappush(self.heap, merged)
  * 
  *     def make_codes_helper(self, root, current_code):             # <<<<<<<<<<<<<<
@@ -3318,17 +3319,17 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_root)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, 1); __PYX_ERR(0, 61, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, 1); __PYX_ERR(0, 68, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
         if (likely((values[2] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_current_code)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, 2); __PYX_ERR(0, 61, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, 2); __PYX_ERR(0, 68, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_codes_helper") < 0)) __PYX_ERR(0, 61, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "make_codes_helper") < 0)) __PYX_ERR(0, 68, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 3) {
       goto __pyx_L5_argtuple_error;
@@ -3343,7 +3344,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 61, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("make_codes_helper", 1, 3, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 68, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.make_codes_helper", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3373,7 +3374,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_codes_helper", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":62
+  /* "pyaibox/compression/huffman_coding.py":69
  * 
  *     def make_codes_helper(self, root, current_code):
  *         if root is None:             # <<<<<<<<<<<<<<
@@ -3384,7 +3385,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_2 = (__pyx_t_1 != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/compression/huffman_coding.py":63
+    /* "pyaibox/compression/huffman_coding.py":70
  *     def make_codes_helper(self, root, current_code):
  *         if root is None:
  *             return             # <<<<<<<<<<<<<<
@@ -3395,7 +3396,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "pyaibox/compression/huffman_coding.py":62
+    /* "pyaibox/compression/huffman_coding.py":69
  * 
  *     def make_codes_helper(self, root, current_code):
  *         if root is None:             # <<<<<<<<<<<<<<
@@ -3404,51 +3405,51 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":65
+  /* "pyaibox/compression/huffman_coding.py":72
  *             return
  * 
  *         if(root.char is not None):             # <<<<<<<<<<<<<<
  *             self.codes[root.char] = current_code
  *             self.reverse_mapping[current_code] = root.char
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 65, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = (__pyx_t_3 != Py_None);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_t_1 = (__pyx_t_2 != 0);
   if (__pyx_t_1) {
 
-    /* "pyaibox/compression/huffman_coding.py":66
+    /* "pyaibox/compression/huffman_coding.py":73
  * 
  *         if(root.char is not None):
  *             self.codes[root.char] = current_code             # <<<<<<<<<<<<<<
  *             self.reverse_mapping[current_code] = root.char
  *             return
  */
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 66, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 66, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    if (unlikely(PyObject_SetItem(__pyx_t_3, __pyx_t_4, __pyx_v_current_code) < 0)) __PYX_ERR(0, 66, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_3, __pyx_t_4, __pyx_v_current_code) < 0)) __PYX_ERR(0, 73, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":67
+    /* "pyaibox/compression/huffman_coding.py":74
  *         if(root.char is not None):
  *             self.codes[root.char] = current_code
  *             self.reverse_mapping[current_code] = root.char             # <<<<<<<<<<<<<<
  *             return
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 67, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_char); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 67, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    if (unlikely(PyObject_SetItem(__pyx_t_3, __pyx_v_current_code, __pyx_t_4) < 0)) __PYX_ERR(0, 67, __pyx_L1_error)
+    if (unlikely(PyObject_SetItem(__pyx_t_3, __pyx_v_current_code, __pyx_t_4) < 0)) __PYX_ERR(0, 74, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":68
+    /* "pyaibox/compression/huffman_coding.py":75
  *             self.codes[root.char] = current_code
  *             self.reverse_mapping[current_code] = root.char
  *             return             # <<<<<<<<<<<<<<
@@ -3459,7 +3460,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_r = Py_None; __Pyx_INCREF(Py_None);
     goto __pyx_L0;
 
-    /* "pyaibox/compression/huffman_coding.py":65
+    /* "pyaibox/compression/huffman_coding.py":72
  *             return
  * 
  *         if(root.char is not None):             # <<<<<<<<<<<<<<
@@ -3468,18 +3469,18 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":70
+  /* "pyaibox/compression/huffman_coding.py":77
  *             return
  * 
  *         self.make_codes_helper(root.left, current_code + "0")             # <<<<<<<<<<<<<<
  *         self.make_codes_helper(root.right, current_code + "1")
  * 
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_left); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_left); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyNumber_Add(__pyx_v_current_code, __pyx_kp_u_0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 70, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Add(__pyx_v_current_code, __pyx_kp_u_0); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 77, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   __pyx_t_8 = 0;
@@ -3496,7 +3497,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3506,7 +3507,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_7, __pyx_t_5, __pyx_t_6};
-    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
@@ -3514,7 +3515,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   } else
   #endif
   {
-    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_9 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_9);
     if (__pyx_t_7) {
       __Pyx_GIVEREF(__pyx_t_7); PyTuple_SET_ITEM(__pyx_t_9, 0, __pyx_t_7); __pyx_t_7 = NULL;
@@ -3525,25 +3526,25 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     PyTuple_SET_ITEM(__pyx_t_9, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_5 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 70, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_9, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 77, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":71
+  /* "pyaibox/compression/huffman_coding.py":78
  * 
  *         self.make_codes_helper(root.left, current_code + "0")
  *         self.make_codes_helper(root.right, current_code + "1")             # <<<<<<<<<<<<<<
  * 
  *     def make_codes(self):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_right); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_9 = __Pyx_PyObject_GetAttrStr(__pyx_v_root, __pyx_n_s_right); if (unlikely(!__pyx_t_9)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_9);
-  __pyx_t_6 = PyNumber_Add(__pyx_v_current_code, __pyx_kp_u_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 71, __pyx_L1_error)
+  __pyx_t_6 = PyNumber_Add(__pyx_v_current_code, __pyx_kp_u_1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 78, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_5 = NULL;
   __pyx_t_8 = 0;
@@ -3560,7 +3561,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_9, __pyx_t_6};
-    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -3570,7 +3571,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_5, __pyx_t_9, __pyx_t_6};
-    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_8, 2+__pyx_t_8); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_9); __pyx_t_9 = 0;
@@ -3578,7 +3579,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   } else
   #endif
   {
-    __pyx_t_7 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_7 = PyTuple_New(2+__pyx_t_8); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_7);
     if (__pyx_t_5) {
       __Pyx_GIVEREF(__pyx_t_5); PyTuple_SET_ITEM(__pyx_t_7, 0, __pyx_t_5); __pyx_t_5 = NULL;
@@ -3589,14 +3590,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     PyTuple_SET_ITEM(__pyx_t_7, 1+__pyx_t_8, __pyx_t_6);
     __pyx_t_9 = 0;
     __pyx_t_6 = 0;
-    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 71, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_7, NULL); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 78, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":61
+  /* "pyaibox/compression/huffman_coding.py":68
  *             heapq.heappush(self.heap, merged)
  * 
  *     def make_codes_helper(self, root, current_code):             # <<<<<<<<<<<<<<
@@ -3622,7 +3623,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":73
+/* "pyaibox/compression/huffman_coding.py":80
  *         self.make_codes_helper(root.right, current_code + "1")
  * 
  *     def make_codes(self):             # <<<<<<<<<<<<<<
@@ -3659,19 +3660,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("make_codes", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":74
+  /* "pyaibox/compression/huffman_coding.py":81
  * 
  *     def make_codes(self):
  *         root = heapq.heappop(self.heap)             # <<<<<<<<<<<<<<
  *         current_code = ""
  *         self.make_codes_helper(root, current_code)
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_heapq); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_heapq); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_heappop); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_heappop); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 74, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_heap); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && unlikely(PyMethod_Check(__pyx_t_3))) {
@@ -3686,13 +3687,13 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_2);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 74, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 81, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __pyx_v_root = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":75
+  /* "pyaibox/compression/huffman_coding.py":82
  *     def make_codes(self):
  *         root = heapq.heappop(self.heap)
  *         current_code = ""             # <<<<<<<<<<<<<<
@@ -3702,14 +3703,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_INCREF(__pyx_kp_u_);
   __pyx_v_current_code = __pyx_kp_u_;
 
-  /* "pyaibox/compression/huffman_coding.py":76
+  /* "pyaibox/compression/huffman_coding.py":83
  *         root = heapq.heappop(self.heap)
  *         current_code = ""
  *         self.make_codes_helper(root, current_code)             # <<<<<<<<<<<<<<
  * 
  *     def get_encoded_text(self, text):
  */
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 76, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes_helper); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 83, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_2 = NULL;
   __pyx_t_5 = 0;
@@ -3726,7 +3727,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCALL
   if (PyFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_root, __pyx_v_current_code};
-    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
@@ -3734,13 +3735,13 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   #if CYTHON_FAST_PYCCALL
   if (__Pyx_PyFastCFunction_Check(__pyx_t_3)) {
     PyObject *__pyx_temp[3] = {__pyx_t_2, __pyx_v_root, __pyx_v_current_code};
-    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyCFunction_FastCall(__pyx_t_3, __pyx_temp+1-__pyx_t_5, 2+__pyx_t_5); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
     __Pyx_GOTREF(__pyx_t_1);
   } else
   #endif
   {
-    __pyx_t_4 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_4 = PyTuple_New(2+__pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     if (__pyx_t_2) {
       __Pyx_GIVEREF(__pyx_t_2); PyTuple_SET_ITEM(__pyx_t_4, 0, __pyx_t_2); __pyx_t_2 = NULL;
@@ -3751,14 +3752,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_INCREF(__pyx_v_current_code);
     __Pyx_GIVEREF(__pyx_v_current_code);
     PyTuple_SET_ITEM(__pyx_t_4, 1+__pyx_t_5, __pyx_v_current_code);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 76, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_t_4, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 83, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":73
+  /* "pyaibox/compression/huffman_coding.py":80
  *         self.make_codes_helper(root.right, current_code + "1")
  * 
  *     def make_codes(self):             # <<<<<<<<<<<<<<
@@ -3784,7 +3785,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":78
+/* "pyaibox/compression/huffman_coding.py":85
  *         self.make_codes_helper(root, current_code)
  * 
  *     def get_encoded_text(self, text):             # <<<<<<<<<<<<<<
@@ -3827,11 +3828,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("get_encoded_text", 1, 2, 2, 1); __PYX_ERR(0, 78, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("get_encoded_text", 1, 2, 2, 1); __PYX_ERR(0, 85, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_encoded_text") < 0)) __PYX_ERR(0, 78, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_encoded_text") < 0)) __PYX_ERR(0, 85, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -3844,7 +3845,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_encoded_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 78, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_encoded_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 85, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.get_encoded_text", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -3872,7 +3873,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_encoded_text", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":79
+  /* "pyaibox/compression/huffman_coding.py":86
  * 
  *     def get_encoded_text(self, text):
  *         encoded_text = ""             # <<<<<<<<<<<<<<
@@ -3882,7 +3883,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_INCREF(__pyx_kp_u_);
   __pyx_v_encoded_text = __pyx_kp_u_;
 
-  /* "pyaibox/compression/huffman_coding.py":80
+  /* "pyaibox/compression/huffman_coding.py":87
  *     def get_encoded_text(self, text):
  *         encoded_text = ""
  *         for character in text:             # <<<<<<<<<<<<<<
@@ -3893,26 +3894,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = __pyx_v_text; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 80, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 87, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 80, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 87, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 87, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 80, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -3922,7 +3923,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 80, __pyx_L1_error)
+          else __PYX_ERR(0, 87, __pyx_L1_error)
         }
         break;
       }
@@ -3931,25 +3932,25 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_character, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":81
+    /* "pyaibox/compression/huffman_coding.py":88
  *         encoded_text = ""
  *         for character in text:
  *             encoded_text += self.codes[character]             # <<<<<<<<<<<<<<
  *         return encoded_text
  * 
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_codes); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_character); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_5 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_character); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_5);
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_encoded_text, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 81, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_encoded_text, __pyx_t_5); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 88, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
     __Pyx_DECREF_SET(__pyx_v_encoded_text, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":80
+    /* "pyaibox/compression/huffman_coding.py":87
  *     def get_encoded_text(self, text):
  *         encoded_text = ""
  *         for character in text:             # <<<<<<<<<<<<<<
@@ -3959,7 +3960,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":82
+  /* "pyaibox/compression/huffman_coding.py":89
  *         for character in text:
  *             encoded_text += self.codes[character]
  *         return encoded_text             # <<<<<<<<<<<<<<
@@ -3971,7 +3972,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_encoded_text;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":78
+  /* "pyaibox/compression/huffman_coding.py":85
  *         self.make_codes_helper(root, current_code)
  * 
  *     def get_encoded_text(self, text):             # <<<<<<<<<<<<<<
@@ -3994,7 +3995,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":84
+/* "pyaibox/compression/huffman_coding.py":91
  *         return encoded_text
  * 
  *     def pad_encoded_text(self, encoded_text):             # <<<<<<<<<<<<<<
@@ -4037,11 +4038,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_encoded_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("pad_encoded_text", 1, 2, 2, 1); __PYX_ERR(0, 84, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("pad_encoded_text", 1, 2, 2, 1); __PYX_ERR(0, 91, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "pad_encoded_text") < 0)) __PYX_ERR(0, 84, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "pad_encoded_text") < 0)) __PYX_ERR(0, 91, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4054,7 +4055,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("pad_encoded_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 84, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("pad_encoded_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 91, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.pad_encoded_text", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4086,17 +4087,17 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_RefNannySetupContext("pad_encoded_text", 0);
   __Pyx_INCREF(__pyx_v_encoded_text);
 
-  /* "pyaibox/compression/huffman_coding.py":85
+  /* "pyaibox/compression/huffman_coding.py":92
  * 
  *     def pad_encoded_text(self, encoded_text):
  *         extra_padding = 8 - len(encoded_text) % 8             # <<<<<<<<<<<<<<
  *         for i in range(extra_padding):
  *             encoded_text += "0"
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 92, __pyx_L1_error)
   __pyx_v_extra_padding = (8 - __Pyx_mod_Py_ssize_t(__pyx_t_1, 8));
 
-  /* "pyaibox/compression/huffman_coding.py":86
+  /* "pyaibox/compression/huffman_coding.py":93
  *     def pad_encoded_text(self, encoded_text):
  *         extra_padding = 8 - len(encoded_text) % 8
  *         for i in range(extra_padding):             # <<<<<<<<<<<<<<
@@ -4108,29 +4109,29 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   for (__pyx_t_3 = 0; __pyx_t_3 < __pyx_t_2; __pyx_t_3+=1) {
     __pyx_v_i = __pyx_t_3;
 
-    /* "pyaibox/compression/huffman_coding.py":87
+    /* "pyaibox/compression/huffman_coding.py":94
  *         extra_padding = 8 - len(encoded_text) % 8
  *         for i in range(extra_padding):
  *             encoded_text += "0"             # <<<<<<<<<<<<<<
  * 
  *         padded_info = "{0:08b}".format(extra_padding)
  */
-    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_encoded_text, __pyx_kp_u_0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 87, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_encoded_text, __pyx_kp_u_0); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 94, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF_SET(__pyx_v_encoded_text, __pyx_t_4);
     __pyx_t_4 = 0;
   }
 
-  /* "pyaibox/compression/huffman_coding.py":89
+  /* "pyaibox/compression/huffman_coding.py":96
  *             encoded_text += "0"
  * 
  *         padded_info = "{0:08b}".format(extra_padding)             # <<<<<<<<<<<<<<
  *         encoded_text = padded_info + encoded_text
  *         return encoded_text
  */
-  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_0_08b, __pyx_n_s_format); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_5 = __Pyx_PyObject_GetAttrStr(__pyx_kp_u_0_08b, __pyx_n_s_format); if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_5);
-  __pyx_t_6 = PyInt_FromSsize_t(__pyx_v_extra_padding); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 89, __pyx_L1_error)
+  __pyx_t_6 = PyInt_FromSsize_t(__pyx_v_extra_padding); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_6);
   __pyx_t_7 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_5))) {
@@ -4145,25 +4146,25 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_4 = (__pyx_t_7) ? __Pyx_PyObject_Call2Args(__pyx_t_5, __pyx_t_7, __pyx_t_6) : __Pyx_PyObject_CallOneArg(__pyx_t_5, __pyx_t_6);
   __Pyx_XDECREF(__pyx_t_7); __pyx_t_7 = 0;
   __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 89, __pyx_L1_error)
+  if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 96, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF(__pyx_t_5); __pyx_t_5 = 0;
   __pyx_v_padded_info = __pyx_t_4;
   __pyx_t_4 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":90
+  /* "pyaibox/compression/huffman_coding.py":97
  * 
  *         padded_info = "{0:08b}".format(extra_padding)
  *         encoded_text = padded_info + encoded_text             # <<<<<<<<<<<<<<
  *         return encoded_text
  * 
  */
-  __pyx_t_4 = PyNumber_Add(__pyx_v_padded_info, __pyx_v_encoded_text); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 90, __pyx_L1_error)
+  __pyx_t_4 = PyNumber_Add(__pyx_v_padded_info, __pyx_v_encoded_text); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 97, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_DECREF_SET(__pyx_v_encoded_text, __pyx_t_4);
   __pyx_t_4 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":91
+  /* "pyaibox/compression/huffman_coding.py":98
  *         padded_info = "{0:08b}".format(extra_padding)
  *         encoded_text = padded_info + encoded_text
  *         return encoded_text             # <<<<<<<<<<<<<<
@@ -4175,7 +4176,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_encoded_text;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":84
+  /* "pyaibox/compression/huffman_coding.py":91
  *         return encoded_text
  * 
  *     def pad_encoded_text(self, encoded_text):             # <<<<<<<<<<<<<<
@@ -4199,7 +4200,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":93
+/* "pyaibox/compression/huffman_coding.py":100
  *         return encoded_text
  * 
  *     def get_byte_array(self, padded_encoded_text):             # <<<<<<<<<<<<<<
@@ -4242,11 +4243,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_padded_encoded_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("get_byte_array", 1, 2, 2, 1); __PYX_ERR(0, 93, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("get_byte_array", 1, 2, 2, 1); __PYX_ERR(0, 100, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_byte_array") < 0)) __PYX_ERR(0, 93, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "get_byte_array") < 0)) __PYX_ERR(0, 100, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -4259,7 +4260,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("get_byte_array", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 93, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("get_byte_array", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 100, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.get_byte_array", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4290,40 +4291,40 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("get_byte_array", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":94
+  /* "pyaibox/compression/huffman_coding.py":101
  * 
  *     def get_byte_array(self, padded_encoded_text):
  *         if(len(padded_encoded_text) % 8 != 0):             # <<<<<<<<<<<<<<
  *             print("Encoded text not padded properly")
  *             exit(0)
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_padded_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 94, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_padded_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 101, __pyx_L1_error)
   __pyx_t_2 = ((__Pyx_mod_Py_ssize_t(__pyx_t_1, 8) != 0) != 0);
   if (__pyx_t_2) {
 
-    /* "pyaibox/compression/huffman_coding.py":95
+    /* "pyaibox/compression/huffman_coding.py":102
  *     def get_byte_array(self, padded_encoded_text):
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")             # <<<<<<<<<<<<<<
  *             exit(0)
  * 
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 95, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_print, __pyx_tuple__2, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 102, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":96
+    /* "pyaibox/compression/huffman_coding.py":103
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")
  *             exit(0)             # <<<<<<<<<<<<<<
  * 
  *         b = bytearray()
  */
-    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_exit, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 96, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_exit, __pyx_tuple__3, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 103, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":94
+    /* "pyaibox/compression/huffman_coding.py":101
  * 
  *     def get_byte_array(self, padded_encoded_text):
  *         if(len(padded_encoded_text) % 8 != 0):             # <<<<<<<<<<<<<<
@@ -4332,29 +4333,29 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":98
+  /* "pyaibox/compression/huffman_coding.py":105
  *             exit(0)
  * 
  *         b = bytearray()             # <<<<<<<<<<<<<<
  *         for i in range(0, len(padded_encoded_text), 8):
  *             byte = padded_encoded_text[i:i + 8]
  */
-  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)(&PyByteArray_Type))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 98, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_CallNoArg(((PyObject *)(&PyByteArray_Type))); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_v_b = ((PyObject*)__pyx_t_3);
   __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":99
+  /* "pyaibox/compression/huffman_coding.py":106
  * 
  *         b = bytearray()
  *         for i in range(0, len(padded_encoded_text), 8):             # <<<<<<<<<<<<<<
  *             byte = padded_encoded_text[i:i + 8]
  *             b.append(int(byte, 2))
  */
-  __pyx_t_1 = PyObject_Length(__pyx_v_padded_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 99, __pyx_L1_error)
-  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_1 = PyObject_Length(__pyx_v_padded_encoded_text); if (unlikely(__pyx_t_1 == ((Py_ssize_t)-1))) __PYX_ERR(0, 106, __pyx_L1_error)
+  __pyx_t_3 = PyInt_FromSsize_t(__pyx_t_1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_4 = PyTuple_New(3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_4);
   __Pyx_INCREF(__pyx_int_0);
   __Pyx_GIVEREF(__pyx_int_0);
@@ -4365,16 +4366,16 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_GIVEREF(__pyx_int_8);
   PyTuple_SET_ITEM(__pyx_t_4, 2, __pyx_int_8);
   __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_Call(__pyx_builtin_range, __pyx_t_4, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
   if (likely(PyList_CheckExact(__pyx_t_3)) || PyTuple_CheckExact(__pyx_t_3)) {
     __pyx_t_4 = __pyx_t_3; __Pyx_INCREF(__pyx_t_4); __pyx_t_1 = 0;
     __pyx_t_5 = NULL;
   } else {
-    __pyx_t_1 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_1 = -1; __pyx_t_4 = PyObject_GetIter(__pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 106, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 99, __pyx_L1_error)
+    __pyx_t_5 = Py_TYPE(__pyx_t_4)->tp_iternext; if (unlikely(!__pyx_t_5)) __PYX_ERR(0, 106, __pyx_L1_error)
   }
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   for (;;) {
@@ -4382,17 +4383,17 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       if (likely(PyList_CheckExact(__pyx_t_4))) {
         if (__pyx_t_1 >= PyList_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_3 = PyList_GET_ITEM(__pyx_t_4, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       } else {
         if (__pyx_t_1 >= PyTuple_GET_SIZE(__pyx_t_4)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_3 = PyTuple_GET_ITEM(__pyx_t_4, __pyx_t_1); __Pyx_INCREF(__pyx_t_3); __pyx_t_1++; if (unlikely(0 < 0)) __PYX_ERR(0, 106, __pyx_L1_error)
         #else
-        __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 99, __pyx_L1_error)
+        __pyx_t_3 = PySequence_ITEM(__pyx_t_4, __pyx_t_1); __pyx_t_1++; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 106, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_3);
         #endif
       }
@@ -4402,7 +4403,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 99, __pyx_L1_error)
+          else __PYX_ERR(0, 106, __pyx_L1_error)
         }
         break;
       }
@@ -4411,29 +4412,29 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_i, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":100
+    /* "pyaibox/compression/huffman_coding.py":107
  *         b = bytearray()
  *         for i in range(0, len(padded_encoded_text), 8):
  *             byte = padded_encoded_text[i:i + 8]             # <<<<<<<<<<<<<<
  *             b.append(int(byte, 2))
  *         return b
  */
-    __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_8, 8, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 100, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyInt_AddObjC(__pyx_v_i, __pyx_int_8, 8, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
-    __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 0, &__pyx_v_i, &__pyx_t_3, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 100, __pyx_L1_error)
+    __pyx_t_6 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 0, &__pyx_v_i, &__pyx_t_3, NULL, 0, 0, 1); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 107, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
     __Pyx_XDECREF_SET(__pyx_v_byte, __pyx_t_6);
     __pyx_t_6 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":101
+    /* "pyaibox/compression/huffman_coding.py":108
  *         for i in range(0, len(padded_encoded_text), 8):
  *             byte = padded_encoded_text[i:i + 8]
  *             b.append(int(byte, 2))             # <<<<<<<<<<<<<<
  *         return b
  * 
  */
-    __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_6 = PyTuple_New(2); if (unlikely(!__pyx_t_6)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_6);
     __Pyx_INCREF(__pyx_v_byte);
     __Pyx_GIVEREF(__pyx_v_byte);
@@ -4441,13 +4442,13 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_INCREF(__pyx_int_2);
     __Pyx_GIVEREF(__pyx_int_2);
     PyTuple_SET_ITEM(__pyx_t_6, 1, __pyx_int_2);
-    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&PyInt_Type)), __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_3 = __Pyx_PyObject_Call(((PyObject *)(&PyInt_Type)), __pyx_t_6, NULL); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_6); __pyx_t_6 = 0;
-    __pyx_t_7 = __Pyx_PyByteArray_AppendObject(__pyx_v_b, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 101, __pyx_L1_error)
+    __pyx_t_7 = __Pyx_PyByteArray_AppendObject(__pyx_v_b, __pyx_t_3); if (unlikely(__pyx_t_7 == ((int)-1))) __PYX_ERR(0, 108, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":99
+    /* "pyaibox/compression/huffman_coding.py":106
  * 
  *         b = bytearray()
  *         for i in range(0, len(padded_encoded_text), 8):             # <<<<<<<<<<<<<<
@@ -4457,7 +4458,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":102
+  /* "pyaibox/compression/huffman_coding.py":109
  *             byte = padded_encoded_text[i:i + 8]
  *             b.append(int(byte, 2))
  *         return b             # <<<<<<<<<<<<<<
@@ -4469,7 +4470,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_b;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":93
+  /* "pyaibox/compression/huffman_coding.py":100
  *         return encoded_text
  * 
  *     def get_byte_array(self, padded_encoded_text):             # <<<<<<<<<<<<<<
@@ -4493,7 +4494,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":104
+/* "pyaibox/compression/huffman_coding.py":111
  *         return b
  * 
  *     def compress(self, outfile=None):             # <<<<<<<<<<<<<<
@@ -4541,7 +4542,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress") < 0)) __PYX_ERR(0, 104, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "compress") < 0)) __PYX_ERR(0, 111, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -4557,7 +4558,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("compress", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 104, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("compress", 0, 1, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 111, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.compress", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -4604,22 +4605,22 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_RefNannySetupContext("compress", 0);
   __Pyx_INCREF(__pyx_v_outfile);
 
-  /* "pyaibox/compression/huffman_coding.py":105
+  /* "pyaibox/compression/huffman_coding.py":112
  * 
  *     def compress(self, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)             # <<<<<<<<<<<<<<
  *         if outfile is None:
  *             outfile = filename + ".bin"
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_splitext); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_splitext); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4634,7 +4635,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 105, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 112, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
@@ -4643,7 +4644,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 105, __pyx_L1_error)
+      __PYX_ERR(0, 112, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -4656,15 +4657,15 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
     #else
-    __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 105, __pyx_L1_error)
+    __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 112, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_5 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -4672,7 +4673,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_GOTREF(__pyx_t_2);
     index = 1; __pyx_t_3 = __pyx_t_5(__pyx_t_4); if (unlikely(!__pyx_t_3)) goto __pyx_L3_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_3);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_4), 2) < 0) __PYX_ERR(0, 105, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_4), 2) < 0) __PYX_ERR(0, 112, __pyx_L1_error)
     __pyx_t_5 = NULL;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     goto __pyx_L4_unpacking_done;
@@ -4680,7 +4681,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 105, __pyx_L1_error)
+    __PYX_ERR(0, 112, __pyx_L1_error)
     __pyx_L4_unpacking_done:;
   }
   __pyx_v_filename = __pyx_t_2;
@@ -4688,7 +4689,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_v_file_extension = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":106
+  /* "pyaibox/compression/huffman_coding.py":113
  *     def compress(self, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:             # <<<<<<<<<<<<<<
@@ -4699,19 +4700,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "pyaibox/compression/huffman_coding.py":107
+    /* "pyaibox/compression/huffman_coding.py":114
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  *             outfile = filename + ".bin"             # <<<<<<<<<<<<<<
  * 
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:
  */
-    __pyx_t_1 = PyNumber_Add(__pyx_v_filename, __pyx_kp_u_bin_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 107, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_v_filename, __pyx_kp_u_bin_2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF_SET(__pyx_v_outfile, __pyx_t_1);
     __pyx_t_1 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":106
+    /* "pyaibox/compression/huffman_coding.py":113
  *     def compress(self, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:             # <<<<<<<<<<<<<<
@@ -4720,7 +4721,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":109
+  /* "pyaibox/compression/huffman_coding.py":116
  *             outfile = filename + ".bin"
  * 
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:             # <<<<<<<<<<<<<<
@@ -4728,9 +4729,9 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  *             text = text.rstrip()
  */
   /*with:*/ {
-    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_GIVEREF(__pyx_t_1);
     PyTuple_SET_ITEM(__pyx_t_3, 0, __pyx_t_1);
@@ -4738,12 +4739,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_GIVEREF(__pyx_kp_u_r);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_kp_u_r);
     __pyx_t_1 = 0;
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_8 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 109, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 116, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L6_error)
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -4757,7 +4758,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L6_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = __pyx_t_3;
@@ -4775,7 +4776,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
           __pyx_v_file = __pyx_t_2;
           __pyx_t_2 = 0;
           /*with:*/ {
-            __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L10_error)
+            __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_INCREF(__pyx_v_outfile);
             __Pyx_GIVEREF(__pyx_v_outfile);
@@ -4783,12 +4784,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             __Pyx_INCREF(__pyx_n_u_wb);
             __Pyx_GIVEREF(__pyx_n_u_wb);
             PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_n_u_wb);
-            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 109, __pyx_L10_error)
+            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-            __pyx_t_12 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 109, __pyx_L10_error)
+            __pyx_t_12 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 116, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_12);
-            __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 109, __pyx_L16_error)
+            __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L16_error)
             __Pyx_GOTREF(__pyx_t_3);
             __pyx_t_4 = NULL;
             if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -4802,7 +4803,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             }
             __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
             __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 109, __pyx_L16_error)
+            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 116, __pyx_L16_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
             __pyx_t_3 = __pyx_t_2;
@@ -4820,14 +4821,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   __pyx_v_output = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":110
+                  /* "pyaibox/compression/huffman_coding.py":117
  * 
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:
  *             text = file.read()             # <<<<<<<<<<<<<<
  *             text = text.rstrip()
  * 
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 110, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 117, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4841,20 +4842,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 110, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 117, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_text = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":111
+                  /* "pyaibox/compression/huffman_coding.py":118
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:
  *             text = file.read()
  *             text = text.rstrip()             # <<<<<<<<<<<<<<
  * 
  *             frequency = self.make_frequency_dict(text)
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_text, __pyx_n_s_rstrip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 111, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_text, __pyx_n_s_rstrip); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4868,20 +4869,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 111, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_DECREF_SET(__pyx_v_text, __pyx_t_3);
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":113
+                  /* "pyaibox/compression/huffman_coding.py":120
  *             text = text.rstrip()
  * 
  *             frequency = self.make_frequency_dict(text)             # <<<<<<<<<<<<<<
  *             self.make_heap(frequency)
  *             self.merge_nodes()
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_frequency_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 113, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_frequency_dict); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 120, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4895,20 +4896,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_text) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 113, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 120, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_frequency = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":114
+                  /* "pyaibox/compression/huffman_coding.py":121
  * 
  *             frequency = self.make_frequency_dict(text)
  *             self.make_heap(frequency)             # <<<<<<<<<<<<<<
  *             self.merge_nodes()
  *             self.make_codes()
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_heap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 114, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_heap); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4922,19 +4923,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_frequency) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_frequency);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 114, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":115
+                  /* "pyaibox/compression/huffman_coding.py":122
  *             frequency = self.make_frequency_dict(text)
  *             self.make_heap(frequency)
  *             self.merge_nodes()             # <<<<<<<<<<<<<<
  *             self.make_codes()
  * 
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_merge_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 115, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_merge_nodes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4948,19 +4949,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 115, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 122, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":116
+                  /* "pyaibox/compression/huffman_coding.py":123
  *             self.make_heap(frequency)
  *             self.merge_nodes()
  *             self.make_codes()             # <<<<<<<<<<<<<<
  * 
  *             encoded_text = self.get_encoded_text(text)
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 116, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_make_codes); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 123, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -4974,19 +4975,19 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2) : __Pyx_PyObject_CallNoArg(__pyx_t_1);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 116, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 123, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":118
+                  /* "pyaibox/compression/huffman_coding.py":125
  *             self.make_codes()
  * 
  *             encoded_text = self.get_encoded_text(text)             # <<<<<<<<<<<<<<
  *             padded_encoded_text = self.pad_encoded_text(encoded_text)
  * 
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 118, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 125, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -5000,20 +5001,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_text) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 118, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 125, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_encoded_text = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":119
+                  /* "pyaibox/compression/huffman_coding.py":126
  * 
  *             encoded_text = self.get_encoded_text(text)
  *             padded_encoded_text = self.pad_encoded_text(encoded_text)             # <<<<<<<<<<<<<<
  * 
  *             b = self.get_byte_array(padded_encoded_text)
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pad_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 119, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_pad_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 126, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -5027,20 +5028,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_encoded_text) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_encoded_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 119, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 126, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_padded_encoded_text = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":121
+                  /* "pyaibox/compression/huffman_coding.py":128
  *             padded_encoded_text = self.pad_encoded_text(encoded_text)
  * 
  *             b = self.get_byte_array(padded_encoded_text)             # <<<<<<<<<<<<<<
  *             output.write(bytes(b))
  * 
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_byte_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 121, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_get_byte_array); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 128, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -5054,22 +5055,22 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_v_padded_encoded_text) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_v_padded_encoded_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 121, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 128, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_b = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":122
+                  /* "pyaibox/compression/huffman_coding.py":129
  * 
  *             b = self.get_byte_array(padded_encoded_text)
  *             output.write(bytes(b))             # <<<<<<<<<<<<<<
  * 
  *         return outfile
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_output, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 122, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_output, __pyx_n_s_write); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
-                  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyBytes_Type)), __pyx_v_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 122, __pyx_L20_error)
+                  __pyx_t_2 = __Pyx_PyObject_CallOneArg(((PyObject *)(&PyBytes_Type)), __pyx_v_b); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 129, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_2);
                   __pyx_t_4 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -5084,12 +5085,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_4, __pyx_t_2) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_t_2);
                   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 122, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 129, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":109
+                  /* "pyaibox/compression/huffman_coding.py":116
  *             outfile = filename + ".bin"
  * 
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:             # <<<<<<<<<<<<<<
@@ -5108,20 +5109,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                 __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                 /*except:*/ {
                   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.compress", __pyx_clineno, __pyx_lineno, __pyx_filename);
-                  if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 109, __pyx_L22_except_error)
+                  if (__Pyx_GetException(&__pyx_t_3, &__pyx_t_1, &__pyx_t_2) < 0) __PYX_ERR(0, 116, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_GOTREF(__pyx_t_2);
-                  __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L22_except_error)
+                  __pyx_t_4 = PyTuple_Pack(3, __pyx_t_3, __pyx_t_1, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_4);
                   __pyx_t_16 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_4, NULL);
                   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
                   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-                  if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 109, __pyx_L22_except_error)
+                  if (unlikely(!__pyx_t_16)) __PYX_ERR(0, 116, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_16);
                   __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_16);
                   __Pyx_DECREF(__pyx_t_16); __pyx_t_16 = 0;
-                  if (__pyx_t_7 < 0) __PYX_ERR(0, 109, __pyx_L22_except_error)
+                  if (__pyx_t_7 < 0) __PYX_ERR(0, 116, __pyx_L22_except_error)
                   __pyx_t_6 = ((!(__pyx_t_7 != 0)) != 0);
                   if (__pyx_t_6) {
                     __Pyx_GIVEREF(__pyx_t_3);
@@ -5129,7 +5130,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                     __Pyx_XGIVEREF(__pyx_t_2);
                     __Pyx_ErrRestoreWithState(__pyx_t_3, __pyx_t_1, __pyx_t_2);
                     __pyx_t_3 = 0; __pyx_t_1 = 0; __pyx_t_2 = 0; 
-                    __PYX_ERR(0, 109, __pyx_L22_except_error)
+                    __PYX_ERR(0, 116, __pyx_L22_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5155,7 +5156,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                 if (__pyx_t_12) {
                   __pyx_t_15 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_tuple__4, NULL);
                   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-                  if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 109, __pyx_L10_error)
+                  if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 116, __pyx_L10_error)
                   __Pyx_GOTREF(__pyx_t_15);
                   __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
                 }
@@ -5181,20 +5182,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.compress", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_3) < 0) __PYX_ERR(0, 109, __pyx_L12_except_error)
+          if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_1, &__pyx_t_3) < 0) __PYX_ERR(0, 116, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GOTREF(__pyx_t_1);
           __Pyx_GOTREF(__pyx_t_3);
-          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 109, __pyx_L12_except_error)
+          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_2, __pyx_t_1, __pyx_t_3); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 116, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_4, NULL);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 109, __pyx_L12_except_error)
+          if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 116, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_12);
           __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-          if (__pyx_t_6 < 0) __PYX_ERR(0, 109, __pyx_L12_except_error)
+          if (__pyx_t_6 < 0) __PYX_ERR(0, 116, __pyx_L12_except_error)
           __pyx_t_7 = ((!(__pyx_t_6 != 0)) != 0);
           if (__pyx_t_7) {
             __Pyx_GIVEREF(__pyx_t_2);
@@ -5202,7 +5203,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             __Pyx_XGIVEREF(__pyx_t_3);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_1, __pyx_t_3);
             __pyx_t_2 = 0; __pyx_t_1 = 0; __pyx_t_3 = 0; 
-            __PYX_ERR(0, 109, __pyx_L12_except_error)
+            __PYX_ERR(0, 116, __pyx_L12_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
@@ -5228,7 +5229,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         if (__pyx_t_8) {
           __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_tuple__4, NULL);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 109, __pyx_L1_error)
+          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 116, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         }
@@ -5243,7 +5244,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_L33:;
   }
 
-  /* "pyaibox/compression/huffman_coding.py":124
+  /* "pyaibox/compression/huffman_coding.py":131
  *             output.write(bytes(b))
  * 
  *         return outfile             # <<<<<<<<<<<<<<
@@ -5255,7 +5256,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_outfile;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":104
+  /* "pyaibox/compression/huffman_coding.py":111
  *         return b
  * 
  *     def compress(self, outfile=None):             # <<<<<<<<<<<<<<
@@ -5287,7 +5288,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":128
+/* "pyaibox/compression/huffman_coding.py":135
  *     """ functions for decompression: """
  * 
  *     def remove_padding(self, padded_encoded_text):             # <<<<<<<<<<<<<<
@@ -5330,11 +5331,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_padded_encoded_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("remove_padding", 1, 2, 2, 1); __PYX_ERR(0, 128, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("remove_padding", 1, 2, 2, 1); __PYX_ERR(0, 135, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "remove_padding") < 0)) __PYX_ERR(0, 128, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "remove_padding") < 0)) __PYX_ERR(0, 135, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5347,7 +5348,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("remove_padding", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 128, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("remove_padding", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 135, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.remove_padding", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5374,26 +5375,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_RefNannySetupContext("remove_padding", 0);
   __Pyx_INCREF(__pyx_v_padded_encoded_text);
 
-  /* "pyaibox/compression/huffman_coding.py":129
+  /* "pyaibox/compression/huffman_coding.py":136
  * 
  *     def remove_padding(self, padded_encoded_text):
  *         padded_info = padded_encoded_text[:8]             # <<<<<<<<<<<<<<
  *         extra_padding = int(padded_info, 2)
  * 
  */
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 8, NULL, NULL, &__pyx_slice__5, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 8, NULL, NULL, &__pyx_slice__5, 0, 1, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __pyx_v_padded_info = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":130
+  /* "pyaibox/compression/huffman_coding.py":137
  *     def remove_padding(self, padded_encoded_text):
  *         padded_info = padded_encoded_text[:8]
  *         extra_padding = int(padded_info, 2)             # <<<<<<<<<<<<<<
  * 
  *         padded_encoded_text = padded_encoded_text[8:]
  */
-  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_1 = PyTuple_New(2); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_INCREF(__pyx_v_padded_info);
   __Pyx_GIVEREF(__pyx_v_padded_info);
@@ -5401,40 +5402,40 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_INCREF(__pyx_int_2);
   __Pyx_GIVEREF(__pyx_int_2);
   PyTuple_SET_ITEM(__pyx_t_1, 1, __pyx_int_2);
-  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&PyInt_Type)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 130, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_Call(((PyObject *)(&PyInt_Type)), __pyx_t_1, NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   __pyx_v_extra_padding = __pyx_t_2;
   __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":132
+  /* "pyaibox/compression/huffman_coding.py":139
  *         extra_padding = int(padded_info, 2)
  * 
  *         padded_encoded_text = padded_encoded_text[8:]             # <<<<<<<<<<<<<<
  *         encoded_text = padded_encoded_text[:-1 * extra_padding]
  * 
  */
-  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 8, 0, NULL, NULL, &__pyx_slice__6, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 8, 0, NULL, NULL, &__pyx_slice__6, 1, 0, 1); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF_SET(__pyx_v_padded_encoded_text, __pyx_t_2);
   __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":133
+  /* "pyaibox/compression/huffman_coding.py":140
  * 
  *         padded_encoded_text = padded_encoded_text[8:]
  *         encoded_text = padded_encoded_text[:-1 * extra_padding]             # <<<<<<<<<<<<<<
  * 
  *         return encoded_text
  */
-  __pyx_t_2 = PyNumber_Multiply(__pyx_int_neg_1, __pyx_v_extra_padding); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_2 = PyNumber_Multiply(__pyx_int_neg_1, __pyx_v_extra_padding); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 0, NULL, &__pyx_t_2, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 133, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_v_padded_encoded_text, 0, 0, NULL, &__pyx_t_2, NULL, 0, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 140, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __pyx_v_encoded_text = __pyx_t_1;
   __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":135
+  /* "pyaibox/compression/huffman_coding.py":142
  *         encoded_text = padded_encoded_text[:-1 * extra_padding]
  * 
  *         return encoded_text             # <<<<<<<<<<<<<<
@@ -5446,7 +5447,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_encoded_text;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":128
+  /* "pyaibox/compression/huffman_coding.py":135
  *     """ functions for decompression: """
  * 
  *     def remove_padding(self, padded_encoded_text):             # <<<<<<<<<<<<<<
@@ -5470,7 +5471,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":137
+/* "pyaibox/compression/huffman_coding.py":144
  *         return encoded_text
  * 
  *     def decode_text(self, encoded_text):             # <<<<<<<<<<<<<<
@@ -5513,11 +5514,11 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_encoded_text)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decode_text", 1, 2, 2, 1); __PYX_ERR(0, 137, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decode_text", 1, 2, 2, 1); __PYX_ERR(0, 144, __pyx_L3_error)
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_text") < 0)) __PYX_ERR(0, 137, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decode_text") < 0)) __PYX_ERR(0, 144, __pyx_L3_error)
       }
     } else if (PyTuple_GET_SIZE(__pyx_args) != 2) {
       goto __pyx_L5_argtuple_error;
@@ -5530,7 +5531,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decode_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 137, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decode_text", 1, 2, 2, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 144, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.decode_text", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5562,7 +5563,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   int __pyx_clineno = 0;
   __Pyx_RefNannySetupContext("decode_text", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":138
+  /* "pyaibox/compression/huffman_coding.py":145
  * 
  *     def decode_text(self, encoded_text):
  *         current_code = ""             # <<<<<<<<<<<<<<
@@ -5572,7 +5573,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_INCREF(__pyx_kp_u_);
   __pyx_v_current_code = __pyx_kp_u_;
 
-  /* "pyaibox/compression/huffman_coding.py":139
+  /* "pyaibox/compression/huffman_coding.py":146
  *     def decode_text(self, encoded_text):
  *         current_code = ""
  *         decoded_text = ""             # <<<<<<<<<<<<<<
@@ -5582,7 +5583,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_INCREF(__pyx_kp_u_);
   __pyx_v_decoded_text = __pyx_kp_u_;
 
-  /* "pyaibox/compression/huffman_coding.py":141
+  /* "pyaibox/compression/huffman_coding.py":148
  *         decoded_text = ""
  * 
  *         for bit in encoded_text:             # <<<<<<<<<<<<<<
@@ -5593,26 +5594,26 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_t_1 = __pyx_v_encoded_text; __Pyx_INCREF(__pyx_t_1); __pyx_t_2 = 0;
     __pyx_t_3 = NULL;
   } else {
-    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __pyx_t_2 = -1; __pyx_t_1 = PyObject_GetIter(__pyx_v_encoded_text); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 148, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 141, __pyx_L1_error)
+    __pyx_t_3 = Py_TYPE(__pyx_t_1)->tp_iternext; if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 148, __pyx_L1_error)
   }
   for (;;) {
     if (likely(!__pyx_t_3)) {
       if (likely(PyList_CheckExact(__pyx_t_1))) {
         if (__pyx_t_2 >= PyList_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 141, __pyx_L1_error)
+        __pyx_t_4 = PyList_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 148, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       } else {
         if (__pyx_t_2 >= PyTuple_GET_SIZE(__pyx_t_1)) break;
         #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
-        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 141, __pyx_L1_error)
+        __pyx_t_4 = PyTuple_GET_ITEM(__pyx_t_1, __pyx_t_2); __Pyx_INCREF(__pyx_t_4); __pyx_t_2++; if (unlikely(0 < 0)) __PYX_ERR(0, 148, __pyx_L1_error)
         #else
-        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 141, __pyx_L1_error)
+        __pyx_t_4 = PySequence_ITEM(__pyx_t_1, __pyx_t_2); __pyx_t_2++; if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 148, __pyx_L1_error)
         __Pyx_GOTREF(__pyx_t_4);
         #endif
       }
@@ -5622,7 +5623,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         PyObject* exc_type = PyErr_Occurred();
         if (exc_type) {
           if (likely(__Pyx_PyErr_GivenExceptionMatches(exc_type, PyExc_StopIteration))) PyErr_Clear();
-          else __PYX_ERR(0, 141, __pyx_L1_error)
+          else __PYX_ERR(0, 148, __pyx_L1_error)
         }
         break;
       }
@@ -5631,60 +5632,60 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_XDECREF_SET(__pyx_v_bit, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":142
+    /* "pyaibox/compression/huffman_coding.py":149
  * 
  *         for bit in encoded_text:
  *             current_code += bit             # <<<<<<<<<<<<<<
  *             if(current_code in self.reverse_mapping):
  *                 character = self.reverse_mapping[current_code]
  */
-    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_current_code, __pyx_v_bit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 142, __pyx_L1_error)
+    __pyx_t_4 = PyNumber_InPlaceAdd(__pyx_v_current_code, __pyx_v_bit); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 149, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF_SET(__pyx_v_current_code, __pyx_t_4);
     __pyx_t_4 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":143
+    /* "pyaibox/compression/huffman_coding.py":150
  *         for bit in encoded_text:
  *             current_code += bit
  *             if(current_code in self.reverse_mapping):             # <<<<<<<<<<<<<<
  *                 character = self.reverse_mapping[current_code]
  *                 decoded_text += character
  */
-    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
-    __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_v_current_code, __pyx_t_4, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 143, __pyx_L1_error)
+    __pyx_t_5 = (__Pyx_PySequence_ContainsTF(__pyx_v_current_code, __pyx_t_4, Py_EQ)); if (unlikely(__pyx_t_5 < 0)) __PYX_ERR(0, 150, __pyx_L1_error)
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_6 = (__pyx_t_5 != 0);
     if (__pyx_t_6) {
 
-      /* "pyaibox/compression/huffman_coding.py":144
+      /* "pyaibox/compression/huffman_coding.py":151
  *             current_code += bit
  *             if(current_code in self.reverse_mapping):
  *                 character = self.reverse_mapping[current_code]             # <<<<<<<<<<<<<<
  *                 decoded_text += character
  *                 current_code = ""
  */
-      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 144, __pyx_L1_error)
+      __pyx_t_4 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_reverse_mapping); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_4);
-      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_current_code); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 144, __pyx_L1_error)
+      __pyx_t_7 = __Pyx_PyObject_GetItem(__pyx_t_4, __pyx_v_current_code); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 151, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
       __Pyx_XDECREF_SET(__pyx_v_character, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "pyaibox/compression/huffman_coding.py":145
+      /* "pyaibox/compression/huffman_coding.py":152
  *             if(current_code in self.reverse_mapping):
  *                 character = self.reverse_mapping[current_code]
  *                 decoded_text += character             # <<<<<<<<<<<<<<
  *                 current_code = ""
  * 
  */
-      __pyx_t_7 = PyNumber_InPlaceAdd(__pyx_v_decoded_text, __pyx_v_character); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 145, __pyx_L1_error)
+      __pyx_t_7 = PyNumber_InPlaceAdd(__pyx_v_decoded_text, __pyx_v_character); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 152, __pyx_L1_error)
       __Pyx_GOTREF(__pyx_t_7);
       __Pyx_DECREF_SET(__pyx_v_decoded_text, __pyx_t_7);
       __pyx_t_7 = 0;
 
-      /* "pyaibox/compression/huffman_coding.py":146
+      /* "pyaibox/compression/huffman_coding.py":153
  *                 character = self.reverse_mapping[current_code]
  *                 decoded_text += character
  *                 current_code = ""             # <<<<<<<<<<<<<<
@@ -5694,7 +5695,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
       __Pyx_INCREF(__pyx_kp_u_);
       __Pyx_DECREF_SET(__pyx_v_current_code, __pyx_kp_u_);
 
-      /* "pyaibox/compression/huffman_coding.py":143
+      /* "pyaibox/compression/huffman_coding.py":150
  *         for bit in encoded_text:
  *             current_code += bit
  *             if(current_code in self.reverse_mapping):             # <<<<<<<<<<<<<<
@@ -5703,7 +5704,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
     }
 
-    /* "pyaibox/compression/huffman_coding.py":141
+    /* "pyaibox/compression/huffman_coding.py":148
  *         decoded_text = ""
  * 
  *         for bit in encoded_text:             # <<<<<<<<<<<<<<
@@ -5713,7 +5714,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":148
+  /* "pyaibox/compression/huffman_coding.py":155
  *                 current_code = ""
  * 
  *         return decoded_text             # <<<<<<<<<<<<<<
@@ -5725,7 +5726,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_decoded_text;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":137
+  /* "pyaibox/compression/huffman_coding.py":144
  *         return encoded_text
  * 
  *     def decode_text(self, encoded_text):             # <<<<<<<<<<<<<<
@@ -5750,7 +5751,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   return __pyx_r;
 }
 
-/* "pyaibox/compression/huffman_coding.py":150
+/* "pyaibox/compression/huffman_coding.py":157
  *         return decoded_text
  * 
  *     def decompress(self, infile, outfile=None):             # <<<<<<<<<<<<<<
@@ -5797,7 +5798,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         case  1:
         if (likely((values[1] = __Pyx_PyDict_GetItemStr(__pyx_kwds, __pyx_n_s_infile)) != 0)) kw_args--;
         else {
-          __Pyx_RaiseArgtupleInvalid("decompress", 0, 2, 3, 1); __PYX_ERR(0, 150, __pyx_L3_error)
+          __Pyx_RaiseArgtupleInvalid("decompress", 0, 2, 3, 1); __PYX_ERR(0, 157, __pyx_L3_error)
         }
         CYTHON_FALLTHROUGH;
         case  2:
@@ -5807,7 +5808,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         }
       }
       if (unlikely(kw_args > 0)) {
-        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 150, __pyx_L3_error)
+        if (unlikely(__Pyx_ParseOptionalKeywords(__pyx_kwds, __pyx_pyargnames, 0, values, pos_args, "decompress") < 0)) __PYX_ERR(0, 157, __pyx_L3_error)
       }
     } else {
       switch (PyTuple_GET_SIZE(__pyx_args)) {
@@ -5825,7 +5826,7 @@ static PyObject *__pyx_pw_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   }
   goto __pyx_L4_argument_unpacking_done;
   __pyx_L5_argtuple_error:;
-  __Pyx_RaiseArgtupleInvalid("decompress", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 150, __pyx_L3_error)
+  __Pyx_RaiseArgtupleInvalid("decompress", 0, 2, 3, PyTuple_GET_SIZE(__pyx_args)); __PYX_ERR(0, 157, __pyx_L3_error)
   __pyx_L3_error:;
   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.decompress", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
@@ -5874,22 +5875,22 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __Pyx_RefNannySetupContext("decompress", 0);
   __Pyx_INCREF(__pyx_v_outfile);
 
-  /* "pyaibox/compression/huffman_coding.py":151
+  /* "pyaibox/compression/huffman_coding.py":158
  * 
  *     def decompress(self, infile, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)             # <<<<<<<<<<<<<<
  *         if outfile is None:
  *             outfile = filename + "_decompressed" + ".txt"
  */
-  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __Pyx_GetModuleGlobalName(__pyx_t_2, __pyx_n_s_os); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_2, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_splitext); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_PyObject_GetAttrStr(__pyx_t_3, __pyx_n_s_splitext); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_path); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
   __pyx_t_4 = NULL;
   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -5904,7 +5905,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_1 = (__pyx_t_4) ? __Pyx_PyObject_Call2Args(__pyx_t_2, __pyx_t_4, __pyx_t_3) : __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_3);
   __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 151, __pyx_L1_error)
+  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   if ((likely(PyTuple_CheckExact(__pyx_t_1))) || (PyList_CheckExact(__pyx_t_1))) {
@@ -5913,7 +5914,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     if (unlikely(size != 2)) {
       if (size > 2) __Pyx_RaiseTooManyValuesError(2);
       else if (size >= 0) __Pyx_RaiseNeedMoreValuesError(size);
-      __PYX_ERR(0, 151, __pyx_L1_error)
+      __PYX_ERR(0, 158, __pyx_L1_error)
     }
     #if CYTHON_ASSUME_SAFE_MACROS && !CYTHON_AVOID_BORROWED_REFS
     if (likely(PyTuple_CheckExact(sequence))) {
@@ -5926,15 +5927,15 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_INCREF(__pyx_t_2);
     __Pyx_INCREF(__pyx_t_3);
     #else
-    __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_2 = PySequence_ITEM(sequence, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 158, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_2);
-    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_3 = PySequence_ITEM(sequence, 1); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     #endif
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
   } else {
     Py_ssize_t index = -1;
-    __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 151, __pyx_L1_error)
+    __pyx_t_4 = PyObject_GetIter(__pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 158, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_4);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __pyx_t_5 = Py_TYPE(__pyx_t_4)->tp_iternext;
@@ -5942,7 +5943,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_GOTREF(__pyx_t_2);
     index = 1; __pyx_t_3 = __pyx_t_5(__pyx_t_4); if (unlikely(!__pyx_t_3)) goto __pyx_L3_unpacking_failed;
     __Pyx_GOTREF(__pyx_t_3);
-    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_4), 2) < 0) __PYX_ERR(0, 151, __pyx_L1_error)
+    if (__Pyx_IternextUnpackEndCheck(__pyx_t_5(__pyx_t_4), 2) < 0) __PYX_ERR(0, 158, __pyx_L1_error)
     __pyx_t_5 = NULL;
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     goto __pyx_L4_unpacking_done;
@@ -5950,7 +5951,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
     __pyx_t_5 = NULL;
     if (__Pyx_IterFinish() == 0) __Pyx_RaiseNeedMoreValuesError(index);
-    __PYX_ERR(0, 151, __pyx_L1_error)
+    __PYX_ERR(0, 158, __pyx_L1_error)
     __pyx_L4_unpacking_done:;
   }
   __pyx_v_filename = __pyx_t_2;
@@ -5958,7 +5959,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_v_file_extension = __pyx_t_3;
   __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":152
+  /* "pyaibox/compression/huffman_coding.py":159
  *     def decompress(self, infile, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:             # <<<<<<<<<<<<<<
@@ -5969,22 +5970,22 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_t_7 = (__pyx_t_6 != 0);
   if (__pyx_t_7) {
 
-    /* "pyaibox/compression/huffman_coding.py":153
+    /* "pyaibox/compression/huffman_coding.py":160
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  *             outfile = filename + "_decompressed" + ".txt"             # <<<<<<<<<<<<<<
  * 
  *         with open(infile, 'rb') as file, open(outfile, 'w') as output:
  */
-    __pyx_t_1 = PyNumber_Add(__pyx_v_filename, __pyx_n_u_decompressed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __pyx_t_1 = PyNumber_Add(__pyx_v_filename, __pyx_n_u_decompressed); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 160, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
-    __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_kp_u_txt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 153, __pyx_L1_error)
+    __pyx_t_3 = PyNumber_Add(__pyx_t_1, __pyx_kp_u_txt); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
     __Pyx_DECREF_SET(__pyx_v_outfile, __pyx_t_3);
     __pyx_t_3 = 0;
 
-    /* "pyaibox/compression/huffman_coding.py":152
+    /* "pyaibox/compression/huffman_coding.py":159
  *     def decompress(self, infile, outfile=None):
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:             # <<<<<<<<<<<<<<
@@ -5993,7 +5994,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  */
   }
 
-  /* "pyaibox/compression/huffman_coding.py":155
+  /* "pyaibox/compression/huffman_coding.py":162
  *             outfile = filename + "_decompressed" + ".txt"
  * 
  *         with open(infile, 'rb') as file, open(outfile, 'w') as output:             # <<<<<<<<<<<<<<
@@ -6001,7 +6002,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  * 
  */
   /*with:*/ {
-    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L1_error)
+    __pyx_t_3 = PyTuple_New(2); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_INCREF(__pyx_v_infile);
     __Pyx_GIVEREF(__pyx_v_infile);
@@ -6009,12 +6010,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __Pyx_INCREF(__pyx_n_u_rb);
     __Pyx_GIVEREF(__pyx_n_u_rb);
     PyTuple_SET_ITEM(__pyx_t_3, 1, __pyx_n_u_rb);
-    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L1_error)
+    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_3, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_1);
     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-    __pyx_t_8 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 155, __pyx_L1_error)
+    __pyx_t_8 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_8)) __PYX_ERR(0, 162, __pyx_L1_error)
     __Pyx_GOTREF(__pyx_t_8);
-    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L6_error)
+    __pyx_t_2 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_2);
     __pyx_t_4 = NULL;
     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_2))) {
@@ -6028,7 +6029,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     }
     __pyx_t_3 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_2, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_2);
     __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L6_error)
+    if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L6_error)
     __Pyx_GOTREF(__pyx_t_3);
     __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
     __pyx_t_2 = __pyx_t_3;
@@ -6046,7 +6047,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
           __pyx_v_file = __pyx_t_2;
           __pyx_t_2 = 0;
           /*with:*/ {
-            __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L10_error)
+            __pyx_t_2 = PyTuple_New(2); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_INCREF(__pyx_v_outfile);
             __Pyx_GIVEREF(__pyx_v_outfile);
@@ -6054,12 +6055,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             __Pyx_INCREF(__pyx_n_u_w);
             __Pyx_GIVEREF(__pyx_n_u_w);
             PyTuple_SET_ITEM(__pyx_t_2, 1, __pyx_n_u_w);
-            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 155, __pyx_L10_error)
+            __pyx_t_1 = __Pyx_PyObject_Call(__pyx_builtin_open, __pyx_t_2, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_1);
             __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
-            __pyx_t_12 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 155, __pyx_L10_error)
+            __pyx_t_12 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_exit_2); if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 162, __pyx_L10_error)
             __Pyx_GOTREF(__pyx_t_12);
-            __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 155, __pyx_L16_error)
+            __pyx_t_3 = __Pyx_PyObject_LookupSpecial(__pyx_t_1, __pyx_n_s_enter); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 162, __pyx_L16_error)
             __Pyx_GOTREF(__pyx_t_3);
             __pyx_t_4 = NULL;
             if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6073,7 +6074,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             }
             __pyx_t_2 = (__pyx_t_4) ? __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_t_4) : __Pyx_PyObject_CallNoArg(__pyx_t_3);
             __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
-            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 155, __pyx_L16_error)
+            if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 162, __pyx_L16_error)
             __Pyx_GOTREF(__pyx_t_2);
             __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
             __pyx_t_3 = __pyx_t_2;
@@ -6091,7 +6092,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   __pyx_v_output = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":156
+                  /* "pyaibox/compression/huffman_coding.py":163
  * 
  *         with open(infile, 'rb') as file, open(outfile, 'w') as output:
  *             bit_string = ""             # <<<<<<<<<<<<<<
@@ -6101,14 +6102,14 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   __Pyx_INCREF(__pyx_kp_u_);
                   __pyx_v_bit_string = __pyx_kp_u_;
 
-                  /* "pyaibox/compression/huffman_coding.py":158
+                  /* "pyaibox/compression/huffman_coding.py":165
  *             bit_string = ""
  * 
  *             byte = file.read(1)             # <<<<<<<<<<<<<<
  *             while(len(byte) > 0):
  *                 byte = ord(byte)
  */
-                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 158, __pyx_L20_error)
+                  __pyx_t_1 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_1))) {
@@ -6122,13 +6123,13 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_3 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_1, __pyx_t_2, __pyx_int_1) : __Pyx_PyObject_CallOneArg(__pyx_t_1, __pyx_int_1);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 158, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __pyx_v_byte = __pyx_t_3;
                   __pyx_t_3 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":159
+                  /* "pyaibox/compression/huffman_coding.py":166
  * 
  *             byte = file.read(1)
  *             while(len(byte) > 0):             # <<<<<<<<<<<<<<
@@ -6136,64 +6137,64 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
  *                 bits = bin(byte)[2:].rjust(8, '0')
  */
                   while (1) {
-                    __pyx_t_16 = PyObject_Length(__pyx_v_byte); if (unlikely(__pyx_t_16 == ((Py_ssize_t)-1))) __PYX_ERR(0, 159, __pyx_L20_error)
+                    __pyx_t_16 = PyObject_Length(__pyx_v_byte); if (unlikely(__pyx_t_16 == ((Py_ssize_t)-1))) __PYX_ERR(0, 166, __pyx_L20_error)
                     __pyx_t_7 = ((__pyx_t_16 > 0) != 0);
                     if (!__pyx_t_7) break;
 
-                    /* "pyaibox/compression/huffman_coding.py":160
+                    /* "pyaibox/compression/huffman_coding.py":167
  *             byte = file.read(1)
  *             while(len(byte) > 0):
  *                 byte = ord(byte)             # <<<<<<<<<<<<<<
  *                 bits = bin(byte)[2:].rjust(8, '0')
  *                 bit_string += bits
  */
-                    __pyx_t_17 = __Pyx_PyObject_Ord(__pyx_v_byte); if (unlikely(__pyx_t_17 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 160, __pyx_L20_error)
-                    __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_17); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 160, __pyx_L20_error)
+                    __pyx_t_17 = __Pyx_PyObject_Ord(__pyx_v_byte); if (unlikely(__pyx_t_17 == ((long)(long)(Py_UCS4)-1))) __PYX_ERR(0, 167, __pyx_L20_error)
+                    __pyx_t_3 = __Pyx_PyInt_From_long(__pyx_t_17); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_3);
                     __Pyx_DECREF_SET(__pyx_v_byte, __pyx_t_3);
                     __pyx_t_3 = 0;
 
-                    /* "pyaibox/compression/huffman_coding.py":161
+                    /* "pyaibox/compression/huffman_coding.py":168
  *             while(len(byte) > 0):
  *                 byte = ord(byte)
  *                 bits = bin(byte)[2:].rjust(8, '0')             # <<<<<<<<<<<<<<
  *                 bit_string += bits
  *                 byte = file.read(1)
  */
-                    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_bin, __pyx_v_byte); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L20_error)
+                    __pyx_t_3 = __Pyx_PyObject_CallOneArg(__pyx_builtin_bin, __pyx_v_byte); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_3);
-                    __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_3, 2, 0, NULL, NULL, &__pyx_slice__7, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L20_error)
+                    __pyx_t_1 = __Pyx_PyObject_GetSlice(__pyx_t_3, 2, 0, NULL, NULL, &__pyx_slice__7, 1, 0, 1); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_1);
                     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
-                    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_rjust); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 161, __pyx_L20_error)
+                    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_t_1, __pyx_n_s_rjust); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 168, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_3);
                     __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
-                    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 161, __pyx_L20_error)
+                    __pyx_t_1 = __Pyx_PyObject_Call(__pyx_t_3, __pyx_tuple__8, NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 168, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_1);
                     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
                     __Pyx_XDECREF_SET(__pyx_v_bits, __pyx_t_1);
                     __pyx_t_1 = 0;
 
-                    /* "pyaibox/compression/huffman_coding.py":162
+                    /* "pyaibox/compression/huffman_coding.py":169
  *                 byte = ord(byte)
  *                 bits = bin(byte)[2:].rjust(8, '0')
  *                 bit_string += bits             # <<<<<<<<<<<<<<
  *                 byte = file.read(1)
  * 
  */
-                    __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_bit_string, __pyx_v_bits); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 162, __pyx_L20_error)
+                    __pyx_t_1 = PyNumber_InPlaceAdd(__pyx_v_bit_string, __pyx_v_bits); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_1);
                     __Pyx_DECREF_SET(__pyx_v_bit_string, __pyx_t_1);
                     __pyx_t_1 = 0;
 
-                    /* "pyaibox/compression/huffman_coding.py":163
+                    /* "pyaibox/compression/huffman_coding.py":170
  *                 bits = bin(byte)[2:].rjust(8, '0')
  *                 bit_string += bits
  *                 byte = file.read(1)             # <<<<<<<<<<<<<<
  * 
  *             encoded_text = self.remove_padding(bit_string)
  */
-                    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 163, __pyx_L20_error)
+                    __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_file, __pyx_n_s_read); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 170, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_3);
                     __pyx_t_2 = NULL;
                     if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6207,21 +6208,21 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                     }
                     __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_int_1) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_int_1);
                     __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 163, __pyx_L20_error)
+                    if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 170, __pyx_L20_error)
                     __Pyx_GOTREF(__pyx_t_1);
                     __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
                     __Pyx_DECREF_SET(__pyx_v_byte, __pyx_t_1);
                     __pyx_t_1 = 0;
                   }
 
-                  /* "pyaibox/compression/huffman_coding.py":165
+                  /* "pyaibox/compression/huffman_coding.py":172
  *                 byte = file.read(1)
  * 
  *             encoded_text = self.remove_padding(bit_string)             # <<<<<<<<<<<<<<
  * 
  *             decompressed_text = self.decode_text(encoded_text)
  */
-                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_remove_padding); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 165, __pyx_L20_error)
+                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_remove_padding); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 172, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6235,20 +6236,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_bit_string) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_bit_string);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 165, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 172, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
                   __pyx_v_encoded_text = __pyx_t_1;
                   __pyx_t_1 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":167
+                  /* "pyaibox/compression/huffman_coding.py":174
  *             encoded_text = self.remove_padding(bit_string)
  * 
  *             decompressed_text = self.decode_text(encoded_text)             # <<<<<<<<<<<<<<
  * 
  *             output.write(decompressed_text)
  */
-                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_decode_text); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 167, __pyx_L20_error)
+                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_self, __pyx_n_s_decode_text); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 174, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6262,20 +6263,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_encoded_text) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_encoded_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 167, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 174, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
                   __pyx_v_decompressed_text = __pyx_t_1;
                   __pyx_t_1 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":169
+                  /* "pyaibox/compression/huffman_coding.py":176
  *             decompressed_text = self.decode_text(encoded_text)
  * 
  *             output.write(decompressed_text)             # <<<<<<<<<<<<<<
  * 
  *         return outfile
  */
-                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_output, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 169, __pyx_L20_error)
+                  __pyx_t_3 = __Pyx_PyObject_GetAttrStr(__pyx_v_output, __pyx_n_s_write); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 176, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_3);
                   __pyx_t_2 = NULL;
                   if (CYTHON_UNPACK_METHODS && likely(PyMethod_Check(__pyx_t_3))) {
@@ -6289,12 +6290,12 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                   }
                   __pyx_t_1 = (__pyx_t_2) ? __Pyx_PyObject_Call2Args(__pyx_t_3, __pyx_t_2, __pyx_v_decompressed_text) : __Pyx_PyObject_CallOneArg(__pyx_t_3, __pyx_v_decompressed_text);
                   __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
-                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 169, __pyx_L20_error)
+                  if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 176, __pyx_L20_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
                   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-                  /* "pyaibox/compression/huffman_coding.py":155
+                  /* "pyaibox/compression/huffman_coding.py":162
  *             outfile = filename + "_decompressed" + ".txt"
  * 
  *         with open(infile, 'rb') as file, open(outfile, 'w') as output:             # <<<<<<<<<<<<<<
@@ -6313,20 +6314,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                 __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
                 /*except:*/ {
                   __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.decompress", __pyx_clineno, __pyx_lineno, __pyx_filename);
-                  if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 155, __pyx_L22_except_error)
+                  if (__Pyx_GetException(&__pyx_t_1, &__pyx_t_3, &__pyx_t_2) < 0) __PYX_ERR(0, 162, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_1);
                   __Pyx_GOTREF(__pyx_t_3);
                   __Pyx_GOTREF(__pyx_t_2);
-                  __pyx_t_4 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 155, __pyx_L22_except_error)
+                  __pyx_t_4 = PyTuple_Pack(3, __pyx_t_1, __pyx_t_3, __pyx_t_2); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 162, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_4);
                   __pyx_t_18 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_t_4, NULL);
                   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
                   __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-                  if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 155, __pyx_L22_except_error)
+                  if (unlikely(!__pyx_t_18)) __PYX_ERR(0, 162, __pyx_L22_except_error)
                   __Pyx_GOTREF(__pyx_t_18);
                   __pyx_t_7 = __Pyx_PyObject_IsTrue(__pyx_t_18);
                   __Pyx_DECREF(__pyx_t_18); __pyx_t_18 = 0;
-                  if (__pyx_t_7 < 0) __PYX_ERR(0, 155, __pyx_L22_except_error)
+                  if (__pyx_t_7 < 0) __PYX_ERR(0, 162, __pyx_L22_except_error)
                   __pyx_t_6 = ((!(__pyx_t_7 != 0)) != 0);
                   if (__pyx_t_6) {
                     __Pyx_GIVEREF(__pyx_t_1);
@@ -6334,7 +6335,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                     __Pyx_XGIVEREF(__pyx_t_2);
                     __Pyx_ErrRestoreWithState(__pyx_t_1, __pyx_t_3, __pyx_t_2);
                     __pyx_t_1 = 0; __pyx_t_3 = 0; __pyx_t_2 = 0; 
-                    __PYX_ERR(0, 155, __pyx_L22_except_error)
+                    __PYX_ERR(0, 162, __pyx_L22_except_error)
                   }
                   __Pyx_XDECREF(__pyx_t_1); __pyx_t_1 = 0;
                   __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6360,7 +6361,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
                 if (__pyx_t_12) {
                   __pyx_t_15 = __Pyx_PyObject_Call(__pyx_t_12, __pyx_tuple__4, NULL);
                   __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-                  if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 155, __pyx_L10_error)
+                  if (unlikely(!__pyx_t_15)) __PYX_ERR(0, 162, __pyx_L10_error)
                   __Pyx_GOTREF(__pyx_t_15);
                   __Pyx_DECREF(__pyx_t_15); __pyx_t_15 = 0;
                 }
@@ -6386,20 +6387,20 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         __Pyx_XDECREF(__pyx_t_4); __pyx_t_4 = 0;
         /*except:*/ {
           __Pyx_AddTraceback("pyaibox.compression.huffman_coding.HuffmanCoding.decompress", __pyx_clineno, __pyx_lineno, __pyx_filename);
-          if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_3, &__pyx_t_1) < 0) __PYX_ERR(0, 155, __pyx_L12_except_error)
+          if (__Pyx_GetException(&__pyx_t_2, &__pyx_t_3, &__pyx_t_1) < 0) __PYX_ERR(0, 162, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_2);
           __Pyx_GOTREF(__pyx_t_3);
           __Pyx_GOTREF(__pyx_t_1);
-          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 155, __pyx_L12_except_error)
+          __pyx_t_4 = PyTuple_Pack(3, __pyx_t_2, __pyx_t_3, __pyx_t_1); if (unlikely(!__pyx_t_4)) __PYX_ERR(0, 162, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_4);
           __pyx_t_12 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_t_4, NULL);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
           __Pyx_DECREF(__pyx_t_4); __pyx_t_4 = 0;
-          if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 155, __pyx_L12_except_error)
+          if (unlikely(!__pyx_t_12)) __PYX_ERR(0, 162, __pyx_L12_except_error)
           __Pyx_GOTREF(__pyx_t_12);
           __pyx_t_6 = __Pyx_PyObject_IsTrue(__pyx_t_12);
           __Pyx_DECREF(__pyx_t_12); __pyx_t_12 = 0;
-          if (__pyx_t_6 < 0) __PYX_ERR(0, 155, __pyx_L12_except_error)
+          if (__pyx_t_6 < 0) __PYX_ERR(0, 162, __pyx_L12_except_error)
           __pyx_t_7 = ((!(__pyx_t_6 != 0)) != 0);
           if (__pyx_t_7) {
             __Pyx_GIVEREF(__pyx_t_2);
@@ -6407,7 +6408,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
             __Pyx_XGIVEREF(__pyx_t_1);
             __Pyx_ErrRestoreWithState(__pyx_t_2, __pyx_t_3, __pyx_t_1);
             __pyx_t_2 = 0; __pyx_t_3 = 0; __pyx_t_1 = 0; 
-            __PYX_ERR(0, 155, __pyx_L12_except_error)
+            __PYX_ERR(0, 162, __pyx_L12_except_error)
           }
           __Pyx_XDECREF(__pyx_t_2); __pyx_t_2 = 0;
           __Pyx_XDECREF(__pyx_t_3); __pyx_t_3 = 0;
@@ -6433,7 +6434,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
         if (__pyx_t_8) {
           __pyx_t_11 = __Pyx_PyObject_Call(__pyx_t_8, __pyx_tuple__4, NULL);
           __Pyx_DECREF(__pyx_t_8); __pyx_t_8 = 0;
-          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 155, __pyx_L1_error)
+          if (unlikely(!__pyx_t_11)) __PYX_ERR(0, 162, __pyx_L1_error)
           __Pyx_GOTREF(__pyx_t_11);
           __Pyx_DECREF(__pyx_t_11); __pyx_t_11 = 0;
         }
@@ -6448,7 +6449,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
     __pyx_L35:;
   }
 
-  /* "pyaibox/compression/huffman_coding.py":171
+  /* "pyaibox/compression/huffman_coding.py":178
  *             output.write(decompressed_text)
  * 
  *         return outfile             # <<<<<<<<<<<<<<
@@ -6458,7 +6459,7 @@ static PyObject *__pyx_pf_7pyaibox_11compression_14huffman_coding_13HuffmanCodin
   __pyx_r = __pyx_v_outfile;
   goto __pyx_L0;
 
-  /* "pyaibox/compression/huffman_coding.py":150
+  /* "pyaibox/compression/huffman_coding.py":157
  *         return decoded_text
  * 
  *     def decompress(self, infile, outfile=None):             # <<<<<<<<<<<<<<
@@ -6653,11 +6654,11 @@ static __Pyx_StringTabEntry __pyx_string_tab[] = {
   {0, 0, 0, 0, 0, 0, 0}
 };
 static CYTHON_SMALL_CODE int __Pyx_InitCachedBuiltins(void) {
-  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 86, __pyx_L1_error)
-  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 95, __pyx_L1_error)
-  __pyx_builtin_exit = __Pyx_GetBuiltinName(__pyx_n_s_exit); if (!__pyx_builtin_exit) __PYX_ERR(0, 96, __pyx_L1_error)
-  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 109, __pyx_L1_error)
-  __pyx_builtin_bin = __Pyx_GetBuiltinName(__pyx_n_s_bin); if (!__pyx_builtin_bin) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_builtin_range = __Pyx_GetBuiltinName(__pyx_n_s_range); if (!__pyx_builtin_range) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_builtin_print = __Pyx_GetBuiltinName(__pyx_n_s_print); if (!__pyx_builtin_print) __PYX_ERR(0, 102, __pyx_L1_error)
+  __pyx_builtin_exit = __Pyx_GetBuiltinName(__pyx_n_s_exit); if (!__pyx_builtin_exit) __PYX_ERR(0, 103, __pyx_L1_error)
+  __pyx_builtin_open = __Pyx_GetBuiltinName(__pyx_n_s_open); if (!__pyx_builtin_open) __PYX_ERR(0, 116, __pyx_L1_error)
+  __pyx_builtin_bin = __Pyx_GetBuiltinName(__pyx_n_s_bin); if (!__pyx_builtin_bin) __PYX_ERR(0, 168, __pyx_L1_error)
   return 0;
   __pyx_L1_error:;
   return -1;
@@ -6667,270 +6668,270 @@ static CYTHON_SMALL_CODE int __Pyx_InitCachedConstants(void) {
   __Pyx_RefNannyDeclarations
   __Pyx_RefNannySetupContext("__Pyx_InitCachedConstants", 0);
 
-  /* "pyaibox/compression/huffman_coding.py":95
+  /* "pyaibox/compression/huffman_coding.py":102
  *     def get_byte_array(self, padded_encoded_text):
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")             # <<<<<<<<<<<<<<
  *             exit(0)
  * 
  */
-  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_Encoded_text_not_padded_properly); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 95, __pyx_L1_error)
+  __pyx_tuple__2 = PyTuple_Pack(1, __pyx_kp_u_Encoded_text_not_padded_properly); if (unlikely(!__pyx_tuple__2)) __PYX_ERR(0, 102, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__2);
   __Pyx_GIVEREF(__pyx_tuple__2);
 
-  /* "pyaibox/compression/huffman_coding.py":96
+  /* "pyaibox/compression/huffman_coding.py":103
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")
  *             exit(0)             # <<<<<<<<<<<<<<
  * 
  *         b = bytearray()
  */
-  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 96, __pyx_L1_error)
+  __pyx_tuple__3 = PyTuple_Pack(1, __pyx_int_0); if (unlikely(!__pyx_tuple__3)) __PYX_ERR(0, 103, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__3);
   __Pyx_GIVEREF(__pyx_tuple__3);
 
-  /* "pyaibox/compression/huffman_coding.py":109
+  /* "pyaibox/compression/huffman_coding.py":116
  *             outfile = filename + ".bin"
  * 
  *         with open(self.path, 'r+') as file, open(outfile, 'wb') as output:             # <<<<<<<<<<<<<<
  *             text = file.read()
  *             text = text.rstrip()
  */
-  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 109, __pyx_L1_error)
+  __pyx_tuple__4 = PyTuple_Pack(3, Py_None, Py_None, Py_None); if (unlikely(!__pyx_tuple__4)) __PYX_ERR(0, 116, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__4);
   __Pyx_GIVEREF(__pyx_tuple__4);
 
-  /* "pyaibox/compression/huffman_coding.py":129
+  /* "pyaibox/compression/huffman_coding.py":136
  * 
  *     def remove_padding(self, padded_encoded_text):
  *         padded_info = padded_encoded_text[:8]             # <<<<<<<<<<<<<<
  *         extra_padding = int(padded_info, 2)
  * 
  */
-  __pyx_slice__5 = PySlice_New(Py_None, __pyx_int_8, Py_None); if (unlikely(!__pyx_slice__5)) __PYX_ERR(0, 129, __pyx_L1_error)
+  __pyx_slice__5 = PySlice_New(Py_None, __pyx_int_8, Py_None); if (unlikely(!__pyx_slice__5)) __PYX_ERR(0, 136, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__5);
   __Pyx_GIVEREF(__pyx_slice__5);
 
-  /* "pyaibox/compression/huffman_coding.py":132
+  /* "pyaibox/compression/huffman_coding.py":139
  *         extra_padding = int(padded_info, 2)
  * 
  *         padded_encoded_text = padded_encoded_text[8:]             # <<<<<<<<<<<<<<
  *         encoded_text = padded_encoded_text[:-1 * extra_padding]
  * 
  */
-  __pyx_slice__6 = PySlice_New(__pyx_int_8, Py_None, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 132, __pyx_L1_error)
+  __pyx_slice__6 = PySlice_New(__pyx_int_8, Py_None, Py_None); if (unlikely(!__pyx_slice__6)) __PYX_ERR(0, 139, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__6);
   __Pyx_GIVEREF(__pyx_slice__6);
 
-  /* "pyaibox/compression/huffman_coding.py":161
+  /* "pyaibox/compression/huffman_coding.py":168
  *             while(len(byte) > 0):
  *                 byte = ord(byte)
  *                 bits = bin(byte)[2:].rjust(8, '0')             # <<<<<<<<<<<<<<
  *                 bit_string += bits
  *                 byte = file.read(1)
  */
-  __pyx_slice__7 = PySlice_New(__pyx_int_2, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_slice__7 = PySlice_New(__pyx_int_2, Py_None, Py_None); if (unlikely(!__pyx_slice__7)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_slice__7);
   __Pyx_GIVEREF(__pyx_slice__7);
-  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_int_8, __pyx_kp_u_0); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 161, __pyx_L1_error)
+  __pyx_tuple__8 = PyTuple_Pack(2, __pyx_int_8, __pyx_kp_u_0); if (unlikely(!__pyx_tuple__8)) __PYX_ERR(0, 168, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__8);
   __Pyx_GIVEREF(__pyx_tuple__8);
 
-  /* "pyaibox/compression/huffman_coding.py":12
- * 
+  /* "pyaibox/compression/huffman_coding.py":11
  * class HuffmanCoding:
+ * 
  *     def __init__(self, path):             # <<<<<<<<<<<<<<
- *         self.path = path
- *         self.heap = []
+ *         r"""HuffmanCoding
+ * 
  */
-  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_path); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_tuple__9 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_path); if (unlikely(!__pyx_tuple__9)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__9);
   __Pyx_GIVEREF(__pyx_tuple__9);
-  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_init, 12, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_codeobj__10 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__9, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_init, 11, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__10)) __PYX_ERR(0, 11, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":19
+  /* "pyaibox/compression/huffman_coding.py":26
  * 
  *     class HeapNode:
  *         def __init__(self, char, freq):             # <<<<<<<<<<<<<<
  *             self.char = char
  *             self.freq = freq
  */
-  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_char, __pyx_n_s_freq); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_tuple__11 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_char, __pyx_n_s_freq); if (unlikely(!__pyx_tuple__11)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__11);
   __Pyx_GIVEREF(__pyx_tuple__11);
-  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_init, 19, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_codeobj__12 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__11, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_init, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__12)) __PYX_ERR(0, 26, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":26
+  /* "pyaibox/compression/huffman_coding.py":33
  * 
  *         # defining comparators less_than and equals
  *         def __lt__(self, other):             # <<<<<<<<<<<<<<
  *             return self.freq < other.freq
  * 
  */
-  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_other); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_tuple__13 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_other); if (unlikely(!__pyx_tuple__13)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__13);
   __Pyx_GIVEREF(__pyx_tuple__13);
-  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_lt, 26, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_codeobj__14 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__13, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_lt, 33, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__14)) __PYX_ERR(0, 33, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":29
+  /* "pyaibox/compression/huffman_coding.py":36
  *             return self.freq < other.freq
  * 
  *         def __eq__(self, other):             # <<<<<<<<<<<<<<
  *             if other is None:
  *                 return False
  */
-  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_other); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_tuple__15 = PyTuple_Pack(2, __pyx_n_s_self, __pyx_n_s_other); if (unlikely(!__pyx_tuple__15)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__15);
   __Pyx_GIVEREF(__pyx_tuple__15);
-  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_eq, 29, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_codeobj__16 = (PyObject*)__Pyx_PyCode_New(2, 0, 2, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__15, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_eq, 36, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__16)) __PYX_ERR(0, 36, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":37
+  /* "pyaibox/compression/huffman_coding.py":44
  * 
  *     # functions for compression:
  *     def make_frequency_dict(self, text):             # <<<<<<<<<<<<<<
  *         frequency = {}
  *         for character in text:
  */
-  __pyx_tuple__17 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_frequency, __pyx_n_s_character); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_tuple__17 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_frequency, __pyx_n_s_character); if (unlikely(!__pyx_tuple__17)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__17);
   __Pyx_GIVEREF(__pyx_tuple__17);
-  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_frequency_dict, 37, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_codeobj__18 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__17, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_frequency_dict, 44, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__18)) __PYX_ERR(0, 44, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":45
+  /* "pyaibox/compression/huffman_coding.py":52
  *         return frequency
  * 
  *     def make_heap(self, frequency):             # <<<<<<<<<<<<<<
  *         for key in frequency:
  *             node = self.HeapNode(key, frequency[key])
  */
-  __pyx_tuple__19 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_frequency, __pyx_n_s_key, __pyx_n_s_node); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_tuple__19 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_frequency, __pyx_n_s_key, __pyx_n_s_node); if (unlikely(!__pyx_tuple__19)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__19);
   __Pyx_GIVEREF(__pyx_tuple__19);
-  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_heap, 45, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_codeobj__20 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__19, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_heap, 52, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__20)) __PYX_ERR(0, 52, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":50
+  /* "pyaibox/compression/huffman_coding.py":57
  *             heapq.heappush(self.heap, node)
  * 
  *     def merge_nodes(self):             # <<<<<<<<<<<<<<
  *         while(len(self.heap) > 1):
  *             node1 = heapq.heappop(self.heap)
  */
-  __pyx_tuple__21 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_node1, __pyx_n_s_node2, __pyx_n_s_merged); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_tuple__21 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_node1, __pyx_n_s_node2, __pyx_n_s_merged); if (unlikely(!__pyx_tuple__21)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__21);
   __Pyx_GIVEREF(__pyx_tuple__21);
-  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_merge_nodes, 50, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_codeobj__22 = (PyObject*)__Pyx_PyCode_New(1, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__21, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_merge_nodes, 57, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__22)) __PYX_ERR(0, 57, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":61
+  /* "pyaibox/compression/huffman_coding.py":68
  *             heapq.heappush(self.heap, merged)
  * 
  *     def make_codes_helper(self, root, current_code):             # <<<<<<<<<<<<<<
  *         if root is None:
  *             return
  */
-  __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_root, __pyx_n_s_current_code); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_tuple__23 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_root, __pyx_n_s_current_code); if (unlikely(!__pyx_tuple__23)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__23);
   __Pyx_GIVEREF(__pyx_tuple__23);
-  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_codes_helper, 61, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_codeobj__24 = (PyObject*)__Pyx_PyCode_New(3, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__23, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_codes_helper, 68, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__24)) __PYX_ERR(0, 68, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":73
+  /* "pyaibox/compression/huffman_coding.py":80
  *         self.make_codes_helper(root.right, current_code + "1")
  * 
  *     def make_codes(self):             # <<<<<<<<<<<<<<
  *         root = heapq.heappop(self.heap)
  *         current_code = ""
  */
-  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_root, __pyx_n_s_current_code); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_tuple__25 = PyTuple_Pack(3, __pyx_n_s_self, __pyx_n_s_root, __pyx_n_s_current_code); if (unlikely(!__pyx_tuple__25)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__25);
   __Pyx_GIVEREF(__pyx_tuple__25);
-  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_codes, 73, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_codeobj__26 = (PyObject*)__Pyx_PyCode_New(1, 0, 3, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__25, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_make_codes, 80, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__26)) __PYX_ERR(0, 80, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":78
+  /* "pyaibox/compression/huffman_coding.py":85
  *         self.make_codes_helper(root, current_code)
  * 
  *     def get_encoded_text(self, text):             # <<<<<<<<<<<<<<
  *         encoded_text = ""
  *         for character in text:
  */
-  __pyx_tuple__27 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_encoded_text, __pyx_n_s_character); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_tuple__27 = PyTuple_Pack(4, __pyx_n_s_self, __pyx_n_s_text, __pyx_n_s_encoded_text, __pyx_n_s_character); if (unlikely(!__pyx_tuple__27)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__27);
   __Pyx_GIVEREF(__pyx_tuple__27);
-  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_get_encoded_text, 78, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_codeobj__28 = (PyObject*)__Pyx_PyCode_New(2, 0, 4, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__27, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_get_encoded_text, 85, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__28)) __PYX_ERR(0, 85, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":84
+  /* "pyaibox/compression/huffman_coding.py":91
  *         return encoded_text
  * 
  *     def pad_encoded_text(self, encoded_text):             # <<<<<<<<<<<<<<
  *         extra_padding = 8 - len(encoded_text) % 8
  *         for i in range(extra_padding):
  */
-  __pyx_tuple__29 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_encoded_text, __pyx_n_s_extra_padding, __pyx_n_s_i, __pyx_n_s_padded_info); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_tuple__29 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_encoded_text, __pyx_n_s_extra_padding, __pyx_n_s_i, __pyx_n_s_padded_info); if (unlikely(!__pyx_tuple__29)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__29);
   __Pyx_GIVEREF(__pyx_tuple__29);
-  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_pad_encoded_text, 84, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_codeobj__30 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__29, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_pad_encoded_text, 91, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__30)) __PYX_ERR(0, 91, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":93
+  /* "pyaibox/compression/huffman_coding.py":100
  *         return encoded_text
  * 
  *     def get_byte_array(self, padded_encoded_text):             # <<<<<<<<<<<<<<
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")
  */
-  __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_padded_encoded_text, __pyx_n_s_b, __pyx_n_s_i, __pyx_n_s_byte); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_tuple__31 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_padded_encoded_text, __pyx_n_s_b, __pyx_n_s_i, __pyx_n_s_byte); if (unlikely(!__pyx_tuple__31)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__31);
   __Pyx_GIVEREF(__pyx_tuple__31);
-  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_get_byte_array, 93, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_codeobj__32 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__31, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_get_byte_array, 100, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__32)) __PYX_ERR(0, 100, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":104
+  /* "pyaibox/compression/huffman_coding.py":111
  *         return b
  * 
  *     def compress(self, outfile=None):             # <<<<<<<<<<<<<<
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  */
-  __pyx_tuple__33 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_outfile, __pyx_n_s_filename, __pyx_n_s_file_extension, __pyx_n_s_file, __pyx_n_s_output, __pyx_n_s_text, __pyx_n_s_frequency, __pyx_n_s_encoded_text, __pyx_n_s_padded_encoded_text, __pyx_n_s_b); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_tuple__33 = PyTuple_Pack(11, __pyx_n_s_self, __pyx_n_s_outfile, __pyx_n_s_filename, __pyx_n_s_file_extension, __pyx_n_s_file, __pyx_n_s_output, __pyx_n_s_text, __pyx_n_s_frequency, __pyx_n_s_encoded_text, __pyx_n_s_padded_encoded_text, __pyx_n_s_b); if (unlikely(!__pyx_tuple__33)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__33);
   __Pyx_GIVEREF(__pyx_tuple__33);
-  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_compress, 104, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 104, __pyx_L1_error)
-  __pyx_tuple__35 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_codeobj__34 = (PyObject*)__Pyx_PyCode_New(2, 0, 11, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__33, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_compress, 111, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__34)) __PYX_ERR(0, 111, __pyx_L1_error)
+  __pyx_tuple__35 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__35)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__35);
   __Pyx_GIVEREF(__pyx_tuple__35);
 
-  /* "pyaibox/compression/huffman_coding.py":128
+  /* "pyaibox/compression/huffman_coding.py":135
  *     """ functions for decompression: """
  * 
  *     def remove_padding(self, padded_encoded_text):             # <<<<<<<<<<<<<<
  *         padded_info = padded_encoded_text[:8]
  *         extra_padding = int(padded_info, 2)
  */
-  __pyx_tuple__36 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_padded_encoded_text, __pyx_n_s_padded_info, __pyx_n_s_extra_padding, __pyx_n_s_encoded_text); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_tuple__36 = PyTuple_Pack(5, __pyx_n_s_self, __pyx_n_s_padded_encoded_text, __pyx_n_s_padded_info, __pyx_n_s_extra_padding, __pyx_n_s_encoded_text); if (unlikely(!__pyx_tuple__36)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__36);
   __Pyx_GIVEREF(__pyx_tuple__36);
-  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_remove_padding, 128, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_codeobj__37 = (PyObject*)__Pyx_PyCode_New(2, 0, 5, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__36, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_remove_padding, 135, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__37)) __PYX_ERR(0, 135, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":137
+  /* "pyaibox/compression/huffman_coding.py":144
  *         return encoded_text
  * 
  *     def decode_text(self, encoded_text):             # <<<<<<<<<<<<<<
  *         current_code = ""
  *         decoded_text = ""
  */
-  __pyx_tuple__38 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_encoded_text, __pyx_n_s_current_code, __pyx_n_s_decoded_text, __pyx_n_s_bit, __pyx_n_s_character); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_tuple__38 = PyTuple_Pack(6, __pyx_n_s_self, __pyx_n_s_encoded_text, __pyx_n_s_current_code, __pyx_n_s_decoded_text, __pyx_n_s_bit, __pyx_n_s_character); if (unlikely(!__pyx_tuple__38)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__38);
   __Pyx_GIVEREF(__pyx_tuple__38);
-  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_decode_text, 137, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_codeobj__39 = (PyObject*)__Pyx_PyCode_New(2, 0, 6, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__38, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_decode_text, 144, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__39)) __PYX_ERR(0, 144, __pyx_L1_error)
 
-  /* "pyaibox/compression/huffman_coding.py":150
+  /* "pyaibox/compression/huffman_coding.py":157
  *         return decoded_text
  * 
  *     def decompress(self, infile, outfile=None):             # <<<<<<<<<<<<<<
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  */
-  __pyx_tuple__40 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_infile, __pyx_n_s_outfile, __pyx_n_s_filename, __pyx_n_s_file_extension, __pyx_n_s_file, __pyx_n_s_output, __pyx_n_s_bit_string, __pyx_n_s_byte, __pyx_n_s_bits, __pyx_n_s_encoded_text, __pyx_n_s_decompressed_text); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_tuple__40 = PyTuple_Pack(12, __pyx_n_s_self, __pyx_n_s_infile, __pyx_n_s_outfile, __pyx_n_s_filename, __pyx_n_s_file_extension, __pyx_n_s_file, __pyx_n_s_output, __pyx_n_s_bit_string, __pyx_n_s_byte, __pyx_n_s_bits, __pyx_n_s_encoded_text, __pyx_n_s_decompressed_text); if (unlikely(!__pyx_tuple__40)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__40);
   __Pyx_GIVEREF(__pyx_tuple__40);
-  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(3, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_decompress, 150, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 150, __pyx_L1_error)
-  __pyx_tuple__42 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_codeobj__41 = (PyObject*)__Pyx_PyCode_New(3, 0, 12, 0, CO_OPTIMIZED|CO_NEWLOCALS, __pyx_empty_bytes, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_tuple__40, __pyx_empty_tuple, __pyx_empty_tuple, __pyx_kp_s_pyaibox_compression_huffman_codi_2, __pyx_n_s_decompress, 157, __pyx_empty_bytes); if (unlikely(!__pyx_codeobj__41)) __PYX_ERR(0, 157, __pyx_L1_error)
+  __pyx_tuple__42 = PyTuple_Pack(1, ((PyObject *)Py_None)); if (unlikely(!__pyx_tuple__42)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_tuple__42);
   __Pyx_GIVEREF(__pyx_tuple__42);
   __Pyx_RefNannyFinishContext();
@@ -7232,250 +7233,250 @@ if (!__Pyx_RefNanny) {
  * import heapq
  * import os             # <<<<<<<<<<<<<<
  * 
- * """
+ * # author: Bhrigu Srivastava
  */
   __pyx_t_1 = __Pyx_Import(__pyx_n_s_os, 0, 0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_os, __pyx_t_1) < 0) __PYX_ERR(0, 2, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":11
+  /* "pyaibox/compression/huffman_coding.py":9
  * 
  * 
  * class HuffmanCoding:             # <<<<<<<<<<<<<<
+ * 
  *     def __init__(self, path):
- *         self.path = path
  */
-  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_HuffmanCoding, __pyx_n_s_HuffmanCoding, (PyObject *) NULL, __pyx_n_s_pyaibox_compression_huffman_codi, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_1 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_HuffmanCoding, __pyx_n_s_HuffmanCoding, (PyObject *) NULL, __pyx_n_s_pyaibox_compression_huffman_codi, (PyObject *) NULL); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
 
-  /* "pyaibox/compression/huffman_coding.py":12
- * 
+  /* "pyaibox/compression/huffman_coding.py":11
  * class HuffmanCoding:
+ * 
  *     def __init__(self, path):             # <<<<<<<<<<<<<<
- *         self.path = path
- *         self.heap = []
+ *         r"""HuffmanCoding
+ * 
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__, 0, __pyx_n_s_HuffmanCoding___init, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_1__init__, 0, __pyx_n_s_HuffmanCoding___init, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__10)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_init, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":18
+  /* "pyaibox/compression/huffman_coding.py":25
  *         self.reverse_mapping = {}
  * 
  *     class HeapNode:             # <<<<<<<<<<<<<<
  *         def __init__(self, char, freq):
  *             self.char = char
  */
-  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_HeapNode, __pyx_n_s_HuffmanCoding_HeapNode, (PyObject *) NULL, __pyx_n_s_pyaibox_compression_huffman_codi, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3MetaclassPrepare((PyObject *) NULL, __pyx_empty_tuple, __pyx_n_s_HeapNode, __pyx_n_s_HuffmanCoding_HeapNode, (PyObject *) NULL, __pyx_n_s_pyaibox_compression_huffman_codi, (PyObject *) NULL); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
 
-  /* "pyaibox/compression/huffman_coding.py":19
+  /* "pyaibox/compression/huffman_coding.py":26
  * 
  *     class HeapNode:
  *         def __init__(self, char, freq):             # <<<<<<<<<<<<<<
  *             self.char = char
  *             self.freq = freq
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_1__init__, 0, __pyx_n_s_HuffmanCoding_HeapNode___init, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 19, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_1__init__, 0, __pyx_n_s_HuffmanCoding_HeapNode___init, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__12)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_3) < 0) __PYX_ERR(0, 19, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_init, __pyx_t_3) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":26
+  /* "pyaibox/compression/huffman_coding.py":33
  * 
  *         # defining comparators less_than and equals
  *         def __lt__(self, other):             # <<<<<<<<<<<<<<
  *             return self.freq < other.freq
  * 
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_3__lt__, 0, __pyx_n_s_HuffmanCoding_HeapNode___lt, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 26, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_3__lt__, 0, __pyx_n_s_HuffmanCoding_HeapNode___lt, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__14)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_lt, __pyx_t_3) < 0) __PYX_ERR(0, 26, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_lt, __pyx_t_3) < 0) __PYX_ERR(0, 33, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":29
+  /* "pyaibox/compression/huffman_coding.py":36
  *             return self.freq < other.freq
  * 
  *         def __eq__(self, other):             # <<<<<<<<<<<<<<
  *             if other is None:
  *                 return False
  */
-  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_5__eq__, 0, __pyx_n_s_HuffmanCoding_HeapNode___eq, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 29, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_8HeapNode_5__eq__, 0, __pyx_n_s_HuffmanCoding_HeapNode___eq, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__16)); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_eq, __pyx_t_3) < 0) __PYX_ERR(0, 29, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_2, __pyx_n_s_eq, __pyx_t_3) < 0) __PYX_ERR(0, 36, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":18
+  /* "pyaibox/compression/huffman_coding.py":25
  *         self.reverse_mapping = {}
  * 
  *     class HeapNode:             # <<<<<<<<<<<<<<
  *         def __init__(self, char, freq):
  *             self.char = char
  */
-  __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_HeapNode, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 18, __pyx_L1_error)
+  __pyx_t_3 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_HeapNode, __pyx_empty_tuple, __pyx_t_2, NULL, 0, 0); if (unlikely(!__pyx_t_3)) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_3);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_HeapNode, __pyx_t_3) < 0) __PYX_ERR(0, 18, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_HeapNode, __pyx_t_3) < 0) __PYX_ERR(0, 25, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_3); __pyx_t_3 = 0;
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":37
+  /* "pyaibox/compression/huffman_coding.py":44
  * 
  *     # functions for compression:
  *     def make_frequency_dict(self, text):             # <<<<<<<<<<<<<<
  *         frequency = {}
  *         for character in text:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_3make_frequency_dict, 0, __pyx_n_s_HuffmanCoding_make_frequency_dic, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_3make_frequency_dict, 0, __pyx_n_s_HuffmanCoding_make_frequency_dic, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__18)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_frequency_dict, __pyx_t_2) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_frequency_dict, __pyx_t_2) < 0) __PYX_ERR(0, 44, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":45
+  /* "pyaibox/compression/huffman_coding.py":52
  *         return frequency
  * 
  *     def make_heap(self, frequency):             # <<<<<<<<<<<<<<
  *         for key in frequency:
  *             node = self.HeapNode(key, frequency[key])
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_5make_heap, 0, __pyx_n_s_HuffmanCoding_make_heap, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 45, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_5make_heap, 0, __pyx_n_s_HuffmanCoding_make_heap, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__20)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_heap, __pyx_t_2) < 0) __PYX_ERR(0, 45, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_heap, __pyx_t_2) < 0) __PYX_ERR(0, 52, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":50
+  /* "pyaibox/compression/huffman_coding.py":57
  *             heapq.heappush(self.heap, node)
  * 
  *     def merge_nodes(self):             # <<<<<<<<<<<<<<
  *         while(len(self.heap) > 1):
  *             node1 = heapq.heappop(self.heap)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_7merge_nodes, 0, __pyx_n_s_HuffmanCoding_merge_nodes, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 50, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_7merge_nodes, 0, __pyx_n_s_HuffmanCoding_merge_nodes, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__22)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_merge_nodes, __pyx_t_2) < 0) __PYX_ERR(0, 50, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_merge_nodes, __pyx_t_2) < 0) __PYX_ERR(0, 57, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":61
+  /* "pyaibox/compression/huffman_coding.py":68
  *             heapq.heappush(self.heap, merged)
  * 
  *     def make_codes_helper(self, root, current_code):             # <<<<<<<<<<<<<<
  *         if root is None:
  *             return
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_9make_codes_helper, 0, __pyx_n_s_HuffmanCoding_make_codes_helper, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 61, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_9make_codes_helper, 0, __pyx_n_s_HuffmanCoding_make_codes_helper, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__24)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_codes_helper, __pyx_t_2) < 0) __PYX_ERR(0, 61, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_codes_helper, __pyx_t_2) < 0) __PYX_ERR(0, 68, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":73
+  /* "pyaibox/compression/huffman_coding.py":80
  *         self.make_codes_helper(root.right, current_code + "1")
  * 
  *     def make_codes(self):             # <<<<<<<<<<<<<<
  *         root = heapq.heappop(self.heap)
  *         current_code = ""
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_11make_codes, 0, __pyx_n_s_HuffmanCoding_make_codes, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 73, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_11make_codes, 0, __pyx_n_s_HuffmanCoding_make_codes, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_codes, __pyx_t_2) < 0) __PYX_ERR(0, 73, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_make_codes, __pyx_t_2) < 0) __PYX_ERR(0, 80, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":78
+  /* "pyaibox/compression/huffman_coding.py":85
  *         self.make_codes_helper(root, current_code)
  * 
  *     def get_encoded_text(self, text):             # <<<<<<<<<<<<<<
  *         encoded_text = ""
  *         for character in text:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_13get_encoded_text, 0, __pyx_n_s_HuffmanCoding_get_encoded_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 78, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_13get_encoded_text, 0, __pyx_n_s_HuffmanCoding_get_encoded_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get_encoded_text, __pyx_t_2) < 0) __PYX_ERR(0, 78, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get_encoded_text, __pyx_t_2) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":84
+  /* "pyaibox/compression/huffman_coding.py":91
  *         return encoded_text
  * 
  *     def pad_encoded_text(self, encoded_text):             # <<<<<<<<<<<<<<
  *         extra_padding = 8 - len(encoded_text) % 8
  *         for i in range(extra_padding):
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_15pad_encoded_text, 0, __pyx_n_s_HuffmanCoding_pad_encoded_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 84, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_15pad_encoded_text, 0, __pyx_n_s_HuffmanCoding_pad_encoded_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_pad_encoded_text, __pyx_t_2) < 0) __PYX_ERR(0, 84, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_pad_encoded_text, __pyx_t_2) < 0) __PYX_ERR(0, 91, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":93
+  /* "pyaibox/compression/huffman_coding.py":100
  *         return encoded_text
  * 
  *     def get_byte_array(self, padded_encoded_text):             # <<<<<<<<<<<<<<
  *         if(len(padded_encoded_text) % 8 != 0):
  *             print("Encoded text not padded properly")
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_17get_byte_array, 0, __pyx_n_s_HuffmanCoding_get_byte_array, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 93, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_17get_byte_array, 0, __pyx_n_s_HuffmanCoding_get_byte_array, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get_byte_array, __pyx_t_2) < 0) __PYX_ERR(0, 93, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_get_byte_array, __pyx_t_2) < 0) __PYX_ERR(0, 100, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":104
+  /* "pyaibox/compression/huffman_coding.py":111
  *         return b
  * 
  *     def compress(self, outfile=None):             # <<<<<<<<<<<<<<
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_19compress, 0, __pyx_n_s_HuffmanCoding_compress, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 104, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_19compress, 0, __pyx_n_s_HuffmanCoding_compress, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__35);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_compress, __pyx_t_2) < 0) __PYX_ERR(0, 104, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_compress, __pyx_t_2) < 0) __PYX_ERR(0, 111, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":128
+  /* "pyaibox/compression/huffman_coding.py":135
  *     """ functions for decompression: """
  * 
  *     def remove_padding(self, padded_encoded_text):             # <<<<<<<<<<<<<<
  *         padded_info = padded_encoded_text[:8]
  *         extra_padding = int(padded_info, 2)
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_21remove_padding, 0, __pyx_n_s_HuffmanCoding_remove_padding, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 128, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_21remove_padding, 0, __pyx_n_s_HuffmanCoding_remove_padding, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__37)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_remove_padding, __pyx_t_2) < 0) __PYX_ERR(0, 128, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_remove_padding, __pyx_t_2) < 0) __PYX_ERR(0, 135, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":137
+  /* "pyaibox/compression/huffman_coding.py":144
  *         return encoded_text
  * 
  *     def decode_text(self, encoded_text):             # <<<<<<<<<<<<<<
  *         current_code = ""
  *         decoded_text = ""
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_23decode_text, 0, __pyx_n_s_HuffmanCoding_decode_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 137, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_23decode_text, 0, __pyx_n_s_HuffmanCoding_decode_text, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__39)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_decode_text, __pyx_t_2) < 0) __PYX_ERR(0, 137, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_decode_text, __pyx_t_2) < 0) __PYX_ERR(0, 144, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":150
+  /* "pyaibox/compression/huffman_coding.py":157
  *         return decoded_text
  * 
  *     def decompress(self, infile, outfile=None):             # <<<<<<<<<<<<<<
  *         filename, file_extension = os.path.splitext(self.path)
  *         if outfile is None:
  */
-  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_25decompress, 0, __pyx_n_s_HuffmanCoding_decompress, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 150, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_CyFunction_New(&__pyx_mdef_7pyaibox_11compression_14huffman_coding_13HuffmanCoding_25decompress, 0, __pyx_n_s_HuffmanCoding_decompress, NULL, __pyx_n_s_pyaibox_compression_huffman_codi, __pyx_d, ((PyObject *)__pyx_codeobj__41)); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
   __Pyx_CyFunction_SetDefaultsTuple(__pyx_t_2, __pyx_tuple__42);
-  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_decompress, __pyx_t_2) < 0) __PYX_ERR(0, 150, __pyx_L1_error)
+  if (__Pyx_SetNameInClass(__pyx_t_1, __pyx_n_s_decompress, __pyx_t_2) < 0) __PYX_ERR(0, 157, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
 
-  /* "pyaibox/compression/huffman_coding.py":11
+  /* "pyaibox/compression/huffman_coding.py":9
  * 
  * 
  * class HuffmanCoding:             # <<<<<<<<<<<<<<
+ * 
  *     def __init__(self, path):
- *         self.path = path
  */
-  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_HuffmanCoding, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 11, __pyx_L1_error)
+  __pyx_t_2 = __Pyx_Py3ClassCreate(((PyObject*)&__Pyx_DefaultClassType), __pyx_n_s_HuffmanCoding, __pyx_empty_tuple, __pyx_t_1, NULL, 0, 0); if (unlikely(!__pyx_t_2)) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_2);
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HuffmanCoding, __pyx_t_2) < 0) __PYX_ERR(0, 11, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_HuffmanCoding, __pyx_t_2) < 0) __PYX_ERR(0, 9, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_2); __pyx_t_2 = 0;
   __Pyx_DECREF(__pyx_t_1); __pyx_t_1 = 0;
 

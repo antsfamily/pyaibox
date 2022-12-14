@@ -1,15 +1,22 @@
 import heapq
 import os
 
-"""
-author: Bhrigu Srivastava
-website: https:bhrigu.me
-https://github.com/bhrigu123/huffman-coding
-"""
+# author: Bhrigu Srivastava
+# website: https:bhrigu.me
+# https://github.com/bhrigu123/huffman-coding
 
 
 class HuffmanCoding:
+
     def __init__(self, path):
+        r"""HuffmanCoding
+
+        Parameters
+        ----------
+        path : str
+            filepath
+        """
+
         self.path = path
         self.heap = []
         self.codes = {}

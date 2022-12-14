@@ -67,7 +67,7 @@ def gpyi(pkgdir, autoskip=True):
             defpos = data[n].find('def' + ' ')
             if defpos == -1:
                 defpos = data[n].find('class' + ' ')
-            if defpos >= 0:
+            if defpos == 0:
                 cntcomflag = 0
                 if data[n].find('):') > -1:
                     outstr.append(data[n])
@@ -161,6 +161,9 @@ def rmcache(pkgdir, exts='.c'):
     ext : str, optional
         file extension
     """
+
+    if exts == '.py':
+        raise TypeError("danger!")
 
     allcfiles = listxfile(pkgdir, exts=exts, recursive=True)
     for file in allcfiles:

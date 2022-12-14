@@ -1169,10 +1169,10 @@ int __pyx_module_is_main_pyaibox__version = 0;
 static const char __pyx_k_main[] = "__main__";
 static const char __pyx_k_name[] = "__name__";
 static const char __pyx_k_test[] = "__test__";
-static const char __pyx_k_1_1_17[] = "1.1.17";
+static const char __pyx_k_1_1_18[] = "1.1.18";
 static const char __pyx_k_version[] = "__version__";
 static const char __pyx_k_cline_in_traceback[] = "cline_in_traceback";
-static PyObject *__pyx_kp_u_1_1_17;
+static PyObject *__pyx_kp_u_1_1_18;
 static PyObject *__pyx_n_s_cline_in_traceback;
 static PyObject *__pyx_n_s_main;
 static PyObject *__pyx_n_s_name;
@@ -1226,7 +1226,7 @@ static struct PyModuleDef __pyx_moduledef = {
 #endif
 
 static __Pyx_StringTabEntry __pyx_string_tab[] = {
-  {&__pyx_kp_u_1_1_17, __pyx_k_1_1_17, sizeof(__pyx_k_1_1_17), 0, 1, 0, 0},
+  {&__pyx_kp_u_1_1_18, __pyx_k_1_1_18, sizeof(__pyx_k_1_1_18), 0, 1, 0, 0},
   {&__pyx_n_s_cline_in_traceback, __pyx_k_cline_in_traceback, sizeof(__pyx_k_cline_in_traceback), 0, 0, 1, 1},
   {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
   {&__pyx_n_s_name, __pyx_k_name, sizeof(__pyx_k_name), 0, 0, 1, 1},
@@ -1519,14 +1519,14 @@ if (!__Pyx_RefNanny) {
   /* "pyaibox/version.py":3
  * # Copyright (c) 2015-2030, Zhi Liu.  All rights reserved.
  * 
- * __version__ = '1.1.17'             # <<<<<<<<<<<<<<
+ * __version__ = '1.1.18'             # <<<<<<<<<<<<<<
  */
-  if (PyDict_SetItem(__pyx_d, __pyx_n_s_version, __pyx_kp_u_1_1_17) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
+  if (PyDict_SetItem(__pyx_d, __pyx_n_s_version, __pyx_kp_u_1_1_18) < 0) __PYX_ERR(0, 3, __pyx_L1_error)
 
   /* "pyaibox/version.py":1
  * # Copyright (c) 2015-2030, Zhi Liu.  All rights reserved.             # <<<<<<<<<<<<<<
  * 
- * __version__ = '1.1.17'
+ * __version__ = '1.1.18'
  */
   __pyx_t_1 = __Pyx_PyDict_NewPresized(0); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_1);
