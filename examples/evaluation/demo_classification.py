@@ -29,8 +29,10 @@
 import numpy as np
 import pyaibox as pb
 
+
 T = np.array([1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6, 1, 5])
 P = np.array([1, 2, 3, 4, 1, 6, 3, 2, 1, 4, 5, 6, 1, 2, 1, 4, 5, 6, 1, 5])
+classnames = ['cat', 'dog', 'car', 'cup', 'desk', 'baby']
 
 print(pb.accuracy(P, T))
 # print(pb.categorical2onehot(T))
@@ -42,7 +44,10 @@ print(C)
 print(pb.kappa(C))
 print(pb.kappa(C.T))
 
-plt = pb.plot_confusion(C, cmap=None)
-plt = pb.plot_confusion(C, cmap='summer')
+plt = pb.plot_confusion(C, xticks=classnames, yticks=classnames, cmap=None, mode='simple')
+plt = pb.plot_confusion(C, xticks=classnames, yticks=classnames, cmap='summer', mode='simple')
 plt.show()
 
+plt = pb.plot_confusion(C, cmap=None, mode='rich')
+plt = pb.plot_confusion(C, cmap='summer', mode='rich')
+plt.show()

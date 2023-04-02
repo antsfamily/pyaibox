@@ -40,7 +40,7 @@ def file2hash(file, hmode='sha256', tohex=True):
         hash code hex string or hash object
     """
 
-def dict2str(ddict, indent='  ', linebreak='\n', nindent=0):
+def dict2str(ddict, mode='dict', indent='  ', linebreak='\n', nindent=0):
     r"""dump dict object to str
 
     Parameters
@@ -49,6 +49,8 @@ def dict2str(ddict, indent='  ', linebreak='\n', nindent=0):
         The dict object to be converted
     indent : str, optional
         The dict identifier, by default ``'  '``
+    mode : str, optional
+        ``'dict'``, ``'yaml'``, ``'xml'``
     linebreak : str, optional
         The line break character, by default '\n'
     nindent : int, optional
@@ -82,14 +84,14 @@ def str2list(s):
 
     """
 
-def str2num(s, tfunc=None):
+def str2num(s, vfn=None):
     r"""Extracts numbers in a string.
 
     Parameters
     ----------
     s : str
         The string.
-    tfunc : None, optional
+    vfn : None, optional
         formating function, such as ``int``, ``float`` or ``'auto'``.
 
     Returns
@@ -115,6 +117,7 @@ def str2num(s, tfunc=None):
         [0, 1, 2.0, 33, 4, 5, 6, 0.002, 7, 8, 0.001]
         256
         True
+
     """
 
 def str2sec(x, sep=':'):
@@ -149,6 +152,7 @@ def str2sec(x, sep=':'):
         4200
         4206
         4230
+
     """
 
 def int2bstr(n, nbytes, endian='<', signed=True):
@@ -208,7 +212,7 @@ def bstr2int(b, endian='<', signed=True):
         The order of the bytes, supported are little endian: ``'<'`` (the default), big endian: ``'>'``.
     signed : bool, optional
         signed or unsigned, by default True
-    
+
     Returns
     -------
     int

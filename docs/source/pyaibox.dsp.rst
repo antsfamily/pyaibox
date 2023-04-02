@@ -28,6 +28,14 @@ pyaibox.dsp.ffts module
    :undoc-members:
    :show-inheritance:
 
+pyaibox.dsp.frffts module
+-------------------------
+
+.. automodule:: pyaibox.dsp.frffts
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
 pyaibox.dsp.function\_base module
 ---------------------------------
 

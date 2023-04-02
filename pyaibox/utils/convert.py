@@ -88,7 +88,7 @@ def file2hash(file, hmode='sha256', tohex=True):
     else:
         return digesth
 
-def dict2str(ddict, indent='  ', linebreak='\n', nindent=0):
+def dict2str(ddict, mode='dict', indent='  ', linebreak='\n', nindent=0):
     r"""dump dict object to str
 
     Parameters
@@ -97,6 +97,8 @@ def dict2str(ddict, indent='  ', linebreak='\n', nindent=0):
         The dict object to be converted
     indent : str, optional
         The dict identifier, by default ``'  '``
+    mode : str, optional
+        ``'dict'``, ``'yaml'``, ``'xml'``
     linebreak : str, optional
         The line break character, by default '\n'
     nindent : int, optional
@@ -108,21 +110,24 @@ def dict2str(ddict, indent='  ', linebreak='\n', nindent=0):
         The converted string.
     """
     
-    dstr = ''
-    for k, v in ddict.items():
-        dstr += indent * nindent
-        dstr += k + ': '
-        if type(v) is dict:
-            dstr += linebreak
-            nindent += 1
-            dstr += dict2str(v, indent=indent, nindent=nindent)
-            nindent = 0
-        elif v is None:
-            dstr += 'Null' + linebreak
-        else:
-            dstr += str(v) + linebreak
-    return dstr
+    if mode.lower() in ['dict', 'yaml']:
+        dstr = ''
+        for k, v in ddict.items():
+            dstr += indent * nindent
+            dstr += k + ': '
+            if type(v) is dict:
+                dstr += linebreak
+                nindent += 1
+                dstr += dict2str(v, indent=indent, nindent=nindent)
+                nindent = 0
+            elif v is None:
+                dstr += 'Null' + linebreak
+            else:
+                dstr += str(v) + linebreak
+        return dstr
 
+    if mode.lower() in ['xml']:
+        raise ValueError("Not support!")
 
 def str2list(s):
     r"""Converts string with ``[`` and ``]`` to list
@@ -161,14 +166,14 @@ def str2list(s):
 
     return literal_eval(s)
 
-def str2num(s, tfunc=None):
+def str2num(s, vfn=None):
     r"""Extracts numbers in a string.
 
     Parameters
     ----------
     s : str
         The string.
-    tfunc : None, optional
+    vfn : None, optional
         formating function, such as ``int``, ``float`` or ``'auto'``.
 
     Returns
@@ -194,12 +199,14 @@ def str2num(s, tfunc=None):
         [0, 1, 2.0, 33, 4, 5, 6, 0.002, 7, 8, 0.001]
         256
         True
+
     """
+    
     numstr = re.findall(r'-?\d+\.?\d*e*E?[-+]?\d*', s)
-    if tfunc is None:
+    if vfn is None:
         return numstr
     else:
-        if tfunc == 'auto':
+        if vfn == 'auto':
             numlist = []
             for num in numstr:
                 if num.find('.') > -1 or num.find('e') > -1:
@@ -208,7 +215,7 @@ def str2num(s, tfunc=None):
                     numlist.append(int(float(num)))
             return numlist
         else:
-            return [tfunc(float(i)) for i in numstr]
+            return [vfn(float(i)) for i in numstr]
 
 
 def str2sec(x, sep=':'):
@@ -243,6 +250,7 @@ def str2sec(x, sep=':'):
         4200
         4206
         4230
+
     """
     if type(x) is str:
         h, m, s = x.strip().split(sep)
@@ -321,7 +329,7 @@ def bstr2int(b, endian='<', signed=True):
         The order of the bytes, supported are little endian: ``'<'`` (the default), big endian: ``'>'``.
     signed : bool, optional
         signed or unsigned, by default True
-    
+
     Returns
     -------
     int

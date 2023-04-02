@@ -271,7 +271,7 @@ def readnum(filepath, pmain='Train', psub='loss: ', vfn=float, nshots=None):
             if datastr == '':
                 break
             if posmain > -1:
-                aa = re.findall(psub + r'-?\d+\.?\d*e*E?[-+]?\d*', datastr)
+                aa = re.findall(psub + r'-?\d+\.?\d*e*E?[-+]?\d+', datastr)
                 if aa != []:
                     v.append(vfn(aa[0][len(psub):]))
                     cnt += 1

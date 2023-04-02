@@ -13,6 +13,8 @@ fi
 
 python setup.py sdist
 
+python setup.py build_ext --inplace
+
 # 1. generate whl
 python setup.py bdist_wheel --universal
 

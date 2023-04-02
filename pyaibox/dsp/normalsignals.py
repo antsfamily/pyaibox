@@ -32,18 +32,24 @@ from pyaibox.utils.const import *
 
 def hs(x):
     r"""
+
     Heavyside function :
+    
     .. math::
-        hv(x) = {1, if x>=0; 0, otherwise}
+       hv(x) = {1, if x>=0; 0, otherwise}
+    
     """
     return 0.5 * (np.sign(x) + 1.0)
 
 
 def ihs(x):
     r"""
+    
     Inverse Heavyside function:
+    
     .. math::
-        ihv(x) = {0, if x>=0; 1, otherwise}
+       ihv(x) = {0, if x>=0; 1, otherwise}
+
     """
     # print(x)
     # print(np.sign(x))
@@ -52,21 +58,30 @@ def ihs(x):
 
 def rect(x):
     r"""
+    
     Rectangle function:
+
     .. math::
-        rect(x) = {1, if |x|<= 0.5; 0, otherwise}
+       rect(x) = {1, if |x|<= 0.5; 0, otherwise}
+    
     """
+
     # return hs(x + 0.5) * ihs(x - 0.5)
     return np.where(np.abs(x) > 0.5, 0., 1.0)
 
 
 def chirp(t, T, Kr):
     r"""
+
     Create a chirp signal:
+
     .. math::
-        S_{tx}(t) = rect(t/T) * exp(1j*pi*Kr*t^2)
+       S_{tx}(t) = rect(t/T) * exp(1j*pi*Kr*t^2)
+
     """
+
     return rect(t / T) * np.exp(1j * np.pi * Kr * t**2)
+
 
 if __name__ == '__main__':
 

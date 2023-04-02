@@ -13,6 +13,7 @@ Subpackages
    pyaibox.dsp
    pyaibox.evaluation
    pyaibox.misc
+   pyaibox.ml
    pyaibox.nn
    pyaibox.summary
    pyaibox.utils

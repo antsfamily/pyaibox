@@ -51,4 +51,8 @@ from .misc.noising import awgns, awgns2, imnoise, awgn, wgn
 
 from .datasets.mnist import read_mnist
 from .datasets.mstar import mstar_header, mstar_raw
+
 from .nn.activations import linear, sigmoid, tanh, softplus, softsign, elu, relu, relu6, selu, crelu, leaky_relu
+from .ml.reduction_pca import pca
+from .ml.dataset_visualization import visds 
+ 

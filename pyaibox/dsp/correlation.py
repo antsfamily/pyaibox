@@ -317,27 +317,26 @@ def acorr(x, P, axis=0, scale=None):
     mxl = min(P, M - 1)
     M2 = 2 * M
 
-    X = np.fft.fft(x, n=M2, axis=axis)
-    C = X * X.conj()
-    c = np.fft.ifft(C, axis=axis)
-    c = cut(c, [(M2-mxl, M2), (0, mxl+1)], axis=axis)
+    dtype = 'complex' if np.iscomplex(x).any() else 'real'
 
-    if np.iscomplex(x).any():
-        pass
-    else:
-        c = c.real
+    x = np.fft.fft(x, n=M2, axis=axis)
+    x = np.fft.ifft(x * x.conj(), axis=axis)  # output x is c
+    x = cut(x, [(M2-mxl, M2), (0, mxl+1)], axis=axis)
+
+    if dtype == 'real':
+        x = x.real
 
     if scale == 'biased':
-        c /= M
+        x /= M
     if scale == 'unbiased':
-        L = (c.shape[0] - 1) / 2
+        L = (x.shape[0] - 1) / 2
         s = M - np.abs(np.arange(-L, L+1))
         s[s<=0] = 1.
         sshape = [1] * np.ndim(c)
         sshape[axis] = len(s)
-        c /= s.reshape(sshape)
+        x /= s.reshape(sshape)
 
-    return c
+    return x
 
 
 def accc(Sr, isplot=False):
