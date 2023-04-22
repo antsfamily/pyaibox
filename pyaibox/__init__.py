@@ -5,7 +5,7 @@ from .version import __version__
 from .utils.const import *
 from .utils.colors import rgb2gray, gray2rgb, DISTINCT_COLORS_HEX, DISTINCT_COLORS_RGB, DISTINCT_COLORS_CMYK, DISTINCT_COLORS_RGB_NORM, BASE_COLORS, TABLEAU_COLORS, CSS4_COLORS
 from .utils.colormaps import cmaps, viridis, parula
-from .utils.convert import str2hash, file2hash, dict2str, str2list, str2num, str2sec, int2bstr, bstr2int
+from .utils.convert import str2hash, file2hash, dict2str, str2list, str2tuple, str2num, str2sec, int2bstr, bstr2int
 from .utils.ios import loadyaml, saveyaml, loadjson, loadmat, savemat, loadh5, saveh5, mvkeyh5, loadbin, savebin
 from .utils.image import imread, imsave, histeq, imresize
 from .utils.file import data_path, pkg_path, copyfile, copyfiles, listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec

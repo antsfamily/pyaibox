@@ -88,17 +88,17 @@ def file2hash(file, hmode='sha256', tohex=True):
     else:
         return digesth
 
-def dict2str(ddict, mode='dict', indent='  ', linebreak='\n', nindent=0):
+def dict2str(ddict, attrtag=': ', indent='  ', linebreak='\n', nindent=0):
     r"""dump dict object to str
 
     Parameters
     ----------
     ddict : dict
         The dict object to be converted
+    attrtag : str, optional
+        The tag of attribution, by default ``': '``
     indent : str, optional
         The dict identifier, by default ``'  '``
-    mode : str, optional
-        ``'dict'``, ``'yaml'``, ``'xml'``
     linebreak : str, optional
         The line break character, by default '\n'
     nindent : int, optional
@@ -110,32 +110,50 @@ def dict2str(ddict, mode='dict', indent='  ', linebreak='\n', nindent=0):
         The converted string.
     """
     
-    if mode.lower() in ['dict', 'yaml']:
-        dstr = ''
-        for k, v in ddict.items():
-            dstr += indent * nindent
-            dstr += k + ': '
-            if type(v) is dict:
-                dstr += linebreak
-                nindent += 1
-                dstr += dict2str(v, indent=indent, nindent=nindent)
-                nindent = 0
-            elif v is None:
-                dstr += 'Null' + linebreak
-            else:
-                dstr += str(v) + linebreak
-        return dstr
+    dstr = ''
+    for k, v in ddict.items():
+        dstr += indent * nindent
+        dstr += k + attrtag
+        if type(v) is dict:
+            dstr += linebreak
+            nindent += 1
+            dstr += dict2str(v, attrtag=attrtag, indent=indent, nindent=nindent)
+            nindent = 0
+        elif v is None:
+            dstr += 'Null' + linebreak
+        else:
+            dstr += str(v) + linebreak
+    return dstr
 
-    if mode.lower() in ['xml']:
-        raise ValueError("Not support!")
-
-def str2list(s):
-    r"""Converts string with ``[`` and ``]`` to list
+def str2bool(s, truelist=['true', '1', 'y', 'yes'], falselist=['false', '0', 'n', 'no']):
+    r"""Converts string to bool
 
     Parameters
     ----------
     s : str
-        The string.
+        The input string
+    truelist : list
+        The true flag list.
+    falselist : list
+        The false flag list.
+    """
+
+    s = s.lower()
+    if s in truelist:
+        return True
+    if s in falselist:
+        return False
+    raise ValueError('Unrecognized: %s, please specify true list or false list!' % s)
+
+def str2list(s, sep=' '):
+    r"""Converts string to list
+
+    Parameters
+    ----------
+    s : str
+        The input string
+    sep : str
+        The separator, only work when :func:`literal_eval` fails.
 
     Examples
     --------
@@ -150,21 +168,72 @@ def str2list(s):
 
 
     """
-    # left = [i.start() for i in re.finditer(r'\[', s)]
-    # print(left)
-    # right = [i.start() for i in re.finditer(r'\]', s)]
-    # print(right)
+    
+    try:
+        results = literal_eval(s)
+    except:
+        s = s.split(sep)
+        results = []
+        for si in s:
+            try:
+                xi = int(si)
+            except:
+                try:
+                    xf = float(si)
+                except:
+                    results.append(si)
+                else:
+                    results.append(xf)
+            else:
+                results.append(xi)
+        return results
+    else:
+        return results
 
-    # nlevel = -1
-    # for l in left:
-    #     nlevel += 1
-    #     if l > right[0]:
-    #         break
-    # right[0:nlevel - 1] = right[0:nlevel - 1][::-1]
-    # right.insert(0, right.pop())
-    # print(right)
+def str2tuple(s, sep=' '):
+    r"""Converts string to tuple
 
-    return literal_eval(s)
+    Parameters
+    ----------
+    s : str
+        The input string
+    sep : str
+        The separator, only work when :func:`literal_eval` fails.
+
+    Examples
+    --------
+
+    ::
+
+        s = '[0, [[[[1], 2.], 33], 4], [5, [6, 2.E-3]], 7, [8]], 1e-3'
+        print(str2list(s))
+
+        # ---output
+        ([0, [[[[1], 2.0], 33], 4], [5, [6, 0.002]], 7, [8]], 0.001)
+
+
+    """
+    
+    try:
+        results = literal_eval(s)
+    except:
+        s = s.split(sep)
+        results = []
+        for si in s:
+            try:
+                xi = int(si)
+            except:
+                try:
+                    xf = float(si)
+                except:
+                    results.append(si)
+                else:
+                    results.append(xf)
+            else:
+                results.append(xi)
+        return tuple(results)
+    else:
+        return tuple(results)
 
 def str2num(s, vfn=None):
     r"""Extracts numbers in a string.
@@ -375,6 +444,7 @@ if __name__ == '__main__':
     s = '[0, [[[[1], 2.], 33], 4], [5, [6, 2.E-3]], 7, [8]], 1e-3'
 
     print(str2list(s))
+    print(str2list('1 2 a b'))
 
     print(str2num(s, int))
     print(str2num(s, float))

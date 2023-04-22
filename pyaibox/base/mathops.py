@@ -30,16 +30,18 @@ import numpy as np
 import pyaibox as pb
 
 
-def db2mag(db):
+def db2mag(db, s=20.):
     r"""Converts decibel values to magnitudes
 
     .. math::
-       {\rm mag} = 10^{db / 20}
+       {\rm mag} = 10^{db / s}
 
     Parameters
     ----------
     db : int, float, tuple, list, ndarray
         The decibel values.
+    s : int or float
+        The scale value, default is 20.
 
     Returns
     -------
@@ -47,34 +49,37 @@ def db2mag(db):
         The magnitudes of inputs with the same type.
     """
     if type(db) is list:
-        return list(10 ** (dbi / 20) for dbi in db)
+        return list(10 ** (dbi / s) for dbi in db)
     if type(db) is tuple:
-        return tuple(10 ** (dbi / 20) for dbi in db)
-    return 10 ** (db / 20)
+        return tuple(10 ** (dbi / s) for dbi in db)
+    return 10 ** (db / s)
 
 
-def mag2db(mag):
+def mag2db(mag, s=20.):
     r"""Converts decibel values to magnitudes
 
     .. math::
-       {\rm db} = 20*{\rm log10}{\rm mag}
+       {\rm db} = s*{\rm log10}{\rm mag}
 
     Parameters
     ----------
     mag : int, float, tuple, list, ndarray
         The magnitude values.
+    s : int or float
+        The scale value, default is 20.
 
     Returns
     -------
      int, float, tuple, list, ndarray
         The decibel of inputs with the same type.
     """
-    if type(mag) is list:
-        return list(20 * np.log10(magi) for magi in mag)
-    if type(mag) is tuple:
-        return tuple(20 * np.log10(magi) for magi in mag)
 
-    return 20 * np.log10(mag)
+    if type(mag) is list:
+        return list(s * np.log10(magi) for magi in mag)
+    if type(mag) is tuple:
+        return tuple(s * np.log10(magi) for magi in mag)
+
+    return s * np.log10(mag)
 
 
 def fnab(n):

@@ -128,7 +128,7 @@ def fftfreq(n, fs, norm=False, shift=False):
         return f / (d * n)
 
 
-def fftshift(x, axis=None):
+def fftshift(x, **kwargs):
     r"""Shift the zero-frequency component to the center of the spectrum.
 
     This function swaps half-spaces for all axes listed (defaults to all).
@@ -152,6 +152,13 @@ def fftshift(x, axis=None):
 
     """
 
+    if 'dim' in kwargs:
+        axis = kwargs['dim']
+    elif 'axis' in kwargs:
+        axis = kwargs['axis']
+    else:
+        axis = 0
+        
     if axis is None:
         axis = tuple(range(np.ndim(x)))
     elif type(axis) is int:
@@ -163,7 +170,7 @@ def fftshift(x, axis=None):
     return x
 
 
-def ifftshift(x, axis=None):
+def ifftshift(x, **kwargs):
     r"""Shift the zero-frequency component back.
 
     The inverse of :func:`fftshift`. Although identical for even-length `x`, the
@@ -217,6 +224,13 @@ def ifftshift(x, axis=None):
         print(y)
 
     """
+    
+    if 'dim' in kwargs:
+        axis = kwargs['dim']
+    elif 'axis' in kwargs:
+        axis = kwargs['axis']
+    else:
+        axis = 0
 
     if axis is None:
         axis = tuple(range(np.ndim(x)))
@@ -270,7 +284,7 @@ def padfft(X, nfft=None, axis=0, shift=False):
     return X
 
 
-def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+def fft(x, n=None, norm=None, shift=False, **kwargs):
     r"""FFT in pyaibox
 
     FFT in pyaibox, both real and complex valued tensors are supported.
@@ -412,6 +426,27 @@ def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
 
     """
 
+    if 'cdim' in kwargs:
+        caxis = kwargs['cdim']
+    elif 'caxis' in kwargs:
+        caxis = kwargs['caxis']
+    else:
+        caxis = None
+
+    if 'dim' in kwargs:
+        axis = kwargs['dim']
+    elif 'axis' in kwargs:
+        axis = kwargs['axis']
+    else:
+        axis = 0
+
+    if 'keepcdim' in kwargs:
+        keepcaxis = kwargs['keepcdim']
+    elif 'keepcaxis' in kwargs:
+        keepcaxis = kwargs['keepcaxis']
+    else:
+        keepcaxis = False
+
     CplxRealflag = False
     if np.iscomplex(x).any():  # complex in complex
         pass
@@ -437,7 +472,7 @@ def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
     return y
 
 
-def ifft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+def ifft(x, n=None, norm=None, shift=False, **kwargs):
     r"""IFFT in pyaibox
 
     IFFT in pyaibox, both real and complex valued tensors are supported.
@@ -472,6 +507,27 @@ def ifft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False)
     see also :func:`fft`, :func:`fftfreq`, :func:`freq`. see :func:`fft` for examples. 
 
     """
+
+    if 'cdim' in kwargs:
+        caxis = kwargs['cdim']
+    elif 'caxis' in kwargs:
+        caxis = kwargs['caxis']
+    else:
+        caxis = None
+
+    if 'dim' in kwargs:
+        axis = kwargs['dim']
+    elif 'axis' in kwargs:
+        axis = kwargs['axis']
+    else:
+        axis = 0
+
+    if 'keepcdim' in kwargs:
+        keepcaxis = kwargs['keepcdim']
+    elif 'keepcaxis' in kwargs:
+        keepcaxis = kwargs['keepcaxis']
+    else:
+        keepcaxis = False
 
     CplxRealflag = False
     if np.iscomplex(x).any():  # complex in complex
