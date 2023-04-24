@@ -20,8 +20,8 @@ def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xla
         show in :attr:`nrows` rows, by default None (auto computed).
     ncols : int, optional
         show in :attr:`ncols` columns, by default None (auto computed).
-    styles : str or list, optional
-        line style
+    styles : str, dict or list, optional
+        line style, e.g. '-r', [['r']]
     legends : str or list, optional
         legend str list
     grids : bool, optional
@@ -42,7 +42,7 @@ def plot(Ys, nrows=None, ncols=None, styles=None, legends=None, grids=False, xla
         Xs : list or tuple
             Y-axis values
 
-        see :func:`matplotlib.pyplot.imshow`
+        see :func:`matplotlib.pyplot.plot`
 
     Returns
     -------

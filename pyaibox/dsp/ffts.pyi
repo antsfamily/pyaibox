@@ -64,7 +64,7 @@ def fftfreq(n, fs, norm=False, shift=False):
         frequency array with size :math:`n×1`.
     """
 
-def fftshift(x, axis=None):
+def fftshift(x, **kwargs):
     r"""Shift the zero-frequency component to the center of the spectrum.
 
     This function swaps half-spaces for all axes listed (defaults to all).
@@ -88,7 +88,7 @@ def fftshift(x, axis=None):
 
     """
 
-def ifftshift(x, axis=None):
+def ifftshift(x, **kwargs):
     r"""Shift the zero-frequency component back.
 
     The inverse of :func:`fftshift`. Although identical for even-length `x`, the
@@ -160,7 +160,7 @@ def padfft(X, nfft=None, axis=0, shift=False):
         Whether to shift the frequency (the default is False)
     """
 
-def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+def fft(x, n=None, norm=None, shift=False, **kwargs):
     r"""FFT in pyaibox
 
     FFT in pyaibox, both real and complex valued tensors are supported.
@@ -302,7 +302,7 @@ def fft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
 
     """
 
-def ifft(x, n=None, caxis=None, axis=0, keepcaxis=False, norm=None, shift=False):
+def ifft(x, n=None, norm=None, shift=False, **kwargs):
     r"""IFFT in pyaibox
 
     IFFT in pyaibox, both real and complex valued tensors are supported.
