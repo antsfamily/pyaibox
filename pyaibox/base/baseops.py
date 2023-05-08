@@ -29,6 +29,50 @@
 import copy
 
 
+def redim(ndim, dim, cdim, keepcdim):
+    r"""re-define dimensions
+
+    Parameters
+    ----------
+    ndim : int
+        the number of dimensions
+    dim : int, tuple or list
+        dimensions to be re-defined
+    cdim : int, optional
+        If data is complex-valued but represented as real tensors, 
+        you should specify the dimension. Otherwise, set it to None, defaults is None.
+        For example, :math:`{\bm X}_c\in {\mathbb C}^{N\times C\times H\times W}` is
+        represented as a real-valued tensor :math:`{\bm X}_r\in {\mathbb R}^{N\times C\times H\times W\ times 2}`,
+        then :attr:`cdim` equals to -1 or 4.
+    keepcdim : bool
+        If :obj:`True`, the complex dimension will be keeped. Only works when :attr:`X` is complex-valued tensor 
+        but represents in real format. Default is :obj:`False`.
+
+    Returns
+    -------
+    int, tuple or list
+         re-defined dimensions
+        
+    """
+
+    if (cdim is None) or (keepcdim):
+        return dim
+    if type(dim) is int:
+        posdim = dim if dim >= 0 else ndim + dim
+        poscdim = cdim if cdim >= 0 else ndim + cdim
+        newdim = dim if poscdim > posdim else posdim - 1 if dim >= 0 else posdim - 1 - (ndim - 1)
+        return newdim
+    else:
+        newdim = []
+        poscdim = cdim if cdim >= 0 else ndim + cdim
+        for d in dim:
+            posdim = d if d >= 0 else ndim + d
+            newdim.append(d if poscdim > posdim else posdim - 1)
+        for i in range(len(dim)):
+            if dim[i] < 0:
+                newdim[i] -= (ndim - 1)
+        return newdim
+
 def upkeys(D, mode='-', k='module.'):
     r"""update keys of a dictionary
 

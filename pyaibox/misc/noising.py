@@ -137,6 +137,7 @@ def awgns(x, snrv, **kwargs):
     pb.setseed(seed=seed, target='torch')
 
     linearSNR = 10**(snrv / 10.)
+    cplxinrealflag = False
 
     if np.iscomplex(x).any():  # complex in complex format
         axis = tuple(range(np.ndim(x))) if axis is None else axis
@@ -149,6 +150,7 @@ def awgns(x, snrv, **kwargs):
         Px = np.sum(x**2, axis=axis, keepdims=True)
         Pn = np.sum(n**2, axis=axis, keepdims=True)
     else: # complex in real format
+        cplxinrealflag = True
         x = pb.r2c(x, caxis=caxis, keepcaxis=keepcaxis)
         axis = tuple(range(np.ndim(x))) if axis is None else axis
         n = np.random.randn(*x.shape) + 1j * np.random.randn(*x.shape)
@@ -156,11 +158,16 @@ def awgns(x, snrv, **kwargs):
         Pn = np.sum((n * n.conj()).real, axis=axis, keepdims=True)
 
     alpha = np.sqrt(Px / linearSNR / Pn)
-    noise = alpha * n
-    y = x + noise
+    n = alpha * n
+    y = x + n
     if extra:
-        return y, noise
+        if cplxinrealflag:
+            y = pb.c2r(y, caxis=caxis)
+            n = pb.c2r(n, caxis=caxis)
+        return y, n
     else:
+        if cplxinrealflag:
+            y = pb.c2r(y, caxis=caxis)
         return y
 
 def awgns2(x, snrv, **kwargs):
@@ -274,10 +281,10 @@ def awgns2(x, snrv, **kwargs):
         Pn = np.sum(n**2, axis=axis, keepdims=True)
 
     alpha = np.sqrt(Px / linearSNR / Pn)
-    noise = alpha * n
-    y = x + noise
+    n = alpha * n
+    y = x + n
     if extra:
-        return y, noise
+        return y, n
     else:
         return y
 

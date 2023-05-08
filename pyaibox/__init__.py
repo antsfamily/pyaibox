@@ -14,7 +14,7 @@ from .utils.docstr import rmcache, gpyi
 
 
 from .base import baseops, arrayops, mathops, randomfunc
-from .base.baseops import upkeys, dreplace, dmka
+from .base.baseops import redim, upkeys, dreplace, dmka
 from .base.arrayops import sl, cut, cat, arraycomb
 from .base.mathops import mag2db, db2mag, fnab, ebeo, nextpow2, prevpow2, r2c, c2r, conj, real, imag, abs, pow
 from .base.randomfunc import setseed, randgrid, randperm, randperm2d
