@@ -242,4 +242,6 @@ def calc_detection_voc_ap(prec, rec, use_07_metric=False):
     """
 
     n_fg_class = len(prec) ap = np.empty(n_fg_class)
+             ...
+
 

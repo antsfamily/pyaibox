@@ -56,4 +56,6 @@ class HuffmanCoding:
         ...
 
     def decompress(self, infile, outfile=None):
+        ...
+
 

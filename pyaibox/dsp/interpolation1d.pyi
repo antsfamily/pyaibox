@@ -33,4 +33,6 @@ def interp(x, xp, yp, mod='sinc'):
     """
 
 def sinc(x):
+    ...
+
 

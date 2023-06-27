@@ -108,8 +108,7 @@ def gpyi(pkgdir, autoskip=True):
 
             startpos = -1 if (defpos1<0 and clspos1<0) else max(defpos1, clspos1)
             endpos = -1 if (defpos2<0 and clspos2<0) else max(defpos2, clspos2)
-            if (startpos>=0 and endpos>=0) or (startpos>=0 and outstr[n+1]=='ENDFLAG'):
-                # finalstr.append(' '*(startpos + 4) + 'r"' + '"' + '"' + '\n' + ' '*(startpos + 4) + 'r"' + '"' + '"' + '\n\n')
+            if (startpos>=0 and endpos>=0) or (startpos>=0 and outstr[n+2]=='ENDFLAG'):
                 finalstr.append(' '*(startpos + 4) + '...\n\n')
 
         for ostr in finalstr:

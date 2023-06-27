@@ -20,4 +20,6 @@ class LossLog():
         ...
 
     def judge(self, key, n1=50, n2=10):
+        ...
+
 

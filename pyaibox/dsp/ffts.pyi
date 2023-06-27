@@ -353,4 +353,6 @@ def ifftx(x, n=None):
     ...
 
 def iffty(x, n=None):
+    ...
+
 
