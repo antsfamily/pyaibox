@@ -1,2 +1,23 @@
 def visds(x, y=None, labelmap=None, axisn=0, mode='bar(nms)', **kwargs):
+    ...
+
+        nclass = len(key) value = np.array(range(nclass))
+             ...
+
+        color = discolors[0:nclass] if nclass < len(discolors) else None if type(labelmap) is dict:
+                                            ...
+
+        means_eachclass = np.zeros((nclass,)) stds_eachclass = np.zeros((nclass,))
+                      ...
+
+        stds_eachclass = np.zeros((nclass,)) ns_eachclass = np.zeros((nclass,), dtype=np.int32)
+                     ...
+
+        ns_eachclass = np.zeros((nclass,), dtype=np.int32) for n in range(nsample):
+                   ...
+
+        means_eachclass /= ns_eachclass stds_eachclass /= ns_eachclass
+                      ...
+
+        stds_eachclass /= ns_eachclass
 

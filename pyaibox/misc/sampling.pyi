@@ -1,3 +1,6 @@
+# def upsampling(X, shape, axis=-1, method='Lanczos'):
+      ...
+
 def slidegrid(start, stop, step, shake=0, n=None):
     r"""generates sliding grid indexes
 

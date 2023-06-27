@@ -27,7 +27,9 @@
 #
 
 import os
-from pyaibox import listxfile
+import re
+from pyaibox.utils.file import listxfile
+from pyaibox.base.baseops import strfind
 
 
 def gpyi(pkgdir, autoskip=True):
@@ -67,7 +69,7 @@ def gpyi(pkgdir, autoskip=True):
             defpos = data[n].find('def' + ' ')
             if defpos == -1:
                 defpos = data[n].find('class' + ' ')
-            if defpos == 0:
+            if defpos >= 0:
                 cntcomflag = 0
                 if data[n].find('):') > -1:
                     outstr.append(data[n])
@@ -93,26 +95,6 @@ def gpyi(pkgdir, autoskip=True):
         if len(outstr) == 0:
             continue
 
-        # tmpstr = []
-        # N = len(outstr) - 1
-        # for n in range(0, N):
-        #     if outstr[n].find('def' + ' ') > -1:
-        #         if outstr[n].find('):') > -1:
-        #             tmpstr.append(outstr[n])
-        #         else:
-        #             tmpstr.append(outstr[n][:-1])
-        #     else:
-        #         tmpstr.append(outstr[n])
-        # outstr = []
-        # for dstr in tmpstr:
-        #     if dstr[-1] == '\n':
-        #         outstr.append(dstr)
-        #     else:
-        #         outstr[-1] += dstr
-        
-        # if len(outstr) == 0:
-        #     continue
-        
         finalstr = []
         outstr.append('ENDFLAG')
         N = len(outstr)
@@ -132,19 +114,6 @@ def gpyi(pkgdir, autoskip=True):
 
         for ostr in finalstr:
             fpyi.write(ostr)
-
-        # fpyi.write(finalstr[0])
-        # for n in range(1, len(finalstr)):
-        #     flag = finalstr[n-1].find('class' + ' ') >= 0
-
-        #     if flag:
-        #         if finalstr[n].find('__doc__ = ') > -1:
-        #             fpyi.write(finalstr[n])
-        #             continue
-        #         flagpos = max(finalstr[n].find('r"' + '"' + '"'), finalstr[n].find('"' + '"' + '"')) - 1
-        #         fpyi.write(finalstr[n][0:flagpos] + '__doc__ = ' + finalstr[n][flagpos:])
-        #     else:
-        #         fpyi.write(finalstr[n])
 
         fpy.close()
         fpyi.close()
@@ -172,10 +141,50 @@ def rmcache(pkgdir, exts='.c'):
     return 0
 
 
+def dltccmmt(pkgdir, startflag='/*', endflag='*/'):
+    """delete block comment in c file
+
+    Parameters
+    ----------
+    pkgdir : str
+        the rootdir
+    startflag : str
+        start flag of block comment
+    endflag : str
+        end flag of block comment
+    """
+    endflaglen = len(endflag)
+    allcfiles = listxfile(pkgdir, exts='.c', recursive=True)
+    for file in allcfiles:
+        output = ''
+        with open(file, "r") as f:
+            data = f.read()
+            f.close()
+
+            starts = strfind(data, startflag)
+            ends = strfind(data, endflag)
+            Nstarts, Nends = len(starts), len(ends)
+            if Nstarts != Nends:
+                raise ValueError('Error block comment format!')
+            if Nstarts == 0:
+                output = data
+            else:
+                output = data[:starts[0]] + data[ends[0]+endflaglen:starts[1]]
+                for i in range(1, Nstarts):
+                    output += data[ends[i-1]+endflaglen:starts[i]]
+                output += data[ends[-1]+endflaglen:]
+        with open(file, "w") as f:
+            f.write(output)
+            f.close()
+
+    return 0
+
+
 if __name__ == '__main__':
 
     pkgdir = '/mnt/e/ws/github/antsfamily/torchcs/torchcs/torchcs/'
     # pkgdir = '/mnt/e/ws/github/antsfamily/pysparse/pysparse/pysparse/'
 
-    gpyi(pkgdir, autoskip=True)
+    dltccmmt(pkgdir)
+    # gpyi(pkgdir, autoskip=True)
 

@@ -4,7 +4,7 @@
 # @author    : Zhi Liu
 # @email     : zhiliu.mind@gmail.com
 # @homepage  : http://iridescent.ink
-# @date      : Sun Dec 11 2022
+# @date      : Sun May 01 2023
 # @version   : 0.0
 # @license   : The GNU General Public License (GPL) v3.0
 # @note      : 
@@ -30,15 +30,14 @@ import pyaibox as pb
 
 
 pkgdir = '/mnt/e/ws/github/antsfamily/torchcs/torchcs/torchcs/'
-# pkgdir = '/mnt/e/ws/github/antsfamily/torchtsa/torchtsa/torchtsa/'
+pkgdir = '/mnt/e/ws/github/antsfamily/torchtsa/torchtsa/torchtsa/'
 # pkgdir = '/mnt/e/ws/github/antsfamily/torchbox/torchbox/torchbox/'
 # pkgdir = '/mnt/e/ws/github/antsfamily/torchsar/torchsar/torchsar/'
 # pkgdir = '/mnt/e/ws/github/antsfamily/pyaibox/pyaibox/pyaibox/'
 # pkgdir = '/mnt/e/ws/github/antsfamily/torchsar/torchsar_deploy/torchsar/'
 
-pb.rmcache(pkgdir, exts='.c')
-pb.rmcache(pkgdir, exts='.so')
-pb.gpyi(pkgdir, autoskip=True)
+pb.dltccmmt(pkgdir)
+
 
 
 

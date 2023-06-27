@@ -200,15 +200,10 @@ def fftconv1(x, h, shape='same', caxis=None, axis=0, keepcaxis=False, nfft=None,
     """
 
     CplxRealflag = False
-    if np.iscomplex(x).any():  # complex in complex
-        pass
-    else:
-        if caxis is None:  # real
-            pass
-        else:  # complex in real
-            CplxRealflag = True
-            x = r2c(x, caxis=caxis, keepcaxis=keepcaxis)
-            h = r2c(h, caxis=caxis, keepcaxis=keepcaxis)
+    if (not np.is_complex(x)) and (caxis is not None):  # complex in real
+        CplxRealflag = True
+        x = pb.r2c(x, caxis=caxis, keepaxis=True)
+        h = pb.r2c(h, caxis=caxis, keepaxis=True)
 
     if np.ndim(h) == 1 and axis > 0:
         h = np.expand_dims(h, list(range(axis)))
@@ -234,7 +229,7 @@ def fftconv1(x, h, shape='same', caxis=None, axis=0, keepcaxis=False, nfft=None,
         y[abs(y) < eps] = 0.
 
     if CplxRealflag:
-        y = c2r(y, caxis=caxis, keepcaxis=not keepcaxis)
+        y = pb.c2r(y, caxis=caxis, keepaxis=True)
 
     return y
 

@@ -59,4 +59,15 @@ def dmka(D, Ds):
         sub dict
     """
 
+def strfind(mainstr, patnstr):
+    """find all patterns in string
+
+    Parameters
+    ----------
+    mainstr :  str
+        the main string
+    patnstr :  str
+        the pattern string
+    """
+
 

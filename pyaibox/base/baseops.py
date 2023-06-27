@@ -135,6 +135,27 @@ def dmka(D, Ds):
     return D
 
 
+def strfind(mainstr, patnstr):
+    """find all patterns in string
+
+    Parameters
+    ----------
+    mainstr :  str
+        the main string
+    patnstr :  str
+        the pattern string
+    """
+    
+    pos = []
+    i = 0
+    idx = mainstr.find(patnstr)
+    while idx > -1:
+        pos.append(idx)
+        idx = mainstr.find(patnstr, idx+1)
+
+    return pos
+
+
 if __name__ == '__main__':
 
     D = {'a': 1, 'b': 2, 'c': 3}
@@ -142,3 +163,4 @@ if __name__ == '__main__':
     print(D)
     dmka(D, Ds)
     print(D)
+    print(strfind('/*asdxxs*/3356/*', '/*'))

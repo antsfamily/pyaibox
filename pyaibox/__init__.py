@@ -10,13 +10,13 @@ from .utils.ios import loadyaml, saveyaml, loadjson, loadmat, savemat, loadh5, s
 from .utils.image import imread, imsave, histeq, imresize
 from .utils.file import data_path, pkg_path, copyfile, copyfiles, listxfile, pathjoin, fileparts, readtxt, readnum, readcsv, readsec
 from .utils.plot_show import cplot, plots, Plots, plot, imshow, mesh, mshow
-from .utils.docstr import rmcache, gpyi
+from .utils.docstr import rmcache, gpyi, dltccmmt
 
 
 from .base import baseops, arrayops, mathops, randomfunc
-from .base.baseops import redim, upkeys, dreplace, dmka
+from .base.baseops import redim, upkeys, dreplace, dmka, strfind
 from .base.arrayops import sl, cut, cat, arraycomb
-from .base.mathops import mag2db, db2mag, fnab, ebeo, nextpow2, prevpow2, r2c, c2r, conj, real, imag, abs, pow
+from .base.mathops import mag2db, db2mag, fnab, ebeo, nextpow2, prevpow2, ematmul, matmul, r2c, c2r, conj, real, imag, abs, pow
 from .base.randomfunc import setseed, randgrid, randperm, randperm2d
 from .base.typevalue import peakvalue, dtypes
 

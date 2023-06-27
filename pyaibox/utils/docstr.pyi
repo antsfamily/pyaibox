@@ -20,4 +20,17 @@ def rmcache(pkgdir, exts='.c'):
         file extension
     """
 
+def dltccmmt(pkgdir, startflag='/*', endflag='*/'):
+    """delete block comment in c file
+
+    Parameters
+    ----------
+    pkgdir : str
+        the rootdir
+    startflag : str
+        start flag of block comment
+    endflag : str
+        end flag of block comment
+    """
+
 

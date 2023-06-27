@@ -111,7 +111,7 @@ def pca(x, axisn=0, ncmpnts='auto99%', algo='svd'):
     xshape = x.shape
     N = xshape[axisn]
     if axisn != 0:
-        x = x.transpose(0, axisn)
+        x = x.swapaxes(0, axisn)
     x = np.reshape(x, (N, -1))
     N, M = x.shape
 
